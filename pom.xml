@@ -508,6 +508,28 @@
 			<id>imagej.public</id>
 			<url>http://maven.imagej.net/content/groups/public</url>
 		</repository>
+		<repository>
+			<id>sonatype-nexus-snapshots</id>
+			<name>Sonatype Nexus Snapshots</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>sonatype-nexus-releases</id>
+			<name>Sonatype Nexus Releases</name>
+			<url>https://oss.sonatype.org/content/repositories/releases</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
 	</repositories>
 
 	<pluginRepositories>
@@ -521,19 +543,19 @@
 		</pluginRepository>
 	</pluginRepositories>
 
-	<!-- The following configuration allows authorized developers
-	     to deploy artifacts to the ImageJ Maven repositories. -->
+	<!-- Developers authorized to deploy artifacts to the ImageJ Maven repositories
+	     need to override the following configuration in child projects. -->
 	<distributionManagement>
-		<repository>
-			<id>imagej.releases</id>
-			<name>ImageJ Releases Repository</name>
-			<url>dav:http://maven.imagej.net/content/repositories/releases</url>
-		</repository>
 		<snapshotRepository>
-			<id>imagej.snapshots</id>
-			<name>ImageJ Snapshots Repository</name>
-			<url>dav:http://maven.imagej.net/content/repositories/snapshots</url>
+			<id>sonatype-nexus-snapshots</id>
+			<name>Sonatype Nexus Snapshots</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
 		</snapshotRepository>
+		<repository>
+			<id>sonatype-nexus-staging</id>
+			<name>Nexus Release Repository</name>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
 	</distributionManagement>
 
 	<profiles>
