@@ -629,11 +629,32 @@
 			<build>
 				<plugins>
 					<plugin>
+						<groupId>org.sonatype.plugins</groupId>
+						<artifactId>nexus-staging-maven-plugin</artifactId>
+						<version>1.5.1</version>
+						<extensions>true</extensions>
+						<inherited>false</inherited>
+						<executions>
+							<execution>
+								<id>default-deploy</id>
+								<phase>deploy</phase>
+								<goals>
+									<goal>deploy</goal>
+								</goals>
+							</execution>
+						</executions>
+						<configuration>
+							<serverId>sonatype-nexus-releases</serverId>
+							<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+							<stagingProfileId>1fc707535273df</stagingProfileId>
+						</configuration>
+					</plugin>
+					<plugin>
 						<inherited>true</inherited>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-deploy-plugin</artifactId>
 						<configuration>
-							<updateReleaseInfo>true</updateReleaseInfo>
+							<skip>true</skip>
 						</configuration>
 					</plugin>
 					<plugin>
