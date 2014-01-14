@@ -7,7 +7,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>1.119</version>
+	<version>1.120</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -69,7 +69,6 @@
 		<!-- Other common project dependencies -->
 		<jetty.version>8.0.0.M1</jetty.version>
 		<junit.version>4.8.1</junit.version>
-		<sezpoz.version>1.9-imagej</sezpoz.version>
 
 		<!-- ImageJ Maven Plugin - https://github.com/imagej/imagej-maven-plugin -->
 		<imagej-maven-plugin.version>0.3.1</imagej-maven-plugin.version>
