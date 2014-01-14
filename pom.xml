@@ -412,6 +412,13 @@
 		<url>http://www.scijava.org/</url>
 	</organization>
 
+	<scm>
+		<connection>scm:git:git://github.com/scijava/pom-scijava</connection>
+		<developerConnection>scm:git:git@github.com:scijava/pom-scijava</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/scijava/pom-scijava</url>
+	</scm>
+
 	<prerequisites>
 		<maven>2.2.1</maven>
 	</prerequisites>
