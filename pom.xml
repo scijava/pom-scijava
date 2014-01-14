@@ -7,7 +7,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>1.122</version>
+	<version>1.123</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -208,7 +208,7 @@
 
 				<plugin>
 					<artifactId>maven-source-plugin</artifactId>
-					<version>2.1.2</version>
+					<version>2.2.1</version>
 					<!-- Build source JARs in addition to binary ones. -->
 					<executions>
 						<execution>
@@ -234,7 +234,7 @@
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>buildnumber-maven-plugin</artifactId>
-					<version>1.1</version>
+					<version>1.2</version>
 					<!-- Record SCM revision in manifest. -->
 					<executions>
 						<execution>
@@ -265,7 +265,7 @@
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>license-maven-plugin</artifactId>
-					<version>1.4</version>
+					<version>1.6</version>
 				</plugin>
 
 				<!-- Versions Maven plugin -
