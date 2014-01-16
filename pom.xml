@@ -7,7 +7,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>1.123</version>
+	<version>1.124</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -25,7 +25,7 @@
 
 		<!-- Bio-Formats - https://github.com/openmicroscopy/bioformats -->
 		<bio-formats.groupId>loci</bio-formats.groupId>
-		<bio-formats.version>4.4.9</bio-formats.version>
+		<bio-formats.version>4.4.10</bio-formats.version>
 
 		<!-- ImageJ - https://github.com/imagej/imagej -->
 		<imagej.groupId>net.imagej</imagej.groupId>
@@ -446,16 +446,8 @@
 	<repositories>
 		<!-- ImageJ repositories -->
 		<repository>
-			<id>imagej.releases</id>
-			<url>http://maven.imagej.net/content/repositories/releases</url>
-		</repository>
-		<repository>
-			<id>imagej.snapshots</id>
-			<url>http://maven.imagej.net/content/repositories/snapshots</url>
-		</repository>
-		<repository>
-			<id>imagej.thirdparty</id>
-			<url>http://maven.imagej.net/content/repositories/thirdparty</url>
+			<id>public.repositories</id>
+			<url>http://maven.imagej.net/content/groups/public</url>
 		</repository>
 	</repositories>
 
