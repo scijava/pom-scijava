@@ -7,7 +7,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>1.124</version>
+	<version>1.125</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -79,6 +79,9 @@
 
 		<!-- NB: Specify formatting of the maven.build.timestamp property. -->
 		<maven.build.timestamp.format>yyyy-MM-dd'T'HH:mm:ssZ</maven.build.timestamp.format>
+
+		<!-- NB: Override argLine property for extra maven-surefire-plugin args. -->
+		<argLine/>
 	</properties>
 
 	<build>
@@ -86,6 +89,33 @@
 		<defaultGoal>install</defaultGoal>
 
 		<plugins>
+			<!-- Create -sources.jar when building. -->
+			<plugin>
+				<artifactId>maven-source-plugin</artifactId>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+			</plugin>
+
+			<!-- Add Implementation-Build entry to JAR manifest. -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>buildnumber-maven-plugin</artifactId>
+			</plugin>
+
+			<!-- Enable 'license:' goals. -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+			</plugin>
+
+			<!-- Enable 'graph:' goals. -->
+			<plugin>
+				<groupId>org.fusesource.mvnplugins</groupId>
+				<artifactId>maven-graph-plugin</artifactId>
+			</plugin>
+
 			<!-- Enable copying the artifacts and dependencies by setting
 			     the 'imagej.app.directory' property to a valid directory. -->
 			<plugin>
@@ -209,7 +239,7 @@
 				<plugin>
 					<artifactId>maven-source-plugin</artifactId>
 					<version>2.2.1</version>
-					<!-- Build source JARs in addition to binary ones. -->
+					<!-- Build source artifact in addition to main artifact. -->
 					<executions>
 						<execution>
 							<goals>
@@ -222,9 +252,21 @@
 				<plugin>
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>2.12</version>
-					<!-- Make sure unit tests run with sufficient RAM allocated. -->
+					<!-- Make sure that:
+					     A) unit tests run with sufficient RAM allocated;
+					     B) unit tests do not pop a Java dock icon on OS X;
+					     C) additional args can be given via argLine property;
+
+					     Sometimes, one needs to pass JVM options to the JVM
+					     running the unit tests, such as -verbose:class or
+					     -Djava.awt.headless=true.
+
+					     Unfortunately, maven-surefire does not expose a
+					     command-line interface to do so, therefore let's
+					     simulate it by re-using the property 'argLine' to
+					     specify those options. -->
 					<configuration>
-						<argLine>-Xms512m -Xmx512m</argLine>
+						<argLine>-Xms512m -Xmx512m -Dapple.awt.UIElement="true" ${argLine}</argLine>
 					</configuration>
 				</plugin>
 
@@ -266,6 +308,17 @@
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>license-maven-plugin</artifactId>
 					<version>1.6</version>
+					<configuration>
+						<projectName>${project.description}</projectName>
+						<addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
+						<canUpdateDescription>true</canUpdateDescription>
+						<canUpdateCopyright>true</canUpdateCopyright>
+						<extraExtensions>
+							<bsh>java</bsh>
+							<config>properties</config>
+							<ijm>java</ijm>
+						</extraExtensions>
+					</configuration>
 				</plugin>
 
 				<!-- Versions Maven plugin -
@@ -293,8 +346,10 @@
 					</configuration>
 				</plugin>
 
-				<!-- With a recent version of m2e, Eclipse's Maven binding, it is no
-				     longer enough to configure plugins, they will be ignored by
+				<!-- Eclipse-specific configuration
+
+				     With a recent version of m2e, Eclipse's Maven binding, it is no
+				     longer enough to configure plugins; they will be ignored by
 				     default. But we really want the buildnumber and the jar plugin to
 				     do their job. So now we have to add lifecycle mappings in addition
 				     to configuring the plugins.
@@ -441,46 +496,29 @@
 	     developers will have a hard time building your source. Only in this case
 	     does it make sense to add repository entries to your POMs."
 
-	     This is precisely the rationale for why we include the entries here.
+	     This is precisely the rationale for why we include the entry here.
 	     -->
 	<repositories>
-		<!-- ImageJ repositories -->
+		<!-- ImageJ Maven repositories and proxies -->
 		<repository>
-			<id>public.repositories</id>
+			<id>imagej.public</id>
 			<url>http://maven.imagej.net/content/groups/public</url>
 		</repository>
 	</repositories>
 
 	<pluginRepositories>
-		<!-- maven-graph-plugin -->
+		<!-- cppwrap-maven-plugin, maven-graph-plugin -->
 		<pluginRepository>
-			<id>mvnplugins.fusesource.org</id>
-			<url>http://mvnplugins.fusesource.org/repo/release</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-		</pluginRepository>
-
-		<!-- cppwrap-maven-plugin, nar-maven-plugin -->
-		<pluginRepository>
-			<id>imagej.releases</id>
-			<url>http://maven.imagej.net/content/repositories/releases</url>
-		</pluginRepository>
-		<pluginRepository>
-			<id>imagej.snapshots</id>
-			<url>http://maven.imagej.net/content/repositories/snapshots</url>
+			<id>imagej.public</id>
+			<url>http://maven.imagej.net/content/groups/public</url>
 			<snapshots>
 				<enabled>true</enabled>
 			</snapshots>
 		</pluginRepository>
-		<pluginRepository>
-			<id>imagej.thirdparty</id>
-			<url>http://maven.imagej.net/content/repositories/thirdparty</url>
-		</pluginRepository>
 	</pluginRepositories>
 
 	<!-- The following configuration allows authorized developers
-	     to deploy artifacts to the ImageJ Maven repository. -->
+	     to deploy artifacts to the ImageJ Maven repositories. -->
 	<distributionManagement>
 		<repository>
 			<id>imagej.releases</id>
@@ -493,5 +531,72 @@
 			<url>dav:http://maven.imagej.net/content/repositories/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
+
+	<profiles>
+		<!-- Build test artifact when tests are present. -->
+		<profile>
+			<id>test-jar</id>
+			<activation>
+				<file>
+					<!-- NB: Cannot use ${project.build.testSourceDirectory} because
+					     Maven only limitedly interpolates this section of the POM.
+					     See: http://maven.apache.org/pom.html#Activation -->
+					<exists>${basedir}/src/test/java</exists>
+				</file>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<artifactId>maven-jar-plugin</artifactId>
+						<executions>
+							<execution>
+								<goals>
+									<goal>test-jar</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
+		<!-- Run integration tests when "-P run-its" is passed.
+		     This works using the maven-invoker-plugin. -->
+		<profile>
+			<id>run-its</id>
+			<build>
+				<defaultGoal>integration-test</defaultGoal>
+				<plugins>
+					<plugin>
+						<artifactId>maven-invoker-plugin</artifactId>
+						<version>1.8</version>
+						<configuration>
+							<debug>${invoker.debug}</debug>
+							<showErrors>true</showErrors>
+							<streamLogs>true</streamLogs>
+							<projectsDirectory>src/it</projectsDirectory>
+							<cloneProjectsTo>${project.build.directory}/it</cloneProjectsTo>
+							<pomIncludes>
+								<pomInclude>*/pom.xml</pomInclude>
+							</pomIncludes>
+							<settingsFile>src/it/settings.xml</settingsFile>
+							<localRepositoryPath>${project.build.directory}/local-repo</localRepositoryPath>
+							<preBuildHookScript>setup.bsh</preBuildHookScript>
+							<postBuildHookScript>verify.bsh</postBuildHookScript>
+						</configuration>
+						<executions>
+							<execution>
+								<id>integration-test</id>
+								<goals>
+									<goal>install</goal>
+									<goal>run</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 
 </project>
