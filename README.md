@@ -1,15 +1,12 @@
 The pom-scijava project is a Maven POM that serves as the base for all
 Maven-based SciJava code, including:
 
-* [Fiji](https://github.com/fiji/fiji)
-* [Image5D](https://github.com/imagej/image5d)
-* [ImageJ1 unit tests](https://github.com/imagej/ij1-tests)
-* [ImageJ2](https://github.com/imagej/imagej)
-* [ImageJA](https://github.com/fiji/imageja)
-* [ImgLib](https://github.com/imglib/imglib)
-* [LOCI](https://github.com/uw-loci/pom-loci)
-* [SCIFIO](https://github.com/imagej/minimal-ij1-plugin)
-* [SciJava Common](https://github.com/scijava/scijava-common)
+* [Fiji](https://github.com/fiji)
+* [ImageJ](https://github.com/imagej)
+* [ImgLib2](https://github.com/imglib)
+* [LOCI](https://github.com/uw-loci)
+* [SCIFIO](https://github.com/scifio)
+* [SciJava](https://github.com/scijava)
 
 This POM is intended for use as the parent of your own Maven-based code.
 See these examples for guidance:
