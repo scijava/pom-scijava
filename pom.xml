@@ -507,6 +507,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			<!-- Generate javadocs as part of site generation. -->
 			<plugin>
 				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.9.1</version>
 			</plugin>
 		</plugins>
 	</reporting>
