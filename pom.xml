@@ -7,13 +7,52 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>1.126</version>
+	<version>1.127-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
-	<description>SciJava aims to provide an overview of available Java libraries for scientific computing. This POM provides a parent from which participating projects can declare their build configurations. It ensures that projects all use a compatible build environment, including Java version, as well as versions of dependencies and plugins.</description>
+	<description>SciJava aims to provide an overview of available Java libraries for scientific computing. This POM provides a parent from which participating projects can declare their build configurations. It ensures that projects all use a compatible build environment, including Java version, as well as versions of dependencies and plugins.
+
+Projects wishing to use pom-scijava as a parent project need to override the &lt;name&gt;, &lt;description&gt;,&lt;url&gt;, &lt;inceptionYear&gt; &lt;licenses&gt;, &lt;developers&gt;, &lt;organization&gt; and the &lt;scm&gt; sections.</description>
 	<url>http://www.scijava.org/</url>
 	<inceptionYear>2011</inceptionYear>
+
+        <licenses>
+                <license>
+                        <name>CC0 1.0 Universal License</name>
+                        <url>http://creativecommons.org/publicdomain/zero/1.0/</url>
+                        <distribution>repo</distribution>
+                </license>
+        </licenses>
+
+	<developers>
+		<developer>
+			<id>ctrueden</id>
+			<name>Curtis Rueden</name>
+			<email>ctrueden@wisc.edu</email>
+			<url>http://loci.wisc.edu/people/curtis-rueden</url>
+			<organization>UW-Madison LOCI</organization>
+			<organizationUrl>http://loci.wisc.edu/</organizationUrl>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>-6</timezone>
+		</developer>
+		<developer>
+			<id>dscho</id>
+			<name>Johannes Schindelin</name>
+			<email>schindelin@wisc.edu</email>
+			<url>http://loci.wisc.edu/people/johannes-schindelin</url>
+			<organization>UW-Madison LOCI</organization>
+			<organizationUrl>http://loci.wisc.edu/</organizationUrl>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>-6</timezone>
+		</developer>
+	</developers>
 
 	<properties>
 		<!-- If two artifacts on the classpath use two different versions of the
@@ -155,7 +194,7 @@
 			<plugins>
 				<plugin>
 					<artifactId>maven-assembly-plugin</artifactId>
-					<version>2.3</version>
+					<version>2.4</version>
 				</plugin>
 
 				<plugin>
@@ -165,7 +204,7 @@
 
 				<plugin>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>2.5</version>
+					<version>3.1</version>
 					<!-- Require the Java 6 platform. -->
 					<configuration>
 						<source>1.6</source>
@@ -175,17 +214,17 @@
 
 				<plugin>
 					<artifactId>maven-dependency-plugin</artifactId>
-					<version>2.5</version>
+					<version>2.8</version>
 				</plugin>
 
 				<plugin>
 					<artifactId>maven-deploy-plugin</artifactId>
-					<version>2.7</version>
+					<version>2.8.1</version>
 				</plugin>
 
 				<plugin>
 					<artifactId>maven-install-plugin</artifactId>
-					<version>2.3.1</version>
+					<version>2.5.1</version>
 				</plugin>
 
 				<plugin>
@@ -211,7 +250,7 @@
 
 				<plugin>
 					<artifactId>maven-javadoc-plugin</artifactId>
-					<version>2.8.1</version>
+					<version>2.9.1</version>
 					<configuration>
 						<maxmemory>1024m</maxmemory>
 						<!-- Workaround for javadoc bug when classes in the default
@@ -257,7 +296,7 @@
 
 				<plugin>
 					<artifactId>maven-plugin-plugin</artifactId>
-					<version>2.9</version>
+					<version>3.2</version>
 				</plugin>
 
 				<plugin>
@@ -274,7 +313,7 @@
 
 				<plugin>
 					<artifactId>maven-resources-plugin</artifactId>
-					<version>2.5</version>
+					<version>2.6</version>
 				</plugin>
 
 				<plugin>
@@ -297,7 +336,7 @@
 
 				<plugin>
 					<artifactId>maven-surefire-plugin</artifactId>
-					<version>2.12</version>
+					<version>2.16</version>
 					<!-- Make sure that:
 					     A) unit tests run with sufficient RAM allocated;
 					     B) unit tests do not pop a Java dock icon on OS X;
@@ -374,7 +413,7 @@
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>versions-maven-plugin</artifactId>
-					<version>1.3.1</version>
+					<version>2.1</version>
 				</plugin>
 
 				<!-- Maven Graph Plugin -
@@ -383,7 +422,7 @@
 				<plugin>
 					<groupId>org.fusesource.mvnplugins</groupId>
 					<artifactId>maven-graph-plugin</artifactId>
-					<version>1.26</version>
+					<version>1.30</version>
 					<configuration>
 						<hideScopes>provided,runtime,system,test</hideScopes>
 						<hideTransitive>true</hideTransitive>
@@ -452,7 +491,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore/>
+										<ignore />
 									</action>
 								</pluginExecution>
 							</pluginExecutions>
@@ -503,10 +542,27 @@
 	     This is precisely the rationale for why we include the entry here.
 	     -->
 	<repositories>
-		<!-- ImageJ Maven repositories and proxies -->
 		<repository>
-			<id>imagej.public</id>
-			<url>http://maven.imagej.net/content/groups/public</url>
+			<id>sonatype-nexus-snapshots</id>
+			<name>Sonatype Nexus Snapshots</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>sonatype-nexus-releases</id>
+			<name>Sonatype Nexus Releases</name>
+			<url>https://oss.sonatype.org/content/repositories/releases</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
 		</repository>
 	</repositories>
 
@@ -521,19 +577,19 @@
 		</pluginRepository>
 	</pluginRepositories>
 
-	<!-- The following configuration allows authorized developers
-	     to deploy artifacts to the ImageJ Maven repositories. -->
+	<!-- Developers authorized to deploy artifacts to the ImageJ Maven repositories
+	     need to override the following configuration in child projects. -->
 	<distributionManagement>
-		<repository>
-			<id>imagej.releases</id>
-			<name>ImageJ Releases Repository</name>
-			<url>dav:http://maven.imagej.net/content/repositories/releases</url>
-		</repository>
 		<snapshotRepository>
-			<id>imagej.snapshots</id>
-			<name>ImageJ Snapshots Repository</name>
-			<url>dav:http://maven.imagej.net/content/repositories/snapshots</url>
+			<id>sonatype-nexus-snapshots</id>
+			<name>Sonatype Nexus Snapshots</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
 		</snapshotRepository>
+		<repository>
+			<id>sonatype-nexus-staging</id>
+			<name>Nexus Release Repository</name>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
 	</distributionManagement>
 
 	<profiles>
@@ -597,6 +653,63 @@
 								</goals>
 							</execution>
 						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
+		<profile>
+			<id>sonatype-oss-release</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.sonatype.plugins</groupId>
+						<artifactId>nexus-staging-maven-plugin</artifactId>
+						<version>1.5.1</version>
+						<extensions>true</extensions>
+						<inherited>false</inherited>
+						<executions>
+							<execution>
+								<id>default-deploy</id>
+								<phase>deploy</phase>
+								<goals>
+									<goal>deploy</goal>
+								</goals>
+							</execution>
+						</executions>
+						<configuration>
+							<serverId>sonatype-nexus-releases</serverId>
+							<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+							<stagingProfileId>1fc707535273df</stagingProfileId>
+						</configuration>
+					</plugin>
+					<plugin>
+						<inherited>true</inherited>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-deploy-plugin</artifactId>
+						<configuration>
+							<skip>true</skip>
+						</configuration>
+					</plugin>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-gpg-plugin</artifactId>
+						<version>1.4</version>
+						<executions>
+							<execution>
+								<id>sign-artifacts</id>
+								<phase>verify</phase>
+								<goals>
+									<goal>sign</goal>
+								</goals>
+							</execution>
+						</executions>
+						<configuration>
+							<useAgent>true</useAgent>
+						</configuration>
+					</plugin>
+					<plugin>
+						<artifactId>maven-javadoc-plugin</artifactId>
 					</plugin>
 				</plugins>
 			</build>
