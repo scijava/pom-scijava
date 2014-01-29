@@ -539,11 +539,6 @@
 	     This is precisely the rationale for why we include the entry here.
 	     -->
 	<repositories>
-		<!-- ImageJ Maven repositories and proxies -->
-		<repository>
-			<id>imagej.public</id>
-			<url>http://maven.imagej.net/content/groups/public</url>
-		</repository>
 		<repository>
 			<id>sonatype-nexus-snapshots</id>
 			<name>Sonatype Nexus Snapshots</name>
