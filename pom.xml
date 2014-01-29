@@ -17,12 +17,13 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 	<url>http://www.scijava.org/</url>
 	<inceptionYear>2011</inceptionYear>
 
-	<licenses>
-		<license>
-			<name>Simplified BSD License</name>
-			<distribution>repo</distribution>
-		</license>
-	</licenses>
+        <licenses>
+                <license>
+                        <name>CC0 1.0 Universal License</name>
+                        <url>http://creativecommons.org/publicdomain/zero/1.0/</url>
+                        <distribution>repo</distribution>
+                </license>
+        </licenses>
 
 	<developers>
 		<developer>
