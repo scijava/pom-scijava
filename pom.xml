@@ -250,6 +250,8 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 				<plugin>
 					<artifactId>maven-javadoc-plugin</artifactId>
+					<!-- NB: The same version declaration and configuration block also
+					     appears in the <reporting> section, and must be kept in sync. -->
 					<version>2.9.1</version>
 					<configuration>
 						<maxmemory>1024m</maxmemory>
@@ -507,6 +509,15 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			<!-- Generate javadocs as part of site generation. -->
 			<plugin>
 				<artifactId>maven-javadoc-plugin</artifactId>
+				<!-- NB: The following version declaration and configuration block
+				     are fully replicated from the pluginManagement section. This
+				     is necessary because many versions of maven-site-plugin
+				     (including 3.3) do not respect the pluginManagement values.
+				     See: http://jira.codehaus.org/browse/MSITE-443
+				     While the maven-site-plugin documentation states that it
+				     "search[es] the same groupId/artifactId in the
+				     build.pluginManagement.plugins section", this claim
+				     unfortunately does not seem to reflect reality. -->
 				<version>2.9.1</version>
 				<configuration>
 					<maxmemory>1024m</maxmemory>
