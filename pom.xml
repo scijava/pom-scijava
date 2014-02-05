@@ -7,7 +7,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>1.128</version>
+	<version>1.129</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -720,20 +720,14 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 						<artifactId>nexus-staging-maven-plugin</artifactId>
 						<version>1.5.1</version>
 						<extensions>true</extensions>
-						<inherited>false</inherited>
-						<executions>
-							<execution>
-								<id>default-deploy</id>
-								<phase>deploy</phase>
-								<goals>
-									<goal>deploy</goal>
-								</goals>
-							</execution>
-						</executions>
 						<configuration>
 							<serverId>sonatype-nexus-releases</serverId>
 							<nexusUrl>https://oss.sonatype.org/</nexusUrl>
-							<stagingProfileId>1fc707535273df</stagingProfileId>
+							<!--
+							By having no explicit stagingProfileId, we use
+							Staging V2 in "auto" mode, profile will be
+							matched server side
+							-->
 						</configuration>
 					</plugin>
 					<plugin>
@@ -761,9 +755,32 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 							<useAgent>true</useAgent>
 						</configuration>
 					</plugin>
-					<plugin>
-						<artifactId>maven-javadoc-plugin</artifactId>
-					</plugin>
+                                        <plugin>
+                                                <groupId>org.apache.maven.plugins</groupId>
+                                                <artifactId>maven-source-plugin</artifactId>
+                                                <version>2.2.1</version>
+                                                <executions>
+                                                        <execution>
+                                                                <id>attach-sources</id>
+                                                                <goals>
+                                                                        <goal>jar</goal>
+                                                                </goals>
+                                                        </execution>
+                                                </executions>
+                                        </plugin>
+                                        <plugin>
+                                                <groupId>org.apache.maven.plugins</groupId>
+                                                <artifactId>maven-javadoc-plugin</artifactId>
+                                                <version>2.9.1</version>
+                                                <executions>
+                                                        <execution>
+                                                                <id>attach-javadocs</id>
+                                                                <goals>
+                                                                        <goal>jar</goal>
+                                                                </goals>
+                                                        </execution>
+                                                </executions>
+                                        </plugin>
 				</plugins>
 			</build>
 		</profile>
