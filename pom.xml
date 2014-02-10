@@ -7,7 +7,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>1.129</version>
+	<version>1.130-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -17,13 +17,13 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 	<url>http://www.scijava.org/</url>
 	<inceptionYear>2011</inceptionYear>
 
-        <licenses>
-                <license>
-                        <name>CC0 1.0 Universal License</name>
-                        <url>http://creativecommons.org/publicdomain/zero/1.0/</url>
-                        <distribution>repo</distribution>
-                </license>
-        </licenses>
+	<licenses>
+		<license>
+			<name>CC0 1.0 Universal License</name>
+			<url>http://creativecommons.org/publicdomain/zero/1.0/</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
 
 	<developers>
 		<developer>
@@ -755,32 +755,32 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 							<useAgent>true</useAgent>
 						</configuration>
 					</plugin>
-                                        <plugin>
-                                                <groupId>org.apache.maven.plugins</groupId>
-                                                <artifactId>maven-source-plugin</artifactId>
-                                                <version>2.2.1</version>
-                                                <executions>
-                                                        <execution>
-                                                                <id>attach-sources</id>
-                                                                <goals>
-                                                                        <goal>jar</goal>
-                                                                </goals>
-                                                        </execution>
-                                                </executions>
-                                        </plugin>
-                                        <plugin>
-                                                <groupId>org.apache.maven.plugins</groupId>
-                                                <artifactId>maven-javadoc-plugin</artifactId>
-                                                <version>2.9.1</version>
-                                                <executions>
-                                                        <execution>
-                                                                <id>attach-javadocs</id>
-                                                                <goals>
-                                                                        <goal>jar</goal>
-                                                                </goals>
-                                                        </execution>
-                                                </executions>
-                                        </plugin>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-source-plugin</artifactId>
+						<version>2.2.1</version>
+						<executions>
+							<execution>
+								<id>attach-sources</id>
+								<goals>
+									<goal>jar</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-javadoc-plugin</artifactId>
+						<version>2.9.1</version>
+						<executions>
+							<execution>
+								<id>attach-javadocs</id>
+								<goals>
+									<goal>jar</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
 				</plugins>
 			</build>
 		</profile>
