@@ -7,7 +7,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>1.130-SNAPSHOT</version>
+	<version>1.130</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -68,17 +68,17 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 		<!-- ImageJ - https://github.com/imagej/imagej -->
 		<imagej.groupId>net.imagej</imagej.groupId>
-		<imagej.version>2.0.0-beta-7.6</imagej.version>
+		<imagej.version>2.0.0-beta-7.7</imagej.version>
 
 		<!-- ImageJ 1.x - https://github.com/fiji/ImageJA -->
-		<imagej1.version>1.48p</imagej1.version>
+		<imagej1.version>1.48q</imagej1.version>
 
 		<!-- ImageJ Launcher - https://github.com/imagej/imagej-launcher -->
 		<imagej-launcher.version>2.0.2</imagej-launcher.version>
 
 		<!-- ImgLib2 - https://github.com/imglib/imglib -->
 		<imglib2.groupId>net.imglib2</imglib2.groupId>
-		<imglib2.version>2.0.0-beta-23</imglib2.version>
+		<imglib2.version>2.0.0-beta-24</imglib2.version>
 
 		<!-- MPICBG - https://github.com/axtimwalde/mpicbg -->
 		<mpicbg.groupId>mpicbg</mpicbg.groupId>
@@ -89,21 +89,21 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<nar.version>3.0.0</nar.version>
 
 		<!-- OME-Formats - https://github.com/scifio/ome-formats -->
-		<ome-formats.version>0.5.0</ome-formats.version>
+		<ome-formats.version>0.6.0</ome-formats.version>
 
 		<!-- SCIFIO - https://github.com/scifio/scifio -->
 		<scifio.groupId>io.scif</scifio.groupId>
-		<scifio.version>0.8.2</scifio.version>
+		<scifio.version>0.9.0</scifio.version>
 
 		<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
-		<scifio-bf-compat.version>1.4.0</scifio-bf-compat.version>
+		<scifio-bf-compat.version>1.5.0</scifio-bf-compat.version>
 
 		<!-- SCIFIO-LifeSci - https://github.com/scifio/scifio-lifesci -->
-		<scifio-lifesci.version>0.3.0</scifio-lifesci.version>
+		<scifio-lifesci.version>0.4.0</scifio-lifesci.version>
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
 		<scijava-common.groupId>org.scijava</scijava-common.groupId>
-		<scijava-common.version>2.8.0</scijava-common.version>
+		<scijava-common.version>2.9.0</scijava-common.version>
 
 		<!-- Other common project dependencies -->
 		<jetty.version>8.0.0.M1</jetty.version>
