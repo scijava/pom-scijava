@@ -80,10 +80,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<imglib2.groupId>net.imglib2</imglib2.groupId>
 		<imglib2.version>2.0.0-beta-24</imglib2.version>
 
-		<!-- MPICBG - https://github.com/axtimwalde/mpicbg -->
-		<mpicbg.groupId>mpicbg</mpicbg.groupId>
-		<mpicbg.version>20111128</mpicbg.version>
-
 		<!-- NAR Maven plugin - https://github.com/maven-nar/nar-maven-plugin -->
 		<nar.groupId>com.github.maven-nar</nar.groupId>
 		<nar.version>3.0.0</nar.version>
