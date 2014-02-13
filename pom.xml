@@ -576,6 +576,10 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<maven>2.2.1</maven>
 	</prerequisites>
 
+	<!-- The following configuration enables access to plugins
+	     from a number of useful third-party Maven repositories.
+	     It is temporary, until we can get all relevant plugins
+	     deployed to the Maven central repository. -->
 	<pluginRepositories>
 		<!-- cppwrap-maven-plugin, maven-graph-plugin -->
 		<pluginRepository>
