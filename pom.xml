@@ -7,7 +7,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>1.130</version>
+	<version>1.131-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -576,45 +576,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<maven>2.2.1</maven>
 	</prerequisites>
 
-	<!-- The following configuration enables access to dependencies
-	     from a number of useful third-party Maven repositories.
-
-	     In general, it is considered bad practice to include repository URLs
-	     within a pom.xml: http://bit.ly/8aN6NZ
-
-	     However, the article does mention one exception:
-	     "If however, you have artifacts that may exist only in your repository
-	     (think snapshots of your parent POMs), or other third party repos, then
-	     developers will have a hard time building your source. Only in this case
-	     does it make sense to add repository entries to your POMs."
-
-	     This is precisely the rationale for why we include the entry here.
-	     -->
-	<repositories>
-		<repository>
-			<id>sonatype-nexus-snapshots</id>
-			<name>Sonatype Nexus Snapshots</name>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>sonatype-nexus-releases</id>
-			<name>Sonatype Nexus Releases</name>
-			<url>https://oss.sonatype.org/content/repositories/releases</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
-
 	<pluginRepositories>
 		<!-- cppwrap-maven-plugin, maven-graph-plugin -->
 		<pluginRepository>
@@ -625,21 +586,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
-
-	<!-- Developers authorized to deploy artifacts to the ImageJ Maven repositories
-	     need to override the following configuration in child projects. -->
-	<distributionManagement>
-		<snapshotRepository>
-			<id>sonatype-nexus-snapshots</id>
-			<name>Sonatype Nexus Snapshots</name>
-			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-		</snapshotRepository>
-		<repository>
-			<id>sonatype-nexus-staging</id>
-			<name>Nexus Release Repository</name>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-		</repository>
-	</distributionManagement>
 
 	<profiles>
 		<!-- Build test artifact when tests are present. -->
@@ -779,6 +725,44 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 					</plugin>
 				</plugins>
 			</build>
+
+			<repositories>
+				<repository>
+					<id>sonatype-nexus-snapshots</id>
+					<name>Sonatype Nexus Snapshots</name>
+					<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+					<releases>
+						<enabled>false</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</repository>
+				<repository>
+					<id>sonatype-nexus-releases</id>
+					<name>Sonatype Nexus Releases</name>
+					<url>https://oss.sonatype.org/content/repositories/releases</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+				</repository>
+			</repositories>
+
+			<distributionManagement>
+				<snapshotRepository>
+					<id>sonatype-nexus-snapshots</id>
+					<name>Sonatype Nexus Snapshots</name>
+					<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+				</snapshotRepository>
+				<repository>
+					<id>sonatype-nexus-staging</id>
+					<name>Nexus Release Repository</name>
+					<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+				</repository>
+			</distributionManagement>
 		</profile>
 	</profiles>
 
