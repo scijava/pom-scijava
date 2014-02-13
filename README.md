@@ -21,7 +21,7 @@ For more information about Maven, see:
 
 ## Documentation
 
-The pom-scijava wiki contains more detailed documentation on several
-topics:
+The pom-scijava wiki contains articles on several topics:
 
 * [Adding a new project to the SciJava POM](https://github.com/scijava/pom-scijava/wiki/Adding-a-new-project-to-the-SciJava-POM)
+* [Versioning of SciJava projects](https://github.com/scijava/pom-scijava/wiki/Versioning-of-SciJava-projects)
