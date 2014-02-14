@@ -7,7 +7,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>1.131</version>
+	<version>1.132</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -68,7 +68,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 		<!-- ImageJ - https://github.com/imagej/imagej -->
 		<imagej.groupId>net.imagej</imagej.groupId>
-		<imagej.version>2.0.0-beta-7.7</imagej.version>
+		<imagej.version>2.0.0-beta-7.6</imagej.version>
 
 		<!-- ImageJ 1.x - https://github.com/fiji/ImageJA -->
 		<imagej1.version>1.48q</imagej1.version>
@@ -85,14 +85,14 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<nar.version>3.0.0</nar.version>
 
 		<!-- OME-Formats - https://github.com/scifio/ome-formats -->
-		<ome-formats.version>0.6.0</ome-formats.version>
+		<ome-formats.version>0.5.0</ome-formats.version>
 
 		<!-- SCIFIO - https://github.com/scifio/scifio -->
 		<scifio.groupId>io.scif</scifio.groupId>
-		<scifio.version>0.9.0</scifio.version>
+		<scifio.version>0.9.1</scifio.version>
 
 		<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
-		<scifio-bf-compat.version>1.5.0</scifio-bf-compat.version>
+		<scifio-bf-compat.version>1.4.1</scifio-bf-compat.version>
 
 		<!-- SCIFIO-LifeSci - https://github.com/scifio/scifio-lifesci -->
 		<scifio-lifesci.version>0.4.0</scifio-lifesci.version>
