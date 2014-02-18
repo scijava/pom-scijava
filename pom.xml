@@ -7,7 +7,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>1.134</version>
+	<version>1.135</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -74,7 +74,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<imagej1.version>1.48q</imagej1.version>
 
 		<!-- ImageJ Launcher - https://github.com/imagej/imagej-launcher -->
-		<imagej-launcher.version>2.0.2</imagej-launcher.version>
+		<imagej-launcher.version>2.0.3</imagej-launcher.version>
 
 		<!-- ImgLib2 - https://github.com/imglib/imglib -->
 		<imglib2.groupId>net.imglib2</imglib2.groupId>
@@ -92,7 +92,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scifio.version>0.9.2</scifio.version>
 
 		<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
-		<scifio-bf-compat.version>1.5.0</scifio-bf-compat.version>
+		<scifio-bf-compat.version>1.5.1</scifio-bf-compat.version>
 
 		<!-- SCIFIO-LifeSci - https://github.com/scifio/scifio-lifesci -->
 		<scifio-lifesci.version>0.4.0</scifio-lifesci.version>
