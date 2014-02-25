@@ -674,6 +674,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			</distributionManagement>
 		</profile>
 
+		<!-- This profile enables releasing to the OSS Sonatype repository. -->
 		<profile>
 			<id>sonatype-oss-release</id>
 			<build>
