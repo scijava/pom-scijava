@@ -7,7 +7,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>1.140</version>
+	<version>1.141</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -82,6 +82,10 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- ImgLib2 - https://github.com/imglib/imglib -->
 		<imglib2.groupId>net.imglib2</imglib2.groupId>
 		<imglib2.version>2.0.0-beta-25</imglib2.version>
+
+		<!-- MiniMaven - https://github.com/imagej/minimaven -->
+		<minimaven.groupId>net.imagej</minimaven.groupId>
+		<minimaven.version>1.0.0</minimaven.version>
 
 		<!-- NAR Maven plugin - https://github.com/maven-nar/nar-maven-plugin -->
 		<nar.groupId>com.github.maven-nar</nar.groupId>
