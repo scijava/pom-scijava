@@ -7,7 +7,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>1.142</version>
+	<version>1.143</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -96,7 +96,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 		<!-- SCIFIO - https://github.com/scifio/scifio -->
 		<scifio.groupId>io.scif</scifio.groupId>
-		<scifio.version>0.9.4</scifio.version>
+		<scifio.version>0.10.0</scifio.version>
 
 		<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
 		<scifio-bf-compat.version>1.5.2</scifio-bf-compat.version>
