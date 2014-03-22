@@ -310,14 +310,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 				<plugin>
 					<artifactId>maven-release-plugin</artifactId>
-					<version>2.4.2</version>
-					<dependencies>
-						<dependency>
-							<groupId>org.apache.maven.scm</groupId>
-							<artifactId>maven-scm-provider-gitexe</artifactId>
-							<version>1.9</version>
-						</dependency>
-					</dependencies>
+					<version>2.5</version>
 				</plugin>
 
 				<plugin>
@@ -345,7 +338,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 				<plugin>
 					<artifactId>maven-surefire-plugin</artifactId>
-					<version>2.16</version>
+					<version>2.17</version>
 					<!-- Make sure that:
 					     A) unit tests run with sufficient RAM allocated;
 					     B) unit tests do not pop a Java dock icon on OS X;
@@ -693,7 +686,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 					<plugin>
 						<groupId>org.sonatype.plugins</groupId>
 						<artifactId>nexus-staging-maven-plugin</artifactId>
-						<version>1.5.1</version>
+						<version>1.6</version>
 						<extensions>true</extensions>
 						<configuration>
 							<serverId>sonatype-nexus-releases</serverId>
@@ -717,7 +710,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-gpg-plugin</artifactId>
-						<version>1.4</version>
+						<version>1.5</version>
 						<executions>
 							<execution>
 								<id>sign-artifacts</id>
