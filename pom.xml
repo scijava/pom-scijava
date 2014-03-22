@@ -82,6 +82,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- ImgLib2 - https://github.com/imglib/imglib -->
 		<imglib2.groupId>net.imglib2</imglib2.groupId>
 		<imglib2.version>2.0.0-beta-25</imglib2.version>
+		<imglib2-ij.version>2.0.0-beta-25</imglib2-ij.version>
 
 		<!-- MiniMaven - https://github.com/imagej/minimaven -->
 		<minimaven.groupId>net.imagej</minimaven.groupId>
@@ -179,6 +180,11 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>${imglib2.groupId}</groupId>
 				<artifactId>imglib2-algorithms-legacy</artifactId>
 				<version>${imglib2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imglib2.groupId}</groupId>
+				<artifactId>imglib2-ij</artifactId>
+				<version>${imglib2-ij.version}</version>
 			</dependency>
 
 			<!-- ImageJ - https://github.com/imagej/imagej -->
