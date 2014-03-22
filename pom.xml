@@ -130,6 +130,306 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<argLine/>
 	</properties>
 
+	<dependencyManagement>
+		<dependencies>
+			<!-- SciJava Common - https://github.com/scijava/scijava-common -->
+			<dependency>
+				<groupId>${scijava-common.groupId}</groupId>
+				<artifactId>scijava-common</artifactId>
+				<version>${scijava-common.version></version>
+			</dependency>
+
+			<!-- ImgLib2 - https://github.com/imglib/imglib -->
+			<dependency>
+				<groupId>${imglib2.groupId}</groupId>
+				<artifactId>imglib2</artifactId>
+				<version>${imglib2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imglib2.groupId}</groupId>
+				<artifactId>imglib2-meta</artifactId>
+				<version>${imglib2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imglib2.groupId}</groupId>
+				<artifactId>imglib2-ops</artifactId>
+				<version>${imglib2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imglib2.groupId}</groupId>
+				<artifactId>imglib2-realtransform</artifactId>
+				<version>${imglib2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imglib2.groupId}</groupId>
+				<artifactId>imglib2-ui</artifactId>
+				<version>${imglib2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imglib2.groupId}</groupId>
+				<artifactId>imglib2-algorithms</artifactId>
+				<version>${imglib2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imglib2.groupId}</groupId>
+				<artifactId>imglib2-algorithms-gpl</artifactId>
+				<version>${imglib2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imglib2.groupId}</groupId>
+				<artifactId>imglib2-algorithms-legacy</artifactId>
+				<version>${imglib2.version}</version>
+			</dependency>
+
+			<!-- ImageJ - https://github.com/imagej/imagej -->
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-core</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-app</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-core</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-data</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-legacy</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-options</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-ui</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-updater-core</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-commands</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-platforms</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-scripting-beanshell</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-scripting-clojure</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-scripting-java</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-scripting-javascript</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-scripting-jruby</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-scripting-jython</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-text</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-tools</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-ui-awt</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-ui-pivot</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-ui-swing</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-ui-swt</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-updater-ssh</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-updater-webdav</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-ui-common-awt</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-util-awt</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-ui-swing-commands</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-ui-swing-script-editor</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-ui-swing-tools</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-ui-swing-updater</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-util-swing</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+
+			<!-- ImageJ 1.x - https://github.com/fiji/ImageJA -->
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>imagej1</artifactId>
+				<version>${imagej1.version}</version>
+			</dependency>
+
+			<!-- ImageJ 1.x patcher - https://github.com/imagej/ij1-patcher -->
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij1-patcher</artifactId>
+				<version>${ij1-patcher.version}</version>
+			</dependency>
+
+			<!-- ImageJ Launcher - https://github.com/imagej/imagej-launcher -->
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>imagej-launcher</artifactId>
+				<version>${imagej-launcher.version}</version>
+			</dependency>
+
+			<!-- MiniMaven - https://github.com/imagej/minimaven -->
+			<dependency>
+				<groupId>${minimaven.groupId}</groupId>
+				<artifactId>minimaven</artifactId>
+				<version>${minimaven.version}</version>
+			</dependency>
+
+			<!-- SCIFIO - https://github.com/scifio/scifio -->
+			<dependency>
+				<groupId>${scifio.groupId}</groupId>
+				<artifactId>scifio</artifactId>
+				<version>${scifio.version}</version>
+			</dependency>
+
+			<!-- SCIFIO-OME-XMl - https://github.com/scifio/scifio-ome-xml -->
+			<dependency>
+				<groupId>${scifio.groupId}</groupId>
+				<artifactId>scifio-ome-xml</artifactId>
+				<version>${scifio-ome-xml.version}</version>
+			</dependency>
+
+			<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
+			<dependency>
+				<groupId>${scifio.groupId}</groupId>
+				<artifactId>scifio-bf-compat</artifactId>
+				<version>${scifio-bf-compat.version}</version>
+			</dependency>
+
+			<!-- SCIFIO-LifeSci - https://github.com/scifio/scifio-lifesci -->
+			<dependency>
+				<groupId>${scifio.groupId}</groupId>
+				<artifactId>scifio-lifesci</artifactId>
+				<version>${scifio-lifesci.version}</version>
+			</dependency>
+
+			<!-- Bio-Formats - https://github.com/openmicroscopy/bioformats -->
+			<dependency>
+				<groupId>${bio-formats.groupId}</groupId>
+				<artifactId>formats-api</artifactId>
+				<version>${bio-formats.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.testng</groupId>
+						<artifactId>testng</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>${bio-formats.groupId}</groupId>
+				<artifactId>formats-bsd</artifactId>
+				<version>${bio-formats.version}</version>
+			</dependency>
+
+			<!-- JUnit - http://junit.org/ -->
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>${junit.version}</version>
+				<scope>test</scope>
+			</dependency>
+
+			<!-- JUnit Benchmarks - https://github.com/scijava/junit-benchmarks -->
+			<dependency>
+				<groupId>${junit-benchmarks.groupId}</groupId>
+				<artifactId>junit-benchmarks</artifactId>
+				<version>${junit-benchmarks.version}</version>
+				<scope>test</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
 	<build>
 		<!-- It is nice for "mvn" with no arguments to do something reasonable. -->
 		<defaultGoal>install</defaultGoal>
@@ -165,7 +465,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			<!-- Enable copying the artifacts and dependencies by setting
 			     the 'imagej.app.directory' property to a valid directory. -->
 			<plugin>
-				<groupId>net.imagej</groupId>
+				<groupId>${imagej.groupId}</groupId>
 				<artifactId>imagej-maven-plugin</artifactId>
 				<version>${imagej-maven-plugin.version}</version>
 				<executions>
@@ -438,6 +738,13 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 						<label>Dependency Graph for ${project.name}</label>
 						<target>${project.build.directory}/dependency-graph.dot</target>
 					</configuration>
+				</plugin>
+
+				<!-- NAR Maven plugin - https://github.com/maven-nar/nar-maven-plugin -->
+				<plugin>
+					<groupId>${nar.groupId}</groupId>
+					<artifactId>nar-maven-plugin</artifactId>
+					<version>${nar.version</version>
 				</plugin>
 
 				<!-- Eclipse-specific configuration
