@@ -7,7 +7,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>1.154</version>
+	<version>1.155-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -194,11 +194,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			</dependency>
 
 			<!-- ImageJ - https://github.com/imagej/imagej -->
-			<dependency>
-				<groupId>${imagej.groupId}</groupId>
-				<artifactId>ij-core</artifactId>
-				<version>${imagej.version}</version>
-			</dependency>
 			<dependency>
 				<groupId>${imagej.groupId}</groupId>
 				<artifactId>ij-app</artifactId>
