@@ -138,7 +138,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			<dependency>
 				<groupId>${scijava-common.groupId}</groupId>
 				<artifactId>scijava-common</artifactId>
-				<version>${scijava-common.version></version>
+				<version>${scijava-common.version}</version>
 			</dependency>
 
 			<!-- ImgLib2 - https://github.com/imglib/imglib -->
