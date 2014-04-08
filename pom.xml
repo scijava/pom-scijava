@@ -401,6 +401,11 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			<!-- Bio-Formats - https://github.com/openmicroscopy/bioformats -->
 			<dependency>
 				<groupId>${bio-formats.groupId}</groupId>
+				<artifactId>bio-formats_plugins</artifactId>
+				<version>${bio-formats.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${bio-formats.groupId}</groupId>
 				<artifactId>formats-api</artifactId>
 				<version>${bio-formats.version}</version>
 				<exclusions>
@@ -413,6 +418,21 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			<dependency>
 				<groupId>${bio-formats.groupId}</groupId>
 				<artifactId>formats-bsd</artifactId>
+				<version>${bio-formats.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${bio-formats.groupId}</groupId>
+				<artifactId>formats-common</artifactId>
+				<version>${bio-formats.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${bio-formats.groupId}</groupId>
+				<artifactId>formats-gpl</artifactId>
+				<version>${bio-formats.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${bio-formats.groupId}</groupId>
+				<artifactId>ome-xml</artifactId>
 				<version>${bio-formats.version}</version>
 			</dependency>
 
