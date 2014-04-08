@@ -377,7 +377,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<version>${scifio.version}</version>
 			</dependency>
 
-			<!-- SCIFIO-OME-XMl - https://github.com/scifio/scifio-ome-xml -->
+			<!-- SCIFIO-OME-XML - https://github.com/scifio/scifio-ome-xml -->
 			<dependency>
 				<groupId>${scifio.groupId}</groupId>
 				<artifactId>scifio-ome-xml</artifactId>
