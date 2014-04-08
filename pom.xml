@@ -345,7 +345,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			<!-- ImageJ 1.x - https://github.com/fiji/ImageJA -->
 			<dependency>
 				<groupId>${imagej.groupId}</groupId>
-				<artifactId>imagej1</artifactId>
+				<artifactId>ij</artifactId>
 				<version>${imagej1.version}</version>
 			</dependency>
 
