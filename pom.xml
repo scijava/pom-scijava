@@ -905,21 +905,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<maven>2.2.1</maven>
 	</prerequisites>
 
-	<!-- The following configuration enables access to plugins
-	     from a number of useful third-party Maven repositories.
-	     It is temporary, until we can get all relevant plugins
-	     deployed to the Maven central repository. -->
-	<pluginRepositories>
-		<!-- cppwrap-maven-plugin, maven-graph-plugin -->
-		<pluginRepository>
-			<id>imagej.public</id>
-			<url>http://maven.imagej.net/content/groups/public</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</pluginRepository>
-	</pluginRepositories>
-
 	<profiles>
 		<!-- Build test artifact when tests are present. -->
 		<profile>
