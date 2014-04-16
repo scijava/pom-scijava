@@ -51,6 +51,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		</developer>
 	</developers>
 
+	<!-- LIVE PROPERTIES START -->
 	<properties>
 		<!-- If two artifacts on the classpath use two different versions of the
 		     same dependency, behavior is inconsistent at best, and often broken.
@@ -128,6 +129,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- NB: Override argLine property for extra maven-surefire-plugin args. -->
 		<argLine />
 	</properties>
+	<!-- LIVE PROPERTIES END -->
 
 	<dependencyManagement>
 		<dependencies>
