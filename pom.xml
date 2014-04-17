@@ -116,7 +116,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 		<!-- SciJava Maven Plugin - https://github.com/scijava/scijava-maven-plugin -->
 		<scijava-maven-plugin.groupId>org.scijava</scijava-maven-plugin.groupId>
-		<scijava-maven-plugin.version>0.1.0</scijava-maven-plugin.version>
+		<scijava-maven-plugin.version>0.1.1</scijava-maven-plugin.version>
 
 
 		<!-- ImageJ Maven Plugin - https://github.com/imagej/imagej-maven-plugin -->
@@ -507,22 +507,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 						<phase>install</phase>
 						<goals>
 							<goal>copy-jars</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-
-			<!-- Set the 'rootdir' property to the top-level directory -->
-			<plugin>
-				<groupId>${scijava-maven-plugin.groupId}</groupId>
-				<artifactId>scijava-maven-plugin</artifactId>
-				<version>${scijava-maven-plugin.version}</version>
-				<executions>
-					<execution>
-						<id>set-rootdir</id>
-						<phase>validate</phase>
-						<goals>
-							<goal>set-rootdir</goal>
 						</goals>
 					</execution>
 				</executions>
