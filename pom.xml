@@ -515,7 +515,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			<!-- Set the 'rootdir' property to the top-level directory -->
 			<plugin>
 				<groupId>${scijava-maven-plugin.groupId}</groupId>
-				<artifactId>imagej-maven-plugin</artifactId>
+				<artifactId>scijava-maven-plugin</artifactId>
 				<version>${scijava-maven-plugin.version}</version>
 				<executions>
 					<execution>
