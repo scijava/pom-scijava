@@ -51,6 +51,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		</developer>
 	</developers>
 
+	<!-- LIVE PROPERTIES START -->
 	<properties>
 		<!-- If two artifacts on the classpath use two different versions of the
 		     same dependency, behavior is inconsistent at best, and often broken.
@@ -128,6 +129,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- NB: Override argLine property for extra maven-surefire-plugin args. -->
 		<argLine />
 	</properties>
+	<!-- LIVE PROPERTIES END -->
 
 	<dependencyManagement>
 		<dependencies>
@@ -906,6 +908,75 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 	</prerequisites>
 
 	<profiles>
+		<!-- These developer profiles make it easy to pin to SNAPSHOT versions.
+		     Add an empty dev.<organization> file to the relevant component,
+		     or globally in your ~/.scijava directory, and dependencies will
+		     automatically update! You may also need to refresh your IDE;
+		     e.g., in Eclipse: right click, Maven > Update Project... -->
+		<profile>
+			<id>dev.imagej</id>
+			<activation>
+				<file>
+					<exists>${user.dir}/.scijava/dev.imagej</exists>
+				</file>
+			</activation>
+			<properties>
+				<imagej.version>2.0.0-SNAPSHOT</imagej.version>
+				<ij1-patcher.version>0.3.2-SNAPSHOT</ij1-patcher.version>
+				<imagej-launcher.version>2.0.4-SNAPSHOT</imagej-launcher.version>
+				<minimaven.version>1.0.3-SNAPSHOT</minimaven.version>
+			</properties>
+		</profile>
+		<profile>
+			<id>dev.imglib2</id>
+			<activation>
+				<file>
+					<exists>${user.dir}/.scijava/dev.imglib2</exists>
+				</file>
+			</activation>
+			<properties>
+				<imglib2.version>2.0.0-SNAPSHOT</imglib2.version>
+				<imglib2-ij.version>2.0.0-SNAPSHOT</imglib2-ij.version>
+				<imglib2-scripting.version>2.0.0-SNAPSHOT</imglib2-scripting.version>
+			</properties>
+		</profile>
+		<profile>
+			<id>dev.ome</id>
+			<activation>
+				<file>
+					<exists>${user.dir}/.scijava/dev.ome</exists>
+				</file>
+			</activation>
+			<properties>
+				<bio-formats.version>5.0.2-SNAPSHOT</bio-formats.version>
+			</properties>
+		</profile>
+		<profile>
+			<id>dev.scijava</id>
+			<activation>
+				<file>
+					<exists>${user.dir}/.scijava/dev.scijava</exists>
+				</file>
+			</activation>
+			<properties>
+				<scijava-common.version>2.14.1-SNAPSHOT</scijava-common.version>
+			</properties>
+		</profile>
+		<profile>
+			<id>dev.scifio</id>
+			<activation>
+				<file>
+					<exists>${user.dir}/.scijava/dev.scifio</exists>
+				</file>
+			</activation>
+			<properties>
+				<scifio-ome-xml.version>0.7.1-SNAPSHOT</scifio-ome-xml.version>
+				<scifio.version>0.10.3-SNAPSHOT</scifio.version>
+				<scifio-bf-compat.version>1.6.2-SNAPSHOT</scifio-bf-compat.version>
+				<scifio-lifesci.version>0.4.1-SNAPSHOT</scifio-lifesci.version>
+			</properties>
+		</profile>
+
 		<!-- Build test artifact when tests are present. -->
 		<profile>
 			<id>test-jar</id>
