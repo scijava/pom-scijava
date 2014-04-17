@@ -76,6 +76,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- ImageJ Launcher - https://github.com/imagej/imagej-launcher -->
 		<imagej-launcher.version>2.0.3</imagej-launcher.version>
 
+		<!-- ImageJ OPS - https://github.com/imagej/imagej-ops -->
+		<imagej-ops.version>0.1.0</imagej-ops.version>
+
 		<!-- ImgLib2 - https://github.com/imglib/imglib -->
 		<imglib2.groupId>net.imglib2</imglib2.groupId>
 		<imglib2.version>2.0.0-beta-25</imglib2.version>
@@ -361,6 +364,13 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>${imagej.groupId}</groupId>
 				<artifactId>imagej-launcher</artifactId>
 				<version>${imagej-launcher.version}</version>
+			</dependency>
+
+			<!-- ImageJ OPS - https://github.com/imagej/imagej-ops -->
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-ops</artifactId>
+				<version>${imagej-ops.version}</version>
 			</dependency>
 
 			<!-- MiniMaven - https://github.com/imagej/minimaven -->
