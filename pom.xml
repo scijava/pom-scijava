@@ -939,7 +939,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			<id>dev.imagej</id>
 			<activation>
 				<file>
-					<exists>${user.dir}/.scijava/dev.imagej</exists>
+					<exists>${user.home}/.scijava/dev.imagej</exists>
 				</file>
 			</activation>
 			<properties>
@@ -954,7 +954,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			<id>dev.imglib2</id>
 			<activation>
 				<file>
-					<exists>${user.dir}/.scijava/dev.imglib2</exists>
+					<exists>${user.home}/.scijava/dev.imglib2</exists>
 				</file>
 			</activation>
 			<properties>
@@ -967,7 +967,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			<id>dev.ome</id>
 			<activation>
 				<file>
-					<exists>${user.dir}/.scijava/dev.ome</exists>
+					<exists>${user.home}/.scijava/dev.ome</exists>
 				</file>
 			</activation>
 			<properties>
@@ -978,7 +978,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			<id>dev.scijava</id>
 			<activation>
 				<file>
-					<exists>${user.dir}/.scijava/dev.scijava</exists>
+					<exists>${user.home}/.scijava/dev.scijava</exists>
 				</file>
 			</activation>
 			<properties>
@@ -989,7 +989,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			<id>dev.scifio</id>
 			<activation>
 				<file>
-					<exists>${user.dir}/.scijava/dev.scifio</exists>
+					<exists>${user.home}/.scijava/dev.scifio</exists>
 				</file>
 			</activation>
 			<properties>
