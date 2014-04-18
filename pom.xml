@@ -762,7 +762,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<plugin>
 					<groupId>${nar.groupId}</groupId>
 					<artifactId>nar-maven-plugin</artifactId>
-					<version>${nar.version</version>
+					<version>${nar.version}</version>
 				</plugin>
 
 				<!-- Eclipse-specific configuration
