@@ -93,7 +93,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<nar.groupId>com.github.maven-nar</nar.groupId>
 		<nar.version>3.0.0</nar.version>
 
-		<!-- SCIFIO-OME-XMl - https://github.com/scifio/scifio-ome-xml -->
+		<!-- SCIFIO-OME-XML - https://github.com/scifio/scifio-ome-xml -->
 		<scifio-ome-xml.version>0.7.0</scifio-ome-xml.version>
 
 		<!-- SCIFIO - https://github.com/scifio/scifio -->
