@@ -4,7 +4,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>1.157</version>
+	<version>1.158-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -926,11 +926,11 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				</file>
 			</activation>
 			<properties>
-				<imagej.version>2.0.0-beta-7.9</imagej.version>
-				<ij1-patcher.version>0.3.1</ij1-patcher.version>
-				<imagej-launcher.version>2.0.3</imagej-launcher.version>
+				<imagej.version>2.0.0-SNAPSHOT</imagej.version>
+				<ij1-patcher.version>0.3.2-SNAPSHOT</ij1-patcher.version>
+				<imagej-launcher.version>2.0.4-SNAPSHOT</imagej-launcher.version>
 				<imagej-ops.version>0.1.1-SNAPSHOT</imagej-ops.version>
-				<minimaven.version>1.0.2</minimaven.version>
+				<minimaven.version>1.0.3-SNAPSHOT</minimaven.version>
 			</properties>
 		</profile>
 		<profile>
@@ -941,7 +941,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				</file>
 			</activation>
 			<properties>
-				<imglib2.version>2.0.0-beta-26</imglib2.version>
+				<imglib2.version>2.0.0-SNAPSHOT</imglib2.version>
 				<imglib2-ij.version>2.0.0-SNAPSHOT</imglib2-ij.version>
 				<imglib2-scripting.version>2.0.0-SNAPSHOT</imglib2-scripting.version>
 			</properties>
@@ -965,7 +965,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				</file>
 			</activation>
 			<properties>
-				<scijava-common.version>2.14.0</scijava-common.version>
+				<scijava-common.version>2.14.1-SNAPSHOT</scijava-common.version>
 			</properties>
 		</profile>
 		<profile>
@@ -976,10 +976,10 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				</file>
 			</activation>
 			<properties>
-				<scifio-ome-xml.version>0.7.0</scifio-ome-xml.version>
-				<scifio.version>0.10.2</scifio.version>
-				<scifio-bf-compat.version>1.6.1</scifio-bf-compat.version>
-				<scifio-lifesci.version>0.4.0</scifio-lifesci.version>
+				<scifio-ome-xml.version>0.7.1-SNAPSHOT</scifio-ome-xml.version>
+				<scifio.version>0.10.3-SNAPSHOT</scifio.version>
+				<scifio-bf-compat.version>1.6.2-SNAPSHOT</scifio-bf-compat.version>
+				<scifio-lifesci.version>0.4.1-SNAPSHOT</scifio-lifesci.version>
 			</properties>
 		</profile>
 
