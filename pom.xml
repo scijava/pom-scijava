@@ -160,6 +160,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scijava-maven-plugin.groupId>org.scijava</scijava-maven-plugin.groupId>
 		<scijava-maven-plugin.version>0.1.1</scijava-maven-plugin.version>
 
+		<!-- Swing Checkbox Tree - https://github.com/scijava/swing-checkbox-tree -->
+		<swing-checkbox-tree.version>1.0.0</swing-checkbox-tree.version>
+
 		<!-- JUnit Benchmarks - https://github.com/scijava/junit-benchmarks -->
 		<junit-benchmarks.groupId>org.scijava</junit-benchmarks.groupId>
 		<junit-benchmarks.version>0.7.3-scijava</junit-benchmarks.version>
