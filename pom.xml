@@ -99,15 +99,13 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		     When possible, we advise using the relevant groupId and version
 		     properties for your dependencies rather than hardcoding them. -->
 
-		<!-- Bio-Formats - https://github.com/openmicroscopy/bioformats -->
-		<bio-formats.groupId>ome</bio-formats.groupId>
-		<bio-formats.version>5.0.1</bio-formats.version>
+		<!-- ImageJ - https://github.com/imagej -->
 
 		<!-- ImageJ - https://github.com/imagej/imagej -->
 		<imagej.groupId>net.imagej</imagej.groupId>
 		<imagej.version>2.0.0-beta-7.9</imagej.version>
 
-		<!-- ImageJ 1.x - https://github.com/fiji/ImageJA -->
+		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
 		<imagej1.version>1.48u</imagej1.version>
 
 		<!-- ImageJ 1.x patcher - https://github.com/imagej/ij1-patcher -->
@@ -119,25 +117,25 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- ImageJ Launcher - https://github.com/imagej/imagej-launcher -->
 		<imagej-launcher.version>2.0.3</imagej-launcher.version>
 
+		<!-- ImageJ Maven Plugin - https://github.com/imagej/imagej-maven-plugin -->
+		<imagej-maven-plugin.version>0.4.1</imagej-maven-plugin.version>
+
 		<!-- ImageJ OPS - https://github.com/imagej/imagej-ops -->
 		<imagej-ops.version>0.2.0</imagej-ops.version>
+
+		<!-- ImgLib2 - https://github.com/imglib -->
 
 		<!-- ImgLib2 - https://github.com/imglib/imglib -->
 		<imglib2.groupId>net.imglib2</imglib2.groupId>
 		<imglib2.version>2.0.0-beta-26</imglib2.version>
+
+		<!-- ImgLib2 IJ - https://github.com/imglib/imglib-ij -->
 		<imglib2-ij.version>2.0.0-beta-26</imglib2-ij.version>
+
+		<!-- ImgLib2 Scripting - https://github.com/imglib/imglib-scripting -->
 		<imglib2-scripting.version>2.0.0-beta-24</imglib2-scripting.version>
 
-		<!-- MiniMaven - https://github.com/scijava/minimaven -->
-		<minimaven.groupId>org.scijava</minimaven.groupId>
-		<minimaven.version>1.0.3</minimaven.version>
-
-		<!-- NAR Maven plugin - https://github.com/maven-nar/nar-maven-plugin -->
-		<nar.groupId>com.github.maven-nar</nar.groupId>
-		<nar.version>3.0.0</nar.version>
-
-		<!-- SCIFIO-OME-XML - https://github.com/scifio/scifio-ome-xml -->
-		<scifio-ome-xml.version>0.7.0</scifio-ome-xml.version>
+		<!-- SCIFIO - https://github.com/scifio -->
 
 		<!-- SCIFIO - https://github.com/scifio/scifio -->
 		<scifio.groupId>io.scif</scifio.groupId>
@@ -149,6 +147,11 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- SCIFIO-LifeSci - https://github.com/scifio/scifio-lifesci -->
 		<scifio-lifesci.version>0.4.0</scifio-lifesci.version>
 
+		<!-- SCIFIO-OME-XML - https://github.com/scifio/scifio-ome-xml -->
+		<scifio-ome-xml.version>0.7.0</scifio-ome-xml.version>
+
+		<!-- SciJava - https://github.com/scijava -->
+
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
 		<scijava-common.groupId>org.scijava</scijava-common.groupId>
 		<scijava-common.version>2.15.0</scijava-common.version>
@@ -157,16 +160,32 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scijava-maven-plugin.groupId>org.scijava</scijava-maven-plugin.groupId>
 		<scijava-maven-plugin.version>0.1.1</scijava-maven-plugin.version>
 
-		<!-- ImageJ Maven Plugin - https://github.com/imagej/imagej-maven-plugin -->
-		<imagej-maven-plugin.version>0.4.1</imagej-maven-plugin.version>
-
 		<!-- JUnit Benchmarks - https://github.com/scijava/junit-benchmarks -->
 		<junit-benchmarks.groupId>org.scijava</junit-benchmarks.groupId>
 		<junit-benchmarks.version>0.7.3-scijava</junit-benchmarks.version>
 
+		<!-- MiniMaven - https://github.com/scijava/minimaven -->
+		<minimaven.groupId>org.scijava</minimaven.groupId>
+		<minimaven.version>1.0.3</minimaven.version>
+
+		<!-- Open Microscopy Environment - https://github.com/openmicroscopy -->
+
+		<!-- Bio-Formats - https://github.com/openmicroscopy/bioformats -->
+		<bio-formats.groupId>ome</bio-formats.groupId>
+		<bio-formats.version>5.0.1</bio-formats.version>
+
+		<!-- NAR Maven plugin - https://github.com/maven-nar -->
+
+		<!-- NAR Maven plugin - https://github.com/maven-nar/nar-maven-plugin -->
+		<nar.groupId>com.github.maven-nar</nar.groupId>
+		<nar.version>3.0.0</nar.version>
+
 		<!-- Other common project dependencies -->
+
 		<jetty.version>8.0.0.M1</jetty.version>
 		<junit.version>4.8.1</junit.version>
+
+		<!-- Additional configuration -->
 
 		<!-- NB: Avoid platform encoding warning when copying resources. -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
