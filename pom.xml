@@ -153,10 +153,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scijava-common.groupId>org.scijava</scijava-common.groupId>
 		<scijava-common.version>2.15.0</scijava-common.version>
 
-		<!-- Other common project dependencies -->
-		<jetty.version>8.0.0.M1</jetty.version>
-		<junit.version>4.8.1</junit.version>
-
 		<!-- SciJava Maven Plugin - https://github.com/scijava/scijava-maven-plugin -->
 		<scijava-maven-plugin.groupId>org.scijava</scijava-maven-plugin.groupId>
 		<scijava-maven-plugin.version>0.1.1</scijava-maven-plugin.version>
@@ -167,6 +163,10 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- JUnit Benchmarks - https://github.com/scijava/junit-benchmarks -->
 		<junit-benchmarks.groupId>org.scijava</junit-benchmarks.groupId>
 		<junit-benchmarks.version>0.7.3-scijava</junit-benchmarks.version>
+
+		<!-- Other common project dependencies -->
+		<jetty.version>8.0.0.M1</jetty.version>
+		<junit.version>4.8.1</junit.version>
 
 		<!-- NB: Avoid platform encoding warning when copying resources. -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
