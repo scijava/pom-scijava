@@ -1037,10 +1037,10 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				</file>
 			</activation>
 			<properties>
-				<scifio-ome-xml.version>0.7.1-SNAPSHOT</scifio-ome-xml.version>
 				<scifio.version>0.10.3-SNAPSHOT</scifio.version>
 				<scifio-bf-compat.version>1.6.2-SNAPSHOT</scifio-bf-compat.version>
 				<scifio-lifesci.version>0.4.1-SNAPSHOT</scifio-lifesci.version>
+				<scifio-ome-xml.version>0.7.1-SNAPSHOT</scifio-ome-xml.version>
 			</properties>
 		</profile>
 
