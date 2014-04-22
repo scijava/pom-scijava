@@ -112,7 +112,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<ij1-patcher.version>0.3.1</ij1-patcher.version>
 
 		<!-- ImageJ Common - https://github.com/imagej/imagej-common -->
-		<imagej-common.version>0.1.0</imagej-common.version>
+		<imagej-common.version>0.2.0</imagej-common.version>
 
 		<!-- ImageJ Launcher - https://github.com/imagej/imagej-launcher -->
 		<imagej-launcher.version>2.0.3</imagej-launcher.version>
@@ -1041,7 +1041,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			<properties>
 				<imagej.version>2.0.0-SNAPSHOT</imagej.version>
 				<ij1-patcher.version>0.3.2-SNAPSHOT</ij1-patcher.version>
-				<imagej-common.version>0.1.1-SNAPSHOT</imagej-common.version>
+				<imagej-common.version>0.2.1-SNAPSHOT</imagej-common.version>
 				<imagej-launcher.version>2.0.4-SNAPSHOT</imagej-launcher.version>
 				<imagej-maven-plugin.version>0.4.2-SNAPSHOT</imagej-maven-plugin.version>
 				<imagej-ops.version>0.2.1-SNAPSHOT</imagej-ops.version>
