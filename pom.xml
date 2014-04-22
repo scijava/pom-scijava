@@ -160,6 +160,12 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scijava-maven-plugin.groupId>org.scijava</scijava-maven-plugin.groupId>
 		<scijava-maven-plugin.version>0.1.1</scijava-maven-plugin.version>
 
+		<!-- SciJava UI: AWT - https://github.com/scijava/scijava-ui-awt -->
+		<scijava-ui-awt.version>0.1.0</scijava-ui-awt.version>
+
+		<!-- SciJava UI: Swing - https://github.com/scijava/scijava-ui-swing -->
+		<scijava-ui-swing.version>0.1.0</scijava-ui-swing.version>
+
 		<!-- Swing Checkbox Tree - https://github.com/scijava/swing-checkbox-tree -->
 		<swing-checkbox-tree.version>1.0.0</swing-checkbox-tree.version>
 
@@ -214,6 +220,20 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<artifactId>scijava-common</artifactId>
 				<version>${scijava-common.version}</version>
 				<classifier>tests</classifier>
+			</dependency>
+
+			<!-- SciJava UI: AWT - https://github.com/scijava/scijava-ui-awt -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-ui-awt</artifactId>
+				<version>${scijava-ui-awt.version}</version>
+			</dependency>
+
+			<!-- SciJava UI: Swing - https://github.com/scijava/scijava-ui-swing -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-ui-swing</artifactId>
+				<version>${scijava-ui-swing.version}</version>
 			</dependency>
 
 			<!-- Swing Checkbox Tree - https://github.com/scijava/swing-checkbox-tree -->
@@ -1036,6 +1056,8 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			<properties>
 				<scijava-common.version>2.15.1-SNAPSHOT</scijava-common.version>
 				<scijava-maven-plugin.version>0.1.2-SNAPSHOT</scijava-maven-plugin.version>
+				<scijava-ui-awt.version>0.1.1-SNAPSHOT</scijava-ui-awt.version>
+				<scijava-ui-swing.version>0.1.0-SNAPSHOT</scijava-ui-swing.version>
 				<swing-checkbox-tree.version>1.0.1-SNAPSHOT</swing-checkbox-tree.version>
 			</properties>
 		</profile>
