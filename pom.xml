@@ -216,6 +216,13 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<classifier>tests</classifier>
 			</dependency>
 
+			<!-- Swing Checkbox Tree - https://github.com/scijava/swing-checkbox-tree -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>swing-checkbox-tree</artifactId>
+				<version>${swing-checkbox-tree.version}</version>
+			</dependency>
+
 			<!-- ImgLib2 - https://github.com/imglib/imglib -->
 			<dependency>
 				<groupId>${imglib2.groupId}</groupId>
