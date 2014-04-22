@@ -1103,7 +1103,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<scijava-common.version>2.16.1-SNAPSHOT</scijava-common.version>
 				<scijava-maven-plugin.version>0.1.2-SNAPSHOT</scijava-maven-plugin.version>
 				<scijava-ui-awt.version>0.1.1-SNAPSHOT</scijava-ui-awt.version>
-				<scijava-ui-swing.version>0.1.0-SNAPSHOT</scijava-ui-swing.version>
+				<scijava-ui-swing.version>0.1.1-SNAPSHOT</scijava-ui-swing.version>
 				<swing-checkbox-tree.version>1.0.1-SNAPSHOT</swing-checkbox-tree.version>
 			</properties>
 		</profile>
