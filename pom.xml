@@ -199,6 +199,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 		<jetty.version>8.0.0.M1</jetty.version>
 		<junit.version>4.8.1</junit.version>
+		<miglayout.version>3.7.3.1</miglayout.version>
 
 		<!-- Additional configuration -->
 
@@ -567,6 +568,14 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>${bio-formats.groupId}</groupId>
 				<artifactId>ome-xml</artifactId>
 				<version>${bio-formats.version}</version>
+			</dependency>
+
+			<!-- MigLayout - http://www.miglayout.com/ -->
+			<dependency>
+				<groupId>com.miglayout</groupId>
+				<artifactId>miglayout</artifactId>
+				<version>${miglayout.version}</version>
+				<classifier>swing</classifier>
 			</dependency>
 
 			<!-- JUnit - http://junit.org/ -->
