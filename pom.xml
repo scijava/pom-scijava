@@ -991,12 +991,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 					<exists>${user.home}/.scijava/dev.imagej</exists>
 				</file>
 			</activation>
-			<repositories>
-				<repository>
-					<id>imagej.public</id>
-					<url>http://maven.imagej.net/content/groups/public</url>
-				</repository>
-			</repositories>
 			<properties>
 				<imagej.version>2.0.0-SNAPSHOT</imagej.version>
 				<ij1-patcher.version>0.3.2-SNAPSHOT</ij1-patcher.version>
@@ -1008,6 +1002,21 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<imagej-ui-swing.version>0.1.1-SNAPSHOT</imagej-ui-swing.version>
 				<imagej-updater.version>0.1.1-SNAPSHOT</imagej-updater.version>
 			</properties>
+			<repositories>
+				<repository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
 		</profile>
 		<profile>
 			<id>dev.imglib2</id>
@@ -1016,17 +1025,26 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 					<exists>${user.home}/.scijava/dev.imglib2</exists>
 				</file>
 			</activation>
+			<properties>
+				<imglib2.version>2.0.0-SNAPSHOT</imglib2.version>
+				<imglib2-ij.version>2.0.0-SNAPSHOT</imglib2-ij.version>
+				<imglib2-scripting.version>2.0.0-SNAPSHOT</imglib2-scripting.version>
+			</properties>
 			<repositories>
 				<repository>
 					<id>imagej.public</id>
 					<url>http://maven.imagej.net/content/groups/public</url>
 				</repository>
 			</repositories>
-			<properties>
-				<imglib2.version>2.0.0-SNAPSHOT</imglib2.version>
-				<imglib2-ij.version>2.0.0-SNAPSHOT</imglib2-ij.version>
-				<imglib2-scripting.version>2.0.0-SNAPSHOT</imglib2-scripting.version>
-			</properties>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
 		</profile>
 		<profile>
 			<id>dev.ome</id>
@@ -1035,15 +1053,24 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 					<exists>${user.home}/.scijava/dev.ome</exists>
 				</file>
 			</activation>
+			<properties>
+				<bio-formats.version>5.0.2-SNAPSHOT</bio-formats.version>
+			</properties>
 			<repositories>
 				<repository>
 					<id>imagej.public</id>
 					<url>http://maven.imagej.net/content/groups/public</url>
 				</repository>
 			</repositories>
-			<properties>
-				<bio-formats.version>5.0.2-SNAPSHOT</bio-formats.version>
-			</properties>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
 		</profile>
 		<profile>
 			<id>dev.scijava</id>
@@ -1052,12 +1079,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 					<exists>${user.home}/.scijava/dev.scijava</exists>
 				</file>
 			</activation>
-			<repositories>
-				<repository>
-					<id>imagej.public</id>
-					<url>http://maven.imagej.net/content/groups/public</url>
-				</repository>
-			</repositories>
 			<properties>
 				<minimaven.version>1.0.4-SNAPSHOT</minimaven.version>
 				<scijava-common.version>2.17.1-SNAPSHOT</scijava-common.version>
@@ -1066,6 +1087,21 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<scijava-ui-swing.version>0.1.1-SNAPSHOT</scijava-ui-swing.version>
 				<swing-checkbox-tree.version>1.0.1-SNAPSHOT</swing-checkbox-tree.version>
 			</properties>
+			<repositories>
+				<repository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
 		</profile>
 		<profile>
 			<id>dev.scifio</id>
@@ -1074,18 +1110,27 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 					<exists>${user.home}/.scijava/dev.scifio</exists>
 				</file>
 			</activation>
-			<repositories>
-				<repository>
-					<id>imagej.public</id>
-					<url>http://maven.imagej.net/content/groups/public</url>
-				</repository>
-			</repositories>
 			<properties>
 				<scifio.version>0.10.3-SNAPSHOT</scifio.version>
 				<scifio-bf-compat.version>1.6.2-SNAPSHOT</scifio-bf-compat.version>
 				<scifio-lifesci.version>0.4.1-SNAPSHOT</scifio-lifesci.version>
 				<scifio-ome-xml.version>0.7.1-SNAPSHOT</scifio-ome-xml.version>
 			</properties>
+			<repositories>
+				<repository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
 		</profile>
 
 		<!-- Build test artifact when tests are present. -->
