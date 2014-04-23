@@ -129,6 +129,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- ImageJ UI: Swing - https://github.com/imagej/imagej-ui-swing -->
 		<imagej-ui-swing.version>0.1.0</imagej-ui-swing.version>
 
+		<!-- ImageJ Updater - https://github.com/imagej/imagej-updater -->
+		<imagej-updater.version>0.1.0</imagej-updater.version>
+
 		<!-- ImgLib2 - https://github.com/imglib -->
 
 		<!-- ImgLib2 - https://github.com/imglib/imglib -->
@@ -321,11 +324,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			</dependency>
 			<dependency>
 				<groupId>${imagej.groupId}</groupId>
-				<artifactId>ij-updater-core</artifactId>
-				<version>${imagej.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>${imagej.groupId}</groupId>
 				<artifactId>ij-commands</artifactId>
 				<version>${imagej.version}</version>
 			</dependency>
@@ -433,6 +431,20 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<artifactId>imagej-ui-swing</artifactId>
 				<version>${imagej-ui-swing.version}</version>
 			</dependency>
+
+			<!-- ImageJ Updater - https://github.com/imagej/imagej-updater -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-updater</artifactId>
+				<version>${imagej-updater.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-updater</artifactId>
+				<version>${imagej-updater.version}</version>
+				<classifier>tests</classifier>
+			</dependency>
+
 
 			<!-- MiniMaven - https://github.com/imagej/minimaven -->
 			<dependency>
@@ -994,6 +1006,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<imagej-ops.version>0.2.1-SNAPSHOT</imagej-ops.version>
 				<imagej-ui-awt.version>0.1.1-SNAPSHOT</imagej-ui-awt.version>
 				<imagej-ui-swing.version>0.1.1-SNAPSHOT</imagej-ui-swing.version>
+				<imagej-updater.version>0.1.1-SNAPSHOT</imagej-updater.version>
 			</properties>
 		</profile>
 		<profile>
