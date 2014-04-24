@@ -123,6 +123,18 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- ImageJ OPS - https://github.com/imagej/imagej-ops -->
 		<imagej-ops.version>0.2.0</imagej-ops.version>
 
+		<!-- ImageJ Plugins: Commands - https://github.com/imagej/imagej-plugins-commands -->
+		<imagej-plugins-commands.version>0.1.0</imagej-plugins-commands.version>
+
+		<!-- ImageJ Plugins: Tools - https://github.com/imagej/imagej-plugins-commands -->
+		<imagej-plugins-tools.version>0.1.0</imagej-plugins-tools.version>
+
+		<!-- ImageJ Plugins: Uploader: SSH - https://github.com/imagej/imagej-plugins-uploader-ssh -->
+		<imagej-plugins-uploader-ssh.version>0.1.0</imagej-plugins-uploader-ssh.version>
+
+		<!-- ImageJ Plugins: Uploader: WebDAV - https://github.com/imagej/imagej-plugins-uploader-webdav -->
+		<imagej-plugins-uploader-webdav.version>0.1.0</imagej-plugins-uploader-webdav.version>
+
 		<!-- ImageJ UI: AWT - https://github.com/imagej/imagej-ui-awt -->
 		<imagej-ui-awt.version>0.1.0</imagej-ui-awt.version>
 
@@ -169,11 +181,41 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scijava-maven-plugin.groupId>org.scijava</scijava-maven-plugin.groupId>
 		<scijava-maven-plugin.version>0.1.1</scijava-maven-plugin.version>
 
+		<!-- SciJava Plugins: Commands - https://github.com/scijava/scijava-plugins-commands -->
+		<scijava-plugins-commands.version>0.1.0</scijava-plugins-commands.version>
+
+		<!-- SciJava Plugins: Platforms - https://github.com/scijava/scijava-plugins-platforms -->
+		<scijava-plugins-platforms.version>0.1.0</scijava-plugins-platforms.version>
+
+		<!-- SciJava Plugins: Text: Markdown - https://github.com/scijava/scijava-plugins-text-markdown -->
+		<scijava-plugins-text-markdown.version>0.1.0</scijava-plugins-text-markdown.version>
+
+		<!-- SciJava Plugins: Text: Plain - https://github.com/scijava/scijava-plugins-text-plain -->
+		<scijava-plugins-text-plain.version>0.1.0</scijava-plugins-text-plain.version>
+
 		<!-- SciJava UI: AWT - https://github.com/scijava/scijava-ui-awt -->
 		<scijava-ui-awt.version>0.1.0</scijava-ui-awt.version>
 
 		<!-- SciJava UI: Swing - https://github.com/scijava/scijava-ui-swing -->
 		<scijava-ui-swing.version>0.1.0</scijava-ui-swing.version>
+
+		<!-- Scripting: Beanshell - https://github.ocm/scijava/scripting-beanshell -->
+		<scripting-beanshell.version>0.1.0</scripting-beanshell.version>
+
+		<!-- Scripting: Clojure - https://github.ocm/scijava/scripting-clojure -->
+		<scripting-clojure.version>0.1.0</scripting-clojure.version>
+
+		<!-- Scripting: Java - https://github.ocm/scijava/scripting-java -->
+		<scripting-java.version>0.1.0</scripting-java.version>
+
+		<!-- Scripting: Javascript - https://github.ocm/scijava/scripting-javascript -->
+		<scripting-javascript.version>0.1.0</scripting-javascript.version>
+
+		<!-- Scripting: JRuby - https://github.ocm/scijava/scripting-jruby -->
+		<scripting-jruby.version>0.1.0</scripting-jruby.version>
+
+		<!-- Scripting: Jython - https://github.ocm/scijava/scripting-jython -->
+		<scripting-jython.version>0.1.0</scripting-jython.version>
 
 		<!-- Swing Checkbox Tree - https://github.com/scijava/swing-checkbox-tree -->
 		<swing-checkbox-tree.version>1.0.0</swing-checkbox-tree.version>
@@ -233,6 +275,34 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<classifier>tests</classifier>
 			</dependency>
 
+			<!-- SciJava Plugins: Commands - https://github.com/scijava/scijava-plugins-commands -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-plugins-commands</artifactId>
+				<version>${scijava-plugins-commands.version}</version>
+			</dependency>
+
+			<!-- SciJava Plugins: Platforms - https://github.com/scijava/scijava-plugins-platforms -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-plugins-platforms</artifactId>
+				<version>${scijava-plugins-platforms.version}</version>
+			</dependency>
+
+			<!-- SciJava Plugins: Text: Markdown - https://github.com/scijava/scijava-plugins-text-markdown -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-plugins-text-markdown</artifactId>
+				<version>${scijava-plugins-text-markdown.version}</version>
+			</dependency>
+
+			<!-- SciJava Plugins: Text: Plain - https://github.com/scijava/scijava-plugins-text-plain -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-plugins-text-plain</artifactId>
+				<version>${scijava-plugins-text-plain.version}</version>
+			</dependency>
+
 			<!-- SciJava UI: AWT - https://github.com/scijava/scijava-ui-awt -->
 			<dependency>
 				<groupId>org.scijava</groupId>
@@ -245,6 +315,48 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>org.scijava</groupId>
 				<artifactId>scijava-ui-swing</artifactId>
 				<version>${scijava-ui-swing.version}</version>
+			</dependency>
+
+			<!-- Scripting: Beanshell - https://github.ocm/scijava/scripting-beanshell -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scripting-beanshell</artifactId>
+				<version>${scripting-beanshell.version}</version>
+			</dependency>
+
+			<!-- Scripting: Clojure - https://github.ocm/scijava/scripting-clojure -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scripting-clojure</artifactId>
+				<version>${scripting-clojure.version}</version>
+			</dependency>
+
+			<!-- Scripting: Java - https://github.ocm/scijava/scripting-java -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scripting-java</artifactId>
+				<version>${scripting-java.version}</version>
+			</dependency>
+
+			<!-- Scripting: Javascript - https://github.ocm/scijava/scripting-javascript -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scripting-javascript</artifactId>
+				<version>${scripting-javascript.version}</version>
+			</dependency>
+
+			<!-- Scripting: JRuby - https://github.ocm/scijava/scripting-jruby -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scripting-jruby</artifactId>
+				<version>${scripting-jruby.version}</version>
+			</dependency>
+
+			<!-- Scripting: Jython - https://github.ocm/scijava/scripting-jython -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scripting-jython</artifactId>
+				<version>${scripting-jython.version}</version>
 			</dependency>
 
 			<!-- Swing Checkbox Tree - https://github.com/scijava/swing-checkbox-tree -->
@@ -416,6 +528,34 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>${imagej.groupId}</groupId>
 				<artifactId>imagej-ops</artifactId>
 				<version>${imagej-ops.version}</version>
+			</dependency>
+
+			<!-- ImageJ Plugins: Commands - https://github.com/imagej/imagej-plugins-commands -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-plugins-commands</artifactId>
+				<version>${imagej-plugins-commands.version}</version>
+			</dependency>
+
+			<!-- ImageJ Plugins: Tools - https://github.com/imagej/imagej-plugins-commands -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-plugins-tools</artifactId>
+				<version>${imagej-plugins-tools.version}</version>
+			</dependency>
+
+			<!-- ImageJ Plugins: Uploader: SSH - https://github.com/imagej/imagej-plugins-uploader-ssh -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-plugins-uploader-ssh</artifactId>
+				<version>${imagej-plugins-uploader-ssh.version}</version>
+			</dependency>
+
+			<!-- ImageJ Plugins: Uploader: WebDAV - https://github.com/imagej/imagej-plugins-uploader-webdav -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-plugins-uploader-webdav</artifactId>
+				<version>${imagej-plugins-uploader-webdav.version}</version>
 			</dependency>
 
 			<!-- ImageJ UI: AWT - https://github.com/imagej/imagej-ui-awt -->
@@ -998,6 +1138,10 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<imagej-launcher.version>2.0.4-SNAPSHOT</imagej-launcher.version>
 				<imagej-maven-plugin.version>0.4.2-SNAPSHOT</imagej-maven-plugin.version>
 				<imagej-ops.version>0.2.1-SNAPSHOT</imagej-ops.version>
+				<imagej-plugins-commands.version>0.1.1-SNAPSHOT</imagej-plugins-commands.version>
+				<imagej-plugins-tools.version>0.1.1-SNAPSHOT</imagej-plugins-tools.version>
+				<imagej-plugins-uploader-ssh.version>0.1.1-SNAPSHOT</imagej-plugins-uploader-ssh.version>
+				<imagej-plugins-uploader-webdav.version>0.1.1-SNAPSHOT</imagej-plugins-uploader-webdav.version>
 				<imagej-ui-awt.version>0.1.1-SNAPSHOT</imagej-ui-awt.version>
 				<imagej-ui-swing.version>0.1.1-SNAPSHOT</imagej-ui-swing.version>
 				<imagej-updater.version>0.1.1-SNAPSHOT</imagej-updater.version>
@@ -1083,8 +1227,18 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<minimaven.version>1.0.4-SNAPSHOT</minimaven.version>
 				<scijava-common.version>2.18.1-SNAPSHOT</scijava-common.version>
 				<scijava-maven-plugin.version>0.1.2-SNAPSHOT</scijava-maven-plugin.version>
+				<scijava-plugins-commands.version>0.1.1-SNAPSHOT</scijava-plugins-commands.version>
+				<scijava-plugins-platforms.version>0.1.1-SNAPSHOT</scijava-plugins-platforms.version>
+				<scijava-plugins-text-markdown.version>0.1.1-SNAPSHOT</scijava-plugins-text-markdown.version>
+				<scijava-plugins-text-plain.version>0.1.1-SNAPSHOT</scijava-plugins-text-plain.version>
 				<scijava-ui-awt.version>0.1.1-SNAPSHOT</scijava-ui-awt.version>
 				<scijava-ui-swing.version>0.1.1-SNAPSHOT</scijava-ui-swing.version>
+				<scripting-beanshell.version>0.1.1-SNAPSHOT</scripting-beanshell.version>
+				<scripting-clojure.version>0.1.1-SNAPSHOT</scripting-clojure.version>
+				<scripting-java.version>0.1.1-SNAPSHOT</scripting-java.version>
+				<scripting-javascript.version>0.1.1-SNAPSHOT</scripting-javascript.version>
+				<scripting-jruby.version>0.1.1-SNAPSHOT</scripting-jruby.version>
+				<scripting-jython.version>0.1.1-SNAPSHOT</scripting-jython.version>
 				<swing-checkbox-tree.version>1.0.1-SNAPSHOT</swing-checkbox-tree.version>
 			</properties>
 			<repositories>
