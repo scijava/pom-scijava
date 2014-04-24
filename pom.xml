@@ -429,12 +429,32 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			</dependency>
 			<dependency>
 				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-core</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-data</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
 				<artifactId>ij-legacy</artifactId>
 				<version>${imagej.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>${imagej.groupId}</groupId>
 				<artifactId>ij-options</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-ui</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-updater-core</artifactId>
 				<version>${imagej.version}</version>
 			</dependency>
 			<dependency>
@@ -489,12 +509,67 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			</dependency>
 			<dependency>
 				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-ui-awt</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-ui-pivot</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-ui-swing</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-ui-swt</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
 				<artifactId>ij-updater-ssh</artifactId>
 				<version>${imagej.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>${imagej.groupId}</groupId>
 				<artifactId>ij-updater-webdav</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-ui-common-awt</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-util-awt</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-ui-swing-commands</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-ui-swing-script-editor</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-ui-swing-tools</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-ui-swing-updater</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${imagej.groupId}</groupId>
+				<artifactId>ij-util-swing</artifactId>
 				<version>${imagej.version}</version>
 			</dependency>
 
