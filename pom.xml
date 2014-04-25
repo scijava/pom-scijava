@@ -1205,10 +1205,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 	<profiles>
 		<!-- These developer profiles make it easy to pin to SNAPSHOT versions.
-		     Add an empty dev.<organization> file to the relevant component,
-		     or globally in your ~/.scijava directory, and dependencies will
-		     automatically update! You may also need to refresh your IDE;
-		     e.g., in Eclipse: right click, Maven > Update Project... -->
+		     Add an empty dev.<organization> file in your ~/.scijava directory, and
+		     dependencies will automatically update! You may also need to refresh
+		     your IDE; e.g., in Eclipse: right click, Maven > Update Project... -->
 		<profile>
 			<id>dev.imagej</id>
 			<activation>
