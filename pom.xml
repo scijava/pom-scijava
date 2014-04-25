@@ -4,7 +4,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>1.168</version>
+	<version>1.169-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -1218,7 +1218,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			</activation>
 			<properties>
 				<imagej.version>2.0.0-SNAPSHOT</imagej.version>
-				<ij1-patcher.version>0.3.2-SNAPSHOT</ij1-patcher.version>
+				<ij1-patcher.version>0.3.3-SNAPSHOT</ij1-patcher.version>
 				<imagej-common.version>0.4.1-SNAPSHOT</imagej-common.version>
 				<imagej-launcher.version>2.0.4-SNAPSHOT</imagej-launcher.version>
 				<imagej-legacy.version>0.1.1-SNAPSHOT</imagej-legacy.version>
@@ -1310,9 +1310,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				</file>
 			</activation>
 			<properties>
-				<minimaven.version>1.0.3-SNAPSHOT</minimaven.version>
-				<scijava-common.version>2.15.1-SNAPSHOT</scijava-common.version>
-				<scijava-maven-plugin.version></scijava-maven-plugin.version>
+				<minimaven.version>2.0.1-SNAPSHOT</minimaven.version>
+				<scijava-common.version>2.18.1-SNAPSHOT</scijava-common.version>
+				<scijava-maven-plugin.version>0.1.2-SNAPSHOT</scijava-maven-plugin.version>
 				<scijava-plugins-commands.version>0.1.1-SNAPSHOT</scijava-plugins-commands.version>
 				<scijava-plugins-platforms.version>0.1.1-SNAPSHOT</scijava-plugins-platforms.version>
 				<scijava-plugins-text-markdown.version>0.1.1-SNAPSHOT</scijava-plugins-text-markdown.version>
