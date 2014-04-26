@@ -108,7 +108,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- ImageJ - https://github.com/imagej -->
 
 		<!-- ImageJ - https://github.com/imagej/imagej -->
-		<imagej.groupId>net.imagej</imagej.groupId>
 		<imagej.version>2.0.0-beta-8</imagej.version>
 
 		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
@@ -156,7 +155,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- ImgLib2 - https://github.com/imglib -->
 
 		<!-- ImgLib2 - https://github.com/imglib/imglib -->
-		<imglib2.groupId>net.imglib2</imglib2.groupId>
 		<imglib2.version>2.0.0-beta-26</imglib2.version>
 
 		<!-- ImgLib2 IJ - https://github.com/imglib/imglib-ij -->
@@ -168,7 +166,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- SCIFIO - https://github.com/scifio -->
 
 		<!-- SCIFIO - https://github.com/scifio/scifio -->
-		<scifio.groupId>io.scif</scifio.groupId>
 		<scifio.version>0.11.0</scifio.version>
 
 		<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
@@ -183,11 +180,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- SciJava - https://github.com/scijava -->
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.groupId>org.scijava</scijava-common.groupId>
 		<scijava-common.version>2.18.0</scijava-common.version>
 
 		<!-- SciJava Maven Plugin - https://github.com/scijava/scijava-maven-plugin -->
-		<scijava-maven-plugin.groupId>org.scijava</scijava-maven-plugin.groupId>
 		<scijava-maven-plugin.version>0.1.1</scijava-maven-plugin.version>
 
 		<!-- SciJava Plugins: Commands - https://github.com/scijava/scijava-plugins-commands -->
@@ -230,23 +225,19 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<swing-checkbox-tree.version>1.0.0</swing-checkbox-tree.version>
 
 		<!-- JUnit Benchmarks - https://github.com/scijava/junit-benchmarks -->
-		<junit-benchmarks.groupId>org.scijava</junit-benchmarks.groupId>
 		<junit-benchmarks.version>0.7.3-scijava</junit-benchmarks.version>
 
 		<!-- MiniMaven - https://github.com/scijava/minimaven -->
-		<minimaven.groupId>org.scijava</minimaven.groupId>
 		<minimaven.version>2.0.0</minimaven.version>
 
 		<!-- Open Microscopy Environment - https://github.com/openmicroscopy -->
 
 		<!-- Bio-Formats - https://github.com/openmicroscopy/bioformats -->
-		<bio-formats.groupId>ome</bio-formats.groupId>
 		<bio-formats.version>5.0.1</bio-formats.version>
 
 		<!-- NAR Maven plugin - https://github.com/maven-nar -->
 
 		<!-- NAR Maven plugin - https://github.com/maven-nar/nar-maven-plugin -->
-		<nar.groupId>com.github.maven-nar</nar.groupId>
 		<nar.version>3.0.0</nar.version>
 
 		<!-- Other common project dependencies -->
@@ -273,12 +264,12 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<dependencies>
 			<!-- SciJava Common - https://github.com/scijava/scijava-common -->
 			<dependency>
-				<groupId>${scijava-common.groupId}</groupId>
+				<groupId>org.scijava</groupId>
 				<artifactId>scijava-common</artifactId>
 				<version>${scijava-common.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>${scijava-common.groupId}</groupId>
+				<groupId>org.scijava</groupId>
 				<artifactId>scijava-common</artifactId>
 				<version>${scijava-common.version}</version>
 				<classifier>tests</classifier>
@@ -377,87 +368,87 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 			<!-- ImgLib2 - https://github.com/imglib/imglib -->
 			<dependency>
-				<groupId>${imglib2.groupId}</groupId>
+				<groupId>net.imglib2</groupId>
 				<artifactId>imglib2</artifactId>
 				<version>${imglib2.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>${imglib2.groupId}</groupId>
+				<groupId>net.imglib2</groupId>
 				<artifactId>imglib2-meta</artifactId>
 				<version>${imglib2.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>${imglib2.groupId}</groupId>
+				<groupId>net.imglib2</groupId>
 				<artifactId>imglib2-ops</artifactId>
 				<version>${imglib2.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>${imglib2.groupId}</groupId>
+				<groupId>net.imglib2</groupId>
 				<artifactId>imglib2-realtransform</artifactId>
 				<version>${imglib2.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>${imglib2.groupId}</groupId>
+				<groupId>net.imglib2</groupId>
 				<artifactId>imglib2-ui</artifactId>
 				<version>${imglib2.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>${imglib2.groupId}</groupId>
+				<groupId>net.imglib2</groupId>
 				<artifactId>imglib2-algorithms</artifactId>
 				<version>${imglib2.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>${imglib2.groupId}</groupId>
+				<groupId>net.imglib2</groupId>
 				<artifactId>imglib2-algorithms-gpl</artifactId>
 				<version>${imglib2.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>${imglib2.groupId}</groupId>
+				<groupId>net.imglib2</groupId>
 				<artifactId>imglib2-algorithms-legacy</artifactId>
 				<version>${imglib2.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>${imglib2.groupId}</groupId>
+				<groupId>net.imglib2</groupId>
 				<artifactId>imglib2-ij</artifactId>
 				<version>${imglib2-ij.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>${imglib2.groupId}</groupId>
+				<groupId>net.imglib2</groupId>
 				<artifactId>imglib2-scripting</artifactId>
 				<version>${imglib2-scripting.version}</version>
 			</dependency>
 
 			<!-- ImageJ - https://github.com/imagej/imagej -->
 			<dependency>
-				<groupId>${imagej.groupId}</groupId>
+				<groupId>net.imagej</groupId>
 				<artifactId>imagej</artifactId>
 				<version>${imagej.version}</version>
 			</dependency>
 
 			<!-- ImageJ 1.x - https://github.com/fiji/ImageJA -->
 			<dependency>
-				<groupId>${imagej.groupId}</groupId>
+				<groupId>net.imagej</groupId>
 				<artifactId>ij</artifactId>
 				<version>${imagej1.version}</version>
 			</dependency>
 
 			<!-- ImageJ 1.x patcher - https://github.com/imagej/ij1-patcher -->
 			<dependency>
-				<groupId>${imagej.groupId}</groupId>
+				<groupId>net.imagej</groupId>
 				<artifactId>ij1-patcher</artifactId>
 				<version>${ij1-patcher.version}</version>
 			</dependency>
 
 			<!-- ImageJ Common - https://github.com/imagej/imagej-common -->
 			<dependency>
-				<groupId>${imagej.groupId}</groupId>
+				<groupId>net.imagej</groupId>
 				<artifactId>imagej-common</artifactId>
 				<version>${imagej-common.version}</version>
 			</dependency>
 
 			<!-- ImageJ Launcher - https://github.com/imagej/imagej-launcher -->
 			<dependency>
-				<groupId>${imagej.groupId}</groupId>
+				<groupId>net.imagej</groupId>
 				<artifactId>imagej-launcher</artifactId>
 				<version>${imagej-launcher.version}</version>
 			</dependency>
@@ -471,7 +462,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 			<!-- ImageJ OPS - https://github.com/imagej/imagej-ops -->
 			<dependency>
-				<groupId>${imagej.groupId}</groupId>
+				<groupId>net.imagej</groupId>
 				<artifactId>imagej-ops</artifactId>
 				<version>${imagej-ops.version}</version>
 			</dependency>
@@ -534,67 +525,67 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 			<!-- MiniMaven - https://github.com/imagej/minimaven -->
 			<dependency>
-				<groupId>${minimaven.groupId}</groupId>
+				<groupId>org.scijava</groupId>
 				<artifactId>minimaven</artifactId>
 				<version>${minimaven.version}</version>
 			</dependency>
 
 			<!-- SCIFIO - https://github.com/scifio/scifio -->
 			<dependency>
-				<groupId>${scifio.groupId}</groupId>
+				<groupId>io.scif</groupId>
 				<artifactId>scifio</artifactId>
 				<version>${scifio.version}</version>
 			</dependency>
 
 			<!-- SCIFIO-OME-XML - https://github.com/scifio/scifio-ome-xml -->
 			<dependency>
-				<groupId>${scifio.groupId}</groupId>
+				<groupId>io.scif</groupId>
 				<artifactId>scifio-ome-xml</artifactId>
 				<version>${scifio-ome-xml.version}</version>
 			</dependency>
 
 			<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
 			<dependency>
-				<groupId>${scifio.groupId}</groupId>
+				<groupId>io.scif</groupId>
 				<artifactId>scifio-bf-compat</artifactId>
 				<version>${scifio-bf-compat.version}</version>
 			</dependency>
 
 			<!-- SCIFIO-LifeSci - https://github.com/scifio/scifio-lifesci -->
 			<dependency>
-				<groupId>${scifio.groupId}</groupId>
+				<groupId>io.scif</groupId>
 				<artifactId>scifio-lifesci</artifactId>
 				<version>${scifio-lifesci.version}</version>
 			</dependency>
 
 			<!-- Bio-Formats - https://github.com/openmicroscopy/bioformats -->
 			<dependency>
-				<groupId>${bio-formats.groupId}</groupId>
+				<groupId>ome</groupId>
 				<artifactId>bio-formats_plugins</artifactId>
 				<version>${bio-formats.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>${bio-formats.groupId}</groupId>
+				<groupId>ome</groupId>
 				<artifactId>formats-api</artifactId>
 				<version>${bio-formats.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>${bio-formats.groupId}</groupId>
+				<groupId>ome</groupId>
 				<artifactId>formats-bsd</artifactId>
 				<version>${bio-formats.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>${bio-formats.groupId}</groupId>
+				<groupId>ome</groupId>
 				<artifactId>formats-common</artifactId>
 				<version>${bio-formats.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>${bio-formats.groupId}</groupId>
+				<groupId>ome</groupId>
 				<artifactId>formats-gpl</artifactId>
 				<version>${bio-formats.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>${bio-formats.groupId}</groupId>
+				<groupId>ome</groupId>
 				<artifactId>ome-xml</artifactId>
 				<version>${bio-formats.version}</version>
 			</dependency>
@@ -624,7 +615,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 			<!-- JUnit Benchmarks - https://github.com/scijava/junit-benchmarks -->
 			<dependency>
-				<groupId>${junit-benchmarks.groupId}</groupId>
+				<groupId>org.scijava</groupId>
 				<artifactId>junit-benchmarks</artifactId>
 				<version>${junit-benchmarks.version}</version>
 				<scope>test</scope>
@@ -873,7 +864,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 				<!-- NAR Maven plugin - https://github.com/maven-nar/nar-maven-plugin -->
 				<plugin>
-					<groupId>${nar.groupId}</groupId>
+					<groupId>com.github.maven-nar</groupId>
 					<artifactId>nar-maven-plugin</artifactId>
 					<version>${nar.version}</version>
 				</plugin>
@@ -978,7 +969,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			<!-- Enable copying the artifacts and dependencies by setting
 			     the 'imagej.app.directory' property to a valid directory. -->
 			<plugin>
-				<groupId>${imagej.groupId}</groupId>
+				<groupId>net.imagej</groupId>
 				<artifactId>imagej-maven-plugin</artifactId>
 				<version>${imagej-maven-plugin.version}</version>
 				<executions>
