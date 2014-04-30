@@ -371,7 +371,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<version>${imglib2-scripting.version}</version>
 			</dependency>
 
-			<!-- MiniMaven - https://github.com/imagej/minimaven -->
+			<!-- MiniMaven - https://github.com/scijava/minimaven -->
 			<dependency>
 				<groupId>org.scijava</groupId>
 				<artifactId>minimaven</artifactId>
