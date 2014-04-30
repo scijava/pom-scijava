@@ -105,53 +105,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		     simply override that component's version property in your POM's
 		     <properties> section. dependencies rather than hardcoding them. -->
 
-		<!-- ImageJ - https://github.com/imagej -->
-
-		<!-- ImageJ - https://github.com/imagej/imagej -->
-		<imagej.version>2.0.0-beta-8</imagej.version>
-
-		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
-		<imagej1.version>1.48v</imagej1.version>
-
-		<!-- ImageJ 1.x patcher - https://github.com/imagej/ij1-patcher -->
-		<ij1-patcher.version>0.3.2</ij1-patcher.version>
-
-		<!-- ImageJ Common - https://github.com/imagej/imagej-common -->
-		<imagej-common.version>0.4.0</imagej-common.version>
-
-		<!-- ImageJ Launcher - https://github.com/imagej/imagej-launcher -->
-		<imagej-launcher.version>2.0.3</imagej-launcher.version>
-
-		<!-- ImageJ Legacy - https://github.com/imagej/imagej-legacy -->
-		<imagej-legacy.version>0.1.0</imagej-legacy.version>
-
-		<!-- ImageJ Maven Plugin - https://github.com/imagej/imagej-maven-plugin -->
-		<imagej-maven-plugin.version>0.5.0</imagej-maven-plugin.version>
-
-		<!-- ImageJ OPS - https://github.com/imagej/imagej-ops -->
-		<imagej-ops.version>0.2.0</imagej-ops.version>
-
-		<!-- ImageJ Plugins: Commands - https://github.com/imagej/imagej-plugins-commands -->
-		<imagej-plugins-commands.version>0.1.0</imagej-plugins-commands.version>
-
-		<!-- ImageJ Plugins: Tools - https://github.com/imagej/imagej-plugins-commands -->
-		<imagej-plugins-tools.version>0.1.0</imagej-plugins-tools.version>
-
-		<!-- ImageJ Plugins: Uploader: SSH - https://github.com/imagej/imagej-plugins-uploader-ssh -->
-		<imagej-plugins-uploader-ssh.version>0.1.0</imagej-plugins-uploader-ssh.version>
-
-		<!-- ImageJ Plugins: Uploader: WebDAV - https://github.com/imagej/imagej-plugins-uploader-webdav -->
-		<imagej-plugins-uploader-webdav.version>0.1.0</imagej-plugins-uploader-webdav.version>
-
-		<!-- ImageJ UI: AWT - https://github.com/imagej/imagej-ui-awt -->
-		<imagej-ui-awt.version>0.1.0</imagej-ui-awt.version>
-
-		<!-- ImageJ UI: Swing - https://github.com/imagej/imagej-ui-swing -->
-		<imagej-ui-swing.version>0.1.0</imagej-ui-swing.version>
-
-		<!-- ImageJ Updater - https://github.com/imagej/imagej-updater -->
-		<imagej-updater.version>0.1.0</imagej-updater.version>
-
 		<!-- ImgLib2 - https://github.com/imglib -->
 
 		<!-- ImgLib2 - https://github.com/imglib/imglib -->
@@ -417,111 +370,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<artifactId>imglib2-scripting</artifactId>
 				<version>${imglib2-scripting.version}</version>
 			</dependency>
-
-			<!-- ImageJ - https://github.com/imagej/imagej -->
-			<dependency>
-				<groupId>net.imagej</groupId>
-				<artifactId>imagej</artifactId>
-				<version>${imagej.version}</version>
-			</dependency>
-
-			<!-- ImageJ 1.x - https://github.com/fiji/ImageJA -->
-			<dependency>
-				<groupId>net.imagej</groupId>
-				<artifactId>ij</artifactId>
-				<version>${imagej1.version}</version>
-			</dependency>
-
-			<!-- ImageJ 1.x patcher - https://github.com/imagej/ij1-patcher -->
-			<dependency>
-				<groupId>net.imagej</groupId>
-				<artifactId>ij1-patcher</artifactId>
-				<version>${ij1-patcher.version}</version>
-			</dependency>
-
-			<!-- ImageJ Common - https://github.com/imagej/imagej-common -->
-			<dependency>
-				<groupId>net.imagej</groupId>
-				<artifactId>imagej-common</artifactId>
-				<version>${imagej-common.version}</version>
-			</dependency>
-
-			<!-- ImageJ Launcher - https://github.com/imagej/imagej-launcher -->
-			<dependency>
-				<groupId>net.imagej</groupId>
-				<artifactId>imagej-launcher</artifactId>
-				<version>${imagej-launcher.version}</version>
-			</dependency>
-
-			<!-- ImageJ Legacy - https://github.com/imagej/imagej-legacy -->
-			<dependency>
-				<groupId>net.imagej</groupId>
-				<artifactId>imagej-legacy</artifactId>
-				<version>${imagej-legacy.version}</version>
-			</dependency>
-
-			<!-- ImageJ OPS - https://github.com/imagej/imagej-ops -->
-			<dependency>
-				<groupId>net.imagej</groupId>
-				<artifactId>imagej-ops</artifactId>
-				<version>${imagej-ops.version}</version>
-			</dependency>
-
-			<!-- ImageJ Plugins: Commands - https://github.com/imagej/imagej-plugins-commands -->
-			<dependency>
-				<groupId>net.imagej</groupId>
-				<artifactId>imagej-plugins-commands</artifactId>
-				<version>${imagej-plugins-commands.version}</version>
-			</dependency>
-
-			<!-- ImageJ Plugins: Tools - https://github.com/imagej/imagej-plugins-commands -->
-			<dependency>
-				<groupId>net.imagej</groupId>
-				<artifactId>imagej-plugins-tools</artifactId>
-				<version>${imagej-plugins-tools.version}</version>
-			</dependency>
-
-			<!-- ImageJ Plugins: Uploader: SSH - https://github.com/imagej/imagej-plugins-uploader-ssh -->
-			<dependency>
-				<groupId>net.imagej</groupId>
-				<artifactId>imagej-plugins-uploader-ssh</artifactId>
-				<version>${imagej-plugins-uploader-ssh.version}</version>
-			</dependency>
-
-			<!-- ImageJ Plugins: Uploader: WebDAV - https://github.com/imagej/imagej-plugins-uploader-webdav -->
-			<dependency>
-				<groupId>net.imagej</groupId>
-				<artifactId>imagej-plugins-uploader-webdav</artifactId>
-				<version>${imagej-plugins-uploader-webdav.version}</version>
-			</dependency>
-
-			<!-- ImageJ UI: AWT - https://github.com/imagej/imagej-ui-awt -->
-			<dependency>
-				<groupId>net.imagej</groupId>
-				<artifactId>imagej-ui-awt</artifactId>
-				<version>${imagej-ui-awt.version}</version>
-			</dependency>
-
-			<!-- ImageJ UI: Swing - https://github.com/imagej/imagej-ui-swing -->
-			<dependency>
-				<groupId>net.imagej</groupId>
-				<artifactId>imagej-ui-swing</artifactId>
-				<version>${imagej-ui-swing.version}</version>
-			</dependency>
-
-			<!-- ImageJ Updater - https://github.com/imagej/imagej-updater -->
-			<dependency>
-				<groupId>net.imagej</groupId>
-				<artifactId>imagej-updater</artifactId>
-				<version>${imagej-updater.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>net.imagej</groupId>
-				<artifactId>imagej-updater</artifactId>
-				<version>${imagej-updater.version}</version>
-				<classifier>tests</classifier>
-			</dependency>
-
 
 			<!-- MiniMaven - https://github.com/imagej/minimaven -->
 			<dependency>
@@ -919,19 +767,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 										</execute>
 									</action>
 								</pluginExecution>
-								<pluginExecution>
-									<pluginExecutionFilter>
-										<groupId>net.imagej</groupId>
-										<artifactId>imagej-maven-plugin</artifactId>
-										<versionRange>[0.1.0,)</versionRange>
-										<goals>
-											<goal>set-rootdir</goal>
-										</goals>
-									</pluginExecutionFilter>
-									<action>
-										<ignore />
-									</action>
-								</pluginExecution>
 							</pluginExecutions>
 						</lifecycleMappingMetadata>
 					</configuration>
@@ -964,23 +799,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			<plugin>
 				<groupId>org.fusesource.mvnplugins</groupId>
 				<artifactId>maven-graph-plugin</artifactId>
-			</plugin>
-
-			<!-- Enable copying the artifacts and dependencies by setting
-			     the 'imagej.app.directory' property to a valid directory. -->
-			<plugin>
-				<groupId>net.imagej</groupId>
-				<artifactId>imagej-maven-plugin</artifactId>
-				<version>${imagej-maven-plugin.version}</version>
-				<executions>
-					<execution>
-						<id>copy-jars</id>
-						<phase>install</phase>
-						<goals>
-							<goal>copy-jars</goal>
-						</goals>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 
@@ -1060,45 +878,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		     Add an empty dev.<organization> file in your ~/.scijava directory, and
 		     dependencies will automatically update! You may also need to refresh
 		     your IDE; e.g., in Eclipse: right click, Maven > Update Project... -->
-		<profile>
-			<id>dev.imagej</id>
-			<activation>
-				<file>
-					<exists>${user.home}/.scijava/dev.imagej</exists>
-				</file>
-			</activation>
-			<properties>
-				<imagej.version>2.0.0-SNAPSHOT</imagej.version>
-				<ij1-patcher.version>0.3.3-SNAPSHOT</ij1-patcher.version>
-				<imagej-common.version>0.4.1-SNAPSHOT</imagej-common.version>
-				<imagej-launcher.version>2.0.4-SNAPSHOT</imagej-launcher.version>
-				<imagej-legacy.version>0.1.1-SNAPSHOT</imagej-legacy.version>
-				<imagej-maven-plugin.version>0.5.1-SNAPSHOT</imagej-maven-plugin.version>
-				<imagej-ops.version>0.2.1-SNAPSHOT</imagej-ops.version>
-				<imagej-plugins-commands.version>0.1.1-SNAPSHOT</imagej-plugins-commands.version>
-				<imagej-plugins-tools.version>0.1.1-SNAPSHOT</imagej-plugins-tools.version>
-				<imagej-plugins-uploader-ssh.version>0.1.1-SNAPSHOT</imagej-plugins-uploader-ssh.version>
-				<imagej-plugins-uploader-webdav.version>0.1.1-SNAPSHOT</imagej-plugins-uploader-webdav.version>
-				<imagej-ui-awt.version>0.1.1-SNAPSHOT</imagej-ui-awt.version>
-				<imagej-ui-swing.version>0.1.1-SNAPSHOT</imagej-ui-swing.version>
-				<imagej-updater.version>0.1.1-SNAPSHOT</imagej-updater.version>
-			</properties>
-			<repositories>
-				<repository>
-					<id>imagej.public</id>
-					<url>http://maven.imagej.net/content/groups/public</url>
-				</repository>
-			</repositories>
-			<pluginRepositories>
-				<pluginRepository>
-					<id>imagej.public</id>
-					<url>http://maven.imagej.net/content/groups/public</url>
-					<snapshots>
-						<enabled>true</enabled>
-					</snapshots>
-				</pluginRepository>
-			</pluginRepositories>
-		</profile>
 		<profile>
 			<id>dev.imglib2</id>
 			<activation>
