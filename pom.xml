@@ -142,25 +142,25 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scijava-maven-plugin.version>0.1.1</scijava-maven-plugin.version>
 
 		<!-- SciJava Plugins: Commands - https://github.com/scijava/scijava-plugins-commands -->
-		<scijava-plugins-commands.version>0.1.0</scijava-plugins-commands.version>
+		<scijava-plugins-commands.version>0.1.1</scijava-plugins-commands.version>
 
 		<!-- SciJava Plugins: Platforms - https://github.com/scijava/scijava-plugins-platforms -->
-		<scijava-plugins-platforms.version>0.1.0</scijava-plugins-platforms.version>
+		<scijava-plugins-platforms.version>0.1.1</scijava-plugins-platforms.version>
 
 		<!-- SciJava Plugins: Text: Markdown - https://github.com/scijava/scijava-plugins-text-markdown -->
-		<scijava-plugins-text-markdown.version>0.1.0</scijava-plugins-text-markdown.version>
+		<scijava-plugins-text-markdown.version>0.1.1</scijava-plugins-text-markdown.version>
 
 		<!-- SciJava Plugins: Text: Plain - https://github.com/scijava/scijava-plugins-text-plain -->
-		<scijava-plugins-text-plain.version>0.1.0</scijava-plugins-text-plain.version>
+		<scijava-plugins-text-plain.version>0.1.1</scijava-plugins-text-plain.version>
 
 		<!-- SciJava UI: AWT - https://github.com/scijava/scijava-ui-awt -->
-		<scijava-ui-awt.version>0.1.0</scijava-ui-awt.version>
+		<scijava-ui-awt.version>0.1.1</scijava-ui-awt.version>
 
 		<!-- SciJava UI: Swing - https://github.com/scijava/scijava-ui-swing -->
 		<scijava-ui-swing.version>0.1.1</scijava-ui-swing.version>
 
 		<!-- Scripting: Beanshell - https://github.ocm/scijava/scripting-beanshell -->
-		<scripting-beanshell.version>0.1.0</scripting-beanshell.version>
+		<scripting-beanshell.version>0.1.1</scripting-beanshell.version>
 
 		<!-- Scripting: Clojure - https://github.ocm/scijava/scripting-clojure -->
 		<scripting-clojure.version>0.1.0</scripting-clojure.version>
@@ -965,13 +965,13 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<scijava-common.version>2.18.2-SNAPSHOT</scijava-common.version>
 				<scijava-log-slf4j.version>1.0.2-SNAPSHOT</scijava-log-slf4j.version>
 				<scijava-maven-plugin.version>0.1.2-SNAPSHOT</scijava-maven-plugin.version>
-				<scijava-plugins-commands.version>0.1.1-SNAPSHOT</scijava-plugins-commands.version>
-				<scijava-plugins-platforms.version>0.1.1-SNAPSHOT</scijava-plugins-platforms.version>
-				<scijava-plugins-text-markdown.version>0.1.1-SNAPSHOT</scijava-plugins-text-markdown.version>
-				<scijava-plugins-text-plain.version>0.1.1-SNAPSHOT</scijava-plugins-text-plain.version>
-				<scijava-ui-awt.version>0.1.1-SNAPSHOT</scijava-ui-awt.version>
+				<scijava-plugins-commands.version>0.1.2-SNAPSHOT</scijava-plugins-commands.version>
+				<scijava-plugins-platforms.version>0.1.2-SNAPSHOT</scijava-plugins-platforms.version>
+				<scijava-plugins-text-markdown.version>0.1.2-SNAPSHOT</scijava-plugins-text-markdown.version>
+				<scijava-plugins-text-plain.version>0.1.2-SNAPSHOT</scijava-plugins-text-plain.version>
+				<scijava-ui-awt.version>0.1.2-SNAPSHOT</scijava-ui-awt.version>
 				<scijava-ui-swing.version>0.1.2-SNAPSHOT</scijava-ui-swing.version>
-				<scripting-beanshell.version>0.1.1-SNAPSHOT</scripting-beanshell.version>
+				<scripting-beanshell.version>0.1.2-SNAPSHOT</scripting-beanshell.version>
 				<scripting-clojure.version>0.1.1-SNAPSHOT</scripting-clojure.version>
 				<scripting-java.version>0.1.1-SNAPSHOT</scripting-java.version>
 				<scripting-javascript.version>0.1.1-SNAPSHOT</scripting-javascript.version>
