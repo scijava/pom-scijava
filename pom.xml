@@ -124,11 +124,17 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
 		<scifio-bf-compat.version>1.6.1</scifio-bf-compat.version>
 
+		<!-- SCIFIO JAI Image I/O - https://github.com/scifio/scifio-jai-imageio -->
+		<scifio-jai-imageio.version>1.1.0</scifio-jai-imageio.version>
+
 		<!-- SCIFIO-LifeSci - https://github.com/scifio/scifio-lifesci -->
 		<scifio-lifesci.version>0.4.0</scifio-lifesci.version>
 
 		<!-- SCIFIO-OME-XML - https://github.com/scifio/scifio-ome-xml -->
 		<scifio-ome-xml.version>0.7.0</scifio-ome-xml.version>
+
+		<!-- SCIFIO-OMERO - https://github.com/scifio/scifio-omero -->
+		<scifio-omero.version>0.4.0</scifio-omero.version>
 
 		<!-- SciJava - https://github.com/scijava -->
 
@@ -412,11 +418,25 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<version>${scifio-ome-xml.version}</version>
 			</dependency>
 
+			<!-- SCIFIO-OMERO - https://github.com/scifio/scifio-omero -->
+			<dependency>
+				<groupId>io.scif</groupId>
+				<artifactId>scifio-omero</artifactId>
+				<version>${scifio-omero.version}</version>
+			</dependency>
+
 			<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
 			<dependency>
 				<groupId>io.scif</groupId>
 				<artifactId>scifio-bf-compat</artifactId>
 				<version>${scifio-bf-compat.version}</version>
+			</dependency>
+
+			<!-- SCIFIO JAI Image I/O - https://github.com/scifio/scifio-jai-imageio -->
+			<dependency>
+				<groupId>io.scif</groupId>
+				<artifactId>scifio-jai-imageio</artifactId>
+				<version>${scifio-jai-imageio.version}</version>
 			</dependency>
 
 			<!-- SCIFIO-LifeSci - https://github.com/scifio/scifio-lifesci -->
@@ -1005,8 +1025,10 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			<properties>
 				<scifio.version>0.11.1-SNAPSHOT</scifio.version>
 				<scifio-bf-compat.version>1.6.2-SNAPSHOT</scifio-bf-compat.version>
+				<scifio-jai-imageio.version>1.1.1-SNAPSHOT</scifio-jai-imageio.version>
 				<scifio-lifesci.version>0.4.1-SNAPSHOT</scifio-lifesci.version>
 				<scifio-ome-xml.version>0.7.1-SNAPSHOT</scifio-ome-xml.version>
+				<scifio-omero.version>0.4.1-SNAPSHOT</scifio-omero.version>
 			</properties>
 			<repositories>
 				<repository>
