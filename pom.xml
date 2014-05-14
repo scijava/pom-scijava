@@ -135,6 +135,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
 		<scijava-common.version>2.18.1</scijava-common.version>
 
+		<!-- SciJava Common: SLF4J Logging - https://github.com/scijava/scijava-log-slf4j -->
+		<scijava-log-slf4j.version>1.0.1</scijava-log-slf4j.version>
+
 		<!-- SciJava Maven Plugin - https://github.com/scijava/scijava-maven-plugin -->
 		<scijava-maven-plugin.version>0.1.1</scijava-maven-plugin.version>
 
@@ -183,6 +186,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- MiniMaven - https://github.com/scijava/minimaven -->
 		<minimaven.version>2.0.0</minimaven.version>
 
+		<!-- Native Lib Loader - https://github.com/scijava/native-lib-loader -->
+		<native-lib-loader.version>2.0.1</native-lib-loader.version>
+
 		<!-- Open Microscopy Environment - https://github.com/openmicroscopy -->
 
 		<!-- Bio-Formats - https://github.com/openmicroscopy/bioformats -->
@@ -226,6 +232,13 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<artifactId>scijava-common</artifactId>
 				<version>${scijava-common.version}</version>
 				<classifier>tests</classifier>
+			</dependency>
+
+			<!-- SciJava Common: SLF4J Logging - https://github.com/scijava/scijava-log-slf4j -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-log-slf4j</artifactId>
+				<version>${scijava-log-slf4j.version}</version>
 			</dependency>
 
 			<!-- SciJava Plugins: Commands - https://github.com/scijava/scijava-plugins-commands -->
@@ -376,6 +389,13 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>org.scijava</groupId>
 				<artifactId>minimaven</artifactId>
 				<version>${minimaven.version}</version>
+			</dependency>
+
+			<!-- Native Lib Loader - https://github.com/scijava/native-lib-loader -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>native-lib-loader</artifactId>
+				<version>${native-lib-loader.version}</version>
 			</dependency>
 
 			<!-- SCIFIO - https://github.com/scifio/scifio -->
@@ -941,7 +961,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			</activation>
 			<properties>
 				<minimaven.version>2.0.1-SNAPSHOT</minimaven.version>
+				<native-lib-loader.version>2.0.2-SNAPSHOT</native-lib-loader.version>
 				<scijava-common.version>2.18.2-SNAPSHOT</scijava-common.version>
+				<scijava-log-slf4j.version>1.0.2-SNAPSHOT</scijava-log-slf4j.version>
 				<scijava-maven-plugin.version>0.1.2-SNAPSHOT</scijava-maven-plugin.version>
 				<scijava-plugins-commands.version>0.1.1-SNAPSHOT</scijava-plugins-commands.version>
 				<scijava-plugins-platforms.version>0.1.1-SNAPSHOT</scijava-plugins-platforms.version>
