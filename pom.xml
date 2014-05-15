@@ -4,7 +4,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>2.1</version>
+	<version>2.2</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -139,7 +139,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- SciJava - https://github.com/scijava -->
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.19.0</scijava-common.version>
+		<scijava-common.version>2.19.1</scijava-common.version>
 
 		<!-- SciJava Common: SLF4J Logging - https://github.com/scijava/scijava-log-slf4j -->
 		<scijava-log-slf4j.version>1.0.1</scijava-log-slf4j.version>
@@ -172,7 +172,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scripting-clojure.version>0.1.0</scripting-clojure.version>
 
 		<!-- Scripting: Java - https://github.ocm/scijava/scripting-java -->
-		<scripting-java.version>0.1.0</scripting-java.version>
+		<scripting-java.version>0.2.0</scripting-java.version>
 
 		<!-- Scripting: Javascript - https://github.ocm/scijava/scripting-javascript -->
 		<scripting-javascript.version>0.1.0</scripting-javascript.version>
@@ -190,7 +190,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<junit-benchmarks.version>0.7.3-scijava</junit-benchmarks.version>
 
 		<!-- MiniMaven - https://github.com/scijava/minimaven -->
-		<minimaven.version>2.0.0</minimaven.version>
+		<minimaven.version>2.1.0</minimaven.version>
 
 		<!-- Native Lib Loader - https://github.com/scijava/native-lib-loader -->
 		<native-lib-loader.version>2.0.1</native-lib-loader.version>
@@ -980,9 +980,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				</file>
 			</activation>
 			<properties>
-				<minimaven.version>2.0.1-SNAPSHOT</minimaven.version>
+				<minimaven.version>2.1.1-SNAPSHOT</minimaven.version>
 				<native-lib-loader.version>2.0.2-SNAPSHOT</native-lib-loader.version>
-				<scijava-common.version>2.19.1-SNAPSHOT</scijava-common.version>
+				<scijava-common.version>2.19.2-SNAPSHOT</scijava-common.version>
 				<scijava-log-slf4j.version>1.0.2-SNAPSHOT</scijava-log-slf4j.version>
 				<scijava-maven-plugin.version>0.1.2-SNAPSHOT</scijava-maven-plugin.version>
 				<scijava-plugins-commands.version>0.1.2-SNAPSHOT</scijava-plugins-commands.version>
@@ -993,7 +993,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<scijava-ui-swing.version>0.1.2-SNAPSHOT</scijava-ui-swing.version>
 				<scripting-beanshell.version>0.1.2-SNAPSHOT</scripting-beanshell.version>
 				<scripting-clojure.version>0.1.1-SNAPSHOT</scripting-clojure.version>
-				<scripting-java.version>0.1.1-SNAPSHOT</scripting-java.version>
+				<scripting-java.version>0.2.1-SNAPSHOT</scripting-java.version>
 				<scripting-javascript.version>0.1.1-SNAPSHOT</scripting-javascript.version>
 				<scripting-jruby.version>0.1.1-SNAPSHOT</scripting-jruby.version>
 				<scripting-jython.version>0.1.1-SNAPSHOT</scripting-jython.version>
