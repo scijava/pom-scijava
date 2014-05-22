@@ -4,7 +4,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>2.4</version>
+	<version>2.5-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -1143,6 +1143,8 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 							<serverId>sonatype-nexus-releases</serverId>
 							<nexusUrl>https://oss.sonatype.org/</nexusUrl>
 							<autoReleaseAfterClose>true</autoReleaseAfterClose>
+							<stagingProgressTimeoutMinutes>15</stagingProgressTimeoutMinutes>
+							<stagingProgressPauseDurationSeconds>12</stagingProgressPauseDurationSeconds>
 							<!--
 							By having no explicit stagingProfileId, we use
 							Staging V2 in "auto" mode, profile will be
