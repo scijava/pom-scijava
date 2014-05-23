@@ -160,10 +160,10 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scijava-plugins-text-plain.version>0.1.1</scijava-plugins-text-plain.version>
 
 		<!-- SciJava UI: AWT - https://github.com/scijava/scijava-ui-awt -->
-		<scijava-ui-awt.version>0.1.1</scijava-ui-awt.version>
+		<scijava-ui-awt.version>0.1.2</scijava-ui-awt.version>
 
 		<!-- SciJava UI: Swing - https://github.com/scijava/scijava-ui-swing -->
-		<scijava-ui-swing.version>0.2.0</scijava-ui-swing.version>
+		<scijava-ui-swing.version>0.2.1</scijava-ui-swing.version>
 
 		<!-- Scripting: Beanshell - https://github.ocm/scijava/scripting-beanshell -->
 		<scripting-beanshell.version>0.1.1</scripting-beanshell.version>
@@ -989,8 +989,8 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<scijava-plugins-platforms.version>0.1.2-SNAPSHOT</scijava-plugins-platforms.version>
 				<scijava-plugins-text-markdown.version>0.1.2-SNAPSHOT</scijava-plugins-text-markdown.version>
 				<scijava-plugins-text-plain.version>0.1.2-SNAPSHOT</scijava-plugins-text-plain.version>
-				<scijava-ui-awt.version>0.1.2-SNAPSHOT</scijava-ui-awt.version>
-				<scijava-ui-swing.version>0.2.1-SNAPSHOT</scijava-ui-swing.version>
+				<scijava-ui-awt.version>0.1.3-SNAPSHOT</scijava-ui-awt.version>
+				<scijava-ui-swing.version>0.2.2-SNAPSHOT</scijava-ui-swing.version>
 				<scripting-beanshell.version>0.1.2-SNAPSHOT</scripting-beanshell.version>
 				<scripting-clojure.version>0.1.1-SNAPSHOT</scripting-clojure.version>
 				<scripting-java.version>0.2.2-SNAPSHOT</scripting-java.version>
