@@ -119,7 +119,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- SCIFIO - https://github.com/scifio -->
 
 		<!-- SCIFIO - https://github.com/scifio/scifio -->
-		<scifio.version>0.12.1</scifio.version>
+		<scifio.version>0.13.0</scifio.version>
 
 		<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
 		<scifio-bf-compat.version>1.7.0</scifio-bf-compat.version>
@@ -1023,7 +1023,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				</file>
 			</activation>
 			<properties>
-				<scifio.version>0.12.2-SNAPSHOT</scifio.version>
+				<scifio.version>0.13.1-SNAPSHOT</scifio.version>
 				<scifio-bf-compat.version>1.7.1-SNAPSHOT</scifio-bf-compat.version>
 				<scifio-jai-imageio.version>1.1.1-SNAPSHOT</scifio-jai-imageio.version>
 				<scifio-lifesci.version>0.5.1-SNAPSHOT</scifio-lifesci.version>
