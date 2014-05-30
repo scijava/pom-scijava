@@ -122,7 +122,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scifio.version>0.13.3</scifio.version>
 
 		<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
-		<scifio-bf-compat.version>1.7.0</scifio-bf-compat.version>
+		<scifio-bf-compat.version>1.7.1</scifio-bf-compat.version>
 
 		<!-- SCIFIO JAI Image I/O - https://github.com/scifio/scifio-jai-imageio -->
 		<scifio-jai-imageio.version>1.1.0</scifio-jai-imageio.version>
@@ -131,7 +131,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scifio-lifesci.version>0.5.0</scifio-lifesci.version>
 
 		<!-- SCIFIO-OME-XML - https://github.com/scifio/scifio-ome-xml -->
-		<scifio-ome-xml.version>0.8.0</scifio-ome-xml.version>
+		<scifio-ome-xml.version>0.8.1</scifio-ome-xml.version>
 
 		<!-- SCIFIO-OMERO - https://github.com/scifio/scifio-omero -->
 		<scifio-omero.version>0.4.0</scifio-omero.version>
@@ -1024,10 +1024,10 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			</activation>
 			<properties>
 				<scifio.version>0.13.4-SNAPSHOT</scifio.version>
-				<scifio-bf-compat.version>1.7.1-SNAPSHOT</scifio-bf-compat.version>
+				<scifio-bf-compat.version>1.7.2-SNAPSHOT</scifio-bf-compat.version>
 				<scifio-jai-imageio.version>1.1.1-SNAPSHOT</scifio-jai-imageio.version>
 				<scifio-lifesci.version>0.5.1-SNAPSHOT</scifio-lifesci.version>
-				<scifio-ome-xml.version>0.8.1-SNAPSHOT</scifio-ome-xml.version>
+				<scifio-ome-xml.version>0.8.2-SNAPSHOT</scifio-ome-xml.version>
 				<scifio-omero.version>0.4.1-SNAPSHOT</scifio-omero.version>
 			</properties>
 			<repositories>
