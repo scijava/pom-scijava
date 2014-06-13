@@ -223,6 +223,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 		<!-- NB: Override argLine property for extra maven-surefire-plugin args. -->
 		<argLine />
+
+		<!-- NB: Override argLineDebug property via debug-port profile. -->
+		<argLineDebug />
 	</properties>
 
 	<dependencyManagement>
@@ -670,7 +673,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 					     simulate it by re-using the property 'argLine' to
 					     specify those options. -->
 					<configuration>
-						<argLine>-Xms512m -Xmx512m -Dapple.awt.UIElement="true" ${argLine}</argLine>
+						<argLine>-Xms512m -Xmx512m -Dapple.awt.UIElement="true" ${argLine} ${argLineDebug}</argLine>
 					</configuration>
 				</plugin>
 
@@ -1072,6 +1075,18 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 					</plugin>
 				</plugins>
 			</build>
+		</profile>
+
+		<!-- For debugging. E.g. for Eclipse, pass -DdebugPort=8000,suspend=y and
+		     add a Debug Configuration for a Remote Java Application -->
+		<profile>
+			<id>debug-port</id>
+			<activation>
+				<property><name>debugPort</name></property>
+			</activation>
+			<properties>
+				<argLineDebug>-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=localhost:${debugPort}</argLineDebug>
+			</properties>
 		</profile>
 
 		<!-- Run integration tests when "-P run-its" is passed.
