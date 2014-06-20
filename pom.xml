@@ -119,78 +119,78 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- SCIFIO - https://github.com/scifio -->
 
 		<!-- SCIFIO - https://github.com/scifio/scifio -->
-		<scifio.version>0.15.3</scifio.version>
+		<scifio.version>0.15.4</scifio.version>
 
 		<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
-		<scifio-bf-compat.version>1.8.1</scifio-bf-compat.version>
+		<scifio-bf-compat.version>1.8.2</scifio-bf-compat.version>
 
 		<!-- SCIFIO JAI Image I/O - https://github.com/scifio/scifio-jai-imageio -->
-		<scifio-jai-imageio.version>1.1.0</scifio-jai-imageio.version>
+		<scifio-jai-imageio.version>1.1.1</scifio-jai-imageio.version>
 
 		<!-- SCIFIO-LifeSci - https://github.com/scifio/scifio-lifesci -->
-		<scifio-lifesci.version>0.5.0</scifio-lifesci.version>
+		<scifio-lifesci.version>0.5.1</scifio-lifesci.version>
 
 		<!-- SCIFIO-OME-XML - https://github.com/scifio/scifio-ome-xml -->
-		<scifio-ome-xml.version>0.9.0</scifio-ome-xml.version>
+		<scifio-ome-xml.version>0.9.1</scifio-ome-xml.version>
 
 		<!-- SCIFIO-OMERO - https://github.com/scifio/scifio-omero -->
-		<scifio-omero.version>0.5.1</scifio-omero.version>
+		<scifio-omero.version>0.5.2</scifio-omero.version>
 
 		<!-- SciJava - https://github.com/scijava -->
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.24.0</scijava-common.version>
+		<scijava-common.version>2.24.1</scijava-common.version>
 
 		<!-- SciJava Common: SLF4J Logging - https://github.com/scijava/scijava-log-slf4j -->
-		<scijava-log-slf4j.version>1.0.1</scijava-log-slf4j.version>
+		<scijava-log-slf4j.version>1.0.2</scijava-log-slf4j.version>
 
 		<!-- SciJava Maven Plugin - https://github.com/scijava/scijava-maven-plugin -->
-		<scijava-maven-plugin.version>0.1.1</scijava-maven-plugin.version>
+		<scijava-maven-plugin.version>0.1.2</scijava-maven-plugin.version>
 
 		<!-- SciJava Plugins: Commands - https://github.com/scijava/scijava-plugins-commands -->
-		<scijava-plugins-commands.version>0.1.5</scijava-plugins-commands.version>
+		<scijava-plugins-commands.version>0.1.6</scijava-plugins-commands.version>
 
 		<!-- SciJava Plugins: Platforms - https://github.com/scijava/scijava-plugins-platforms -->
-		<scijava-plugins-platforms.version>0.1.1</scijava-plugins-platforms.version>
+		<scijava-plugins-platforms.version>0.1.2</scijava-plugins-platforms.version>
 
 		<!-- SciJava Plugins: Text: Markdown - https://github.com/scijava/scijava-plugins-text-markdown -->
-		<scijava-plugins-text-markdown.version>0.1.1</scijava-plugins-text-markdown.version>
+		<scijava-plugins-text-markdown.version>0.1.2</scijava-plugins-text-markdown.version>
 
 		<!-- SciJava Plugins: Text: Plain - https://github.com/scijava/scijava-plugins-text-plain -->
-		<scijava-plugins-text-plain.version>0.1.1</scijava-plugins-text-plain.version>
+		<scijava-plugins-text-plain.version>0.1.2</scijava-plugins-text-plain.version>
 
 		<!-- SciJava UI: AWT - https://github.com/scijava/scijava-ui-awt -->
-		<scijava-ui-awt.version>0.1.2</scijava-ui-awt.version>
+		<scijava-ui-awt.version>0.1.3</scijava-ui-awt.version>
 
 		<!-- SciJava UI: Swing - https://github.com/scijava/scijava-ui-swing -->
-		<scijava-ui-swing.version>0.2.4</scijava-ui-swing.version>
+		<scijava-ui-swing.version>0.2.5</scijava-ui-swing.version>
 
 		<!-- Scripting: Beanshell - https://github.com/scijava/scripting-beanshell -->
-		<scripting-beanshell.version>0.1.1</scripting-beanshell.version>
+		<scripting-beanshell.version>0.1.2</scripting-beanshell.version>
 
 		<!-- Scripting: Clojure - https://github.com/scijava/scripting-clojure -->
-		<scripting-clojure.version>0.1.0</scripting-clojure.version>
+		<scripting-clojure.version>0.1.1</scripting-clojure.version>
 
 		<!-- Scripting: Java - https://github.com/scijava/scripting-java -->
-		<scripting-java.version>0.2.3</scripting-java.version>
+		<scripting-java.version>0.2.4</scripting-java.version>
 
 		<!-- Scripting: Javascript - https://github.com/scijava/scripting-javascript -->
-		<scripting-javascript.version>0.2.0</scripting-javascript.version>
+		<scripting-javascript.version>0.2.1</scripting-javascript.version>
 
 		<!-- Scripting: JRuby - https://github.com/scijava/scripting-jruby -->
-		<scripting-jruby.version>0.1.1</scripting-jruby.version>
+		<scripting-jruby.version>0.1.2</scripting-jruby.version>
 
 		<!-- Scripting: Jython - https://github.com/scijava/scripting-jython -->
-		<scripting-jython.version>0.1.0</scripting-jython.version>
+		<scripting-jython.version>0.1.1</scripting-jython.version>
 
 		<!-- Swing Checkbox Tree - https://github.com/scijava/swing-checkbox-tree -->
-		<swing-checkbox-tree.version>1.0.0</swing-checkbox-tree.version>
+		<swing-checkbox-tree.version>1.0.1</swing-checkbox-tree.version>
 
 		<!-- MiniMaven - https://github.com/scijava/minimaven -->
-		<minimaven.version>2.1.2</minimaven.version>
+		<minimaven.version>2.1.3</minimaven.version>
 
 		<!-- Native Lib Loader - https://github.com/scijava/native-lib-loader -->
-		<native-lib-loader.version>2.0.1</native-lib-loader.version>
+		<native-lib-loader.version>2.0.2</native-lib-loader.version>
 
 		<!-- JUnit Benchmarks - https://github.com/scijava/junit-benchmarks -->
 		<junit-benchmarks.version>0.7.3-scijava</junit-benchmarks.version>
