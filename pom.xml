@@ -165,22 +165,22 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- SciJava UI: Swing - https://github.com/scijava/scijava-ui-swing -->
 		<scijava-ui-swing.version>0.2.4</scijava-ui-swing.version>
 
-		<!-- Scripting: Beanshell - https://github.ocm/scijava/scripting-beanshell -->
+		<!-- Scripting: Beanshell - https://github.com/scijava/scripting-beanshell -->
 		<scripting-beanshell.version>0.1.1</scripting-beanshell.version>
 
-		<!-- Scripting: Clojure - https://github.ocm/scijava/scripting-clojure -->
+		<!-- Scripting: Clojure - https://github.com/scijava/scripting-clojure -->
 		<scripting-clojure.version>0.1.0</scripting-clojure.version>
 
-		<!-- Scripting: Java - https://github.ocm/scijava/scripting-java -->
+		<!-- Scripting: Java - https://github.com/scijava/scripting-java -->
 		<scripting-java.version>0.2.3</scripting-java.version>
 
-		<!-- Scripting: Javascript - https://github.ocm/scijava/scripting-javascript -->
+		<!-- Scripting: Javascript - https://github.com/scijava/scripting-javascript -->
 		<scripting-javascript.version>0.2.0</scripting-javascript.version>
 
-		<!-- Scripting: JRuby - https://github.ocm/scijava/scripting-jruby -->
+		<!-- Scripting: JRuby - https://github.com/scijava/scripting-jruby -->
 		<scripting-jruby.version>0.1.1</scripting-jruby.version>
 
-		<!-- Scripting: Jython - https://github.ocm/scijava/scripting-jython -->
+		<!-- Scripting: Jython - https://github.com/scijava/scripting-jython -->
 		<scripting-jython.version>0.1.0</scripting-jython.version>
 
 		<!-- Swing Checkbox Tree - https://github.com/scijava/swing-checkbox-tree -->
@@ -292,42 +292,42 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<version>${scijava-ui-swing.version}</version>
 			</dependency>
 
-			<!-- Scripting: Beanshell - https://github.ocm/scijava/scripting-beanshell -->
+			<!-- Scripting: Beanshell - https://github.com/scijava/scripting-beanshell -->
 			<dependency>
 				<groupId>org.scijava</groupId>
 				<artifactId>scripting-beanshell</artifactId>
 				<version>${scripting-beanshell.version}</version>
 			</dependency>
 
-			<!-- Scripting: Clojure - https://github.ocm/scijava/scripting-clojure -->
+			<!-- Scripting: Clojure - https://github.com/scijava/scripting-clojure -->
 			<dependency>
 				<groupId>org.scijava</groupId>
 				<artifactId>scripting-clojure</artifactId>
 				<version>${scripting-clojure.version}</version>
 			</dependency>
 
-			<!-- Scripting: Java - https://github.ocm/scijava/scripting-java -->
+			<!-- Scripting: Java - https://github.com/scijava/scripting-java -->
 			<dependency>
 				<groupId>org.scijava</groupId>
 				<artifactId>scripting-java</artifactId>
 				<version>${scripting-java.version}</version>
 			</dependency>
 
-			<!-- Scripting: Javascript - https://github.ocm/scijava/scripting-javascript -->
+			<!-- Scripting: Javascript - https://github.com/scijava/scripting-javascript -->
 			<dependency>
 				<groupId>org.scijava</groupId>
 				<artifactId>scripting-javascript</artifactId>
 				<version>${scripting-javascript.version}</version>
 			</dependency>
 
-			<!-- Scripting: JRuby - https://github.ocm/scijava/scripting-jruby -->
+			<!-- Scripting: JRuby - https://github.com/scijava/scripting-jruby -->
 			<dependency>
 				<groupId>org.scijava</groupId>
 				<artifactId>scripting-jruby</artifactId>
 				<version>${scripting-jruby.version}</version>
 			</dependency>
 
-			<!-- Scripting: Jython - https://github.ocm/scijava/scripting-jython -->
+			<!-- Scripting: Jython - https://github.com/scijava/scripting-jython -->
 			<dependency>
 				<groupId>org.scijava</groupId>
 				<artifactId>scripting-jython</artifactId>
