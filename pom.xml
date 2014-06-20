@@ -186,14 +186,14 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- Swing Checkbox Tree - https://github.com/scijava/swing-checkbox-tree -->
 		<swing-checkbox-tree.version>1.0.0</swing-checkbox-tree.version>
 
-		<!-- JUnit Benchmarks - https://github.com/scijava/junit-benchmarks -->
-		<junit-benchmarks.version>0.7.3-scijava</junit-benchmarks.version>
-
 		<!-- MiniMaven - https://github.com/scijava/minimaven -->
 		<minimaven.version>2.1.2</minimaven.version>
 
 		<!-- Native Lib Loader - https://github.com/scijava/native-lib-loader -->
 		<native-lib-loader.version>2.0.1</native-lib-loader.version>
+
+		<!-- JUnit Benchmarks - https://github.com/scijava/junit-benchmarks -->
+		<junit-benchmarks.version>0.7.3-scijava</junit-benchmarks.version>
 
 		<!-- Open Microscopy Environment - https://github.com/openmicroscopy -->
 
