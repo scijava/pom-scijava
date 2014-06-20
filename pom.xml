@@ -987,7 +987,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<native-lib-loader.version>LATEST</native-lib-loader.version>
 				<scijava-common.version>LATEST</scijava-common.version>
 				<scijava-log-slf4j.version>LATEST</scijava-log-slf4j.version>
-				<scijava-maven-plugin.version>LATEST</scijava-maven-plugin.version>
 				<scijava-plugins-commands.version>LATEST</scijava-plugins-commands.version>
 				<scijava-plugins-platforms.version>LATEST</scijava-plugins-platforms.version>
 				<scijava-plugins-text-markdown.version>LATEST</scijava-plugins-text-markdown.version>
