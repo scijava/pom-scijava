@@ -119,10 +119,10 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- SCIFIO - https://github.com/scifio -->
 
 		<!-- SCIFIO - https://github.com/scifio/scifio -->
-		<scifio.version>0.15.3</scifio.version>
+		<scifio.version>0.15.4</scifio.version>
 
 		<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
-		<scifio-bf-compat.version>1.8.1</scifio-bf-compat.version>
+		<scifio-bf-compat.version>1.8.2</scifio-bf-compat.version>
 
 		<!-- SCIFIO JAI Image I/O - https://github.com/scifio/scifio-jai-imageio -->
 		<scifio-jai-imageio.version>1.1.0</scifio-jai-imageio.version>
@@ -139,7 +139,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- SciJava - https://github.com/scijava -->
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.24.0</scijava-common.version>
+		<scijava-common.version>2.25.0</scijava-common.version>
 
 		<!-- SciJava Common: SLF4J Logging - https://github.com/scijava/scijava-log-slf4j -->
 		<scijava-log-slf4j.version>1.0.1</scijava-log-slf4j.version>
