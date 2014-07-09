@@ -139,7 +139,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- SciJava - https://github.com/scijava -->
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.25.0</scijava-common.version>
+		<scijava-common.version>2.26.0</scijava-common.version>
 
 		<!-- SciJava Common: SLF4J Logging - https://github.com/scijava/scijava-log-slf4j -->
 		<scijava-log-slf4j.version>1.0.1</scijava-log-slf4j.version>
