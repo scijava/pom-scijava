@@ -600,7 +600,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 							<!-- Core SciJava projects -->
 							<!-- Bio-Formats -->
-							<link>http://hudson.openmicroscopy.org.uk/job/BIOFORMATS-trunk/javadoc/</link>
+							<link>http://ci.openmicroscopy.org/job/BIOFORMATS-5.0-latest/javadoc/</link>
 							<!-- Fiji -->
 							<link>http://jenkins.imagej.net/job/Fiji-javadoc/javadoc/</link>
 							<!-- ImageJ1 -->
