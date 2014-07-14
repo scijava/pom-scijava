@@ -81,7 +81,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 	</contributors>
 
 	<prerequisites>
-		<maven>2.2.1</maven>
+		<maven>3.0.4</maven>
 	</prerequisites>
 
 	<scm>
