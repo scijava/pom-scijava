@@ -187,7 +187,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<swing-checkbox-tree.version>1.0.0</swing-checkbox-tree.version>
 
 		<!-- MiniMaven - https://github.com/scijava/minimaven -->
-		<minimaven.version>2.1.2</minimaven.version>
+		<minimaven.version>2.1.3</minimaven.version>
 
 		<!-- Native Lib Loader - https://github.com/scijava/native-lib-loader -->
 		<native-lib-loader.version>2.0.1</native-lib-loader.version>
