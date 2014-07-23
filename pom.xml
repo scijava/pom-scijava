@@ -616,7 +616,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 							<!-- Third party dependencies -->
 							<!-- Apache Pivot -->
-							<link>http://pivot.apache.org/2.0.3/docs/api/</link>
+							<link>http://pivot.apache.org/2.0.4/docs/api/</link>
 							<!-- Eclipse -->
 							<link>http://help.eclipse.org/indigo/topic/org.eclipse.platform.doc.isv/reference/api/</link>
 							<!-- Java3D -->
@@ -907,7 +907,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 						<!-- Third party dependencies -->
 						<!-- Apache Pivot -->
-						<link>http://pivot.apache.org/2.0.3/docs/api/</link>
+						<link>http://pivot.apache.org/2.0.4/docs/api/</link>
 						<!-- Eclipse -->
 						<link>http://help.eclipse.org/indigo/topic/org.eclipse.platform.doc.isv/reference/api/</link>
 						<!-- Java3D -->
