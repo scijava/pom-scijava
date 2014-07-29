@@ -183,6 +183,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- Scripting: Jython - https://github.com/scijava/scripting-jython -->
 		<scripting-jython.version>0.1.0</scripting-jython.version>
 
+		<!-- Scripting: MATLAB - https://github.com/scijava/scripting-matlab -->
+		<scripting-matlab.version>0.1.0</scripting-matlab.version>
+
 		<!-- Swing Checkbox Tree - https://github.com/scijava/swing-checkbox-tree -->
 		<swing-checkbox-tree.version>1.0.0</swing-checkbox-tree.version>
 
@@ -332,6 +335,13 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>org.scijava</groupId>
 				<artifactId>scripting-jython</artifactId>
 				<version>${scripting-jython.version}</version>
+			</dependency>
+
+			<!-- Scripting: MATLAB - https://github.com/scijava/scripting-matlab -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scripting-matlab</artifactId>
+				<version>${scripting-matlab.version}</version>
 			</dependency>
 
 			<!-- Swing Checkbox Tree - https://github.com/scijava/swing-checkbox-tree -->
@@ -1007,6 +1017,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<scripting-javascript.version>LATEST</scripting-javascript.version>
 				<scripting-jruby.version>LATEST</scripting-jruby.version>
 				<scripting-jython.version>LATEST</scripting-jython.version>
+				<scripting-matlab.version>LATEST</scripting-matlab.version>
 				<swing-checkbox-tree.version>LATEST</swing-checkbox-tree.version>
 			</properties>
 			<repositories>
