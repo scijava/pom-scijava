@@ -128,7 +128,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scifio-jai-imageio.version>1.1.0</scifio-jai-imageio.version>
 
 		<!-- SCIFIO-LifeSci - https://github.com/scifio/scifio-lifesci -->
-		<scifio-lifesci.version>0.5.0</scifio-lifesci.version>
+		<scifio-lifesci.version>0.5.2</scifio-lifesci.version>
 
 		<!-- SCIFIO-OME-XML - https://github.com/scifio/scifio-ome-xml -->
 		<scifio-ome-xml.version>0.9.0</scifio-ome-xml.version>
