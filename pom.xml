@@ -171,6 +171,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- Scripting: Clojure - https://github.com/scijava/scripting-clojure -->
 		<scripting-clojure.version>0.1.0</scripting-clojure.version>
 
+		<!-- Scripting: Groovy - https://github.com/scijava/scripting-groovy -->
+		<scripting-groovy.version>0.1.0</scripting-groovy.version>
+
 		<!-- Scripting: Java - https://github.com/scijava/scripting-java -->
 		<scripting-java.version>0.2.3</scripting-java.version>
 
@@ -185,6 +188,12 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 		<!-- Scripting: MATLAB - https://github.com/scijava/scripting-matlab -->
 		<scripting-matlab.version>0.1.0</scripting-matlab.version>
+
+		<!-- Scripting: R - https://github.com/scijava/scripting-r -->
+		<scripting-r.version>0.1.0</scripting-r.version>
+
+		<!-- Scripting: Scala - https://github.com/scijava/scripting-scala -->
+		<scripting-scala.version>0.1.0</scripting-scala.version>
 
 		<!-- Swing Checkbox Tree - https://github.com/scijava/swing-checkbox-tree -->
 		<swing-checkbox-tree.version>1.0.0</swing-checkbox-tree.version>
@@ -309,6 +318,13 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<version>${scripting-clojure.version}</version>
 			</dependency>
 
+			<!-- Scripting: Groovy - https://github.com/scijava/scripting-groovy -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scripting-groovy</artifactId>
+				<version>${scripting-groovy.version}</version>
+			</dependency>
+
 			<!-- Scripting: Java - https://github.com/scijava/scripting-java -->
 			<dependency>
 				<groupId>org.scijava</groupId>
@@ -342,6 +358,20 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>org.scijava</groupId>
 				<artifactId>scripting-matlab</artifactId>
 				<version>${scripting-matlab.version}</version>
+			</dependency>
+
+			<!-- Scripting: R - https://github.com/scijava/scripting-r -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scripting-r</artifactId>
+				<version>${scripting-r.version}</version>
+			</dependency>
+
+			<!-- Scripting: Scala - https://github.com/scijava/scripting-scala -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scripting-scala</artifactId>
+				<version>${scripting-scala.version}</version>
 			</dependency>
 
 			<!-- Swing Checkbox Tree - https://github.com/scijava/swing-checkbox-tree -->
@@ -1013,11 +1043,14 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<scijava-ui-swing.version>LATEST</scijava-ui-swing.version>
 				<scripting-beanshell.version>LATEST</scripting-beanshell.version>
 				<scripting-clojure.version>LATEST</scripting-clojure.version>
+				<scripting-groovy.version>LATEST</scripting-groovy.version>
 				<scripting-java.version>LATEST</scripting-java.version>
 				<scripting-javascript.version>LATEST</scripting-javascript.version>
 				<scripting-jruby.version>LATEST</scripting-jruby.version>
 				<scripting-jython.version>LATEST</scripting-jython.version>
 				<scripting-matlab.version>LATEST</scripting-matlab.version>
+				<scripting-r.version>LATEST</scripting-r.version>
+				<scripting-scala.version>LATEST</scripting-scala.version>
 				<swing-checkbox-tree.version>LATEST</swing-checkbox-tree.version>
 			</properties>
 			<repositories>
