@@ -116,26 +116,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- ImgLib2 Scripting - https://github.com/imglib/imglib-scripting -->
 		<imglib2-scripting.version>2.0.0-beta-24</imglib2-scripting.version>
 
-		<!-- SCIFIO - https://github.com/scifio -->
-
-		<!-- SCIFIO - https://github.com/scifio/scifio -->
-		<scifio.version>0.16.1</scifio.version>
-
-		<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
-		<scifio-bf-compat.version>1.8.2</scifio-bf-compat.version>
-
-		<!-- SCIFIO JAI Image I/O - https://github.com/scifio/scifio-jai-imageio -->
-		<scifio-jai-imageio.version>1.1.0</scifio-jai-imageio.version>
-
-		<!-- SCIFIO-LifeSci - https://github.com/scifio/scifio-lifesci -->
-		<scifio-lifesci.version>0.5.2</scifio-lifesci.version>
-
-		<!-- SCIFIO-OME-XML - https://github.com/scifio/scifio-ome-xml -->
-		<scifio-ome-xml.version>0.9.0</scifio-ome-xml.version>
-
-		<!-- SCIFIO-OMERO - https://github.com/scifio/scifio-omero -->
-		<scifio-omero.version>0.5.1</scifio-omero.version>
-
 		<!-- SciJava - https://github.com/scijava -->
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
@@ -445,48 +425,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>org.scijava</groupId>
 				<artifactId>native-lib-loader</artifactId>
 				<version>${native-lib-loader.version}</version>
-			</dependency>
-
-			<!-- SCIFIO - https://github.com/scifio/scifio -->
-			<dependency>
-				<groupId>io.scif</groupId>
-				<artifactId>scifio</artifactId>
-				<version>${scifio.version}</version>
-			</dependency>
-
-			<!-- SCIFIO-OME-XML - https://github.com/scifio/scifio-ome-xml -->
-			<dependency>
-				<groupId>io.scif</groupId>
-				<artifactId>scifio-ome-xml</artifactId>
-				<version>${scifio-ome-xml.version}</version>
-			</dependency>
-
-			<!-- SCIFIO-OMERO - https://github.com/scifio/scifio-omero -->
-			<dependency>
-				<groupId>io.scif</groupId>
-				<artifactId>scifio-omero</artifactId>
-				<version>${scifio-omero.version}</version>
-			</dependency>
-
-			<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
-			<dependency>
-				<groupId>io.scif</groupId>
-				<artifactId>scifio-bf-compat</artifactId>
-				<version>${scifio-bf-compat.version}</version>
-			</dependency>
-
-			<!-- SCIFIO JAI Image I/O - https://github.com/scifio/scifio-jai-imageio -->
-			<dependency>
-				<groupId>io.scif</groupId>
-				<artifactId>scifio-jai-imageio</artifactId>
-				<version>${scifio-jai-imageio.version}</version>
-			</dependency>
-
-			<!-- SCIFIO-LifeSci - https://github.com/scifio/scifio-lifesci -->
-			<dependency>
-				<groupId>io.scif</groupId>
-				<artifactId>scifio-lifesci</artifactId>
-				<version>${scifio-lifesci.version}</version>
 			</dependency>
 
 			<!-- Bio-Formats - https://github.com/openmicroscopy/bioformats -->
@@ -1052,37 +990,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<scripting-r.version>LATEST</scripting-r.version>
 				<scripting-scala.version>LATEST</scripting-scala.version>
 				<swing-checkbox-tree.version>LATEST</swing-checkbox-tree.version>
-			</properties>
-			<repositories>
-				<repository>
-					<id>imagej.public</id>
-					<url>http://maven.imagej.net/content/groups/public</url>
-				</repository>
-			</repositories>
-			<pluginRepositories>
-				<pluginRepository>
-					<id>imagej.public</id>
-					<url>http://maven.imagej.net/content/groups/public</url>
-					<snapshots>
-						<enabled>true</enabled>
-					</snapshots>
-				</pluginRepository>
-			</pluginRepositories>
-		</profile>
-		<profile>
-			<id>dev.scifio</id>
-			<activation>
-				<file>
-					<exists>${user.home}/.scijava/dev.scifio</exists>
-				</file>
-			</activation>
-			<properties>
-				<scifio.version>LATEST</scifio.version>
-				<scifio-bf-compat.version>LATEST</scifio-bf-compat.version>
-				<scifio-jai-imageio.version>LATEST</scifio-jai-imageio.version>
-				<scifio-lifesci.version>LATEST</scifio-lifesci.version>
-				<scifio-ome-xml.version>LATEST</scifio-ome-xml.version>
-				<scifio-omero.version>LATEST</scifio-omero.version>
 			</properties>
 			<repositories>
 				<repository>
