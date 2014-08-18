@@ -128,7 +128,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scijava-maven-plugin.version>0.1.1</scijava-maven-plugin.version>
 
 		<!-- SciJava Plugins: Commands - https://github.com/scijava/scijava-plugins-commands -->
-		<scijava-plugins-commands.version>0.1.6</scijava-plugins-commands.version>
+		<scijava-plugins-commands.version>0.1.7</scijava-plugins-commands.version>
 
 		<!-- SciJava Plugins: Platforms - https://github.com/scijava/scijava-plugins-platforms -->
 		<scijava-plugins-platforms.version>0.1.2</scijava-plugins-platforms.version>
