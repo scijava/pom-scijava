@@ -1188,6 +1188,33 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				</repository>
 			</distributionManagement>
 		</profile>
+
+		<!-- This profile helps Eclipse parse SciJava annotations of imported projects. -->
+		<profile>
+			<id>only-eclipse</id>
+			<activation>
+				<property>
+					<name>m2e.version</name>
+				</property>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.scijava</groupId>
+						<artifactId>scijava-maven-plugin</artifactId>
+						<version>${scijava-maven-plugin.version}</version>
+						<executions>
+							<execution>
+								<goals>
+									<goal>eclipse-helper</goal>
+								</goals>
+								<phase>process-classes</phase>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
 	</profiles>
 
 </project>
