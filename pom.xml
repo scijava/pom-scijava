@@ -161,7 +161,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scripting-javascript.version>0.2.2</scripting-javascript.version>
 
 		<!-- Scripting: JRuby - https://github.com/scijava/scripting-jruby -->
-		<scripting-jruby.version>0.1.4</scripting-jruby.version>
+		<scripting-jruby.version>0.1.5</scripting-jruby.version>
 
 		<!-- Scripting: Jython - https://github.com/scijava/scripting-jython -->
 		<scripting-jython.version>0.1.3</scripting-jython.version>
