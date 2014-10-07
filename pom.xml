@@ -81,7 +81,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 	</contributors>
 
 	<prerequisites>
-		<maven>3.0.4</maven>
+		<maven>${scijava.mvn.version}</maven>
 	</prerequisites>
 
 	<scm>
@@ -218,6 +218,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 		<!-- NB: Override argLineDebug property via debug-port profile. -->
 		<argLineDebug />
+
+		<scijava.jvm.version>1.6</scijava.jvm.version>
+		<scijava.mvn.version>3.0.4</scijava.mvn.version>
 	</properties>
 
 	<dependencyManagement>
@@ -512,8 +515,8 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 					<version>3.1</version>
 					<!-- Require the Java 6 platform. -->
 					<configuration>
-						<source>1.6</source>
-						<target>1.6</target>
+						<source>${scijava.jvm.version}</source>
+						<target>${scijava.jvm.version}</target>
 					</configuration>
 				</plugin>
 
@@ -525,6 +528,18 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<plugin>
 					<artifactId>maven-deploy-plugin</artifactId>
 					<version>2.8.1</version>
+				</plugin>
+
+				<plugin>
+					<artifactId>maven-enforcer-plugin</artifactId>
+					<version>1.3.1</version>
+					<dependencies>
+						<dependency>
+							<groupId>org.codehaus.mojo</groupId>
+							<artifactId>extra-enforcer-rules</artifactId>
+							<version>1.0-beta-3</version>
+						</dependency>
+					</dependencies>
 				</plugin>
 
 				<plugin>
@@ -812,6 +827,28 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<artifactId>maven-surefire-plugin</artifactId>
 			</plugin>
 
+			<!-- Check desired rules during maven lifecycle. -->
+			<plugin>
+				<artifactId>maven-enforcer-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>enforce-rules</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<rules>
+						<enforceBytecodeVersion>
+							<maxJdkVersion>${scijava.jvm.version}</maxJdkVersion>
+						</enforceBytecodeVersion>
+						<banCircularDependencies />
+					</rules>
+				</configuration>
+			</plugin>
+
 			<!-- Add Implementation-Build entry to JAR manifest. -->
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
@@ -903,6 +940,43 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 	</reporting>
 
 	<profiles>
+		<!-- This profile contains maven-enforcer rules that we may want to disable
+		     in some cases (such as when intentionally building with SNAPSHOT
+		     dependencies). Disable it with: -Dscijava.enforce.skip -->
+		<profile>
+			<id>scijava.enforcer.rules</id>
+			<activation>
+				<property>
+					<name>!scijava.enforce.skip</name>
+				</property>
+			</activation>
+
+			<build>
+				<plugins>
+					<plugin>
+						<artifactId>maven-enforcer-plugin</artifactId>
+						<configuration>
+							<rules>
+								<banDuplicateClasses>
+									<message>No Duplicate Classes Allowed!</message>
+								</banDuplicateClasses>
+								<requireMavenVersion>
+									<version>${scijava.mvn.version}</version>
+								</requireMavenVersion>
+								<requirePluginVersions>
+									<message>Plugins need to be versioned!</message>
+								</requirePluginVersions>
+								<requirePrerequisites />
+								<requireReleaseDeps>
+									<message>No Snapshots Allowed!</message>
+								</requireReleaseDeps>
+							</rules>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
 		<!-- These developer profiles make it easy to pin to SNAPSHOT versions.
 		     Add an empty dev.<organization> file in your ~/.scijava directory, and
 		     dependencies will automatically update! You may also need to refresh
