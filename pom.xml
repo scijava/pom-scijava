@@ -980,15 +980,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 												<ignoreClass>jnr/ffi/*</ignoreClass>
 											</ignoreClasses>
 										</dependency>
-
-										<!-- JRuby/Jython clashes -->
-										<dependency>
-											<artifactId>jython-standalone</artifactId>
-											<ignoreClasses>
-												<ignoreClass>jnr/netdb/*</ignoreClass>
-												<ignoreClass>com/kenai/jffi/*</ignoreClass>
-											</ignoreClasses>
-										</dependency>
 									</dependencies>
 								</banDuplicateClasses>
 								<enforceBytecodeVersion>
