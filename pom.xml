@@ -173,6 +173,11 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- Native Lib Loader - https://github.com/scijava/native-lib-loader -->
 		<native-lib-loader.version>2.0.2</native-lib-loader.version>
 
+		<!-- JUnit - http://junit.org/ -->
+
+		<!-- JUnit - https://github.com/junit-team/junit -->
+		<junit.version>4.11</junit.version>
+
 		<!-- JUnit Benchmarks - https://github.com/scijava/junit-benchmarks -->
 		<junit-benchmarks.version>0.7.3-scijava</junit-benchmarks.version>
 
@@ -186,12 +191,20 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- NAR Maven plugin - https://github.com/maven-nar/nar-maven-plugin -->
 		<nar.version>3.2.0</nar.version>
 
+		<!-- Other managed components -->
+
+		<!-- MigLayout - http://www.miglayout.com/ -->
+		<miglayout.version>3.7.4</miglayout.version>
+
+		<!-- JFreeChart - http://www.jfree.org/jfreechart/ -->
+		<jfreechart.version>1.0.19</jfreechart.version>
+
+		<!-- JAMA - http://math.nist.gov/javanumerics/jama/ -->
+		<jama.version>1.0.3</jama.version>
+
 		<!-- Other common project dependencies -->
 
 		<jetty.version>8.0.0.M1</jetty.version>
-		<jfreechart.version>1.0.19</jfreechart.version>
-		<miglayout.version>3.7.4</miglayout.version>
-		<junit.version>4.11</junit.version>
 
 		<!-- Additional configuration -->
 
