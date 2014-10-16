@@ -4,7 +4,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>3.8-SNAPSHOT</version>
+	<version>4.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -104,17 +104,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		     If you need to override the version of a particular component, then
 		     simply override that component's version property in your POM's
 		     <properties> section. dependencies rather than hardcoding them. -->
-
-		<!-- ImgLib2 - https://github.com/imglib -->
-
-		<!-- ImgLib2 - https://github.com/imglib/imglib -->
-		<imglib2.version>2.0.0-beta-26</imglib2.version>
-
-		<!-- ImgLib2 IJ - https://github.com/imglib/imglib-ij -->
-		<imglib2-ij.version>2.0.0-beta-26</imglib2-ij.version>
-
-		<!-- ImgLib2 Scripting - https://github.com/imglib/imglib-scripting -->
-		<imglib2-scripting.version>2.0.0-beta-24</imglib2-scripting.version>
 
 		<!-- SciJava - https://github.com/scijava -->
 
@@ -362,58 +351,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>org.scijava</groupId>
 				<artifactId>swing-checkbox-tree</artifactId>
 				<version>${swing-checkbox-tree.version}</version>
-			</dependency>
-
-			<!-- ImgLib2 - https://github.com/imglib/imglib -->
-			<dependency>
-				<groupId>net.imglib2</groupId>
-				<artifactId>imglib2</artifactId>
-				<version>${imglib2.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>net.imglib2</groupId>
-				<artifactId>imglib2-meta</artifactId>
-				<version>${imglib2.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>net.imglib2</groupId>
-				<artifactId>imglib2-ops</artifactId>
-				<version>${imglib2.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>net.imglib2</groupId>
-				<artifactId>imglib2-realtransform</artifactId>
-				<version>${imglib2.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>net.imglib2</groupId>
-				<artifactId>imglib2-ui</artifactId>
-				<version>${imglib2.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>net.imglib2</groupId>
-				<artifactId>imglib2-algorithms</artifactId>
-				<version>${imglib2.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>net.imglib2</groupId>
-				<artifactId>imglib2-algorithms-gpl</artifactId>
-				<version>${imglib2.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>net.imglib2</groupId>
-				<artifactId>imglib2-algorithms-legacy</artifactId>
-				<version>${imglib2.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>net.imglib2</groupId>
-				<artifactId>imglib2-ij</artifactId>
-				<version>${imglib2-ij.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>net.imglib2</groupId>
-				<artifactId>imglib2-scripting</artifactId>
-				<version>${imglib2-scripting.version}</version>
 			</dependency>
 
 			<!-- MiniMaven - https://github.com/scijava/minimaven -->
@@ -1008,34 +945,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		     Add an empty dev.<organization> file in your ~/.scijava directory, and
 		     dependencies will automatically update! You may also need to refresh
 		     your IDE; e.g., in Eclipse: right click, Maven > Update Project... -->
-		<profile>
-			<id>dev.imglib2</id>
-			<activation>
-				<file>
-					<exists>${user.home}/.scijava/dev.imglib2</exists>
-				</file>
-			</activation>
-			<properties>
-				<imglib2.version>LATEST</imglib2.version>
-				<imglib2-ij.version>LATEST</imglib2-ij.version>
-				<imglib2-scripting.version>LATEST</imglib2-scripting.version>
-			</properties>
-			<repositories>
-				<repository>
-					<id>imagej.public</id>
-					<url>http://maven.imagej.net/content/groups/public</url>
-				</repository>
-			</repositories>
-			<pluginRepositories>
-				<pluginRepository>
-					<id>imagej.public</id>
-					<url>http://maven.imagej.net/content/groups/public</url>
-					<snapshots>
-						<enabled>true</enabled>
-					</snapshots>
-				</pluginRepository>
-			</pluginRepositories>
-		</profile>
 		<profile>
 			<id>dev.ome</id>
 			<activation>
