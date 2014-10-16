@@ -164,7 +164,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scripting-jruby.version>0.1.5</scripting-jruby.version>
 
 		<!-- Scripting: Jython - https://github.com/scijava/scripting-jython -->
-		<scripting-jython.version>0.1.3</scripting-jython.version>
+		<scripting-jython.version>0.1.4</scripting-jython.version>
 
 		<!-- Scripting: MATLAB - https://github.com/scijava/scripting-matlab -->
 		<scripting-matlab.version>0.2.1</scripting-matlab.version>
@@ -195,14 +195,14 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- NAR Maven plugin - https://github.com/maven-nar -->
 
 		<!-- NAR Maven plugin - https://github.com/maven-nar/nar-maven-plugin -->
-		<nar.version>3.1.0</nar.version>
+		<nar.version>3.2.0</nar.version>
 
 		<!-- Other common project dependencies -->
 
 		<jetty.version>8.0.0.M1</jetty.version>
-		<jfreechart.version>1.0.14</jfreechart.version>
+		<jfreechart.version>1.0.19</jfreechart.version>
+		<miglayout.version>3.7.4</miglayout.version>
 		<junit.version>4.11</junit.version>
-		<miglayout.version>3.7.3.1</miglayout.version>
 
 		<!-- Additional configuration -->
 
