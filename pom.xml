@@ -959,7 +959,43 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 							<rules>
 								<banDuplicateClasses>
 									<message>No Duplicate Classes Allowed!</message>
+									<dependencies>
+										<!-- JRuby/JRuby clashes -->
+										<dependency>
+											<artifactId>jcodings</artifactId>
+											<ignoreClasses>
+												<ignoreClass>org/jcodings/*</ignoreClass>
+											</ignoreClasses>
+										</dependency>
+										<dependency>
+											<artifactId>jnr-constants</artifactId>
+											<ignoreClasses>
+												<ignoreClass>com/kenai/constantine/*</ignoreClass>
+												<ignoreClass>jnr/constants/*</ignoreClass>
+											</ignoreClasses>
+										</dependency>
+										<dependency>
+											<artifactId>jnr-ffi</artifactId>
+											<ignoreClasses>
+												<ignoreClass>jnr/ffi/*</ignoreClass>
+											</ignoreClasses>
+										</dependency>
+
+										<!-- JRuby/Jython clashes -->
+										<dependency>
+											<artifactId>jython-standalone</artifactId>
+											<ignoreClasses>
+												<ignoreClass>jnr/netdb/*</ignoreClass>
+												<ignoreClass>com/kenai/jffi/*</ignoreClass>
+											</ignoreClasses>
+										</dependency>
+									</dependencies>
 								</banDuplicateClasses>
+								<enforceBytecodeVersion>
+									<excludes>
+										<exclude>com.headius:invokebinder</exclude>
+									</excludes>
+								</enforceBytecodeVersion>
 								<requireMavenVersion>
 									<version>${scijava.mvn.version}</version>
 								</requireMavenVersion>
