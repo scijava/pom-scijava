@@ -175,11 +175,19 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 		<!-- JUnit - http://junit.org/ -->
 
-		<!-- JUnit - https://github.com/junit-team/junit -->
-		<junit.version>4.11</junit.version>
-
 		<!-- JUnit Benchmarks - https://github.com/scijava/junit-benchmarks -->
 		<junit-benchmarks.version>0.7.3-scijava</junit-benchmarks.version>
+
+		<!--
+		 BEGIN MANUALLY MANAGED VERSIONS
+
+		 The SciJava project uses tools in https://github.com/scijava/scijava-scripts
+		 and https://github.com/scijava/scijava-maven-plugin to manage the properties
+		 above.
+		 -->
+
+		<!-- JUnit - https://github.com/junit-team/junit -->
+		<junit.version>4.11</junit.version>
 
 		<!-- Open Microscopy Environment - https://github.com/openmicroscopy -->
 
