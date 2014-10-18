@@ -63,6 +63,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			<organizationUrl>http://loci.wisc.edu/</organizationUrl>
 			<roles>
 				<role>developer</role>
+				<role>architect</role>
 			</roles>
 			<timezone>-6</timezone>
 		</developer>
