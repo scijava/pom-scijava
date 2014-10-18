@@ -427,6 +427,13 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<version>${jfreechart.version}</version>
 			</dependency>
 
+			<!-- JAMA - http://math.nist.gov/javanumerics/jama/ -->
+			<dependency>
+				<groupId>gov.nist.math</groupId>
+				<artifactId>jama</artifactId>
+				<version>${jama.version}</version>
+			</dependency>
+
 			<!-- MigLayout - http://www.miglayout.com/ -->
 			<dependency>
 				<groupId>com.miglayout</groupId>
