@@ -173,8 +173,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- Native Lib Loader - https://github.com/scijava/native-lib-loader -->
 		<native-lib-loader.version>2.0.2</native-lib-loader.version>
 
-		<!-- JUnit - http://junit.org/ -->
-
 		<!-- JUnit Benchmarks - https://github.com/scijava/junit-benchmarks -->
 		<junit-benchmarks.version>0.7.3-scijava</junit-benchmarks.version>
 
@@ -185,9 +183,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		 and https://github.com/scijava/scijava-maven-plugin to manage the properties
 		 above.
 		 -->
-
-		<!-- JUnit - https://github.com/junit-team/junit -->
-		<junit.version>4.11</junit.version>
 
 		<!-- Open Microscopy Environment - https://github.com/openmicroscopy -->
 
@@ -200,6 +195,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<nar.version>3.2.0</nar.version>
 
 		<!-- Other managed components -->
+
+		<!-- JUnit - http://junit.org/ -->
+		<junit.version>4.11</junit.version>
 
 		<!-- MigLayout - http://www.miglayout.com/ -->
 		<miglayout.version>3.7.4</miglayout.version>
