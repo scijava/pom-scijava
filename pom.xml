@@ -4,7 +4,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>4.2-SNAPSHOT</version>
+	<version>4.2</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -88,7 +88,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 	<scm>
 		<connection>scm:git:git://github.com/scijava/pom-scijava</connection>
 		<developerConnection>scm:git:git@github.com:scijava/pom-scijava</developerConnection>
-		<tag>HEAD</tag>
+		<tag>pom-scijava-4.2</tag>
 		<url>https://github.com/scijava/pom-scijava</url>
 	</scm>
 
