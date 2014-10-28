@@ -10,7 +10,7 @@
 	<name>SciJava Projects</name>
 	<description>SciJava aims to provide an overview of available Java libraries for scientific computing. This POM provides a parent from which participating projects can declare their build configurations. It ensures that projects all use a compatible build environment, including Java version, as well as versions of dependencies and plugins.
 
-Projects wishing to use pom-scijava as a parent project need to override the &lt;name&gt;, &lt;description&gt;, &lt;url&gt;, &lt;inceptionYear&gt; &lt;licenses&gt;, &lt;developers&gt;, &lt;organization&gt; and the &lt;scm&gt; sections.</description>
+Projects wishing to use pom-scijava as a parent project need to override the &lt;name&gt;, &lt;description&gt;, &lt;url&gt;, &lt;inceptionYear&gt; &lt;licenses&gt;, &lt;developers&gt;, &lt;contributors&gt;, &lt;organization&gt; and the &lt;scm&gt; sections.</description>
 	<url>http://www.scijava.org/</url>
 	<inceptionYear>2011</inceptionYear>
 
