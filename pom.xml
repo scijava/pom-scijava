@@ -724,6 +724,13 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 					<artifactId>nar-maven-plugin</artifactId>
 					<version>${nar.version}</version>
 				</plugin>
+
+				<!-- SciJava Maven plugin - https://github.com/scijava/scijava-maven-plugin -->
+				<plugin>
+					<groupId>org.scijava</groupId>
+					<artifactId>scijava-maven-plugin</artifactId>
+					<version>${scijava-maven-plugin.version}</version>
+				</plugin>
 			</plugins>
 		</pluginManagement>
 		<plugins>
