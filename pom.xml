@@ -764,12 +764,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<artifactId>buildnumber-maven-plugin</artifactId>
 			</plugin>
 
-			<!-- Enable 'license:' goals. -->
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>license-maven-plugin</artifactId>
-			</plugin>
-
 			<!-- Enable 'graph:' goals. -->
 			<plugin>
 				<groupId>org.fusesource.mvnplugins</groupId>
