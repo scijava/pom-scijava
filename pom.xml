@@ -776,6 +776,18 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>org.fusesource.mvnplugins</groupId>
 				<artifactId>maven-graph-plugin</artifactId>
 			</plugin>
+
+			<!-- Enable 'nar:' goals. -->
+			<plugin>
+				<groupId>com.github.maven-nar</groupId>
+				<artifactId>nar-maven-plugin</artifactId>
+			</plugin>
+
+			<!-- Enable 'scijava:' goals. -->
+			<plugin>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-maven-plugin</artifactId>
+			</plugin>
 		</plugins>
 
 		<!-- We use wagon-webdav-jackrabbit 1.0 for deploys, since it is
