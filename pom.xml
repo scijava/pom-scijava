@@ -866,6 +866,38 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 	</reporting>
 
 	<profiles>
+		<!-- The exec profile provides an easy way to execute a defined
+		     ${main-class} for manual testing purposes. It is declared
+		     in a profile to avoid clashing with other potential uses
+		     of exec-maven-plugin during the main build. -->
+		<profile>
+			<id>exec</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>exec-maven-plugin</artifactId>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>${main-class}</argument>
+							</arguments>
+						</configuration>
+						<executions>
+							<execution>
+								<phase>test</phase>
+								<goals>
+									<goal>exec</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
 		<!-- This profile contains maven-enforcer rules that we may want to disable
 		     in some cases (such as when intentionally building with SNAPSHOT
 		     dependencies). Disable it with: -Dscijava.enforce.skip -->
