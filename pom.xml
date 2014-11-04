@@ -759,6 +759,10 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 					<rules>
 						<enforceBytecodeVersion>
 							<maxJdkVersion>${scijava.jvm.version}</maxJdkVersion>
+							<excludes>
+								<exclude>com.headius:invokebinder</exclude>
+								<exclude>com.sun:tools</exclude>
+							</excludes>
 						</enforceBytecodeVersion>
 						<banCircularDependencies />
 					</rules>
