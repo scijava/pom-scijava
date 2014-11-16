@@ -906,6 +906,35 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			</build>
 		</profile>
 
+		<!-- The jdb profile launches the defined ${main-class} in the jdb debugger.
+		     Launch it using: mvn -Pjdb exec:exec -->
+		<profile>
+			<id>jdb</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>exec-maven-plugin</artifactId>
+						<configuration>
+							<executable>jdb</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>${main-class}</argument>
+							</arguments>
+						</configuration>
+						<executions>
+							<execution>
+								<goals>
+									<goal>exec</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
 		<!-- This profile contains maven-enforcer rules that we may want to disable
 		     in some cases (such as when intentionally building with SNAPSHOT
 		     dependencies). Disable it with: -Dscijava.enforce.skip -->
