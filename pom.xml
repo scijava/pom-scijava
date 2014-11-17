@@ -457,7 +457,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<exclusions>
 					<exclusion>
 						<groupId>xml-apis</groupId>
-						</artifactId>xml-apis</artifactId>
+						<artifactId>xml-apis</artifactId>
 					</exclusion>
 				</exclusions>
 			</dependency>
