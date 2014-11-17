@@ -397,16 +397,46 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>ome</groupId>
 				<artifactId>formats-api</artifactId>
 				<version>${bio-formats.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xalan</groupId>
+						<artifactId>serializer</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>xalan</groupId>
+						<artifactId>xalan</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>ome</groupId>
 				<artifactId>formats-bsd</artifactId>
 				<version>${bio-formats.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xalan</groupId>
+						<artifactId>serializer</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>xalan</groupId>
+						<artifactId>xalan</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>ome</groupId>
 				<artifactId>formats-common</artifactId>
 				<version>${bio-formats.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xalan</groupId>
+						<artifactId>serializer</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>xalan</groupId>
+						<artifactId>xalan</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>ome</groupId>
@@ -424,6 +454,12 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>org.jfree</groupId>
 				<artifactId>jfreechart</artifactId>
 				<version>${jfreechart.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						</artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<!-- JAMA - http://math.nist.gov/javanumerics/jama/ -->
