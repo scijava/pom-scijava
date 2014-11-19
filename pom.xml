@@ -91,6 +91,14 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<tag>HEAD</tag>
 		<url>https://github.com/scijava/pom-scijava</url>
 	</scm>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/scijava/pom-scijava/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>Jenkins</system>
+		<url>http://jenkins.imagej.net/job/pom-scijava/</url>
+	</ciManagement>
 
 	<properties>
 		<!-- If two artifacts on the classpath use two different versions of the
