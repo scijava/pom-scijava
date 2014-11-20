@@ -112,7 +112,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 		     If you need to override the version of a particular component, then
 		     simply override that component's version property in your POM's
-		     <properties> section. dependencies rather than hardcoding them. -->
+		     <properties> section, rather than hardcoding them. -->
 
 		<!-- SciJava - https://github.com/scijava -->
 
