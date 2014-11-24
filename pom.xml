@@ -1024,6 +1024,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 								<enforceBytecodeVersion>
 									<excludes>
 										<exclude>com.headius:invokebinder</exclude>
+										<exclude>com.sun:tools</exclude>
 									</excludes>
 								</enforceBytecodeVersion>
 								<requireMavenVersion>
