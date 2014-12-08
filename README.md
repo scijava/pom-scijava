@@ -13,8 +13,8 @@ See these examples for guidance:
 
 For more information about Maven, see:
 
-* [Learning Maven](http://developer.imagej.net/learning-maven)
-* [Maven FAQ](http://wiki.imagej.net/Maven_-_Frequently_Asked_Questions)
+* [ImageJ Maven overview](http://imagej.net/Maven)
+* [ImageJ Maven FAQ](http://imagej.net/Maven_-_Frequently_Asked_Questions)
 
 ## Documentation
 
