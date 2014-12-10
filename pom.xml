@@ -664,7 +664,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 					<executions>
 						<execution>
 							<goals>
-								<goal>jar</goal>
+								<goal>jar-no-fork</goal>
 							</goals>
 						</execution>
 					</executions>
