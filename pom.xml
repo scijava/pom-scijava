@@ -809,8 +809,8 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				    <banDuplicateClasses>
 						  <message>No Duplicate Classes Allowed! For duplicate transitive dependencies, add dependency exclusions. For duplications between direct dependencies, resolve or add ignored classes to this rule's configuration.</message>
 							<dependencies>
-							 	<!-- JRuby/JRuby clashes -->
-							 	<dependency>
+								<!-- JRuby/JRuby clashes -->
+								<dependency>
 									<artifactId>jcodings</artifactId>
 									<ignoreClasses>
 										<ignoreClass>org/jcodings/*</ignoreClass>
@@ -821,12 +821,47 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 									<ignoreClasses>
 										<ignoreClass>com/kenai/constantine/*</ignoreClass>
 										<ignoreClass>jnr/constants/*</ignoreClass>
-							  	</ignoreClasses>
+									</ignoreClasses>
 								</dependency>
 								<dependency>
 									<artifactId>jnr-ffi</artifactId>
-		 							<ignoreClasses>
+									<ignoreClasses>
 										<ignoreClass>jnr/ffi/*</ignoreClass>
+									</ignoreClasses>
+								</dependency>
+
+								<!-- Java3D clashes -->
+								<dependency>
+									<artifactId>VIB-lib</artifactId>
+									<ignoreClasses>
+										<ignoreClass>javax/media/j3d/</ignoreClass>
+									</ignoreClasses>
+								</dependency>
+								<dependency>
+									<artifactId>j3d-core</artifactId>
+									<ignoreClasses>
+										<ignoreClass>javax/media/j3d/</ignoreClass>
+									</ignoreClasses>
+								</dependency>
+
+								<!-- Fiji dependency clashes -->
+								<dependency>
+									<artifactId>joda-time</artifactId>
+									<ignoreClasses>
+										<ignoreClass>*</ignoreClass>
+									</ignoreClasses>
+								</dependency>
+								<dependency>
+									<artifactId>slf4j-log4j12</artifactId>
+									<ignoreClasses>
+										<ignoreClass>org/slf4j/impl/*</ignoreClass>
+									</ignoreClasses>
+								</dependency>
+								<dependency>
+									<groupId>batik</groupId>
+									<artifactId>batik</artifactId>
+									<ignoreClasses>
+										<ignoreClass>*</ignoreClass>
 									</ignoreClasses>
 								</dependency>
 							</dependencies>
