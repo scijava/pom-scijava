@@ -806,8 +806,8 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				</executions>
 				<configuration>
 					<rules>
-				    <banDuplicateClasses>
-						  <message>No Duplicate Classes Allowed! For duplicate transitive dependencies, add dependency exclusions. For duplications between direct dependencies, resolve or add ignored classes to this rule's configuration.</message>
+						<banDuplicateClasses>
+							<message>No Duplicate Classes Allowed! For duplicate transitive dependencies, add dependency exclusions. For duplications between direct dependencies, resolve or add ignored classes to this rule's configuration.</message>
 							<dependencies>
 								<!-- JRuby/JRuby clashes -->
 								<dependency>
