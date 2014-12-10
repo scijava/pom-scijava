@@ -806,6 +806,41 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				</executions>
 				<configuration>
 					<rules>
+				    <banDuplicateClasses>
+						  <message>No Duplicate Classes Allowed! For duplicate transitive dependencies, add dependency exclusions. For duplications between direct dependencies, resolve or add ignored classes to this rule's configuration.</message>
+							<dependencies>
+							 	<!-- JRuby/JRuby clashes -->
+							 	<dependency>
+									<artifactId>jcodings</artifactId>
+									<ignoreClasses>
+										<ignoreClass>org/jcodings/*</ignoreClass>
+									</ignoreClasses>
+								</dependency>
+								<dependency>
+									<artifactId>jnr-constants</artifactId>
+									<ignoreClasses>
+										<ignoreClass>com/kenai/constantine/*</ignoreClass>
+										<ignoreClass>jnr/constants/*</ignoreClass>
+							  	</ignoreClasses>
+								</dependency>
+								<dependency>
+									<artifactId>jnr-ffi</artifactId>
+		 							<ignoreClasses>
+										<ignoreClass>jnr/ffi/*</ignoreClass>
+									</ignoreClasses>
+								</dependency>
+							</dependencies>
+						</banDuplicateClasses>
+						<requireMavenVersion>
+							<version>${scijava.mvn.version}</version>
+						</requireMavenVersion>
+						<requirePluginVersions>
+							<message>Plugins need to be versioned!</message>
+						</requirePluginVersions>
+						<requirePrerequisites />
+						<requireReleaseDeps>
+								<message>No Snapshots Allowed! If you are intentionally trying to test locally against a SNAPSHOT, you can temporarily suppress the Maven Enforcer with: -Denforcer.skip</message>
+						</requireReleaseDeps>
 						<requireReproducibleBuilds implementation="org.scijava.maven.plugin.RequireReproducibleBuilds">
 							<groupIds>org.scijava</groupIds>
 						</requireReproducibleBuilds>
@@ -996,47 +1031,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 						<artifactId>maven-enforcer-plugin</artifactId>
 						<configuration>
 							<rules>
-								<banDuplicateClasses>
-									<message>No Duplicate Classes Allowed!</message>
-									<dependencies>
-										<!-- JRuby/JRuby clashes -->
-										<dependency>
-											<artifactId>jcodings</artifactId>
-											<ignoreClasses>
-												<ignoreClass>org/jcodings/*</ignoreClass>
-											</ignoreClasses>
-										</dependency>
-										<dependency>
-											<artifactId>jnr-constants</artifactId>
-											<ignoreClasses>
-												<ignoreClass>com/kenai/constantine/*</ignoreClass>
-												<ignoreClass>jnr/constants/*</ignoreClass>
-											</ignoreClasses>
-										</dependency>
-										<dependency>
-											<artifactId>jnr-ffi</artifactId>
-											<ignoreClasses>
-												<ignoreClass>jnr/ffi/*</ignoreClass>
-											</ignoreClasses>
-										</dependency>
-									</dependencies>
-								</banDuplicateClasses>
-								<enforceBytecodeVersion>
-									<excludes>
-										<exclude>com.headius:invokebinder</exclude>
-										<exclude>com.sun:tools</exclude>
-									</excludes>
-								</enforceBytecodeVersion>
-								<requireMavenVersion>
-									<version>${scijava.mvn.version}</version>
-								</requireMavenVersion>
-								<requirePluginVersions>
-									<message>Plugins need to be versioned!</message>
-								</requirePluginVersions>
-								<requirePrerequisites />
-								<requireReleaseDeps>
-									<message>No Snapshots Allowed! If you are intentionally trying to test locally against a SNAPSHOT, you can temporarily suppress this with: -Dscijava.enforce.skip</message>
-								</requireReleaseDeps>
 							</rules>
 						</configuration>
 					</plugin>
