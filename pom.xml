@@ -1067,30 +1067,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			</build>
 		</profile>
 
-		<!-- This profile contains maven-enforcer rules that we may want to disable
-		     in some cases (such as when intentionally building with SNAPSHOT
-		     dependencies). Disable it with: -Dscijava.enforce.skip -->
-		<profile>
-			<id>scijava.enforcer.rules</id>
-			<activation>
-				<property>
-					<name>!scijava.enforce.skip</name>
-				</property>
-			</activation>
-
-			<build>
-				<plugins>
-					<plugin>
-						<artifactId>maven-enforcer-plugin</artifactId>
-						<configuration>
-							<rules>
-							</rules>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-
 		<!-- These developer profiles make it easy to pin to SNAPSHOT versions.
 		     Add an empty dev.<organization> file in your ~/.scijava directory, and
 		     dependencies will automatically update! You may also need to refresh
