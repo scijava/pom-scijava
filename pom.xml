@@ -816,7 +816,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				</executions>
 				<configuration>
 					<rules>
-						<banDuplicateClasses>
+						<banClasses implementation="org.scijava.maven.plugin.enforcer.BanDuplicateClasses">
 							<message>No Duplicate Classes Allowed! For duplicate transitive dependencies, add dependency exclusions. For duplications between direct dependencies, resolve or add ignored classes to this rule's configuration.</message>
 							<dependencies>
 								<!-- JRuby/JRuby clashes -->
@@ -875,7 +875,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 									</ignoreClasses>
 								</dependency>
 							</dependencies>
-						</banDuplicateClasses>
+						</banClasses>
 						<requireMavenVersion>
 							<version>${scijava.mvn.version}</version>
 						</requireMavenVersion>
