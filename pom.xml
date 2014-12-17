@@ -882,6 +882,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 									</ignoreClasses>
 								</dependency>
 							</dependencies>
+							<findAllDuplicates>true</findAllDuplicates>
 						</banClasses>
 						<requireMavenVersion>
 							<version>${scijava.mvn.version}</version>
