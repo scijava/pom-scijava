@@ -874,6 +874,13 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 										<ignoreClass>*</ignoreClass>
 									</ignoreClasses>
 								</dependency>
+								<dependency>
+									<groupId>jama</groupId>
+									<artifactId>jama</artifactId>
+									<ignoreClasses>
+										<ignoreClass>Jama/*</ignoreClass>
+									</ignoreClasses>
+								</dependency>
 							</dependencies>
 						</banClasses>
 						<requireMavenVersion>
