@@ -881,6 +881,13 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 										<ignoreClass>Jama/*</ignoreClass>
 									</ignoreClasses>
 								</dependency>
+								<dependency>
+									<groupId>com.sun</groupId>
+									<artifactId>tools</artifactId>
+									<ignoreClasses>
+										<ignoreClass>*</ignoreClass>
+									</ignoreClasses>
+								</dependency>
 							</dependencies>
 							<findAllDuplicates>true</findAllDuplicates>
 						</banClasses>
