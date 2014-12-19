@@ -117,22 +117,22 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- SciJava - https://github.com/scijava -->
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.35.1</scijava-common.version>
+		<scijava-common.version>2.35.2</scijava-common.version>
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
 		<scijava-config.version>1.0.0</scijava-config.version>
 
 		<!-- SciJava Common: SLF4J Logging - https://github.com/scijava/scijava-log-slf4j -->
-		<scijava-log-slf4j.version>1.0.1</scijava-log-slf4j.version>
+		<scijava-log-slf4j.version>1.0.2</scijava-log-slf4j.version>
 
 		<!-- SciJava Maven Plugin - https://github.com/scijava/scijava-maven-plugin -->
 		<scijava-maven-plugin.version>0.4.3</scijava-maven-plugin.version>
 
 		<!-- SciJava Plugins: Commands - https://github.com/scijava/scijava-plugins-commands -->
-		<scijava-plugins-commands.version>0.1.7</scijava-plugins-commands.version>
+		<scijava-plugins-commands.version>0.1.8</scijava-plugins-commands.version>
 
 		<!-- SciJava Plugins: Platforms - https://github.com/scijava/scijava-plugins-platforms -->
-		<scijava-plugins-platforms.version>0.1.2</scijava-plugins-platforms.version>
+		<scijava-plugins-platforms.version>0.1.3</scijava-plugins-platforms.version>
 
 		<!-- SciJava Plugins: Text: Markdown - https://github.com/scijava/scijava-plugins-text-markdown -->
 		<scijava-plugins-text-markdown.version>0.1.1</scijava-plugins-text-markdown.version>
@@ -141,7 +141,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scijava-plugins-text-plain.version>0.1.1</scijava-plugins-text-plain.version>
 
 		<!-- SciJava UI: AWT - https://github.com/scijava/scijava-ui-awt -->
-		<scijava-ui-awt.version>0.1.2</scijava-ui-awt.version>
+		<scijava-ui-awt.version>0.1.3</scijava-ui-awt.version>
 
 		<!-- SciJava UI: Swing - https://github.com/scijava/scijava-ui-swing -->
 		<scijava-ui-swing.version>0.3.0</scijava-ui-swing.version>
