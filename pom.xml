@@ -611,38 +611,24 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 						     http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=5101868 -->
 						<use>false</use>
 						<links>
-							<!-- Java 6 -->
-							<link>http://docs.oracle.com/javase/6/docs/api/</link>
-
-							<!-- Core SciJava projects -->
-							<!-- Bio-Formats -->
-							<link>http://ci.openmicroscopy.org/job/BIOFORMATS-5.0-latest/javadoc/</link>
-							<!-- Fiji -->
-							<link>http://jenkins.imagej.net/job/Fiji-javadoc/javadoc/</link>
-							<!-- ImageJ1 -->
-							<link>http://jenkins.imagej.net/job/ImageJ1-javadoc/javadoc/</link>
-							<!-- ImageJ2 -->
-							<link>http://jenkins.imagej.net/job/ImageJ-daily/javadoc/</link>
-							<!-- ImgLib2 -->
-							<link>http://jenkins.imagej.net/job/ImgLib-daily/javadoc/</link>
-							<!-- SCIFIO -->
-							<link>http://jenkins.imagej.net/job/SCIFIO-javadoc/javadoc/</link>
-							<!-- SciJava Common -->
-							<link>http://jenkins.imagej.net/job/SciJava-common-javadoc/javadoc/</link>
-
-							<!-- Third party dependencies -->
-							<!-- Apache Pivot -->
-							<link>http://pivot.apache.org/2.0.4/docs/api/</link>
-							<!-- Eclipse -->
-							<link>http://help.eclipse.org/indigo/topic/org.eclipse.platform.doc.isv/reference/api/</link>
-							<!-- Java3D -->
-							<link>http://download.java.net/media/java3d/javadoc/1.5.2/</link>
-							<!-- Javassist -->
-							<link>http://www.csg.ci.i.u-tokyo.ac.jp/~chiba/javassist/html/</link>
-							<!-- JHotDraw -->
-							<link>http://www.randelshofer.ch/oop/jhotdraw/JavaDoc/</link>
-							<!-- MPI-CBG -->
-							<link>http://jenkins.imagej.net/view/Fiji/job/Saalfeld-MPICBG-Maven/javadoc/</link>
+							<link>http://javadoc.imagej.net/Java/</link>
+							<link>http://javadoc.imagej.net/ImageJ/</link>
+							<link>http://javadoc.imagej.net/ImgLib2/</link>
+							<link>http://javadoc.imagej.net/SCIFIO/</link>
+							<link>http://javadoc.imagej.net/SciJava/</link>
+							<link>http://javadoc.imagej.net/Fiji/</link>
+							<link>http://javadoc.imagej.net/ImageJ1/</link>
+							<link>http://javadoc.imagej.net/Bio-Formats/</link>
+							<link>http://javadoc.imagej.net/MPI-CBG/</link>
+							<link>http://javadoc.imagej.net/Icy/</link>
+							<link>http://javadoc.imagej.net/KNIME/</link>
+							<link>http://javadoc.imagej.net/OMERO/</link>
+							<link>http://javadoc.imagej.net/MiToBo/</link>
+							<link>http://javadoc.imagej.net/Java3D/</link>
+							<link>http://javadoc.imagej.net/Pivot/</link>
+							<link>http://javadoc.imagej.net/Eclipse/</link>
+							<link>http://javadoc.imagej.net/Javassist/</link>
+							<link>http://javadoc.imagej.net/JHotDraw/</link>
 						</links>
 					</configuration>
 				</plugin>
@@ -974,38 +960,24 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 					     http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=5101868 -->
 					<use>false</use>
 					<links>
-						<!-- Java 6 -->
-						<link>http://docs.oracle.com/javase/6/docs/api/</link>
-
-						<!-- Core SciJava projects -->
-						<!-- Bio-Formats -->
-						<link>http://hudson.openmicroscopy.org.uk/job/BIOFORMATS-trunk/javadoc/</link>
-						<!-- Fiji -->
-						<link>http://jenkins.imagej.net/job/Fiji-javadoc/javadoc/</link>
-						<!-- ImageJ1 -->
-						<link>http://jenkins.imagej.net/job/ImageJ1-javadoc/javadoc/</link>
-						<!-- ImageJ2 -->
-						<link>http://jenkins.imagej.net/job/ImageJ-daily/javadoc/</link>
-						<!-- ImgLib2 -->
-						<link>http://jenkins.imagej.net/job/ImgLib-daily/javadoc/</link>
-						<!-- SCIFIO -->
-						<link>http://jenkins.imagej.net/job/SCIFIO-javadoc/javadoc/</link>
-						<!-- SciJava Common -->
-						<link>http://jenkins.imagej.net/job/SciJava-common-javadoc/javadoc/</link>
-
-						<!-- Third party dependencies -->
-						<!-- Apache Pivot -->
-						<link>http://pivot.apache.org/2.0.4/docs/api/</link>
-						<!-- Eclipse -->
-						<link>http://help.eclipse.org/indigo/topic/org.eclipse.platform.doc.isv/reference/api/</link>
-						<!-- Java3D -->
-						<link>http://download.java.net/media/java3d/javadoc/1.5.2/</link>
-						<!-- Javassist -->
-						<link>http://www.csg.ci.i.u-tokyo.ac.jp/~chiba/javassist/html/</link>
-						<!-- JHotDraw -->
-						<link>http://www.randelshofer.ch/oop/jhotdraw/JavaDoc/</link>
-						<!-- MPI-CBG -->
-						<link>http://jenkins.imagej.net/view/Fiji/job/Saalfeld-MPICBG-Maven/javadoc/</link>
+						<link>http://javadoc.imagej.net/Java/</link>
+						<link>http://javadoc.imagej.net/ImageJ/</link>
+						<link>http://javadoc.imagej.net/ImgLib2/</link>
+						<link>http://javadoc.imagej.net/SCIFIO/</link>
+						<link>http://javadoc.imagej.net/SciJava/</link>
+						<link>http://javadoc.imagej.net/Fiji/</link>
+						<link>http://javadoc.imagej.net/ImageJ1/</link>
+						<link>http://javadoc.imagej.net/Bio-Formats/</link>
+						<link>http://javadoc.imagej.net/MPI-CBG/</link>
+						<link>http://javadoc.imagej.net/Icy/</link>
+						<link>http://javadoc.imagej.net/KNIME/</link>
+						<link>http://javadoc.imagej.net/OMERO/</link>
+						<link>http://javadoc.imagej.net/MiToBo/</link>
+						<link>http://javadoc.imagej.net/Java3D/</link>
+						<link>http://javadoc.imagej.net/Pivot/</link>
+						<link>http://javadoc.imagej.net/Eclipse/</link>
+						<link>http://javadoc.imagej.net/Javassist/</link>
+						<link>http://javadoc.imagej.net/JHotDraw/</link>
 					</links>
 				</configuration>
 			</plugin>
