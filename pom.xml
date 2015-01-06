@@ -1389,6 +1389,33 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				</plugins>
 			</build>
 		</profile>
+
+		<profile>
+			<id>build-javadoc</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-javadoc-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>attach-javadocs</id>
+								<goals>
+									<goal>jar</goal>
+								</goals>
+							</execution>
+						</executions>
+						<configuration>
+							<!-- Include direct dependencies -->
+							<includeDependencySources>true</includeDependencySources>
+
+							<!-- No need to include the tools -->
+							<excludePackageNames>com.sun.*</excludePackageNames>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
 	</profiles>
 
 </project>
