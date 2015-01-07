@@ -1136,7 +1136,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			</properties>
 		</profile>
 
-		<!-- Run integration tests when "-P run-its" is passed.
+		<!-- Run integration tests when "-Prun-its" is passed.
 		     This works using the maven-invoker-plugin. -->
 		<profile>
 			<id>run-its</id>
