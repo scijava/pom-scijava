@@ -1316,17 +1316,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			<build>
 				<pluginManagement>
 					<plugins>
-						<!-- Eclipse-specific configuration
-
-								 With a recent version of m2e, Eclipse's Maven binding, it is no
-								 longer enough to configure plugins; they will be ignored by
-								 default. But we really want the buildnumber and the jar plugin to
-								 do their job. So now we have to add lifecycle mappings in addition
-								 to configuring the plugins.
-
-								 Let's hope that m2e remains the only IDE Maven binding that
-								 requires such a lot of additional work just to get the same result
-								 as plain Maven would produce out of the box. -->
+						<!-- Configure the m2e plugin, Eclipse's Maven binding, to support
+						     needed plugins. In particular, we want the buildnumber and jar
+						     plugins to do their jobs. -->
 						<plugin>
 							<groupId>org.eclipse.m2e</groupId>
 							<artifactId>lifecycle-mapping</artifactId>
