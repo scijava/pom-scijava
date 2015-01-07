@@ -1382,6 +1382,8 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			</build>
 		</profile>
 
+		<!-- This profile aggregates javadocs for the project
+		     and its direct dependencies. -->
 		<profile>
 			<id>build-javadoc</id>
 			<build>
