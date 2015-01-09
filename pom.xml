@@ -884,9 +884,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 							<message>Plugins need to be versioned!</message>
 						</requirePluginVersions>
 						<requirePrerequisites />
-						<requireReleaseDeps>
-								<message>No Snapshots Allowed! If you are intentionally trying to test locally against a SNAPSHOT, you can temporarily suppress the Maven Enforcer with: -Denforcer.skip</message>
-						</requireReleaseDeps>
 						<requireReproducibleBuilds implementation="org.scijava.maven.plugin.RequireReproducibleBuilds">
 							<groupIds>org.scijava</groupIds>
 						</requireReproducibleBuilds>
