@@ -1405,6 +1405,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 							<!-- No need to include the tools -->
 							<excludePackageNames>com.sun.*</excludePackageNames>
+
+							<!-- Remove the "${project.version} API" from the default title -->
+							<doctitle>${project.name}</doctitle>
 						</configuration>
 					</plugin>
 				</plugins>
