@@ -1365,7 +1365,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 					<plugin>
 						<groupId>org.scijava</groupId>
 						<artifactId>scijava-maven-plugin</artifactId>
-						<version>${scijava-maven-plugin.version}</version>
 						<executions>
 							<execution>
 								<goals>
