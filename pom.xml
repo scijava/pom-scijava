@@ -220,8 +220,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- JAMA - http://math.nist.gov/javanumerics/jama/ -->
 		<jama.version>1.0.3</jama.version>
 
-		<!-- Other common project dependencies -->
-
+		<!-- Jetty - http://eclipse.org/jetty/ -->
 		<jetty.version>8.0.0.M1</jetty.version>
 
 		<!-- Additional configuration -->
