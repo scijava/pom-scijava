@@ -220,11 +220,11 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- JAMA - http://math.nist.gov/javanumerics/jama/ -->
 		<jama.version>1.0.3</jama.version>
 
-		<!-- Jetty - http://eclipse.org/jetty/ -->
-		<jetty.version>8.0.0.M1</jetty.version>
-
 		<!-- JHDF5 - https://wiki-bsse.ethz.ch/label/JHDF5/hdf5 -->
 		<jhdf5.version>14.12.0</jhdf5.version>
+
+		<!-- Jetty - http://eclipse.org/jetty/ -->
+		<jetty.version>8.0.0.M1</jetty.version>
 
 		<!-- Additional configuration -->
 
@@ -487,6 +487,13 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>gov.nist.math</groupId>
 				<artifactId>jama</artifactId>
 				<version>${jama.version}</version>
+			</dependency>
+
+			<!-- JHDF5 - https://wiki-bsse.ethz.ch/label/JHDF5/hdf5 -->
+			<dependency>
+				<groupId>cisd</groupId>
+				<artifactId>jhdf5</artifactId>
+				<version>${jhdf5.version}</version>
 			</dependency>
 
 			<!-- MigLayout - http://www.miglayout.com/ -->
