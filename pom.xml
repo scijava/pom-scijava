@@ -229,6 +229,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- Jetty - http://eclipse.org/jetty/ -->
 		<jetty.version>8.0.0.M1</jetty.version>
 
+		<!-- Joda-Time - http://www.joda.org/joda-time/ -->
+		<joda-time.version>2.3</joda-time.version>
+
 		<!-- Additional configuration -->
 
 		<!-- NB: Avoid platform encoding warning when copying resources. -->
@@ -512,6 +515,13 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<artifactId>miglayout</artifactId>
 				<version>${miglayout.version}</version>
 				<classifier>swing</classifier>
+			</dependency>
+
+			<!-- Joda-Time - http://www.joda.org/joda-time/ -->
+			<dependency>
+				<groupId>joda-time</groupId>
+				<artifactId>joda-time</artifactId>
+				<version>${joda-time.version}</version>
 			</dependency>
 
 			<!-- JUnit - http://junit.org/ -->
