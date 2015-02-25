@@ -117,7 +117,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- SciJava - https://github.com/scijava -->
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.38.0</scijava-common.version>
+		<scijava-common.version>2.38.1</scijava-common.version>
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
 		<scijava-config.version>1.0.0</scijava-config.version>
@@ -150,25 +150,25 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scijava-ui-swing.version>0.4.0</scijava-ui-swing.version>
 
 		<!-- Scripting: Beanshell - https://github.com/scijava/scripting-beanshell -->
-		<scripting-beanshell.version>0.1.3</scripting-beanshell.version>
+		<scripting-beanshell.version>0.2.0</scripting-beanshell.version>
 
 		<!-- Scripting: Clojure - https://github.com/scijava/scripting-clojure -->
 		<scripting-clojure.version>0.1.1</scripting-clojure.version>
 
 		<!-- Scripting: Groovy - https://github.com/scijava/scripting-groovy -->
-		<scripting-groovy.version>0.1.1</scripting-groovy.version>
+		<scripting-groovy.version>0.2.0</scripting-groovy.version>
 
 		<!-- Scripting: Java - https://github.com/scijava/scripting-java -->
 		<scripting-java.version>0.2.5</scripting-java.version>
 
 		<!-- Scripting: Javascript - https://github.com/scijava/scripting-javascript -->
-		<scripting-javascript.version>0.2.2</scripting-javascript.version>
+		<scripting-javascript.version>0.3.0</scripting-javascript.version>
 
 		<!-- Scripting: JRuby - https://github.com/scijava/scripting-jruby -->
-		<scripting-jruby.version>0.1.5</scripting-jruby.version>
+		<scripting-jruby.version>0.2.0</scripting-jruby.version>
 
 		<!-- Scripting: Jython - https://github.com/scijava/scripting-jython -->
-		<scripting-jython.version>0.1.4</scripting-jython.version>
+		<scripting-jython.version>0.2.0</scripting-jython.version>
 
 		<!-- Scripting: MATLAB - https://github.com/scijava/scripting-matlab -->
 		<scripting-matlab.version>0.2.1</scripting-matlab.version>
