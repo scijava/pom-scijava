@@ -518,7 +518,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			<dependency>
 				<groupId>org.javassist</groupId>
 				<artifactId>javassist</artifactId>
-				<version>${javassist.version&gt;</version>
+				<version>${javassist.version}</version>
 			</dependency>
 
 			<!-- JCommon - http://www.jfree.org/jcommon/ -->
