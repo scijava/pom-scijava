@@ -211,6 +211,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 		<!-- Other managed components -->
 
+		<!-- Gson - https://code.google.com/p/google-gson/ -->
+		<gson.version>2.2.4</gson.version>
+
 		<!-- JAMA - http://math.nist.gov/javanumerics/jama/ -->
 		<jama.version>1.0.3</jama.version>
 
@@ -483,6 +486,13 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>ome</groupId>
 				<artifactId>ome-xml</artifactId>
 				<version>${bio-formats.version}</version>
+			</dependency>
+
+			<!-- Gson - https://code.google.com/p/google-gson/ -->
+			<dependency>
+				<groupId>com.google.code.gson</groupId>
+				<artifactId>gson</artifactId>
+				<version>${gson.version}</version>
 			</dependency>
 
 			<!-- JAMA - http://math.nist.gov/javanumerics/jama/ -->
