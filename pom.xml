@@ -120,7 +120,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scijava-common.version>2.38.2</scijava-common.version>
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
-		<scijava-config.version>1.0.0</scijava-config.version>
+		<scijava-config.version>2.0.0</scijava-config.version>
 
 		<!-- SciJava Expression Parser - https://github.com/scijava/scijava-expression-parser -->
 		<scijava-expression-parser.version>2.0.0</scijava-expression-parser.version>
