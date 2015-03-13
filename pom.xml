@@ -211,26 +211,26 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 		<!-- Other managed components -->
 
+		<!-- JAMA - http://math.nist.gov/javanumerics/jama/ -->
+		<jama.version>1.0.3</jama.version>
+
+		<!-- Jetty - http://eclipse.org/jetty/ -->
+		<jetty.version>8.0.0.M1</jetty.version>
+
+		<!-- JFreeChart - http://www.jfree.org/jfreechart/ -->
+		<jfreechart.version>1.0.19</jfreechart.version>
+
+		<!-- JHDF5 - https://wiki-bsse.ethz.ch/label/JHDF5/hdf5 -->
+		<jhdf5.version>14.12.0</jhdf5.version>
+
+		<!-- Joda-Time - http://www.joda.org/joda-time/ -->
+		<joda-time.version>2.3</joda-time.version>
+
 		<!-- JUnit - http://junit.org/ -->
 		<junit.version>4.11</junit.version>
 
 		<!-- MigLayout - http://www.miglayout.com/ -->
 		<miglayout.version>3.7.4</miglayout.version>
-
-		<!-- JFreeChart - http://www.jfree.org/jfreechart/ -->
-		<jfreechart.version>1.0.19</jfreechart.version>
-
-		<!-- JAMA - http://math.nist.gov/javanumerics/jama/ -->
-		<jama.version>1.0.3</jama.version>
-
-		<!-- JHDF5 - https://wiki-bsse.ethz.ch/label/JHDF5/hdf5 -->
-		<jhdf5.version>14.12.0</jhdf5.version>
-
-		<!-- Jetty - http://eclipse.org/jetty/ -->
-		<jetty.version>8.0.0.M1</jetty.version>
-
-		<!-- Joda-Time - http://www.joda.org/joda-time/ -->
-		<joda-time.version>2.3</joda-time.version>
 
 		<!-- Additional configuration -->
 
@@ -482,6 +482,13 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<version>${bio-formats.version}</version>
 			</dependency>
 
+			<!-- JAMA - http://math.nist.gov/javanumerics/jama/ -->
+			<dependency>
+				<groupId>gov.nist.math</groupId>
+				<artifactId>jama</artifactId>
+				<version>${jama.version}</version>
+			</dependency>
+
 			<!-- JFreeChart - http://www.jfree.org/jfreechart/ -->
 			<dependency>
 				<groupId>org.jfree</groupId>
@@ -495,18 +502,18 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				</exclusions>
 			</dependency>
 
-			<!-- JAMA - http://math.nist.gov/javanumerics/jama/ -->
-			<dependency>
-				<groupId>gov.nist.math</groupId>
-				<artifactId>jama</artifactId>
-				<version>${jama.version}</version>
-			</dependency>
-
 			<!-- JHDF5 - https://wiki-bsse.ethz.ch/label/JHDF5/hdf5 -->
 			<dependency>
 				<groupId>cisd</groupId>
 				<artifactId>jhdf5</artifactId>
 				<version>${jhdf5.version}</version>
+			</dependency>
+
+			<!-- Joda-Time - http://www.joda.org/joda-time/ -->
+			<dependency>
+				<groupId>joda-time</groupId>
+				<artifactId>joda-time</artifactId>
+				<version>${joda-time.version}</version>
 			</dependency>
 
 			<!-- MigLayout - http://www.miglayout.com/ -->
@@ -517,12 +524,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<classifier>swing</classifier>
 			</dependency>
 
-			<!-- Joda-Time - http://www.joda.org/joda-time/ -->
-			<dependency>
-				<groupId>joda-time</groupId>
-				<artifactId>joda-time</artifactId>
-				<version>${joda-time.version}</version>
-			</dependency>
+			<!-- Test scope dependencies -->
 
 			<!-- JUnit - http://junit.org/ -->
 			<dependency>
