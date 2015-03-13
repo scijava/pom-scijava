@@ -235,6 +235,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- JHDF5 - https://wiki-bsse.ethz.ch/label/JHDF5/hdf5 -->
 		<jhdf5.version>14.12.0</jhdf5.version>
 
+		<!-- JNA - https://github.com/twall/jna -->
+		<jna.version>3.2.7</jna.version>
+
 		<!-- Joda-Time - http://www.joda.org/joda-time/ -->
 		<joda-time.version>2.3</joda-time.version>
 
@@ -707,6 +710,13 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>cisd</groupId>
 				<artifactId>jhdf5</artifactId>
 				<version>${jhdf5.version}</version>
+			</dependency>
+
+			<!-- JNA - https://github.com/twall/jna -->
+			<dependency>
+				<groupId>net.java.dev.jna</groupId>
+				<artifactId>jna</artifactId>
+				<version>${jna.version}</version>
 			</dependency>
 
 			<!-- Joda-Time - http://www.joda.org/joda-time/ -->
