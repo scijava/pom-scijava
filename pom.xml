@@ -159,7 +159,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scripting-groovy.version>0.2.0</scripting-groovy.version>
 
 		<!-- Scripting: Java - https://github.com/scijava/scripting-java -->
-		<scripting-java.version>0.2.5</scripting-java.version>
+		<scripting-java.version>0.3.0</scripting-java.version>
 
 		<!-- Scripting: Javascript - https://github.com/scijava/scripting-javascript -->
 		<scripting-javascript.version>0.3.0</scripting-javascript.version>
