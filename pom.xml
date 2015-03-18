@@ -218,7 +218,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<jama.version>1.0.3</jama.version>
 
 		<!-- Javassist - http://www.javassist.org/ -->
-		<javassist.version>3.16.1-GA</javassist.version>
+		<javassist.version>3.19.0-GA</javassist.version>
 
 		<!-- JCommon - http://www.jfree.org/jcommon/ -->
 		<jcommon.version>1.0.23</jcommon.version>
