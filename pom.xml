@@ -119,7 +119,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- SciJava - https://github.com/scijava -->
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.39.0</scijava-common.version>
+		<scijava-common.version>2.40.0</scijava-common.version>
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
 		<scijava-config.version>2.0.0</scijava-config.version>
@@ -131,7 +131,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scijava-log-slf4j.version>1.0.2</scijava-log-slf4j.version>
 
 		<!-- SciJava Maven Plugin - https://github.com/scijava/scijava-maven-plugin -->
-		<scijava-maven-plugin.version>0.4.4</scijava-maven-plugin.version>
+		<scijava-maven-plugin.version>0.5.0</scijava-maven-plugin.version>
 
 		<!-- SciJava Plugins: Commands - https://github.com/scijava/scijava-plugins-commands -->
 		<scijava-plugins-commands.version>0.1.8</scijava-plugins-commands.version>
@@ -149,7 +149,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scijava-ui-awt.version>0.1.3</scijava-ui-awt.version>
 
 		<!-- SciJava UI: Swing - https://github.com/scijava/scijava-ui-swing -->
-		<scijava-ui-swing.version>0.4.0</scijava-ui-swing.version>
+		<scijava-ui-swing.version>0.5.0</scijava-ui-swing.version>
 
 		<!-- Scripting: Beanshell - https://github.com/scijava/scripting-beanshell -->
 		<scripting-beanshell.version>0.2.0</scripting-beanshell.version>
