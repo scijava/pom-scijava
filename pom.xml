@@ -4,7 +4,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>6.1.1-SNAPSHOT</version>
+	<version>7.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -204,7 +204,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- Open Microscopy Environment - https://github.com/openmicroscopy -->
 
 		<!-- Bio-Formats - https://github.com/openmicroscopy/bioformats -->
-		<bio-formats.version>5.0.7</bio-formats.version>
+		<bio-formats.version>5.1.0</bio-formats.version>
 
 		<!-- NAR Maven plugin - https://github.com/maven-nar -->
 
