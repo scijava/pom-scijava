@@ -1,4 +1,4 @@
-![](http://jenkins.imagej.net/job/pom-scijava/lastBuild/badge/icon)
+[![](http://jenkins.imagej.net/job/pom-scijava/lastBuild/badge/icon)](http://jenkins.imagej.net/job/pom-scijava/)
 
 The pom-scijava project is a Maven POM that serves as the base for all
 Maven-based SciJava software, including:
