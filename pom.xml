@@ -4,7 +4,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>7.0.1-SNAPSHOT</version>
+	<version>7.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -119,7 +119,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- SciJava - https://github.com/scijava -->
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.40.0</scijava-common.version>
+		<scijava-common.version>2.41.0</scijava-common.version>
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
 		<scijava-config.version>2.0.0</scijava-config.version>
@@ -149,7 +149,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scijava-ui-awt.version>0.1.3</scijava-ui-awt.version>
 
 		<!-- SciJava UI: Swing - https://github.com/scijava/scijava-ui-swing -->
-		<scijava-ui-swing.version>0.6.0</scijava-ui-swing.version>
+		<scijava-ui-swing.version>0.6.1</scijava-ui-swing.version>
 
 		<!-- Scripting: Beanshell - https://github.com/scijava/scripting-beanshell -->
 		<scripting-beanshell.version>0.2.0</scripting-beanshell.version>
@@ -170,7 +170,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scripting-jruby.version>0.2.0</scripting-jruby.version>
 
 		<!-- Scripting: Jython - https://github.com/scijava/scripting-jython -->
-		<scripting-jython.version>0.2.0</scripting-jython.version>
+		<scripting-jython.version>0.2.1</scripting-jython.version>
 
 		<!-- Scripting: MATLAB - https://github.com/scijava/scripting-matlab -->
 		<scripting-matlab.version>0.2.1</scripting-matlab.version>
