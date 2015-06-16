@@ -950,7 +950,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 				<!--
 				Build Number Maven plugin -
-				http://mojo.codehaus.org/buildnumber-maven-plugin/
+				http://www.mojohaus.org/buildnumber-maven-plugin/
 				This plugin embeds a build number in the JAR manifest.
 				-->
 				<plugin>
@@ -973,7 +973,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				</plugin>
 
 				<!-- Exec Maven plugin -
-				http://mojo.codehaus.org/exec-maven-plugin/
+				http://www.mojohaus.org/exec-maven-plugin/
 				This plugin launches a Java class using Maven. -->
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
@@ -983,7 +983,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 				<!--
 				License Maven plugin -
-				http://mojo.codehaus.org/license-maven-plugin/
+				http://www.mojohaus.org/license-maven-plugin/
 				This plugin manages project licenses and source file headers.
 				-->
 				<plugin>
@@ -1005,7 +1005,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 				<!--
 				Versions Maven plugin -
-				http://mojo.codehaus.org/versions-maven-plugin/
+				http://www.mojohaus.org/versions-maven-plugin/
 				Check for new plugin versions using
 				"mvn versions:display-plugin-updates"
 				-->
