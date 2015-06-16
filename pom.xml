@@ -1704,9 +1704,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<pluginManagement>
 					<plugins>
 						<!--
-						Configure the m2e plugin, Eclipse's Maven binding, to support
-						needed plugins. In particular, we want the buildnumber and jar
-						plugins to do their jobs.
+						Configure the Eclipse m2e plugin to support needed plugins.
 						-->
 						<plugin>
 							<groupId>org.eclipse.m2e</groupId>
