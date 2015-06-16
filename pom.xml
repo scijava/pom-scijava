@@ -4,7 +4,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>7.3.2-SNAPSHOT</version>
+	<version>7.4.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -1032,6 +1032,24 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 					</configuration>
 				</plugin>
 
+				<!--
+				JavaFX Maven plugin -
+				https://github.com/javafx-maven-plugin/javafx-maven-plugin
+				Generate platform-specific application bundles using "mvn jfx:native"
+				-->
+				<plugin>
+					<groupId>com.zenjava</groupId>
+					<artifactId>javafx-maven-plugin</artifactId>
+					<version>8.1.2</version>
+					<configuration>
+						<appName>${project.name}</appName>
+						<identifier>${project.name}</identifier>
+						<jfxMainAppJarName>${project.name}.jar</jfxMainAppJarName>
+						<mainClass>${main-class}</mainClass>
+						<verbose>true</verbose>
+					</configuration>
+				</plugin>
+
 				<!-- NAR Maven plugin - https://github.com/maven-nar/nar-maven-plugin -->
 				<plugin>
 					<groupId>com.github.maven-nar</groupId>
@@ -1178,6 +1196,12 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			<plugin>
 				<groupId>org.fusesource.mvnplugins</groupId>
 				<artifactId>maven-graph-plugin</artifactId>
+			</plugin>
+
+			<!-- Enable 'jfx:' goals. -->
+			<plugin>
+				<groupId>com.zenjava</groupId>
+				<artifactId>javafx-maven-plugin</artifactId>
 			</plugin>
 
 			<!-- Enable 'nar:' goals. -->
