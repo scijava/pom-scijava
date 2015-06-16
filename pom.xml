@@ -949,6 +949,39 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				</plugin>
 
 				<!--
+				Build Helper Maven plugin -
+				http://www.mojohaus.org/build-helper-maven-plugin/
+				-->
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>build-helper-maven-plugin</artifactId>
+					<version>1.9.1</version>
+					<!--
+					Create a version string which conforms to Java packaging requirements.
+					https://docs.oracle.com/javase/8/docs/technotes/guides/versioning/spec/versioning2.html#wp89936
+
+					In particular, the standard Java packaging tool will fail unless the
+					version string conforms to Java packaging rules. Further reading:
+					https://docs.oracle.com/javase/8/docs/technotes/guides/deploy/packaging.html#
+					-->
+					<executions>
+						<execution>
+							<id>sanitize-version</id>
+							<goals>
+								<goal>regex-property</goal>
+							</goals>
+							<configuration>
+								<name>sanitizedVersion</name>
+								<value>${project.version}</value>
+								<regex>^([0-9]+)\.([0-9]+)\.([0-9]+).*$</regex>
+								<replacement>$1.$2.$3</replacement>
+								<failIfNoMatch>false</failIfNoMatch>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+
+				<!--
 				Build Number Maven plugin -
 				http://www.mojohaus.org/buildnumber-maven-plugin/
 				This plugin embeds a build number in the JAR manifest.
@@ -1046,6 +1079,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 						<identifier>${project.name}</identifier>
 						<jfxMainAppJarName>${project.name}.jar</jfxMainAppJarName>
 						<mainClass>${main-class}</mainClass>
+						<nativeReleaseVersion>${sanitizedVersion}</nativeReleaseVersion>
 						<verbose>true</verbose>
 					</configuration>
 				</plugin>
@@ -1184,6 +1218,12 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 						<banCircularDependencies />
 					</rules>
 				</configuration>
+			</plugin>
+
+			<!-- Generate a package-friendly version property. -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>build-helper-maven-plugin</artifactId>
 			</plugin>
 
 			<!-- Add Implementation-Build entry to JAR manifest. -->
