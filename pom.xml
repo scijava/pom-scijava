@@ -118,6 +118,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 		<!-- SciJava - https://github.com/scijava -->
 
+		<!-- SciJava Cache - https://github.com/scijava/scijava-cache -->
+		<scijava-cache.version>0.1.0</scijava-cache.version>
+
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
 		<scijava-common.version>2.47.0</scijava-common.version>
 
@@ -312,6 +315,14 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 	<dependencyManagement>
 		<dependencies>
+
+			<!-- SciJava Cache - https://github.com/scijava/scijava-cache -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-cache</artifactId>
+				<version>${scijava-cache.version}</version>
+			</dependency>
+
 			<!-- SciJava Common - https://github.com/scijava/scijava-common -->
 			<dependency>
 				<groupId>org.scijava</groupId>
@@ -1507,7 +1518,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			<properties>
 				<minimaven.version>LATEST</minimaven.version>
 				<native-lib-loader.version>LATEST</native-lib-loader.version>
-				<scijava-common.version>LATEST</scijava-common.version>
+				<scijava-cache.version>LATEST</scijava-cache.version>
 				<scijava-config.version>LATEST</scijava-config.version>
 				<scijava-expression-parser.version>LATEST</scijava-expression-parser.version>
 				<scijava-log-slf4j.version>LATEST</scijava-log-slf4j.version>
