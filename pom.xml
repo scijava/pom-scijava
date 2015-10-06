@@ -1330,7 +1330,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				replicated from the pluginManagement section. This is necessary because
 				many versions of maven-site-plugin (including 3.3) do not respect the
 				pluginManagement values.
-				See: http://jira.codehaus.org/browse/MSITE-443
+				See: https://issues.apache.org/jira/browse/MSITE-443
 				While the maven-site-plugin documentation states that it "search[es]
 				the same groupId/artifactId in the build.pluginManagement.plugins
 				section", this claim unfortunately does not seem to reflect reality.
