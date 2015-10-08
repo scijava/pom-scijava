@@ -4,7 +4,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>8.3.1-SNAPSHOT</version>
+	<version>8.4.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -221,6 +221,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<nar-maven-plugin.version>3.2.0</nar-maven-plugin.version>
 
 		<!-- Other managed components -->
+
+		<!-- RSyntaxTextArea - http://bobbylight.github.io/RSyntaxTextArea/ -->
+		<rsyntaxtextarea.version>2.5.7</rsyntaxtextarea.version>
 
 		<!-- Gson - https://code.google.com/p/google-gson/ -->
 		<gson.version>2.2.4</gson.version>
@@ -550,6 +553,23 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>ome</groupId>
 				<artifactId>ome-xml</artifactId>
 				<version>${ome-xml.version}</version>
+			</dependency>
+
+			<!-- RSyntaxTextArea - http://bobbylight.github.io/RSyntaxTextArea/ -->
+			<dependency>
+				<groupId>com.fifesoft</groupId>
+				<artifactId>rsyntaxtextarea</artifactId>
+				<version>${rsyntaxtextarea.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fifesoft</groupId>
+				<artifactId>autocomplete</artifactId>
+				<version>${rsyntaxtextarea.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fifesoft</groupId>
+				<artifactId>languagesupport</artifactId>
+				<version>${rsyntaxtextarea.version}</version>
 			</dependency>
 
 			<!-- Gson - https://code.google.com/p/google-gson/ -->
