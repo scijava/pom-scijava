@@ -238,7 +238,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<jcommon.version>1.0.23</jcommon.version>
 
 		<!-- JDOM - http://www.jdom.org/ -->
-		<jdom2.version>2.0.5</jdom2.version>
+		<jdom2.version>2.0.6</jdom2.version>
 
 		<!-- Jetty - http://eclipse.org/jetty/ -->
 		<jetty.version>9.1.3.v20140225</jetty.version>
