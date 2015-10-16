@@ -122,7 +122,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scijava-cache.version>0.1.0</scijava-cache.version>
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.47.0</scijava-common.version>
+		<scijava-common.version>2.48.0</scijava-common.version>
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
 		<scijava-config.version>2.0.0</scijava-config.version>
@@ -207,7 +207,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- Open Microscopy Environment - https://github.com/openmicroscopy -->
 
 		<!-- Bio-Formats - https://github.com/openmicroscopy/bioformats -->
-		<bio-formats.version>5.1.4</bio-formats.version>
+		<bio-formats.version>5.1.5</bio-formats.version>
 		<bio-formats_plugins.version>${bio-formats.version}</bio-formats_plugins.version>
 		<formats-api.version>${bio-formats.version}</formats-api.version>
 		<formats-bsd.version>${bio-formats.version}</formats-bsd.version>
