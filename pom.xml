@@ -4,7 +4,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>8.4.1-SNAPSHOT</version>
+	<version>8.5.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -221,6 +221,12 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<nar-maven-plugin.version>3.2.0</nar-maven-plugin.version>
 
 		<!-- Other managed components -->
+
+		<!-- Java 3D - https://github.com/scijava/java3d-core -->
+		<java3d.version>1.6.0-scijava-1</java3d.version>
+
+		<!-- JOGL - https://jogamp.org/jogl/ -->
+		<jogl.version>2.3</jogl.version>
 
 		<!-- RSyntaxTextArea - http://bobbylight.github.io/RSyntaxTextArea/ -->
 		<rsyntaxtextarea.version>2.5.7</rsyntaxtextarea.version>
@@ -553,6 +559,45 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>ome</groupId>
 				<artifactId>ome-xml</artifactId>
 				<version>${ome-xml.version}</version>
+			</dependency>
+
+			<!-- Java 3D - https://github.com/scijava/java3d-core -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>java3d-core</artifactId>
+				<version>${java3d.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>java3d-utils</artifactId>
+				<version>${java3d.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>vecmath</artifactId>
+				<version>${java3d.version}</version>
+			</dependency>
+
+			<!-- JOGL - https://jogamp.org/jogl/ -->
+			<dependency>
+				<groupId>org.jogamp.gluegen</groupId>
+				<artifactId>gluegen-rt-main</artifactId>
+				<version>${jogl.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jogamp.jogl</groupId>
+				<artifactId>jogl-all-main</artifactId>
+				<version>${jogl.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jogamp.jocl</groupId>
+				<artifactId>jocl-main</artifactId>
+				<version>${jogl.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jogamp.joal</groupId>
+				<artifactId>joal-main</artifactId>
+				<version>${jogl.version}</version>
 			</dependency>
 
 			<!-- RSyntaxTextArea - http://bobbylight.github.io/RSyntaxTextArea/ -->
