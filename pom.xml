@@ -229,7 +229,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<jogl.version>2.3</jogl.version>
 
 		<!-- RSyntaxTextArea - http://bobbylight.github.io/RSyntaxTextArea/ -->
-		<rsyntaxtextarea.version>2.5.7</rsyntaxtextarea.version>
+		<rsyntaxtextarea.version>2.5.8</rsyntaxtextarea.version>
 
 		<!-- Gson - https://code.google.com/p/google-gson/ -->
 		<gson.version>2.2.4</gson.version>
