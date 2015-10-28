@@ -564,12 +564,12 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			<!-- Java 3D - https://github.com/scijava/java3d-core -->
 			<dependency>
 				<groupId>org.scijava</groupId>
-				<artifactId>java3d-core</artifactId>
+				<artifactId>j3dcore</artifactId>
 				<version>${java3d.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.scijava</groupId>
-				<artifactId>java3d-utils</artifactId>
+				<artifactId>j3dutils</artifactId>
 				<version>${java3d.version}</version>
 			</dependency>
 			<dependency>
