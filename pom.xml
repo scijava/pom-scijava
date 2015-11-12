@@ -234,7 +234,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<java3d.version>1.6.0-scijava-1</java3d.version>
 
 		<!-- JOGL - https://jogamp.org/jogl/ -->
-		<jogl.version>2.3</jogl.version>
+		<jogl.version>2.3.2</jogl.version>
 
 		<!-- RSyntaxTextArea - http://bobbylight.github.io/RSyntaxTextArea/ -->
 		<rsyntaxtextarea.version>2.5.8</rsyntaxtextarea.version>
