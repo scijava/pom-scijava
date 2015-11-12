@@ -13,12 +13,10 @@
 Projects wishing to use pom-scijava as a parent project need to override the &lt;name&gt;, &lt;description&gt;, &lt;url&gt;, &lt;inceptionYear&gt;, &lt;organization&gt;, &lt;licenses&gt;, &lt;developers&gt;, &lt;contributors&gt;, &lt;mailingLists&gt;, &lt;scm&gt;, &lt;issueManagement&gt; and &lt;ciManagement&gt; sections.</description>
 	<url>http://www.scijava.org/</url>
 	<inceptionYear>2011</inceptionYear>
-
 	<organization>
 		<name>SciJava</name>
 		<url>http://www.scijava.org/</url>
 	</organization>
-
 	<licenses>
 		<license>
 			<name>CC0 1.0 Universal License</name>
@@ -36,21 +34,12 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			<organization>UW-Madison LOCI</organization>
 			<organizationUrl>http://loci.wisc.edu/</organizationUrl>
 			<roles>
-				<role>architect</role>
+				<role>lead</role>
 				<role>developer</role>
-			</roles>
-			<timezone>-6</timezone>
-		</developer>
-		<developer>
-			<id>dscho</id>
-			<name>Johannes Schindelin</name>
-			<email>schindelin@wisc.edu</email>
-			<url>http://loci.wisc.edu/people/johannes-schindelin</url>
-			<organization>UW-Madison LOCI</organization>
-			<organizationUrl>http://loci.wisc.edu/</organizationUrl>
-			<roles>
-				<role>architect</role>
-				<role>developer</role>
+				<role>debugger</role>
+				<role>reviewer</role>
+				<role>support</role>
+				<role>maintainer</role>
 			</roles>
 			<timezone>-6</timezone>
 		</developer>
@@ -62,22 +51,31 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			<organization>UW-Madison LOCI</organization>
 			<organizationUrl>http://loci.wisc.edu/</organizationUrl>
 			<roles>
+				<role>lead</role>
 				<role>developer</role>
-				<role>architect</role>
+				<role>debugger</role>
+				<role>reviewer</role>
+				<role>support</role>
+				<role>maintainer</role>
 			</roles>
 			<timezone>-6</timezone>
 		</developer>
 	</developers>
 	<contributors>
 		<contributor>
+			<name>Johannes Schindelin</name>
+			<url>http://imagej.net/User:Schindelin</url>
+			<properties><id>dscho</id></properties>
+		</contributor>
+		<contributor>
 			<name>Barry DeZonia</name>
-			<url>http://loci.wisc.edu/people/barry-dezonia</url>
-			<organization>UW-Madison LOCI</organization>
-			<organizationUrl>http://loci.wisc.edu/</organizationUrl>
-			<roles>
-				<role>developer</role>
-			</roles>
-			<timezone>-6</timezone>
+			<url>http://imagej.net/User:Bdezonia</url>
+			<properties><id>bdezonia</id></properties>
+		</contributor>
+		<contributor>
+			<name>Jean-Yves Tinevez</name>
+			<url>http://imagej.net/User:JeanYvesTinevez</url>
+			<properties><id>tinevez</id></properties>
 		</contributor>
 	</contributors>
 
@@ -1381,7 +1379,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<artifactId>scijava-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-
 		<!--
 		We use wagon-webdav-jackrabbit 1.0 for deploys, since it is
 		compatible with both Maven 2.2.x and Maven 3.0.x cross-platform.
@@ -1973,5 +1970,4 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			</build>
 		</profile>
 	</profiles>
-
 </project>
