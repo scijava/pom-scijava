@@ -4,7 +4,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>8.5.1-SNAPSHOT</version>
+	<version>9.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -231,7 +231,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- Other managed components -->
 
 		<!-- Java 3D - https://github.com/scijava/java3d-core -->
-		<java3d.version>1.6.0-scijava-1</java3d.version>
+		<java3d.version>1.6.0-scijava-2</java3d.version>
 
 		<!-- JOGL - https://jogamp.org/jogl/ -->
 		<jogl.version>2.3.2</jogl.version>
