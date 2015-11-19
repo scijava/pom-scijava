@@ -593,8 +593,8 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<version>${jogl.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.jogamp.jogl</groupId>
-				<artifactId>jogl-all-main</artifactId>
+				<groupId>org.jogamp.joal</groupId>
+				<artifactId>joal-main</artifactId>
 				<version>${jogl.version}</version>
 			</dependency>
 			<dependency>
@@ -603,8 +603,8 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<version>${jogl.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.jogamp.joal</groupId>
-				<artifactId>joal-main</artifactId>
+				<groupId>org.jogamp.jogl</groupId>
+				<artifactId>jogl-all-main</artifactId>
 				<version>${jogl.version}</version>
 			</dependency>
 
