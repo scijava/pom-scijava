@@ -34,6 +34,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			<organization>UW-Madison LOCI</organization>
 			<organizationUrl>http://loci.wisc.edu/</organizationUrl>
 			<roles>
+				<role>founder</role>
 				<role>lead</role>
 				<role>developer</role>
 				<role>debugger</role>
