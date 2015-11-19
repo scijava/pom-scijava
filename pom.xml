@@ -243,6 +243,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- Gson - https://code.google.com/p/google-gson/ -->
 		<gson.version>2.2.4</gson.version>
 
+		<!-- Guava - https://github.com/google/guava -->
+		<guava.version>18.0</guava.version>
+
 		<!-- JAMA - http://math.nist.gov/javanumerics/jama/ -->
 		<jama.version>1.0.3</jama.version>
 
@@ -631,6 +634,13 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>com.google.code.gson</groupId>
 				<artifactId>gson</artifactId>
 				<version>${gson.version}</version>
+			</dependency>
+
+			<!-- Guava - https://github.com/google/guava -->
+			<dependency>
+				<groupId>com.google.guava</groupId>
+				<artifactId>guava</artifactId>
+				<version>${guava.version}</version>
 			</dependency>
 
 			<!-- JAMA - http://math.nist.gov/javanumerics/jama/ -->
