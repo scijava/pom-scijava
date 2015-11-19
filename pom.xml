@@ -1281,20 +1281,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 									</ignoreClasses>
 								</dependency>
 
-								<!-- Java3D clashes -->
-								<dependency>
-									<artifactId>VIB-lib</artifactId>
-									<ignoreClasses>
-										<ignoreClass>javax/media/j3d/</ignoreClass>
-									</ignoreClasses>
-								</dependency>
-								<dependency>
-									<artifactId>j3d-core</artifactId>
-									<ignoreClasses>
-										<ignoreClass>javax/media/j3d/</ignoreClass>
-									</ignoreClasses>
-								</dependency>
-
 								<!-- Fiji dependency clashes -->
 								<dependency>
 									<artifactId>joda-time</artifactId>
