@@ -1843,7 +1843,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 											</pluginExecutionFilter>
 											<action>
 												<execute>
-													<runOnIncremental>true</runOnIncremental>
 													<runOnConfiguration>true</runOnConfiguration>
 												</execute>
 											</action>
