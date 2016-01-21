@@ -187,8 +187,8 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- Scripting: MATLAB - https://github.com/scijava/scripting-matlab -->
 		<scripting-matlab.version>0.4.1</scripting-matlab.version>
 
-		<!-- Scripting: R - https://github.com/scijava/scripting-r -->
-		<scripting-r.version>0.1.0</scripting-r.version>
+		<!-- Scripting: Renjin - https://github.com/scijava/scripting-renjin -->
+		<scripting-renjin.version>0.1.0</scripting-renjin.version>
 
 		<!-- Scripting: Scala - https://github.com/scijava/scripting-scala -->
 		<scripting-scala.version>0.1.0</scripting-scala.version>
@@ -476,11 +476,11 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<version>${scripting-matlab.version}</version>
 			</dependency>
 
-			<!-- Scripting: R - https://github.com/scijava/scripting-r -->
+			<!-- Scripting: Renjin - https://github.com/scijava/scripting-renjin -->
 			<dependency>
 				<groupId>org.scijava</groupId>
-				<artifactId>scripting-r</artifactId>
-				<version>${scripting-r.version}</version>
+				<artifactId>scripting-renjin</artifactId>
+				<version>${scripting-renjin.version}</version>
 			</dependency>
 
 			<!-- Scripting: Scala - https://github.com/scijava/scripting-scala -->
@@ -1605,7 +1605,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<scripting-jruby.version>LATEST</scripting-jruby.version>
 				<scripting-jython.version>LATEST</scripting-jython.version>
 				<scripting-matlab.version>LATEST</scripting-matlab.version>
-				<scripting-r.version>LATEST</scripting-r.version>
+				<scripting-renjin.version>LATEST</scripting-renjin.version>
 				<scripting-scala.version>LATEST</scripting-scala.version>
 				<swing-checkbox-tree.version>LATEST</swing-checkbox-tree.version>
 			</properties>
