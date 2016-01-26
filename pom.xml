@@ -1915,6 +1915,20 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 												</execute>
 											</action>
 										</pluginExecution>
+										<pluginExecution>
+											<pluginExecutionFilter>
+												<groupId>org.codehaus.mojo</groupId>
+												<artifactId>exec-maven-plugin</artifactId>
+												<versionRange>[1.0,)</versionRange>
+												<goals>
+													<goal>java</goal>
+													<goal>exec</goal>
+												</goals>
+											</pluginExecutionFilter>
+											<action>
+												<ignore />
+											</action>
+										</pluginExecution>
 									</pluginExecutions>
 								</lifecycleMappingMetadata>
 							</configuration>
