@@ -331,6 +331,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<argLineDebug />
 
 		<scijava.jvm.version>1.6</scijava.jvm.version>
+		<scijava.jvm.test.version>${scijava.jvm.version}</scijava.jvm.test.version>
 		<scijava.mvn.version>3.0.4</scijava.mvn.version>
 	</properties>
 
@@ -924,6 +925,8 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 					<configuration>
 						<source>${scijava.jvm.version}</source>
 						<target>${scijava.jvm.version}</target>
+						<testSource>${scijava.jvm.test.version}</testSource>
+						<testTarget>${scijava.jvm.test.version}</testTarget>
 					</configuration>
 				</plugin>
 
@@ -1919,6 +1922,21 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 					</plugins>
 				</pluginManagement>
 				<plugins>
+					<!--
+					HACK - Tell Eclipse to use the TEST source and target JVM version.
+					This is necessary because the JVM version used for tests may be newer
+					than that used for the main artifact. Maven is OK with this, but
+					Eclipse wants only a single JVM version for both main and tests.
+					See: https://gist.github.com/aslakknutsen/9648594#gistcomment-1588906
+					-->
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-compiler-plugin</artifactId>
+						<configuration>
+							<source>${scijava.jvm.test.version}</source>
+							<target>${scijava.jvm.test.version}</target>
+						</configuration>
+					</plugin>
 					<plugin>
 						<groupId>org.scijava</groupId>
 						<artifactId>scijava-maven-plugin</artifactId>
