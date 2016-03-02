@@ -131,7 +131,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scijava-cache.version>0.1.1</scijava-cache.version>
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.52.1</scijava-common.version>
+		<scijava-common.version>2.53.0</scijava-common.version>
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
 		<scijava-config.version>2.0.1</scijava-config.version>
@@ -182,7 +182,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scripting-jruby.version>0.2.4</scripting-jruby.version>
 
 		<!-- Scripting: Jython - https://github.com/scijava/scripting-jython -->
-		<scripting-jython.version>0.2.5</scripting-jython.version>
+		<scripting-jython.version>0.3.0</scripting-jython.version>
 
 		<!-- Scripting: MATLAB - https://github.com/scijava/scripting-matlab -->
 		<scripting-matlab.version>0.4.1</scripting-matlab.version>
