@@ -164,7 +164,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scijava-ui-swing.version>0.7.2</scijava-ui-swing.version>
 
 		<!-- Scripting: Beanshell - https://github.com/scijava/scripting-beanshell -->
-		<scripting-beanshell.version>0.2.4</scripting-beanshell.version>
+		<scripting-beanshell.version>0.3.0</scripting-beanshell.version>
 
 		<!-- Scripting: Clojure - https://github.com/scijava/scripting-clojure -->
 		<scripting-clojure.version>0.1.4</scripting-clojure.version>
