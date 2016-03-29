@@ -4,7 +4,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>9.6.1-SNAPSHOT</version>
+	<version>10.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -137,7 +137,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scijava-config.version>2.0.1</scijava-config.version>
 
 		<!-- SciJava Expression Parser - https://github.com/scijava/scijava-expression-parser -->
-		<scijava-expression-parser.version>2.1.1</scijava-expression-parser.version>
+		<scijava-expression-parser.version>3.0.0</scijava-expression-parser.version>
 
 		<!-- SciJava Common: SLF4J Logging - https://github.com/scijava/scijava-log-slf4j -->
 		<scijava-log-slf4j.version>1.0.3</scijava-log-slf4j.version>
