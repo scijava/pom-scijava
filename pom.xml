@@ -163,7 +163,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- SciJava UI: Swing - https://github.com/scijava/scijava-ui-swing -->
 		<scijava-ui-swing.version>0.7.2</scijava-ui-swing.version>
 
-		<!-- Scripting: Beanshell - https://github.com/scijava/scripting-beanshell -->
+		<!-- Scripting: BeanShell - https://github.com/scijava/scripting-beanshell -->
 		<scripting-beanshell.version>0.3.1</scripting-beanshell.version>
 
 		<!-- Scripting: Clojure - https://github.com/scijava/scripting-clojure -->
@@ -175,7 +175,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- Scripting: Java - https://github.com/scijava/scripting-java -->
 		<scripting-java.version>0.3.6</scripting-java.version>
 
-		<!-- Scripting: Javascript - https://github.com/scijava/scripting-javascript -->
+		<!-- Scripting: JavaScript - https://github.com/scijava/scripting-javascript -->
 		<scripting-javascript.version>0.4.3</scripting-javascript.version>
 
 		<!-- Scripting: JRuby - https://github.com/scijava/scripting-jruby -->
@@ -421,7 +421,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<version>${scijava-ui-swing.version}</version>
 			</dependency>
 
-			<!-- Scripting: Beanshell - https://github.com/scijava/scripting-beanshell -->
+			<!-- Scripting: BeanShell - https://github.com/scijava/scripting-beanshell -->
 			<dependency>
 				<groupId>org.scijava</groupId>
 				<artifactId>scripting-beanshell</artifactId>
@@ -449,7 +449,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<version>${scripting-java.version}</version>
 			</dependency>
 
-			<!-- Scripting: Javascript - https://github.com/scijava/scripting-javascript -->
+			<!-- Scripting: JavaScript - https://github.com/scijava/scripting-javascript -->
 			<dependency>
 				<groupId>org.scijava</groupId>
 				<artifactId>scripting-javascript</artifactId>
