@@ -1337,6 +1337,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 								<exclude>com.headius:invokebinder</exclude>
 								<exclude>com.sun:tools</exclude>
 							</excludes>
+							<ignoredScopes>
+								<ignoredScope>test</ignoredScope>
+							</ignoredScopes>
 						</enforceBytecodeVersion>
 						<banCircularDependencies />
 					</rules>
