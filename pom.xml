@@ -131,7 +131,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scijava-cache.version>0.1.1</scijava-cache.version>
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.53.0</scijava-common.version>
+		<scijava-common.version>2.53.1</scijava-common.version>
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
 		<scijava-config.version>2.0.1</scijava-config.version>
@@ -164,7 +164,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scijava-ui-swing.version>0.7.2</scijava-ui-swing.version>
 
 		<!-- Scripting: Beanshell - https://github.com/scijava/scripting-beanshell -->
-		<scripting-beanshell.version>0.3.0</scripting-beanshell.version>
+		<scripting-beanshell.version>0.3.1</scripting-beanshell.version>
 
 		<!-- Scripting: Clojure - https://github.com/scijava/scripting-clojure -->
 		<scripting-clojure.version>0.1.4</scripting-clojure.version>
@@ -173,7 +173,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scripting-groovy.version>0.2.4</scripting-groovy.version>
 
 		<!-- Scripting: Java - https://github.com/scijava/scripting-java -->
-		<scripting-java.version>0.3.5</scripting-java.version>
+		<scripting-java.version>0.3.6</scripting-java.version>
 
 		<!-- Scripting: Javascript - https://github.com/scijava/scripting-javascript -->
 		<scripting-javascript.version>0.4.3</scripting-javascript.version>
@@ -185,7 +185,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scripting-jython.version>0.3.0</scripting-jython.version>
 
 		<!-- Scripting: MATLAB - https://github.com/scijava/scripting-matlab -->
-		<scripting-matlab.version>0.4.1</scripting-matlab.version>
+		<scripting-matlab.version>0.5.0</scripting-matlab.version>
 
 		<!-- Scripting: Renjin - https://github.com/scijava/scripting-renjin -->
 		<scripting-renjin.version>0.1.0</scripting-renjin.version>
