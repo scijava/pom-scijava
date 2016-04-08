@@ -131,7 +131,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scijava-cache.version>0.1.1</scijava-cache.version>
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.55.0</scijava-common.version>
+		<scijava-common.version>2.55.1</scijava-common.version>
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
 		<scijava-config.version>2.0.1</scijava-config.version>
@@ -161,7 +161,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scijava-ui-awt.version>0.1.4</scijava-ui-awt.version>
 
 		<!-- SciJava UI: Swing - https://github.com/scijava/scijava-ui-swing -->
-		<scijava-ui-swing.version>0.7.2</scijava-ui-swing.version>
+		<scijava-ui-swing.version>0.8.0</scijava-ui-swing.version>
 
 		<!-- Scripting: BeanShell - https://github.com/scijava/scripting-beanshell -->
 		<scripting-beanshell.version>0.3.1</scripting-beanshell.version>
@@ -170,7 +170,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<scripting-clojure.version>0.1.4</scripting-clojure.version>
 
 		<!-- Scripting: Groovy - https://github.com/scijava/scripting-groovy -->
-		<scripting-groovy.version>0.2.4</scripting-groovy.version>
+		<scripting-groovy.version>0.2.5</scripting-groovy.version>
 
 		<!-- Scripting: Java - https://github.com/scijava/scripting-java -->
 		<scripting-java.version>0.4.0</scripting-java.version>
