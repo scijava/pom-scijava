@@ -296,7 +296,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<jfreechart.version>1.0.19</jfreechart.version>
 
 		<!-- JHDF5 - https://wiki-bsse.ethz.ch/label/JHDF5/hdf5 -->
-		<jhdf5.version>14.12.0</jhdf5.version>
+		<jhdf5.version>14.12.5</jhdf5.version>
 
 		<!-- JNA - https://github.com/twall/jna -->
 		<jna.version>3.2.7</jna.version>
