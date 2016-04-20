@@ -1476,13 +1476,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 									</ignoreClasses>
 								</dependency>
 								<dependency>
-									<groupId>batik</groupId>
-									<artifactId>batik</artifactId>
-									<ignoreClasses>
-										<ignoreClass>*</ignoreClass>
-									</ignoreClasses>
-								</dependency>
-								<dependency>
 									<groupId>jama</groupId>
 									<artifactId>jama</artifactId>
 									<ignoreClasses>
