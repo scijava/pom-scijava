@@ -127,6 +127,15 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 		<!-- SciJava - https://github.com/scijava -->
 
+		<!-- JUnit Benchmarks - https://github.com/scijava/junit-benchmarks -->
+		<junit-benchmarks.version>0.7.3-scijava</junit-benchmarks.version>
+
+		<!-- MiniMaven - https://github.com/scijava/minimaven -->
+		<minimaven.version>2.2.0</minimaven.version>
+
+		<!-- Native Lib Loader - https://github.com/scijava/native-lib-loader -->
+		<native-lib-loader.version>2.1.3</native-lib-loader.version>
+
 		<!-- SciJava Cache - https://github.com/scijava/scijava-cache -->
 		<scijava-cache.version>0.1.1</scijava-cache.version>
 
@@ -196,15 +205,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- Swing Checkbox Tree - https://github.com/scijava/swing-checkbox-tree -->
 		<swing-checkbox-tree.version>1.0.1</swing-checkbox-tree.version>
 
-		<!-- MiniMaven - https://github.com/scijava/minimaven -->
-		<minimaven.version>2.2.0</minimaven.version>
-
-		<!-- Native Lib Loader - https://github.com/scijava/native-lib-loader -->
-		<native-lib-loader.version>2.1.3</native-lib-loader.version>
-
-		<!-- JUnit Benchmarks - https://github.com/scijava/junit-benchmarks -->
-		<junit-benchmarks.version>0.7.3-scijava</junit-benchmarks.version>
-
 		<!--
 		BEGIN MANUALLY MANAGED VERSIONS
 
@@ -212,6 +212,11 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		and https://github.com/scijava/scijava-maven-plugin to manage the properties
 		above.
 		-->
+
+		<!-- NAR Maven plugin - https://github.com/maven-nar -->
+
+		<!-- NAR Maven plugin - https://github.com/maven-nar/nar-maven-plugin -->
+		<nar-maven-plugin.version>3.2.0</nar-maven-plugin.version>
 
 		<!-- Open Microscopy Environment - https://github.com/openmicroscopy -->
 
@@ -224,21 +229,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<formats-gpl.version>${bio-formats.version}</formats-gpl.version>
 		<ome-xml.version>${bio-formats.version}</ome-xml.version>
 
-		<!-- NAR Maven plugin - https://github.com/maven-nar -->
-
-		<!-- NAR Maven plugin - https://github.com/maven-nar/nar-maven-plugin -->
-		<nar-maven-plugin.version>3.2.0</nar-maven-plugin.version>
-
 		<!-- Other managed components -->
-
-		<!-- Java 3D - https://github.com/scijava/java3d-core -->
-		<java3d.version>1.6.0-scijava-2</java3d.version>
-
-		<!-- JOGL - https://jogamp.org/jogl/ -->
-		<jogl.version>2.3.2</jogl.version>
-
-		<!-- RSyntaxTextArea - http://bobbylight.github.io/RSyntaxTextArea/ -->
-		<rsyntaxtextarea.version>2.5.8</rsyntaxtextarea.version>
 
 		<!-- Gson - https://code.google.com/p/google-gson/ -->
 		<gson.version>2.2.4</gson.version>
@@ -248,6 +239,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 		<!-- JAMA - http://math.nist.gov/javanumerics/jama/ -->
 		<jama.version>1.0.3</jama.version>
+
+		<!-- Java 3D - https://github.com/scijava/java3d-core -->
+		<java3d.version>1.6.0-scijava-2</java3d.version>
 
 		<!-- Javassist - http://www.javassist.org/ -->
 		<javassist.version>3.19.0-GA</javassist.version>
@@ -304,6 +298,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- Joda-Time - http://www.joda.org/joda-time/ -->
 		<joda-time.version>2.3</joda-time.version>
 
+		<!-- JOGL - https://jogamp.org/jogl/ -->
+		<jogl.version>2.3.2</jogl.version>
+
 		<!-- JUnit - http://junit.org/ -->
 		<junit.version>4.11</junit.version>
 
@@ -314,6 +311,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 		<!-- MigLayout - http://www.miglayout.com/ -->
 		<miglayout.version>3.7.4</miglayout.version>
+
+		<!-- RSyntaxTextArea - http://bobbylight.github.io/RSyntaxTextArea/ -->
+		<rsyntaxtextarea.version>2.5.8</rsyntaxtextarea.version>
 
 		<!-- Additional configuration -->
 
@@ -337,6 +337,21 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 	<dependencyManagement>
 		<dependencies>
+			<!-- SciJava - https://github.com/scijava -->
+
+			<!-- MiniMaven - https://github.com/scijava/minimaven -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>minimaven</artifactId>
+				<version>${minimaven.version}</version>
+			</dependency>
+
+			<!-- Native Lib Loader - https://github.com/scijava/native-lib-loader -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>native-lib-loader</artifactId>
+				<version>${native-lib-loader.version}</version>
+			</dependency>
 
 			<!-- SciJava Cache - https://github.com/scijava/scijava-cache -->
 			<dependency>
@@ -498,19 +513,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<version>${swing-checkbox-tree.version}</version>
 			</dependency>
 
-			<!-- MiniMaven - https://github.com/scijava/minimaven -->
-			<dependency>
-				<groupId>org.scijava</groupId>
-				<artifactId>minimaven</artifactId>
-				<version>${minimaven.version}</version>
-			</dependency>
-
-			<!-- Native Lib Loader - https://github.com/scijava/native-lib-loader -->
-			<dependency>
-				<groupId>org.scijava</groupId>
-				<artifactId>native-lib-loader</artifactId>
-				<version>${native-lib-loader.version}</version>
-			</dependency>
+			<!-- Open Microscopy Environment - https://github.com/openmicroscopy -->
 
 			<!-- Bio-Formats - https://github.com/openmicroscopy/bioformats -->
 			<dependency>
@@ -574,61 +577,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<version>${ome-xml.version}</version>
 			</dependency>
 
-			<!-- Java 3D - https://github.com/scijava/java3d-core -->
-			<dependency>
-				<groupId>org.scijava</groupId>
-				<artifactId>j3dcore</artifactId>
-				<version>${java3d.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.scijava</groupId>
-				<artifactId>j3dutils</artifactId>
-				<version>${java3d.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.scijava</groupId>
-				<artifactId>vecmath</artifactId>
-				<version>${java3d.version}</version>
-			</dependency>
-
-			<!-- JOGL - https://jogamp.org/jogl/ -->
-			<dependency>
-				<groupId>org.jogamp.gluegen</groupId>
-				<artifactId>gluegen-rt-main</artifactId>
-				<version>${jogl.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.joal</groupId>
-				<artifactId>joal-main</artifactId>
-				<version>${jogl.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.jocl</groupId>
-				<artifactId>jocl-main</artifactId>
-				<version>${jogl.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.jogl</groupId>
-				<artifactId>jogl-all-main</artifactId>
-				<version>${jogl.version}</version>
-			</dependency>
-
-			<!-- RSyntaxTextArea - http://bobbylight.github.io/RSyntaxTextArea/ -->
-			<dependency>
-				<groupId>com.fifesoft</groupId>
-				<artifactId>rsyntaxtextarea</artifactId>
-				<version>${rsyntaxtextarea.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.fifesoft</groupId>
-				<artifactId>autocomplete</artifactId>
-				<version>${rsyntaxtextarea.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.fifesoft</groupId>
-				<artifactId>languagesupport</artifactId>
-				<version>${rsyntaxtextarea.version}</version>
-			</dependency>
+			<!-- Other managed components -->
 
 			<!-- Gson - https://code.google.com/p/google-gson/ -->
 			<dependency>
@@ -649,6 +598,23 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>gov.nist.math</groupId>
 				<artifactId>jama</artifactId>
 				<version>${jama.version}</version>
+			</dependency>
+
+			<!-- Java 3D - https://github.com/scijava/java3d-core -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>j3dcore</artifactId>
+				<version>${java3d.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>j3dutils</artifactId>
+				<version>${java3d.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>vecmath</artifactId>
+				<version>${java3d.version}</version>
 			</dependency>
 
 			<!-- Javassist - http://www.javassist.org/ -->
@@ -863,6 +829,28 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<version>${joda-time.version}</version>
 			</dependency>
 
+			<!-- JOGL - https://jogamp.org/jogl/ -->
+			<dependency>
+				<groupId>org.jogamp.gluegen</groupId>
+				<artifactId>gluegen-rt-main</artifactId>
+				<version>${jogl.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jogamp.joal</groupId>
+				<artifactId>joal-main</artifactId>
+				<version>${jogl.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jogamp.jocl</groupId>
+				<artifactId>jocl-main</artifactId>
+				<version>${jogl.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jogamp.jogl</groupId>
+				<artifactId>jogl-all-main</artifactId>
+				<version>${jogl.version}</version>
+			</dependency>
+
 			<!-- Logback - http://logback.qos.ch/ -->
 			<dependency>
 				<groupId>ch.qos.logback</groupId>
@@ -881,6 +869,23 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<artifactId>miglayout</artifactId>
 				<version>${miglayout.version}</version>
 				<classifier>swing</classifier>
+			</dependency>
+
+			<!-- RSyntaxTextArea - http://bobbylight.github.io/RSyntaxTextArea/ -->
+			<dependency>
+				<groupId>com.fifesoft</groupId>
+				<artifactId>rsyntaxtextarea</artifactId>
+				<version>${rsyntaxtextarea.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fifesoft</groupId>
+				<artifactId>autocomplete</artifactId>
+				<version>${rsyntaxtextarea.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fifesoft</groupId>
+				<artifactId>languagesupport</artifactId>
+				<version>${rsyntaxtextarea.version}</version>
 			</dependency>
 
 			<!-- Test scope dependencies -->
