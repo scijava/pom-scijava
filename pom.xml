@@ -608,6 +608,12 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-anim</artifactId>
 				<version>${batik-anim.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
@@ -618,6 +624,12 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-bridge</artifactId>
 				<version>${batik-bridge.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
@@ -628,21 +640,45 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-css</artifactId>
 				<version>${batik-css.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-dom</artifactId>
 				<version>${batik-dom.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-ext</artifactId>
 				<version>${batik-ext.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-extension</artifactId>
 				<version>${batik-extension.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
@@ -658,11 +694,23 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-js</artifactId>
 				<version>${batik-js.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-parser</artifactId>
 				<version>${batik-parser.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
@@ -684,16 +732,34 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-script</artifactId>
 				<version>${batik-script.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-slideshow</artifactId>
 				<version>${batik-slideshow.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-squiggle</artifactId>
 				<version>${batik-squiggle.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
@@ -710,11 +776,23 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-svg-dom</artifactId>
 				<version>${batik-svg-dom.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-svggen</artifactId>
 				<version>${batik-svggen.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
@@ -725,11 +803,23 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-swing</artifactId>
 				<version>${batik-swing.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-transcoder</artifactId>
 				<version>${batik-transcoder.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
