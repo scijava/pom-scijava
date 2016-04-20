@@ -4,7 +4,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>10.2.1-SNAPSHOT</version>
+	<version>10.3.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -230,6 +230,35 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<ome-xml.version>${bio-formats.version}</ome-xml.version>
 
 		<!-- Other managed components -->
+
+		<!-- Batik - https://xmlgraphics.apache.org/batik/ -->
+		<batik.version>1.8</batik.version>
+		<batik-anim.version>${batik.version}</batik-anim.version>
+		<batik-awt-util.version>${batik.version}</batik-awt-util.version>
+		<batik-bridge.version>${batik.version}</batik-bridge.version>
+		<batik-codec.version>${batik.version}</batik-codec.version>
+		<batik-css.version>${batik.version}</batik-css.version>
+		<batik-dom.version>${batik.version}</batik-dom.version>
+		<batik-ext.version>${batik.version}</batik-ext.version>
+		<batik-extension.version>${batik.version}</batik-extension.version>
+		<batik-gui-util.version>${batik.version}</batik-gui-util.version>
+		<batik-gvt.version>${batik.version}</batik-gvt.version>
+		<batik-js.version>${batik.version}</batik-js.version>
+		<batik-parser.version>${batik.version}</batik-parser.version>
+		<batik-rasterizer.version>${batik.version}</batik-rasterizer.version>
+		<batik-rasterizer-ext.version>${batik.version}</batik-rasterizer-ext.version>
+		<batik-script.version>${batik.version}</batik-script.version>
+		<batik-slideshow.version>${batik.version}</batik-slideshow.version>
+		<batik-squiggle.version>${batik.version}</batik-squiggle.version>
+		<batik-squiggle-ext.version>${batik.version}</batik-squiggle-ext.version>
+		<batik-svg-dom.version>${batik.version}</batik-svg-dom.version>
+		<batik-svggen.version>${batik.version}</batik-svggen.version>
+		<batik-svgpp.version>${batik.version}</batik-svgpp.version>
+		<batik-swing.version>${batik.version}</batik-swing.version>
+		<batik-transcoder.version>${batik.version}</batik-transcoder.version>
+		<batik-ttf2svg.version>${batik.version}</batik-ttf2svg.version>
+		<batik-util.version>${batik.version}</batik-util.version>
+		<batik-xml.version>${batik.version}</batik-xml.version>
 
 		<!-- Gson - https://code.google.com/p/google-gson/ -->
 		<gson.version>2.2.4</gson.version>
@@ -578,6 +607,150 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			</dependency>
 
 			<!-- Other managed components -->
+
+			<!-- Batik - https://xmlgraphics.apache.org/batik/ -->
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-anim</artifactId>
+				<version>${batik-anim.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-awt-util</artifactId>
+				<version>${batik-awt-util.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-bridge</artifactId>
+				<version>${batik-bridge.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-codec</artifactId>
+				<version>${batik-codec.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-css</artifactId>
+				<version>${batik-css.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-dom</artifactId>
+				<version>${batik-dom.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-ext</artifactId>
+				<version>${batik-ext.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-extension</artifactId>
+				<version>${batik-extension.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-gui-util</artifactId>
+				<version>${batik-gui-util.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-gvt</artifactId>
+				<version>${batik-gvt.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-js</artifactId>
+				<version>${batik-js.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-parser</artifactId>
+				<version>${batik-parser.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-rasterizer</artifactId>
+				<version>${batik-rasterizer.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-rasterizer-ext</artifactId>
+				<version>${batik-rasterizer-ext.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.apache.xmlgraphics</groupId>
+						<artifactId>batik-extensions</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-script</artifactId>
+				<version>${batik-script.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-slideshow</artifactId>
+				<version>${batik-slideshow.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-squiggle</artifactId>
+				<version>${batik-squiggle.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-squiggle-ext</artifactId>
+				<version>${batik-squiggle-ext.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.apache.xmlgraphics</groupId>
+						<artifactId>batik-extensions</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-svg-dom</artifactId>
+				<version>${batik-svg-dom.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-svggen</artifactId>
+				<version>${batik-svggen.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-svgpp</artifactId>
+				<version>${batik-svgpp.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-swing</artifactId>
+				<version>${batik-swing.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-transcoder</artifactId>
+				<version>${batik-transcoder.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-ttf2svg</artifactId>
+				<version>${batik-ttf2svg.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-util</artifactId>
+				<version>${batik-util.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-xml</artifactId>
+				<version>${batik-xml.version}</version>
+			</dependency>
 
 			<!-- Gson - https://code.google.com/p/google-gson/ -->
 			<dependency>
