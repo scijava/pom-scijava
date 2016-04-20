@@ -260,6 +260,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<batik-util.version>${batik.version}</batik-util.version>
 		<batik-xml.version>${batik.version}</batik-xml.version>
 
+		<!-- Commons Math - https://commons.apache.org/proper/commons-math/ -->
+		<commons-math3.version>3.4.1</commons-math3.version>
+
 		<!-- Gson - https://code.google.com/p/google-gson/ -->
 		<gson.version>2.2.4</gson.version>
 
@@ -750,6 +753,13 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-xml</artifactId>
 				<version>${batik-xml.version}</version>
+			</dependency>
+
+			<!-- Commons Math - https://commons.apache.org/proper/commons-math/ -->
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-math3</artifactId>
+				<version>${commons-math3.version}</version>
 			</dependency>
 
 			<!-- Gson - https://code.google.com/p/google-gson/ -->
