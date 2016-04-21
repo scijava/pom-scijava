@@ -1579,20 +1579,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 										<ignoreClass>org/slf4j/impl/*</ignoreClass>
 									</ignoreClasses>
 								</dependency>
-								<dependency>
-									<groupId>jama</groupId>
-									<artifactId>jama</artifactId>
-									<ignoreClasses>
-										<ignoreClass>Jama/*</ignoreClass>
-									</ignoreClasses>
-								</dependency>
-								<dependency>
-									<groupId>com.sun</groupId>
-									<artifactId>tools</artifactId>
-									<ignoreClasses>
-										<ignoreClass>*</ignoreClass>
-									</ignoreClasses>
-								</dependency>
 							</dependencies>
 							<findAllDuplicates>true</findAllDuplicates>
 						</banClasses>
