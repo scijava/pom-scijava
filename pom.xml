@@ -1544,42 +1544,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 					<rules>
 						<banClasses implementation="org.scijava.maven.plugin.enforcer.BanDuplicateClasses">
 							<message>No Duplicate Classes Allowed! For duplicate transitive dependencies, add dependency exclusions. For duplications between direct dependencies, resolve or add ignored classes to this rule's configuration.</message>
-							<dependencies>
-								<!-- JRuby/JRuby clashes -->
-								<dependency>
-									<artifactId>jcodings</artifactId>
-									<ignoreClasses>
-										<ignoreClass>org/jcodings/*</ignoreClass>
-									</ignoreClasses>
-								</dependency>
-								<dependency>
-									<artifactId>jnr-constants</artifactId>
-									<ignoreClasses>
-										<ignoreClass>com/kenai/constantine/*</ignoreClass>
-										<ignoreClass>jnr/constants/*</ignoreClass>
-									</ignoreClasses>
-								</dependency>
-								<dependency>
-									<artifactId>jnr-ffi</artifactId>
-									<ignoreClasses>
-										<ignoreClass>jnr/ffi/*</ignoreClass>
-									</ignoreClasses>
-								</dependency>
-
-								<!-- Fiji dependency clashes -->
-								<dependency>
-									<artifactId>joda-time</artifactId>
-									<ignoreClasses>
-										<ignoreClass>*</ignoreClass>
-									</ignoreClasses>
-								</dependency>
-								<dependency>
-									<artifactId>slf4j-log4j12</artifactId>
-									<ignoreClasses>
-										<ignoreClass>org/slf4j/impl/*</ignoreClass>
-									</ignoreClasses>
-								</dependency>
-							</dependencies>
 							<findAllDuplicates>true</findAllDuplicates>
 						</banClasses>
 						<requireMavenVersion>
