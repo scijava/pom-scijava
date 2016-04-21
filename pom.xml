@@ -573,6 +573,10 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 						<groupId>xalan</groupId>
 						<artifactId>xalan</artifactId>
 					</exclusion>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
 				</exclusions>
 			</dependency>
 			<dependency>
@@ -626,6 +630,10 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<version>${batik-bridge.version}</version>
 				<exclusions>
 					<exclusion>
+						<groupId>xalan</groupId>
+						<artifactId>xalan</artifactId>
+					</exclusion>
+					<exclusion>
 						<groupId>xml-apis</groupId>
 						<artifactId>xml-apis</artifactId>
 					</exclusion>
@@ -652,6 +660,10 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<artifactId>batik-dom</artifactId>
 				<version>${batik-dom.version}</version>
 				<exclusions>
+					<exclusion>
+						<groupId>xalan</groupId>
+						<artifactId>xalan</artifactId>
+					</exclusion>
 					<exclusion>
 						<groupId>xml-apis</groupId>
 						<artifactId>xml-apis</artifactId>
