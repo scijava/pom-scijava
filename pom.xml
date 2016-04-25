@@ -70,6 +70,11 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			<url>http://imagej.net/User:JeanYvesTinevez</url>
 			<properties><id>tinevez</id></properties>
 		</contributor>
+		<contributor>
+			<name>Lorenzo Scianatico</name>
+			<url>http://imagej.net/User:LoreScianatico</url>
+			<properties><id>LoreScianatico</id></properties>
+		</contributor>
 	</contributors>
 
 	<mailingLists>
@@ -2225,5 +2230,68 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				</plugins>
 			</build>
 		</profile>
+
+		<!--
+		The Findbugs profile executes a static code analysis for any bugs,
+		using Findbugs analysis tool. It produces a findbugs.xml report in target
+		folder. It may catch some undangerous bugs, so it is better to set the
+		failOnError variable to false.
+		-->
+
+		<profile>
+			<id>findbugs</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<properties>
+				<findbugs.maven.version>3.0.2</findbugs.maven.version>
+				<findbugs.failOnError>false</findbugs.failOnError>
+			</properties>
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>org.codehaus.mojo</groupId>
+							<artifactId>findbugs-maven-plugin</artifactId>
+							<version>${findbugs.maven.version}</version>
+							<executions>
+								<execution>
+									<id>findbugs</id>
+									<phase>verify</phase>
+									<configuration>
+										<failOnError>${findbugs.failOnError}</failOnError>
+										<effort>Max</effort>
+										<threshold>Default</threshold>
+										<xmlOutput>true</xmlOutput>
+									</configuration>
+									<goals>
+										<goal>check</goal>
+									</goals>
+								</execution>
+							</executions>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+				<plugins>
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>findbugs-maven-plugin</artifactId>
+						<version>${findbugs.maven.version}</version>
+						<executions>
+							<execution>
+								<id>findbugs</id>
+								<phase>test</phase>
+								<configuration>
+								</configuration>
+								<goals>
+									<goal>findbugs</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
 	</profiles>
 </project>
