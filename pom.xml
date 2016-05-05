@@ -4,7 +4,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>10.4.2-SNAPSHOT</version>
+	<version>10.5.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -343,6 +343,15 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 		<!-- RSyntaxTextArea - http://bobbylight.github.io/RSyntaxTextArea/ -->
 		<rsyntaxtextarea.version>2.5.8</rsyntaxtextarea.version>
+
+		<!-- SLF4J - http://slf4j.org/ -->
+		<slf4j.version>1.7.6</slf4j.version>
+		<slf4j-api.version>${slf4j.version}</slf4j-api.version>
+		<slf4j-ext.version>${slf4j.version}</slf4j-ext.version>
+		<slf4j-jcl.version>${slf4j.version}</slf4j-jcl.version>
+		<slf4j-jdk14.version>${slf4j.version}</slf4j-jdk14.version>
+		<slf4j-nop.version>${slf4j.version}</slf4j-nop.version>
+		<slf4j-simple.version>${slf4j.version}</slf4j-simple.version>
 
 		<!-- Additional configuration -->
 
@@ -1168,6 +1177,38 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>com.fifesoft</groupId>
 				<artifactId>languagesupport</artifactId>
 				<version>${rsyntaxtextarea.version}</version>
+			</dependency>
+
+			<!-- SLF4J - http://slf4j.org/ -->
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-api</artifactId>
+				<version>${slf4j-api.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-ext</artifactId>
+				<version>${slf4j-ext.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-jcl</artifactId>
+				<version>${slf4j-jcl.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-jdk14</artifactId>
+				<version>${slf4j-jdk14.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-nop</artifactId>
+				<version>${slf4j-nop.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-simple</artifactId>
+				<version>${slf4j-simple.version}</version>
 			</dependency>
 
 			<!-- Test scope dependencies -->
