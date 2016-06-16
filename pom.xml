@@ -1479,7 +1479,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>license-maven-plugin</artifactId>
-					<version>1.6</version>
+					<version>1.9</version>
 					<configuration>
 						<projectName>${project.description}</projectName>
 						<addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
