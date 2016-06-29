@@ -4,7 +4,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>10.5.1-SNAPSHOT</version>
+	<version>10.6.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -160,6 +160,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 		<!-- SciJava UI: Swing - https://github.com/scijava/scijava-ui-swing -->
 		<scijava-ui-swing.version>0.8.0</scijava-ui-swing.version>
+
+		<!-- Script Editor - https://github.com/scijava/script-editor -->
+		<script-editor.version>0.1.0</script-editor.version>
 
 		<!-- Scripting: BeanShell - https://github.com/scijava/scripting-beanshell -->
 		<scripting-beanshell.version>0.3.1</scripting-beanshell.version>
@@ -464,6 +467,13 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>org.scijava</groupId>
 				<artifactId>scijava-ui-swing</artifactId>
 				<version>${scijava-ui-swing.version}</version>
+			</dependency>
+
+			<!-- Script Editor - https://github.com/scijava/script-editor -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>script-editor</artifactId>
+				<version>${script-editor.version}</version>
 			</dependency>
 
 			<!-- Scripting: BeanShell - https://github.com/scijava/scripting-beanshell -->
@@ -1866,6 +1876,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<scijava-plugins-text-plain.version>LATEST</scijava-plugins-text-plain.version>
 				<scijava-ui-awt.version>LATEST</scijava-ui-awt.version>
 				<scijava-ui-swing.version>LATEST</scijava-ui-swing.version>
+				<script-editor.version>LATEST</script-editor.version>
 				<scripting-beanshell.version>LATEST</scripting-beanshell.version>
 				<scripting-clojure.version>LATEST</scripting-clojure.version>
 				<scripting-groovy.version>LATEST</scripting-groovy.version>
