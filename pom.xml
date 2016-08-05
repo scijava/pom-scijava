@@ -208,7 +208,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- NAR Maven plugin - https://github.com/maven-nar -->
 
 		<!-- NAR Maven plugin - https://github.com/maven-nar/nar-maven-plugin -->
-		<nar-maven-plugin.version>3.2.0</nar-maven-plugin.version>
+		<nar-maven-plugin.version>3.5.0</nar-maven-plugin.version>
 
 		<!-- Open Microscopy Environment - https://github.com/openmicroscopy -->
 
@@ -1240,17 +1240,17 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 			<plugins>
 				<plugin>
 					<artifactId>maven-assembly-plugin</artifactId>
-					<version>2.4</version>
+					<version>2.6</version>
 				</plugin>
 
 				<plugin>
 					<artifactId>maven-clean-plugin</artifactId>
-					<version>2.5</version>
+					<version>3.0.0</version>
 				</plugin>
 
 				<plugin>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.1</version>
+					<version>3.5.1</version>
 					<!-- Require the Java 8 platform. -->
 					<configuration>
 						<source>${scijava.jvm.version}</source>
@@ -1262,17 +1262,17 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 				<plugin>
 					<artifactId>maven-dependency-plugin</artifactId>
-					<version>2.8</version>
+					<version>2.10</version>
 				</plugin>
 
 				<plugin>
 					<artifactId>maven-deploy-plugin</artifactId>
-					<version>2.8.1</version>
+					<version>2.8.2</version>
 				</plugin>
 
 				<plugin>
 					<artifactId>maven-enforcer-plugin</artifactId>
-					<version>1.3.1</version>
+					<version>1.4.1</version>
 					<dependencies>
 						<dependency>
 							<groupId>org.codehaus.mojo</groupId>
@@ -1289,12 +1289,12 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 				<plugin>
 					<artifactId>maven-install-plugin</artifactId>
-					<version>2.5.1</version>
+					<version>2.5.2</version>
 				</plugin>
 
 				<plugin>
 					<artifactId>maven-jar-plugin</artifactId>
-					<version>2.5</version>
+					<version>3.0.2</version>
 					<!-- Always add classpath to JAR manifests. -->
 					<configuration>
 						<archive>
@@ -1327,7 +1327,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 					NB: The same version declaration and configuration block also appears
 					in the <reporting> section, and must be kept in sync.
 					-->
-					<version>2.9.1</version>
+					<version>2.10.4</version>
 					<configuration>
 						<maxmemory>1024m</maxmemory>
 						<!--
@@ -1361,27 +1361,27 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 				<plugin>
 					<artifactId>maven-plugin-plugin</artifactId>
-					<version>3.3</version>
-				</plugin>
-
-				<plugin>
-					<artifactId>maven-release-plugin</artifactId>
-					<version>2.5</version>
-				</plugin>
-
-				<plugin>
-					<artifactId>maven-resources-plugin</artifactId>
-					<version>2.6</version>
-				</plugin>
-
-				<plugin>
-					<artifactId>maven-site-plugin</artifactId>
 					<version>3.4</version>
 				</plugin>
 
 				<plugin>
+					<artifactId>maven-release-plugin</artifactId>
+					<version>2.5.3</version>
+				</plugin>
+
+				<plugin>
+					<artifactId>maven-resources-plugin</artifactId>
+					<version>3.0.1</version>
+				</plugin>
+
+				<plugin>
+					<artifactId>maven-site-plugin</artifactId>
+					<version>3.5.1</version>
+				</plugin>
+
+				<plugin>
 					<artifactId>maven-source-plugin</artifactId>
-					<version>2.3</version>
+					<version>3.0.1</version>
 					<!-- Build source artifact in addition to main artifact. -->
 					<executions>
 						<execution>
@@ -1394,7 +1394,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 				<plugin>
 					<artifactId>maven-surefire-plugin</artifactId>
-					<version>2.17</version>
+					<version>2.19.1</version>
 					<!--
 					Make sure that:
 					A) unit tests run with sufficient RAM allocated;
@@ -1422,7 +1422,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>build-helper-maven-plugin</artifactId>
-					<version>1.9.1</version>
+					<version>1.12</version>
 					<!--
 					Create a version string which conforms to Java packaging requirements.
 					https://docs.oracle.com/javase/8/docs/technotes/guides/versioning/spec/versioning2.html#wp89936
@@ -1456,7 +1456,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>buildnumber-maven-plugin</artifactId>
-					<version>1.3</version>
+					<version>1.4</version>
 					<!-- Record SCM revision in manifest. -->
 					<executions>
 						<execution>
@@ -1478,7 +1478,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>exec-maven-plugin</artifactId>
-					<version>1.3.1</version>
+					<version>1.5.0</version>
 				</plugin>
 
 				<!--
@@ -1512,7 +1512,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>versions-maven-plugin</artifactId>
-					<version>2.1</version>
+					<version>2.3</version>
 				</plugin>
 
 				<!--
@@ -1523,7 +1523,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<plugin>
 					<groupId>org.fusesource.mvnplugins</groupId>
 					<artifactId>maven-graph-plugin</artifactId>
-					<version>1.30</version>
+					<version>1.39</version>
 					<configuration>
 						<hideScopes>provided,runtime,system,test</hideScopes>
 						<hideTransitive>true</hideTransitive>
@@ -1540,7 +1540,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<plugin>
 					<groupId>com.zenjava</groupId>
 					<artifactId>javafx-maven-plugin</artifactId>
-					<version>8.1.2</version>
+					<version>8.5.0</version>
 					<configuration>
 						<appName>${project.name}</appName>
 						<identifier>${project.name}</identifier>
@@ -1683,7 +1683,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				the same groupId/artifactId in the build.pluginManagement.plugins
 				section", this claim unfortunately does not seem to reflect reality.
 				-->
-				<version>2.9.1</version>
+				<version>2.10.4</version>
 				<configuration>
 					<maxmemory>1024m</maxmemory>
 					<!--
@@ -1931,7 +1931,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<plugins>
 					<plugin>
 						<artifactId>maven-invoker-plugin</artifactId>
-						<version>1.9</version>
+						<version>2.0.0</version>
 						<configuration>
 							<debug>${invoker.debug}</debug>
 							<showErrors>true</showErrors>
@@ -1985,7 +1985,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 					<plugin>
 						<groupId>org.sonatype.plugins</groupId>
 						<artifactId>nexus-staging-maven-plugin</artifactId>
-						<version>1.6.2</version>
+						<version>1.6.7</version>
 						<extensions>true</extensions>
 						<configuration>
 							<serverId>sonatype-nexus-releases</serverId>
@@ -2011,7 +2011,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-gpg-plugin</artifactId>
-						<version>1.5</version>
+						<version>1.6</version>
 						<executions>
 							<execution>
 								<id>sign-artifacts</id>
@@ -2288,7 +2288,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<activeByDefault>false</activeByDefault>
 			</activation>
 			<properties>
-				<findbugs.maven.version>3.0.2</findbugs.maven.version>
+				<findbugs.maven.version>3.0.4</findbugs.maven.version>
 				<findbugs.failOnError>false</findbugs.failOnError>
 			</properties>
 			<build>
