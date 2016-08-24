@@ -363,8 +363,10 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- NB: Override argLineDebug property via debug-port profile. -->
 		<argLineDebug />
 
+		<!-- Require the Java 8 platform. -->
 		<scijava.jvm.version>1.8</scijava.jvm.version>
 		<scijava.jvm.test.version>${scijava.jvm.version}</scijava.jvm.test.version>
+
 		<scijava.mvn.version>3.0.4</scijava.mvn.version>
 	</properties>
 
@@ -1251,7 +1253,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<plugin>
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>3.5.1</version>
-					<!-- Require the Java 8 platform. -->
 					<configuration>
 						<source>${scijava.jvm.version}</source>
 						<target>${scijava.jvm.version}</target>
@@ -1657,7 +1658,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		</plugins>
 		<!--
 		We use wagon-webdav-jackrabbit 1.0 for deploys, since it is
-		compatible with both Maven 2.2.x and Maven 3.0.x cross-platform.
+		compatible with both Maven 2.2.x and Maven 3.x cross-platform.
 		-->
 		<extensions>
 			<extension>
