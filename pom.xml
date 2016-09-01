@@ -102,6 +102,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- These properties are intended for downstream override. -->
 		<main-class></main-class>
 		<package-name></package-name>
+		<license.projectName>${project.description}</license.projectName>
 
 		<!--
 		If two artifacts on the classpath use two different versions of the same
@@ -1498,7 +1499,6 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 					<artifactId>license-maven-plugin</artifactId>
 					<version>1.9</version>
 					<configuration>
-						<projectName>${project.description}</projectName>
 						<addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
 						<canUpdateDescription>true</canUpdateDescription>
 						<canUpdateCopyright>true</canUpdateCopyright>
