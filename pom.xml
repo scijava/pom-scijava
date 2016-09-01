@@ -99,6 +99,10 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 	</ciManagement>
 
 	<properties>
+		<!-- These properties are intended for downstream override. -->
+		<main-class></main-class>
+		<package-name></package-name>
+
 		<!--
 		If two artifacts on the classpath use two different versions of the same
 		dependency, behavior is inconsistent at best, and often broken. The
@@ -1303,6 +1307,8 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 								<addClasspath>true</addClasspath>
 								<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
 								<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+								<mainClass>${main-class}</mainClass>
+								<packageName>${package-name}</packageName>
 							</manifest>
 							<manifestEntries>
 								<!-- Add SCM revision from buildnumber plugin, if available. -->
