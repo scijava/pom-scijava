@@ -1300,7 +1300,16 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 				<plugin>
 					<artifactId>maven-jar-plugin</artifactId>
-					<version>3.0.2</version>
+					<!--
+					NB: This is not the latest version of maven-jar-plugin.
+					However, the latest version triggers an M2E bug which
+					results in an unavoidable POM warning in Eclipse. See:
+
+					https://github.com/tesla/m2eclipse-mavenarchiver/issues/8
+
+					To avoid this problem, we use an earlier working version.
+					-->
+					<version>2.6</version>
 					<!-- Always add classpath to JAR manifests. -->
 					<configuration>
 						<archive>
