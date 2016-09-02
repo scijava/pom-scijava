@@ -4,7 +4,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>11.2.0-SNAPSHOT</version>
+	<version>11.2.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -100,8 +100,8 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 	<properties>
 		<!-- These properties are intended for downstream override. -->
-		<main-class></main-class>
-		<package-name></package-name>
+		<main-class />
+		<package-name />
 		<license.projectName>${project.description}</license.projectName>
 
 		<!--
