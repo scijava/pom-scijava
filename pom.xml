@@ -1440,15 +1440,15 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>build-helper-maven-plugin</artifactId>
 					<version>1.12</version>
-					<!--
-					Create a version string which conforms to Java packaging requirements.
-					https://docs.oracle.com/javase/8/docs/technotes/guides/versioning/spec/versioning2.html#wp89936
-
-					In particular, the standard Java packaging tool will fail unless the
-					version string conforms to Java packaging rules. Further reading:
-					https://docs.oracle.com/javase/8/docs/technotes/guides/deploy/packaging.html#
-					-->
 					<executions>
+						<!--
+						Create a version string which conforms to Java packaging requirements.
+						https://docs.oracle.com/javase/8/docs/technotes/guides/versioning/spec/versioning2.html#wp89936
+
+						In particular, the standard Java packaging tool will fail unless the
+						version string conforms to Java packaging rules. Further reading:
+						https://docs.oracle.com/javase/8/docs/technotes/guides/deploy/packaging.html#
+						-->
 						<execution>
 							<id>sanitize-version</id>
 							<goals>
