@@ -4,7 +4,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>pom-scijava</artifactId>
-	<version>11.4.1-SNAPSHOT</version>
+	<version>11.5.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Projects</name>
@@ -1263,6 +1263,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 						<target>${scijava.jvm.version}</target>
 						<testSource>${scijava.jvm.test.version}</testSource>
 						<testTarget>${scijava.jvm.test.version}</testTarget>
+						<!-- Workaround for a bug in maven-compiler-plugin.
+						See https://issues.apache.org/jira/browse/MCOMPILER-209 -->
+						<useIncrementalCompilation>false</useIncrementalCompilation>
 					</configuration>
 				</plugin>
 
@@ -1734,6 +1737,105 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 	</reporting>
 
 	<profiles>
+		<!--
+		The groovy-code-generation profile provides a uniform way to generate
+		sources from templates using Groovy. Apache Velocity, a powerful templating
+		engine, is automatically available for use from Groovy. For an example of
+		use, see the ImageJ Ops project: https://github.com/imagej/imagej-ops
+		-->
+		<profile>
+			<id>groovy-code-generation</id>
+			<activation>
+				<file>
+					<!-- NB: No property, because profile activation is too early. -->
+					<exists>${basedir}/src/main/groovy/generate.groovy</exists>
+				</file>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>build-helper-maven-plugin</artifactId>
+						<executions>
+							<!-- Add generated code, including tests, to the build. -->
+							<execution>
+								<id>add-source</id>
+								<phase>generate-sources</phase>
+								<goals>
+									<goal>add-source</goal>
+								</goals>
+								<configuration>
+									<sources>
+										<source>${project.build.directory}/generated-sources/from-template/</source>
+									</sources>
+								</configuration>
+							</execution>
+							<execution>
+								<id>add-test-source</id>
+								<phase>generate-test-sources</phase>
+								<goals>
+									<goal>add-test-source</goal>
+								</goals>
+								<configuration>
+									<sources>
+										<source>${project.build.directory}/generated-test-sources/from-template/</source>
+									</sources>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+
+						<!-- Groovy Maven plugin -
+						http://www.mojohaus.org/groovy-maven-plugin/
+						This plugin offers execution of Groovy scripts as part of the build.
+						SciJava uses it for automatic code generation with Apache Velocity. -->
+						<plugin>
+							<groupId>org.codehaus.mojo</groupId>
+							<artifactId>groovy-maven-plugin</artifactId>
+							<version>1.5</version>
+							<dependencies>
+								<dependency>
+									<groupId>org.apache.velocity</groupId>
+									<artifactId>velocity</artifactId>
+									<version>1.7</version>
+								</dependency>
+							</dependencies>
+							<executions>
+								<execution>
+									<id>generate-sources</id>
+									<phase>generate-sources</phase>
+									<goals>
+										<goal>execute</goal>
+									</goals>
+									<configuration>
+										<properties>
+											<templateDirectory>${basedir}/src/main/templates</templateDirectory>
+											<outputDirectory>${project.build.directory}/generated-sources/from-template</outputDirectory>
+										</properties>
+										<source>${basedir}/src/main/groovy/generate.groovy</source>
+									</configuration>
+								</execution>
+								<execution>
+									<id>generate-test-sources</id>
+									<phase>generate-test-sources</phase>
+									<goals>
+										<goal>execute</goal>
+									</goals>
+									<configuration>
+										<properties>
+											<templateDirectory>${basedir}/src/test/templates</templateDirectory>
+											<outputDirectory>${project.build.directory}/generated-test-sources/from-template</outputDirectory>
+										</properties>
+										<source>${basedir}/src/main/groovy/generate.groovy</source>
+									</configuration>
+								</execution>
+							</executions>
+						</plugin>
+
+					</plugins>
+				</build>
+		</profile>
+
 		<!--
 		The exec profile provides an easy way to execute a defined ${main-class}
 		for manual testing purposes. It is declared in a profile to avoid clashing
@@ -2220,6 +2322,26 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 											</pluginExecutionFilter>
 											<action>
 												<ignore />
+											</action>
+										</pluginExecution>
+										<!--
+										NB: Make Eclipse generate code in a full build; see:
+										http://wiki.eclipse.org/M2E_plugin_execution_not_covered
+										-->
+										<pluginExecution>
+											<pluginExecutionFilter>
+												<groupId>org.codehaus.mojo</groupId>
+												<artifactId>groovy-maven-plugin</artifactId>
+												<versionRange>1.5</versionRange>
+												<goals>
+													<goal>execute</goal>
+												</goals>
+											</pluginExecutionFilter>
+											<action>
+												<execute>
+													<runOnConfiguration>true</runOnConfiguration>
+													<runOnIncremental>false</runOnIncremental>
+												</execute>
 											</action>
 										</pluginExecution>
 									</pluginExecutions>
