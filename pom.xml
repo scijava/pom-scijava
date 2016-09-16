@@ -322,6 +322,139 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- SCIFIO-OME-XML - https://github.com/scifio/scifio-ome-xml -->
 		<scifio-ome-xml.version>0.14.0</scifio-ome-xml.version>
 
+		<!-- Fiji - https://github.com/fiji -->
+
+		<!-- Fiji - https://github.com/fiji/fiji -->
+		<fiji.version>2.0.0</fiji.version>
+
+		<!-- Standard Fiji projects -->
+
+		<AnalyzeSkeleton.version>3.1.0</AnalyzeSkeleton.version>
+		<Anisotropic_Diffusion_2D.version>2.0.0</Anisotropic_Diffusion_2D.version>
+		<Archipelago_Plugins.version>0.5.2</Archipelago_Plugins.version>
+		<Arrow.version>2.0.1</Arrow.version>
+		<Auto_Threshold.version>1.16.4</Auto_Threshold.version>
+		<BalloonSegmentation.version>2.0.0</BalloonSegmentation.version>
+		<Bug_Submitter.version>2.1.0</Bug_Submitter.version>
+		<CPU_Meter.version>2.0.0</CPU_Meter.version>
+		<Calculator_Plus.version>2.0.0</Calculator_Plus.version>
+		<Cell_Counter.version>2.2.1</Cell_Counter.version>
+		<Colocalisation_Analysis.version>2.2.1</Colocalisation_Analysis.version>
+		<Color_Histogram.version>2.0.6</Color_Histogram.version>
+		<Color_Inspector_3D.version>2.3.1</Color_Inspector_3D.version>
+		<Colour_Deconvolution.version>3.0.1</Colour_Deconvolution.version>
+		<CorrectBleach.version>2.0.1</CorrectBleach.version>
+		<Descriptor_based_registration.version>2.1.0</Descriptor_based_registration.version>
+		<Dichromacy.version>2.1.0</Dichromacy.version>
+		<Differentials.version>2.0.0</Differentials.version>
+		<Directionality.version>2.0.1</Directionality.version>
+		<Extended_Depth_Field.version>2.0.1</Extended_Depth_Field.version>
+		<FS_Align_TrakEM2.version>2.0.1</FS_Align_TrakEM2.version>
+		<Feature_Detection.version>2.0.1</Feature_Detection.version>
+		<Fiji_3D_Blob_Segmentation.version>3.0.0</Fiji_3D_Blob_Segmentation.version>
+		<Fiji_Archipelago.version>2.0.0</Fiji_Archipelago.version>
+		<Fiji_Developer.version>2.0.5</Fiji_Developer.version>
+		<Fiji_Package_Maker.version>2.1.0</Fiji_Package_Maker.version>
+		<Fiji_Plugins.version>3.0.0</Fiji_Plugins.version>
+		<Fiji_Updater.version>2.0.0</Fiji_Updater.version>
+		<FlowJ.version>1.29.2</FlowJ.version>
+		<Graph_Cut.version>1.0.1</Graph_Cut.version>
+		<Gray_Morphology.version>2.3.3</Gray_Morphology.version>
+		<H5J_Loader_Plugin.version>1.0.4</H5J_Loader_Plugin.version>
+		<Helmholtz_Analysis.version>2.0.1</Helmholtz_Analysis.version>
+		<IJ_Robot.version>2.0.0</IJ_Robot.version>
+		<IO.version>3.0.1</IO.version>
+		<ImageJ_3D_Objects_Counter.version>2.0.0</ImageJ_3D_Objects_Counter.version>
+		<ImageJ_3D_Viewer.version>4.0.1</ImageJ_3D_Viewer.version>
+		<Image_5D.version>2.0.1</Image_5D.version>
+		<Image_Expression_Parser.version>3.0.0</Image_Expression_Parser.version>
+		<Interactive_3D_Surface_Plot.version>2.4.1</Interactive_3D_Surface_Plot.version>
+		<IsoData_Classifier.version>2.0.0</IsoData_Classifier.version>
+		<Kuwahara_Filter.version>2.0.0</Kuwahara_Filter.version>
+		<KymographBuilder.version>1.2.3</KymographBuilder.version>
+		<LSM_Reader.version>4.1.1</LSM_Reader.version>
+		<LSM_Toolbox.version>4.1.1</LSM_Toolbox.version>
+		<Lasso_and_Blow_Tool.version>2.0.1</Lasso_and_Blow_Tool.version>
+		<Linear_Kuwahara.version>2.0.0</Linear_Kuwahara.version>
+		<LocalThickness.version>4.0.1</LocalThickness.version>
+		<MTrack2.version>2.0.0</MTrack2.version>
+		<M_I_P.version>2.0.0</M_I_P.version>
+		<Manual_Tracking.version>2.1.0</Manual_Tracking.version>
+		<MosaicJ.version>2.0.0</MosaicJ.version>
+		<Multi_Kymograph.version>2.0.0</Multi_Kymograph.version>
+		<PIV_analyser.version>1.1.1</PIV_analyser.version>
+		<PointPicker.version>2.0.0</PointPicker.version>
+		<QuickPALM.version>1.1.1</QuickPALM.version>
+		<RATS.version>2.0.0</RATS.version>
+		<Reconstruct_Reader.version>2.0.2</Reconstruct_Reader.version>
+		<SPIM_Opener.version>2.0.1</SPIM_Opener.version>
+		<SPIM_Registration.version>5.0.7</SPIM_Registration.version>
+		<Samples.version>2.0.1</Samples.version>
+		<Script_Launcher.version>0.1.0</Script_Launcher.version>
+		<Series_Labeler.version>2.0.0</Series_Labeler.version>
+		<SheppLogan.version>2.0.0</SheppLogan.version>
+		<Simple_Neurite_Tracer.version>3.0.3</Simple_Neurite_Tracer.version>
+		<Siox_Segmentation.version>1.0.4</Siox_Segmentation.version>
+		<Skeletonize3D.version>2.1.0</Skeletonize3D.version>
+		<Snakuscule.version>2.0.0</Snakuscule.version>
+		<SplineDeformationGenerator.version>2.0.0</SplineDeformationGenerator.version>
+		<StackReg.version>2.0.0</StackReg.version>
+		<Stack_Manipulation.version>2.0.1</Stack_Manipulation.version>
+		<Statistical_Region_Merging.version>2.0.0</Statistical_Region_Merging.version>
+		<Stitching.version>3.1.1</Stitching.version>
+		<Sync_Win.version>1.7-fiji3</Sync_Win.version>
+		<Thread_Killer.version>2.0.0</Thread_Killer.version>
+		<Time_Lapse.version>2.0.1</Time_Lapse.version>
+		<Time_Stamper.version>2.0.0</Time_Stamper.version>
+		<ToAST.version>25.0.1</ToAST.version>
+		<TopoJ.version>2.0.0</TopoJ.version>
+		<TrackMate.version>3.4.2</TrackMate.version>
+		<Trainable_Segmentation.version>3.1.2</Trainable_Segmentation.version>
+		<TrakEM2_Archipelago.version>2.0.1</TrakEM2_Archipelago.version>
+		<TurboReg.version>2.0.0</TurboReg.version>
+		<UnwarpJ.version>2.0.0</UnwarpJ.version>
+		<VIB-lib.version>2.1.1</VIB-lib.version>
+		<VIB.version>3.0.1</VIB.version>
+		<Vaa3d_Reader.version>2.0.1</Vaa3d_Reader.version>
+		<Vaa3d_Writer.version>1.0.1</Vaa3d_Writer.version>
+		<Video_Editing.version>2.0.0</Video_Editing.version>
+		<View5D.version>1.3.1</View5D.version>
+		<Volume_Calculator.version>2.0.1</Volume_Calculator.version>
+		<Volume_Viewer.version>2.01.1</Volume_Viewer.version>
+		<bUnwarpJ.version>2.6.3</bUnwarpJ.version>
+		<bij.version>0.1.0</bij.version>
+		<blockmatching.version>2.1.1</blockmatching.version>
+		<fiji-compat.version>2.0.2</fiji-compat.version>
+		<fiji-lib.version>2.1.1</fiji-lib.version>
+		<imageware.version>2.0.0</imageware.version>
+		<javac.version>1.6.0.24-ubuntu-fiji2</javac.version>
+		<jep.version>2.4.2</jep.version>
+		<legacy-imglib1.version>1.1.5</legacy-imglib1.version>
+		<level_sets.version>1.0.1</level_sets.version>
+		<mij.version>1.3.6-fiji2</mij.version>
+		<pal-optimization.version>2.0.0</pal-optimization.version>
+		<panorama.version>3.0.1</panorama.version>
+		<register_virtual_stack_slices.version>3.0.1</register_virtual_stack_slices.version>
+		<registration_3d.version>2.0.0</registration_3d.version>
+		<wavelets.version>2.0.0</wavelets.version>
+
+		<!-- External Fiji projects -->
+
+		<!-- Sholl Analysis - https://github.com/tferr/ASA -->
+		<Sholl_Analysis.version>3.6.5</Sholl_Analysis.version>
+
+		<!-- JITK TPS - https://github.com/saalfeldlab/jitk-tps -->
+		<jitk-tps.version>2.1.0</jitk-tps.version>
+
+		<!-- BigWarp - https://github.com/saalfeldlab/bigwarp -->
+		<bigwarp.version>2.1.2</bigwarp.version>
+
+		<!-- TrakEM2 TPS - https://github.com/saalfeldlab/trakem2-tps -->
+		<trakem2_tps.version>1.1.2</trakem2_tps.version>
+
+		<!-- Z-Spacing correction - https://github.com/saalfeldlab/z-spacing -->
+		<z_spacing.version>1.0.2</z_spacing.version>
+
 		<!--
 		BEGIN MANUALLY MANAGED VERSIONS
 
@@ -382,6 +515,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<batik-util.version>${batik.version}</batik-util.version>
 		<batik-xml.version>${batik.version}</batik-xml.version>
 
+		<!-- Commons Codec - https://commons.apache.org/proper/commons-codec/ -->
+		<commons-codec.version>1.8</commons-codec.version>
+
 		<!-- Commons Math - https://commons.apache.org/proper/commons-math/ -->
 		<commons-math3.version>3.6.1</commons-math3.version>
 
@@ -390,6 +526,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 		<!-- Guava - https://github.com/google/guava -->
 		<guava.version>19.0</guava.version>
+
+		<!-- iText PDF - https://github.com/itext/itextpdf -->
+		<itextpdf.version>5.1.1</itextpdf.version>
 
 		<!-- JAMA - http://math.nist.gov/javanumerics/jama/ -->
 		<jama.version>1.0.3</jama.version>
@@ -443,6 +582,12 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- JFreeChart - http://www.jfree.org/jfreechart/ -->
 		<jfreechart.version>1.0.19</jfreechart.version>
 
+		<!-- JGraphT - https://github.com/jgrapht/jgrapht -->
+		<jgrapht.version>0.8.3</jgrapht.version>
+
+		<!-- JGraphX - https://github.com/jgraph/jgraphx -->
+		<jgraphx.version>1.10.4.1</jgraphx.version>
+
 		<!-- JHDF5 - https://wiki-bsse.ethz.ch/label/JHDF5/hdf5 -->
 		<jhdf5.version>14.12.5</jhdf5.version>
 
@@ -455,8 +600,17 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- JOGL - https://jogamp.org/jogl/ -->
 		<jogl.version>2.3.2</jogl.version>
 
+		<!-- JPedal - http://jpedal.org/ (defunct) -->
+		<jpedal.version>2.80b11</jpedal.version>
+
+		<!-- JSch - http://www.jcraft.com/jsch/ -->
+		<jsch.version>0.1.49</jsch.version>
+
 		<!-- JUnit - http://junit.org/ -->
 		<junit.version>4.12</junit.version>
+
+		<!-- JZlib - http://www.jcraft.com/jzlib/ -->
+		<jzlib.version>1.1.2</jzlib.version>
 
 		<!-- Logback - http://logback.qos.ch/ -->
 		<logback.version>1.1.7</logback.version>
@@ -469,6 +623,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- Mines JTK - https://github.com/dhale/jtk -->
 		<mines-jtk.version>20151125</mines-jtk.version>
 
+		<!-- OpenCSV - http://opencsv.sourceforge.net/ -->
+		<opencsv.version>2.4</opencsv.version>
+
 		<!-- RSyntaxTextArea - http://bobbylight.github.io/RSyntaxTextArea/ -->
 		<rsyntaxtextarea.version>2.5.8</rsyntaxtextarea.version>
 
@@ -480,6 +637,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<slf4j-jdk14.version>${slf4j.version}</slf4j-jdk14.version>
 		<slf4j-nop.version>${slf4j.version}</slf4j-nop.version>
 		<slf4j-simple.version>${slf4j.version}</slf4j-simple.version>
+
+		<!-- Weka - http://www.cs.waikato.ac.nz/ml/weka/ -->
+		<weka.version>3.7.11</weka.version>
 	</properties>
 
 	<dependencyManagement>
@@ -931,6 +1091,595 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<version>${scifio-ome-xml.version}</version>
 			</dependency>
 
+			<!-- Fiji - https://github.com/fiji -->
+
+			<!-- Fiji - https://github.com/fiji/fiji -->
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>fiji</artifactId>
+				<version>${fiji.version}</version>
+			</dependency>
+
+			<!-- Standard Fiji projects -->
+
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>AnalyzeSkeleton_</artifactId>
+				<version>${AnalyzeSkeleton.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Anisotropic_Diffusion_2D</artifactId>
+				<version>${Anisotropic_Diffusion_2D.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Archipelago_Plugins</artifactId>
+				<version>${Archipelago_Plugins.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Arrow_</artifactId>
+				<version>${Arrow.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Auto_Threshold</artifactId>
+				<version>${Auto_Threshold.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>BalloonSegmentation_</artifactId>
+				<version>${BalloonSegmentation.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Bug_Submitter</artifactId>
+				<version>${Bug_Submitter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>CPU_Meter</artifactId>
+				<version>${CPU_Meter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Calculator_Plus</artifactId>
+				<version>${Calculator_Plus.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Cell_Counter</artifactId>
+				<version>${Cell_Counter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Colocalisation_Analysis</artifactId>
+				<version>${Colocalisation_Analysis.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Color_Histogram</artifactId>
+				<version>${Color_Histogram.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Color_Inspector_3D</artifactId>
+				<version>${Color_Inspector_3D.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Colour_Deconvolution</artifactId>
+				<version>${Colour_Deconvolution.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>CorrectBleach_</artifactId>
+				<version>${CorrectBleach.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Descriptor_based_registration</artifactId>
+				<version>${Descriptor_based_registration.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Dichromacy_</artifactId>
+				<version>${Dichromacy.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Differentials_</artifactId>
+				<version>${Differentials.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Directionality_</artifactId>
+				<version>${Directionality.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Extended_Depth_Field</artifactId>
+				<version>${Extended_Depth_Field.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>FS_Align_TrakEM2</artifactId>
+				<version>${FS_Align_TrakEM2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Feature_Detection</artifactId>
+				<version>${Feature_Detection.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>3D_Blob_Segmentation</artifactId>
+				<version>${Fiji_3D_Blob_Segmentation.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Fiji_Archipelago</artifactId>
+				<version>${Fiji_Archipelago.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Fiji_Developer</artifactId>
+				<version>${Fiji_Developer.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Fiji_Package_Maker</artifactId>
+				<version>${Fiji_Package_Maker.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Fiji_Plugins</artifactId>
+				<version>${Fiji_Plugins.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Fiji_Updater</artifactId>
+				<version>${Fiji_Updater.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>FlowJ_</artifactId>
+				<version>${FlowJ.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Graph_Cut</artifactId>
+				<version>${Graph_Cut.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Gray_Morphology</artifactId>
+				<version>${Gray_Morphology.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.janelia</groupId>
+				<artifactId>H5J_Loader_Plugin</artifactId>
+				<version>${H5J_Loader_Plugin.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Helmholtz_Analysis</artifactId>
+				<version>${Helmholtz_Analysis.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>IJ_Robot</artifactId>
+				<version>${IJ_Robot.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>IO_</artifactId>
+				<version>${IO.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Image_5D</artifactId>
+				<version>${Image_5D.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>3D_Objects_Counter</artifactId>
+				<version>${ImageJ_3D_Objects_Counter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>3D_Viewer</artifactId>
+				<version>${ImageJ_3D_Viewer.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Image_Expression_Parser</artifactId>
+				<version>${Image_Expression_Parser.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Interactive_3D_Surface_Plot</artifactId>
+				<version>${Interactive_3D_Surface_Plot.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>IsoData_Classifier</artifactId>
+				<version>${IsoData_Classifier.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Kuwahara_Filter</artifactId>
+				<version>${Kuwahara_Filter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>KymographBuilder</artifactId>
+				<version>${KymographBuilder.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>LSM_Reader</artifactId>
+				<version>${LSM_Reader.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>LSM_Toolbox</artifactId>
+				<version>${LSM_Toolbox.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Lasso_and_Blow_Tool</artifactId>
+				<version>${Lasso_and_Blow_Tool.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Linear_Kuwahara</artifactId>
+				<version>${Linear_Kuwahara.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>LocalThickness_</artifactId>
+				<version>${LocalThickness.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>MTrack2_</artifactId>
+				<version>${MTrack2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>M_I_P</artifactId>
+				<version>${M_I_P.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Manual_Tracking</artifactId>
+				<version>${Manual_Tracking.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>MosaicJ_</artifactId>
+				<version>${MosaicJ.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Multi_Kymograph</artifactId>
+				<version>${Multi_Kymograph.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>PIV_analyser</artifactId>
+				<version>${PIV_analyser.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>PointPicker_</artifactId>
+				<version>${PointPicker.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>QuickPALM_</artifactId>
+				<version>${QuickPALM.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>RATS_</artifactId>
+				<version>${RATS.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Reconstruct_Reader</artifactId>
+				<version>${Reconstruct_Reader.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>SPIM_Opener</artifactId>
+				<version>${SPIM_Opener.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>SPIM_Registration</artifactId>
+				<version>${SPIM_Registration.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Samples_</artifactId>
+				<version>${Samples.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Script_Launcher</artifactId>
+				<version>${Script_Launcher.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Series_Labeler</artifactId>
+				<version>${Series_Labeler.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>SheppLogan_</artifactId>
+				<version>${SheppLogan.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Simple_Neurite_Tracer</artifactId>
+				<version>${Simple_Neurite_Tracer.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Siox_Segmentation</artifactId>
+				<version>${Siox_Segmentation.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Skeletonize3D_</artifactId>
+				<version>${Skeletonize3D.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Snakuscule_</artifactId>
+				<version>${Snakuscule.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>SplineDeformationGenerator_</artifactId>
+				<version>${SplineDeformationGenerator.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>StackReg_</artifactId>
+				<version>${StackReg.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Stack_Manipulation</artifactId>
+				<version>${Stack_Manipulation.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Statistical_Region_Merging</artifactId>
+				<version>${Statistical_Region_Merging.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Stitching_</artifactId>
+				<version>${Stitching.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Sync_Win</artifactId>
+				<version>${Sync_Win.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Thread_Killer</artifactId>
+				<version>${Thread_Killer.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Time_Lapse</artifactId>
+				<version>${Time_Lapse.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Time_Stamper</artifactId>
+				<version>${Time_Stamper.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>ToAST_</artifactId>
+				<version>${ToAST.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>TopoJ_</artifactId>
+				<version>${TopoJ.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>TrackMate_</artifactId>
+				<version>${TrackMate.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Trainable_Segmentation</artifactId>
+				<version>${Trainable_Segmentation.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>TrakEM2_Archipelago</artifactId>
+				<version>${TrakEM2_Archipelago.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>TurboReg_</artifactId>
+				<version>${TurboReg.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>UnwarpJ_</artifactId>
+				<version>${UnwarpJ.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>VIB-lib</artifactId>
+				<version>${VIB-lib.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>VIB_</artifactId>
+				<version>${VIB.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Vaa3d_Reader</artifactId>
+				<version>${Vaa3d_Reader.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Vaa3d_Writer</artifactId>
+				<version>${Vaa3d_Writer.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Video_Editing</artifactId>
+				<version>${Video_Editing.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>View5D_</artifactId>
+				<version>${View5D.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Volume_Calculator</artifactId>
+				<version>${Volume_Calculator.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Volume_Viewer</artifactId>
+				<version>${Volume_Viewer.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>bUnwarpJ_</artifactId>
+				<version>${bUnwarpJ.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>bij</artifactId>
+				<version>${bij.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>blockmatching_</artifactId>
+				<version>${blockmatching.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>fiji-compat</artifactId>
+				<version>${fiji-compat.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>fiji-lib</artifactId>
+				<version>${fiji-lib.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>imageware</artifactId>
+				<version>${imageware.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>javac</artifactId>
+				<version>${javac.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>jep</artifactId>
+				<version>${jep.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>legacy-imglib1</artifactId>
+				<version>${legacy-imglib1.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>level_sets</artifactId>
+				<version>${level_sets.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>mij</artifactId>
+				<version>${mij.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>pal-optimization</artifactId>
+				<version>${pal-optimization.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>panorama_</artifactId>
+				<version>${panorama.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>register_virtual_stack_slices</artifactId>
+				<version>${register_virtual_stack_slices.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>registration_3d</artifactId>
+				<version>${registration_3d.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>wavelets</artifactId>
+				<version>${wavelets.version}</version>
+			</dependency>
+
+			<!-- External Fiji projects -->
+
+			<!-- Sholl Analysis - https://github.com/tferr/ASA -->
+			<dependency>
+				<groupId>ca.mcgill</groupId>
+				<artifactId>Sholl_Analysis</artifactId>
+				<version>${Sholl_Analysis.version}</version>
+			</dependency>
+
+			<!-- JITK TPS - https://github.com/saalfeldlab/jitk-tps -->
+			<dependency>
+				<groupId>jitk</groupId>
+				<artifactId>jitk-tps</artifactId>
+				<version>${jitk-tps.version}</version>
+			</dependency>
+
+			<!-- BigWarp - https://github.com/saalfeldlab/bigwarp -->
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>bigwarp_fiji</artifactId>
+				<version>${bigwarp.version}</version>
+			</dependency>
+
+			<!-- TrakEM2 TPS - https://github.com/saalfeldlab/trakem2-tps -->
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>trakem2_tps</artifactId>
+				<version>${trakem2_tps.version}</version>
+			</dependency>
+
+			<!-- Z-Spacing correction - https://github.com/saalfeldlab/z-spacing -->
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>z_spacing</artifactId>
+				<version>${z_spacing.version}</version>
+			</dependency>
+
 			<!-- Open Microscopy Environment - https://github.com/openmicroscopy -->
 
 			<!-- Bio-Formats - https://github.com/openmicroscopy/bioformats -->
@@ -1257,6 +2006,13 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<version>${batik-xml.version}</version>
 			</dependency>
 
+			<!-- Commons Codec - https://commons.apache.org/proper/commons-codec/ -->
+			<dependency>
+				<groupId>commons-codec</groupId>
+				<artifactId>commons-codec</artifactId>
+				<version>${commons-codec.version}</version>
+			</dependency>
+
 			<!-- Commons Math - https://commons.apache.org/proper/commons-math/ -->
 			<dependency>
 				<groupId>org.apache.commons</groupId>
@@ -1276,6 +2032,13 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>com.google.guava</groupId>
 				<artifactId>guava</artifactId>
 				<version>${guava.version}</version>
+			</dependency>
+
+			<!-- iText PDF - https://github.com/itext/itextpdf -->
+			<dependency>
+				<groupId>com.itextpdf</groupId>
+				<artifactId>itextpdf</artifactId>
+				<version>${itextpdf.version}</version>
 			</dependency>
 
 			<!-- JAMA - http://math.nist.gov/javanumerics/jama/ -->
@@ -1493,6 +2256,20 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				</exclusions>
 			</dependency>
 
+			<!-- JGraphT - https://github.com/jgrapht/jgrapht -->
+			<dependency>
+				<groupId>net.sf.jgrapht</groupId>
+				<artifactId>jgrapht</artifactId>
+				<version>${jgrapht.version}</version>
+			</dependency>
+
+			<!-- JGraphX - https://github.com/jgraph/jgraphx -->
+			<dependency>
+				<groupId>org.tinyjee.jgraphx</groupId>
+				<artifactId>jgraphx</artifactId>
+				<version>${jgraphx.version}</version>
+			</dependency>
+
 			<!-- JHDF5 - https://wiki-bsse.ethz.ch/label/JHDF5/hdf5 -->
 			<dependency>
 				<groupId>cisd</groupId>
@@ -1536,6 +2313,27 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<version>${jogl.version}</version>
 			</dependency>
 
+			<!-- JPedal - http://jpedal.org/ (defunct) -->
+			<dependency>
+				<groupId>org.jpedal</groupId>
+				<artifactId>jpedalSTD</artifactId>
+				<version>${jpedal.version}</version>
+			</dependency>
+
+			<!-- JSch - http://www.jcraft.com/jsch/ -->
+			<dependency>
+				<groupId>com.jcraft</groupId>
+				<artifactId>jsch</artifactId>
+				<version>${jsch.version}</version>
+			</dependency>
+
+			<!-- JZlib - http://www.jcraft.com/jzlib/ -->
+			<dependency>
+				<groupId>com.jcraft</groupId>
+				<artifactId>jzlib</artifactId>
+				<version>${jzlib.version}</version>
+			</dependency>
+
 			<!-- Logback - http://logback.qos.ch/ -->
 			<dependency>
 				<groupId>ch.qos.logback</groupId>
@@ -1561,6 +2359,13 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>edu.mines</groupId>
 				<artifactId>mines-jtk</artifactId>
 				<version>${mines-jtk.version}</version>
+			</dependency>
+
+			<!-- OpenCSV - http://opencsv.sourceforge.net/ -->
+			<dependency>
+				<groupId>au.com.bytecode</groupId>
+				<artifactId>opencsv</artifactId>
+				<version>${opencsv.version}</version>
 			</dependency>
 
 			<!-- RSyntaxTextArea - http://bobbylight.github.io/RSyntaxTextArea/ -->
@@ -1610,6 +2415,18 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-simple</artifactId>
 				<version>${slf4j-simple.version}</version>
+			</dependency>
+
+			<!-- Weka - http://www.cs.waikato.ac.nz/ml/weka/ -->
+			<dependency>
+				<groupId>nz.ac.waikato.cms.weka</groupId>
+				<artifactId>weka</artifactId>
+				<version>${weka.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>nz.ac.waikato.cms.weka</groupId>
+				<artifactId>weka-dev</artifactId>
+				<version>${weka.version}</version>
 			</dependency>
 
 			<!-- Test scope dependencies -->
@@ -1805,6 +2622,150 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<scifio-jai-imageio.version>LATEST</scifio-jai-imageio.version>
 				<scifio-lifesci.version>LATEST</scifio-lifesci.version>
 				<scifio-ome-xml.version>LATEST</scifio-ome-xml.version>
+			</properties>
+			<repositories>
+				<repository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+		<profile>
+			<id>dev.fiji</id>
+			<activation>
+				<file>
+					<exists>${user.home}/.scijava/dev.fiji</exists>
+				</file>
+			</activation>
+			<properties>
+				<!-- Fiji -->
+				<fiji.version>LATEST</fiji.version>
+
+				<!-- Standard Fiji projects -->
+				<AnalyzeSkeleton.version>LATEST</AnalyzeSkeleton.version>
+				<Anisotropic_Diffusion_2D.version>LATEST</Anisotropic_Diffusion_2D.version>
+				<Archipelago_Plugins.version>LATEST</Archipelago_Plugins.version>
+				<Arrow.version>LATEST</Arrow.version>
+				<Auto_Threshold.version>LATEST</Auto_Threshold.version>
+				<BalloonSegmentation.version>LATEST</BalloonSegmentation.version>
+				<Bug_Submitter.version>LATEST</Bug_Submitter.version>
+				<CPU_Meter.version>LATEST</CPU_Meter.version>
+				<Calculator_Plus.version>LATEST</Calculator_Plus.version>
+				<Cell_Counter.version>LATEST</Cell_Counter.version>
+				<Colocalisation_Analysis.version>LATEST</Colocalisation_Analysis.version>
+				<Color_Histogram.version>LATEST</Color_Histogram.version>
+				<Color_Inspector_3D.version>LATEST</Color_Inspector_3D.version>
+				<Colour_Deconvolution.version>LATEST</Colour_Deconvolution.version>
+				<CorrectBleach.version>LATEST</CorrectBleach.version>
+				<Descriptor_based_registration.version>LATEST</Descriptor_based_registration.version>
+				<Dichromacy.version>LATEST</Dichromacy.version>
+				<Differentials.version>LATEST</Differentials.version>
+				<Directionality.version>LATEST</Directionality.version>
+				<Extended_Depth_Field.version>LATEST</Extended_Depth_Field.version>
+				<FS_Align_TrakEM2.version>LATEST</FS_Align_TrakEM2.version>
+				<Feature_Detection.version>LATEST</Feature_Detection.version>
+				<Fiji_3D_Blob_Segmentation.version>LATEST</Fiji_3D_Blob_Segmentation.version>
+				<Fiji_Archipelago.version>LATEST</Fiji_Archipelago.version>
+				<Fiji_Developer.version>LATEST</Fiji_Developer.version>
+				<Fiji_Package_Maker.version>LATEST</Fiji_Package_Maker.version>
+				<Fiji_Plugins.version>LATEST</Fiji_Plugins.version>
+				<Fiji_Updater.version>LATEST</Fiji_Updater.version>
+				<FlowJ.version>LATEST</FlowJ.version>
+				<Graph_Cut.version>LATEST</Graph_Cut.version>
+				<Gray_Morphology.version>LATEST</Gray_Morphology.version>
+				<H5J_Loader_Plugin.version>LATEST</H5J_Loader_Plugin.version>
+				<Helmholtz_Analysis.version>LATEST</Helmholtz_Analysis.version>
+				<IJ_Robot.version>LATEST</IJ_Robot.version>
+				<IO.version>LATEST</IO.version>
+				<ImageJ_3D_Objects_Counter.version>LATEST</ImageJ_3D_Objects_Counter.version>
+				<ImageJ_3D_Viewer.version>LATEST</ImageJ_3D_Viewer.version>
+				<Image_5D.version>LATEST</Image_5D.version>
+				<Image_Expression_Parser.version>LATEST</Image_Expression_Parser.version>
+				<Interactive_3D_Surface_Plot.version>LATEST</Interactive_3D_Surface_Plot.version>
+				<IsoData_Classifier.version>LATEST</IsoData_Classifier.version>
+				<Kuwahara_Filter.version>LATEST</Kuwahara_Filter.version>
+				<KymographBuilder.version>LATEST</KymographBuilder.version>
+				<LSM_Reader.version>LATEST</LSM_Reader.version>
+				<LSM_Toolbox.version>LATEST</LSM_Toolbox.version>
+				<Lasso_and_Blow_Tool.version>LATEST</Lasso_and_Blow_Tool.version>
+				<Linear_Kuwahara.version>LATEST</Linear_Kuwahara.version>
+				<LocalThickness.version>LATEST</LocalThickness.version>
+				<MTrack2.version>LATEST</MTrack2.version>
+				<M_I_P.version>LATEST</M_I_P.version>
+				<Manual_Tracking.version>LATEST</Manual_Tracking.version>
+				<MosaicJ.version>LATEST</MosaicJ.version>
+				<Multi_Kymograph.version>LATEST</Multi_Kymograph.version>
+				<PIV_analyser.version>LATEST</PIV_analyser.version>
+				<PointPicker.version>LATEST</PointPicker.version>
+				<QuickPALM.version>LATEST</QuickPALM.version>
+				<RATS.version>LATEST</RATS.version>
+				<Reconstruct_Reader.version>LATEST</Reconstruct_Reader.version>
+				<SPIM_Opener.version>LATEST</SPIM_Opener.version>
+				<SPIM_Registration.version>LATEST</SPIM_Registration.version>
+				<Samples.version>LATEST</Samples.version>
+				<Script_Launcher.version>LATEST</Script_Launcher.version>
+				<Series_Labeler.version>LATEST</Series_Labeler.version>
+				<SheppLogan.version>LATEST</SheppLogan.version>
+				<Simple_Neurite_Tracer.version>LATEST</Simple_Neurite_Tracer.version>
+				<Siox_Segmentation.version>LATEST</Siox_Segmentation.version>
+				<Skeletonize3D.version>LATEST</Skeletonize3D.version>
+				<Snakuscule.version>LATEST</Snakuscule.version>
+				<SplineDeformationGenerator.version>LATEST</SplineDeformationGenerator.version>
+				<StackReg.version>LATEST</StackReg.version>
+				<Stack_Manipulation.version>LATEST</Stack_Manipulation.version>
+				<Statistical_Region_Merging.version>LATEST</Statistical_Region_Merging.version>
+				<Stitching.version>LATEST</Stitching.version>
+				<Sync_Win.version>LATEST</Sync_Win.version>
+				<Thread_Killer.version>LATEST</Thread_Killer.version>
+				<Time_Lapse.version>LATEST</Time_Lapse.version>
+				<Time_Stamper.version>LATEST</Time_Stamper.version>
+				<ToAST.version>LATEST</ToAST.version>
+				<TopoJ.version>LATEST</TopoJ.version>
+				<TrackMate.version>LATEST</TrackMate.version>
+				<Trainable_Segmentation.version>LATEST</Trainable_Segmentation.version>
+				<TrakEM2_Archipelago.version>LATEST</TrakEM2_Archipelago.version>
+				<TurboReg.version>LATEST</TurboReg.version>
+				<UnwarpJ.version>LATEST</UnwarpJ.version>
+				<VIB-lib.version>LATEST</VIB-lib.version>
+				<VIB.version>LATEST</VIB.version>
+				<Vaa3d_Reader.version>LATEST</Vaa3d_Reader.version>
+				<Vaa3d_Writer.version>LATEST</Vaa3d_Writer.version>
+				<Video_Editing.version>LATEST</Video_Editing.version>
+				<View5D.version>LATEST</View5D.version>
+				<Volume_Calculator.version>LATEST</Volume_Calculator.version>
+				<Volume_Viewer.version>LATEST</Volume_Viewer.version>
+				<bUnwarpJ.version>LATEST</bUnwarpJ.version>
+				<bij.version>LATEST</bij.version>
+				<blockmatching.version>LATEST</blockmatching.version>
+				<fiji-compat.version>LATEST</fiji-compat.version>
+				<fiji-lib.version>LATEST</fiji-lib.version>
+				<imageware.version>LATEST</imageware.version>
+				<javac.version>LATEST</javac.version>
+				<jep.version>LATEST</jep.version>
+				<legacy-imglib1.version>LATEST</legacy-imglib1.version>
+				<level_sets.version>LATEST</level_sets.version>
+				<mij.version>LATEST</mij.version>
+				<pal-optimization.version>LATEST</pal-optimization.version>
+				<panorama.version>LATEST</panorama.version>
+				<register_virtual_stack_slices.version>LATEST</register_virtual_stack_slices.version>
+				<registration_3d.version>LATEST</registration_3d.version>
+				<wavelets.version>LATEST</wavelets.version>
+
+				<!-- External Fiji projects -->
+				<Sholl_Analysis.version>LATEST</Sholl_Analysis.version>
+				<jitk-tps.version>LATEST</jitk-tps.version>
+				<bigwarp.version>LATEST</bigwarp.version>
+				<trakem2_tps.version>LATEST</trakem2_tps.version>
+				<z_spacing.version>LATEST</z_spacing.version>
 			</properties>
 			<repositories>
 				<repository>
