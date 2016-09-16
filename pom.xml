@@ -229,7 +229,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<formats-gpl.version>${bio-formats.version}</formats-gpl.version>
 		<ome-xml.version>${bio-formats.version}</ome-xml.version>
 
-		<!-- Other managed components -->
+		<!-- Third party components -->
 
 		<!-- Batik - https://xmlgraphics.apache.org/batik/ -->
 		<batik.version>1.8</batik.version>
@@ -610,7 +610,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<version>${ome-xml.version}</version>
 			</dependency>
 
-			<!-- Other managed components -->
+			<!-- Third party components -->
 
 			<!-- Batik - https://xmlgraphics.apache.org/batik/ -->
 			<dependency>
