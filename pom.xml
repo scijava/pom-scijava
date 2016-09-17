@@ -462,6 +462,14 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<bigdataviewer_fiji.version>2.1.0</bigdataviewer_fiji.version>
 		<spim_data.version>2.1.0</spim_data.version>
 
+		<!-- TrakEM2 - https://github.com/trakem2 -->
+
+		<T2-NIT.version>1.1.1</T2-NIT.version>
+		<T2-TreelineGraph.version>1.1.1</T2-TreelineGraph.version>
+		<TrakEM2.version>1.0h</TrakEM2.version>
+		<VectorString.version>2.0.0</VectorString.version>
+		<mpicbg-trakem2.version>1.2.3</mpicbg-trakem2.version>
+
 		<!--
 		BEGIN MANUALLY MANAGED VERSIONS
 
@@ -536,6 +544,11 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 		<!-- iText PDF - https://github.com/itext/itextpdf -->
 		<itextpdf.version>5.1.1</itextpdf.version>
+
+		<!-- Java Advanced Imaging - https://java.net/projects/jai-core -->
+		<jai.version>1.1.3</jai.version>
+		<jai-codec.version>${jai.version}</jai-codec.version>
+		<jai-core.version>${jai.version}</jai-core.version>
 
 		<!-- JAMA - http://math.nist.gov/javanumerics/jama/ -->
 		<jama.version>1.0.3</jama.version>
@@ -632,6 +645,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 		<!-- OpenCSV - http://opencsv.sourceforge.net/ -->
 		<opencsv.version>2.4</opencsv.version>
+
+		<!-- PostgreSQL JDBC Driver - https://jdbc.postgresql.org/ -->
+		<postgresql.version>8.2-507.jdbc3</postgresql.version>
 
 		<!-- RSyntaxTextArea - http://bobbylight.github.io/RSyntaxTextArea/ -->
 		<rsyntaxtextarea.version>2.5.8</rsyntaxtextarea.version>
@@ -1710,6 +1726,34 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<version>${spim_data.version}</version>
 			</dependency>
 
+			<!-- TrakEM2 - https://github.com/trakem2 -->
+
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>T2-NIT</artifactId>
+				<version>${T2-NIT.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>T2-TreelineGraph</artifactId>
+				<version>${T2-TreelineGraph.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>TrakEM2_</artifactId>
+				<version>${TrakEM2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>VectorString</artifactId>
+				<version>${VectorString.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>mpicbg-trakem2</artifactId>
+				<version>${mpicbg-trakem2.version}</version>
+			</dependency>
+
 			<!-- Open Microscopy Environment - https://github.com/openmicroscopy -->
 
 			<!-- Bio-Formats - https://github.com/openmicroscopy/bioformats -->
@@ -2071,6 +2115,18 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<version>${itextpdf.version}</version>
 			</dependency>
 
+			<!-- Java Advanced Imaging - https://java.net/projects/jai-core -->
+			<dependency>
+				<groupId>com.sun.media</groupId>
+				<artifactId>jai-codec</artifactId>
+				<version>${jai-codec.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.media</groupId>
+				<artifactId>jai-core</artifactId>
+				<version>${jai-core.version}</version>
+			</dependency>
+
 			<!-- JAMA - http://math.nist.gov/javanumerics/jama/ -->
 			<dependency>
 				<groupId>gov.nist.math</groupId>
@@ -2396,6 +2452,13 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>au.com.bytecode</groupId>
 				<artifactId>opencsv</artifactId>
 				<version>${opencsv.version}</version>
+			</dependency>
+
+			<!-- PostgreSQL JDBC Driver - https://jdbc.postgresql.org/ -->
+			<dependency>
+				<groupId>postgresql</groupId>
+				<artifactId>postgresql</artifactId>
+				<version>${postgresql.version}</version>
 			</dependency>
 
 			<!-- RSyntaxTextArea - http://bobbylight.github.io/RSyntaxTextArea/ -->
@@ -2825,6 +2888,36 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<bigdataviewer-server.version>LATEST</bigdataviewer-server.version>
 				<bigdataviewer_fiji.version>LATEST</bigdataviewer_fiji.version>
 				<spim_data.version>LATEST</spim_data.version>
+			</properties>
+			<repositories>
+				<repository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+		<profile>
+			<id>dev.trakem2</id>
+			<activation>
+				<file>
+					<exists>${user.home}/.scijava/dev.trakem2</exists>
+				</file>
+			</activation>
+			<properties>
+				<T2-NIT.version>LATEST</T2-NIT.version>
+				<T2-TreelineGraph.version>LATEST</T2-TreelineGraph.version>
+				<TrakEM2.version>LATEST</TrakEM2.version>
+				<VectorString.version>LATEST</VectorString.version>
+				<mpicbg-trakem2.version>LATEST</mpicbg-trakem2.version>
 			</properties>
 			<repositories>
 				<repository>
