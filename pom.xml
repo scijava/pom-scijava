@@ -455,6 +455,13 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- Z-Spacing correction - https://github.com/saalfeldlab/z-spacing -->
 		<z_spacing.version>1.0.2</z_spacing.version>
 
+		<!-- BigDataViewer - https://github.com/bigdataviewer -->
+
+		<bigdataviewer-core.version>2.5.1</bigdataviewer-core.version>
+		<bigdataviewer-server.version>2.0.0</bigdataviewer-server.version>
+		<bigdataviewer_fiji.version>2.1.0</bigdataviewer_fiji.version>
+		<spim_data.version>2.1.0</spim_data.version>
+
 		<!--
 		BEGIN MANUALLY MANAGED VERSIONS
 
@@ -1680,6 +1687,29 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<version>${z_spacing.version}</version>
 			</dependency>
 
+			<!-- BigDataViewer - https://github.com/bigdataviewer -->
+
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>bigdataviewer-core</artifactId>
+				<version>${bigdataviewer-core.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>bigdataviewer-server</artifactId>
+				<version>${bigdataviewer-server.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>bigdataviewer_fiji</artifactId>
+				<version>${bigdataviewer_fiji.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>spim_data</artifactId>
+				<version>${spim_data.version}</version>
+			</dependency>
+
 			<!-- Open Microscopy Environment - https://github.com/openmicroscopy -->
 
 			<!-- Bio-Formats - https://github.com/openmicroscopy/bioformats -->
@@ -2766,6 +2796,35 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<bigwarp.version>LATEST</bigwarp.version>
 				<trakem2_tps.version>LATEST</trakem2_tps.version>
 				<z_spacing.version>LATEST</z_spacing.version>
+			</properties>
+			<repositories>
+				<repository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+		<profile>
+			<id>dev.bdv</id>
+			<activation>
+				<file>
+					<exists>${user.home}/.scijava/dev.bdv</exists>
+				</file>
+			</activation>
+			<properties>
+				<bigdataviewer-core.version>LATEST</bigdataviewer-core.version>
+				<bigdataviewer-server.version>LATEST</bigdataviewer-server.version>
+				<bigdataviewer_fiji.version>LATEST</bigdataviewer_fiji.version>
+				<spim_data.version>LATEST</spim_data.version>
 			</properties>
 			<repositories>
 				<repository>
