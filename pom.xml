@@ -2,13 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.scijava</groupId>
+	<parent>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava-base</artifactId>
+		<version>1.0.0</version>
+		<relativePath />
+	</parent>
+
 	<artifactId>pom-scijava</artifactId>
-	<version>11.5.1-SNAPSHOT</version>
+	<version>12.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>SciJava Projects</name>
-	<description>SciJava aims to provide an overview of available Java libraries for scientific computing. This POM provides a parent from which participating projects can declare their build configurations. It ensures that projects all use a compatible build environment, including Java version, as well as versions of dependencies and plugins.
+	<name>SciJava Parent POM</name>
+	<description>This POM provides a parent from which participating projects can declare their build configurations. It ensures that projects all use a compatible build environment, including Java version, as well as versions of dependencies and plugins.
 
 Projects wishing to use pom-scijava as a parent project need to override the &lt;name&gt;, &lt;description&gt;, &lt;url&gt;, &lt;inceptionYear&gt;, &lt;organization&gt;, &lt;licenses&gt;, &lt;developers&gt;, &lt;contributors&gt;, &lt;mailingLists&gt;, &lt;scm&gt;, &lt;issueManagement&gt; and &lt;ciManagement&gt; sections.</description>
 	<url>http://www.scijava.org/</url>
@@ -99,10 +105,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 	</ciManagement>
 
 	<properties>
-		<!-- These properties are intended for downstream override. -->
-		<main-class />
-		<package-name />
-		<license.projectName>${project.description}</license.projectName>
+		<!-- Managed dependency versions -->
 
 		<!--
 		If two artifacts on the classpath use two different versions of the same
@@ -202,6 +205,270 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- Swing Checkbox Tree - https://github.com/scijava/swing-checkbox-tree -->
 		<swing-checkbox-tree.version>1.0.1</swing-checkbox-tree.version>
 
+		<!-- ImageJ - https://github.com/imagej -->
+
+		<!-- ImageJ - https://github.com/imagej/imagej -->
+		<imagej.version>2.0.0-rc-55</imagej.version>
+
+		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
+		<imagej1.version>1.51f</imagej1.version>
+
+		<!-- ImageJ 1.x patcher - https://github.com/imagej/ij1-patcher -->
+		<ij1-patcher.version>0.12.5</ij1-patcher.version>
+
+		<!-- ImageJ Common - https://github.com/imagej/imagej-common -->
+		<imagej-common.version>0.24.1</imagej-common.version>
+
+		<!-- ImageJ Deprecated - https://github.com/imagej/imagej-deprecated -->
+		<imagej-deprecated.version>0.1.1</imagej-deprecated.version>
+
+		<!-- ImageJ Launcher - https://github.com/imagej/imagej-launcher -->
+		<imagej-launcher.version>4.0.5</imagej-launcher.version>
+
+		<!-- ImageJ Legacy - https://github.com/imagej/imagej-legacy -->
+		<imagej-legacy.version>0.23.2</imagej-legacy.version>
+
+		<!-- ImageJ MATLAB - https://github.com/imagej/imagej-matlab -->
+		<imagej-matlab.version>0.7.1</imagej-matlab.version>
+
+		<!-- ImageJ Maven Plugin - https://github.com/imagej/imagej-maven-plugin -->
+		<imagej-maven-plugin.version>0.6.0</imagej-maven-plugin.version>
+
+		<!-- ImageJ OMERO - https://github.com/imagej/imagej-omero -->
+		<imagej-omero.version>0.4.0</imagej-omero.version>
+
+		<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
+		<imagej-ops.version>0.33.0</imagej-ops.version>
+
+		<!-- ImageJ Plugins: Commands - https://github.com/imagej/imagej-plugins-commands -->
+		<imagej-plugins-commands.version>0.7.0</imagej-plugins-commands.version>
+
+		<!-- ImageJ Plugins: Tools - https://github.com/imagej/imagej-plugins-tools -->
+		<imagej-plugins-tools.version>0.3.0</imagej-plugins-tools.version>
+
+		<!-- ImageJ Plugins: Uploader: SSH - https://github.com/imagej/imagej-plugins-uploader-ssh -->
+		<imagej-plugins-uploader-ssh.version>0.3.0</imagej-plugins-uploader-ssh.version>
+
+		<!-- ImageJ Plugins: Uploader: WebDAV - https://github.com/imagej/imagej-plugins-uploader-webdav -->
+		<imagej-plugins-uploader-webdav.version>0.2.0</imagej-plugins-uploader-webdav.version>
+
+		<!-- ImageJ Scripting - https://github.com/imagej/imagej-scripting -->
+		<imagej-scripting.version>0.4.0</imagej-scripting.version>
+
+		<!-- ImageJ UI: AWT - https://github.com/imagej/imagej-ui-awt -->
+		<imagej-ui-awt.version>0.3.0</imagej-ui-awt.version>
+
+		<!-- ImageJ UI: Swing - https://github.com/imagej/imagej-ui-swing -->
+		<imagej-ui-swing.version>0.21.1</imagej-ui-swing.version>
+
+		<!-- ImageJ Updater - https://github.com/imagej/imagej-updater -->
+		<imagej-updater.version>0.8.1</imagej-updater.version>
+
+		<!-- ImageJ Usage - https://github.com/imagej/imagej-usage -->
+		<imagej-usage.version>0.4.0</imagej-usage.version>
+
+		<!-- Op Finder - https://github.com/imagej/op-finder -->
+		<op-finder.version>0.1.0</op-finder.version>
+
+		<!-- ImgLib2 - https://github.com/imglib -->
+
+		<!-- ImgLib2 - https://github.com/imglib/imglib2 -->
+		<imglib2.version>3.2.0</imglib2.version>
+
+		<!-- ImgLib2 Algorithms - https://github.com/imglib/imglib2-algorithm -->
+		<imglib2-algorithm.version>0.6.0</imglib2-algorithm.version>
+
+		<!-- ImgLib2 Algorithms FFT - https://github.com/imglib/imglib2-algorithm-fft -->
+		<imglib2-algorithm-fft.version>0.1.2</imglib2-algorithm-fft.version>
+
+		<!-- ImgLib2 Algorithms GPL - https://github.com/imglib/imglib2-algorithm-gpl -->
+		<imglib2-algorithm-gpl.version>0.1.5</imglib2-algorithm-gpl.version>
+
+		<!-- ImgLib2 IJ - https://github.com/imglib/imglib2-ij -->
+		<imglib2-ij.version>2.0.0-beta-34</imglib2-ij.version>
+
+		<!-- ImgLib2 RealTransform - https://github.com/imglib/imglib2-realtransform -->
+		<imglib2-realtransform.version>2.0.0-beta-32</imglib2-realtransform.version>
+
+		<!-- ImgLib2 ROI - https://github.com/imglib/imglib2-roi -->
+		<imglib2-roi.version>0.4.3</imglib2-roi.version>
+
+		<!-- ImgLib2 Scripting - https://github.com/imglib/imglib2-script -->
+		<imglib2-script.version>0.2.0</imglib2-script.version>
+
+		<!-- ImgLib2 UI - https://github.com/imglib/imglib2-ui -->
+		<imglib2-ui.version>2.0.0-beta-30</imglib2-ui.version>
+
+		<!-- SCIFIO - https://github.com/scifio -->
+
+		<!-- SCIFIO - https://github.com/scifio/scifio -->
+		<scifio.version>0.28.2</scifio.version>
+
+		<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
+		<scifio-bf-compat.version>2.0.0</scifio-bf-compat.version>
+
+		<!-- SCIFIO Command Line Tools - https://github.com/scifio/scifio-cli -->
+		<scifio-cli.version>0.3.2</scifio-cli.version>
+
+		<!-- SCIFIO HDF5 - https://github.com/scifio/scifio-hdf5 -->
+		<scifio-hdf5.version>0.1.1</scifio-hdf5.version>
+
+		<!-- SCIFIO JAI Image I/O - https://github.com/scifio/scifio-jai-imageio -->
+		<scifio-jai-imageio.version>1.1.0</scifio-jai-imageio.version>
+
+		<!-- SCIFIO-LifeSci - https://github.com/scifio/scifio-lifesci -->
+		<scifio-lifesci.version>0.7.0</scifio-lifesci.version>
+
+		<!-- SCIFIO-OME-XML - https://github.com/scifio/scifio-ome-xml -->
+		<scifio-ome-xml.version>0.14.0</scifio-ome-xml.version>
+
+		<!-- Fiji - https://github.com/fiji -->
+
+		<!-- Fiji - https://github.com/fiji/fiji -->
+		<fiji.version>2.0.0</fiji.version>
+
+		<!-- Standard Fiji projects -->
+
+		<AnalyzeSkeleton.version>3.1.0</AnalyzeSkeleton.version>
+		<Anisotropic_Diffusion_2D.version>2.0.0</Anisotropic_Diffusion_2D.version>
+		<Archipelago_Plugins.version>0.5.2</Archipelago_Plugins.version>
+		<Arrow.version>2.0.1</Arrow.version>
+		<Auto_Threshold.version>1.16.4</Auto_Threshold.version>
+		<BalloonSegmentation.version>2.0.0</BalloonSegmentation.version>
+		<Bug_Submitter.version>2.1.0</Bug_Submitter.version>
+		<CPU_Meter.version>2.0.0</CPU_Meter.version>
+		<Calculator_Plus.version>2.0.0</Calculator_Plus.version>
+		<Cell_Counter.version>2.2.1</Cell_Counter.version>
+		<Colocalisation_Analysis.version>2.2.1</Colocalisation_Analysis.version>
+		<Color_Histogram.version>2.0.6</Color_Histogram.version>
+		<Color_Inspector_3D.version>2.3.1</Color_Inspector_3D.version>
+		<Colour_Deconvolution.version>3.0.1</Colour_Deconvolution.version>
+		<CorrectBleach.version>2.0.1</CorrectBleach.version>
+		<Descriptor_based_registration.version>2.1.0</Descriptor_based_registration.version>
+		<Dichromacy.version>2.1.0</Dichromacy.version>
+		<Differentials.version>2.0.0</Differentials.version>
+		<Directionality.version>2.0.1</Directionality.version>
+		<Extended_Depth_Field.version>2.0.1</Extended_Depth_Field.version>
+		<FS_Align_TrakEM2.version>2.0.1</FS_Align_TrakEM2.version>
+		<Feature_Detection.version>2.0.1</Feature_Detection.version>
+		<Fiji_3D_Blob_Segmentation.version>3.0.0</Fiji_3D_Blob_Segmentation.version>
+		<Fiji_Archipelago.version>2.0.0</Fiji_Archipelago.version>
+		<Fiji_Developer.version>2.0.5</Fiji_Developer.version>
+		<Fiji_Package_Maker.version>2.1.0</Fiji_Package_Maker.version>
+		<Fiji_Plugins.version>3.0.0</Fiji_Plugins.version>
+		<Fiji_Updater.version>2.0.0</Fiji_Updater.version>
+		<FlowJ.version>1.29.2</FlowJ.version>
+		<Graph_Cut.version>1.0.1</Graph_Cut.version>
+		<Gray_Morphology.version>2.3.3</Gray_Morphology.version>
+		<H5J_Loader_Plugin.version>1.0.4</H5J_Loader_Plugin.version>
+		<Helmholtz_Analysis.version>2.0.1</Helmholtz_Analysis.version>
+		<IJ_Robot.version>2.0.0</IJ_Robot.version>
+		<IO.version>3.0.1</IO.version>
+		<ImageJ_3D_Objects_Counter.version>2.0.0</ImageJ_3D_Objects_Counter.version>
+		<ImageJ_3D_Viewer.version>4.0.1</ImageJ_3D_Viewer.version>
+		<Image_5D.version>2.0.1</Image_5D.version>
+		<Image_Expression_Parser.version>3.0.0</Image_Expression_Parser.version>
+		<Interactive_3D_Surface_Plot.version>2.4.1</Interactive_3D_Surface_Plot.version>
+		<IsoData_Classifier.version>2.0.0</IsoData_Classifier.version>
+		<Kuwahara_Filter.version>2.0.0</Kuwahara_Filter.version>
+		<KymographBuilder.version>1.2.3</KymographBuilder.version>
+		<LSM_Reader.version>4.1.1</LSM_Reader.version>
+		<LSM_Toolbox.version>4.1.1</LSM_Toolbox.version>
+		<Lasso_and_Blow_Tool.version>2.0.1</Lasso_and_Blow_Tool.version>
+		<Linear_Kuwahara.version>2.0.0</Linear_Kuwahara.version>
+		<LocalThickness.version>4.0.1</LocalThickness.version>
+		<MTrack2.version>2.0.0</MTrack2.version>
+		<M_I_P.version>2.0.0</M_I_P.version>
+		<Manual_Tracking.version>2.1.0</Manual_Tracking.version>
+		<MosaicJ.version>2.0.0</MosaicJ.version>
+		<Multi_Kymograph.version>2.0.0</Multi_Kymograph.version>
+		<PIV_analyser.version>1.1.1</PIV_analyser.version>
+		<PointPicker.version>2.0.0</PointPicker.version>
+		<QuickPALM.version>1.1.1</QuickPALM.version>
+		<RATS.version>2.0.0</RATS.version>
+		<Reconstruct_Reader.version>2.0.2</Reconstruct_Reader.version>
+		<SPIM_Opener.version>2.0.1</SPIM_Opener.version>
+		<SPIM_Registration.version>5.0.7</SPIM_Registration.version>
+		<Samples.version>2.0.1</Samples.version>
+		<Series_Labeler.version>2.0.0</Series_Labeler.version>
+		<SheppLogan.version>2.0.0</SheppLogan.version>
+		<Simple_Neurite_Tracer.version>3.0.3</Simple_Neurite_Tracer.version>
+		<Siox_Segmentation.version>1.0.4</Siox_Segmentation.version>
+		<Skeletonize3D.version>2.1.0</Skeletonize3D.version>
+		<Snakuscule.version>2.0.0</Snakuscule.version>
+		<SplineDeformationGenerator.version>2.0.0</SplineDeformationGenerator.version>
+		<StackReg.version>2.0.0</StackReg.version>
+		<Stack_Manipulation.version>2.0.1</Stack_Manipulation.version>
+		<Statistical_Region_Merging.version>2.0.0</Statistical_Region_Merging.version>
+		<Stitching.version>3.1.1</Stitching.version>
+		<Sync_Win.version>1.7-fiji3</Sync_Win.version>
+		<Thread_Killer.version>2.0.0</Thread_Killer.version>
+		<Time_Lapse.version>2.0.1</Time_Lapse.version>
+		<Time_Stamper.version>2.0.0</Time_Stamper.version>
+		<ToAST.version>25.0.1</ToAST.version>
+		<TopoJ.version>2.0.0</TopoJ.version>
+		<TrackMate.version>3.4.2</TrackMate.version>
+		<Trainable_Segmentation.version>3.1.2</Trainable_Segmentation.version>
+		<TrakEM2_Archipelago.version>2.0.1</TrakEM2_Archipelago.version>
+		<TurboReg.version>2.0.0</TurboReg.version>
+		<UnwarpJ.version>2.0.0</UnwarpJ.version>
+		<VIB-lib.version>2.1.1</VIB-lib.version>
+		<VIB.version>3.0.1</VIB.version>
+		<Vaa3d_Reader.version>2.0.1</Vaa3d_Reader.version>
+		<Vaa3d_Writer.version>1.0.1</Vaa3d_Writer.version>
+		<Video_Editing.version>2.0.0</Video_Editing.version>
+		<View5D.version>1.3.1</View5D.version>
+		<Volume_Calculator.version>2.0.1</Volume_Calculator.version>
+		<Volume_Viewer.version>2.01.1</Volume_Viewer.version>
+		<bUnwarpJ.version>2.6.3</bUnwarpJ.version>
+		<bij.version>0.1.0</bij.version>
+		<blockmatching.version>2.1.1</blockmatching.version>
+		<fiji-compat.version>2.0.2</fiji-compat.version>
+		<fiji-lib.version>2.1.1</fiji-lib.version>
+		<imageware.version>2.0.0</imageware.version>
+		<javac.version>1.6.0.24-ubuntu-fiji2</javac.version>
+		<jep.version>2.4.2</jep.version>
+		<legacy-imglib1.version>1.1.5</legacy-imglib1.version>
+		<level_sets.version>1.0.1</level_sets.version>
+		<mij.version>1.3.6-fiji2</mij.version>
+		<pal-optimization.version>2.0.0</pal-optimization.version>
+		<panorama.version>3.0.1</panorama.version>
+		<register_virtual_stack_slices.version>3.0.1</register_virtual_stack_slices.version>
+		<registration_3d.version>2.0.0</registration_3d.version>
+		<wavelets.version>2.0.0</wavelets.version>
+
+		<!-- External Fiji projects -->
+
+		<!-- Sholl Analysis - https://github.com/tferr/ASA -->
+		<Sholl_Analysis.version>3.6.5</Sholl_Analysis.version>
+
+		<!-- JITK TPS - https://github.com/saalfeldlab/jitk-tps -->
+		<jitk-tps.version>2.1.0</jitk-tps.version>
+
+		<!-- BigWarp - https://github.com/saalfeldlab/bigwarp -->
+		<bigwarp.version>2.1.2</bigwarp.version>
+
+		<!-- TrakEM2 TPS - https://github.com/saalfeldlab/trakem2-tps -->
+		<trakem2_tps.version>1.1.2</trakem2_tps.version>
+
+		<!-- Z-Spacing correction - https://github.com/saalfeldlab/z-spacing -->
+		<z_spacing.version>1.0.2</z_spacing.version>
+
+		<!-- BigDataViewer - https://github.com/bigdataviewer -->
+
+		<bigdataviewer-core.version>2.5.1</bigdataviewer-core.version>
+		<bigdataviewer-server.version>2.0.0</bigdataviewer-server.version>
+		<bigdataviewer_fiji.version>2.1.0</bigdataviewer_fiji.version>
+		<spim_data.version>2.1.0</spim_data.version>
+
+		<!-- TrakEM2 - https://github.com/trakem2 -->
+
+		<T2-NIT.version>1.1.1</T2-NIT.version>
+		<T2-TreelineGraph.version>1.1.1</T2-TreelineGraph.version>
+		<TrakEM2.version>1.0h</TrakEM2.version>
+		<VectorString.version>2.0.0</VectorString.version>
+		<mpicbg-trakem2.version>1.2.3</mpicbg-trakem2.version>
+
 		<!--
 		BEGIN MANUALLY MANAGED VERSIONS
 
@@ -226,7 +493,12 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<formats-gpl.version>${bio-formats.version}</formats-gpl.version>
 		<ome-xml.version>${bio-formats.version}</ome-xml.version>
 
-		<!-- Other managed components -->
+		<!-- Other SciJava components -->
+
+		<!-- MPI-CBG - https://github.com/axtimwalde/mpicbg -->
+		<mpicbg.version>1.1.1</mpicbg.version>
+
+		<!-- Third party components -->
 
 		<!-- Batik - https://xmlgraphics.apache.org/batik/ -->
 		<batik.version>1.8</batik.version>
@@ -257,6 +529,9 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<batik-util.version>${batik.version}</batik-util.version>
 		<batik-xml.version>${batik.version}</batik-xml.version>
 
+		<!-- Commons Codec - https://commons.apache.org/proper/commons-codec/ -->
+		<commons-codec.version>1.8</commons-codec.version>
+
 		<!-- Commons Math - https://commons.apache.org/proper/commons-math/ -->
 		<commons-math3.version>3.6.1</commons-math3.version>
 
@@ -265,6 +540,14 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 		<!-- Guava - https://github.com/google/guava -->
 		<guava.version>19.0</guava.version>
+
+		<!-- iText PDF - https://github.com/itext/itextpdf -->
+		<itextpdf.version>5.1.1</itextpdf.version>
+
+		<!-- Java Advanced Imaging - https://java.net/projects/jai-core -->
+		<jai.version>1.1.3</jai.version>
+		<jai-codec.version>${jai.version}</jai-codec.version>
+		<jai-core.version>${jai.version}</jai-core.version>
 
 		<!-- JAMA - http://math.nist.gov/javanumerics/jama/ -->
 		<jama.version>1.0.3</jama.version>
@@ -318,6 +601,12 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- JFreeChart - http://www.jfree.org/jfreechart/ -->
 		<jfreechart.version>1.0.19</jfreechart.version>
 
+		<!-- JGraphT - https://github.com/jgrapht/jgrapht -->
+		<jgrapht.version>0.8.3</jgrapht.version>
+
+		<!-- JGraphX - https://github.com/jgraph/jgraphx -->
+		<jgraphx.version>1.10.4.1</jgraphx.version>
+
 		<!-- JHDF5 - https://wiki-bsse.ethz.ch/label/JHDF5/hdf5 -->
 		<jhdf5.version>14.12.5</jhdf5.version>
 
@@ -330,8 +619,17 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<!-- JOGL - https://jogamp.org/jogl/ -->
 		<jogl.version>2.3.2</jogl.version>
 
+		<!-- JPedal - http://jpedal.org/ (defunct) -->
+		<jpedal.version>2.80b11</jpedal.version>
+
+		<!-- JSch - http://www.jcraft.com/jsch/ -->
+		<jsch.version>0.1.49</jsch.version>
+
 		<!-- JUnit - http://junit.org/ -->
 		<junit.version>4.12</junit.version>
+
+		<!-- JZlib - http://www.jcraft.com/jzlib/ -->
+		<jzlib.version>1.1.2</jzlib.version>
 
 		<!-- Logback - http://logback.qos.ch/ -->
 		<logback.version>1.1.7</logback.version>
@@ -340,6 +638,15 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 
 		<!-- MigLayout - http://www.miglayout.com/ -->
 		<miglayout.version>3.7.4</miglayout.version>
+
+		<!-- Mines JTK - https://github.com/dhale/jtk -->
+		<mines-jtk.version>20151125</mines-jtk.version>
+
+		<!-- OpenCSV - http://opencsv.sourceforge.net/ -->
+		<opencsv.version>2.4</opencsv.version>
+
+		<!-- PostgreSQL JDBC Driver - https://jdbc.postgresql.org/ -->
+		<postgresql.version>8.2-507.jdbc3</postgresql.version>
 
 		<!-- RSyntaxTextArea - http://bobbylight.github.io/RSyntaxTextArea/ -->
 		<rsyntaxtextarea.version>2.5.8</rsyntaxtextarea.version>
@@ -353,26 +660,8 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<slf4j-nop.version>${slf4j.version}</slf4j-nop.version>
 		<slf4j-simple.version>${slf4j.version}</slf4j-simple.version>
 
-		<!-- Additional configuration -->
-
-		<!-- NB: Avoid platform encoding warning when copying resources. -->
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
-		<!-- NB: Specify formatting of the maven.build.timestamp property. -->
-		<maven.build.timestamp.format>yyyy-MM-dd'T'HH:mm:ssZ</maven.build.timestamp.format>
-
-		<!-- NB: Override argLine property for extra maven-surefire-plugin args. -->
-		<argLine />
-
-		<!-- NB: Override argLineDebug property via debug-port profile. -->
-		<argLineDebug />
-
-		<!-- Require the Java 8 platform. -->
-		<scijava.jvm.version>1.8</scijava.jvm.version>
-		<scijava.jvm.test.version>${scijava.jvm.version}</scijava.jvm.test.version>
-
-		<scijava.mvn.version>3.0.4</scijava.mvn.version>
+		<!-- Weka - http://www.cs.waikato.ac.nz/ml/weka/ -->
+		<weka.version>3.7.11</weka.version>
 	</properties>
 
 	<dependencyManagement>
@@ -560,6 +849,905 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<version>${swing-checkbox-tree.version}</version>
 			</dependency>
 
+			<!-- ImageJ - https://github.com/imagej -->
+
+			<!-- ImageJ - https://github.com/imagej/imagej -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+
+			<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>ij</artifactId>
+				<version>${imagej1.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>com.sun</groupId>
+						<artifactId>tools</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+
+			<!-- ImageJ 1.x patcher - https://github.com/imagej/ij1-patcher -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>ij1-patcher</artifactId>
+				<version>${ij1-patcher.version}</version>
+			</dependency>
+
+			<!-- ImageJ Common - https://github.com/imagej/imagej-common -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-common</artifactId>
+				<version>${imagej-common.version}</version>
+			</dependency>
+
+			<!-- ImageJ Deprecated - https://github.com/imagej/imagej-deprecated -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-deprecated</artifactId>
+				<version>${imagej-deprecated.version}</version>
+			</dependency>
+
+			<!-- ImageJ Launcher - https://github.com/imagej/imagej-launcher -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-launcher</artifactId>
+				<version>${imagej-launcher.version}</version>
+				<type>nar</type>
+			</dependency>
+
+			<!-- ImageJ Legacy - https://github.com/imagej/imagej-legacy -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-legacy</artifactId>
+				<version>${imagej-legacy.version}</version>
+			</dependency>
+
+			<!-- ImageJ OMERO - https://github.com/imagej/imagej-omero -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-omero</artifactId>
+				<version>${imagej-omero.version}</version>
+			</dependency>
+
+			<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-ops</artifactId>
+				<version>${imagej-ops.version}</version>
+			</dependency>
+
+			<!-- ImageJ Plugins: Commands - https://github.com/imagej/imagej-plugins-commands -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-plugins-commands</artifactId>
+				<version>${imagej-plugins-commands.version}</version>
+			</dependency>
+
+			<!-- ImageJ Plugins: Tools - https://github.com/imagej/imagej-plugins-tools -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-plugins-tools</artifactId>
+				<version>${imagej-plugins-tools.version}</version>
+			</dependency>
+
+			<!-- ImageJ Plugins: Uploader: SSH - https://github.com/imagej/imagej-plugins-uploader-ssh -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-plugins-uploader-ssh</artifactId>
+				<version>${imagej-plugins-uploader-ssh.version}</version>
+			</dependency>
+
+			<!-- ImageJ Plugins: Uploader: WebDAV - https://github.com/imagej/imagej-plugins-uploader-webdav -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-plugins-uploader-webdav</artifactId>
+				<version>${imagej-plugins-uploader-webdav.version}</version>
+			</dependency>
+
+			<!-- ImageJ Scripting - https://github.com/imagej/imagej-scripting -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-scripting</artifactId>
+				<version>${imagej-scripting.version}</version>
+			</dependency>
+
+			<!-- ImageJ UI: AWT - https://github.com/imagej/imagej-ui-awt -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-ui-awt</artifactId>
+				<version>${imagej-ui-awt.version}</version>
+			</dependency>
+
+			<!-- ImageJ UI: Swing - https://github.com/imagej/imagej-ui-swing -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-ui-swing</artifactId>
+				<version>${imagej-ui-swing.version}</version>
+			</dependency>
+
+			<!-- ImageJ Updater - https://github.com/imagej/imagej-updater -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-updater</artifactId>
+				<version>${imagej-updater.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-updater</artifactId>
+				<version>${imagej-updater.version}</version>
+				<classifier>tests</classifier>
+			</dependency>
+
+			<!-- ImageJ Usage - https://github.com/imagej/imagej-usage -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-usage</artifactId>
+				<version>${imagej-usage.version}</version>
+			</dependency>
+
+			<!-- Op-Finder - https://github.com/imagej/op-finder -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>op-finder</artifactId>
+				<version>${op-finder.version}</version>
+			</dependency>
+
+			<!-- ImgLib2 - https://github.com/imglib -->
+
+			<!-- ImgLib2 - https://github.com/imglib/imglib2 -->
+			<dependency>
+				<groupId>net.imglib2</groupId>
+				<artifactId>imglib2</artifactId>
+				<version>${imglib2.version}</version>
+			</dependency>
+
+			<!-- ImgLib2 Algorithms - https://github.com/imglib/imglib2-algorithm -->
+			<dependency>
+				<groupId>net.imglib2</groupId>
+				<artifactId>imglib2-algorithm</artifactId>
+				<version>${imglib2-algorithm.version}</version>
+			</dependency>
+
+			<!-- ImgLib2 Algorithms FFT - https://github.com/imglib/imglib2-algorithm-fft -->
+			<dependency>
+				<groupId>net.imglib2</groupId>
+				<artifactId>imglib2-algorithm-fft</artifactId>
+				<version>${imglib2-algorithm-fft.version}</version>
+			</dependency>
+
+			<!-- ImgLib2 Algorithms GPL - https://github.com/imglib/imglib2-algorithm-gpl -->
+			<dependency>
+				<groupId>net.imglib2</groupId>
+				<artifactId>imglib2-algorithm-gpl</artifactId>
+				<version>${imglib2-algorithm-gpl.version}</version>
+			</dependency>
+
+			<!-- ImgLib2 IJ - https://github.com/imglib/imglib2-ij -->
+			<dependency>
+				<groupId>net.imglib2</groupId>
+				<artifactId>imglib2-ij</artifactId>
+				<version>${imglib2-ij.version}</version>
+			</dependency>
+
+			<!-- ImgLib2 RealTransform - https://github.com/imglib/imglib2-realtransform -->
+			<dependency>
+				<groupId>net.imglib2</groupId>
+				<artifactId>imglib2-realtransform</artifactId>
+				<version>${imglib2-realtransform.version}</version>
+			</dependency>
+
+			<!-- ImgLib2 ROI - https://github.com/imglib/imglib2-roi -->
+			<dependency>
+				<groupId>net.imglib2</groupId>
+				<artifactId>imglib2-roi</artifactId>
+				<version>${imglib2-roi.version}</version>
+			</dependency>
+
+			<!-- ImgLib2 Scripting - https://github.com/imglib/imglib2-script -->
+			<dependency>
+				<groupId>net.imglib2</groupId>
+				<artifactId>imglib2-script</artifactId>
+				<version>${imglib2-script.version}</version>
+			</dependency>
+
+			<!-- ImgLib2 UI - https://github.com/imglib/imglib2-ui -->
+			<dependency>
+				<groupId>net.imglib2</groupId>
+				<artifactId>imglib2-ui</artifactId>
+				<version>${imglib2-ui.version}</version>
+			</dependency>
+
+			<!-- SCIFIO - https://github.com/scifio -->
+
+			<!-- SCIFIO - https://github.com/scifio/scifio -->
+			<dependency>
+				<groupId>io.scif</groupId>
+				<artifactId>scifio</artifactId>
+				<version>${scifio.version}</version>
+			</dependency>
+
+			<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
+			<dependency>
+				<groupId>io.scif</groupId>
+				<artifactId>scifio-bf-compat</artifactId>
+				<version>${scifio-bf-compat.version}</version>
+			</dependency>
+
+			<!-- SCIFIO Command Line Tools - https://github.com/scifio/scifio-cli -->
+			<dependency>
+				<groupId>io.scif</groupId>
+				<artifactId>scifio-cli</artifactId>
+				<version>${scifio-cli.version}</version>
+			</dependency>
+
+			<!-- SCIFIO HDF5 - https://github.com/scifio/scifio-hdf5 -->
+			<dependency>
+				<groupId>io.scif</groupId>
+				<artifactId>scifio-hdf5</artifactId>
+				<version>${scifio-hdf5.version}</version>
+			</dependency>
+
+			<!-- SCIFIO JAI Image I/O - https://github.com/scifio/scifio-jai-imageio -->
+			<dependency>
+				<groupId>io.scif</groupId>
+				<artifactId>scifio-jai-imageio</artifactId>
+				<version>${scifio-jai-imageio.version}</version>
+			</dependency>
+
+			<!-- SCIFIO-LifeSci - https://github.com/scifio/scifio-lifesci -->
+			<dependency>
+				<groupId>io.scif</groupId>
+				<artifactId>scifio-lifesci</artifactId>
+				<version>${scifio-lifesci.version}</version>
+			</dependency>
+
+			<!-- SCIFIO-OME-XML - https://github.com/scifio/scifio-ome-xml -->
+			<dependency>
+				<groupId>io.scif</groupId>
+				<artifactId>scifio-ome-xml</artifactId>
+				<version>${scifio-ome-xml.version}</version>
+			</dependency>
+
+			<!-- Fiji - https://github.com/fiji -->
+
+			<!-- Fiji - https://github.com/fiji/fiji -->
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>fiji</artifactId>
+				<version>${fiji.version}</version>
+			</dependency>
+
+			<!-- Standard Fiji projects -->
+
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>AnalyzeSkeleton_</artifactId>
+				<version>${AnalyzeSkeleton.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Anisotropic_Diffusion_2D</artifactId>
+				<version>${Anisotropic_Diffusion_2D.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Archipelago_Plugins</artifactId>
+				<version>${Archipelago_Plugins.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Arrow_</artifactId>
+				<version>${Arrow.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Auto_Threshold</artifactId>
+				<version>${Auto_Threshold.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>BalloonSegmentation_</artifactId>
+				<version>${BalloonSegmentation.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Bug_Submitter</artifactId>
+				<version>${Bug_Submitter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>CPU_Meter</artifactId>
+				<version>${CPU_Meter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Calculator_Plus</artifactId>
+				<version>${Calculator_Plus.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Cell_Counter</artifactId>
+				<version>${Cell_Counter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Colocalisation_Analysis</artifactId>
+				<version>${Colocalisation_Analysis.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Color_Histogram</artifactId>
+				<version>${Color_Histogram.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Color_Inspector_3D</artifactId>
+				<version>${Color_Inspector_3D.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Colour_Deconvolution</artifactId>
+				<version>${Colour_Deconvolution.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>CorrectBleach_</artifactId>
+				<version>${CorrectBleach.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Descriptor_based_registration</artifactId>
+				<version>${Descriptor_based_registration.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Dichromacy_</artifactId>
+				<version>${Dichromacy.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Differentials_</artifactId>
+				<version>${Differentials.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Directionality_</artifactId>
+				<version>${Directionality.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Extended_Depth_Field</artifactId>
+				<version>${Extended_Depth_Field.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>FS_Align_TrakEM2</artifactId>
+				<version>${FS_Align_TrakEM2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Feature_Detection</artifactId>
+				<version>${Feature_Detection.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>3D_Blob_Segmentation</artifactId>
+				<version>${Fiji_3D_Blob_Segmentation.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Fiji_Archipelago</artifactId>
+				<version>${Fiji_Archipelago.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Fiji_Developer</artifactId>
+				<version>${Fiji_Developer.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Fiji_Package_Maker</artifactId>
+				<version>${Fiji_Package_Maker.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Fiji_Plugins</artifactId>
+				<version>${Fiji_Plugins.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Fiji_Updater</artifactId>
+				<version>${Fiji_Updater.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>FlowJ_</artifactId>
+				<version>${FlowJ.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Graph_Cut</artifactId>
+				<version>${Graph_Cut.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Gray_Morphology</artifactId>
+				<version>${Gray_Morphology.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.janelia</groupId>
+				<artifactId>H5J_Loader_Plugin</artifactId>
+				<version>${H5J_Loader_Plugin.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Helmholtz_Analysis</artifactId>
+				<version>${Helmholtz_Analysis.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>IJ_Robot</artifactId>
+				<version>${IJ_Robot.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>IO_</artifactId>
+				<version>${IO.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Image_5D</artifactId>
+				<version>${Image_5D.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>3D_Objects_Counter</artifactId>
+				<version>${ImageJ_3D_Objects_Counter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>3D_Viewer</artifactId>
+				<version>${ImageJ_3D_Viewer.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Image_Expression_Parser</artifactId>
+				<version>${Image_Expression_Parser.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Interactive_3D_Surface_Plot</artifactId>
+				<version>${Interactive_3D_Surface_Plot.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>IsoData_Classifier</artifactId>
+				<version>${IsoData_Classifier.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Kuwahara_Filter</artifactId>
+				<version>${Kuwahara_Filter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>KymographBuilder</artifactId>
+				<version>${KymographBuilder.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>LSM_Reader</artifactId>
+				<version>${LSM_Reader.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>LSM_Toolbox</artifactId>
+				<version>${LSM_Toolbox.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Lasso_and_Blow_Tool</artifactId>
+				<version>${Lasso_and_Blow_Tool.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Linear_Kuwahara</artifactId>
+				<version>${Linear_Kuwahara.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>LocalThickness_</artifactId>
+				<version>${LocalThickness.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>MTrack2_</artifactId>
+				<version>${MTrack2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>M_I_P</artifactId>
+				<version>${M_I_P.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Manual_Tracking</artifactId>
+				<version>${Manual_Tracking.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>MosaicJ_</artifactId>
+				<version>${MosaicJ.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Multi_Kymograph</artifactId>
+				<version>${Multi_Kymograph.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>PIV_analyser</artifactId>
+				<version>${PIV_analyser.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>PointPicker_</artifactId>
+				<version>${PointPicker.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>QuickPALM_</artifactId>
+				<version>${QuickPALM.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>RATS_</artifactId>
+				<version>${RATS.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Reconstruct_Reader</artifactId>
+				<version>${Reconstruct_Reader.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>SPIM_Opener</artifactId>
+				<version>${SPIM_Opener.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>SPIM_Registration</artifactId>
+				<version>${SPIM_Registration.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Samples_</artifactId>
+				<version>${Samples.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Series_Labeler</artifactId>
+				<version>${Series_Labeler.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>SheppLogan_</artifactId>
+				<version>${SheppLogan.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Simple_Neurite_Tracer</artifactId>
+				<version>${Simple_Neurite_Tracer.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Siox_Segmentation</artifactId>
+				<version>${Siox_Segmentation.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Skeletonize3D_</artifactId>
+				<version>${Skeletonize3D.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Snakuscule_</artifactId>
+				<version>${Snakuscule.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>SplineDeformationGenerator_</artifactId>
+				<version>${SplineDeformationGenerator.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>StackReg_</artifactId>
+				<version>${StackReg.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Stack_Manipulation</artifactId>
+				<version>${Stack_Manipulation.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Statistical_Region_Merging</artifactId>
+				<version>${Statistical_Region_Merging.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Stitching_</artifactId>
+				<version>${Stitching.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Sync_Win</artifactId>
+				<version>${Sync_Win.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Thread_Killer</artifactId>
+				<version>${Thread_Killer.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Time_Lapse</artifactId>
+				<version>${Time_Lapse.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Time_Stamper</artifactId>
+				<version>${Time_Stamper.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>ToAST_</artifactId>
+				<version>${ToAST.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>TopoJ_</artifactId>
+				<version>${TopoJ.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>TrackMate_</artifactId>
+				<version>${TrackMate.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Trainable_Segmentation</artifactId>
+				<version>${Trainable_Segmentation.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>TrakEM2_Archipelago</artifactId>
+				<version>${TrakEM2_Archipelago.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>TurboReg_</artifactId>
+				<version>${TurboReg.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>UnwarpJ_</artifactId>
+				<version>${UnwarpJ.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>VIB-lib</artifactId>
+				<version>${VIB-lib.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>VIB_</artifactId>
+				<version>${VIB.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Vaa3d_Reader</artifactId>
+				<version>${Vaa3d_Reader.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Vaa3d_Writer</artifactId>
+				<version>${Vaa3d_Writer.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Video_Editing</artifactId>
+				<version>${Video_Editing.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>View5D_</artifactId>
+				<version>${View5D.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Volume_Calculator</artifactId>
+				<version>${Volume_Calculator.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Volume_Viewer</artifactId>
+				<version>${Volume_Viewer.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>bUnwarpJ_</artifactId>
+				<version>${bUnwarpJ.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>bij</artifactId>
+				<version>${bij.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>blockmatching_</artifactId>
+				<version>${blockmatching.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>fiji-compat</artifactId>
+				<version>${fiji-compat.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>fiji-lib</artifactId>
+				<version>${fiji-lib.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>imageware</artifactId>
+				<version>${imageware.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>javac</artifactId>
+				<version>${javac.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>jep</artifactId>
+				<version>${jep.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>legacy-imglib1</artifactId>
+				<version>${legacy-imglib1.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>level_sets</artifactId>
+				<version>${level_sets.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>mij</artifactId>
+				<version>${mij.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>pal-optimization</artifactId>
+				<version>${pal-optimization.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>panorama_</artifactId>
+				<version>${panorama.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>register_virtual_stack_slices</artifactId>
+				<version>${register_virtual_stack_slices.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>registration_3d</artifactId>
+				<version>${registration_3d.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>wavelets</artifactId>
+				<version>${wavelets.version}</version>
+			</dependency>
+
+			<!-- External Fiji projects -->
+
+			<!-- Sholl Analysis - https://github.com/tferr/ASA -->
+			<dependency>
+				<groupId>ca.mcgill</groupId>
+				<artifactId>Sholl_Analysis</artifactId>
+				<version>${Sholl_Analysis.version}</version>
+			</dependency>
+
+			<!-- JITK TPS - https://github.com/saalfeldlab/jitk-tps -->
+			<dependency>
+				<groupId>jitk</groupId>
+				<artifactId>jitk-tps</artifactId>
+				<version>${jitk-tps.version}</version>
+			</dependency>
+
+			<!-- BigWarp - https://github.com/saalfeldlab/bigwarp -->
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>bigwarp_fiji</artifactId>
+				<version>${bigwarp.version}</version>
+			</dependency>
+
+			<!-- TrakEM2 TPS - https://github.com/saalfeldlab/trakem2-tps -->
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>trakem2_tps</artifactId>
+				<version>${trakem2_tps.version}</version>
+			</dependency>
+
+			<!-- Z-Spacing correction - https://github.com/saalfeldlab/z-spacing -->
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>z_spacing</artifactId>
+				<version>${z_spacing.version}</version>
+			</dependency>
+
+			<!-- BigDataViewer - https://github.com/bigdataviewer -->
+
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>bigdataviewer-core</artifactId>
+				<version>${bigdataviewer-core.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>bigdataviewer-server</artifactId>
+				<version>${bigdataviewer-server.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>bigdataviewer_fiji</artifactId>
+				<version>${bigdataviewer_fiji.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>spim_data</artifactId>
+				<version>${spim_data.version}</version>
+			</dependency>
+
+			<!-- TrakEM2 - https://github.com/trakem2 -->
+
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>T2-NIT</artifactId>
+				<version>${T2-NIT.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>T2-TreelineGraph</artifactId>
+				<version>${T2-TreelineGraph.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>TrakEM2_</artifactId>
+				<version>${TrakEM2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>VectorString</artifactId>
+				<version>${VectorString.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>mpicbg-trakem2</artifactId>
+				<version>${mpicbg-trakem2.version}</version>
+			</dependency>
+
 			<!-- Open Microscopy Environment - https://github.com/openmicroscopy -->
 
 			<!-- Bio-Formats - https://github.com/openmicroscopy/bioformats -->
@@ -628,7 +1816,21 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<version>${ome-xml.version}</version>
 			</dependency>
 
-			<!-- Other managed components -->
+			<!-- Other SciJava components -->
+
+			<!-- MPI-CBG - https://github.com/axtimwalde/mpicbg -->
+			<dependency>
+				<groupId>mpicbg</groupId>
+				<artifactId>mpicbg</artifactId>
+				<version>${mpicbg.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>mpicbg</groupId>
+				<artifactId>mpicbg_</artifactId>
+				<version>${mpicbg.version}</version>
+			</dependency>
+
+			<!-- Third party components -->
 
 			<!-- Batik - https://xmlgraphics.apache.org/batik/ -->
 			<dependency>
@@ -872,6 +2074,13 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<version>${batik-xml.version}</version>
 			</dependency>
 
+			<!-- Commons Codec - https://commons.apache.org/proper/commons-codec/ -->
+			<dependency>
+				<groupId>commons-codec</groupId>
+				<artifactId>commons-codec</artifactId>
+				<version>${commons-codec.version}</version>
+			</dependency>
+
 			<!-- Commons Math - https://commons.apache.org/proper/commons-math/ -->
 			<dependency>
 				<groupId>org.apache.commons</groupId>
@@ -891,6 +2100,25 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<groupId>com.google.guava</groupId>
 				<artifactId>guava</artifactId>
 				<version>${guava.version}</version>
+			</dependency>
+
+			<!-- iText PDF - https://github.com/itext/itextpdf -->
+			<dependency>
+				<groupId>com.itextpdf</groupId>
+				<artifactId>itextpdf</artifactId>
+				<version>${itextpdf.version}</version>
+			</dependency>
+
+			<!-- Java Advanced Imaging - https://java.net/projects/jai-core -->
+			<dependency>
+				<groupId>com.sun.media</groupId>
+				<artifactId>jai-codec</artifactId>
+				<version>${jai-codec.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.media</groupId>
+				<artifactId>jai-core</artifactId>
+				<version>${jai-core.version}</version>
 			</dependency>
 
 			<!-- JAMA - http://math.nist.gov/javanumerics/jama/ -->
@@ -1108,6 +2336,20 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				</exclusions>
 			</dependency>
 
+			<!-- JGraphT - https://github.com/jgrapht/jgrapht -->
+			<dependency>
+				<groupId>net.sf.jgrapht</groupId>
+				<artifactId>jgrapht</artifactId>
+				<version>${jgrapht.version}</version>
+			</dependency>
+
+			<!-- JGraphX - https://github.com/jgraph/jgraphx -->
+			<dependency>
+				<groupId>org.tinyjee.jgraphx</groupId>
+				<artifactId>jgraphx</artifactId>
+				<version>${jgraphx.version}</version>
+			</dependency>
+
 			<!-- JHDF5 - https://wiki-bsse.ethz.ch/label/JHDF5/hdf5 -->
 			<dependency>
 				<groupId>cisd</groupId>
@@ -1151,6 +2393,27 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<version>${jogl.version}</version>
 			</dependency>
 
+			<!-- JPedal - http://jpedal.org/ (defunct) -->
+			<dependency>
+				<groupId>org.jpedal</groupId>
+				<artifactId>jpedalSTD</artifactId>
+				<version>${jpedal.version}</version>
+			</dependency>
+
+			<!-- JSch - http://www.jcraft.com/jsch/ -->
+			<dependency>
+				<groupId>com.jcraft</groupId>
+				<artifactId>jsch</artifactId>
+				<version>${jsch.version}</version>
+			</dependency>
+
+			<!-- JZlib - http://www.jcraft.com/jzlib/ -->
+			<dependency>
+				<groupId>com.jcraft</groupId>
+				<artifactId>jzlib</artifactId>
+				<version>${jzlib.version}</version>
+			</dependency>
+
 			<!-- Logback - http://logback.qos.ch/ -->
 			<dependency>
 				<groupId>ch.qos.logback</groupId>
@@ -1169,6 +2432,27 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<artifactId>miglayout</artifactId>
 				<version>${miglayout.version}</version>
 				<classifier>swing</classifier>
+			</dependency>
+
+			<!-- Mines JTK - https://github.com/dhale/jtk -->
+			<dependency>
+				<groupId>edu.mines</groupId>
+				<artifactId>mines-jtk</artifactId>
+				<version>${mines-jtk.version}</version>
+			</dependency>
+
+			<!-- OpenCSV - http://opencsv.sourceforge.net/ -->
+			<dependency>
+				<groupId>au.com.bytecode</groupId>
+				<artifactId>opencsv</artifactId>
+				<version>${opencsv.version}</version>
+			</dependency>
+
+			<!-- PostgreSQL JDBC Driver - https://jdbc.postgresql.org/ -->
+			<dependency>
+				<groupId>postgresql</groupId>
+				<artifactId>postgresql</artifactId>
+				<version>${postgresql.version}</version>
 			</dependency>
 
 			<!-- RSyntaxTextArea - http://bobbylight.github.io/RSyntaxTextArea/ -->
@@ -1220,6 +2504,18 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				<version>${slf4j-simple.version}</version>
 			</dependency>
 
+			<!-- Weka - http://www.cs.waikato.ac.nz/ml/weka/ -->
+			<dependency>
+				<groupId>nz.ac.waikato.cms.weka</groupId>
+				<artifactId>weka</artifactId>
+				<version>${weka.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>nz.ac.waikato.cms.weka</groupId>
+				<artifactId>weka-dev</artifactId>
+				<version>${weka.version}</version>
+			</dependency>
+
 			<!-- Test scope dependencies -->
 
 			<!-- JUnit - http://junit.org/ -->
@@ -1240,708 +2536,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		</dependencies>
 	</dependencyManagement>
 
-	<build>
-		<!-- It is nice for "mvn" with no arguments to do something reasonable. -->
-		<defaultGoal>install</defaultGoal>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<artifactId>maven-assembly-plugin</artifactId>
-					<version>2.6</version>
-				</plugin>
-
-				<plugin>
-					<artifactId>maven-clean-plugin</artifactId>
-					<version>3.0.0</version>
-				</plugin>
-
-				<plugin>
-					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.5.1</version>
-					<configuration>
-						<source>${scijava.jvm.version}</source>
-						<target>${scijava.jvm.version}</target>
-						<testSource>${scijava.jvm.test.version}</testSource>
-						<testTarget>${scijava.jvm.test.version}</testTarget>
-						<!-- Workaround for a bug in maven-compiler-plugin.
-						See https://issues.apache.org/jira/browse/MCOMPILER-209 -->
-						<useIncrementalCompilation>false</useIncrementalCompilation>
-					</configuration>
-				</plugin>
-
-				<plugin>
-					<artifactId>maven-dependency-plugin</artifactId>
-					<version>2.10</version>
-				</plugin>
-
-				<plugin>
-					<artifactId>maven-deploy-plugin</artifactId>
-					<version>2.8.2</version>
-				</plugin>
-
-				<plugin>
-					<artifactId>maven-enforcer-plugin</artifactId>
-					<version>1.4.1</version>
-					<dependencies>
-						<dependency>
-							<groupId>org.codehaus.mojo</groupId>
-							<artifactId>extra-enforcer-rules</artifactId>
-							<version>1.0-beta-4</version>
-						</dependency>
-						<dependency>
-							<groupId>org.scijava</groupId>
-							<artifactId>scijava-maven-plugin</artifactId>
-							<version>${scijava-maven-plugin.version}</version>
-						</dependency>
-					</dependencies>
-				</plugin>
-
-				<plugin>
-					<artifactId>maven-install-plugin</artifactId>
-					<version>2.5.2</version>
-				</plugin>
-
-				<plugin>
-					<artifactId>maven-jar-plugin</artifactId>
-					<!--
-					NB: This is not the latest version of maven-jar-plugin.
-					However, the latest version triggers an M2E bug which
-					results in an unavoidable POM warning in Eclipse. See:
-
-					https://github.com/tesla/m2eclipse-mavenarchiver/issues/8
-
-					To avoid this problem, we use an earlier working version.
-					-->
-					<version>2.6</version>
-					<!-- Always add classpath to JAR manifests. -->
-					<configuration>
-						<archive>
-							<manifest>
-								<addClasspath>true</addClasspath>
-								<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-								<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
-								<mainClass>${main-class}</mainClass>
-								<packageName>${package-name}</packageName>
-							</manifest>
-							<manifestEntries>
-								<!-- Add SCM revision from buildnumber plugin, if available. -->
-								<Implementation-Build>${buildNumber}</Implementation-Build>
-								<!-- Add a formatted timestamp for the build. -->
-								<Implementation-Date>${maven.build.timestamp}</Implementation-Date>
-							</manifestEntries>
-						</archive>
-						<skipIfEmpty>true</skipIfEmpty>
-					</configuration>
-					<executions>
-						<execution>
-							<goals>
-								<goal>test-jar</goal>
-							</goals>
-						</execution>
-					</executions>
-				</plugin>
-
-				<plugin>
-					<artifactId>maven-javadoc-plugin</artifactId>
-					<!--
-					NB: The same version declaration and configuration block also appears
-					in the <reporting> section, and must be kept in sync.
-					-->
-					<version>2.10.4</version>
-					<configuration>
-						<maxmemory>1024m</maxmemory>
-						<!--
-						Workaround for javadoc bug when classes in the default
-						package access classes from non-default packages. See:
-						http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=5101868
-						-->
-						<use>false</use>
-						<links>
-							<link>http://javadoc.imagej.net/Java/</link>
-							<link>http://javadoc.imagej.net/ImageJ/</link>
-							<link>http://javadoc.imagej.net/ImgLib2/</link>
-							<link>http://javadoc.imagej.net/SCIFIO/</link>
-							<link>http://javadoc.imagej.net/SciJava/</link>
-							<link>http://javadoc.imagej.net/Fiji/</link>
-							<link>http://javadoc.imagej.net/ImageJ1/</link>
-							<link>http://javadoc.imagej.net/Bio-Formats/</link>
-							<link>http://javadoc.imagej.net/MPI-CBG/</link>
-							<link>http://javadoc.imagej.net/Icy/</link>
-							<link>http://javadoc.imagej.net/KNIME/</link>
-							<link>http://javadoc.imagej.net/OMERO/</link>
-							<link>http://javadoc.imagej.net/MiToBo/</link>
-							<link>http://javadoc.imagej.net/Java3D/</link>
-							<link>http://javadoc.imagej.net/Pivot/</link>
-							<link>http://javadoc.imagej.net/Eclipse/</link>
-							<link>http://javadoc.imagej.net/Javassist/</link>
-							<link>http://javadoc.imagej.net/JHotDraw/</link>
-						</links>
-					</configuration>
-				</plugin>
-
-				<plugin>
-					<artifactId>maven-plugin-plugin</artifactId>
-					<version>3.4</version>
-				</plugin>
-
-				<plugin>
-					<artifactId>maven-release-plugin</artifactId>
-					<version>2.5.3</version>
-				</plugin>
-
-				<plugin>
-					<artifactId>maven-resources-plugin</artifactId>
-					<version>3.0.1</version>
-				</plugin>
-
-				<plugin>
-					<artifactId>maven-site-plugin</artifactId>
-					<version>3.5.1</version>
-				</plugin>
-
-				<plugin>
-					<artifactId>maven-source-plugin</artifactId>
-					<version>3.0.1</version>
-					<!-- Build source artifact in addition to main artifact. -->
-					<executions>
-						<execution>
-							<goals>
-								<goal>jar-no-fork</goal>
-							</goals>
-						</execution>
-					</executions>
-				</plugin>
-
-				<plugin>
-					<artifactId>maven-surefire-plugin</artifactId>
-					<version>2.19.1</version>
-					<!--
-					Make sure that:
-					A) unit tests run with sufficient RAM allocated;
-					B) unit tests do not pop a Java dock icon on OS X;
-					C) additional args can be given via argLine property;
-
-					Sometimes, one needs to pass JVM options to the JVM
-					running the unit tests, such as -verbose:class or
-					-Djava.awt.headless=true.
-
-					Unfortunately, maven-surefire does not expose a
-					command-line interface to do so, therefore let's
-					simulate it by re-using the property 'argLine' to
-					specify those options.
-					-->
-					<configuration>
-						<argLine>-Xms512m -Xmx512m -Dapple.awt.UIElement="true" ${argLine} ${argLineDebug}</argLine>
-					</configuration>
-				</plugin>
-
-				<!--
-				Build Helper Maven plugin -
-				http://www.mojohaus.org/build-helper-maven-plugin/
-				-->
-				<plugin>
-					<groupId>org.codehaus.mojo</groupId>
-					<artifactId>build-helper-maven-plugin</artifactId>
-					<version>1.12</version>
-					<executions>
-						<!--
-						Create a version string which conforms to Java packaging requirements.
-						https://docs.oracle.com/javase/8/docs/technotes/guides/versioning/spec/versioning2.html#wp89936
-
-						In particular, the standard Java packaging tool will fail unless the
-						version string conforms to Java packaging rules. Further reading:
-						https://docs.oracle.com/javase/8/docs/technotes/guides/deploy/packaging.html#
-						-->
-						<execution>
-							<id>sanitize-version</id>
-							<goals>
-								<goal>regex-property</goal>
-							</goals>
-							<configuration>
-								<name>sanitizedVersion</name>
-								<value>${project.version}</value>
-								<regex>^([0-9]+)\.([0-9]+)\.([0-9]+).*$</regex>
-								<replacement>$1.$2.$3</replacement>
-								<failIfNoMatch>false</failIfNoMatch>
-							</configuration>
-						</execution>
-					</executions>
-				</plugin>
-
-				<!--
-				Build Number Maven plugin -
-				http://www.mojohaus.org/buildnumber-maven-plugin/
-				This plugin embeds a build number in the JAR manifest.
-				-->
-				<plugin>
-					<groupId>org.codehaus.mojo</groupId>
-					<artifactId>buildnumber-maven-plugin</artifactId>
-					<version>1.4</version>
-					<!-- Record SCM revision in manifest. -->
-					<executions>
-						<execution>
-							<phase>validate</phase>
-							<goals>
-								<goal>create</goal>
-							</goals>
-						</execution>
-					</executions>
-					<configuration>
-						<getRevisionOnlyOnce>true</getRevisionOnlyOnce>
-						<revisionOnScmFailure>UNKNOWN</revisionOnScmFailure>
-					</configuration>
-				</plugin>
-
-				<!-- Exec Maven plugin -
-				http://www.mojohaus.org/exec-maven-plugin/
-				This plugin launches a Java class using Maven. -->
-				<plugin>
-					<groupId>org.codehaus.mojo</groupId>
-					<artifactId>exec-maven-plugin</artifactId>
-					<version>1.5.0</version>
-				</plugin>
-
-				<!--
-				License Maven plugin -
-				http://www.mojohaus.org/license-maven-plugin/
-				This plugin manages project licenses and source file headers.
-				-->
-				<plugin>
-					<groupId>org.codehaus.mojo</groupId>
-					<artifactId>license-maven-plugin</artifactId>
-					<version>1.9</version>
-					<configuration>
-						<addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
-						<canUpdateDescription>true</canUpdateDescription>
-						<canUpdateCopyright>true</canUpdateCopyright>
-						<extraExtensions>
-							<bsh>java</bsh>
-							<config>properties</config>
-							<ijm>java</ijm>
-						</extraExtensions>
-					</configuration>
-				</plugin>
-
-				<!--
-				Versions Maven plugin -
-				http://www.mojohaus.org/versions-maven-plugin/
-				Check for new plugin versions using
-				"mvn versions:display-plugin-updates"
-				-->
-				<plugin>
-					<groupId>org.codehaus.mojo</groupId>
-					<artifactId>versions-maven-plugin</artifactId>
-					<version>2.3</version>
-				</plugin>
-
-				<!--
-				Maven Graph Plugin -
-				http://mvnplugins.fusesource.org/maven/1.10/maven-graph-plugin/
-				Generate a dependency graph using "mvn graph:reactor"
-				-->
-				<plugin>
-					<groupId>org.fusesource.mvnplugins</groupId>
-					<artifactId>maven-graph-plugin</artifactId>
-					<version>1.39</version>
-					<configuration>
-						<hideScopes>provided,runtime,system,test</hideScopes>
-						<hideTransitive>true</hideTransitive>
-						<label>Dependency Graph for ${project.name}</label>
-						<target>${project.build.directory}/dependency-graph.dot</target>
-					</configuration>
-				</plugin>
-
-				<!--
-				JavaFX Maven plugin -
-				https://github.com/javafx-maven-plugin/javafx-maven-plugin
-				Generate platform-specific application bundles using "mvn jfx:native"
-				-->
-				<plugin>
-					<groupId>com.zenjava</groupId>
-					<artifactId>javafx-maven-plugin</artifactId>
-					<version>8.5.0</version>
-					<configuration>
-						<appName>${project.name}</appName>
-						<identifier>${project.name}</identifier>
-						<jfxMainAppJarName>${project.name}.jar</jfxMainAppJarName>
-						<mainClass>${main-class}</mainClass>
-						<nativeReleaseVersion>${sanitizedVersion}</nativeReleaseVersion>
-						<verbose>true</verbose>
-					</configuration>
-				</plugin>
-
-				<!-- NAR Maven plugin - https://github.com/maven-nar/nar-maven-plugin -->
-				<plugin>
-					<groupId>com.github.maven-nar</groupId>
-					<artifactId>nar-maven-plugin</artifactId>
-					<version>${nar-maven-plugin.version}</version>
-				</plugin>
-
-				<!-- SciJava Maven plugin - https://github.com/scijava/scijava-maven-plugin -->
-				<plugin>
-					<groupId>org.scijava</groupId>
-					<artifactId>scijava-maven-plugin</artifactId>
-					<version>${scijava-maven-plugin.version}</version>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-		<plugins>
-			<!-- Create -sources.jar when building. -->
-			<plugin>
-				<artifactId>maven-source-plugin</artifactId>
-			</plugin>
-
-			<plugin>
-				<artifactId>maven-surefire-plugin</artifactId>
-			</plugin>
-
-			<!-- Check desired rules during maven lifecycle. -->
-			<plugin>
-				<artifactId>maven-enforcer-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>enforce-rules</id>
-						<phase>validate</phase>
-						<goals>
-							<goal>enforce</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<rules>
-						<banClasses implementation="org.scijava.maven.plugin.enforcer.BanDuplicateClasses">
-							<message>No Duplicate Classes Allowed! For duplicate transitive dependencies, add dependency exclusions. For duplications between direct dependencies, resolve or add ignored classes to this rule's configuration.</message>
-							<findAllDuplicates>true</findAllDuplicates>
-						</banClasses>
-						<requireMavenVersion>
-							<version>${scijava.mvn.version}</version>
-						</requireMavenVersion>
-						<requirePluginVersions>
-							<message>Plugins need to be versioned!</message>
-						</requirePluginVersions>
-						<requirePrerequisites />
-						<requireReproducibleBuilds implementation="org.scijava.maven.plugin.RequireReproducibleBuilds">
-							<groupIds>org.scijava</groupIds>
-						</requireReproducibleBuilds>
-						<enforceBytecodeVersion>
-							<maxJdkVersion>${scijava.jvm.version}</maxJdkVersion>
-							<excludes>
-								<exclude>com.headius:invokebinder</exclude>
-								<exclude>com.sun:tools</exclude>
-							</excludes>
-							<ignoredScopes>
-								<ignoredScope>test</ignoredScope>
-							</ignoredScopes>
-						</enforceBytecodeVersion>
-						<banCircularDependencies />
-					</rules>
-				</configuration>
-			</plugin>
-
-			<!-- Generate a package-friendly version property. -->
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>build-helper-maven-plugin</artifactId>
-			</plugin>
-
-			<!-- Add Implementation-Build entry to JAR manifest. -->
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>buildnumber-maven-plugin</artifactId>
-			</plugin>
-
-			<!-- Enable 'graph:' goals. -->
-			<plugin>
-				<groupId>org.fusesource.mvnplugins</groupId>
-				<artifactId>maven-graph-plugin</artifactId>
-			</plugin>
-
-			<!-- Enable 'jfx:' goals. -->
-			<plugin>
-				<groupId>com.zenjava</groupId>
-				<artifactId>javafx-maven-plugin</artifactId>
-			</plugin>
-
-			<!-- Enable 'nar:' goals. -->
-			<plugin>
-				<groupId>com.github.maven-nar</groupId>
-				<artifactId>nar-maven-plugin</artifactId>
-			</plugin>
-
-			<!-- Enable 'scijava:' goals. -->
-			<plugin>
-				<groupId>org.scijava</groupId>
-				<artifactId>scijava-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-		<!--
-		We use wagon-webdav-jackrabbit 1.0 for deploys, since it is
-		compatible with both Maven 2.2.x and Maven 3.x cross-platform.
-		-->
-		<extensions>
-			<extension>
-				<groupId>org.apache.maven.wagon</groupId>
-				<artifactId>wagon-webdav-jackrabbit</artifactId>
-				<version>1.0</version>
-			</extension>
-		</extensions>
-	</build>
-
-	<reporting>
-		<plugins>
-			<!-- Generate javadocs as part of site generation. -->
-			<plugin>
-				<artifactId>maven-javadoc-plugin</artifactId>
-				<!--
-				NB: The following version declaration and configuration block are fully
-				replicated from the pluginManagement section. This is necessary because
-				many versions of maven-site-plugin (including 3.3) do not respect the
-				pluginManagement values.
-				See: https://issues.apache.org/jira/browse/MSITE-443
-				While the maven-site-plugin documentation states that it "search[es]
-				the same groupId/artifactId in the build.pluginManagement.plugins
-				section", this claim unfortunately does not seem to reflect reality.
-				-->
-				<version>2.10.4</version>
-				<configuration>
-					<maxmemory>1024m</maxmemory>
-					<!--
-					Workaround for javadoc bug when classes in the default
-					package access classes from non-default packages.
-					See: http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=5101868
-					-->
-					<use>false</use>
-					<links>
-						<link>http://javadoc.imagej.net/Java/</link>
-						<link>http://javadoc.imagej.net/ImageJ/</link>
-						<link>http://javadoc.imagej.net/ImgLib2/</link>
-						<link>http://javadoc.imagej.net/SCIFIO/</link>
-						<link>http://javadoc.imagej.net/SciJava/</link>
-						<link>http://javadoc.imagej.net/Fiji/</link>
-						<link>http://javadoc.imagej.net/ImageJ1/</link>
-						<link>http://javadoc.imagej.net/Bio-Formats/</link>
-						<link>http://javadoc.imagej.net/MPI-CBG/</link>
-						<link>http://javadoc.imagej.net/Icy/</link>
-						<link>http://javadoc.imagej.net/KNIME/</link>
-						<link>http://javadoc.imagej.net/OMERO/</link>
-						<link>http://javadoc.imagej.net/MiToBo/</link>
-						<link>http://javadoc.imagej.net/Java3D/</link>
-						<link>http://javadoc.imagej.net/Pivot/</link>
-						<link>http://javadoc.imagej.net/Eclipse/</link>
-						<link>http://javadoc.imagej.net/Javassist/</link>
-						<link>http://javadoc.imagej.net/JHotDraw/</link>
-					</links>
-				</configuration>
-			</plugin>
-		</plugins>
-	</reporting>
-
 	<profiles>
-		<!--
-		The groovy-code-generation profile provides a uniform way to generate
-		sources from templates using Groovy. Apache Velocity, a powerful templating
-		engine, is automatically available for use from Groovy. For an example of
-		use, see the ImageJ Ops project: https://github.com/imagej/imagej-ops
-		-->
-		<profile>
-			<id>groovy-code-generation</id>
-			<activation>
-				<file>
-					<!-- NB: No property, because profile activation is too early. -->
-					<exists>${basedir}/src/main/groovy/generate.groovy</exists>
-				</file>
-			</activation>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.codehaus.mojo</groupId>
-						<artifactId>build-helper-maven-plugin</artifactId>
-						<executions>
-							<!-- Add generated code, including tests, to the build. -->
-							<execution>
-								<id>add-source</id>
-								<phase>generate-sources</phase>
-								<goals>
-									<goal>add-source</goal>
-								</goals>
-								<configuration>
-									<sources>
-										<source>${project.build.directory}/generated-sources/from-template/</source>
-									</sources>
-								</configuration>
-							</execution>
-							<execution>
-								<id>add-test-source</id>
-								<phase>generate-test-sources</phase>
-								<goals>
-									<goal>add-test-source</goal>
-								</goals>
-								<configuration>
-									<sources>
-										<source>${project.build.directory}/generated-test-sources/from-template/</source>
-									</sources>
-								</configuration>
-							</execution>
-						</executions>
-					</plugin>
-
-						<!-- Groovy Maven plugin -
-						http://www.mojohaus.org/groovy-maven-plugin/
-						This plugin offers execution of Groovy scripts as part of the build.
-						SciJava uses it for automatic code generation with Apache Velocity. -->
-						<plugin>
-							<groupId>org.codehaus.mojo</groupId>
-							<artifactId>groovy-maven-plugin</artifactId>
-							<version>1.5</version>
-							<dependencies>
-								<dependency>
-									<groupId>org.apache.velocity</groupId>
-									<artifactId>velocity</artifactId>
-									<version>1.7</version>
-								</dependency>
-							</dependencies>
-							<executions>
-								<execution>
-									<id>generate-sources</id>
-									<phase>generate-sources</phase>
-									<goals>
-										<goal>execute</goal>
-									</goals>
-									<configuration>
-										<properties>
-											<templateDirectory>${basedir}/src/main/templates</templateDirectory>
-											<outputDirectory>${project.build.directory}/generated-sources/from-template</outputDirectory>
-										</properties>
-										<source>${basedir}/src/main/groovy/generate.groovy</source>
-									</configuration>
-								</execution>
-								<execution>
-									<id>generate-test-sources</id>
-									<phase>generate-test-sources</phase>
-									<goals>
-										<goal>execute</goal>
-									</goals>
-									<configuration>
-										<properties>
-											<templateDirectory>${basedir}/src/test/templates</templateDirectory>
-											<outputDirectory>${project.build.directory}/generated-test-sources/from-template</outputDirectory>
-										</properties>
-										<source>${basedir}/src/main/groovy/generate.groovy</source>
-									</configuration>
-								</execution>
-							</executions>
-						</plugin>
-
-					</plugins>
-				</build>
-		</profile>
-
-		<!--
-		The exec profile provides an easy way to execute a defined ${main-class}
-		for manual testing purposes. It is declared in a profile to avoid clashing
-		with other potential uses of exec-maven-plugin during the main build.
-		-->
-		<profile>
-			<id>exec</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.codehaus.mojo</groupId>
-						<artifactId>exec-maven-plugin</artifactId>
-						<configuration>
-							<executable>java</executable>
-							<arguments>
-								<argument>-classpath</argument>
-								<classpath />
-								<argument>${main-class}</argument>
-							</arguments>
-						</configuration>
-						<executions>
-							<execution>
-								<phase>test</phase>
-								<goals>
-									<goal>exec</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-
-		<!--
-		The dist profile augments the package phase to produce self-contained
-		Java application bundles, using the standard Java packaging mechanism.
-		Exactly which bundles are produced depends on the underlying platform
-		configuration. But this configuration will always produce two sets of
-		bundles: one with JRE included (in target/jfx/native) and
-		another without a bundled JRE (in target/jfx/native-nojre).
-		-->
-		<profile>
-			<id>dist</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>com.zenjava</groupId>
-						<artifactId>javafx-maven-plugin</artifactId>
-						<executions>
-							<execution>
-								<id>dist-with-jre</id>
-								<phase>package</phase>
-								<goals>
-									<goal>native</goal>
-								</goals>
-							</execution>
-							<execution>
-								<id>dist-no-jre</id>
-								<phase>package</phase>
-								<goals>
-									<goal>native</goal>
-								</goals>
-								<configuration>
-									<bundleArguments>
-										<runtime />
-									</bundleArguments>
-									<nativeOutputDir>${project.build.directory}/jfx/native-nojre</nativeOutputDir>
-								</configuration>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-
-		<!--
-		The jdb profile launches the defined ${main-class} in the jdb debugger.
-		Launch it using: mvn -Pjdb exec:exec
-		-->
-		<profile>
-			<id>jdb</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.codehaus.mojo</groupId>
-						<artifactId>exec-maven-plugin</artifactId>
-						<configuration>
-							<executable>jdb</executable>
-							<arguments>
-								<argument>-classpath</argument>
-								<classpath />
-								<argument>${main-class}</argument>
-							</arguments>
-						</configuration>
-						<executions>
-							<execution>
-								<goals>
-									<goal>exec</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-
 		<!--
 		These developer profiles make it easy to pin to SNAPSHOT versions.
 		Add an empty dev.<organization> file in your ~/.scijava directory, and
@@ -2023,457 +2618,315 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 				</pluginRepository>
 			</pluginRepositories>
 		</profile>
-
-		<!--
-		For debugging. E.g. for Eclipse, pass -DdebugPort=8000,suspend=y
-		and add a Debug Configuration for a Remote Java Application.
-		-->
 		<profile>
-			<id>debug-port</id>
+			<id>dev.imagej</id>
 			<activation>
-				<property><name>debugPort</name></property>
+				<file>
+					<exists>${user.home}/.scijava/dev.imagej</exists>
+				</file>
 			</activation>
 			<properties>
-				<argLineDebug>-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=localhost:${debugPort}</argLineDebug>
+				<imagej.version>LATEST</imagej.version>
+				<ij1-patcher.version>LATEST</ij1-patcher.version>
+				<imagej-common.version>LATEST</imagej-common.version>
+				<imagej-deprecated.version>LATEST</imagej-deprecated.version>
+				<imagej-launcher.version>LATEST</imagej-launcher.version>
+				<imagej-legacy.version>LATEST</imagej-legacy.version>
+				<imagej-omero.version>LATEST</imagej-omero.version>
+				<imagej-ops.version>LATEST</imagej-ops.version>
+				<imagej-plugins-commands.version>LATEST</imagej-plugins-commands.version>
+				<imagej-plugins-tools.version>LATEST</imagej-plugins-tools.version>
+				<imagej-plugins-uploader-ssh.version>LATEST</imagej-plugins-uploader-ssh.version>
+				<imagej-plugins-uploader-webdav.version>LATEST</imagej-plugins-uploader-webdav.version>
+				<imagej-scripting.version>LATEST</imagej-scripting.version>
+				<imagej-ui-awt.version>LATEST</imagej-ui-awt.version>
+				<imagej-ui-swing.version>LATEST</imagej-ui-swing.version>
+				<imagej-updater.version>LATEST</imagej-updater.version>
+				<imagej-usage.version>LATEST</imagej-usage.version>
+				<op-finder.version>LATEST</op-finder.version>
 			</properties>
-		</profile>
-
-		<!--
-		Run integration tests when "-Prun-its" is passed.
-		This works using the maven-invoker-plugin.
-		-->
-		<profile>
-			<id>run-its</id>
-			<build>
-				<defaultGoal>integration-test</defaultGoal>
-				<plugins>
-					<plugin>
-						<artifactId>maven-invoker-plugin</artifactId>
-						<version>2.0.0</version>
-						<configuration>
-							<debug>${invoker.debug}</debug>
-							<showErrors>true</showErrors>
-							<streamLogs>true</streamLogs>
-							<projectsDirectory>src/it</projectsDirectory>
-							<cloneProjectsTo>${project.build.directory}/it</cloneProjectsTo>
-							<pomIncludes>
-								<pomInclude>*/pom.xml</pomInclude>
-							</pomIncludes>
-							<settingsFile>src/it/settings.xml</settingsFile>
-							<localRepositoryPath>${project.build.directory}/local-repo</localRepositoryPath>
-							<preBuildHookScript>setup.bsh</preBuildHookScript>
-							<postBuildHookScript>verify.bsh</postBuildHookScript>
-						</configuration>
-						<executions>
-							<execution>
-								<id>integration-test</id>
-								<goals>
-									<goal>install</goal>
-									<goal>run</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-
-		<!-- This profile enables deployment to the ImageJ Maven repository. -->
-		<profile>
-			<id>deploy-to-imagej</id>
-			<distributionManagement>
-				<repository>
-					<id>imagej.releases</id>
-					<name>ImageJ Releases Repository</name>
-					<url>dav:http://maven.imagej.net/content/repositories/releases</url>
-				</repository>
-				<snapshotRepository>
-					<id>imagej.snapshots</id>
-					<name>ImageJ Snapshots Repository</name>
-					<url>dav:http://maven.imagej.net/content/repositories/snapshots</url>
-				</snapshotRepository>
-			</distributionManagement>
-		</profile>
-
-		<!-- This profile enables releasing to the OSS Sonatype repository. -->
-		<profile>
-			<id>sonatype-oss-release</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.sonatype.plugins</groupId>
-						<artifactId>nexus-staging-maven-plugin</artifactId>
-						<version>1.6.7</version>
-						<extensions>true</extensions>
-						<configuration>
-							<serverId>sonatype-nexus-releases</serverId>
-							<nexusUrl>https://oss.sonatype.org/</nexusUrl>
-							<autoReleaseAfterClose>true</autoReleaseAfterClose>
-							<stagingProgressTimeoutMinutes>15</stagingProgressTimeoutMinutes>
-							<stagingProgressPauseDurationSeconds>12</stagingProgressPauseDurationSeconds>
-							<!--
-							By having no explicit stagingProfileId, we use
-							Staging V2 in "auto" mode, profile will be
-							matched server side
-							-->
-						</configuration>
-					</plugin>
-					<plugin>
-						<inherited>true</inherited>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-deploy-plugin</artifactId>
-						<configuration>
-							<skip>true</skip>
-						</configuration>
-					</plugin>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-gpg-plugin</artifactId>
-						<version>1.6</version>
-						<executions>
-							<execution>
-								<id>sign-artifacts</id>
-								<phase>verify</phase>
-								<goals>
-									<goal>sign</goal>
-								</goals>
-							</execution>
-						</executions>
-						<configuration>
-							<useAgent>true</useAgent>
-						</configuration>
-					</plugin>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-source-plugin</artifactId>
-						<executions>
-							<execution>
-								<id>attach-sources</id>
-								<goals>
-									<goal>jar-no-fork</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-javadoc-plugin</artifactId>
-						<executions>
-							<execution>
-								<id>attach-javadocs</id>
-								<goals>
-									<goal>jar</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-
 			<repositories>
 				<repository>
-					<id>sonatype-nexus-snapshots</id>
-					<name>Sonatype Nexus Snapshots</name>
-					<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-					<releases>
-						<enabled>false</enabled>
-					</releases>
-					<snapshots>
-						<enabled>true</enabled>
-					</snapshots>
-				</repository>
-				<repository>
-					<id>sonatype-nexus-releases</id>
-					<name>Sonatype Nexus Releases</name>
-					<url>https://oss.sonatype.org/content/repositories/releases</url>
-					<releases>
-						<enabled>true</enabled>
-					</releases>
-					<snapshots>
-						<enabled>false</enabled>
-					</snapshots>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
 				</repository>
 			</repositories>
-
-			<distributionManagement>
-				<snapshotRepository>
-					<id>sonatype-nexus-snapshots</id>
-					<name>Sonatype Nexus Snapshots</name>
-					<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-				</snapshotRepository>
-				<repository>
-					<id>sonatype-nexus-staging</id>
-					<name>Nexus Release Repository</name>
-					<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-				</repository>
-			</distributionManagement>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
 		</profile>
-
-		<!-- This profile helps Eclipse parse SciJava annotations of imported projects. -->
 		<profile>
-			<id>only-eclipse</id>
+			<id>dev.imglib2</id>
 			<activation>
-				<property>
-					<name>m2e.version</name>
-				</property>
-			</activation>
-			<build>
-				<pluginManagement>
-					<plugins>
-						<!--
-						Configure the Eclipse m2e plugin to support needed plugins.
-						-->
-						<plugin>
-							<groupId>org.eclipse.m2e</groupId>
-							<artifactId>lifecycle-mapping</artifactId>
-							<version>1.0.0</version>
-							<configuration>
-								<lifecycleMappingMetadata>
-									<pluginExecutions>
-										<pluginExecution>
-											<pluginExecutionFilter>
-												<groupId>org.apache.maven.plugins</groupId>
-												<artifactId>maven-enforcer-plugin</artifactId>
-												<versionRange>[1.0.0,)</versionRange>
-												<goals>
-													<goal>enforce</goal>
-												</goals>
-											</pluginExecutionFilter>
-											<action>
-												<execute>
-													<runOnConfiguration>true</runOnConfiguration>
-												</execute>
-											</action>
-										</pluginExecution>
-										<pluginExecution>
-											<pluginExecutionFilter>
-												<groupId>org.apache.maven.plugins</groupId>
-												<artifactId>maven-jar-plugin</artifactId>
-												<versionRange>[2.0,)</versionRange>
-												<goals>
-													<goal>jar</goal>
-												</goals>
-											</pluginExecutionFilter>
-											<action>
-												<execute>
-													<runOnIncremental>true</runOnIncremental>
-													<runOnConfiguration>true</runOnConfiguration>
-												</execute>
-											</action>
-										</pluginExecution>
-										<pluginExecution>
-											<pluginExecutionFilter>
-												<groupId>org.codehaus.mojo</groupId>
-												<artifactId>build-helper-maven-plugin</artifactId>
-												<versionRange>[1.0.0,)</versionRange>
-												<goals>
-													<goal>regex-property</goal>
-												</goals>
-											</pluginExecutionFilter>
-											<action>
-												<execute>
-													<runOnIncremental>true</runOnIncremental>
-													<runOnConfiguration>true</runOnConfiguration>
-												</execute>
-											</action>
-										</pluginExecution>
-										<pluginExecution>
-											<pluginExecutionFilter>
-												<groupId>org.codehaus.mojo</groupId>
-												<artifactId>build-helper-maven-plugin</artifactId>
-												<versionRange>[1.0,)</versionRange>
-												<goals>
-													<goal>add-source</goal>
-													<goal>add-test-source</goal>
-												</goals>
-											</pluginExecutionFilter>
-											<action>
-												<execute>
-													<runOnIncremental>false</runOnIncremental>
-													<runOnConfiguration>true</runOnConfiguration>
-												</execute>
-											</action>
-										</pluginExecution>
-										<pluginExecution>
-											<pluginExecutionFilter>
-												<groupId>org.codehaus.mojo</groupId>
-												<artifactId>buildnumber-maven-plugin</artifactId>
-												<versionRange>[1.0,)</versionRange>
-												<goals>
-													<goal>create</goal>
-												</goals>
-											</pluginExecutionFilter>
-											<action>
-												<execute>
-													<runOnIncremental>true</runOnIncremental>
-													<runOnConfiguration>true</runOnConfiguration>
-												</execute>
-											</action>
-										</pluginExecution>
-										<pluginExecution>
-											<pluginExecutionFilter>
-												<groupId>org.codehaus.mojo</groupId>
-												<artifactId>exec-maven-plugin</artifactId>
-												<versionRange>[1.0,)</versionRange>
-												<goals>
-													<goal>java</goal>
-													<goal>exec</goal>
-												</goals>
-											</pluginExecutionFilter>
-											<action>
-												<ignore />
-											</action>
-										</pluginExecution>
-										<!--
-										NB: Make Eclipse generate code in a full build; see:
-										http://wiki.eclipse.org/M2E_plugin_execution_not_covered
-										-->
-										<pluginExecution>
-											<pluginExecutionFilter>
-												<groupId>org.codehaus.mojo</groupId>
-												<artifactId>groovy-maven-plugin</artifactId>
-												<versionRange>1.5</versionRange>
-												<goals>
-													<goal>execute</goal>
-												</goals>
-											</pluginExecutionFilter>
-											<action>
-												<execute>
-													<runOnConfiguration>true</runOnConfiguration>
-													<runOnIncremental>false</runOnIncremental>
-												</execute>
-											</action>
-										</pluginExecution>
-									</pluginExecutions>
-								</lifecycleMappingMetadata>
-							</configuration>
-						</plugin>
-					</plugins>
-				</pluginManagement>
-				<plugins>
-					<!--
-					HACK - Tell Eclipse to use the TEST source and target JVM version.
-					This is necessary because the JVM version used for tests may be newer
-					than that used for the main artifact. Maven is OK with this, but
-					Eclipse wants only a single JVM version for both main and tests.
-					See: https://gist.github.com/aslakknutsen/9648594#gistcomment-1588906
-					-->
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-compiler-plugin</artifactId>
-						<configuration>
-							<source>${scijava.jvm.test.version}</source>
-							<target>${scijava.jvm.test.version}</target>
-						</configuration>
-					</plugin>
-					<plugin>
-						<groupId>org.scijava</groupId>
-						<artifactId>scijava-maven-plugin</artifactId>
-						<executions>
-							<execution>
-								<goals>
-									<goal>eclipse-helper</goal>
-								</goals>
-								<phase>process-classes</phase>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-
-		<!--
-		This profile aggregates javadocs for the project
-		and its direct dependencies.
-		-->
-		<profile>
-			<id>build-javadoc</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-javadoc-plugin</artifactId>
-						<executions>
-							<execution>
-								<id>attach-javadocs</id>
-								<goals>
-									<goal>jar</goal>
-								</goals>
-							</execution>
-						</executions>
-						<configuration>
-							<!-- Include direct dependencies -->
-							<includeDependencySources>true</includeDependencySources>
-
-							<!-- Remove the "${project.version} API" from the default title -->
-							<doctitle>${project.name}</doctitle>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-
-		<!--
-		The Findbugs profile executes a static code analysis for any bugs,
-		using Findbugs analysis tool. It produces a findbugs.xml report in target
-		folder. It may catch some undangerous bugs, so it is better to set the
-		failOnError variable to false.
-		-->
-
-		<profile>
-			<id>findbugs</id>
-			<activation>
-				<activeByDefault>false</activeByDefault>
+				<file>
+					<exists>${user.home}/.scijava/dev.imglib2</exists>
+				</file>
 			</activation>
 			<properties>
-				<findbugs.maven.version>3.0.4</findbugs.maven.version>
-				<findbugs.failOnError>false</findbugs.failOnError>
+				<imglib2.version>LATEST</imglib2.version>
+				<imglib2-algorithm.version>LATEST</imglib2-algorithm.version>
+				<imglib2-algorithm-fft.version>LATEST</imglib2-algorithm-fft.version>
+				<imglib2-algorithm-gpl.version>LATEST</imglib2-algorithm-gpl.version>
+				<imglib2-ij.version>LATEST</imglib2-ij.version>
+				<imglib2-realtransform.version>LATEST</imglib2-realtransform.version>
+				<imglib2-roi.version>LATEST</imglib2-roi.version>
+				<imglib2-script.version>LATEST</imglib2-script.version>
+				<imglib2-ui.version>LATEST</imglib2-ui.version>
 			</properties>
-			<build>
-				<pluginManagement>
-					<plugins>
-						<plugin>
-							<groupId>org.codehaus.mojo</groupId>
-							<artifactId>findbugs-maven-plugin</artifactId>
-							<version>${findbugs.maven.version}</version>
-							<executions>
-								<execution>
-									<id>findbugs</id>
-									<phase>verify</phase>
-									<configuration>
-										<failOnError>${findbugs.failOnError}</failOnError>
-										<effort>Max</effort>
-										<threshold>Default</threshold>
-										<xmlOutput>true</xmlOutput>
-									</configuration>
-									<goals>
-										<goal>check</goal>
-									</goals>
-								</execution>
-							</executions>
-						</plugin>
-					</plugins>
-				</pluginManagement>
-				<plugins>
-					<plugin>
-						<groupId>org.codehaus.mojo</groupId>
-						<artifactId>findbugs-maven-plugin</artifactId>
-						<version>${findbugs.maven.version}</version>
-						<executions>
-							<execution>
-								<id>findbugs</id>
-								<phase>test</phase>
-								<configuration>
-								</configuration>
-								<goals>
-									<goal>findbugs</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
+			<repositories>
+				<repository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
 		</profile>
+		<profile>
+			<id>dev.scifio</id>
+			<activation>
+				<file>
+					<exists>${user.home}/.scijava/dev.scifio</exists>
+				</file>
+			</activation>
+			<properties>
+				<scifio.version>LATEST</scifio.version>
+				<scifio-bf-compat.version>LATEST</scifio-bf-compat.version>
+				<scifio-cli.version>LATEST</scifio-cli.version>
+				<scifio-jai-imageio.version>LATEST</scifio-jai-imageio.version>
+				<scifio-lifesci.version>LATEST</scifio-lifesci.version>
+				<scifio-ome-xml.version>LATEST</scifio-ome-xml.version>
+			</properties>
+			<repositories>
+				<repository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+		<profile>
+			<id>dev.fiji</id>
+			<activation>
+				<file>
+					<exists>${user.home}/.scijava/dev.fiji</exists>
+				</file>
+			</activation>
+			<properties>
+				<!-- Fiji -->
+				<fiji.version>LATEST</fiji.version>
 
+				<!-- Standard Fiji projects -->
+				<AnalyzeSkeleton.version>LATEST</AnalyzeSkeleton.version>
+				<Anisotropic_Diffusion_2D.version>LATEST</Anisotropic_Diffusion_2D.version>
+				<Archipelago_Plugins.version>LATEST</Archipelago_Plugins.version>
+				<Arrow.version>LATEST</Arrow.version>
+				<Auto_Threshold.version>LATEST</Auto_Threshold.version>
+				<BalloonSegmentation.version>LATEST</BalloonSegmentation.version>
+				<Bug_Submitter.version>LATEST</Bug_Submitter.version>
+				<CPU_Meter.version>LATEST</CPU_Meter.version>
+				<Calculator_Plus.version>LATEST</Calculator_Plus.version>
+				<Cell_Counter.version>LATEST</Cell_Counter.version>
+				<Colocalisation_Analysis.version>LATEST</Colocalisation_Analysis.version>
+				<Color_Histogram.version>LATEST</Color_Histogram.version>
+				<Color_Inspector_3D.version>LATEST</Color_Inspector_3D.version>
+				<Colour_Deconvolution.version>LATEST</Colour_Deconvolution.version>
+				<CorrectBleach.version>LATEST</CorrectBleach.version>
+				<Descriptor_based_registration.version>LATEST</Descriptor_based_registration.version>
+				<Dichromacy.version>LATEST</Dichromacy.version>
+				<Differentials.version>LATEST</Differentials.version>
+				<Directionality.version>LATEST</Directionality.version>
+				<Extended_Depth_Field.version>LATEST</Extended_Depth_Field.version>
+				<FS_Align_TrakEM2.version>LATEST</FS_Align_TrakEM2.version>
+				<Feature_Detection.version>LATEST</Feature_Detection.version>
+				<Fiji_3D_Blob_Segmentation.version>LATEST</Fiji_3D_Blob_Segmentation.version>
+				<Fiji_Archipelago.version>LATEST</Fiji_Archipelago.version>
+				<Fiji_Developer.version>LATEST</Fiji_Developer.version>
+				<Fiji_Package_Maker.version>LATEST</Fiji_Package_Maker.version>
+				<Fiji_Plugins.version>LATEST</Fiji_Plugins.version>
+				<Fiji_Updater.version>LATEST</Fiji_Updater.version>
+				<FlowJ.version>LATEST</FlowJ.version>
+				<Graph_Cut.version>LATEST</Graph_Cut.version>
+				<Gray_Morphology.version>LATEST</Gray_Morphology.version>
+				<H5J_Loader_Plugin.version>LATEST</H5J_Loader_Plugin.version>
+				<Helmholtz_Analysis.version>LATEST</Helmholtz_Analysis.version>
+				<IJ_Robot.version>LATEST</IJ_Robot.version>
+				<IO.version>LATEST</IO.version>
+				<ImageJ_3D_Objects_Counter.version>LATEST</ImageJ_3D_Objects_Counter.version>
+				<ImageJ_3D_Viewer.version>LATEST</ImageJ_3D_Viewer.version>
+				<Image_5D.version>LATEST</Image_5D.version>
+				<Image_Expression_Parser.version>LATEST</Image_Expression_Parser.version>
+				<Interactive_3D_Surface_Plot.version>LATEST</Interactive_3D_Surface_Plot.version>
+				<IsoData_Classifier.version>LATEST</IsoData_Classifier.version>
+				<Kuwahara_Filter.version>LATEST</Kuwahara_Filter.version>
+				<KymographBuilder.version>LATEST</KymographBuilder.version>
+				<LSM_Reader.version>LATEST</LSM_Reader.version>
+				<LSM_Toolbox.version>LATEST</LSM_Toolbox.version>
+				<Lasso_and_Blow_Tool.version>LATEST</Lasso_and_Blow_Tool.version>
+				<Linear_Kuwahara.version>LATEST</Linear_Kuwahara.version>
+				<LocalThickness.version>LATEST</LocalThickness.version>
+				<MTrack2.version>LATEST</MTrack2.version>
+				<M_I_P.version>LATEST</M_I_P.version>
+				<Manual_Tracking.version>LATEST</Manual_Tracking.version>
+				<MosaicJ.version>LATEST</MosaicJ.version>
+				<Multi_Kymograph.version>LATEST</Multi_Kymograph.version>
+				<PIV_analyser.version>LATEST</PIV_analyser.version>
+				<PointPicker.version>LATEST</PointPicker.version>
+				<QuickPALM.version>LATEST</QuickPALM.version>
+				<RATS.version>LATEST</RATS.version>
+				<Reconstruct_Reader.version>LATEST</Reconstruct_Reader.version>
+				<SPIM_Opener.version>LATEST</SPIM_Opener.version>
+				<SPIM_Registration.version>LATEST</SPIM_Registration.version>
+				<Samples.version>LATEST</Samples.version>
+				<Series_Labeler.version>LATEST</Series_Labeler.version>
+				<SheppLogan.version>LATEST</SheppLogan.version>
+				<Simple_Neurite_Tracer.version>LATEST</Simple_Neurite_Tracer.version>
+				<Siox_Segmentation.version>LATEST</Siox_Segmentation.version>
+				<Skeletonize3D.version>LATEST</Skeletonize3D.version>
+				<Snakuscule.version>LATEST</Snakuscule.version>
+				<SplineDeformationGenerator.version>LATEST</SplineDeformationGenerator.version>
+				<StackReg.version>LATEST</StackReg.version>
+				<Stack_Manipulation.version>LATEST</Stack_Manipulation.version>
+				<Statistical_Region_Merging.version>LATEST</Statistical_Region_Merging.version>
+				<Stitching.version>LATEST</Stitching.version>
+				<Sync_Win.version>LATEST</Sync_Win.version>
+				<Thread_Killer.version>LATEST</Thread_Killer.version>
+				<Time_Lapse.version>LATEST</Time_Lapse.version>
+				<Time_Stamper.version>LATEST</Time_Stamper.version>
+				<ToAST.version>LATEST</ToAST.version>
+				<TopoJ.version>LATEST</TopoJ.version>
+				<TrackMate.version>LATEST</TrackMate.version>
+				<Trainable_Segmentation.version>LATEST</Trainable_Segmentation.version>
+				<TrakEM2_Archipelago.version>LATEST</TrakEM2_Archipelago.version>
+				<TurboReg.version>LATEST</TurboReg.version>
+				<UnwarpJ.version>LATEST</UnwarpJ.version>
+				<VIB-lib.version>LATEST</VIB-lib.version>
+				<VIB.version>LATEST</VIB.version>
+				<Vaa3d_Reader.version>LATEST</Vaa3d_Reader.version>
+				<Vaa3d_Writer.version>LATEST</Vaa3d_Writer.version>
+				<Video_Editing.version>LATEST</Video_Editing.version>
+				<View5D.version>LATEST</View5D.version>
+				<Volume_Calculator.version>LATEST</Volume_Calculator.version>
+				<Volume_Viewer.version>LATEST</Volume_Viewer.version>
+				<bUnwarpJ.version>LATEST</bUnwarpJ.version>
+				<bij.version>LATEST</bij.version>
+				<blockmatching.version>LATEST</blockmatching.version>
+				<fiji-compat.version>LATEST</fiji-compat.version>
+				<fiji-lib.version>LATEST</fiji-lib.version>
+				<imageware.version>LATEST</imageware.version>
+				<javac.version>LATEST</javac.version>
+				<jep.version>LATEST</jep.version>
+				<legacy-imglib1.version>LATEST</legacy-imglib1.version>
+				<level_sets.version>LATEST</level_sets.version>
+				<mij.version>LATEST</mij.version>
+				<pal-optimization.version>LATEST</pal-optimization.version>
+				<panorama.version>LATEST</panorama.version>
+				<register_virtual_stack_slices.version>LATEST</register_virtual_stack_slices.version>
+				<registration_3d.version>LATEST</registration_3d.version>
+				<wavelets.version>LATEST</wavelets.version>
+
+				<!-- External Fiji projects -->
+				<Sholl_Analysis.version>LATEST</Sholl_Analysis.version>
+				<jitk-tps.version>LATEST</jitk-tps.version>
+				<bigwarp.version>LATEST</bigwarp.version>
+				<trakem2_tps.version>LATEST</trakem2_tps.version>
+				<z_spacing.version>LATEST</z_spacing.version>
+			</properties>
+			<repositories>
+				<repository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+		<profile>
+			<id>dev.bdv</id>
+			<activation>
+				<file>
+					<exists>${user.home}/.scijava/dev.bdv</exists>
+				</file>
+			</activation>
+			<properties>
+				<bigdataviewer-core.version>LATEST</bigdataviewer-core.version>
+				<bigdataviewer-server.version>LATEST</bigdataviewer-server.version>
+				<bigdataviewer_fiji.version>LATEST</bigdataviewer_fiji.version>
+				<spim_data.version>LATEST</spim_data.version>
+			</properties>
+			<repositories>
+				<repository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+		<profile>
+			<id>dev.trakem2</id>
+			<activation>
+				<file>
+					<exists>${user.home}/.scijava/dev.trakem2</exists>
+				</file>
+			</activation>
+			<properties>
+				<T2-NIT.version>LATEST</T2-NIT.version>
+				<T2-TreelineGraph.version>LATEST</T2-TreelineGraph.version>
+				<TrakEM2.version>LATEST</TrakEM2.version>
+				<VectorString.version>LATEST</VectorString.version>
+				<mpicbg-trakem2.version>LATEST</mpicbg-trakem2.version>
+			</properties>
+			<repositories>
+				<repository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
 	</profiles>
 </project>
