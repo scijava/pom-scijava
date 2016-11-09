@@ -371,7 +371,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<Interactive_3D_Surface_Plot.version>2.4.1</Interactive_3D_Surface_Plot.version>
 		<IsoData_Classifier.version>2.0.0</IsoData_Classifier.version>
 		<Kuwahara_Filter.version>2.0.0</Kuwahara_Filter.version>
-		<KymographBuilder.version>1.2.3</KymographBuilder.version>
+		<KymographBuilder.version>1.2.4</KymographBuilder.version>
 		<LSM_Reader.version>4.1.1</LSM_Reader.version>
 		<LSM_Toolbox.version>4.1.1</LSM_Toolbox.version>
 		<Lasso_and_Blow_Tool.version>2.0.1</Lasso_and_Blow_Tool.version>
