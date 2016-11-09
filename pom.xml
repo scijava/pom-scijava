@@ -368,7 +368,7 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 		<ImageJ_3D_Viewer.version>4.0.1</ImageJ_3D_Viewer.version>
 		<Image_5D.version>2.0.1</Image_5D.version>
 		<Image_Expression_Parser.version>3.0.0</Image_Expression_Parser.version>
-		<Interactive_3D_Surface_Plot.version>2.31.2</Interactive_3D_Surface_Plot.version>
+		<Interactive_3D_Surface_Plot.version>2.4.1</Interactive_3D_Surface_Plot.version>
 		<IsoData_Classifier.version>2.0.0</IsoData_Classifier.version>
 		<Kuwahara_Filter.version>2.0.0</Kuwahara_Filter.version>
 		<KymographBuilder.version>1.2.3</KymographBuilder.version>
