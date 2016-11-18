@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.scijava</groupId>
 		<artifactId>pom-scijava-base</artifactId>
-		<version>1.0.0</version>
+		<version>2.0.0</version>
 		<relativePath />
 	</parent>
 
@@ -14,9 +14,7 @@
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
-	<description>This POM provides a parent from which participating projects can declare their build configurations. It ensures that projects all use a compatible build environment, including Java version, as well as versions of dependencies and plugins.
-
-Projects wishing to use pom-scijava as a parent project need to override the &lt;name&gt;, &lt;description&gt;, &lt;url&gt;, &lt;inceptionYear&gt;, &lt;organization&gt;, &lt;licenses&gt;, &lt;developers&gt;, &lt;contributors&gt;, &lt;mailingLists&gt;, &lt;scm&gt;, &lt;issueManagement&gt; and &lt;ciManagement&gt; sections.</description>
+	<description>This POM provides a parent from which participating projects can declare their build configurations. It ensures that projects all use a compatible build environment, including Java version, as well as versions of dependencies and plugins.</description>
 	<url>http://www.scijava.org/</url>
 	<inceptionYear>2011</inceptionYear>
 	<organization>
@@ -105,6 +103,13 @@ Projects wishing to use pom-scijava as a parent project need to override the &lt
 	</ciManagement>
 
 	<properties>
+		<!--
+		NB: We override these properties to make the enforcer happy.
+		You will need to override them in your POM, too... to valid values.
+		-->
+		<license.licenseName>N/A</license.licenseName>
+		<license.copyrightOwners>N/A</license.copyrightOwners>
+
 		<!-- Managed dependency versions -->
 
 		<!--
