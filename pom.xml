@@ -346,6 +346,7 @@
 		<Color_Inspector_3D.version>2.3.1</Color_Inspector_3D.version>
 		<Colour_Deconvolution.version>3.0.1</Colour_Deconvolution.version>
 		<CorrectBleach.version>2.0.1</CorrectBleach.version>
+		<Correct_3D_Drift.version>1.0.0</Correct_3D_Drift.version>
 		<Descriptor_based_registration.version>2.1.1</Descriptor_based_registration.version>
 		<Dichromacy.version>2.1.0</Dichromacy.version>
 		<Differentials.version>2.0.0</Differentials.version>
@@ -1200,6 +1201,11 @@
 				<groupId>sc.fiji</groupId>
 				<artifactId>CorrectBleach_</artifactId>
 				<version>${CorrectBleach.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Correct_3D_Drift</artifactId>
+				<version>${Correct_3D_Drift.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
@@ -2755,6 +2761,7 @@
 				<Color_Inspector_3D.version>LATEST</Color_Inspector_3D.version>
 				<Colour_Deconvolution.version>LATEST</Colour_Deconvolution.version>
 				<CorrectBleach.version>LATEST</CorrectBleach.version>
+				<Correct_3D_Drift.version>LATEST</Correct_3D_Drift.version>
 				<Descriptor_based_registration.version>LATEST</Descriptor_based_registration.version>
 				<Dichromacy.version>LATEST</Dichromacy.version>
 				<Differentials.version>LATEST</Differentials.version>
