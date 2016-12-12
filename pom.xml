@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>12.0.1-SNAPSHOT</version>
+	<version>13.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -487,14 +487,15 @@
 
 		<!-- Open Microscopy Environment - https://github.com/openmicroscopy -->
 
+		<ome-common.version>5.3.1</ome-common.version>
+		<ome-xml.version>5.3.1</ome-xml.version>
+
 		<!-- Bio-Formats - https://github.com/openmicroscopy/bioformats -->
-		<bio-formats.version>5.2.4</bio-formats.version>
+		<bio-formats.version>5.3.0</bio-formats.version>
 		<bio-formats_plugins.version>${bio-formats.version}</bio-formats_plugins.version>
 		<formats-api.version>${bio-formats.version}</formats-api.version>
 		<formats-bsd.version>${bio-formats.version}</formats-bsd.version>
-		<formats-common.version>${bio-formats.version}</formats-common.version>
 		<formats-gpl.version>${bio-formats.version}</formats-gpl.version>
-		<ome-xml.version>${bio-formats.version}</ome-xml.version>
 
 		<!-- Other SciJava components -->
 
@@ -1799,9 +1800,9 @@
 				</exclusions>
 			</dependency>
 			<dependency>
-				<groupId>ome</groupId>
-				<artifactId>formats-common</artifactId>
-				<version>${formats-common.version}</version>
+				<groupId>org.openmicroscopy</groupId>
+				<artifactId>ome-common</artifactId>
+				<version>${ome-common.version}</version>
 				<exclusions>
 					<exclusion>
 						<groupId>xalan</groupId>
@@ -1819,7 +1820,7 @@
 				<version>${formats-gpl.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>ome</groupId>
+				<groupId>org.openmicroscopy</groupId>
 				<artifactId>ome-xml</artifactId>
 				<version>${ome-xml.version}</version>
 			</dependency>
