@@ -2564,13 +2564,13 @@
 			<repositories>
 				<repository>
 					<id>imagej.public</id>
-					<url>http://maven.imagej.net/content/groups/public</url>
+					<url>https://maven.imagej.net/content/groups/public</url>
 				</repository>
 			</repositories>
 			<pluginRepositories>
 				<pluginRepository>
 					<id>imagej.public</id>
-					<url>http://maven.imagej.net/content/groups/public</url>
+					<url>https://maven.imagej.net/content/groups/public</url>
 					<snapshots>
 						<enabled>true</enabled>
 					</snapshots>
@@ -2613,13 +2613,13 @@
 			<repositories>
 				<repository>
 					<id>imagej.public</id>
-					<url>http://maven.imagej.net/content/groups/public</url>
+					<url>https://maven.imagej.net/content/groups/public</url>
 				</repository>
 			</repositories>
 			<pluginRepositories>
 				<pluginRepository>
 					<id>imagej.public</id>
-					<url>http://maven.imagej.net/content/groups/public</url>
+					<url>https://maven.imagej.net/content/groups/public</url>
 					<snapshots>
 						<enabled>true</enabled>
 					</snapshots>
@@ -2656,13 +2656,13 @@
 			<repositories>
 				<repository>
 					<id>imagej.public</id>
-					<url>http://maven.imagej.net/content/groups/public</url>
+					<url>https://maven.imagej.net/content/groups/public</url>
 				</repository>
 			</repositories>
 			<pluginRepositories>
 				<pluginRepository>
 					<id>imagej.public</id>
-					<url>http://maven.imagej.net/content/groups/public</url>
+					<url>https://maven.imagej.net/content/groups/public</url>
 					<snapshots>
 						<enabled>true</enabled>
 					</snapshots>
@@ -2690,13 +2690,13 @@
 			<repositories>
 				<repository>
 					<id>imagej.public</id>
-					<url>http://maven.imagej.net/content/groups/public</url>
+					<url>https://maven.imagej.net/content/groups/public</url>
 				</repository>
 			</repositories>
 			<pluginRepositories>
 				<pluginRepository>
 					<id>imagej.public</id>
-					<url>http://maven.imagej.net/content/groups/public</url>
+					<url>https://maven.imagej.net/content/groups/public</url>
 					<snapshots>
 						<enabled>true</enabled>
 					</snapshots>
@@ -2721,13 +2721,13 @@
 			<repositories>
 				<repository>
 					<id>imagej.public</id>
-					<url>http://maven.imagej.net/content/groups/public</url>
+					<url>https://maven.imagej.net/content/groups/public</url>
 				</repository>
 			</repositories>
 			<pluginRepositories>
 				<pluginRepository>
 					<id>imagej.public</id>
-					<url>http://maven.imagej.net/content/groups/public</url>
+					<url>https://maven.imagej.net/content/groups/public</url>
 					<snapshots>
 						<enabled>true</enabled>
 					</snapshots>
@@ -2865,13 +2865,13 @@
 			<repositories>
 				<repository>
 					<id>imagej.public</id>
-					<url>http://maven.imagej.net/content/groups/public</url>
+					<url>https://maven.imagej.net/content/groups/public</url>
 				</repository>
 			</repositories>
 			<pluginRepositories>
 				<pluginRepository>
 					<id>imagej.public</id>
-					<url>http://maven.imagej.net/content/groups/public</url>
+					<url>https://maven.imagej.net/content/groups/public</url>
 					<snapshots>
 						<enabled>true</enabled>
 					</snapshots>
@@ -2894,13 +2894,13 @@
 			<repositories>
 				<repository>
 					<id>imagej.public</id>
-					<url>http://maven.imagej.net/content/groups/public</url>
+					<url>https://maven.imagej.net/content/groups/public</url>
 				</repository>
 			</repositories>
 			<pluginRepositories>
 				<pluginRepository>
 					<id>imagej.public</id>
-					<url>http://maven.imagej.net/content/groups/public</url>
+					<url>https://maven.imagej.net/content/groups/public</url>
 					<snapshots>
 						<enabled>true</enabled>
 					</snapshots>
@@ -2924,13 +2924,13 @@
 			<repositories>
 				<repository>
 					<id>imagej.public</id>
-					<url>http://maven.imagej.net/content/groups/public</url>
+					<url>https://maven.imagej.net/content/groups/public</url>
 				</repository>
 			</repositories>
 			<pluginRepositories>
 				<pluginRepository>
 					<id>imagej.public</id>
-					<url>http://maven.imagej.net/content/groups/public</url>
+					<url>https://maven.imagej.net/content/groups/public</url>
 					<snapshots>
 						<enabled>true</enabled>
 					</snapshots>
