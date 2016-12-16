@@ -138,6 +138,9 @@
 		<!-- Native Lib Loader - https://github.com/scijava/native-lib-loader -->
 		<native-lib-loader.version>2.1.4</native-lib-loader.version>
 
+		<!-- Parsington - https://github.com/scijava/parsington -->
+		<parsington.version>1.0.0</parsington.version>
+
 		<!-- SciJava Cache - https://github.com/scijava/scijava-cache -->
 		<scijava-cache.version>0.1.1</scijava-cache.version>
 
@@ -146,9 +149,6 @@
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
 		<scijava-config.version>2.0.1</scijava-config.version>
-
-		<!-- SciJava Expression Parser - https://github.com/scijava/scijava-expression-parser -->
-		<scijava-expression-parser.version>3.1.0</scijava-expression-parser.version>
 
 		<!-- SciJava Common: SLF4J Logging - https://github.com/scijava/scijava-log-slf4j -->
 		<scijava-log-slf4j.version>1.0.3</scijava-log-slf4j.version>
@@ -686,6 +686,13 @@
 				<version>${native-lib-loader.version}</version>
 			</dependency>
 
+			<!-- Parsington - https://github.com/scijava/parsington -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>parsington</artifactId>
+				<version>${parsington.version}</version>
+			</dependency>
+
 			<!-- SciJava Cache - https://github.com/scijava/scijava-cache -->
 			<dependency>
 				<groupId>org.scijava</groupId>
@@ -711,13 +718,6 @@
 				<groupId>org.scijava</groupId>
 				<artifactId>scijava-config</artifactId>
 				<version>${scijava-config.version}</version>
-			</dependency>
-
-			<!-- SciJava Expression Parser - https://github.com/scijava/scijava-expression-parser -->
-			<dependency>
-				<groupId>org.scijava</groupId>
-				<artifactId>scijava-expression-parser</artifactId>
-				<version>${scijava-expression-parser.version}</version>
 			</dependency>
 
 			<!-- SciJava Common: SLF4J Logging - https://github.com/scijava/scijava-log-slf4j -->
@@ -2588,9 +2588,9 @@
 			<properties>
 				<minimaven.version>LATEST</minimaven.version>
 				<native-lib-loader.version>LATEST</native-lib-loader.version>
+				<parsington.version>LATEST</parsington.version>
 				<scijava-cache.version>LATEST</scijava-cache.version>
 				<scijava-config.version>LATEST</scijava-config.version>
-				<scijava-expression-parser.version>LATEST</scijava-expression-parser.version>
 				<scijava-log-slf4j.version>LATEST</scijava-log-slf4j.version>
 				<scijava-plugins-commands.version>LATEST</scijava-plugins-commands.version>
 				<scijava-plugins-platforms.version>LATEST</scijava-plugins-platforms.version>
