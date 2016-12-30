@@ -150,6 +150,9 @@
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
 		<scijava-config.version>2.0.1</scijava-config.version>
 
+		<!-- SciJava Java 3D Tools - https://github.com/scijava/scijava-java3d -->
+		<scijava-java3d.version>0.1.0</scijava-java3d.version>
+
 		<!-- SciJava SLF4J Logging - https://github.com/scijava/scijava-log-slf4j -->
 		<scijava-log-slf4j.version>1.0.3</scijava-log-slf4j.version>
 
@@ -721,6 +724,13 @@
 				<groupId>org.scijava</groupId>
 				<artifactId>scijava-config</artifactId>
 				<version>${scijava-config.version}</version>
+			</dependency>
+
+			<!-- SciJava Java 3D Tools - https://github.com/scijava/scijava-java3d -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-java3d</artifactId>
+				<version>${scijava-java3d.version}</version>
 			</dependency>
 
 			<!-- SciJava SLF4J Logging - https://github.com/scijava/scijava-log-slf4j -->
@@ -2601,6 +2611,7 @@
 				<parsington.version>LATEST</parsington.version>
 				<scijava-cache.version>LATEST</scijava-cache.version>
 				<scijava-config.version>LATEST</scijava-config.version>
+				<scijava-java3d.version>LATEST</scijava-java3d.version>
 				<scijava-log-slf4j.version>LATEST</scijava-log-slf4j.version>
 				<scijava-plugins-commands.version>LATEST</scijava-plugins-commands.version>
 				<scijava-plugins-platforms.version>LATEST</scijava-plugins-platforms.version>
