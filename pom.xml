@@ -493,7 +493,10 @@
 
 		<!-- Open Microscopy Environment - https://github.com/openmicroscopy -->
 
+		<!-- OME Common Java - https://github.com/ome/ome-common-java -->
 		<ome-common.version>5.3.1</ome-common.version>
+
+		<!-- OME Model - https://github.com/ome/ome-model -->
 		<ome-xml.version>5.3.1</ome-xml.version>
 
 		<!-- Bio-Formats - https://github.com/openmicroscopy/bioformats -->
@@ -1779,6 +1782,30 @@
 
 			<!-- Open Microscopy Environment - https://github.com/openmicroscopy -->
 
+			<!-- OME Common Java - https://github.com/ome/ome-common-java -->
+			<dependency>
+				<groupId>org.openmicroscopy</groupId>
+				<artifactId>ome-common</artifactId>
+				<version>${ome-common.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xalan</groupId>
+						<artifactId>serializer</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>xalan</groupId>
+						<artifactId>xalan</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+
+			<!-- OME Model - https://github.com/ome/ome-model -->
+			<dependency>
+				<groupId>org.openmicroscopy</groupId>
+				<artifactId>ome-xml</artifactId>
+				<version>${ome-xml.version}</version>
+			</dependency>
+
 			<!-- Bio-Formats - https://github.com/openmicroscopy/bioformats -->
 			<dependency>
 				<groupId>ome</groupId>
@@ -1820,29 +1847,9 @@
 				</exclusions>
 			</dependency>
 			<dependency>
-				<groupId>org.openmicroscopy</groupId>
-				<artifactId>ome-common</artifactId>
-				<version>${ome-common.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>xalan</groupId>
-						<artifactId>serializer</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>xalan</groupId>
-						<artifactId>xalan</artifactId>
-					</exclusion>
-				</exclusions>
-			</dependency>
-			<dependency>
 				<groupId>ome</groupId>
 				<artifactId>formats-gpl</artifactId>
 				<version>${formats-gpl.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.openmicroscopy</groupId>
-				<artifactId>ome-xml</artifactId>
-				<version>${ome-xml.version}</version>
 			</dependency>
 
 			<!-- Other SciJava components -->
