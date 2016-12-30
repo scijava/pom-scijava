@@ -236,6 +236,9 @@
 		<!-- ImageJ Maven Plugin - https://github.com/imagej/imagej-maven-plugin -->
 		<imagej-maven-plugin.version>0.6.0</imagej-maven-plugin.version>
 
+		<!-- ImageJ Mesh - https://github.com/imagej/imagej-mesh -->
+		<imagej-mesh.version>0.1.0</imagej-mesh.version>
+
 		<!-- ImageJ OMERO - https://github.com/imagej/imagej-omero -->
 		<imagej-omero.version>0.4.0</imagej-omero.version>
 
@@ -909,6 +912,13 @@
 				<groupId>net.imagej</groupId>
 				<artifactId>imagej-legacy</artifactId>
 				<version>${imagej-legacy.version}</version>
+			</dependency>
+
+			<!-- ImageJ Mesh - https://github.com/imagej/imagej-mesh -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-mesh</artifactId>
+				<version>${imagej-mesh.version}</version>
 			</dependency>
 
 			<!-- ImageJ OMERO - https://github.com/imagej/imagej-omero -->
@@ -2641,6 +2651,7 @@
 				<imagej-deprecated.version>LATEST</imagej-deprecated.version>
 				<imagej-launcher.version>LATEST</imagej-launcher.version>
 				<imagej-legacy.version>LATEST</imagej-legacy.version>
+				<imagej-mesh.version>LATEST</imagej-mesh.version>
 				<imagej-omero.version>LATEST</imagej-omero.version>
 				<imagej-ops.version>LATEST</imagej-ops.version>
 				<imagej-plugins-commands.version>LATEST</imagej-plugins-commands.version>
