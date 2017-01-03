@@ -110,7 +110,7 @@
 		<license.licenseName>N/A</license.licenseName>
 		<license.copyrightOwners>N/A</license.copyrightOwners>
 
-		<!-- Managed dependency versions -->
+		<!-- Managed dependency versions - SciJava component collection -->
 
 		<!--
 		If two artifacts on the classpath use two different versions of the same
@@ -119,7 +119,7 @@
 		various projects in the SciJava software stack.
 
 		When possible, we advise declaring your SciJava dependencies without a
-		<version> since the versions of core SciJava components are managed in this
+		<version> since the versions of all SciJava components are managed in this
 		POM's <dependencyManagement> section.
 
 		If you need to override the version of a particular component, then simply
