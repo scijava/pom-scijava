@@ -222,7 +222,7 @@
 		<ij1-patcher.version>0.12.5</ij1-patcher.version>
 
 		<!-- ImageJ Common - https://github.com/imagej/imagej-common -->
-		<imagej-common.version>0.24.1</imagej-common.version>
+		<imagej-common.version>0.24.2</imagej-common.version>
 
 		<!-- ImageJ Deprecated - https://github.com/imagej/imagej-deprecated -->
 		<imagej-deprecated.version>0.1.1</imagej-deprecated.version>
@@ -231,10 +231,10 @@
 		<imagej-launcher.version>4.0.5</imagej-launcher.version>
 
 		<!-- ImageJ Legacy - https://github.com/imagej/imagej-legacy -->
-		<imagej-legacy.version>0.23.3</imagej-legacy.version>
+		<imagej-legacy.version>0.23.4</imagej-legacy.version>
 
 		<!-- ImageJ MATLAB - https://github.com/imagej/imagej-matlab -->
-		<imagej-matlab.version>0.7.1</imagej-matlab.version>
+		<imagej-matlab.version>0.7.2</imagej-matlab.version>
 
 		<!-- ImageJ Maven Plugin - https://github.com/imagej/imagej-maven-plugin -->
 		<imagej-maven-plugin.version>0.6.0</imagej-maven-plugin.version>
@@ -246,7 +246,7 @@
 		<imagej-omero.version>0.4.0</imagej-omero.version>
 
 		<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
-		<imagej-ops.version>0.34.0</imagej-ops.version>
+		<imagej-ops.version>0.35.0</imagej-ops.version>
 
 		<!-- ImageJ Plugins: Commands - https://github.com/imagej/imagej-plugins-commands -->
 		<imagej-plugins-commands.version>0.7.0</imagej-plugins-commands.version>
@@ -255,10 +255,10 @@
 		<imagej-plugins-tools.version>0.3.0</imagej-plugins-tools.version>
 
 		<!-- ImageJ Plugins: Uploader: SSH - https://github.com/imagej/imagej-plugins-uploader-ssh -->
-		<imagej-plugins-uploader-ssh.version>0.3.0</imagej-plugins-uploader-ssh.version>
+		<imagej-plugins-uploader-ssh.version>0.3.1</imagej-plugins-uploader-ssh.version>
 
 		<!-- ImageJ Plugins: Uploader: WebDAV - https://github.com/imagej/imagej-plugins-uploader-webdav -->
-		<imagej-plugins-uploader-webdav.version>0.2.0</imagej-plugins-uploader-webdav.version>
+		<imagej-plugins-uploader-webdav.version>0.2.1</imagej-plugins-uploader-webdav.version>
 
 		<!-- ImageJ Scripting - https://github.com/imagej/imagej-scripting -->
 		<imagej-scripting.version>0.4.0</imagej-scripting.version>
@@ -270,7 +270,7 @@
 		<imagej-ui-swing.version>0.21.1</imagej-ui-swing.version>
 
 		<!-- ImageJ Updater - https://github.com/imagej/imagej-updater -->
-		<imagej-updater.version>0.8.1</imagej-updater.version>
+		<imagej-updater.version>0.8.2</imagej-updater.version>
 
 		<!-- ImageJ Usage - https://github.com/imagej/imagej-usage -->
 		<imagej-usage.version>0.4.0</imagej-usage.version>
