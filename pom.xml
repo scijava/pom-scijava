@@ -216,7 +216,7 @@
 		<imagej.version>2.0.0-rc-56</imagej.version>
 
 		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
-		<imagej1.version>1.51g</imagej1.version>
+		<imagej1.version>1.51h</imagej1.version>
 
 		<!-- ImageJ 1.x patcher - https://github.com/imagej/ij1-patcher -->
 		<ij1-patcher.version>0.12.5</ij1-patcher.version>
@@ -287,7 +287,7 @@
 		<imglib2.version>3.2.1</imglib2.version>
 
 		<!-- ImgLib2 Algorithms - https://github.com/imglib/imglib2-algorithm -->
-		<imglib2-algorithm.version>0.6.1</imglib2-algorithm.version>
+		<imglib2-algorithm.version>0.6.2</imglib2-algorithm.version>
 
 		<!-- ImgLib2 Algorithms FFT - https://github.com/imglib/imglib2-algorithm-fft -->
 		<imglib2-algorithm-fft.version>0.1.2</imglib2-algorithm-fft.version>
