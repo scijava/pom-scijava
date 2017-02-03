@@ -213,7 +213,7 @@
 		<!-- ImageJ - https://github.com/imagej -->
 
 		<!-- ImageJ - https://github.com/imagej/imagej -->
-		<imagej.version>2.0.0-rc-56</imagej.version>
+		<imagej.version>2.0.0-rc-57</imagej.version>
 
 		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
 		<imagej1.version>1.51h</imagej1.version>
@@ -243,7 +243,7 @@
 		<imagej-mesh.version>0.1.0</imagej-mesh.version>
 
 		<!-- ImageJ Notebook - https://github.com/imagej/imagej-notebook -->
-		<imagej-notebook.version>0.1.0</imagej-notebook.version>
+		<imagej-notebook.version>0.2.0</imagej-notebook.version>
 
 		<!-- ImageJ OMERO - https://github.com/imagej/imagej-omero -->
 		<imagej-omero.version>0.4.0</imagej-omero.version>
