@@ -175,7 +175,7 @@
 		<scijava-ui-swing.version>0.9.1</scijava-ui-swing.version>
 
 		<!-- Script Editor - https://github.com/scijava/script-editor -->
-		<script-editor.version>0.1.1</script-editor.version>
+		<script-editor.version>0.1.2</script-editor.version>
 
 		<!-- Scripting: BeanShell - https://github.com/scijava/scripting-beanshell -->
 		<scripting-beanshell.version>0.3.1</scripting-beanshell.version>
