@@ -503,7 +503,7 @@
 		<ome-xml.version>5.3.1</ome-xml.version>
 
 		<!-- Bio-Formats - https://github.com/openmicroscopy/bioformats -->
-		<bio-formats.version>5.3.2</bio-formats.version>
+		<bio-formats.version>5.3.3</bio-formats.version>
 		<bio-formats_plugins.version>${bio-formats.version}</bio-formats_plugins.version>
 		<formats-api.version>${bio-formats.version}</formats-api.version>
 		<formats-bsd.version>${bio-formats.version}</formats-bsd.version>
