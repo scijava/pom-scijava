@@ -205,7 +205,7 @@
 		<scripting-renjin.version>0.2.1</scripting-renjin.version>
 
 		<!-- Scripting: Scala - https://github.com/scijava/scripting-scala -->
-		<scripting-scala.version>0.1.0</scripting-scala.version>
+		<scripting-scala.version>0.2.0</scripting-scala.version>
 
 		<!-- Swing Checkbox Tree - https://github.com/scijava/swing-checkbox-tree -->
 		<swing-checkbox-tree.version>1.0.1</swing-checkbox-tree.version>
