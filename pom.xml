@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>13.3.0-SNAPSHOT</version>
+	<version>14.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -213,7 +213,7 @@
 		<!-- ImageJ - https://github.com/imagej -->
 
 		<!-- ImageJ - https://github.com/imagej/imagej -->
-		<imagej.version>2.0.0-rc-58</imagej.version>
+		<imagej.version>2.0.0-rc-59</imagej.version>
 
 		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
 		<imagej1.version>1.51h</imagej1.version>
@@ -222,7 +222,7 @@
 		<ij1-patcher.version>0.12.5</ij1-patcher.version>
 
 		<!-- ImageJ Common - https://github.com/imagej/imagej-common -->
-		<imagej-common.version>0.24.2</imagej-common.version>
+		<imagej-common.version>0.24.3</imagej-common.version>
 
 		<!-- ImageJ Deprecated - https://github.com/imagej/imagej-deprecated -->
 		<imagej-deprecated.version>0.1.1</imagej-deprecated.version>
@@ -231,7 +231,7 @@
 		<imagej-launcher.version>4.0.5</imagej-launcher.version>
 
 		<!-- ImageJ Legacy - https://github.com/imagej/imagej-legacy -->
-		<imagej-legacy.version>0.23.4</imagej-legacy.version>
+		<imagej-legacy.version>0.23.5</imagej-legacy.version>
 
 		<!-- ImageJ MATLAB - https://github.com/imagej/imagej-matlab -->
 		<imagej-matlab.version>0.7.2</imagej-matlab.version>
@@ -313,7 +313,7 @@
 		<!-- SCIFIO - https://github.com/scifio -->
 
 		<!-- SCIFIO - https://github.com/scifio/scifio -->
-		<scifio.version>0.31.0</scifio.version>
+		<scifio.version>0.31.1</scifio.version>
 
 		<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
 		<scifio-bf-compat.version>2.0.2</scifio-bf-compat.version>
@@ -340,17 +340,17 @@
 
 		<!-- Standard Fiji projects -->
 
-		<AnalyzeSkeleton.version>3.1.1</AnalyzeSkeleton.version>
+		<AnalyzeSkeleton.version>3.1.2</AnalyzeSkeleton.version>
 		<Anisotropic_Diffusion_2D.version>2.0.0</Anisotropic_Diffusion_2D.version>
 		<Archipelago_Plugins.version>0.5.2</Archipelago_Plugins.version>
 		<Arrow.version>2.0.1</Arrow.version>
 		<Auto_Threshold.version>1.16.4</Auto_Threshold.version>
-		<BalloonSegmentation.version>2.0.0</BalloonSegmentation.version>
+		<BalloonSegmentation.version>3.0.0</BalloonSegmentation.version>
 		<Bug_Submitter.version>2.1.0</Bug_Submitter.version>
 		<CPU_Meter.version>2.0.0</CPU_Meter.version>
 		<Calculator_Plus.version>2.0.0</Calculator_Plus.version>
 		<Cell_Counter.version>2.2.1</Cell_Counter.version>
-		<Colocalisation_Analysis.version>2.2.1</Colocalisation_Analysis.version>
+		<Colocalisation_Analysis.version>2.2.2</Colocalisation_Analysis.version>
 		<Color_Histogram.version>2.0.6</Color_Histogram.version>
 		<Color_Inspector_3D.version>2.3.1</Color_Inspector_3D.version>
 		<Colour_Deconvolution.version>3.0.1</Colour_Deconvolution.version>
@@ -393,7 +393,7 @@
 		<M_I_P.version>2.0.0</M_I_P.version>
 		<Manual_Tracking.version>2.1.0</Manual_Tracking.version>
 		<MosaicJ.version>2.0.0</MosaicJ.version>
-		<Multi_Kymograph.version>2.0.0</Multi_Kymograph.version>
+		<Multi_Kymograph.version>3.0.0</Multi_Kymograph.version>
 		<PIV_analyser.version>1.1.1</PIV_analyser.version>
 		<PointPicker.version>2.0.0</PointPicker.version>
 		<QuickPALM.version>1.1.1</QuickPALM.version>
