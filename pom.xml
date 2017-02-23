@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>14.0.0-SNAPSHOT</version>
+	<version>14.0.0</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -90,7 +90,7 @@
 	<scm>
 		<connection>scm:git:git://github.com/scijava/pom-scijava</connection>
 		<developerConnection>scm:git:git@github.com:scijava/pom-scijava</developerConnection>
-		<tag>HEAD</tag>
+		<tag>pom-scijava-14.0.0</tag>
 		<url>https://github.com/scijava/pom-scijava</url>
 	</scm>
 	<issueManagement>
