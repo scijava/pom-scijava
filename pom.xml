@@ -216,7 +216,7 @@
 		<imagej.version>2.0.0-rc-59</imagej.version>
 
 		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
-		<imagej1.version>1.51h</imagej1.version>
+		<imagej1.version>1.51j</imagej1.version>
 
 		<!-- ImageJ 1.x patcher - https://github.com/imagej/ij1-patcher -->
 		<ij1-patcher.version>0.12.5</ij1-patcher.version>
