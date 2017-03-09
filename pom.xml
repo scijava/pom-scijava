@@ -585,7 +585,7 @@
 		<jdom2.version>2.0.6</jdom2.version>
 
 		<!-- Jetty - http://eclipse.org/jetty/ -->
-		<jetty.version>9.3.11.v20160721</jetty.version>
+		<jetty.version>9.4.2.v20170220</jetty.version>
 		<jetty-annotations.version>${jetty.version}</jetty-annotations.version>
 		<jetty-ant.version>${jetty.version}</jetty-ant.version>
 		<jetty-clien.version>${jetty.version}</jetty-clien.version>
