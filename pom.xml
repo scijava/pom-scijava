@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>14.0.1-SNAPSHOT</version>
+	<version>14.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -499,6 +499,9 @@
 
 		<!-- OME Common Java - https://github.com/ome/ome-common-java -->
 		<ome-common.version>5.3.1</ome-common.version>
+
+		<!-- OME POI - https://github.com/ome/ome-poi -->
+		<ome-poi.version>5.3.1</ome-poi.version>
 
 		<!-- OME Model - https://github.com/ome/ome-model -->
 		<ome-xml.version>5.4.0</ome-xml.version>
@@ -1818,6 +1821,13 @@
 				</exclusions>
 			</dependency>
 
+			<!-- OME POI - https://github.com/ome/ome-poi -->
+			<dependency>
+				<groupId>org.openmicroscopy</groupId>
+				<artifactId>ome-poi</artifactId>
+				<version>${ome-poi.version}</version>
+			</dependency>
+
 			<!-- OME Model - https://github.com/ome/ome-model -->
 			<dependency>
 				<groupId>org.openmicroscopy</groupId>
@@ -2614,6 +2624,7 @@
 			</activation>
 			<properties>
 				<ome-common.version>LATEST</ome-common.version>
+				<ome-poi.version>LATEST</ome-poi.version>
 				<ome-xml.version>LATEST</ome-xml.version>
 				<bio-formats.version>LATEST</bio-formats.version>
 			</properties>
