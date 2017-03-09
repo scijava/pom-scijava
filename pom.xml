@@ -2613,6 +2613,8 @@
 				</file>
 			</activation>
 			<properties>
+				<ome-common.version>LATEST</ome-common.version>
+				<ome-xml.version>LATEST</ome-xml.version>
 				<bio-formats.version>LATEST</bio-formats.version>
 			</properties>
 			<repositories>
