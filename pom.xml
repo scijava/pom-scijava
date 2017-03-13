@@ -447,6 +447,7 @@
 		<panorama.version>3.0.1</panorama.version>
 		<register_virtual_stack_slices.version>3.0.1</register_virtual_stack_slices.version>
 		<registration_3d.version>2.0.0</registration_3d.version>
+		<trove4j.version>3.0.3</trove4j.version>
 		<wavelets.version>2.0.0</wavelets.version>
 
 		<!-- External Fiji projects -->
@@ -2574,6 +2575,13 @@
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-simple</artifactId>
 				<version>${slf4j-simple.version}</version>
+			</dependency>
+
+			<!-- Trove - http://trove.starlight-systems.com/ -->
+			<dependency>
+				<groupId>net.sf.trove4j</groupId>
+				<artifactId>trove4j</artifactId>
+				<version>${trove4j.version}</version>
 			</dependency>
 
 			<!-- Weka - http://www.cs.waikato.ac.nz/ml/weka/ -->
