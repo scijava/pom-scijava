@@ -2761,6 +2761,7 @@
 				<imglib2-algorithm.version>LATEST</imglib2-algorithm.version>
 				<imglib2-algorithm-fft.version>LATEST</imglib2-algorithm-fft.version>
 				<imglib2-algorithm-gpl.version>LATEST</imglib2-algorithm-gpl.version>
+				<imglib2-cache.version>LATEST</imglib2-cache.version>
 				<imglib2-ij.version>LATEST</imglib2-ij.version>
 				<imglib2-realtransform.version>LATEST</imglib2-realtransform.version>
 				<imglib2-roi.version>LATEST</imglib2-roi.version>
