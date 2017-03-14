@@ -295,6 +295,9 @@
 		<!-- ImgLib2 Algorithms GPL - https://github.com/imglib/imglib2-algorithm-gpl -->
 		<imglib2-algorithm-gpl.version>0.1.5</imglib2-algorithm-gpl.version>
 
+		<!-- ImgLib2 Cache - https://github.com/imglib/imglib2-cache -->
+		<imglib2-cache.version>1.0.0-beta-1</imglib2-cache.version>
+
 		<!-- ImgLib2 IJ - https://github.com/imglib/imglib2-ij -->
 		<imglib2-ij.version>2.0.0-beta-35</imglib2-ij.version>
 
@@ -1069,6 +1072,13 @@
 				<groupId>net.imglib2</groupId>
 				<artifactId>imglib2-algorithm-gpl</artifactId>
 				<version>${imglib2-algorithm-gpl.version}</version>
+			</dependency>
+
+			<!-- ImgLib2 Cache - https://github.com/imglib/imglib2-cache -->
+			<dependency>
+				<groupId>net.imglib2</groupId>
+				<artifactId>imglib2-cache</artifactId>
+				<version>${imglib2-cache.version}</version>
 			</dependency>
 
 			<!-- ImgLib2 IJ - https://github.com/imglib/imglib2-ij -->
