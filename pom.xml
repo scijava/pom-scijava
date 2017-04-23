@@ -450,6 +450,7 @@
 		<panorama.version>3.0.1</panorama.version>
 		<register_virtual_stack_slices.version>3.0.1</register_virtual_stack_slices.version>
 		<registration_3d.version>2.0.0</registration_3d.version>
+		<trove4j.version>3.0.3</trove4j.version>
 		<wavelets.version>2.0.0</wavelets.version>
 
 		<!-- External Fiji projects -->
