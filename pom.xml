@@ -594,7 +594,7 @@
 		<jetty.version>9.4.2.v20170220</jetty.version>
 		<jetty-annotations.version>${jetty.version}</jetty-annotations.version>
 		<jetty-ant.version>${jetty.version}</jetty-ant.version>
-		<jetty-clien.version>${jetty.version}</jetty-clien.version>
+		<jetty-client.version>${jetty.version}</jetty-client.version>
 		<jetty-continuation.version>${jetty.version}</jetty-continuation.version>
 		<jetty-deploy.version>${jetty.version}</jetty-deploy.version>
 		<jetty-http.version>${jetty.version}</jetty-http.version>
@@ -2264,8 +2264,8 @@
 			</dependency>
 			<dependency>
 				<groupId>org.eclipse.jetty</groupId>
-				<artifactId>jetty-clien</artifactId>
-				<version>${jetty-clien.version}</version>
+				<artifactId>jetty-client</artifactId>
+				<version>${jetty-client.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.eclipse.jetty</groupId>
