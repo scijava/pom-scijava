@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>14.1.0-SNAPSHOT</version>
+	<version>15.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -483,7 +483,7 @@
 		<T2-TreelineGraph.version>1.1.1</T2-TreelineGraph.version>
 		<TrakEM2.version>1.0h</TrakEM2.version>
 		<VectorString.version>2.0.0</VectorString.version>
-		<mpicbg-trakem2.version>1.2.3</mpicbg-trakem2.version>
+		<trakem2-transform.version>1.0.0</trakem2-transform.version>
 
 		<!--
 		BEGIN MANUALLY MANAGED VERSIONS
@@ -1811,8 +1811,8 @@
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
-				<artifactId>mpicbg-trakem2</artifactId>
-				<version>${mpicbg-trakem2.version}</version>
+				<artifactId>trakem2-transform</artifactId>
+				<version>${trakem2-transform.version}</version>
 			</dependency>
 
 			<!-- Open Microscopy Environment - https://github.com/openmicroscopy -->
@@ -3006,7 +3006,7 @@
 				<T2-TreelineGraph.version>LATEST</T2-TreelineGraph.version>
 				<TrakEM2.version>LATEST</TrakEM2.version>
 				<VectorString.version>LATEST</VectorString.version>
-				<mpicbg-trakem2.version>LATEST</mpicbg-trakem2.version>
+				<trakem2-transform.version>LATEST</mtrakem2-transform.version>
 			</properties>
 			<repositories>
 				<repository>
