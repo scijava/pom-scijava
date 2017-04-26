@@ -83,10 +83,6 @@
 		</mailingList>
 	</mailingLists>
 
-	<prerequisites>
-		<maven>${scijava.mvn.version}</maven>
-	</prerequisites>
-
 	<scm>
 		<connection>scm:git:git://github.com/scijava/pom-scijava</connection>
 		<developerConnection>scm:git:git@github.com:scijava/pom-scijava</developerConnection>
