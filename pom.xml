@@ -3006,7 +3006,7 @@
 				<T2-TreelineGraph.version>LATEST</T2-TreelineGraph.version>
 				<TrakEM2.version>LATEST</TrakEM2.version>
 				<VectorString.version>LATEST</VectorString.version>
-				<trakem2-transform.version>LATEST</mtrakem2-transform.version>
+				<trakem2-transform.version>LATEST</trakem2-transform.version>
 			</properties>
 			<repositories>
 				<repository>
