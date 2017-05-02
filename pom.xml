@@ -357,9 +357,7 @@
 		<Correct_3D_Drift.version>1.0.1</Correct_3D_Drift.version>
 		<Descriptor_based_registration.version>2.1.2</Descriptor_based_registration.version>
 		<Dichromacy.version>2.1.1</Dichromacy.version>
-		<Differentials.version>2.0.0</Differentials.version>
 		<Directionality.version>2.0.2</Directionality.version>
-		<Extended_Depth_Field.version>2.0.1</Extended_Depth_Field.version>
 		<FS_Align_TrakEM2.version>2.0.2</FS_Align_TrakEM2.version>
 		<Feature_Detection.version>2.0.2</Feature_Detection.version>
 		<Fiji_3D_Blob_Segmentation.version>3.0.1</Fiji_3D_Blob_Segmentation.version>
@@ -390,10 +388,8 @@
 		<MTrack2.version>2.0.1</MTrack2.version>
 		<M_I_P.version>2.0.1</M_I_P.version>
 		<Manual_Tracking.version>2.1.1</Manual_Tracking.version>
-		<MosaicJ.version>2.0.0</MosaicJ.version>
 		<Multi_Kymograph.version>3.0.1</Multi_Kymograph.version>
 		<PIV_analyser.version>1.1.2</PIV_analyser.version>
-		<PointPicker.version>2.0.0</PointPicker.version>
 		<QuickPALM.version>1.1.2</QuickPALM.version>
 		<RATS.version>2.0.1</RATS.version>
 		<Reconstruct_Reader.version>2.0.3</Reconstruct_Reader.version>
@@ -401,13 +397,10 @@
 		<SPIM_Registration.version>5.0.12</SPIM_Registration.version>
 		<Samples.version>2.0.2</Samples.version>
 		<Series_Labeler.version>2.0.1</Series_Labeler.version>
-		<SheppLogan.version>2.0.0</SheppLogan.version>
 		<Simple_Neurite_Tracer.version>3.1.2</Simple_Neurite_Tracer.version>
 		<Siox_Segmentation.version>1.0.5</Siox_Segmentation.version>
 		<Skeletonize3D.version>2.1.1</Skeletonize3D.version>
-		<Snakuscule.version>2.0.0</Snakuscule.version>
 		<SplineDeformationGenerator.version>2.0.1</SplineDeformationGenerator.version>
-		<StackReg.version>2.0.0</StackReg.version>
 		<Stack_Manipulation.version>2.0.2</Stack_Manipulation.version>
 		<Statistical_Region_Merging.version>2.0.1</Statistical_Region_Merging.version>
 		<Stitching.version>3.1.3</Stitching.version>
@@ -420,8 +413,6 @@
 		<TrackMate.version>3.5.1</TrackMate.version>
 		<Trainable_Segmentation.version>3.2.6</Trainable_Segmentation.version>
 		<TrakEM2_Archipelago.version>2.0.2</TrakEM2_Archipelago.version>
-		<TurboReg.version>2.0.0</TurboReg.version>
-		<UnwarpJ.version>2.0.0</UnwarpJ.version>
 		<VIB-lib.version>2.1.2</VIB-lib.version>
 		<VIB.version>3.0.2</VIB.version>
 		<Vaa3d_Reader.version>2.0.2</Vaa3d_Reader.version>
@@ -435,16 +426,28 @@
 		<blockmatching.version>2.1.2</blockmatching.version>
 		<fiji-compat.version>2.0.2</fiji-compat.version>
 		<fiji-lib.version>2.1.2</fiji-lib.version>
-		<imageware.version>2.0.0</imageware.version>
 		<javac.version>1.6.0.24-ubuntu-fiji2</javac.version>
 		<jep.version>2.4.2</jep.version>
 		<legacy-imglib1.version>1.1.7</legacy-imglib1.version>
 		<level_sets.version>1.0.2</level_sets.version>
-		<mij.version>1.3.6-fiji2</mij.version>
 		<pal-optimization.version>2.0.1</pal-optimization.version>
 		<panorama.version>3.0.2</panorama.version>
 		<register_virtual_stack_slices.version>3.0.2</register_virtual_stack_slices.version>
 		<registration_3d.version>2.0.1</registration_3d.version>
+
+		<!-- Fiji BIG forks - https://github.com/fiji-BIG -->
+
+		<Differentials.version>2.0.0</Differentials.version>
+		<Extended_Depth_Field.version>2.0.1</Extended_Depth_Field.version>
+		<MosaicJ.version>2.0.0</MosaicJ.version>
+		<PointPicker.version>2.0.0</PointPicker.version>
+		<SheppLogan.version>2.0.0</SheppLogan.version>
+		<Snakuscule.version>2.0.0</Snakuscule.version>
+		<StackReg.version>2.0.0</StackReg.version>
+		<TurboReg.version>2.0.0</TurboReg.version>
+		<UnwarpJ.version>2.0.0</UnwarpJ.version>
+		<imageware.version>2.0.0</imageware.version>
+		<mij.version>1.3.6-fiji2</mij.version>
 		<wavelets.version>2.0.0</wavelets.version>
 
 		<!-- External Fiji projects -->
@@ -1270,18 +1273,8 @@
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
-				<artifactId>Differentials_</artifactId>
-				<version>${Differentials.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
 				<artifactId>Directionality_</artifactId>
 				<version>${Directionality.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
-				<artifactId>Extended_Depth_Field</artifactId>
-				<version>${Extended_Depth_Field.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
@@ -1435,11 +1428,6 @@
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
-				<artifactId>MosaicJ_</artifactId>
-				<version>${MosaicJ.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
 				<artifactId>Multi_Kymograph</artifactId>
 				<version>${Multi_Kymograph.version}</version>
 			</dependency>
@@ -1447,11 +1435,6 @@
 				<groupId>sc.fiji</groupId>
 				<artifactId>PIV_analyser</artifactId>
 				<version>${PIV_analyser.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
-				<artifactId>PointPicker_</artifactId>
-				<version>${PointPicker.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
@@ -1490,11 +1473,6 @@
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
-				<artifactId>SheppLogan_</artifactId>
-				<version>${SheppLogan.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
 				<artifactId>Simple_Neurite_Tracer</artifactId>
 				<version>${Simple_Neurite_Tracer.version}</version>
 			</dependency>
@@ -1510,18 +1488,8 @@
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
-				<artifactId>Snakuscule_</artifactId>
-				<version>${Snakuscule.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
 				<artifactId>SplineDeformationGenerator_</artifactId>
 				<version>${SplineDeformationGenerator.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
-				<artifactId>StackReg_</artifactId>
-				<version>${StackReg.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
@@ -1582,16 +1550,6 @@
 				<groupId>sc.fiji</groupId>
 				<artifactId>TrakEM2_Archipelago</artifactId>
 				<version>${TrakEM2_Archipelago.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
-				<artifactId>TurboReg_</artifactId>
-				<version>${TurboReg.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
-				<artifactId>UnwarpJ_</artifactId>
-				<version>${UnwarpJ.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
@@ -1660,11 +1618,6 @@
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
-				<artifactId>imageware</artifactId>
-				<version>${imageware.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
 				<artifactId>javac</artifactId>
 				<version>${javac.version}</version>
 			</dependency>
@@ -1685,11 +1638,6 @@
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
-				<artifactId>mij</artifactId>
-				<version>${mij.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
 				<artifactId>pal-optimization</artifactId>
 				<version>${pal-optimization.version}</version>
 			</dependency>
@@ -1707,6 +1655,64 @@
 				<groupId>sc.fiji</groupId>
 				<artifactId>registration_3d</artifactId>
 				<version>${registration_3d.version}</version>
+			</dependency>
+
+			<!-- Fiji BIG forks - https://github.com/fiji-BIG -->
+
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Differentials_</artifactId>
+				<version>${Differentials.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Extended_Depth_Field</artifactId>
+				<version>${Extended_Depth_Field.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>MosaicJ_</artifactId>
+				<version>${MosaicJ.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>PointPicker_</artifactId>
+				<version>${PointPicker.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>SheppLogan_</artifactId>
+				<version>${SheppLogan.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Snakuscule_</artifactId>
+				<version>${Snakuscule.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>StackReg_</artifactId>
+				<version>${StackReg.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>TurboReg_</artifactId>
+				<version>${TurboReg.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>UnwarpJ_</artifactId>
+				<version>${UnwarpJ.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>imageware</artifactId>
+				<version>${imageware.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>mij</artifactId>
+				<version>${mij.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
@@ -2842,9 +2848,7 @@
 				<Correct_3D_Drift.version>LATEST</Correct_3D_Drift.version>
 				<Descriptor_based_registration.version>LATEST</Descriptor_based_registration.version>
 				<Dichromacy.version>LATEST</Dichromacy.version>
-				<Differentials.version>LATEST</Differentials.version>
 				<Directionality.version>LATEST</Directionality.version>
-				<Extended_Depth_Field.version>LATEST</Extended_Depth_Field.version>
 				<FS_Align_TrakEM2.version>LATEST</FS_Align_TrakEM2.version>
 				<Feature_Detection.version>LATEST</Feature_Detection.version>
 				<Fiji_3D_Blob_Segmentation.version>LATEST</Fiji_3D_Blob_Segmentation.version>
@@ -2875,10 +2879,8 @@
 				<MTrack2.version>LATEST</MTrack2.version>
 				<M_I_P.version>LATEST</M_I_P.version>
 				<Manual_Tracking.version>LATEST</Manual_Tracking.version>
-				<MosaicJ.version>LATEST</MosaicJ.version>
 				<Multi_Kymograph.version>LATEST</Multi_Kymograph.version>
 				<PIV_analyser.version>LATEST</PIV_analyser.version>
-				<PointPicker.version>LATEST</PointPicker.version>
 				<QuickPALM.version>LATEST</QuickPALM.version>
 				<RATS.version>LATEST</RATS.version>
 				<Reconstruct_Reader.version>LATEST</Reconstruct_Reader.version>
@@ -2886,13 +2888,10 @@
 				<SPIM_Registration.version>LATEST</SPIM_Registration.version>
 				<Samples.version>LATEST</Samples.version>
 				<Series_Labeler.version>LATEST</Series_Labeler.version>
-				<SheppLogan.version>LATEST</SheppLogan.version>
 				<Simple_Neurite_Tracer.version>LATEST</Simple_Neurite_Tracer.version>
 				<Siox_Segmentation.version>LATEST</Siox_Segmentation.version>
 				<Skeletonize3D.version>LATEST</Skeletonize3D.version>
-				<Snakuscule.version>LATEST</Snakuscule.version>
 				<SplineDeformationGenerator.version>LATEST</SplineDeformationGenerator.version>
-				<StackReg.version>LATEST</StackReg.version>
 				<Stack_Manipulation.version>LATEST</Stack_Manipulation.version>
 				<Statistical_Region_Merging.version>LATEST</Statistical_Region_Merging.version>
 				<Stitching.version>LATEST</Stitching.version>
@@ -2905,8 +2904,6 @@
 				<TrackMate.version>LATEST</TrackMate.version>
 				<Trainable_Segmentation.version>LATEST</Trainable_Segmentation.version>
 				<TrakEM2_Archipelago.version>LATEST</TrakEM2_Archipelago.version>
-				<TurboReg.version>LATEST</TurboReg.version>
-				<UnwarpJ.version>LATEST</UnwarpJ.version>
 				<VIB-lib.version>LATEST</VIB-lib.version>
 				<VIB.version>LATEST</VIB.version>
 				<Vaa3d_Reader.version>LATEST</Vaa3d_Reader.version>
@@ -2920,16 +2917,27 @@
 				<blockmatching.version>LATEST</blockmatching.version>
 				<fiji-compat.version>LATEST</fiji-compat.version>
 				<fiji-lib.version>LATEST</fiji-lib.version>
-				<imageware.version>LATEST</imageware.version>
 				<javac.version>LATEST</javac.version>
 				<jep.version>LATEST</jep.version>
 				<legacy-imglib1.version>LATEST</legacy-imglib1.version>
 				<level_sets.version>LATEST</level_sets.version>
-				<mij.version>LATEST</mij.version>
 				<pal-optimization.version>LATEST</pal-optimization.version>
 				<panorama.version>LATEST</panorama.version>
 				<register_virtual_stack_slices.version>LATEST</register_virtual_stack_slices.version>
 				<registration_3d.version>LATEST</registration_3d.version>
+
+				<!-- Fiji BIG forks - https://github.com/fiji-BIG -->
+				<Differentials.version>LATEST</Differentials.version>
+				<Extended_Depth_Field.version>LATEST</Extended_Depth_Field.version>
+				<MosaicJ.version>LATEST</MosaicJ.version>
+				<PointPicker.version>LATEST</PointPicker.version>
+				<SheppLogan.version>LATEST</SheppLogan.version>
+				<Snakuscule.version>LATEST</Snakuscule.version>
+				<StackReg.version>LATEST</StackReg.version>
+				<TurboReg.version>LATEST</TurboReg.version>
+				<UnwarpJ.version>LATEST</UnwarpJ.version>
+				<imageware.version>LATEST</imageware.version>
+				<mij.version>LATEST</mij.version>
 				<wavelets.version>LATEST</wavelets.version>
 
 				<!-- External Fiji projects -->
