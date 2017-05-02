@@ -367,7 +367,6 @@
 		<Fiji_Developer.version>2.0.6</Fiji_Developer.version>
 		<Fiji_Package_Maker.version>2.1.1</Fiji_Package_Maker.version>
 		<Fiji_Plugins.version>3.1.1</Fiji_Plugins.version>
-		<Fiji_Updater.version>2.0.0</Fiji_Updater.version>
 		<FlowJ.version>1.29.3</FlowJ.version>
 		<Graph_Cut.version>1.0.2</Graph_Cut.version>
 		<Gray_Morphology.version>2.3.4</Gray_Morphology.version>
@@ -1318,11 +1317,6 @@
 				<groupId>sc.fiji</groupId>
 				<artifactId>Fiji_Plugins</artifactId>
 				<version>${Fiji_Plugins.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
-				<artifactId>Fiji_Updater</artifactId>
-				<version>${Fiji_Updater.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
@@ -2858,7 +2852,6 @@
 				<Fiji_Developer.version>LATEST</Fiji_Developer.version>
 				<Fiji_Package_Maker.version>LATEST</Fiji_Package_Maker.version>
 				<Fiji_Plugins.version>LATEST</Fiji_Plugins.version>
-				<Fiji_Updater.version>LATEST</Fiji_Updater.version>
 				<FlowJ.version>LATEST</FlowJ.version>
 				<Graph_Cut.version>LATEST</Graph_Cut.version>
 				<Gray_Morphology.version>LATEST</Gray_Morphology.version>
