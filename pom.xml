@@ -523,7 +523,7 @@
 		<!-- Third party components -->
 
 		<!-- Batik - https://xmlgraphics.apache.org/batik/ -->
-		<batik.version>1.8</batik.version>
+		<batik.version>1.9</batik.version>
 		<batik-anim.version>${batik.version}</batik-anim.version>
 		<batik-awt-util.version>${batik.version}</batik-awt-util.version>
 		<batik-bridge.version>${batik.version}</batik-bridge.version>
@@ -552,19 +552,19 @@
 		<batik-xml.version>${batik.version}</batik-xml.version>
 
 		<!-- Commons Codec - https://commons.apache.org/proper/commons-codec/ -->
-		<commons-codec.version>1.8</commons-codec.version>
+		<commons-codec.version>1.10</commons-codec.version>
 
 		<!-- Commons Math - https://commons.apache.org/proper/commons-math/ -->
 		<commons-math3.version>3.6.1</commons-math3.version>
 
 		<!-- Gson - https://code.google.com/p/google-gson/ -->
-		<gson.version>2.7</gson.version>
+		<gson.version>2.8.0</gson.version>
 
 		<!-- Guava - https://github.com/google/guava -->
-		<guava.version>19.0</guava.version>
+		<guava.version>21.0</guava.version>
 
 		<!-- iText PDF - https://github.com/itext/itextpdf -->
-		<itextpdf.version>5.1.1</itextpdf.version>
+		<itextpdf.version>5.5.11</itextpdf.version>
 
 		<!-- Java Advanced Imaging - https://java.net/projects/jai-core -->
 		<jai.version>1.1.3</jai.version>
@@ -578,16 +578,16 @@
 		<java3d.version>1.6.0-scijava-2</java3d.version>
 
 		<!-- Javassist - http://www.javassist.org/ -->
-		<javassist.version>3.20.0-GA</javassist.version>
+		<javassist.version>3.22.0-CR1</javassist.version>
 
 		<!-- JCommon - http://www.jfree.org/jcommon/ -->
-		<jcommon.version>1.0.23</jcommon.version>
+		<jcommon.version>1.0.24</jcommon.version>
 
 		<!-- JDOM - http://www.jdom.org/ -->
 		<jdom2.version>2.0.6</jdom2.version>
 
 		<!-- Jetty - http://eclipse.org/jetty/ -->
-		<jetty.version>9.4.2.v20170220</jetty.version>
+		<jetty.version>9.4.4.v20170414</jetty.version>
 		<jetty-annotations.version>${jetty.version}</jetty-annotations.version>
 		<jetty-ant.version>${jetty.version}</jetty-ant.version>
 		<jetty-client.version>${jetty.version}</jetty-client.version>
@@ -627,16 +627,16 @@
 		<jgrapht.version>0.8.3</jgrapht.version>
 
 		<!-- JGraphX - https://github.com/jgraph/jgraphx -->
-		<jgraphx.version>1.10.4.1</jgraphx.version>
+		<jgraphx.version>3.4.1.3</jgraphx.version>
 
 		<!-- JHDF5 - https://wiki-bsse.ethz.ch/label/JHDF5/hdf5 -->
 		<jhdf5.version>14.12.5</jhdf5.version>
 
 		<!-- JNA - https://github.com/twall/jna -->
-		<jna.version>4.2.2</jna.version>
+		<jna.version>4.4.0</jna.version>
 
 		<!-- Joda-Time - http://www.joda.org/joda-time/ -->
-		<joda-time.version>2.9.4</joda-time.version>
+		<joda-time.version>2.9.9</joda-time.version>
 
 		<!-- JOGL - https://jogamp.org/jogl/ -->
 		<jogl.version>2.3.2</jogl.version>
@@ -645,16 +645,16 @@
 		<jpedal.version>2.80b11</jpedal.version>
 
 		<!-- JSch - http://www.jcraft.com/jsch/ -->
-		<jsch.version>0.1.49</jsch.version>
+		<jsch.version>0.1.54</jsch.version>
 
 		<!-- JUnit - http://junit.org/ -->
 		<junit.version>4.12</junit.version>
 
 		<!-- JZlib - http://www.jcraft.com/jzlib/ -->
-		<jzlib.version>1.1.2</jzlib.version>
+		<jzlib.version>1.1.3</jzlib.version>
 
 		<!-- Logback - http://logback.qos.ch/ -->
-		<logback.version>1.1.7</logback.version>
+		<logback.version>1.2.3</logback.version>
 		<logback-classic.version>${logback.version}</logback-classic.version>
 		<logback-core.version>${logback.version}</logback-core.version>
 
@@ -668,13 +668,15 @@
 		<opencsv.version>2.4</opencsv.version>
 
 		<!-- PostgreSQL JDBC Driver - https://jdbc.postgresql.org/ -->
-		<postgresql.version>8.2-507.jdbc3</postgresql.version>
+		<postgresql.version>9.1-901-1.jdbc4</postgresql.version>
 
 		<!-- RSyntaxTextArea - http://bobbylight.github.io/RSyntaxTextArea/ -->
-		<rsyntaxtextarea.version>2.5.8</rsyntaxtextarea.version>
+		<rsyntaxtextarea.version>2.6.1</rsyntaxtextarea.version>
+		<autocomplete.version>${rsyntaxtextarea.version}</autocomplete.version>
+		<languagesupport.version>2.6.0</languagesupport.version>
 
 		<!-- SLF4J - http://slf4j.org/ -->
-		<slf4j.version>1.7.21</slf4j.version>
+		<slf4j.version>1.7.25</slf4j.version>
 		<slf4j-api.version>${slf4j.version}</slf4j-api.version>
 		<slf4j-ext.version>${slf4j.version}</slf4j-ext.version>
 		<slf4j-jcl.version>${slf4j.version}</slf4j-jcl.version>
@@ -2545,12 +2547,12 @@
 			<dependency>
 				<groupId>com.fifesoft</groupId>
 				<artifactId>autocomplete</artifactId>
-				<version>${rsyntaxtextarea.version}</version>
+				<version>${autocomplete.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.fifesoft</groupId>
 				<artifactId>languagesupport</artifactId>
-				<version>${rsyntaxtextarea.version}</version>
+				<version>${languagesupport.version}</version>
 			</dependency>
 
 			<!-- SLF4J - http://slf4j.org/ -->
