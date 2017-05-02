@@ -477,10 +477,10 @@
 
 		<!-- TrakEM2 - https://github.com/trakem2 -->
 
-		<T2-NIT.version>1.1.1</T2-NIT.version>
-		<T2-TreelineGraph.version>1.1.1</T2-TreelineGraph.version>
-		<TrakEM2.version>1.0h</TrakEM2.version>
-		<VectorString.version>2.0.0</VectorString.version>
+		<T2-NIT.version>1.1.2</T2-NIT.version>
+		<T2-TreelineGraph.version>1.1.2</T2-TreelineGraph.version>
+		<TrakEM2.version>1.0i</TrakEM2.version>
+		<VectorString.version>2.0.1</VectorString.version>
 		<trakem2-transform.version>1.0.0</trakem2-transform.version>
 
 		<!--
