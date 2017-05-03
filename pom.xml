@@ -411,7 +411,7 @@
 		<ToAST.version>25.0.2</ToAST.version>
 		<TopoJ.version>2.0.1</TopoJ.version>
 		<TrackMate.version>3.5.1</TrackMate.version>
-		<Trainable_Segmentation.version>3.2.6</Trainable_Segmentation.version>
+		<Trainable_Segmentation.version>3.2.7</Trainable_Segmentation.version>
 		<TrakEM2_Archipelago.version>2.0.2</TrakEM2_Archipelago.version>
 		<VIB-lib.version>2.1.2</VIB-lib.version>
 		<VIB.version>3.0.2</VIB.version>
