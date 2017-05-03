@@ -435,21 +435,6 @@
 		<register_virtual_stack_slices.version>3.0.2</register_virtual_stack_slices.version>
 		<registration_3d.version>2.0.1</registration_3d.version>
 
-		<!-- Fiji BIG forks - https://github.com/fiji-BIG -->
-
-		<Differentials.version>2.0.0</Differentials.version>
-		<Extended_Depth_Field.version>2.0.1</Extended_Depth_Field.version>
-		<MosaicJ.version>2.0.0</MosaicJ.version>
-		<PointPicker.version>2.0.0</PointPicker.version>
-		<SheppLogan.version>2.0.0</SheppLogan.version>
-		<Snakuscule.version>2.0.0</Snakuscule.version>
-		<StackReg.version>2.0.0</StackReg.version>
-		<TurboReg.version>2.0.0</TurboReg.version>
-		<UnwarpJ.version>2.0.0</UnwarpJ.version>
-		<imageware.version>2.0.0</imageware.version>
-		<mij.version>1.3.6-fiji2</mij.version>
-		<wavelets.version>2.0.0</wavelets.version>
-
 		<!-- External Fiji projects -->
 
 		<!-- Sholl Analysis - https://github.com/tferr/ASA -->
@@ -1657,69 +1642,6 @@
 				<version>${registration_3d.version}</version>
 			</dependency>
 
-			<!-- Fiji BIG forks - https://github.com/fiji-BIG -->
-
-			<dependency>
-				<groupId>sc.fiji</groupId>
-				<artifactId>Differentials_</artifactId>
-				<version>${Differentials.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
-				<artifactId>Extended_Depth_Field</artifactId>
-				<version>${Extended_Depth_Field.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
-				<artifactId>MosaicJ_</artifactId>
-				<version>${MosaicJ.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
-				<artifactId>PointPicker_</artifactId>
-				<version>${PointPicker.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
-				<artifactId>SheppLogan_</artifactId>
-				<version>${SheppLogan.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
-				<artifactId>Snakuscule_</artifactId>
-				<version>${Snakuscule.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
-				<artifactId>StackReg_</artifactId>
-				<version>${StackReg.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
-				<artifactId>TurboReg_</artifactId>
-				<version>${TurboReg.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
-				<artifactId>UnwarpJ_</artifactId>
-				<version>${UnwarpJ.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
-				<artifactId>imageware</artifactId>
-				<version>${imageware.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
-				<artifactId>mij</artifactId>
-				<version>${mij.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
-				<artifactId>wavelets</artifactId>
-				<version>${wavelets.version}</version>
-			</dependency>
-
 			<!-- External Fiji projects -->
 
 			<!-- Sholl Analysis - https://github.com/tferr/ASA -->
@@ -2925,20 +2847,6 @@
 				<panorama.version>LATEST</panorama.version>
 				<register_virtual_stack_slices.version>LATEST</register_virtual_stack_slices.version>
 				<registration_3d.version>LATEST</registration_3d.version>
-
-				<!-- Fiji BIG forks - https://github.com/fiji-BIG -->
-				<Differentials.version>LATEST</Differentials.version>
-				<Extended_Depth_Field.version>LATEST</Extended_Depth_Field.version>
-				<MosaicJ.version>LATEST</MosaicJ.version>
-				<PointPicker.version>LATEST</PointPicker.version>
-				<SheppLogan.version>LATEST</SheppLogan.version>
-				<Snakuscule.version>LATEST</Snakuscule.version>
-				<StackReg.version>LATEST</StackReg.version>
-				<TurboReg.version>LATEST</TurboReg.version>
-				<UnwarpJ.version>LATEST</UnwarpJ.version>
-				<imageware.version>LATEST</imageware.version>
-				<mij.version>LATEST</mij.version>
-				<wavelets.version>LATEST</wavelets.version>
 
 				<!-- External Fiji projects -->
 				<Sholl_Analysis.version>LATEST</Sholl_Analysis.version>
