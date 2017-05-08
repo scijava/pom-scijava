@@ -129,13 +129,13 @@
 		<junit-benchmarks.version>0.7.4-scijava</junit-benchmarks.version>
 
 		<!-- MiniMaven - https://github.com/scijava/minimaven -->
-		<minimaven.version>2.2.0</minimaven.version>
+		<minimaven.version>2.2.1</minimaven.version>
 
 		<!-- Native Lib Loader - https://github.com/scijava/native-lib-loader -->
-		<native-lib-loader.version>2.1.4</native-lib-loader.version>
+		<native-lib-loader.version>2.1.5</native-lib-loader.version>
 
 		<!-- Parsington - https://github.com/scijava/parsington -->
-		<parsington.version>1.0.0</parsington.version>
+		<parsington.version>1.0.1</parsington.version>
 
 		<!-- SciJava Cache - https://github.com/scijava/scijava-cache -->
 		<scijava-cache.version>0.1.2</scijava-cache.version>
@@ -144,13 +144,13 @@
 		<scijava-common.version>2.62.1</scijava-common.version>
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
-		<scijava-config.version>2.0.1</scijava-config.version>
+		<scijava-config.version>2.0.2</scijava-config.version>
 
 		<!-- SciJava Java 3D Tools - https://github.com/scijava/scijava-java3d -->
 		<scijava-java3d.version>0.1.0</scijava-java3d.version>
 
 		<!-- SciJava SLF4J Logging - https://github.com/scijava/scijava-log-slf4j -->
-		<scijava-log-slf4j.version>1.0.3</scijava-log-slf4j.version>
+		<scijava-log-slf4j.version>1.0.4</scijava-log-slf4j.version>
 
 		<!-- SciJava Plugins: Commands - https://github.com/scijava/scijava-plugins-commands -->
 		<scijava-plugins-commands.version>0.2.3</scijava-plugins-commands.version>
@@ -204,7 +204,7 @@
 		<scripting-scala.version>0.2.1</scripting-scala.version>
 
 		<!-- Swing Checkbox Tree - https://github.com/scijava/swing-checkbox-tree -->
-		<swing-checkbox-tree.version>1.0.1</swing-checkbox-tree.version>
+		<swing-checkbox-tree.version>1.0.2</swing-checkbox-tree.version>
 
 		<!-- ImageJ - https://github.com/imagej -->
 
