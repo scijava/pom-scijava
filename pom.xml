@@ -426,7 +426,6 @@
 		<blockmatching.version>2.1.2</blockmatching.version>
 		<fiji-compat.version>2.0.2</fiji-compat.version>
 		<fiji-lib.version>2.1.2</fiji-lib.version>
-		<javac.version>1.6.0.24-ubuntu-fiji2</javac.version>
 		<jep.version>2.4.2</jep.version>
 		<legacy-imglib1.version>1.1.7</legacy-imglib1.version>
 		<level_sets.version>1.0.2</level_sets.version>
@@ -1600,11 +1599,6 @@
 				<groupId>sc.fiji</groupId>
 				<artifactId>fiji-lib</artifactId>
 				<version>${fiji-lib.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
-				<artifactId>javac</artifactId>
-				<version>${javac.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.scijava</groupId>
@@ -2839,7 +2833,6 @@
 				<blockmatching.version>LATEST</blockmatching.version>
 				<fiji-compat.version>LATEST</fiji-compat.version>
 				<fiji-lib.version>LATEST</fiji-lib.version>
-				<javac.version>LATEST</javac.version>
 				<jep.version>LATEST</jep.version>
 				<legacy-imglib1.version>LATEST</legacy-imglib1.version>
 				<level_sets.version>LATEST</level_sets.version>
