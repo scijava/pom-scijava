@@ -433,6 +433,7 @@
 		<panorama.version>3.0.2</panorama.version>
 		<register_virtual_stack_slices.version>3.0.2</register_virtual_stack_slices.version>
 		<registration_3d.version>2.0.1</registration_3d.version>
+		<weave_jy2java.version>2.1.0</weave_jy2java.version>
 
 		<!-- External Fiji projects -->
 
@@ -1634,6 +1635,11 @@
 				<groupId>sc.fiji</groupId>
 				<artifactId>registration_3d</artifactId>
 				<version>${registration_3d.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>weave_jy2java</artifactId>
+				<version>${weave_jy2java.version}</version>
 			</dependency>
 
 			<!-- External Fiji projects -->
@@ -2858,6 +2864,7 @@
 				<panorama.version>LATEST</panorama.version>
 				<register_virtual_stack_slices.version>LATEST</register_virtual_stack_slices.version>
 				<registration_3d.version>LATEST</registration_3d.version>
+				<weave_jy2java.version>LATEST</weave_jy2java.version>
 
 				<!-- External Fiji projects -->
 				<Sholl_Analysis.version>LATEST</Sholl_Analysis.version>
