@@ -515,6 +515,7 @@
 		<batik-awt-util.version>${batik.version}</batik-awt-util.version>
 		<batik-bridge.version>${batik.version}</batik-bridge.version>
 		<batik-codec.version>${batik.version}</batik-codec.version>
+		<batik-constants.version>${batik.version}</batik-constants.version>
 		<batik-css.version>${batik.version}</batik-css.version>
 		<batik-dom.version>${batik.version}</batik-dom.version>
 		<batik-ext.version>${batik.version}</batik-ext.version>
@@ -1873,6 +1874,11 @@
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-codec</artifactId>
 				<version>${batik-codec.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-constants</artifactId>
+				<version>${batik-constants.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
