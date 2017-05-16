@@ -275,7 +275,7 @@
 		<imagej-usage.version>0.4.1</imagej-usage.version>
 
 		<!-- Op Finder - https://github.com/imagej/op-finder -->
-		<op-finder.version>0.1.2</op-finder.version>
+		<op-finder.version>0.1.3</op-finder.version>
 
 		<!-- ImgLib2 - https://github.com/imglib -->
 
