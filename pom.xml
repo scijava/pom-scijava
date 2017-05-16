@@ -522,6 +522,7 @@
 		<batik-extension.version>${batik.version}</batik-extension.version>
 		<batik-gui-util.version>${batik.version}</batik-gui-util.version>
 		<batik-gvt.version>${batik.version}</batik-gvt.version>
+		<batik-i18n.version>${batik.version}</batik-i18n.version>
 		<batik-js.version>${batik.version}</batik-js.version>
 		<batik-parser.version>${batik.version}</batik-parser.version>
 		<batik-rasterizer.version>${batik.version}</batik-rasterizer.version>
@@ -1937,6 +1938,11 @@
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-gvt</artifactId>
 				<version>${batik-gvt.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-i18n</artifactId>
+				<version>${batik-i18n.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
