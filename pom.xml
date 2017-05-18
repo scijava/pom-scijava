@@ -131,6 +131,9 @@
 		<!-- MiniMaven - https://github.com/scijava/minimaven -->
 		<minimaven.version>2.2.1</minimaven.version>
 
+		<!-- Mockito - http://site.mockito.org/ -->
+		<mockito.version>2.7.22</mockito.version>
+
 		<!-- Native Lib Loader - https://github.com/scijava/native-lib-loader -->
 		<native-lib-loader.version>2.1.5</native-lib-loader.version>
 
@@ -2556,6 +2559,14 @@
 				<groupId>org.scijava</groupId>
 				<artifactId>junit-benchmarks</artifactId>
 				<version>${junit-benchmarks.version}</version>
+				<scope>test</scope>
+			</dependency>
+
+			<!-- Mockito - http://site.mockito.org/ -->
+			<dependency>
+				<groupId>org.mockito</groupId>
+				<artifactId>mockito-core</artifactId>
+				<version>${mockito.version}</version>
 				<scope>test</scope>
 			</dependency>
 		</dependencies>
