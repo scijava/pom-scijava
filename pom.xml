@@ -340,11 +340,14 @@
 		<!-- Standard Fiji projects -->
 
 		<AnalyzeSkeleton.version>3.1.3</AnalyzeSkeleton.version>
+		<AnalyzeSkeleton_.version>${AnalyzeSkeleton.version}</AnalyzeSkeleton_.version>
 		<Anisotropic_Diffusion_2D.version>2.0.1</Anisotropic_Diffusion_2D.version>
 		<Archipelago_Plugins.version>0.5.3</Archipelago_Plugins.version>
 		<Arrow.version>2.0.2</Arrow.version>
+		<Arrow_.version>${Arrow.version}</Arrow_.version>
 		<Auto_Threshold.version>1.16.5</Auto_Threshold.version>
 		<BalloonSegmentation.version>3.0.1</BalloonSegmentation.version>
+		<BalloonSegmentation_.version>${BalloonSegmentation.version}</BalloonSegmentation_.version>
 		<Bug_Submitter.version>2.1.1</Bug_Submitter.version>
 		<CPU_Meter.version>2.0.1</CPU_Meter.version>
 		<Calculator_Plus.version>2.0.1</Calculator_Plus.version>
@@ -354,10 +357,13 @@
 		<Color_Inspector_3D.version>2.3.2</Color_Inspector_3D.version>
 		<Colour_Deconvolution.version>3.0.2</Colour_Deconvolution.version>
 		<CorrectBleach.version>2.0.2</CorrectBleach.version>
+		<CorrectBleach_.version>${CorrectBleach.version}</CorrectBleach_.version>
 		<Correct_3D_Drift.version>1.0.1</Correct_3D_Drift.version>
 		<Descriptor_based_registration.version>2.1.2</Descriptor_based_registration.version>
 		<Dichromacy.version>2.1.1</Dichromacy.version>
+		<Dichromacy_.version>${Dichromacy.version}</Dichromacy_.version>
 		<Directionality.version>2.0.2</Directionality.version>
+		<Directionality_.version>${Directionality.version}</Directionality_.version>
 		<FS_Align_TrakEM2.version>2.0.2</FS_Align_TrakEM2.version>
 		<Feature_Detection.version>2.0.2</Feature_Detection.version>
 		<Fiji_3D_Blob_Segmentation.version>3.0.1</Fiji_3D_Blob_Segmentation.version>
@@ -366,12 +372,14 @@
 		<Fiji_Package_Maker.version>2.1.1</Fiji_Package_Maker.version>
 		<Fiji_Plugins.version>3.1.1</Fiji_Plugins.version>
 		<FlowJ.version>1.29.3</FlowJ.version>
+		<FlowJ_.version>${FlowJ.version}</FlowJ_.version>
 		<Graph_Cut.version>1.0.2</Graph_Cut.version>
 		<Gray_Morphology.version>2.3.4</Gray_Morphology.version>
 		<H5J_Loader_Plugin.version>1.0.6</H5J_Loader_Plugin.version>
 		<Helmholtz_Analysis.version>2.0.2</Helmholtz_Analysis.version>
 		<IJ_Robot.version>2.0.1</IJ_Robot.version>
 		<IO.version>3.0.3</IO.version>
+		<IO_.version>${IO.version}</IO_.version>
 		<ImageJ_3D_Objects_Counter.version>2.0.1</ImageJ_3D_Objects_Counter.version>
 		<ImageJ_3D_Viewer.version>4.0.2</ImageJ_3D_Viewer.version>
 		<Image_5D.version>2.0.2</Image_5D.version>
@@ -385,52 +393,71 @@
 		<Lasso_and_Blow_Tool.version>2.0.2</Lasso_and_Blow_Tool.version>
 		<Linear_Kuwahara.version>2.0.1</Linear_Kuwahara.version>
 		<LocalThickness.version>4.0.2</LocalThickness.version>
+		<LocalThickness_.version>${LocalThickness.version}</LocalThickness_.version>
 		<MTrack2.version>2.0.1</MTrack2.version>
+		<MTrack2_.version>${MTrack2.version}</MTrack2_.version>
 		<M_I_P.version>2.0.1</M_I_P.version>
 		<Manual_Tracking.version>2.1.1</Manual_Tracking.version>
+		<MorphoLibJ_.version>${MorphoLibJ.version}</MorphoLibJ_.version>
 		<Multi_Kymograph.version>3.0.1</Multi_Kymograph.version>
 		<PIV_analyser.version>1.1.2</PIV_analyser.version>
 		<QuickPALM.version>1.1.2</QuickPALM.version>
+		<QuickPALM_.version>${QuickPALM.version}</QuickPALM_.version>
 		<RATS.version>2.0.1</RATS.version>
+		<RATS_.version>${RATS.version}</RATS_.version>
 		<Reconstruct_Reader.version>2.0.3</Reconstruct_Reader.version>
 		<SPIM_Opener.version>2.0.2</SPIM_Opener.version>
 		<SPIM_Registration.version>5.0.13</SPIM_Registration.version>
 		<Samples.version>2.0.2</Samples.version>
+		<Samples_.version>${Samples.version}</Samples_.version>
 		<Series_Labeler.version>2.0.1</Series_Labeler.version>
 		<Simple_Neurite_Tracer.version>3.1.3</Simple_Neurite_Tracer.version>
 		<Siox_Segmentation.version>1.0.5</Siox_Segmentation.version>
 		<Skeletonize3D.version>2.1.1</Skeletonize3D.version>
+		<Skeletonize3D_.version>${Skeletonize3D.version}</Skeletonize3D_.version>
 		<SplineDeformationGenerator.version>2.0.1</SplineDeformationGenerator.version>
+		<SplineDeformationGenerator_.version>${SplineDeformationGenerator.version}</SplineDeformationGenerator_.version>
 		<Stack_Manipulation.version>2.0.2</Stack_Manipulation.version>
 		<Statistical_Region_Merging.version>2.0.1</Statistical_Region_Merging.version>
 		<Stitching.version>3.1.3</Stitching.version>
+		<Stitching_.version>${Stitching.version}</Stitching_.version>
 		<Sync_Win.version>1.7-fiji4</Sync_Win.version>
 		<Thread_Killer.version>2.0.1</Thread_Killer.version>
 		<Time_Lapse.version>2.1.0</Time_Lapse.version>
 		<Time_Stamper.version>2.0.1</Time_Stamper.version>
 		<ToAST.version>25.0.2</ToAST.version>
+		<ToAST_.version>${ToAST.version}</ToAST_.version>
 		<TopoJ.version>2.0.1</TopoJ.version>
+		<TopoJ_.version>${TopoJ.version}</TopoJ_.version>
 		<TrackMate.version>3.5.3</TrackMate.version>
+		<TrackMate_.version>${TrackMate.version}</TrackMate_.version>
 		<Trainable_Segmentation.version>3.2.10</Trainable_Segmentation.version>
+		<TrakEM2_.version>${TrakEM2.version}</TrakEM2_.version>
 		<TrakEM2_Archipelago.version>2.0.2</TrakEM2_Archipelago.version>
 		<VIB-lib.version>2.1.2</VIB-lib.version>
 		<VIB.version>3.0.2</VIB.version>
+		<VIB_.version>${VIB.version}</VIB_.version>
 		<Vaa3d_Reader.version>2.0.2</Vaa3d_Reader.version>
 		<Vaa3d_Writer.version>1.0.2</Vaa3d_Writer.version>
 		<Video_Editing.version>2.0.1</Video_Editing.version>
 		<View5D.version>1.3.2</View5D.version>
+		<View5D_.version>${View5D.version}</View5D_.version>
 		<Volume_Calculator.version>2.0.2</Volume_Calculator.version>
 		<Volume_Viewer.version>2.01.2</Volume_Viewer.version>
 		<bUnwarpJ.version>2.6.6</bUnwarpJ.version>
+		<bUnwarpJ_.version>${bUnwarpJ.version}</bUnwarpJ_.version>
 		<bij.version>0.1.1</bij.version>
 		<blockmatching.version>2.1.2</blockmatching.version>
+		<blockmatching_.version>${blockmatching.version}</blockmatching_.version>
 		<fiji-compat.version>2.0.3</fiji-compat.version>
 		<fiji-lib.version>2.1.2</fiji-lib.version>
 		<jep.version>2.4.2</jep.version>
 		<legacy-imglib1.version>1.1.7</legacy-imglib1.version>
 		<level_sets.version>1.0.2</level_sets.version>
+		<mpicbg_.version>${mpicbg.version}</mpicbg_.version>
 		<pal-optimization.version>2.0.1</pal-optimization.version>
 		<panorama.version>3.0.2</panorama.version>
+		<panorama_.version>${panorama.version}</panorama_.version>
 		<register_virtual_stack_slices.version>3.0.2</register_virtual_stack_slices.version>
 		<registration_3d.version>2.0.1</registration_3d.version>
 		<weave_jy2java.version>2.1.0</weave_jy2java.version>
@@ -445,6 +472,7 @@
 
 		<!-- BigWarp - https://github.com/saalfeldlab/bigwarp -->
 		<bigwarp.version>2.1.5</bigwarp.version>
+		<bigwarp_fiji.version>${bigwarp.version}</bigwarp_fiji.version>
 
 		<!-- TrakEM2 TPS - https://github.com/saalfeldlab/trakem2-tps -->
 		<trakem2_tps.version>1.1.2</trakem2_tps.version>
@@ -503,6 +531,7 @@
 
 		<!-- MPI-CBG - https://github.com/axtimwalde/mpicbg -->
 		<mpicbg.version>1.1.1</mpicbg.version>
+		<mpicbg_.version>${mpicbg.version}</mpicbg_.version>
 
 		<!-- MorphoLibJ - https://github.com/ijpb/MorphoLibJ -->
 		<MorphoLibJ.version>1.3.2</MorphoLibJ.version>
@@ -564,6 +593,9 @@
 
 		<!-- Java 3D - https://github.com/scijava/java3d-core -->
 		<java3d.version>1.6.0-scijava-2</java3d.version>
+		<j3dcore.version>${java3d.version}</j3dcore.version>
+		<j3dutils.version>${java3d.version}</j3dutils.version>
+		<vecmath.version>${java3d.version}</vecmath.version>
 
 		<!-- Javassist - http://www.javassist.org/ -->
 		<javassist.version>3.22.0-CR1</javassist.version>
@@ -628,9 +660,14 @@
 
 		<!-- JOGL - https://jogamp.org/jogl/ -->
 		<jogl.version>2.3.2</jogl.version>
+		<gluegen-rt-main.version>${jogl.version}</gluegen-rt-main.version>
+		<joal-main.version>${jogl.version}</joal-main.version>
+		<jocl-main.version>${jogl.version}</jocl-main.version>
+		<jogl-all-main.version>${jogl.version}</jogl-all-main.version>
 
 		<!-- JPedal - http://jpedal.org/ (defunct) -->
 		<jpedal.version>2.80b11</jpedal.version>
+		<jpedalSTD.version>${jpedal.version}</jpedalSTD.version>
 
 		<!-- JSch - http://www.jcraft.com/jsch/ -->
 		<jsch.version>0.1.54</jsch.version>
@@ -654,6 +691,7 @@
 
 		<!-- Mockito - http://site.mockito.org/ -->
 		<mockito.version>2.7.22</mockito.version>
+		<mockito-core.version>${mockito.version}</mockito-core.version>
 
 		<!-- OpenCSV - http://opencsv.sourceforge.net/ -->
 		<opencsv.version>2.4</opencsv.version>
@@ -680,6 +718,7 @@
 
 		<!-- Weka - http://www.cs.waikato.ac.nz/ml/weka/ -->
 		<weka.version>3.9.1</weka.version>
+		<weka-dev.version>${weka.version}</weka-dev.version>
 	</properties>
 
 	<dependencyManagement>
@@ -1173,7 +1212,7 @@
 			<dependency>
 				<groupId>sc.fiji</groupId>
 				<artifactId>AnalyzeSkeleton_</artifactId>
-				<version>${AnalyzeSkeleton.version}</version>
+				<version>${AnalyzeSkeleton_.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
@@ -1188,7 +1227,7 @@
 			<dependency>
 				<groupId>sc.fiji</groupId>
 				<artifactId>Arrow_</artifactId>
-				<version>${Arrow.version}</version>
+				<version>${Arrow_.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
@@ -1198,7 +1237,7 @@
 			<dependency>
 				<groupId>sc.fiji</groupId>
 				<artifactId>BalloonSegmentation_</artifactId>
-				<version>${BalloonSegmentation.version}</version>
+				<version>${BalloonSegmentation_.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
@@ -1243,7 +1282,7 @@
 			<dependency>
 				<groupId>sc.fiji</groupId>
 				<artifactId>CorrectBleach_</artifactId>
-				<version>${CorrectBleach.version}</version>
+				<version>${CorrectBleach_.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
@@ -1258,12 +1297,12 @@
 			<dependency>
 				<groupId>sc.fiji</groupId>
 				<artifactId>Dichromacy_</artifactId>
-				<version>${Dichromacy.version}</version>
+				<version>${Dichromacy_.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
 				<artifactId>Directionality_</artifactId>
-				<version>${Directionality.version}</version>
+				<version>${Directionality_.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
@@ -1303,7 +1342,7 @@
 			<dependency>
 				<groupId>sc.fiji</groupId>
 				<artifactId>FlowJ_</artifactId>
-				<version>${FlowJ.version}</version>
+				<version>${FlowJ_.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
@@ -1333,7 +1372,7 @@
 			<dependency>
 				<groupId>sc.fiji</groupId>
 				<artifactId>IO_</artifactId>
-				<version>${IO.version}</version>
+				<version>${IO_.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
@@ -1398,12 +1437,12 @@
 			<dependency>
 				<groupId>sc.fiji</groupId>
 				<artifactId>LocalThickness_</artifactId>
-				<version>${LocalThickness.version}</version>
+				<version>${LocalThickness_.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
 				<artifactId>MTrack2_</artifactId>
-				<version>${MTrack2.version}</version>
+				<version>${MTrack2_.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
@@ -1428,12 +1467,12 @@
 			<dependency>
 				<groupId>sc.fiji</groupId>
 				<artifactId>QuickPALM_</artifactId>
-				<version>${QuickPALM.version}</version>
+				<version>${QuickPALM_.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
 				<artifactId>RATS_</artifactId>
-				<version>${RATS.version}</version>
+				<version>${RATS_.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
@@ -1453,7 +1492,7 @@
 			<dependency>
 				<groupId>sc.fiji</groupId>
 				<artifactId>Samples_</artifactId>
-				<version>${Samples.version}</version>
+				<version>${Samples_.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
@@ -1473,12 +1512,12 @@
 			<dependency>
 				<groupId>sc.fiji</groupId>
 				<artifactId>Skeletonize3D_</artifactId>
-				<version>${Skeletonize3D.version}</version>
+				<version>${Skeletonize3D_.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
 				<artifactId>SplineDeformationGenerator_</artifactId>
-				<version>${SplineDeformationGenerator.version}</version>
+				<version>${SplineDeformationGenerator_.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
@@ -1493,7 +1532,7 @@
 			<dependency>
 				<groupId>sc.fiji</groupId>
 				<artifactId>Stitching_</artifactId>
-				<version>${Stitching.version}</version>
+				<version>${Stitching_.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
@@ -1518,17 +1557,17 @@
 			<dependency>
 				<groupId>sc.fiji</groupId>
 				<artifactId>ToAST_</artifactId>
-				<version>${ToAST.version}</version>
+				<version>${ToAST_.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
 				<artifactId>TopoJ_</artifactId>
-				<version>${TopoJ.version}</version>
+				<version>${TopoJ_.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
 				<artifactId>TrackMate_</artifactId>
-				<version>${TrackMate.version}</version>
+				<version>${TrackMate_.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
@@ -1548,7 +1587,7 @@
 			<dependency>
 				<groupId>sc.fiji</groupId>
 				<artifactId>VIB_</artifactId>
-				<version>${VIB.version}</version>
+				<version>${VIB_.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
@@ -1568,7 +1607,7 @@
 			<dependency>
 				<groupId>sc.fiji</groupId>
 				<artifactId>View5D_</artifactId>
-				<version>${View5D.version}</version>
+				<version>${View5D_.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
@@ -1583,7 +1622,7 @@
 			<dependency>
 				<groupId>sc.fiji</groupId>
 				<artifactId>bUnwarpJ_</artifactId>
-				<version>${bUnwarpJ.version}</version>
+				<version>${bUnwarpJ_.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
@@ -1593,7 +1632,7 @@
 			<dependency>
 				<groupId>sc.fiji</groupId>
 				<artifactId>blockmatching_</artifactId>
-				<version>${blockmatching.version}</version>
+				<version>${blockmatching_.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
@@ -1628,7 +1667,7 @@
 			<dependency>
 				<groupId>sc.fiji</groupId>
 				<artifactId>panorama_</artifactId>
-				<version>${panorama.version}</version>
+				<version>${panorama_.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
@@ -1666,7 +1705,7 @@
 			<dependency>
 				<groupId>sc.fiji</groupId>
 				<artifactId>bigwarp_fiji</artifactId>
-				<version>${bigwarp.version}</version>
+				<version>${bigwarp_fiji.version}</version>
 			</dependency>
 
 			<!-- TrakEM2 TPS - https://github.com/saalfeldlab/trakem2-tps -->
@@ -1726,7 +1765,7 @@
 			<dependency>
 				<groupId>sc.fiji</groupId>
 				<artifactId>TrakEM2_</artifactId>
-				<version>${TrakEM2.version}</version>
+				<version>${TrakEM2_.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
@@ -1829,14 +1868,14 @@
 			<dependency>
 				<groupId>mpicbg</groupId>
 				<artifactId>mpicbg_</artifactId>
-				<version>${mpicbg.version}</version>
+				<version>${mpicbg_.version}</version>
 			</dependency>
 
 			<!-- MorphoLibJ - https://github.com/ijpb/MorphoLibJ -->
 			<dependency>
 				<groupId>fr.inra.ijpb</groupId>
 				<artifactId>MorphoLibJ_</artifactId>
-				<version>${MorphoLibJ.version}</version>
+				<version>${MorphoLibJ_.version}</version>
 			</dependency>
 
 			<!-- Third party components -->
@@ -2140,17 +2179,17 @@
 			<dependency>
 				<groupId>org.scijava</groupId>
 				<artifactId>j3dcore</artifactId>
-				<version>${java3d.version}</version>
+				<version>${j3dcore.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.scijava</groupId>
 				<artifactId>j3dutils</artifactId>
-				<version>${java3d.version}</version>
+				<version>${j3dutils.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.scijava</groupId>
 				<artifactId>vecmath</artifactId>
-				<version>${java3d.version}</version>
+				<version>${vecmath.version}</version>
 			</dependency>
 
 			<!-- Javassist - http://www.javassist.org/ -->
@@ -2383,29 +2422,29 @@
 			<dependency>
 				<groupId>org.jogamp.gluegen</groupId>
 				<artifactId>gluegen-rt-main</artifactId>
-				<version>${jogl.version}</version>
+				<version>${gluegen-rt-main.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jogamp.joal</groupId>
 				<artifactId>joal-main</artifactId>
-				<version>${jogl.version}</version>
+				<version>${joal-main.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jogamp.jocl</groupId>
 				<artifactId>jocl-main</artifactId>
-				<version>${jogl.version}</version>
+				<version>${jocl-main.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jogamp.jogl</groupId>
 				<artifactId>jogl-all-main</artifactId>
-				<version>${jogl.version}</version>
+				<version>${jogl-all-main.version}</version>
 			</dependency>
 
 			<!-- JPedal - http://jpedal.org/ (defunct) -->
 			<dependency>
 				<groupId>org.jpedal</groupId>
 				<artifactId>jpedalSTD</artifactId>
-				<version>${jpedal.version}</version>
+				<version>${jpedalSTD.version}</version>
 			</dependency>
 
 			<!-- JSch - http://www.jcraft.com/jsch/ -->
@@ -2523,7 +2562,7 @@
 			<dependency>
 				<groupId>nz.ac.waikato.cms.weka</groupId>
 				<artifactId>weka-dev</artifactId>
-				<version>${weka.version}</version>
+				<version>${weka-dev.version}</version>
 				<exclusions>
 					<exclusion>
 						<groupId>com.github.fommil.netlib</groupId>
@@ -2566,7 +2605,7 @@
 			<dependency>
 				<groupId>org.mockito</groupId>
 				<artifactId>mockito-core</artifactId>
-				<version>${mockito.version}</version>
+				<version>${mockito-core.version}</version>
 				<scope>test</scope>
 			</dependency>
 		</dependencies>
