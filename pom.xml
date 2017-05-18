@@ -131,9 +131,6 @@
 		<!-- MiniMaven - https://github.com/scijava/minimaven -->
 		<minimaven.version>2.2.1</minimaven.version>
 
-		<!-- Mockito - http://site.mockito.org/ -->
-		<mockito.version>2.7.22</mockito.version>
-
 		<!-- Native Lib Loader - https://github.com/scijava/native-lib-loader -->
 		<native-lib-loader.version>2.1.5</native-lib-loader.version>
 
@@ -654,6 +651,9 @@
 
 		<!-- Mines JTK - https://github.com/dhale/jtk -->
 		<mines-jtk.version>20151125</mines-jtk.version>
+
+		<!-- Mockito - http://site.mockito.org/ -->
+		<mockito.version>2.7.22</mockito.version>
 
 		<!-- OpenCSV - http://opencsv.sourceforge.net/ -->
 		<opencsv.version>2.4</opencsv.version>
