@@ -571,6 +571,9 @@
 		<!-- Commons Codec - https://commons.apache.org/proper/commons-codec/ -->
 		<commons-codec.version>1.10</commons-codec.version>
 
+		<!-- Commons Lang - https://commons.apache.org/proper/commons-lang/ -->
+		<commons-lang3.version>3.5</commons-lang3.version>
+
 		<!-- Commons Math - https://commons.apache.org/proper/commons-math/ -->
 		<commons-math3.version>3.6.1</commons-math3.version>
 
@@ -2126,6 +2129,13 @@
 				<groupId>commons-codec</groupId>
 				<artifactId>commons-codec</artifactId>
 				<version>${commons-codec.version}</version>
+			</dependency>
+
+			<!-- Commons Lang - https://commons.apache.org/proper/commons-lang/ -->
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>${commons-lang3.version}</version>
 			</dependency>
 
 			<!-- Commons Math - https://commons.apache.org/proper/commons-math/ -->
