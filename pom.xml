@@ -488,7 +488,7 @@
 		<bigdataviewer-core.version>4.1.0</bigdataviewer-core.version>
 		<bigdataviewer-server.version>2.1.0</bigdataviewer-server.version>
 		<bigdataviewer-vistools.version>1.0.0-beta-5</bigdataviewer-vistools.version>
-		<bigdataviewer_fiji.version>3.0.0</bigdataviewer_fiji.version>
+		<bigdataviewer_fiji.version>3.0.1</bigdataviewer_fiji.version>
 		<spim_data.version>2.2.0</spim_data.version>
 
 		<!-- TrakEM2 - https://github.com/trakem2 -->
