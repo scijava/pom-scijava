@@ -286,7 +286,7 @@
 		<imglib2.version>4.2.1</imglib2.version>
 
 		<!-- ImgLib2 Algorithms - https://github.com/imglib/imglib2-algorithm -->
-		<imglib2-algorithm.version>0.7.0</imglib2-algorithm.version>
+		<imglib2-algorithm.version>0.8.0</imglib2-algorithm.version>
 
 		<!-- ImgLib2 Algorithms FFT - https://github.com/imglib/imglib2-algorithm-fft -->
 		<imglib2-algorithm-fft.version>0.1.4</imglib2-algorithm-fft.version>
@@ -295,7 +295,7 @@
 		<imglib2-algorithm-gpl.version>0.2.1</imglib2-algorithm-gpl.version>
 
 		<!-- ImgLib2 Cache - https://github.com/imglib/imglib2-cache -->
-		<imglib2-cache.version>1.0.0-beta-4</imglib2-cache.version>
+		<imglib2-cache.version>1.0.0-beta-5</imglib2-cache.version>
 
 		<!-- ImgLib2 IJ - https://github.com/imglib/imglib2-ij -->
 		<imglib2-ij.version>2.0.0-beta-37</imglib2-ij.version>
@@ -434,7 +434,7 @@
 		<TopoJ_.version>${TopoJ.version}</TopoJ_.version>
 		<TrackMate.version>3.5.3</TrackMate.version>
 		<TrackMate_.version>${TrackMate.version}</TrackMate_.version>
-		<Trainable_Segmentation.version>3.2.10</Trainable_Segmentation.version>
+		<Trainable_Segmentation.version>3.2.11</Trainable_Segmentation.version>
 		<TrakEM2_.version>${TrakEM2.version}</TrakEM2_.version>
 		<TrakEM2_Archipelago.version>2.0.2</TrakEM2_Archipelago.version>
 		<VIB-lib.version>2.1.2</VIB-lib.version>
@@ -447,7 +447,7 @@
 		<View5D_.version>${View5D.version}</View5D_.version>
 		<Volume_Calculator.version>2.0.2</Volume_Calculator.version>
 		<Volume_Viewer.version>2.01.2</Volume_Viewer.version>
-		<bUnwarpJ.version>2.6.6</bUnwarpJ.version>
+		<bUnwarpJ.version>2.6.8</bUnwarpJ.version>
 		<bUnwarpJ_.version>${bUnwarpJ.version}</bUnwarpJ_.version>
 		<bij.version>0.1.1</bij.version>
 		<blockmatching.version>2.1.2</blockmatching.version>
@@ -485,9 +485,9 @@
 
 		<!-- BigDataViewer - https://github.com/bigdataviewer -->
 
-		<bigdataviewer-core.version>4.0.1</bigdataviewer-core.version>
+		<bigdataviewer-core.version>4.1.0</bigdataviewer-core.version>
 		<bigdataviewer-server.version>2.1.0</bigdataviewer-server.version>
-		<bigdataviewer-vistools.version>1.0.0-beta-4</bigdataviewer-vistools.version>
+		<bigdataviewer-vistools.version>1.0.0-beta-5</bigdataviewer-vistools.version>
 		<bigdataviewer_fiji.version>3.0.0</bigdataviewer_fiji.version>
 		<spim_data.version>2.2.0</spim_data.version>
 
