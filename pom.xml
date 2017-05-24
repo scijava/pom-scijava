@@ -2589,6 +2589,10 @@
 						<artifactId>all</artifactId>
 					</exclusion>
 					<exclusion>
+						<groupId>com.googlecode.netlib-java</groupId>
+						<artifactId>netlib-java</artifactId>
+					</exclusion>
+					<exclusion>
 						<groupId>nz.ac.waikato.cms.weka.thirdparty</groupId>
 						<artifactId>java-cup-11b</artifactId>
 					</exclusion>
@@ -2597,8 +2601,8 @@
 						<artifactId>java-cup-11b-runtime</artifactId>
 					</exclusion>
 					<exclusion>
-						<groupId>com.googlecode.netlib-java</groupId>
-						<artifactId>netlib-java</artifactId>
+						<groupId>net.sourceforge.f2j</groupId>
+						<artifactId>arpack_combined_all</artifactId>
 					</exclusion>
 				</exclusions>
 			</dependency>
