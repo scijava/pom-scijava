@@ -263,7 +263,7 @@
 		<imagej-plugins-uploader-webdav.version>0.2.2</imagej-plugins-uploader-webdav.version>
 
 		<!-- ImageJ Scripting - https://github.com/imagej/imagej-scripting -->
-		<imagej-scripting.version>0.5.3</imagej-scripting.version>
+		<imagej-scripting.version>0.6.0</imagej-scripting.version>
 
 		<!-- ImageJ UI: AWT - https://github.com/imagej/imagej-ui-awt -->
 		<imagej-ui-awt.version>0.3.1</imagej-ui-awt.version>
