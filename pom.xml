@@ -455,7 +455,7 @@
 		<fiji-compat.version>2.0.3</fiji-compat.version>
 		<fiji-lib.version>2.1.2</fiji-lib.version>
 		<jep.version>2.4.2</jep.version>
-		<legacy-imglib1.version>1.1.7</legacy-imglib1.version>
+		<legacy-imglib1.version>1.1.8</legacy-imglib1.version>
 		<level_sets.version>1.0.2</level_sets.version>
 		<mpicbg_.version>${mpicbg.version}</mpicbg_.version>
 		<pal-optimization.version>2.0.1</pal-optimization.version>
