@@ -461,7 +461,7 @@
 		<pal-optimization.version>2.0.1</pal-optimization.version>
 		<panorama.version>3.0.2</panorama.version>
 		<panorama_.version>${panorama.version}</panorama_.version>
-		<register_virtual_stack_slices.version>3.0.2</register_virtual_stack_slices.version>
+		<register_virtual_stack_slices.version>3.0.3</register_virtual_stack_slices.version>
 		<registration_3d.version>2.0.1</registration_3d.version>
 		<weave_jy2java.version>2.1.0</weave_jy2java.version>
 
