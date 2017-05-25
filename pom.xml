@@ -700,7 +700,7 @@
 		<mockito-core.version>${mockito.version}</mockito-core.version>
 
 		<!-- OpenCSV - http://opencsv.sourceforge.net/ -->
-		<opencsv.version>2.4</opencsv.version>
+		<opencsv.version>3.9</opencsv.version>
 
 		<!-- PostgreSQL JDBC Driver - https://jdbc.postgresql.org/ -->
 		<postgresql.version>9.1-901-1.jdbc4</postgresql.version>
@@ -2510,7 +2510,7 @@
 
 			<!-- OpenCSV - http://opencsv.sourceforge.net/ -->
 			<dependency>
-				<groupId>au.com.bytecode</groupId>
+				<groupId>com.opencsv</groupId>
 				<artifactId>opencsv</artifactId>
 				<version>${opencsv.version}</version>
 			</dependency>
