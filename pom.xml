@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>16.0.1-SNAPSHOT</version>
+	<version>16.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -127,6 +127,9 @@
 
 		<!-- JUnit Benchmarks - https://github.com/scijava/junit-benchmarks -->
 		<junit-benchmarks.version>0.7.4-scijava</junit-benchmarks.version>
+
+		<!-- Jython Shaded - https://github.com/scijava/jython-shaded -->
+		<jython-shaded.version>2.7.0</jython-shaded.version>
 
 		<!-- MiniMaven - https://github.com/scijava/minimaven -->
 		<minimaven.version>2.2.1</minimaven.version>
@@ -730,6 +733,13 @@
 	<dependencyManagement>
 		<dependencies>
 			<!-- SciJava - https://github.com/scijava -->
+
+			<!-- Jython Shaded - https://github.com/scijava/jython-shaded -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>jython-shaded</artifactId>
+				<version>${jython-shaded.version}</version>
+			</dependency>
 
 			<!-- MiniMaven - https://github.com/scijava/minimaven -->
 			<dependency>
@@ -2679,6 +2689,7 @@
 				</file>
 			</activation>
 			<properties>
+				<jython-shaded.version>LATEST</jython-shaded.version>
 				<minimaven.version>LATEST</minimaven.version>
 				<native-lib-loader.version>LATEST</native-lib-loader.version>
 				<parsington.version>LATEST</parsington.version>
