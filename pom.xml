@@ -348,7 +348,7 @@
 		<AnalyzeSkeleton.version>3.1.3</AnalyzeSkeleton.version>
 		<AnalyzeSkeleton_.version>${AnalyzeSkeleton.version}</AnalyzeSkeleton_.version>
 		<Anisotropic_Diffusion_2D.version>2.0.1</Anisotropic_Diffusion_2D.version>
-		<Archipelago_Plugins.version>0.5.3</Archipelago_Plugins.version>
+		<Archipelago_Plugins.version>0.5.4</Archipelago_Plugins.version>
 		<Arrow.version>2.0.2</Arrow.version>
 		<Arrow_.version>${Arrow.version}</Arrow_.version>
 		<Auto_Threshold.version>1.16.5</Auto_Threshold.version>
@@ -437,7 +437,7 @@
 		<TopoJ_.version>${TopoJ.version}</TopoJ_.version>
 		<TrackMate.version>3.5.3</TrackMate.version>
 		<TrackMate_.version>${TrackMate.version}</TrackMate_.version>
-		<Trainable_Segmentation.version>3.2.11</Trainable_Segmentation.version>
+		<Trainable_Segmentation.version>3.2.12</Trainable_Segmentation.version>
 		<TrakEM2_.version>${TrakEM2.version}</TrakEM2_.version>
 		<TrakEM2_Archipelago.version>2.0.2</TrakEM2_Archipelago.version>
 		<VIB-lib.version>2.1.2</VIB-lib.version>
