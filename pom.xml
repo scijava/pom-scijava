@@ -474,7 +474,7 @@
 		<jitk-tps.version>2.1.1</jitk-tps.version>
 
 		<!-- BigWarp - https://github.com/saalfeldlab/bigwarp -->
-		<bigwarp.version>2.1.6</bigwarp.version>
+		<bigwarp.version>3.0.0</bigwarp.version>
 		<bigwarp_fiji.version>${bigwarp.version}</bigwarp_fiji.version>
 
 		<!-- TrakEM2 TPS - https://github.com/saalfeldlab/trakem2-tps -->
