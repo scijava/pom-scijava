@@ -390,7 +390,7 @@
 		<ImageJ_3D_Viewer.version>4.0.2</ImageJ_3D_Viewer.version>
 		<Image_5D.version>2.0.2</Image_5D.version>
 		<Image_Expression_Parser.version>3.0.1</Image_Expression_Parser.version>
-		<Interactive_3D_Surface_Plot.version>2.31.2</Interactive_3D_Surface_Plot.version>
+		<Interactive_3D_Surface_Plot.version>3.0.0</Interactive_3D_Surface_Plot.version>
 		<IsoData_Classifier.version>2.0.1</IsoData_Classifier.version>
 		<Kuwahara_Filter.version>2.0.1</Kuwahara_Filter.version>
 		<KymographBuilder.version>2.0.0</KymographBuilder.version>
