@@ -298,7 +298,7 @@
 		<imglib2-algorithm-gpl.version>0.2.1</imglib2-algorithm-gpl.version>
 
 		<!-- ImgLib2 Cache - https://github.com/imglib/imglib2-cache -->
-		<imglib2-cache.version>1.0.0-beta-5</imglib2-cache.version>
+		<imglib2-cache.version>1.0.0-beta-6</imglib2-cache.version>
 
 		<!-- ImgLib2 IJ - https://github.com/imglib/imglib2-ij -->
 		<imglib2-ij.version>2.0.0-beta-37</imglib2-ij.version>
@@ -524,7 +524,7 @@
 		<ome-poi.version>5.3.1</ome-poi.version>
 
 		<!-- OME Model - https://github.com/ome/ome-model -->
-		<ome-xml.version>5.5.2</ome-xml.version>
+		<ome-xml.version>5.5.3</ome-xml.version>
 
 		<!-- Bio-Formats - https://github.com/openmicroscopy/bioformats -->
 		<bio-formats.version>5.5.1</bio-formats.version>
