@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>16.1.1-SNAPSHOT</version>
+	<version>16.2.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -154,6 +154,9 @@
 
 		<!-- SciJava Java 3D Tools - https://github.com/scijava/scijava-java3d -->
 		<scijava-java3d.version>0.1.0</scijava-java3d.version>
+
+		<!-- SciJava Jupyter Kernel - https://github.com/scijava/scijava-jupyter-kernel -->
+		<scijava-jupyter-kernel.version>0.4.0</scijava-jupyter-kernel.version>
 
 		<!-- SciJava SLF4J Logging - https://github.com/scijava/scijava-log-slf4j -->
 		<scijava-log-slf4j.version>1.0.4</scijava-log-slf4j.version>
@@ -801,6 +804,13 @@
 				<groupId>org.scijava</groupId>
 				<artifactId>scijava-java3d</artifactId>
 				<version>${scijava-java3d.version}</version>
+			</dependency>
+
+			<!-- SciJava Jupyter Kernel - https://github.com/scijava/scijava-jupyter-kernel -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-jupyter-kernel</artifactId>
+				<version>${scijava-jupyter-kernel.version}</version>
 			</dependency>
 
 			<!-- SciJava SLF4J Logging - https://github.com/scijava/scijava-log-slf4j -->
@@ -2697,6 +2707,7 @@
 				<scijava-config.version>LATEST</scijava-config.version>
 				<scijava-grab.version>LATEST</scijava-grab.version>
 				<scijava-java3d.version>LATEST</scijava-java3d.version>
+				<scijava-jupyter-kernel.version>LATEST</scijava-jupyter-kernel.version>
 				<scijava-log-slf4j.version>LATEST</scijava-log-slf4j.version>
 				<scijava-plugins-commands.version>LATEST</scijava-plugins-commands.version>
 				<scijava-plugins-platforms.version>LATEST</scijava-plugins-platforms.version>
