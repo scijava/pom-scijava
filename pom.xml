@@ -1950,6 +1950,12 @@
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-codec</artifactId>
 				<version>${batik-codec.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
