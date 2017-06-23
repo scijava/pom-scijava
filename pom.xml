@@ -203,6 +203,9 @@
 		<!-- Scripting: Jython - https://github.com/scijava/scripting-jython -->
 		<scripting-jython.version>0.4.1</scripting-jython.version>
 
+		<!-- Scripting: Kotlin - https://github.com/scijava/scripting-kotlin -->
+		<scripting-kotlin.version>0.1.0</scripting-kotlin.version>
+
 		<!-- Scripting: MATLAB - https://github.com/scijava/scripting-matlab -->
 		<scripting-matlab.version>0.5.2</scripting-matlab.version>
 
@@ -917,6 +920,13 @@
 				<groupId>org.scijava</groupId>
 				<artifactId>scripting-jython</artifactId>
 				<version>${scripting-jython.version}</version>
+			</dependency>
+
+			<!-- Scripting: Kotlin - https://github.com/scijava/scripting-kotlin -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scripting-kotlin</artifactId>
+				<version>${scripting-kotlin.version}</version>
 			</dependency>
 
 			<!-- Scripting: MATLAB - https://github.com/scijava/scripting-matlab -->
@@ -2735,6 +2745,7 @@
 				<scripting-javascript.version>LATEST</scripting-javascript.version>
 				<scripting-jruby.version>LATEST</scripting-jruby.version>
 				<scripting-jython.version>LATEST</scripting-jython.version>
+				<scripting-kotlin.version>LATEST</scripting-kotlin.version>
 				<scripting-matlab.version>LATEST</scripting-matlab.version>
 				<scripting-renjin.version>LATEST</scripting-renjin.version>
 				<scripting-scala.version>LATEST</scripting-scala.version>
