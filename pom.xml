@@ -274,6 +274,9 @@
 		<!-- ImageJ Scripting - https://github.com/imagej/imagej-scripting -->
 		<imagej-scripting.version>0.6.0</imagej-scripting.version>
 
+		<!-- ImageJ TensorFlow - https://github.com/imagej/imagej-tensorflow -->
+		<imagej-tensorflow.version>0.1.0</imagej-tensorflow.version>
+
 		<!-- ImageJ UI: AWT - https://github.com/imagej/imagej-ui-awt -->
 		<imagej-ui-awt.version>0.3.1</imagej-ui-awt.version>
 
@@ -1079,6 +1082,13 @@
 				<groupId>net.imagej</groupId>
 				<artifactId>imagej-scripting</artifactId>
 				<version>${imagej-scripting.version}</version>
+			</dependency>
+
+			<!-- ImageJ TensorFlow - https://github.com/imagej/imagej-tensorflow -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-tensorflow</artifactId>
+				<version>${imagej-tensorflow.version}</version>
 			</dependency>
 
 			<!-- ImageJ UI: AWT - https://github.com/imagej/imagej-ui-awt -->
@@ -2800,6 +2810,7 @@
 				<imagej-plugins-uploader-ssh.version>LATEST</imagej-plugins-uploader-ssh.version>
 				<imagej-plugins-uploader-webdav.version>LATEST</imagej-plugins-uploader-webdav.version>
 				<imagej-scripting.version>LATEST</imagej-scripting.version>
+				<imagej-tensorflow.version>LATEST</imagej-tensorflow.version>
 				<imagej-ui-awt.version>LATEST</imagej-ui-awt.version>
 				<imagej-ui-swing.version>LATEST</imagej-ui-swing.version>
 				<imagej-updater.version>LATEST</imagej-updater.version>
