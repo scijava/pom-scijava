@@ -144,7 +144,7 @@
 		<scijava-cache.version>0.1.2</scijava-cache.version>
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.64.0</scijava-common.version>
+		<scijava-common.version>2.65.0</scijava-common.version>
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
 		<scijava-config.version>2.0.2</scijava-config.version>
@@ -180,7 +180,7 @@
 		<scijava-ui-awt.version>0.1.6</scijava-ui-awt.version>
 
 		<!-- SciJava UI: Swing - https://github.com/scijava/scijava-ui-swing -->
-		<scijava-ui-swing.version>0.9.2</scijava-ui-swing.version>
+		<scijava-ui-swing.version>0.9.3</scijava-ui-swing.version>
 
 		<!-- Script Editor - https://github.com/scijava/script-editor -->
 		<script-editor.version>0.1.4</script-editor.version>
