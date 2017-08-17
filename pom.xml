@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>16.3.0-SNAPSHOT</version>
+	<version>17.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -301,7 +301,7 @@
 		<imglib2.version>4.2.1</imglib2.version>
 
 		<!-- ImgLib2 Algorithms - https://github.com/imglib/imglib2-algorithm -->
-		<imglib2-algorithm.version>0.8.0</imglib2-algorithm.version>
+		<imglib2-algorithm.version>0.8.1</imglib2-algorithm.version>
 
 		<!-- ImgLib2 Algorithms FFT - https://github.com/imglib/imglib2-algorithm-fft -->
 		<imglib2-algorithm-fft.version>0.1.4</imglib2-algorithm-fft.version>
@@ -316,7 +316,7 @@
 		<imglib2-ij.version>2.0.0-beta-37</imglib2-ij.version>
 
 		<!-- ImgLib2 RealTransform - https://github.com/imglib/imglib2-realtransform -->
-		<imglib2-realtransform.version>2.0.0-beta-37</imglib2-realtransform.version>
+		<imglib2-realtransform.version>2.0.0-beta-38</imglib2-realtransform.version>
 
 		<!-- ImgLib2 ROI - https://github.com/imglib/imglib2-roi -->
 		<imglib2-roi.version>0.4.6</imglib2-roi.version>
@@ -486,10 +486,10 @@
 		<Sholl_Analysis.version>3.6.12</Sholl_Analysis.version>
 
 		<!-- JITK TPS - https://github.com/saalfeldlab/jitk-tps -->
-		<jitk-tps.version>2.1.1</jitk-tps.version>
+		<jitk-tps.version>3.0.0</jitk-tps.version>
 
 		<!-- BigWarp - https://github.com/saalfeldlab/bigwarp -->
-		<bigwarp.version>3.0.0</bigwarp.version>
+		<bigwarp.version>3.0.1</bigwarp.version>
 		<bigwarp_fiji.version>${bigwarp.version}</bigwarp_fiji.version>
 
 		<!-- TrakEM2 TPS - https://github.com/saalfeldlab/trakem2-tps -->
