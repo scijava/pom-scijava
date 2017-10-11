@@ -376,7 +376,7 @@
 		<Colour_Deconvolution.version>3.0.2</Colour_Deconvolution.version>
 		<CorrectBleach.version>2.0.2</CorrectBleach.version>
 		<CorrectBleach_.version>${CorrectBleach.version}</CorrectBleach_.version>
-		<Correct_3D_Drift.version>1.0.1</Correct_3D_Drift.version>
+		<Correct_3D_Drift.version>1.0.2</Correct_3D_Drift.version>
 		<Descriptor_based_registration.version>2.1.2</Descriptor_based_registration.version>
 		<Dichromacy.version>2.1.1</Dichromacy.version>
 		<Dichromacy_.version>${Dichromacy.version}</Dichromacy_.version>
