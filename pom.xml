@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>17.1.2-SNAPSHOT</version>
+	<version>17.2.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -278,7 +278,7 @@
 		<imagej-scripting.version>0.6.0</imagej-scripting.version>
 
 		<!-- ImageJ TensorFlow - https://github.com/imagej/imagej-tensorflow -->
-		<imagej-tensorflow.version>0.1.1</imagej-tensorflow.version>
+		<imagej-tensorflow.version>0.2.0</imagej-tensorflow.version>
 
 		<!-- ImageJ UI: AWT - https://github.com/imagej/imagej-ui-awt -->
 		<imagej-ui-awt.version>0.3.1</imagej-ui-awt.version>
