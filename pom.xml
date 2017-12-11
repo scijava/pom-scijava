@@ -298,7 +298,7 @@
 		<!-- ImgLib2 - https://github.com/imglib -->
 
 		<!-- ImgLib2 - https://github.com/imglib/imglib2 -->
-		<imglib2.version>4.2.1</imglib2.version>
+		<imglib2.version>4.6.0</imglib2.version>
 
 		<!-- ImgLib2 Algorithms - https://github.com/imglib/imglib2-algorithm -->
 		<imglib2-algorithm.version>0.8.1</imglib2-algorithm.version>
@@ -319,7 +319,7 @@
 		<imglib2-realtransform.version>2.0.0-beta-38</imglib2-realtransform.version>
 
 		<!-- ImgLib2 ROI - https://github.com/imglib/imglib2-roi -->
-		<imglib2-roi.version>0.4.6</imglib2-roi.version>
+		<imglib2-roi.version>0.4.7</imglib2-roi.version>
 
 		<!-- ImgLib2 Scripting - https://github.com/imglib/imglib2-script -->
 		<imglib2-script.version>0.2.2</imglib2-script.version>
