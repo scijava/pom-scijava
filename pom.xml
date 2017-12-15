@@ -363,7 +363,7 @@
 		<Archipelago_Plugins.version>0.5.4</Archipelago_Plugins.version>
 		<Arrow.version>2.0.2</Arrow.version>
 		<Arrow_.version>${Arrow.version}</Arrow_.version>
-		<Auto_Threshold.version>1.16.5</Auto_Threshold.version>
+		<Auto_Threshold.version>1.17.0</Auto_Threshold.version>
 		<BalloonSegmentation.version>3.0.1</BalloonSegmentation.version>
 		<BalloonSegmentation_.version>${BalloonSegmentation.version}</BalloonSegmentation_.version>
 		<Bug_Submitter.version>2.1.1</Bug_Submitter.version>
