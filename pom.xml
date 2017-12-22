@@ -144,7 +144,7 @@
 		<scijava-cache.version>0.1.2</scijava-cache.version>
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.65.0</scijava-common.version>
+		<scijava-common.version>2.69.0</scijava-common.version>
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
 		<scijava-config.version>2.0.2</scijava-config.version>
@@ -162,13 +162,13 @@
 		<scijava-jupyter-kernel.version>0.4.0</scijava-jupyter-kernel.version>
 
 		<!-- SciJava SLF4J Logging - https://github.com/scijava/scijava-log-slf4j -->
-		<scijava-log-slf4j.version>1.0.4</scijava-log-slf4j.version>
+		<scijava-log-slf4j.version>1.0.5</scijava-log-slf4j.version>
 
 		<!-- SciJava Plugins: Commands - https://github.com/scijava/scijava-plugins-commands -->
 		<scijava-plugins-commands.version>0.2.3</scijava-plugins-commands.version>
 
 		<!-- SciJava Plugins: Platforms - https://github.com/scijava/scijava-plugins-platforms -->
-		<scijava-plugins-platforms.version>0.3.0</scijava-plugins-platforms.version>
+		<scijava-plugins-platforms.version>0.3.1</scijava-plugins-platforms.version>
 
 		<!-- SciJava Plugins: Text: Markdown - https://github.com/scijava/scijava-plugins-text-markdown -->
 		<scijava-plugins-text-markdown.version>0.1.3</scijava-plugins-text-markdown.version>
@@ -183,7 +183,7 @@
 		<scijava-ui-awt.version>0.1.6</scijava-ui-awt.version>
 
 		<!-- SciJava UI: Swing - https://github.com/scijava/scijava-ui-swing -->
-		<scijava-ui-swing.version>0.9.3</scijava-ui-swing.version>
+		<scijava-ui-swing.version>0.9.5</scijava-ui-swing.version>
 
 		<!-- Script Editor - https://github.com/scijava/script-editor -->
 		<script-editor.version>0.1.4</script-editor.version>
@@ -233,7 +233,7 @@
 		<imagej1.version>1.51n</imagej1.version>
 
 		<!-- ImageJ 1.x patcher - https://github.com/imagej/ij1-patcher -->
-		<ij1-patcher.version>0.12.6</ij1-patcher.version>
+		<ij1-patcher.version>0.12.8</ij1-patcher.version>
 
 		<!-- ImageJ Common - https://github.com/imagej/imagej-common -->
 		<imagej-common.version>0.24.4</imagej-common.version>
@@ -245,7 +245,7 @@
 		<imagej-launcher.version>4.0.5</imagej-launcher.version>
 
 		<!-- ImageJ Legacy - https://github.com/imagej/imagej-legacy -->
-		<imagej-legacy.version>0.25.0</imagej-legacy.version>
+		<imagej-legacy.version>0.27.0</imagej-legacy.version>
 
 		<!-- ImageJ MATLAB - https://github.com/imagej/imagej-matlab -->
 		<imagej-matlab.version>0.7.2</imagej-matlab.version>
@@ -263,7 +263,7 @@
 		<imagej-omero.version>0.4.1</imagej-omero.version>
 
 		<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
-		<imagej-ops.version>0.38.0</imagej-ops.version>
+		<imagej-ops.version>0.39.0</imagej-ops.version>
 
 		<!-- ImageJ Plugins: Commands - https://github.com/imagej/imagej-plugins-commands -->
 		<imagej-plugins-commands.version>0.7.1</imagej-plugins-commands.version>
@@ -360,7 +360,7 @@
 
 		<!-- Standard Fiji projects -->
 
-		<AnalyzeSkeleton.version>3.1.3</AnalyzeSkeleton.version>
+		<AnalyzeSkeleton.version>3.2.0</AnalyzeSkeleton.version>
 		<AnalyzeSkeleton_.version>${AnalyzeSkeleton.version}</AnalyzeSkeleton_.version>
 		<Anisotropic_Diffusion_2D.version>2.0.1</Anisotropic_Diffusion_2D.version>
 		<Archipelago_Plugins.version>0.5.4</Archipelago_Plugins.version>
@@ -373,7 +373,7 @@
 		<CPU_Meter.version>2.0.1</CPU_Meter.version>
 		<Calculator_Plus.version>2.0.1</Calculator_Plus.version>
 		<Cell_Counter.version>2.2.2</Cell_Counter.version>
-		<Colocalisation_Analysis.version>3.0.0</Colocalisation_Analysis.version>
+		<Colocalisation_Analysis.version>3.0.1</Colocalisation_Analysis.version>
 		<Color_Histogram.version>2.0.7</Color_Histogram.version>
 		<Color_Inspector_3D.version>2.3.2</Color_Inspector_3D.version>
 		<Colour_Deconvolution.version>3.0.2</Colour_Deconvolution.version>
@@ -399,7 +399,7 @@
 		<H5J_Loader_Plugin.version>1.0.6</H5J_Loader_Plugin.version>
 		<Helmholtz_Analysis.version>2.0.2</Helmholtz_Analysis.version>
 		<IJ_Robot.version>2.0.1</IJ_Robot.version>
-		<IO.version>3.0.3</IO.version>
+		<IO.version>3.0.4</IO.version>
 		<IO_.version>${IO.version}</IO_.version>
 		<ImageJ_3D_Objects_Counter.version>2.0.1</ImageJ_3D_Objects_Counter.version>
 		<ImageJ_3D_Viewer.version>4.0.2</ImageJ_3D_Viewer.version>
@@ -424,7 +424,7 @@
 		<PIV_analyser.version>1.1.2</PIV_analyser.version>
 		<QuickPALM.version>1.1.2</QuickPALM.version>
 		<QuickPALM_.version>${QuickPALM.version}</QuickPALM_.version>
-		<RATS.version>2.0.1</RATS.version>
+		<RATS.version>2.0.2</RATS.version>
 		<RATS_.version>${RATS.version}</RATS_.version>
 		<Reconstruct_Reader.version>2.0.3</Reconstruct_Reader.version>
 		<SPIM_Opener.version>2.0.2</SPIM_Opener.version>
@@ -436,26 +436,26 @@
 		<Siox_Segmentation.version>1.0.5</Siox_Segmentation.version>
 		<Skeletonize3D.version>2.1.1</Skeletonize3D.version>
 		<Skeletonize3D_.version>${Skeletonize3D.version}</Skeletonize3D_.version>
-		<SplineDeformationGenerator.version>2.0.1</SplineDeformationGenerator.version>
+		<SplineDeformationGenerator.version>2.0.2</SplineDeformationGenerator.version>
 		<SplineDeformationGenerator_.version>${SplineDeformationGenerator.version}</SplineDeformationGenerator_.version>
-		<Stack_Manipulation.version>2.0.2</Stack_Manipulation.version>
+		<Stack_Manipulation.version>2.1.0</Stack_Manipulation.version>
 		<Statistical_Region_Merging.version>2.0.1</Statistical_Region_Merging.version>
 		<Stitching.version>3.1.3</Stitching.version>
 		<Stitching_.version>${Stitching.version}</Stitching_.version>
 		<Sync_Win.version>1.7-fiji4</Sync_Win.version>
 		<Thread_Killer.version>2.0.1</Thread_Killer.version>
 		<Time_Lapse.version>2.1.0</Time_Lapse.version>
-		<Time_Stamper.version>2.0.1</Time_Stamper.version>
+		<Time_Stamper.version>2.1.0</Time_Stamper.version>
 		<ToAST.version>25.0.2</ToAST.version>
 		<ToAST_.version>${ToAST.version}</ToAST_.version>
 		<TopoJ.version>2.0.1</TopoJ.version>
 		<TopoJ_.version>${TopoJ.version}</TopoJ_.version>
-		<TrackMate.version>3.5.3</TrackMate.version>
+		<TrackMate.version>3.5.4</TrackMate.version>
 		<TrackMate_.version>${TrackMate.version}</TrackMate_.version>
 		<Trainable_Segmentation.version>3.2.12</Trainable_Segmentation.version>
 		<TrakEM2_.version>${TrakEM2.version}</TrakEM2_.version>
 		<TrakEM2_Archipelago.version>2.0.2</TrakEM2_Archipelago.version>
-		<VIB-lib.version>2.1.2</VIB-lib.version>
+		<VIB-lib.version>2.2.0</VIB-lib.version>
 		<VIB.version>3.0.2</VIB.version>
 		<VIB_.version>${VIB.version}</VIB_.version>
 		<Vaa3d_Reader.version>2.0.2</Vaa3d_Reader.version>
@@ -505,7 +505,7 @@
 
 		<bigdataviewer-core.version>4.1.0</bigdataviewer-core.version>
 		<bigdataviewer-server.version>2.1.0</bigdataviewer-server.version>
-		<bigdataviewer-vistools.version>1.0.0-beta-5</bigdataviewer-vistools.version>
+		<bigdataviewer-vistools.version>1.0.0-beta-8</bigdataviewer-vistools.version>
 		<bigdataviewer_fiji.version>3.0.1</bigdataviewer_fiji.version>
 		<spim_data.version>2.2.0</spim_data.version>
 
