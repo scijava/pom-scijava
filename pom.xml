@@ -189,7 +189,7 @@
 		<script-editor.version>0.1.5</script-editor.version>
 
 		<!-- Scripting: BeanShell - https://github.com/scijava/scripting-beanshell -->
-		<scripting-beanshell.version>0.3.2</scripting-beanshell.version>
+		<scripting-beanshell.version>0.3.3</scripting-beanshell.version>
 
 		<!-- Scripting: Clojure - https://github.com/scijava/scripting-clojure -->
 		<scripting-clojure.version>0.1.6</scripting-clojure.version>
