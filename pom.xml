@@ -257,7 +257,7 @@
 		<imagej-mesh.version>0.1.0</imagej-mesh.version>
 
 		<!-- ImageJ Notebook - https://github.com/imagej/imagej-notebook -->
-		<imagej-notebook.version>0.2.2</imagej-notebook.version>
+		<imagej-notebook.version>0.2.3</imagej-notebook.version>
 
 		<!-- ImageJ OMERO - https://github.com/imagej/imagej-omero -->
 		<imagej-omero.version>0.4.1</imagej-omero.version>
