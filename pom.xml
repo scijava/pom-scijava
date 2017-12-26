@@ -159,7 +159,7 @@
 		<scijava-java3d.version>0.1.0</scijava-java3d.version>
 
 		<!-- SciJava Jupyter Kernel - https://github.com/scijava/scijava-jupyter-kernel -->
-		<scijava-jupyter-kernel.version>0.4.0</scijava-jupyter-kernel.version>
+		<scijava-jupyter-kernel.version>0.6.0</scijava-jupyter-kernel.version>
 
 		<!-- SciJava SLF4J Logging - https://github.com/scijava/scijava-log-slf4j -->
 		<scijava-log-slf4j.version>1.0.5</scijava-log-slf4j.version>
