@@ -428,7 +428,7 @@
 		<RATS_.version>${RATS.version}</RATS_.version>
 		<Reconstruct_Reader.version>2.0.3</Reconstruct_Reader.version>
 		<SPIM_Opener.version>2.0.2</SPIM_Opener.version>
-		<SPIM_Registration.version>5.0.13</SPIM_Registration.version>
+		<SPIM_Registration.version>5.0.18</SPIM_Registration.version>
 		<Samples.version>2.0.2</Samples.version>
 		<Samples_.version>${Samples.version}</Samples_.version>
 		<Series_Labeler.version>2.0.1</Series_Labeler.version>
@@ -450,7 +450,7 @@
 		<ToAST_.version>${ToAST.version}</ToAST_.version>
 		<TopoJ.version>2.0.1</TopoJ.version>
 		<TopoJ_.version>${TopoJ.version}</TopoJ_.version>
-		<TrackMate.version>3.5.4</TrackMate.version>
+		<TrackMate.version>3.6.0</TrackMate.version>
 		<TrackMate_.version>${TrackMate.version}</TrackMate_.version>
 		<Trainable_Segmentation.version>3.2.20</Trainable_Segmentation.version>
 		<TrakEM2_.version>${TrakEM2.version}</TrakEM2_.version>
