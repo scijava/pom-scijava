@@ -557,6 +557,12 @@
 		<!-- MorphoLibJ - https://github.com/ijpb/MorphoLibJ -->
 		<MorphoLibJ.version>1.3.3</MorphoLibJ.version>
 
+		<!-- multiview-reconstruction - https://github.com/PreibischLab/multiview-reconstruction -->
+		<multiview-reconstruction.version>0.1.3</multiview-reconstruction.version>
+
+		<!-- multiview-simulation - https://github.com/PreibischLab/multiview-simulation -->
+		<multiview-simulation.version>0.1.0</multiview-simulation.version>
+
 		<!-- Third party components -->
 
 		<!-- Apache POI - https://poi.apache.org/ -->
@@ -1960,6 +1966,20 @@
 				<groupId>fr.inra.ijpb</groupId>
 				<artifactId>MorphoLibJ_</artifactId>
 				<version>${MorphoLibJ_.version}</version>
+			</dependency>
+
+			<!-- multiview-reconstruction - https://github.com/PreibischLab/multiview-reconstruction -->
+			<dependency>
+				<groupId>net.preibisch</groupId>
+				<artifactId>multiview-reconstruction</artifactId>
+				<version>${multiview-reconstruction.version}</version>
+			</dependency>
+
+			<!-- multiview-simulation - https://github.com/PreibischLab/multiview-simulation -->
+			<dependency>
+				<groupId>net.preibisch</groupId>
+				<artifactId>multiview-simulation</artifactId>
+				<version>${multiview-simulation.version}</version>
 			</dependency>
 
 			<!-- Third party components -->
