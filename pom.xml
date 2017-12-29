@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>18.2.0-SNAPSHOT</version>
+	<version>19.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -633,9 +633,6 @@
 
 		<!-- Javassist - http://www.javassist.org/ -->
 		<javassist.version>3.22.0-GA</javassist.version>
-
-		<!-- JCommon - http://www.jfree.org/jcommon/ -->
-		<jcommon.version>1.0.24</jcommon.version>
 
 		<!-- JDOM - http://www.jdom.org/ -->
 		<jdom2.version>2.0.6</jdom2.version>
@@ -2323,13 +2320,6 @@
 				<groupId>org.javassist</groupId>
 				<artifactId>javassist</artifactId>
 				<version>${javassist.version}</version>
-			</dependency>
-
-			<!-- JCommon - http://www.jfree.org/jcommon/ -->
-			<dependency>
-				<groupId>org.jfree</groupId>
-				<artifactId>jcommon</artifactId>
-				<version>${jcommon.version}</version>
 			</dependency>
 
 			<!-- JDOM - http://www.jdom.org/ -->
