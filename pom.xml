@@ -177,7 +177,7 @@
 		<scijava-plugins-text-plain.version>0.1.3</scijava-plugins-text-plain.version>
 
 		<!-- SciJava Search - https://github.com/scijava/scijava-search -->
-		<scijava-search.version>0.3.0</scijava-search.version>
+		<scijava-search.version>0.3.1</scijava-search.version>
 
 		<!-- SciJava UI: AWT - https://github.com/scijava/scijava-ui-awt -->
 		<scijava-ui-awt.version>0.1.6</scijava-ui-awt.version>
@@ -227,7 +227,7 @@
 		<!-- ImageJ - https://github.com/imagej -->
 
 		<!-- ImageJ - https://github.com/imagej/imagej -->
-		<imagej.version>2.0.0-rc-63</imagej.version>
+		<imagej.version>2.0.0-rc-64</imagej.version>
 
 		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
 		<imagej1.version>1.51s</imagej1.version>
@@ -245,7 +245,7 @@
 		<imagej-launcher.version>4.0.5</imagej-launcher.version>
 
 		<!-- ImageJ Legacy - https://github.com/imagej/imagej-legacy -->
-		<imagej-legacy.version>0.28.0</imagej-legacy.version>
+		<imagej-legacy.version>0.28.1</imagej-legacy.version>
 
 		<!-- ImageJ MATLAB - https://github.com/imagej/imagej-matlab -->
 		<imagej-matlab.version>0.7.2</imagej-matlab.version>
@@ -356,7 +356,7 @@
 		<!-- Fiji - https://github.com/fiji -->
 
 		<!-- Fiji - https://github.com/fiji/fiji -->
-		<fiji.version>2.0.0-pre-2</fiji.version>
+		<fiji.version>2.0.0-pre-3</fiji.version>
 
 		<!-- Standard Fiji projects -->
 
