@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>19.1.2-SNAPSHOT</version>
+	<version>19.2.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -135,7 +135,7 @@
 		<minimaven.version>2.2.1</minimaven.version>
 
 		<!-- Native Lib Loader - https://github.com/scijava/native-lib-loader -->
-		<native-lib-loader.version>2.1.5</native-lib-loader.version>
+		<native-lib-loader.version>2.2.0</native-lib-loader.version>
 
 		<!-- Parsington - https://github.com/scijava/parsington -->
 		<parsington.version>1.0.1</parsington.version>
@@ -177,7 +177,7 @@
 		<scijava-plugins-text-plain.version>0.1.3</scijava-plugins-text-plain.version>
 
 		<!-- SciJava Search - https://github.com/scijava/scijava-search -->
-		<scijava-search.version>0.3.1</scijava-search.version>
+		<scijava-search.version>0.4.0</scijava-search.version>
 
 		<!-- SciJava UI: AWT - https://github.com/scijava/scijava-ui-awt -->
 		<scijava-ui-awt.version>0.1.6</scijava-ui-awt.version>
@@ -227,7 +227,7 @@
 		<!-- ImageJ - https://github.com/imagej -->
 
 		<!-- ImageJ - https://github.com/imagej/imagej -->
-		<imagej.version>2.0.0-rc-64</imagej.version>
+		<imagej.version>2.0.0-rc-65</imagej.version>
 
 		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
 		<imagej1.version>1.51s</imagej1.version>
@@ -245,16 +245,16 @@
 		<imagej-launcher.version>4.0.5</imagej-launcher.version>
 
 		<!-- ImageJ Legacy - https://github.com/imagej/imagej-legacy -->
-		<imagej-legacy.version>0.28.1</imagej-legacy.version>
+		<imagej-legacy.version>0.29.0</imagej-legacy.version>
 
 		<!-- ImageJ MATLAB - https://github.com/imagej/imagej-matlab -->
 		<imagej-matlab.version>0.7.2</imagej-matlab.version>
 
 		<!-- ImageJ Maven Plugin - https://github.com/imagej/imagej-maven-plugin -->
-		<imagej-maven-plugin.version>0.6.0</imagej-maven-plugin.version>
+		<imagej-maven-plugin.version>0.7.0</imagej-maven-plugin.version>
 
 		<!-- ImageJ Mesh - https://github.com/imagej/imagej-mesh -->
-		<imagej-mesh.version>0.1.0</imagej-mesh.version>
+		<imagej-mesh.version>0.2.0</imagej-mesh.version>
 
 		<!-- ImageJ Notebook - https://github.com/imagej/imagej-notebook -->
 		<imagej-notebook.version>0.2.3</imagej-notebook.version>
@@ -356,7 +356,7 @@
 		<!-- Fiji - https://github.com/fiji -->
 
 		<!-- Fiji - https://github.com/fiji/fiji -->
-		<fiji.version>2.0.0-pre-3</fiji.version>
+		<fiji.version>2.0.0-pre-4</fiji.version>
 
 		<!-- Standard Fiji projects -->
 
@@ -433,7 +433,7 @@
 		<Samples.version>2.0.2</Samples.version>
 		<Samples_.version>${Samples.version}</Samples_.version>
 		<Series_Labeler.version>2.0.1</Series_Labeler.version>
-		<Simple_Neurite_Tracer.version>3.1.4</Simple_Neurite_Tracer.version>
+		<Simple_Neurite_Tracer.version>3.1.5</Simple_Neurite_Tracer.version>
 		<Siox_Segmentation.version>1.0.5</Siox_Segmentation.version>
 		<Skeletonize3D.version>2.1.1</Skeletonize3D.version>
 		<Skeletonize3D_.version>${Skeletonize3D.version}</Skeletonize3D_.version>
@@ -441,7 +441,7 @@
 		<SplineDeformationGenerator_.version>${SplineDeformationGenerator.version}</SplineDeformationGenerator_.version>
 		<Stack_Manipulation.version>2.1.0</Stack_Manipulation.version>
 		<Statistical_Region_Merging.version>2.0.1</Statistical_Region_Merging.version>
-		<Stitching.version>3.1.3</Stitching.version>
+		<Stitching.version>3.1.5</Stitching.version>
 		<Stitching_.version>${Stitching.version}</Stitching_.version>
 		<Sync_Win.version>1.7-fiji4</Sync_Win.version>
 		<Thread_Killer.version>2.0.1</Thread_Killer.version>
@@ -453,7 +453,7 @@
 		<TopoJ_.version>${TopoJ.version}</TopoJ_.version>
 		<TrackMate.version>3.6.0</TrackMate.version>
 		<TrackMate_.version>${TrackMate.version}</TrackMate_.version>
-		<Trainable_Segmentation.version>3.2.20</Trainable_Segmentation.version>
+		<Trainable_Segmentation.version>3.2.21</Trainable_Segmentation.version>
 		<TrakEM2_.version>${TrakEM2.version}</TrakEM2_.version>
 		<TrakEM2_Archipelago.version>2.0.2</TrakEM2_Archipelago.version>
 		<VIB-lib.version>2.2.0</VIB-lib.version>
@@ -466,7 +466,7 @@
 		<View5D_.version>${View5D.version}</View5D_.version>
 		<Volume_Calculator.version>2.0.2</Volume_Calculator.version>
 		<Volume_Viewer.version>2.01.2</Volume_Viewer.version>
-		<bUnwarpJ.version>2.6.8</bUnwarpJ.version>
+		<bUnwarpJ.version>2.6.9</bUnwarpJ.version>
 		<bUnwarpJ_.version>${bUnwarpJ.version}</bUnwarpJ_.version>
 		<bij.version>0.1.1</bij.version>
 		<blockmatching.version>2.1.2</blockmatching.version>
@@ -540,7 +540,7 @@
 		<ome-poi.version>5.3.1</ome-poi.version>
 
 		<!-- OME Model - https://github.com/ome/ome-model -->
-		<ome-xml.version>5.6.0</ome-xml.version>
+		<ome-xml.version>5.6.2</ome-xml.version>
 
 		<!-- Bio-Formats - https://github.com/openmicroscopy/bioformats -->
 		<bio-formats.version>5.7.3</bio-formats.version>
@@ -559,7 +559,7 @@
 		<MorphoLibJ.version>1.3.3</MorphoLibJ.version>
 
 		<!-- multiview-reconstruction - https://github.com/PreibischLab/multiview-reconstruction -->
-		<multiview-reconstruction.version>0.1.3</multiview-reconstruction.version>
+		<multiview-reconstruction.version>0.1.12</multiview-reconstruction.version>
 
 		<!-- multiview-simulation - https://github.com/PreibischLab/multiview-simulation -->
 		<multiview-simulation.version>0.1.0</multiview-simulation.version>
