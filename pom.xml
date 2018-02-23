@@ -125,6 +125,9 @@
 
 		<!-- SciJava - https://github.com/scijava -->
 
+		<!-- Batch Processor - https://github.com/scijava/batch-processor -->
+		<batch-processor.version>0.1.1</batch-processor.version>
+
 		<!-- JUnit Benchmarks - https://github.com/scijava/junit-benchmarks -->
 		<junit-benchmarks.version>0.7.4-scijava</junit-benchmarks.version>
 
@@ -223,6 +226,9 @@
 
 		<!-- Swing Checkbox Tree - https://github.com/scijava/swing-checkbox-tree -->
 		<swing-checkbox-tree.version>1.0.2</swing-checkbox-tree.version>
+
+		<!-- UI Behaviour - https://github.com/scijava/ui-behaviour -->
+		<ui-behaviour.version>1.7.1</ui-behaviour.version>
 
 		<!-- ImageJ - https://github.com/imagej -->
 
@@ -767,6 +773,13 @@
 		<dependencies>
 			<!-- SciJava - https://github.com/scijava -->
 
+			<!-- Batch Processor - https://github.com/scijava/batch-processor -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>batch-processor</artifactId>
+				<version>${batch-processor.version}</version>
+			</dependency>
+
 			<!-- Jython Shaded - https://github.com/scijava/jython-shaded -->
 			<dependency>
 				<groupId>org.scijava</groupId>
@@ -995,6 +1008,13 @@
 				<groupId>org.scijava</groupId>
 				<artifactId>swing-checkbox-tree</artifactId>
 				<version>${swing-checkbox-tree.version}</version>
+			</dependency>
+
+			<!-- UI Behaviour - https://github.com/scijava/ui-behaviour -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>ui-behaviour</artifactId>
+				<version>${ui-behaviour.version}</version>
 			</dependency>
 
 			<!-- ImageJ - https://github.com/imagej -->
@@ -2813,6 +2833,7 @@
 				</file>
 			</activation>
 			<properties>
+				<batch-processor.version>LATEST</batch-processor.version>
 				<jython-shaded.version>LATEST</jython-shaded.version>
 				<minimaven.version>LATEST</minimaven.version>
 				<native-lib-loader.version>LATEST</native-lib-loader.version>
@@ -2844,6 +2865,7 @@
 				<scripting-renjin.version>LATEST</scripting-renjin.version>
 				<scripting-scala.version>LATEST</scripting-scala.version>
 				<swing-checkbox-tree.version>LATEST</swing-checkbox-tree.version>
+				<ui-behaviour.version>LATEST</ui-behaviour.version>
 			</properties>
 			<repositories>
 				<repository>
