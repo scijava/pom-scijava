@@ -642,6 +642,9 @@
 		<!-- Guava - https://github.com/google/guava -->
 		<guava.version>21.0</guava.version>
 
+		<!-- HyperSQL DataBase - http://hsqldb.org/ -->
+		<hsqldb.version>1.8.0.10</hsqldb.version>
+
 		<!-- iText PDF - https://github.com/itext/itextpdf -->
 		<itextpdf.version>5.5.13</itextpdf.version>
 
@@ -2357,6 +2360,13 @@
 				<groupId>com.google.guava</groupId>
 				<artifactId>guava</artifactId>
 				<version>${guava.version}</version>
+			</dependency>
+
+			<!-- HyperSQL DataBase - http://hsqldb.org/ -->
+			<dependency>
+				<groupId>hsqldb</groupId>
+				<artifactId>hsqldb</artifactId>
+				<version>${hsqldb.version}</version>
 			</dependency>
 
 			<!-- iText PDF - https://github.com/itext/itextpdf -->
