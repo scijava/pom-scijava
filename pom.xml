@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>20.0.1-SNAPSHOT</version>
+	<version>20.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -611,14 +611,24 @@
 		<batik-xml.version>${batik.version}</batik-xml.version>
 		<xmlgraphics-commons.version>2.2</xmlgraphics-commons.version>
 
+		<!-- Commons BeanUtils - https://commons.apache.org/proper/commons-beanutils/ -->
+		<commons-beanutils.version>1.9.3</commons-beanutils.version>
+
 		<!-- Commons Codec - https://commons.apache.org/proper/commons-codec/ -->
 		<commons-codec.version>1.11</commons-codec.version>
+
+		<!-- Commons Collections - https://commons.apache.org/proper/commons-collections/ -->
+		<commons-collections.version>3.2.2</commons-collections.version>
 
 		<!-- Commons IO - https://commons.apache.org/proper/commons-io/ -->
 		<commons-io.version>2.6</commons-io.version>
 
 		<!-- Commons Lang - https://commons.apache.org/proper/commons-lang/ -->
+		<commons-lang.version>2.6</commons-lang.version>
 		<commons-lang3.version>3.7</commons-lang3.version>
+
+		<!-- Commons Logging - https://commons.apache.org/proper/commons-logging/ -->
+		<commons-logging.version>1.2</commons-logging.version>
 
 		<!-- Commons Math - https://commons.apache.org/proper/commons-math/ -->
 		<commons-math3.version>3.6.1</commons-math3.version>
@@ -2274,11 +2284,25 @@
 				<version>${xmlgraphics-commons.version}</version>
 			</dependency>
 
+			<!-- Commons BeanUtils - https://commons.apache.org/proper/commons-beanutils/ -->
+			<dependency>
+				<groupId>commons-beanutils</groupId>
+				<artifactId>commons-beanutils</artifactId>
+				<version>${commons-beanutils.version}</version>
+			</dependency>
+
 			<!-- Commons Codec - https://commons.apache.org/proper/commons-codec/ -->
 			<dependency>
 				<groupId>commons-codec</groupId>
 				<artifactId>commons-codec</artifactId>
 				<version>${commons-codec.version}</version>
+			</dependency>
+
+			<!-- Commons Collections - https://commons.apache.org/proper/commons-collections/ -->
+			<dependency>
+				<groupId>commons-collections</groupId>
+				<artifactId>commons-collections</artifactId>
+				<version>${commons-collections.version}</version>
 			</dependency>
 
 			<!-- Commons IO - https://commons.apache.org/proper/commons-io/ -->
@@ -2290,9 +2314,21 @@
 
 			<!-- Commons Lang - https://commons.apache.org/proper/commons-lang/ -->
 			<dependency>
+				<groupId>commons-lang</groupId>
+				<artifactId>commons-lang</artifactId>
+				<version>${commons-lang.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-lang3</artifactId>
 				<version>${commons-lang3.version}</version>
+			</dependency>
+
+			<!-- Commons Logging - https://commons.apache.org/proper/commons-logging/ -->
+			<dependency>
+				<groupId>commons-logging</groupId>
+				<artifactId>commons-logging</artifactId>
+				<version>${commons-logging.version}</version>
 			</dependency>
 
 			<!-- Commons Math - https://commons.apache.org/proper/commons-math/ -->
