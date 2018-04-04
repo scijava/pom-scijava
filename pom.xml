@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.scijava</groupId>
 		<artifactId>pom-scijava-base</artifactId>
-		<version>3.2.1</version>
+		<version>3.3.0</version>
 		<relativePath />
 	</parent>
 
@@ -104,6 +104,13 @@
 	</ciManagement>
 
 	<properties>
+		<!--
+		HACK: The following list of allowed-to-be-duplicated classes
+		facilitates intended combinations of artifacts:
+		* omero:blitz + org.hibernate:hibernate-core
+		-->
+		<allowedDuplicateClasses>org.hibernate.stat.ConcurrentStatisticsImpl</allowedDuplicateClasses>
+
 		<!--
 		NB: We override these properties to make the enforcer happy.
 		You will need to override them in your POM, too... to valid values.
@@ -559,6 +566,16 @@
 		<formats-api.version>${bio-formats.version}</formats-api.version>
 		<formats-bsd.version>${bio-formats.version}</formats-bsd.version>
 		<formats-gpl.version>${bio-formats.version}</formats-gpl.version>
+
+		<!-- OMERO - https://github.com/openmicroscopy/openmicroscopy -->
+		<omero.version>5.4.3-ice36-b77</omero.version>
+		<blitz.version>${omero.version}</blitz.version>
+		<common.version>${omero.version}</common.version>
+		<dsl.version>${omero.version}</dsl.version>
+		<model-psql.version>${omero.version}</model-psql.version>
+		<rendering.version>${omero.version}</rendering.version>
+		<romio.version>${omero.version}</romio.version>
+		<server.version>${omero.version}</server.version>
 
 		<!-- Other SciJava components -->
 
@@ -1989,6 +2006,139 @@
 				<groupId>ome</groupId>
 				<artifactId>formats-gpl</artifactId>
 				<version>${formats-gpl.version}</version>
+			</dependency>
+
+			<!-- OMERO - https://github.com/openmicroscopy/openmicroscopy -->
+			<dependency>
+				<groupId>omero</groupId>
+				<artifactId>blitz</artifactId>
+				<version>${blitz.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>omero</groupId>
+				<artifactId>common</artifactId>
+				<version>${common.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>omero</groupId>
+				<artifactId>dsl</artifactId>
+				<version>${dsl.version}</version>
+				<exclusions>
+					<exclusion>
+						<!-- Conflicts with commons-beanutils:commons-beanutils -->
+						<groupId>commons-beanutils</groupId>
+						<artifactId>commons-beanutils-core</artifactId>
+					</exclusion>
+					<exclusion>
+						<!-- Conflicts with net.sourceforge.findbugs:findbugs -->
+						<groupId>net.sourceforge.findbugs</groupId>
+						<artifactId>findbugs-ant</artifactId>
+					</exclusion>
+					<exclusion>
+						<!-- Conflicts with commons-logging:commons-logging -->
+						<groupId>org.slf4j</groupId>
+						<artifactId>jcl-over-slf4j</artifactId>
+					</exclusion>
+					<exclusion>
+						<!--
+						HACK: The omero:dsl artifact depends on org.testng:testng and
+						org.uncommons:reportng. Unfortunately, org.uncommons:reportng
+						depends on org.testng:testng:jdk15. So omero:dsl ends up depending
+						on two different testng artifacts simultaneously, resulting in
+						illegal class duplication. Maven dependency management does not
+						support classifier-specific exclusion, so we exclude
+						org.testng:testng as a whole to avoid the issue.
+						-->
+						<groupId>org.testng</groupId>
+						<artifactId>testng</artifactId>
+					</exclusion>
+					<exclusion>
+						<!-- Conflicts with velocity:velocity -->
+						<groupId>velocity</groupId>
+						<artifactId>velocity-dep</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>omero</groupId>
+				<artifactId>model-psql</artifactId>
+				<version>${model-psql.version}</version>
+				<exclusions>
+					<exclusion>
+						<!-- Conflicts with org.hibernate:hibernate-core -->
+						<groupId>org.hibernate</groupId>
+						<artifactId>hibernate-commons-annotations</artifactId>
+					</exclusion>
+					<exclusion>
+						<!-- Conflicts with org.hibernate.javax.persistence:hibernate-jpa-2.0-api -->
+						<groupId>org.hibernate</groupId>
+						<artifactId>ejb3-persistence</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>omero</groupId>
+				<artifactId>rendering</artifactId>
+				<version>${rendering.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>omero</groupId>
+				<artifactId>romio</artifactId>
+				<version>${romio.version}</version>
+				<exclusions>
+					<exclusion>
+						<!-- Conflicts with commons-io:commons-io and commons-lang:commons-lang -->
+						<groupId>ch.systems.cisd</groupId>
+						<artifactId>jhdf5</artifactId>
+					</exclusion>
+					<exclusion>
+						<!--
+						HACK: The slf4j-simple library is not really a dependency here.
+						But some tools, including the banDuplicateClasses rule of the
+						maven-enforcer-plugin, as well as the maven-dependency-plugin's
+						dependency:copy-dependencies goal, see it for reasons unknown.
+						And it conflicts with logback-classic since both include
+						an SLF4J binding (org.slf4j.impl.StaticLoggerBinder).
+						-->
+						<groupId>org.slf4j</groupId>
+						<artifactId>slf4j-simple</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>omero</groupId>
+				<artifactId>server</artifactId>
+				<version>${server.version}</version>
+				<exclusions>
+					<exclusion>
+						<!-- Uber-JAR of all batik components -->
+						<groupId>batik</groupId>
+						<artifactId>batik-all</artifactId>
+					</exclusion>
+					<exclusion>
+						<!-- Conflicts with edu.ucar:netcdf -->
+						<groupId>edu.ucar</groupId>
+						<artifactId>grib</artifactId>
+					</exclusion>
+					<exclusion>
+						<!-- Conflicts with javax.transaction:jta -->
+						<groupId>geronimo-spec</groupId>
+						<artifactId>geronimo-spec-jta</artifactId>
+					</exclusion>
+					<exclusion>
+						<!-- Conflicts with org.aspectj:aspectjweaver -->
+						<groupId>org.aspectj</groupId>
+						<artifactId>aspectjrt</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<!-- Other SciJava components -->
