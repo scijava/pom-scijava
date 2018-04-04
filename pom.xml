@@ -108,8 +108,9 @@
 		HACK: The following list of allowed-to-be-duplicated classes
 		facilitates intended combinations of artifacts:
 		* omero:blitz + org.hibernate:hibernate-core
+		* org.jmockit:jmockit + junit:junit
 		-->
-		<allowedDuplicateClasses>org.hibernate.stat.ConcurrentStatisticsImpl</allowedDuplicateClasses>
+		<allowedDuplicateClasses>org.hibernate.stat.ConcurrentStatisticsImpl,org.junit.runner.Runner</allowedDuplicateClasses>
 
 		<!--
 		NB: We override these properties to make the enforcer happy.
@@ -722,6 +723,9 @@
 
 		<!-- JHDF5 - https://wiki-bsse.ethz.ch/label/JHDF5/hdf5 -->
 		<jhdf5.version>14.12.6</jhdf5.version>
+
+		<!-- JMockit - https://jmockit.github.io/ -->
+		<jmockit.version>1.33</jmockit.version>
 
 		<!-- JNA - https://github.com/twall/jna -->
 		<jna.version>4.5.1</jna.version>
@@ -2969,6 +2973,14 @@
 				<groupId>org.scijava</groupId>
 				<artifactId>junit-benchmarks</artifactId>
 				<version>${junit-benchmarks.version}</version>
+				<scope>test</scope>
+			</dependency>
+
+			<!-- JMockit - https://jmockit.github.io/ -->
+			<dependency>
+				<groupId>org.jmockit</groupId>
+				<artifactId>jmockit</artifactId>
+				<version>${jmockit.version}</version>
 				<scope>test</scope>
 			</dependency>
 
