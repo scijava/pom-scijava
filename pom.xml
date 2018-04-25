@@ -279,7 +279,7 @@
 		<imagej-omero.version>0.4.1</imagej-omero.version>
 
 		<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
-		<imagej-ops.version>0.39.0</imagej-ops.version>
+		<imagej-ops.version>0.40.0</imagej-ops.version>
 
 		<!-- ImageJ Plugins: Commands - https://github.com/imagej/imagej-plugins-commands -->
 		<imagej-plugins-commands.version>0.7.1</imagej-plugins-commands.version>
