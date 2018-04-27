@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>20.4.1-SNAPSHOT</version>
+	<version>20.5.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -160,7 +160,7 @@
 		<scijava-cache.version>0.1.2</scijava-cache.version>
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.69.0</scijava-common.version>
+		<scijava-common.version>2.70.0</scijava-common.version>
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
 		<scijava-config.version>2.0.2</scijava-config.version>
@@ -169,7 +169,7 @@
 		<scijava-grab.version>0.1.0</scijava-grab.version>
 
 		<!-- SciJava I/O: HTTP - https://github.com/scijava/scijava-io-http -->
-		<scijava-io-http.version>0.1.0</scijava-io-http.version>
+		<scijava-io-http.version>0.1.1</scijava-io-http.version>
 
 		<!-- SciJava Java 3D Tools - https://github.com/scijava/scijava-java3d -->
 		<scijava-java3d.version>0.1.0</scijava-java3d.version>
@@ -199,10 +199,10 @@
 		<scijava-ui-awt.version>0.1.6</scijava-ui-awt.version>
 
 		<!-- SciJava UI: Swing - https://github.com/scijava/scijava-ui-swing -->
-		<scijava-ui-swing.version>0.9.5</scijava-ui-swing.version>
+		<scijava-ui-swing.version>0.10.0</scijava-ui-swing.version>
 
 		<!-- Script Editor - https://github.com/scijava/script-editor -->
-		<script-editor.version>0.1.5</script-editor.version>
+		<script-editor.version>0.1.6</script-editor.version>
 
 		<!-- Scripting: BeanShell - https://github.com/scijava/scripting-beanshell -->
 		<scripting-beanshell.version>0.3.3</scripting-beanshell.version>
@@ -241,7 +241,7 @@
 		<swing-checkbox-tree.version>1.0.2</swing-checkbox-tree.version>
 
 		<!-- UI Behaviour - https://github.com/scijava/ui-behaviour -->
-		<ui-behaviour.version>1.7.2</ui-behaviour.version>
+		<ui-behaviour.version>1.7.3</ui-behaviour.version>
 
 		<!-- ImageJ - https://github.com/imagej -->
 
@@ -249,7 +249,7 @@
 		<imagej.version>2.0.0-rc-65</imagej.version>
 
 		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
-		<imagej1.version>1.51w</imagej1.version>
+		<imagej1.version>1.52a</imagej1.version>
 
 		<!-- ImageJ 1.x patcher - https://github.com/imagej/ij1-patcher -->
 		<ij1-patcher.version>0.12.8</ij1-patcher.version>
@@ -294,7 +294,7 @@
 		<imagej-plugins-uploader-webdav.version>0.2.2</imagej-plugins-uploader-webdav.version>
 
 		<!-- ImageJ Scripting - https://github.com/imagej/imagej-scripting -->
-		<imagej-scripting.version>0.7.0</imagej-scripting.version>
+		<imagej-scripting.version>0.8.0</imagej-scripting.version>
 
 		<!-- ImageJ TensorFlow - https://github.com/imagej/imagej-tensorflow -->
 		<imagej-tensorflow.version>1.0.0</imagej-tensorflow.version>
@@ -306,7 +306,7 @@
 		<imagej-ui-swing.version>0.21.3</imagej-ui-swing.version>
 
 		<!-- ImageJ Updater - https://github.com/imagej/imagej-updater -->
-		<imagej-updater.version>0.8.3</imagej-updater.version>
+		<imagej-updater.version>0.9.0</imagej-updater.version>
 
 		<!-- ImageJ Usage - https://github.com/imagej/imagej-usage -->
 		<imagej-usage.version>0.4.1</imagej-usage.version>
@@ -400,7 +400,7 @@
 		<Descriptor_based_registration.version>2.1.2</Descriptor_based_registration.version>
 		<Dichromacy.version>2.1.1</Dichromacy.version>
 		<Dichromacy_.version>${Dichromacy.version}</Dichromacy_.version>
-		<Directionality.version>2.0.2</Directionality.version>
+		<Directionality.version>2.2.0</Directionality.version>
 		<Directionality_.version>${Directionality.version}</Directionality_.version>
 		<FS_Align_TrakEM2.version>2.0.2</FS_Align_TrakEM2.version>
 		<Feature_Detection.version>2.0.2</Feature_Detection.version>
@@ -470,7 +470,7 @@
 		<TopoJ_.version>${TopoJ.version}</TopoJ_.version>
 		<TrackMate.version>3.7.0</TrackMate.version>
 		<TrackMate_.version>${TrackMate.version}</TrackMate_.version>
-		<Trainable_Segmentation.version>3.2.23</Trainable_Segmentation.version>
+		<Trainable_Segmentation.version>3.2.24</Trainable_Segmentation.version>
 		<TrakEM2_.version>${TrakEM2.version}</TrakEM2_.version>
 		<TrakEM2_Archipelago.version>2.0.2</TrakEM2_Archipelago.version>
 		<VIB-lib.version>2.2.0</VIB-lib.version>
@@ -581,7 +581,7 @@
 		<MorphoLibJ.version>1.3.3</MorphoLibJ.version>
 
 		<!-- multiview-reconstruction - https://github.com/PreibischLab/multiview-reconstruction -->
-		<multiview-reconstruction.version>0.1.16</multiview-reconstruction.version>
+		<multiview-reconstruction.version>0.1.22</multiview-reconstruction.version>
 
 		<!-- multiview-simulation - https://github.com/PreibischLab/multiview-simulation -->
 		<multiview-simulation.version>0.1.0</multiview-simulation.version>
