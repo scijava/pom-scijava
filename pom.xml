@@ -329,16 +329,16 @@
 		<imglib2-algorithm-gpl.version>0.2.2</imglib2-algorithm-gpl.version>
 
 		<!-- ImgLib2 Cache - https://github.com/imglib/imglib2-cache -->
-		<imglib2-cache.version>1.0.0-beta-7</imglib2-cache.version>
+		<imglib2-cache.version>1.0.0-beta-8</imglib2-cache.version>
 
 		<!-- ImgLib2 IJ - https://github.com/imglib/imglib2-ij -->
-		<imglib2-ij.version>2.0.0-beta-39</imglib2-ij.version>
+		<imglib2-ij.version>2.0.0-beta-40</imglib2-ij.version>
 
 		<!-- ImgLib2 RealTransform - https://github.com/imglib/imglib2-realtransform -->
 		<imglib2-realtransform.version>2.0.0-beta-38</imglib2-realtransform.version>
 
 		<!-- ImgLib2 ROI - https://github.com/imglib/imglib2-roi -->
-		<imglib2-roi.version>0.5.0</imglib2-roi.version>
+		<imglib2-roi.version>0.5.1</imglib2-roi.version>
 
 		<!-- ImgLib2 Scripting - https://github.com/imglib/imglib2-script -->
 		<imglib2-script.version>0.2.2</imglib2-script.version>
@@ -390,7 +390,7 @@
 		<CPU_Meter.version>2.0.1</CPU_Meter.version>
 		<Calculator_Plus.version>2.0.1</Calculator_Plus.version>
 		<Cell_Counter.version>2.2.2</Cell_Counter.version>
-		<Colocalisation_Analysis.version>3.0.1</Colocalisation_Analysis.version>
+		<Colocalisation_Analysis.version>3.0.2</Colocalisation_Analysis.version>
 		<Color_Histogram.version>2.0.7</Color_Histogram.version>
 		<Color_Inspector_3D.version>2.3.2</Color_Inspector_3D.version>
 		<Colour_Deconvolution.version>3.0.2</Colour_Deconvolution.version>
@@ -510,11 +510,11 @@
 		<jitk-tps.version>3.0.0</jitk-tps.version>
 
 		<!-- BigWarp - https://github.com/saalfeldlab/bigwarp -->
-		<bigwarp.version>3.0.1</bigwarp.version>
+		<bigwarp.version>3.1.0</bigwarp.version>
 		<bigwarp_fiji.version>${bigwarp.version}</bigwarp_fiji.version>
 
 		<!-- TrakEM2 TPS - https://github.com/saalfeldlab/trakem2-tps -->
-		<trakem2_tps.version>1.1.3</trakem2_tps.version>
+		<trakem2_tps.version>1.1.4</trakem2_tps.version>
 
 		<!-- Z-Spacing correction - https://github.com/saalfeldlab/z-spacing -->
 		<z_spacing.version>1.0.3</z_spacing.version>
@@ -533,7 +533,7 @@
 		<T2-TreelineGraph.version>1.1.2</T2-TreelineGraph.version>
 		<TrakEM2.version>1.0i</TrakEM2.version>
 		<VectorString.version>2.0.1</VectorString.version>
-		<trakem2-transform.version>1.0.0</trakem2-transform.version>
+		<trakem2-transform.version>1.0.1</trakem2-transform.version>
 
 		<!--
 		BEGIN MANUALLY MANAGED VERSIONS
@@ -581,7 +581,7 @@
 		<MorphoLibJ.version>1.3.3</MorphoLibJ.version>
 
 		<!-- multiview-reconstruction - https://github.com/PreibischLab/multiview-reconstruction -->
-		<multiview-reconstruction.version>0.1.22</multiview-reconstruction.version>
+		<multiview-reconstruction.version>0.2.2</multiview-reconstruction.version>
 
 		<!-- multiview-simulation - https://github.com/PreibischLab/multiview-simulation -->
 		<multiview-simulation.version>0.1.0</multiview-simulation.version>
@@ -657,7 +657,7 @@
 		<commons-text.version>1.3</commons-text.version>
 
 		<!-- Gson - https://code.google.com/p/google-gson/ -->
-		<gson.version>2.8.2</gson.version>
+		<gson.version>2.8.3</gson.version>
 
 		<!-- Guava - https://github.com/google/guava -->
 		<guava.version>21.0</guava.version>
@@ -751,7 +751,7 @@
 		<jogl-all-main.version>${jogl.version}</jogl-all-main.version>
 
 		<!-- JOML - http://joml-ci.github.io/JOML/ -->
-		<joml.version>1.9.8</joml.version>
+		<joml.version>1.9.9</joml.version>
 
 		<!-- JPedal - http://jpedal.org/ (defunct) -->
 		<jpedal.version>2.80b11</jpedal.version>
@@ -789,7 +789,7 @@
 		<mines-jtk.version>20151125</mines-jtk.version>
 
 		<!-- Mockito - http://site.mockito.org/ -->
-		<mockito.version>2.17.0</mockito.version>
+		<mockito.version>2.18.3</mockito.version>
 		<mockito-core.version>${mockito.version}</mockito-core.version>
 
 		<!-- OpenCSV - http://opencsv.sourceforge.net/ -->
