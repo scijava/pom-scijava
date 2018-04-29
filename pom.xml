@@ -296,6 +296,9 @@
 		<!-- ImageJ Scripting - https://github.com/imagej/imagej-scripting -->
 		<imagej-scripting.version>0.8.0</imagej-scripting.version>
 
+		<!-- ImageJ Server - https://github.com/imagej/imagej-server -->
+		<imagej-server.version>0.1.0</imagej-server.version>
+
 		<!-- ImageJ TensorFlow - https://github.com/imagej/imagej-tensorflow -->
 		<imagej-tensorflow.version>1.0.0</imagej-tensorflow.version>
 
@@ -1191,6 +1194,13 @@
 				<groupId>net.imagej</groupId>
 				<artifactId>imagej-scripting</artifactId>
 				<version>${imagej-scripting.version}</version>
+			</dependency>
+
+			<!-- ImageJ Server - https://github.com/imagej/imagej-server -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-server</artifactId>
+				<version>${imagej-server.version}</version>
 			</dependency>
 
 			<!-- ImageJ TensorFlow - https://github.com/imagej/imagej-tensorflow -->
@@ -3194,6 +3204,7 @@
 				<imagej-plugins-uploader-ssh.version>LATEST</imagej-plugins-uploader-ssh.version>
 				<imagej-plugins-uploader-webdav.version>LATEST</imagej-plugins-uploader-webdav.version>
 				<imagej-scripting.version>LATEST</imagej-scripting.version>
+				<imagej-server.version>LATEST</imagej-server.version>
 				<imagej-tensorflow.version>LATEST</imagej-tensorflow.version>
 				<imagej-ui-awt.version>LATEST</imagej-ui-awt.version>
 				<imagej-ui-swing.version>LATEST</imagej-ui-swing.version>
