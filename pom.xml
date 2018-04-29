@@ -795,6 +795,9 @@
 		<mockito.version>2.18.3</mockito.version>
 		<mockito-core.version>${mockito.version}</mockito-core.version>
 
+		<!-- oj! Algorithms - https://github.com/optimatika/ojAlgo -->
+		<ojalgo.version>43.0</ojalgo.version>
+
 		<!-- OpenCSV - http://opencsv.sourceforge.net/ -->
 		<opencsv.version>3.9</opencsv.version>
 
@@ -2938,6 +2941,13 @@
 				<groupId>edu.mines</groupId>
 				<artifactId>mines-jtk</artifactId>
 				<version>${mines-jtk.version}</version>
+			</dependency>
+
+			<!-- oj! Algorithms - https://github.com/optimatika/ojAlgo -->
+			<dependency>
+				<groupId>org.ojalgo</groupId>
+				<artifactId>ojalgo</artifactId>
+				<version>${ojalgo.version}</version>
 			</dependency>
 
 			<!-- OpenCSV - http://opencsv.sourceforge.net/ -->
