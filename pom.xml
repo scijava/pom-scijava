@@ -593,7 +593,7 @@
 		<CoreMem.version>0.4.3</CoreMem.version>
 
 		<!-- ClearGL - https://github.com/ClearVolume/ClearGL -->
-		<cleargl.version>2.1.5</cleargl.version>
+		<cleargl.version>2.1.6</cleargl.version>
 
 		<!-- Scenery - https://github.com/scenerygraphics/scenery -->
 		<scenery.version>0.3.1</scenery.version>
@@ -796,7 +796,7 @@
 		<mockito-core.version>${mockito.version}</mockito-core.version>
 
 		<!-- oj! Algorithms - https://github.com/optimatika/ojAlgo -->
-		<ojalgo.version>43.0</ojalgo.version>
+		<ojalgo.version>45.1.0</ojalgo.version>
 
 		<!-- OpenCSV - http://opencsv.sourceforge.net/ -->
 		<opencsv.version>3.9</opencsv.version>
