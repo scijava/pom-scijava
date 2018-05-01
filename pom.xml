@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>21.0.1-SNAPSHOT</version>
+	<version>22.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -783,7 +783,7 @@
 		<lwjgl.version>3.1.6</lwjgl.version>
 
 		<!-- MapDB - http://www.mapdb.org/ -->
-		<mapdb.version>1.0.3</mapdb.version>
+		<mapdb.version>3.0.5</mapdb.version>
 
 		<!-- MigLayout - http://www.miglayout.com/ -->
 		<miglayout.version>3.7.4</miglayout.version>
