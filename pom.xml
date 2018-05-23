@@ -393,7 +393,7 @@
 		<CPU_Meter.version>2.0.1</CPU_Meter.version>
 		<Calculator_Plus.version>2.0.1</Calculator_Plus.version>
 		<Cell_Counter.version>2.2.2</Cell_Counter.version>
-		<Colocalisation_Analysis.version>3.0.2</Colocalisation_Analysis.version>
+		<Colocalisation_Analysis.version>3.0.3</Colocalisation_Analysis.version>
 		<Color_Histogram.version>2.0.7</Color_Histogram.version>
 		<Color_Inspector_3D.version>2.3.2</Color_Inspector_3D.version>
 		<Colour_Deconvolution.version>3.0.2</Colour_Deconvolution.version>
@@ -416,7 +416,7 @@
 		<FlowJ_.version>${FlowJ.version}</FlowJ_.version>
 		<Graph_Cut.version>1.0.2</Graph_Cut.version>
 		<Gray_Morphology.version>2.3.4</Gray_Morphology.version>
-		<H5J_Loader_Plugin.version>1.0.6</H5J_Loader_Plugin.version>
+		<H5J_Loader_Plugin.version>1.0.7</H5J_Loader_Plugin.version>
 		<Helmholtz_Analysis.version>2.0.2</Helmholtz_Analysis.version>
 		<IJ_Robot.version>2.0.1</IJ_Robot.version>
 		<IO.version>3.0.4</IO.version>
@@ -513,7 +513,7 @@
 		<jitk-tps.version>3.0.0</jitk-tps.version>
 
 		<!-- BigWarp - https://github.com/saalfeldlab/bigwarp -->
-		<bigwarp.version>3.1.0</bigwarp.version>
+		<bigwarp.version>3.1.1</bigwarp.version>
 		<bigwarp_fiji.version>${bigwarp.version}</bigwarp_fiji.version>
 
 		<!-- TrakEM2 TPS - https://github.com/saalfeldlab/trakem2-tps -->
