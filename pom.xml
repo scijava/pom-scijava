@@ -452,7 +452,7 @@
 		<RATS_.version>${RATS.version}</RATS_.version>
 		<Reconstruct_Reader.version>2.0.3</Reconstruct_Reader.version>
 		<SPIM_Opener.version>2.0.2</SPIM_Opener.version>
-		<SPIM_Registration.version>5.0.18</SPIM_Registration.version>
+		<SPIM_Registration.version>5.0.19</SPIM_Registration.version>
 		<Samples.version>2.0.2</Samples.version>
 		<Samples_.version>${Samples.version}</Samples_.version>
 		<Series_Labeler.version>2.0.1</Series_Labeler.version>
