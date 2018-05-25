@@ -249,7 +249,7 @@
 		<imagej.version>2.0.0-rc-65</imagej.version>
 
 		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
-		<imagej1.version>1.52a</imagej1.version>
+		<imagej1.version>1.52b</imagej1.version>
 
 		<!-- ImageJ 1.x patcher - https://github.com/imagej/ij1-patcher -->
 		<ij1-patcher.version>0.12.9</ij1-patcher.version>
@@ -264,19 +264,19 @@
 		<imagej-launcher.version>5.0.0</imagej-launcher.version>
 
 		<!-- ImageJ Legacy - https://github.com/imagej/imagej-legacy -->
-		<imagej-legacy.version>0.29.0</imagej-legacy.version>
+		<imagej-legacy.version>0.30.0</imagej-legacy.version>
 
 		<!-- ImageJ MATLAB - https://github.com/imagej/imagej-matlab -->
 		<imagej-matlab.version>0.7.2</imagej-matlab.version>
 
 		<!-- ImageJ Mesh - https://github.com/imagej/imagej-mesh -->
-		<imagej-mesh.version>0.6.0</imagej-mesh.version>
+		<imagej-mesh.version>0.7.0</imagej-mesh.version>
 
 		<!-- ImageJ Notebook - https://github.com/imagej/imagej-notebook -->
 		<imagej-notebook.version>0.2.3</imagej-notebook.version>
 
 		<!-- ImageJ OMERO - https://github.com/imagej/imagej-omero -->
-		<imagej-omero.version>0.4.1</imagej-omero.version>
+		<imagej-omero.version>0.5.0</imagej-omero.version>
 
 		<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
 		<imagej-ops.version>0.41.0</imagej-ops.version>
@@ -320,7 +320,7 @@
 		<!-- ImgLib2 - https://github.com/imglib -->
 
 		<!-- ImgLib2 - https://github.com/imglib/imglib2 -->
-		<imglib2.version>5.1.0</imglib2.version>
+		<imglib2.version>5.2.0</imglib2.version>
 
 		<!-- ImgLib2 Algorithms - https://github.com/imglib/imglib2-algorithm -->
 		<imglib2-algorithm.version>0.9.0</imglib2-algorithm.version>
@@ -332,10 +332,10 @@
 		<imglib2-algorithm-gpl.version>0.2.3</imglib2-algorithm-gpl.version>
 
 		<!-- ImgLib2 Cache - https://github.com/imglib/imglib2-cache -->
-		<imglib2-cache.version>1.0.0-beta-8</imglib2-cache.version>
+		<imglib2-cache.version>1.0.0-beta-9</imglib2-cache.version>
 
 		<!-- ImgLib2 IJ - https://github.com/imglib/imglib2-ij -->
-		<imglib2-ij.version>2.0.0-beta-40</imglib2-ij.version>
+		<imglib2-ij.version>2.0.0-beta-41</imglib2-ij.version>
 
 		<!-- ImgLib2 RealTransform - https://github.com/imglib/imglib2-realtransform -->
 		<imglib2-realtransform.version>2.0.0</imglib2-realtransform.version>
@@ -473,7 +473,7 @@
 		<TopoJ_.version>${TopoJ.version}</TopoJ_.version>
 		<TrackMate.version>3.7.0</TrackMate.version>
 		<TrackMate_.version>${TrackMate.version}</TrackMate_.version>
-		<Trainable_Segmentation.version>3.2.24</Trainable_Segmentation.version>
+		<Trainable_Segmentation.version>3.2.26</Trainable_Segmentation.version>
 		<TrakEM2_.version>${TrakEM2.version}</TrakEM2_.version>
 		<TrakEM2_Archipelago.version>2.0.2</TrakEM2_Archipelago.version>
 		<VIB-lib.version>2.2.0</VIB-lib.version>
@@ -564,7 +564,7 @@
 		<formats-gpl.version>${bio-formats.version}</formats-gpl.version>
 
 		<!-- OMERO - https://github.com/openmicroscopy/openmicroscopy -->
-		<omero.version>5.4.5-ice36-b83</omero.version>
+		<omero.version>5.4.6-ice36-b87</omero.version>
 		<blitz.version>${omero.version}</blitz.version>
 		<common.version>${omero.version}</common.version>
 		<dsl.version>${omero.version}</dsl.version>
@@ -583,7 +583,7 @@
 		<MorphoLibJ.version>1.3.3</MorphoLibJ.version>
 
 		<!-- multiview-reconstruction - https://github.com/PreibischLab/multiview-reconstruction -->
-		<multiview-reconstruction.version>0.2.2</multiview-reconstruction.version>
+		<multiview-reconstruction.version>0.2.3</multiview-reconstruction.version>
 
 		<!-- multiview-simulation - https://github.com/PreibischLab/multiview-simulation -->
 		<multiview-simulation.version>0.1.0</multiview-simulation.version>
@@ -595,7 +595,7 @@
 		<cleargl.version>2.1.6</cleargl.version>
 
 		<!-- Scenery - https://github.com/scenerygraphics/scenery -->
-		<scenery.version>0.3.1</scenery.version>
+		<scenery.version>0.4.1</scenery.version>
 
 		<!-- SciView - https://github.com/scenerygraphics/SciView -->
 		<sciview.version>0.1.1</sciview.version>
@@ -606,7 +606,7 @@
 		<poi.version>3.17</poi.version>
 
 		<!-- Batik - https://xmlgraphics.apache.org/batik/ -->
-		<batik.version>1.9.1</batik.version>
+		<batik.version>1.10</batik.version>
 		<batik-anim.version>${batik.version}</batik-anim.version>
 		<batik-awt-util.version>${batik.version}</batik-awt-util.version>
 		<batik-bridge.version>${batik.version}</batik-bridge.version>
@@ -634,7 +634,7 @@
 		<batik-ttf2svg.version>${batik.version}</batik-ttf2svg.version>
 		<batik-util.version>${batik.version}</batik-util.version>
 		<batik-xml.version>${batik.version}</batik-xml.version>
-		<xmlgraphics-commons.version>2.2</xmlgraphics-commons.version>
+		<xmlgraphics-commons.version>2.3</xmlgraphics-commons.version>
 
 		<!-- Commons BeanUtils - https://commons.apache.org/proper/commons-beanutils/ -->
 		<commons-beanutils.version>1.9.3</commons-beanutils.version>
@@ -662,7 +662,7 @@
 		<commons-text.version>1.3</commons-text.version>
 
 		<!-- Gson - https://code.google.com/p/google-gson/ -->
-		<gson.version>2.8.3</gson.version>
+		<gson.version>2.8.5</gson.version>
 
 		<!-- Guava - https://github.com/google/guava -->
 		<guava.version>21.0</guava.version>
@@ -694,7 +694,7 @@
 		<jdom2.version>2.0.6</jdom2.version>
 
 		<!-- Jetty - http://eclipse.org/jetty/ -->
-		<jetty.version>9.4.9.v20180320</jetty.version>
+		<jetty.version>9.4.10.v20180503</jetty.version>
 		<jetty-annotations.version>${jetty.version}</jetty-annotations.version>
 		<jetty-ant.version>${jetty.version}</jetty-ant.version>
 		<jetty-client.version>${jetty.version}</jetty-client.version>
@@ -785,7 +785,7 @@
 		<lwjgl.version>3.1.6</lwjgl.version>
 
 		<!-- MapDB - http://www.mapdb.org/ -->
-		<mapdb.version>3.0.5</mapdb.version>
+		<mapdb.version>3.0.6</mapdb.version>
 
 		<!-- MigLayout - http://www.miglayout.com/ -->
 		<miglayout.version>3.7.4</miglayout.version>
