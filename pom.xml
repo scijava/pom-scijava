@@ -597,6 +597,9 @@
 		<!-- Scenery - https://github.com/scenerygraphics/scenery -->
 		<scenery.version>0.3.1</scenery.version>
 
+		<!-- SciView - https://github.com/scenerygraphics/SciView -->
+		<sciview.version>0.1.1</sciview.version>
+
 		<!-- Third party components -->
 
 		<!-- Apache POI - https://poi.apache.org/ -->
@@ -2227,6 +2230,13 @@
 				<groupId>graphics.scenery</groupId>
 				<artifactId>scenery</artifactId>
 				<version>${scenery.version}</version>
+			</dependency>
+
+			<!-- SciView - https://github.com/scenerygraphics/SciView -->
+			<dependency>
+				<groupId>graphics.scenery</groupId>
+				<artifactId>sciview</artifactId>
+				<version>${sciview.version}</version>
 			</dependency>
 
 			<!-- Third party components -->
