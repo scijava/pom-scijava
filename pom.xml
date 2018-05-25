@@ -278,6 +278,9 @@
 		<!-- ImageJ OMERO - https://github.com/imagej/imagej-omero -->
 		<imagej-omero.version>0.5.0</imagej-omero.version>
 
+		<!-- ImageJ OMERO Legacy - https://github.com/imagej/imagej-omero-legacy -->
+		<imagej-omero-legacy.version>0.1.0</imagej-omero-legacy.version>
+
 		<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
 		<imagej-ops.version>0.41.0</imagej-ops.version>
 
@@ -1157,6 +1160,13 @@
 				<groupId>net.imagej</groupId>
 				<artifactId>imagej-omero</artifactId>
 				<version>${imagej-omero.version}</version>
+			</dependency>
+
+			<!-- ImageJ OMERO Legacy - https://github.com/imagej/imagej-omero-legacy -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-omero-legacy</artifactId>
+				<version>${imagej-omero-legacy.version}</version>
 			</dependency>
 
 			<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
@@ -3212,6 +3222,7 @@
 				<imagej-mesh.version>LATEST</imagej-mesh.version>
 				<imagej-notebook.version>LATEST</imagej-notebook.version>
 				<imagej-omero.version>LATEST</imagej-omero.version>
+				<imagej-omero-legacy.version>LATEST</imagej-omero-legacy.version>
 				<imagej-ops.version>LATEST</imagej-ops.version>
 				<imagej-plugins-commands.version>LATEST</imagej-plugins-commands.version>
 				<imagej-plugins-tools.version>LATEST</imagej-plugins-tools.version>
