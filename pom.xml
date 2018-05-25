@@ -2120,6 +2120,11 @@
 						<artifactId>ejb3-persistence</artifactId>
 					</exclusion>
 					<exclusion>
+						<!-- Conflicts with org.javassist:javassist -->
+						<groupId>javassist</groupId>
+						<artifactId>javassist</artifactId>
+					</exclusion>
+					<exclusion>
 						<groupId>xml-apis</groupId>
 						<artifactId>xml-apis</artifactId>
 					</exclusion>
