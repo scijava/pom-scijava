@@ -246,7 +246,7 @@
 		<!-- ImageJ - https://github.com/imagej -->
 
 		<!-- ImageJ - https://github.com/imagej/imagej -->
-		<imagej.version>2.0.0-rc-65</imagej.version>
+		<imagej.version>2.0.0-rc-66</imagej.version>
 
 		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
 		<imagej1.version>1.52b</imagej1.version>
@@ -378,7 +378,7 @@
 		<!-- Fiji - https://github.com/fiji -->
 
 		<!-- Fiji - https://github.com/fiji/fiji -->
-		<fiji.version>2.0.0-pre-4</fiji.version>
+		<fiji.version>2.0.0-pre-5</fiji.version>
 
 		<!-- Standard Fiji projects -->
 
