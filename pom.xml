@@ -282,7 +282,7 @@
 		<imagej-omero-legacy.version>0.1.0</imagej-omero-legacy.version>
 
 		<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
-		<imagej-ops.version>0.41.0</imagej-ops.version>
+		<imagej-ops.version>0.41.1</imagej-ops.version>
 
 		<!-- ImageJ Plugins: Commands - https://github.com/imagej/imagej-plugins-commands -->
 		<imagej-plugins-commands.version>0.7.1</imagej-plugins-commands.version>
@@ -408,11 +408,11 @@
 		<Dichromacy_.version>${Dichromacy.version}</Dichromacy_.version>
 		<Directionality.version>2.2.0</Directionality.version>
 		<Directionality_.version>${Directionality.version}</Directionality_.version>
-		<FS_Align_TrakEM2.version>2.0.2</FS_Align_TrakEM2.version>
+		<FS_Align_TrakEM2.version>2.0.3</FS_Align_TrakEM2.version>
 		<Feature_Detection.version>2.0.2</Feature_Detection.version>
 		<Fiji_3D_Blob_Segmentation.version>3.0.1</Fiji_3D_Blob_Segmentation.version>
 		<Fiji_Archipelago.version>2.0.1</Fiji_Archipelago.version>
-		<Fiji_Developer.version>2.0.6</Fiji_Developer.version>
+		<Fiji_Developer.version>2.0.7</Fiji_Developer.version>
 		<Fiji_Package_Maker.version>2.1.1</Fiji_Package_Maker.version>
 		<Fiji_Plugins.version>3.1.1</Fiji_Plugins.version>
 		<FlowJ.version>1.29.3</FlowJ.version>
@@ -432,7 +432,7 @@
 		<Interactive_3D_Surface_Plot.version>3.0.0</Interactive_3D_Surface_Plot.version>
 		<IsoData_Classifier.version>2.0.1</IsoData_Classifier.version>
 		<Kuwahara_Filter.version>2.0.1</Kuwahara_Filter.version>
-		<KymographBuilder.version>2.0.0</KymographBuilder.version>
+		<KymographBuilder.version>2.0.1</KymographBuilder.version>
 		<LSM_Reader.version>4.1.2</LSM_Reader.version>
 		<LSM_Toolbox.version>4.1.2</LSM_Toolbox.version>
 		<Lasso_and_Blow_Tool.version>2.0.2</Lasso_and_Blow_Tool.version>
@@ -445,13 +445,13 @@
 		<Manual_Tracking.version>2.1.1</Manual_Tracking.version>
 		<MorphoLibJ_.version>${MorphoLibJ.version}</MorphoLibJ_.version>
 		<Multi_Kymograph.version>3.0.1</Multi_Kymograph.version>
-		<OMEVisual.version>1.1.1</OMEVisual.version>
+		<OMEVisual.version>1.1.2</OMEVisual.version>
 		<PIV_analyser.version>1.1.2</PIV_analyser.version>
 		<QuickPALM.version>1.1.2</QuickPALM.version>
 		<QuickPALM_.version>${QuickPALM.version}</QuickPALM_.version>
 		<RATS.version>2.0.2</RATS.version>
 		<RATS_.version>${RATS.version}</RATS_.version>
-		<Reconstruct_Reader.version>2.0.3</Reconstruct_Reader.version>
+		<Reconstruct_Reader.version>2.0.4</Reconstruct_Reader.version>
 		<SPIM_Opener.version>2.0.2</SPIM_Opener.version>
 		<SPIM_Registration.version>5.0.19</SPIM_Registration.version>
 		<Samples.version>2.0.2</Samples.version>
@@ -465,7 +465,7 @@
 		<SplineDeformationGenerator_.version>${SplineDeformationGenerator.version}</SplineDeformationGenerator_.version>
 		<Stack_Manipulation.version>2.1.0</Stack_Manipulation.version>
 		<Statistical_Region_Merging.version>2.0.1</Statistical_Region_Merging.version>
-		<Stitching.version>3.1.5</Stitching.version>
+		<Stitching.version>3.1.6</Stitching.version>
 		<Stitching_.version>${Stitching.version}</Stitching_.version>
 		<Sync_Win.version>1.7-fiji4</Sync_Win.version>
 		<Thread_Killer.version>2.0.1</Thread_Killer.version>
@@ -478,8 +478,7 @@
 		<TrackMate.version>3.7.0</TrackMate.version>
 		<TrackMate_.version>${TrackMate.version}</TrackMate_.version>
 		<Trainable_Segmentation.version>3.2.26</Trainable_Segmentation.version>
-		<TrakEM2_.version>${TrakEM2.version}</TrakEM2_.version>
-		<TrakEM2_Archipelago.version>2.0.2</TrakEM2_Archipelago.version>
+		<TrakEM2_Archipelago.version>2.0.3</TrakEM2_Archipelago.version>
 		<VIB-lib.version>2.2.0</VIB-lib.version>
 		<VIB.version>3.0.2</VIB.version>
 		<VIB_.version>${VIB.version}</VIB_.version>
@@ -493,7 +492,7 @@
 		<bUnwarpJ.version>2.6.9</bUnwarpJ.version>
 		<bUnwarpJ_.version>${bUnwarpJ.version}</bUnwarpJ_.version>
 		<bij.version>0.1.1</bij.version>
-		<blockmatching.version>2.1.2</blockmatching.version>
+		<blockmatching.version>2.1.3</blockmatching.version>
 		<blockmatching_.version>${blockmatching.version}</blockmatching_.version>
 		<fiji-lib.version>2.1.2</fiji-lib.version>
 		<jep.version>2.4.2</jep.version>
@@ -503,7 +502,7 @@
 		<pal-optimization.version>2.0.1</pal-optimization.version>
 		<panorama.version>3.0.2</panorama.version>
 		<panorama_.version>${panorama.version}</panorama_.version>
-		<register_virtual_stack_slices.version>3.0.3</register_virtual_stack_slices.version>
+		<register_virtual_stack_slices.version>3.0.5</register_virtual_stack_slices.version>
 		<registration_3d.version>2.0.1</registration_3d.version>
 		<weave_jy2java.version>2.1.0</weave_jy2java.version>
 
@@ -537,7 +536,8 @@
 
 		<T2-NIT.version>1.1.2</T2-NIT.version>
 		<T2-TreelineGraph.version>1.1.2</T2-TreelineGraph.version>
-		<TrakEM2.version>1.0i</TrakEM2.version>
+		<TrakEM2.version>1.0j</TrakEM2.version>
+		<TrakEM2_.version>${TrakEM2.version}</TrakEM2_.version>
 		<VectorString.version>2.0.1</VectorString.version>
 		<trakem2-transform.version>1.0.1</trakem2-transform.version>
 
