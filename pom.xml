@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>22.0.3-SNAPSHOT</version>
+	<version>22.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -420,6 +420,7 @@
 		<Graph_Cut.version>1.0.2</Graph_Cut.version>
 		<Gray_Morphology.version>2.3.4</Gray_Morphology.version>
 		<H5J_Loader_Plugin.version>1.0.7</H5J_Loader_Plugin.version>
+		<HDF5_Vibez.version>1.0.1</HDF5_Vibez.version>
 		<Helmholtz_Analysis.version>2.0.2</Helmholtz_Analysis.version>
 		<IJ_Robot.version>2.0.1</IJ_Robot.version>
 		<IO.version>3.0.4</IO.version>
@@ -1554,6 +1555,11 @@
 				<groupId>org.janelia</groupId>
 				<artifactId>H5J_Loader_Plugin</artifactId>
 				<version>${H5J_Loader_Plugin.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>HDF5_Vibez</artifactId>
+				<version>${HDF5_Vibez.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
@@ -3367,6 +3373,7 @@
 				<Graph_Cut.version>LATEST</Graph_Cut.version>
 				<Gray_Morphology.version>LATEST</Gray_Morphology.version>
 				<H5J_Loader_Plugin.version>LATEST</H5J_Loader_Plugin.version>
+				<HDF5_Vibez.version>LATEST</HDF5_Vibez.version>
 				<Helmholtz_Analysis.version>LATEST</Helmholtz_Analysis.version>
 				<IJ_Robot.version>LATEST</IJ_Robot.version>
 				<IO.version>LATEST</IO.version>
