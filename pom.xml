@@ -1989,6 +1989,21 @@
 				<version>${ome-common.version}</version>
 				<exclusions>
 					<exclusion>
+						<!--
+						The banDuplicateClasses rule of the maven-enforcer-plugin reports a
+						conflict between logback-classic & slf4j-simple in some scenarios.
+						Both include an SLF4J binding (org.slf4j.impl.StaticLoggerBinder).
+						Perhaps the classpath of the tooling also includes slf4j-simple?
+						Regardless, it is generally problematic to inflict a specific SLF4J
+						binding on downstream consumers. "Embedded components such as
+						libraries or frameworks should not declare a dependency on any
+						SLF4J binding but only depend on slf4j-api."
+						See: https://www.slf4j.org/manual.html#libraries
+						-->
+						<groupId>ch.qos.logback</groupId>
+						<artifactId>logback-classic</artifactId>
+					</exclusion>
+					<exclusion>
 						<groupId>xalan</groupId>
 						<artifactId>serializer</artifactId>
 					</exclusion>
@@ -2069,12 +2084,44 @@
 				<groupId>omero</groupId>
 				<artifactId>common</artifactId>
 				<version>${common.version}</version>
+				<exclusions>
+					<exclusion>
+						<!--
+						The banDuplicateClasses rule of the maven-enforcer-plugin reports a
+						conflict between logback-classic & slf4j-simple in some scenarios.
+						Both include an SLF4J binding (org.slf4j.impl.StaticLoggerBinder).
+						Perhaps the classpath of the tooling also includes slf4j-simple?
+						Regardless, it is generally problematic to inflict a specific SLF4J
+						binding on downstream consumers. "Embedded components such as
+						libraries or frameworks should not declare a dependency on any
+						SLF4J binding but only depend on slf4j-api."
+						See: https://www.slf4j.org/manual.html#libraries
+						-->
+						<groupId>ch.qos.logback</groupId>
+						<artifactId>logback-classic</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>omero</groupId>
 				<artifactId>dsl</artifactId>
 				<version>${dsl.version}</version>
 				<exclusions>
+					<exclusion>
+						<!--
+						The banDuplicateClasses rule of the maven-enforcer-plugin reports a
+						conflict between logback-classic & slf4j-simple in some scenarios.
+						Both include an SLF4J binding (org.slf4j.impl.StaticLoggerBinder).
+						Perhaps the classpath of the tooling also includes slf4j-simple?
+						Regardless, it is generally problematic to inflict a specific SLF4J
+						binding on downstream consumers. "Embedded components such as
+						libraries or frameworks should not declare a dependency on any
+						SLF4J binding but only depend on slf4j-api."
+						See: https://www.slf4j.org/manual.html#libraries
+						-->
+						<groupId>ch.qos.logback</groupId>
+						<artifactId>logback-classic</artifactId>
+					</exclusion>
 					<exclusion>
 						<!-- Conflicts with commons-beanutils:commons-beanutils -->
 						<groupId>commons-beanutils</groupId>
@@ -2150,18 +2197,6 @@
 						<!-- Conflicts with commons-io:commons-io and commons-lang:commons-lang -->
 						<groupId>ch.systems.cisd</groupId>
 						<artifactId>jhdf5</artifactId>
-					</exclusion>
-					<exclusion>
-						<!--
-						HACK: The slf4j-simple library is not really a dependency here.
-						But some tools, including the banDuplicateClasses rule of the
-						maven-enforcer-plugin, as well as the maven-dependency-plugin's
-						dependency:copy-dependencies goal, see it for reasons unknown.
-						And it conflicts with logback-classic since both include
-						an SLF4J binding (org.slf4j.impl.StaticLoggerBinder).
-						-->
-						<groupId>org.slf4j</groupId>
-						<artifactId>slf4j-simple</artifactId>
 					</exclusion>
 				</exclusions>
 			</dependency>
