@@ -554,6 +554,9 @@
 		<!-- OME Common Java - https://github.com/ome/ome-common-java -->
 		<ome-common.version>5.3.5</ome-common.version>
 
+		<!-- Metakit - https://github.com/ome/ome-metakit -->
+		<metakit.version>5.3.1</metakit.version>
+
 		<!-- OME POI - https://github.com/ome/ome-poi -->
 		<ome-poi.version>5.3.2</ome-poi.version>
 
@@ -1982,6 +1985,30 @@
 
 			<!-- Open Microscopy Environment - https://github.com/openmicroscopy -->
 
+			<!-- Metakit - https://github.com/ome/ome-metakit -->
+			<dependency>
+				<groupId>org.openmicroscopy</groupId>
+				<artifactId>metakit</artifactId>
+				<version>${metakit.version}</version>
+				<exclusions>
+					<exclusion>
+						<!--
+						The banDuplicateClasses rule of the maven-enforcer-plugin reports a
+						conflict between logback-classic & slf4j-simple in some scenarios.
+						Both include an SLF4J binding (org.slf4j.impl.StaticLoggerBinder).
+						Perhaps the classpath of the tooling also includes slf4j-simple?
+						Regardless, it is generally problematic to inflict a specific SLF4J
+						binding on downstream consumers. "Embedded components such as
+						libraries or frameworks should not declare a dependency on any
+						SLF4J binding but only depend on slf4j-api."
+						See: https://www.slf4j.org/manual.html#libraries
+						-->
+						<groupId>ch.qos.logback</groupId>
+						<artifactId>logback-classic</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+
 			<!-- OME Common Java - https://github.com/ome/ome-common-java -->
 			<dependency>
 				<groupId>org.openmicroscopy</groupId>
@@ -3173,6 +3200,7 @@
 			</activation>
 			<properties>
 				<ome-common.version>LATEST</ome-common.version>
+				<metakit.version>LATEST</metakit.version>
 				<ome-poi.version>LATEST</ome-poi.version>
 				<ome-xml.version>LATEST</ome-xml.version>
 				<bio-formats.version>LATEST</bio-formats.version>
