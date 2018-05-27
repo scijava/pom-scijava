@@ -3204,6 +3204,7 @@
 				<ome-poi.version>LATEST</ome-poi.version>
 				<ome-xml.version>LATEST</ome-xml.version>
 				<bio-formats.version>LATEST</bio-formats.version>
+				<omero.version>LATEST</omero.version>
 			</properties>
 			<repositories>
 				<repository>
