@@ -2299,6 +2299,13 @@
 				<groupId>net.coremem</groupId>
 				<artifactId>CoreMem</artifactId>
 				<version>${CoreMem.version}</version>
+				<exclusions>
+					<exclusion>
+						<!-- Conflicts with junit:junit. We don't need Android here. -->
+						<groupId>com.google.android.tools</groupId>
+						<artifactId>dx</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<!-- ClearGL - https://github.com/ClearVolume/ClearGL -->
