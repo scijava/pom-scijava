@@ -276,7 +276,7 @@
 		<imagej-notebook.version>0.2.3</imagej-notebook.version>
 
 		<!-- ImageJ OMERO - https://github.com/imagej/imagej-omero -->
-		<imagej-omero.version>0.5.0</imagej-omero.version>
+		<imagej-omero.version>0.5.1</imagej-omero.version>
 
 		<!-- ImageJ OMERO Legacy - https://github.com/imagej/imagej-omero-legacy -->
 		<imagej-omero-legacy.version>0.1.0</imagej-omero-legacy.version>
@@ -355,7 +355,7 @@
 		<!-- SCIFIO - https://github.com/scifio -->
 
 		<!-- SCIFIO - https://github.com/scifio/scifio -->
-		<scifio.version>0.36.0</scifio.version>
+		<scifio.version>0.36.1</scifio.version>
 
 		<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
 		<scifio-bf-compat.version>2.0.3</scifio-bf-compat.version>
