@@ -249,7 +249,7 @@
 		<imagej.version>2.0.0-rc-67</imagej.version>
 
 		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
-		<imagej1.version>1.52b</imagej1.version>
+		<imagej1.version>1.52c</imagej1.version>
 
 		<!-- ImageJ 1.x patcher - https://github.com/imagej/ij1-patcher -->
 		<ij1-patcher.version>0.12.9</ij1-patcher.version>
