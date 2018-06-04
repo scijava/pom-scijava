@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>22.2.1-SNAPSHOT</version>
+	<version>22.3.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -160,7 +160,7 @@
 		<scijava-cache.version>0.1.2</scijava-cache.version>
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.73.1</scijava-common.version>
+		<scijava-common.version>2.74.1</scijava-common.version>
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
 		<scijava-config.version>2.0.2</scijava-config.version>
@@ -246,7 +246,7 @@
 		<!-- ImageJ - https://github.com/imagej -->
 
 		<!-- ImageJ - https://github.com/imagej/imagej -->
-		<imagej.version>2.0.0-rc-66</imagej.version>
+		<imagej.version>2.0.0-rc-67</imagej.version>
 
 		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
 		<imagej1.version>1.52b</imagej1.version>
@@ -276,7 +276,7 @@
 		<imagej-notebook.version>0.2.3</imagej-notebook.version>
 
 		<!-- ImageJ OMERO - https://github.com/imagej/imagej-omero -->
-		<imagej-omero.version>0.5.1</imagej-omero.version>
+		<imagej-omero.version>0.6.0</imagej-omero.version>
 
 		<!-- ImageJ OMERO Legacy - https://github.com/imagej/imagej-omero-legacy -->
 		<imagej-omero-legacy.version>0.1.0</imagej-omero-legacy.version>
@@ -285,7 +285,7 @@
 		<imagej-ops.version>0.41.1</imagej-ops.version>
 
 		<!-- ImageJ Plugins: Commands - https://github.com/imagej/imagej-plugins-commands -->
-		<imagej-plugins-commands.version>0.7.1</imagej-plugins-commands.version>
+		<imagej-plugins-commands.version>0.8.0</imagej-plugins-commands.version>
 
 		<!-- ImageJ Plugins: Tools - https://github.com/imagej/imagej-plugins-tools -->
 		<imagej-plugins-tools.version>0.3.1</imagej-plugins-tools.version>
@@ -323,7 +323,7 @@
 		<!-- ImgLib2 - https://github.com/imglib -->
 
 		<!-- ImgLib2 - https://github.com/imglib/imglib2 -->
-		<imglib2.version>5.2.0</imglib2.version>
+		<imglib2.version>5.3.0</imglib2.version>
 
 		<!-- ImgLib2 Algorithms - https://github.com/imglib/imglib2-algorithm -->
 		<imglib2-algorithm.version>0.9.0</imglib2-algorithm.version>
@@ -338,7 +338,7 @@
 		<imglib2-cache.version>1.0.0-beta-9</imglib2-cache.version>
 
 		<!-- ImgLib2 IJ - https://github.com/imglib/imglib2-ij -->
-		<imglib2-ij.version>2.0.0-beta-41</imglib2-ij.version>
+		<imglib2-ij.version>2.0.0-beta-42</imglib2-ij.version>
 
 		<!-- ImgLib2 RealTransform - https://github.com/imglib/imglib2-realtransform -->
 		<imglib2-realtransform.version>2.0.0</imglib2-realtransform.version>
@@ -355,7 +355,7 @@
 		<!-- SCIFIO - https://github.com/scifio -->
 
 		<!-- SCIFIO - https://github.com/scifio/scifio -->
-		<scifio.version>0.36.1</scifio.version>
+		<scifio.version>0.37.0</scifio.version>
 
 		<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
 		<scifio-bf-compat.version>2.0.3</scifio-bf-compat.version>
@@ -378,7 +378,7 @@
 		<!-- Fiji - https://github.com/fiji -->
 
 		<!-- Fiji - https://github.com/fiji/fiji -->
-		<fiji.version>2.0.0-pre-5</fiji.version>
+		<fiji.version>2.0.0-pre-6</fiji.version>
 
 		<!-- Standard Fiji projects -->
 
@@ -529,14 +529,14 @@
 		<bigdataviewer-core.version>5.0.0</bigdataviewer-core.version>
 		<bigdataviewer-server.version>2.1.0</bigdataviewer-server.version>
 		<bigdataviewer-vistools.version>1.0.0-beta-11</bigdataviewer-vistools.version>
-		<bigdataviewer_fiji.version>4.0.2</bigdataviewer_fiji.version>
+		<bigdataviewer_fiji.version>5.0.0</bigdataviewer_fiji.version>
 		<spim_data.version>2.2.1</spim_data.version>
 
 		<!-- TrakEM2 - https://github.com/trakem2 -->
 
 		<T2-NIT.version>1.1.2</T2-NIT.version>
 		<T2-TreelineGraph.version>1.1.2</T2-TreelineGraph.version>
-		<TrakEM2.version>1.0j</TrakEM2.version>
+		<TrakEM2.version>1.1j</TrakEM2.version>
 		<TrakEM2_.version>${TrakEM2.version}</TrakEM2_.version>
 		<VectorString.version>2.0.1</VectorString.version>
 		<trakem2-transform.version>1.0.1</trakem2-transform.version>
@@ -590,10 +590,10 @@
 		<MorphoLibJ.version>1.3.3</MorphoLibJ.version>
 
 		<!-- multiview-reconstruction - https://github.com/PreibischLab/multiview-reconstruction -->
-		<multiview-reconstruction.version>0.2.3</multiview-reconstruction.version>
+		<multiview-reconstruction.version>0.2.7</multiview-reconstruction.version>
 
 		<!-- multiview-simulation - https://github.com/PreibischLab/multiview-simulation -->
-		<multiview-simulation.version>0.1.0</multiview-simulation.version>
+		<multiview-simulation.version>0.2.0</multiview-simulation.version>
 
 		<!-- CoreMem - https://github.com/ClearControl/CoreMem -->
 		<CoreMem.version>0.4.3</CoreMem.version>
@@ -795,7 +795,7 @@
 		<lwjgl.version>3.1.6</lwjgl.version>
 
 		<!-- MapDB - http://www.mapdb.org/ -->
-		<mapdb.version>3.0.6</mapdb.version>
+		<mapdb.version>3.0.7</mapdb.version>
 
 		<!-- MigLayout - http://www.miglayout.com/ -->
 		<miglayout.version>3.7.4</miglayout.version>
