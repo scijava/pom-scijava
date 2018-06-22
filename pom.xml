@@ -589,6 +589,9 @@
 		<!-- MorphoLibJ - https://github.com/ijpb/MorphoLibJ -->
 		<MorphoLibJ.version>1.3.3</MorphoLibJ.version>
 
+		<!-- BigStitcher - https://github.com/PreibischLab/BigStitcher -->
+		<BigStitcher.version>0.2.8</BigStitcher.version>
+
 		<!-- multiview-reconstruction - https://github.com/PreibischLab/multiview-reconstruction -->
 		<multiview-reconstruction.version>0.2.9</multiview-reconstruction.version>
 
@@ -2281,6 +2284,13 @@
 				<groupId>fr.inra.ijpb</groupId>
 				<artifactId>MorphoLibJ_</artifactId>
 				<version>${MorphoLibJ_.version}</version>
+			</dependency>
+
+			<!-- BigStitcher - https://github.com/PreibischLab/BigStitcher -->
+			<dependency>
+				<groupId>net.preibisch</groupId>
+				<artifactId>BigStitcher</artifactId>
+				<version>${BigStitcher.version}</version>
 			</dependency>
 
 			<!-- multiview-reconstruction - https://github.com/PreibischLab/multiview-reconstruction -->
