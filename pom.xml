@@ -139,7 +139,7 @@
 		<!-- SciJava - https://github.com/scijava -->
 
 		<!-- Batch Processor - https://github.com/scijava/batch-processor -->
-		<batch-processor.version>0.1.1</batch-processor.version>
+		<batch-processor.version>0.1.2</batch-processor.version>
 
 		<!-- JUnit Benchmarks - https://github.com/scijava/junit-benchmarks -->
 		<junit-benchmarks.version>0.7.4-scijava</junit-benchmarks.version>
@@ -264,7 +264,7 @@
 		<imagej-launcher.version>5.0.0</imagej-launcher.version>
 
 		<!-- ImageJ Legacy - https://github.com/imagej/imagej-legacy -->
-		<imagej-legacy.version>0.31.0</imagej-legacy.version>
+		<imagej-legacy.version>0.32.1</imagej-legacy.version>
 
 		<!-- ImageJ MATLAB - https://github.com/imagej/imagej-matlab -->
 		<imagej-matlab.version>0.7.2</imagej-matlab.version>
