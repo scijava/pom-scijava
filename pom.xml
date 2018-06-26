@@ -370,7 +370,7 @@
 		<scifio-jai-imageio.version>1.1.1</scifio-jai-imageio.version>
 
 		<!-- SCIFIO-LifeSci - https://github.com/scifio/scifio-lifesci -->
-		<scifio-lifesci.version>0.7.1</scifio-lifesci.version>
+		<scifio-lifesci.version>0.8.0</scifio-lifesci.version>
 
 		<!-- SCIFIO-OME-XML - https://github.com/scifio/scifio-ome-xml -->
 		<scifio-ome-xml.version>0.15.0</scifio-ome-xml.version>
