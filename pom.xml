@@ -816,6 +816,9 @@
 		<!-- OpenCSV - http://opencsv.sourceforge.net/ -->
 		<opencsv.version>3.9</opencsv.version>
 
+		<!-- piocli - http://picocli.info/ -->
+		<picocli.version>3.1.0</picocli.version>
+
 		<!-- PostgreSQL JDBC Driver - https://jdbc.postgresql.org/ -->
 		<postgresql.version>9.1-901-1.jdbc4</postgresql.version>
 
@@ -3070,6 +3073,14 @@
 				<artifactId>opencsv</artifactId>
 				<version>${opencsv.version}</version>
 			</dependency>
+
+			<!-- picocli - http://picocli.info/ -->
+			<dependency>
+				<groupId>info.picocli</groupId>
+				<artifactId>picocli</artifactId>
+				<version>${picocli.version}</version>
+			</dependency>
+
 
 			<!-- PostgreSQL JDBC Driver - https://jdbc.postgresql.org/ -->
 			<dependency>
