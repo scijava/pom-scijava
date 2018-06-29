@@ -624,6 +624,9 @@
 		<!-- Apache POI - https://poi.apache.org/ -->
 		<poi.version>3.17</poi.version>
 
+		<!-- Apache Spark - https://spark.apache.org/ -->
+		<spark.version>2.3.1</spark.version>
+
 		<!-- Batik - https://xmlgraphics.apache.org/batik/ -->
 		<batik.version>1.10</batik.version>
 		<batik-anim.version>${batik.version}</batik-anim.version>
@@ -2389,6 +2392,12 @@
 				<version>${poi.version}</version>
 			</dependency>
 
+			<!-- Apache Spark - https://spark.apache.org/ -->
+			<dependency>
+				<groupId>org.apache.spark</groupId>
+				<artifactId>spark-core_2.11</artifactId>
+				<version>${spark.version}</version>
+			</dependency>
 			<!-- Batik - https://xmlgraphics.apache.org/batik/ -->
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
