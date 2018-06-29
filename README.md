@@ -30,3 +30,8 @@ For more information about Maven, see:
 
 * [ImageJ Maven overview](http://imagej.net/Maven)
 * [ImageJ Maven FAQ](http://imagej.net/Maven_-_Frequently_Asked_Questions)
+
+## Troubleshooting
+
+
+* [Setting empty metadata fields](https://github.com/scijava/pom-scijava-base#how-to-override-a-field-with-an-empty-value)
