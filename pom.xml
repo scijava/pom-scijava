@@ -608,7 +608,7 @@
 		<scenery.version>0.4.1</scenery.version>
 
 		<!-- SciView - https://github.com/scenerygraphics/SciView -->
-		<sciview.version>0.1.1</sciview.version>
+		<sciview.version>0.1.3</sciview.version>
 
 		<!-- Third party components -->
 
@@ -2340,7 +2340,7 @@
 
 			<!-- SciView - https://github.com/scenerygraphics/SciView -->
 			<dependency>
-				<groupId>graphics.scenery</groupId>
+				<groupId>sc.iview</groupId>
 				<artifactId>sciview</artifactId>
 				<version>${sciview.version}</version>
 			</dependency>
