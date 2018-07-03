@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>23.0.2-SNAPSHOT</version>
+	<version>23.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -154,7 +154,7 @@
 		<native-lib-loader.version>2.2.0</native-lib-loader.version>
 
 		<!-- Parsington - https://github.com/scijava/parsington -->
-		<parsington.version>1.0.1</parsington.version>
+		<parsington.version>1.0.2</parsington.version>
 
 		<!-- SciJava Cache - https://github.com/scijava/scijava-cache -->
 		<scijava-cache.version>0.1.2</scijava-cache.version>
@@ -169,7 +169,7 @@
 		<scijava-grab.version>0.1.0</scijava-grab.version>
 
 		<!-- SciJava I/O: HTTP - https://github.com/scijava/scijava-io-http -->
-		<scijava-io-http.version>0.1.1</scijava-io-http.version>
+		<scijava-io-http.version>0.1.2</scijava-io-http.version>
 
 		<!-- SciJava Java 3D Tools - https://github.com/scijava/scijava-java3d -->
 		<scijava-java3d.version>0.1.0</scijava-java3d.version>
@@ -249,7 +249,7 @@
 		<imagej.version>2.0.0-rc-67</imagej.version>
 
 		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
-		<imagej1.version>1.52c</imagej1.version>
+		<imagej1.version>1.52d</imagej1.version>
 
 		<!-- ImageJ 1.x patcher - https://github.com/imagej/ij1-patcher -->
 		<ij1-patcher.version>0.12.9</ij1-patcher.version>
@@ -270,7 +270,7 @@
 		<imagej-matlab.version>0.7.2</imagej-matlab.version>
 
 		<!-- ImageJ Mesh - https://github.com/imagej/imagej-mesh -->
-		<imagej-mesh.version>0.7.0</imagej-mesh.version>
+		<imagej-mesh.version>0.7.1</imagej-mesh.version>
 
 		<!-- ImageJ Notebook - https://github.com/imagej/imagej-notebook -->
 		<imagej-notebook.version>0.2.3</imagej-notebook.version>
@@ -297,7 +297,7 @@
 		<imagej-plugins-uploader-webdav.version>0.2.2</imagej-plugins-uploader-webdav.version>
 
 		<!-- ImageJ Scripting - https://github.com/imagej/imagej-scripting -->
-		<imagej-scripting.version>0.8.1</imagej-scripting.version>
+		<imagej-scripting.version>0.8.2</imagej-scripting.version>
 
 		<!-- ImageJ Server - https://github.com/imagej/imagej-server -->
 		<imagej-server.version>0.1.0</imagej-server.version>
@@ -344,7 +344,7 @@
 		<imglib2-realtransform.version>2.0.0</imglib2-realtransform.version>
 
 		<!-- ImgLib2 ROI - https://github.com/imglib/imglib2-roi -->
-		<imglib2-roi.version>0.5.1</imglib2-roi.version>
+		<imglib2-roi.version>0.5.2</imglib2-roi.version>
 
 		<!-- ImgLib2 Scripting - https://github.com/imglib/imglib2-script -->
 		<imglib2-script.version>0.2.3</imglib2-script.version>
@@ -382,7 +382,7 @@
 
 		<!-- Standard Fiji projects -->
 
-		<AnalyzeSkeleton.version>3.2.1</AnalyzeSkeleton.version>
+		<AnalyzeSkeleton.version>3.3.0</AnalyzeSkeleton.version>
 		<AnalyzeSkeleton_.version>${AnalyzeSkeleton.version}</AnalyzeSkeleton_.version>
 		<Anisotropic_Diffusion_2D.version>2.0.1</Anisotropic_Diffusion_2D.version>
 		<Archipelago_Plugins.version>0.5.4</Archipelago_Plugins.version>
@@ -396,7 +396,7 @@
 		<CPU_Meter.version>2.0.1</CPU_Meter.version>
 		<Calculator_Plus.version>2.0.1</Calculator_Plus.version>
 		<Cell_Counter.version>2.2.2</Cell_Counter.version>
-		<Colocalisation_Analysis.version>3.0.3</Colocalisation_Analysis.version>
+		<Colocalisation_Analysis.version>3.0.4</Colocalisation_Analysis.version>
 		<Color_Histogram.version>2.0.7</Color_Histogram.version>
 		<Color_Inspector_3D.version>2.3.2</Color_Inspector_3D.version>
 		<Colour_Deconvolution.version>3.0.2</Colour_Deconvolution.version>
@@ -463,7 +463,7 @@
 		<Skeletonize3D_.version>${Skeletonize3D.version}</Skeletonize3D_.version>
 		<SplineDeformationGenerator.version>2.0.2</SplineDeformationGenerator.version>
 		<SplineDeformationGenerator_.version>${SplineDeformationGenerator.version}</SplineDeformationGenerator_.version>
-		<Stack_Manipulation.version>2.1.0</Stack_Manipulation.version>
+		<Stack_Manipulation.version>2.1.1</Stack_Manipulation.version>
 		<Statistical_Region_Merging.version>2.0.1</Statistical_Region_Merging.version>
 		<Stitching.version>3.1.6</Stitching.version>
 		<Stitching_.version>${Stitching.version}</Stitching_.version>
@@ -496,7 +496,7 @@
 		<blockmatching_.version>${blockmatching.version}</blockmatching_.version>
 		<fiji-lib.version>2.1.2</fiji-lib.version>
 		<jep.version>2.4.2</jep.version>
-		<legacy-imglib1.version>1.1.8</legacy-imglib1.version>
+		<legacy-imglib1.version>1.1.9</legacy-imglib1.version>
 		<level_sets.version>1.0.2</level_sets.version>
 		<mpicbg_.version>${mpicbg.version}</mpicbg_.version>
 		<pal-optimization.version>2.0.1</pal-optimization.version>
@@ -564,7 +564,7 @@
 		<ome-xml.version>5.6.3</ome-xml.version>
 
 		<!-- Bio-Formats - https://github.com/openmicroscopy/bioformats -->
-		<bio-formats.version>5.8.2</bio-formats.version>
+		<bio-formats.version>5.9.0</bio-formats.version>
 		<bio-formats_plugins.version>${bio-formats.version}</bio-formats_plugins.version>
 		<formats-api.version>${bio-formats.version}</formats-api.version>
 		<formats-bsd.version>${bio-formats.version}</formats-bsd.version>
@@ -602,10 +602,10 @@
 		<CoreMem.version>0.4.3</CoreMem.version>
 
 		<!-- ClearGL - https://github.com/ClearVolume/ClearGL -->
-		<cleargl.version>2.1.6</cleargl.version>
+		<cleargl.version>2.2.1</cleargl.version>
 
 		<!-- Scenery - https://github.com/scenerygraphics/scenery -->
-		<scenery.version>0.4.1</scenery.version>
+		<scenery.version>0.5.0</scenery.version>
 
 		<!-- SciView - https://github.com/scenerygraphics/SciView -->
 		<sciview.version>0.1.3</sciview.version>
@@ -669,7 +669,7 @@
 		<commons-math3.version>3.6.1</commons-math3.version>
 
 		<!-- Commons Text - https://commons.apache.org/proper/commons-text/ -->
-		<commons-text.version>1.3</commons-text.version>
+		<commons-text.version>1.4</commons-text.version>
 
 		<!-- Byte Code Generation Library - https://github.com/cglib/cglib -->
 		<cglib.version>3.2.6</cglib.version>
@@ -701,13 +701,13 @@
 		<vecmath.version>${java3d.version}</vecmath.version>
 
 		<!-- Javassist - http://www.javassist.org/ -->
-		<javassist.version>3.22.0-GA</javassist.version>
+		<javassist.version>3.23.1-GA</javassist.version>
 
 		<!-- JDOM - http://www.jdom.org/ -->
 		<jdom2.version>2.0.6</jdom2.version>
 
 		<!-- Jetty - http://eclipse.org/jetty/ -->
-		<jetty.version>9.4.10.v20180503</jetty.version>
+		<jetty.version>9.4.11.v20180605</jetty.version>
 		<jetty-annotations.version>${jetty.version}</jetty-annotations.version>
 		<jetty-ant.version>${jetty.version}</jetty-ant.version>
 		<jetty-client.version>${jetty.version}</jetty-client.version>
@@ -759,7 +759,7 @@
 		<jna.version>4.5.1</jna.version>
 
 		<!-- Joda-Time - http://www.joda.org/joda-time/ -->
-		<joda-time.version>2.9.9</joda-time.version>
+		<joda-time.version>2.10</joda-time.version>
 
 		<!-- JOGL - https://jogamp.org/jogl/ -->
 		<jogl.version>2.3.2</jogl.version>
@@ -785,7 +785,7 @@
 		<jzlib.version>1.1.3</jzlib.version>
 
 		<!-- Kotlin - https://kotlinlang.org/ -->
-		<kotlin.version>1.2.41</kotlin.version>
+		<kotlin.version>1.2.50</kotlin.version>
 		<kotlin-reflect.version>${kotlin.version}</kotlin-reflect.version>
 		<kotlin-stdlib.version>${kotlin.version}</kotlin-stdlib.version>
 
@@ -807,11 +807,11 @@
 		<mines-jtk.version>20151125</mines-jtk.version>
 
 		<!-- Mockito - http://site.mockito.org/ -->
-		<mockito.version>2.18.3</mockito.version>
+		<mockito.version>2.19.0</mockito.version>
 		<mockito-core.version>${mockito.version}</mockito-core.version>
 
 		<!-- oj! Algorithms - https://github.com/optimatika/ojAlgo -->
-		<ojalgo.version>45.1.0</ojalgo.version>
+		<ojalgo.version>45.1.1</ojalgo.version>
 
 		<!-- OpenCSV - http://opencsv.sourceforge.net/ -->
 		<opencsv.version>3.9</opencsv.version>
