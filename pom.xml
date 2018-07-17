@@ -272,6 +272,9 @@
 		<!-- ImageJ Mesh - https://github.com/imagej/imagej-mesh -->
 		<imagej-mesh.version>0.7.1</imagej-mesh.version>
 
+		<!-- ImageJ Mesh IO - https://github.com/imagej/imagej-mesh-io -->
+		<imagej-mesh-io.version>0.1.0</imagej-mesh-io.version>
+
 		<!-- ImageJ Notebook - https://github.com/imagej/imagej-notebook -->
 		<imagej-notebook.version>0.2.3</imagej-notebook.version>
 
@@ -1159,6 +1162,13 @@
 				<groupId>net.imagej</groupId>
 				<artifactId>imagej-mesh</artifactId>
 				<version>${imagej-mesh.version}</version>
+			</dependency>
+
+			<!-- ImageJ Mesh IO - https://github.com/imagej/imagej-mesh-io -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-mesh-io</artifactId>
+				<version>${imagej-mesh-io.version}</version>
 			</dependency>
 
 			<!-- ImageJ Notebook - https://github.com/imagej/imagej-notebook -->
@@ -3332,6 +3342,7 @@
 				<imagej-launcher.version>LATEST</imagej-launcher.version>
 				<imagej-legacy.version>LATEST</imagej-legacy.version>
 				<imagej-mesh.version>LATEST</imagej-mesh.version>
+				<imagej-mesh-io.version>LATEST</imagej-mesh-io.version>
 				<imagej-notebook.version>LATEST</imagej-notebook.version>
 				<imagej-omero.version>LATEST</imagej-omero.version>
 				<imagej-omero-legacy.version>LATEST</imagej-omero-legacy.version>
