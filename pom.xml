@@ -704,7 +704,7 @@
 		<vecmath.version>${java3d.version}</vecmath.version>
 
 		<!-- Javassist - http://www.javassist.org/ -->
-		<javassist.version>3.23.1-GA</javassist.version>
+		<javassist.version>3.22.0-GA</javassist.version>
 
 		<!-- JDOM - http://www.jdom.org/ -->
 		<jdom2.version>2.0.6</jdom2.version>
