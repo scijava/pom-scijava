@@ -154,7 +154,7 @@
 		<native-lib-loader.version>2.3.0</native-lib-loader.version>
 
 		<!-- Parsington - https://github.com/scijava/parsington -->
-		<parsington.version>1.0.2</parsington.version>
+		<parsington.version>1.0.3</parsington.version>
 
 		<!-- SciJava Cache - https://github.com/scijava/scijava-cache -->
 		<scijava-cache.version>0.1.2</scijava-cache.version>
