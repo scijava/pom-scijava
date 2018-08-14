@@ -151,7 +151,7 @@
 		<minimaven.version>2.2.1</minimaven.version>
 
 		<!-- Native Lib Loader - https://github.com/scijava/native-lib-loader -->
-		<native-lib-loader.version>2.3.0</native-lib-loader.version>
+		<native-lib-loader.version>2.3.1</native-lib-loader.version>
 
 		<!-- Parsington - https://github.com/scijava/parsington -->
 		<parsington.version>1.0.3</parsington.version>
@@ -160,7 +160,7 @@
 		<scijava-cache.version>0.1.2</scijava-cache.version>
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.74.3</scijava-common.version>
+		<scijava-common.version>2.75.0</scijava-common.version>
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
 		<scijava-config.version>2.0.2</scijava-config.version>
@@ -252,7 +252,7 @@
 		<imagej.version>2.0.0-rc-68</imagej.version>
 
 		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
-		<imagej1.version>1.52d</imagej1.version>
+		<imagej1.version>1.52e</imagej1.version>
 
 		<!-- ImageJ 1.x patcher - https://github.com/imagej/ij1-patcher -->
 		<ij1-patcher.version>0.12.9</ij1-patcher.version>
@@ -267,7 +267,7 @@
 		<imagej-launcher.version>5.0.0</imagej-launcher.version>
 
 		<!-- ImageJ Legacy - https://github.com/imagej/imagej-legacy -->
-		<imagej-legacy.version>0.33.0</imagej-legacy.version>
+		<imagej-legacy.version>0.33.1</imagej-legacy.version>
 
 		<!-- ImageJ MATLAB - https://github.com/imagej/imagej-matlab -->
 		<imagej-matlab.version>0.7.2</imagej-matlab.version>
@@ -276,7 +276,7 @@
 		<imagej-mesh.version>0.7.1</imagej-mesh.version>
 
 		<!-- ImageJ Mesh IO - https://github.com/imagej/imagej-mesh-io -->
-		<imagej-mesh-io.version>0.1.0</imagej-mesh-io.version>
+		<imagej-mesh-io.version>0.1.2</imagej-mesh-io.version>
 
 		<!-- ImageJ Notebook - https://github.com/imagej/imagej-notebook -->
 		<imagej-notebook.version>0.2.3</imagej-notebook.version>
@@ -312,7 +312,7 @@
 		<imagej-server.version>0.1.0</imagej-server.version>
 
 		<!-- ImageJ TensorFlow - https://github.com/imagej/imagej-tensorflow -->
-		<imagej-tensorflow.version>1.0.0</imagej-tensorflow.version>
+		<imagej-tensorflow.version>1.0.2</imagej-tensorflow.version>
 
 		<!-- ImageJ UI: AWT - https://github.com/imagej/imagej-ui-awt -->
 		<imagej-ui-awt.version>0.3.1</imagej-ui-awt.version>
@@ -332,7 +332,7 @@
 		<!-- ImgLib2 - https://github.com/imglib -->
 
 		<!-- ImgLib2 - https://github.com/imglib/imglib2 -->
-		<imglib2.version>5.3.0</imglib2.version>
+		<imglib2.version>5.5.0</imglib2.version>
 
 		<!-- ImgLib2 Algorithms - https://github.com/imglib/imglib2-algorithm -->
 		<imglib2-algorithm.version>0.9.0</imglib2-algorithm.version>
@@ -347,7 +347,7 @@
 		<imglib2-cache.version>1.0.0-beta-9</imglib2-cache.version>
 
 		<!-- ImgLib2 IJ - https://github.com/imglib/imglib2-ij -->
-		<imglib2-ij.version>2.0.0-beta-42</imglib2-ij.version>
+		<imglib2-ij.version>2.0.0-beta-43</imglib2-ij.version>
 
 		<!-- ImgLib2 RealTransform - https://github.com/imglib/imglib2-realtransform -->
 		<imglib2-realtransform.version>2.0.0</imglib2-realtransform.version>
@@ -364,7 +364,7 @@
 		<!-- SCIFIO - https://github.com/scifio -->
 
 		<!-- SCIFIO - https://github.com/scifio/scifio -->
-		<scifio.version>0.37.0</scifio.version>
+		<scifio.version>0.37.2</scifio.version>
 
 		<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
 		<scifio-bf-compat.version>3.0.0</scifio-bf-compat.version>
@@ -539,7 +539,7 @@
 		<bigdataviewer-server.version>2.1.0</bigdataviewer-server.version>
 		<bigdataviewer-vistools.version>1.0.0-beta-11</bigdataviewer-vistools.version>
 		<bigdataviewer_fiji.version>5.0.0</bigdataviewer_fiji.version>
-		<spim_data.version>2.2.1</spim_data.version>
+		<spim_data.version>2.2.2</spim_data.version>
 
 		<!-- TrakEM2 - https://github.com/trakem2 -->
 
@@ -580,7 +580,7 @@
 		<formats-gpl.version>${bio-formats.version}</formats-gpl.version>
 
 		<!-- OMERO - https://github.com/openmicroscopy/openmicroscopy -->
-		<omero.version>5.4.6-ice36-b87</omero.version>
+		<omero.version>5.4.7-ice36-b93</omero.version>
 		<blitz.version>${omero.version}</blitz.version>
 		<common.version>${omero.version}</common.version>
 		<dsl.version>${omero.version}</dsl.version>
@@ -599,10 +599,10 @@
 		<MorphoLibJ.version>1.3.6</MorphoLibJ.version>
 
 		<!-- BigStitcher - https://github.com/PreibischLab/BigStitcher -->
-		<BigStitcher.version>0.2.8</BigStitcher.version>
+		<BigStitcher.version>0.2.11</BigStitcher.version>
 
 		<!-- multiview-reconstruction - https://github.com/PreibischLab/multiview-reconstruction -->
-		<multiview-reconstruction.version>0.2.9</multiview-reconstruction.version>
+		<multiview-reconstruction.version>0.2.17</multiview-reconstruction.version>
 
 		<!-- multiview-simulation - https://github.com/PreibischLab/multiview-simulation -->
 		<multiview-simulation.version>0.2.0</multiview-simulation.version>
@@ -617,7 +617,7 @@
 		<scenery.version>0.5.0</scenery.version>
 
 		<!-- SciView - https://github.com/scenerygraphics/SciView -->
-		<sciview.version>0.1.3</sciview.version>
+		<sciview.version>0.1.4</sciview.version>
 
 		<!-- Third party components -->
 
