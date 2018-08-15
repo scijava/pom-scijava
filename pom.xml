@@ -195,6 +195,9 @@
 		<!-- SciJava Search - https://github.com/scijava/scijava-search -->
 		<scijava-search.version>0.5.0</scijava-search.version>
 
+		<!-- SciJava Table - https://github.com/scijava/scijava-table -->
+		<scijava-table.version>0.2.0</scijava-table.version>
+
 		<!-- SciJava UI: AWT - https://github.com/scijava/scijava-ui-awt -->
 		<scijava-ui-awt.version>0.1.6</scijava-ui-awt.version>
 
@@ -985,6 +988,13 @@
 				<groupId>org.scijava</groupId>
 				<artifactId>scijava-search</artifactId>
 				<version>${scijava-search.version}</version>
+			</dependency>
+
+			<!-- SciJava Table - https://github.com/scijava/scijava-table -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-table</artifactId>
+				<version>${scijava-table.version}</version>
 			</dependency>
 
 			<!-- SciJava UI: AWT - https://github.com/scijava/scijava-ui-awt -->
@@ -3294,6 +3304,7 @@
 				<scijava-plugins-text-markdown.version>LATEST</scijava-plugins-text-markdown.version>
 				<scijava-plugins-text-plain.version>LATEST</scijava-plugins-text-plain.version>
 				<scijava-search.version>LATEST</scijava-search.version>
+				<scijava-table.version>LATEST</scijava-table.version>
 				<scijava-ui-awt.version>LATEST</scijava-ui-awt.version>
 				<scijava-ui-swing.version>LATEST</scijava-ui-swing.version>
 				<script-editor.version>LATEST</script-editor.version>
