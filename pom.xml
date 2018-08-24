@@ -139,7 +139,7 @@
 		<!-- SciJava - https://github.com/scijava -->
 
 		<!-- Batch Processor - https://github.com/scijava/batch-processor -->
-		<batch-processor.version>0.1.3</batch-processor.version>
+		<batch-processor.version>0.2.0</batch-processor.version>
 
 		<!-- JUnit Benchmarks - https://github.com/scijava/junit-benchmarks -->
 		<junit-benchmarks.version>0.7.4-scijava</junit-benchmarks.version>
@@ -289,6 +289,9 @@
 
 		<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
 		<imagej-ops.version>0.41.1</imagej-ops.version>
+
+		<!-- ImageJ Plugins: Batch - https://github.com/imagej/imagej-plugins-batch -->
+		<imagej-plugins-batch.version>0.1.0</imagej-plugins-batch.version>
 
 		<!-- ImageJ Plugins: Commands - https://github.com/imagej/imagej-plugins-commands -->
 		<imagej-plugins-commands.version>0.8.0</imagej-plugins-commands.version>
@@ -1207,6 +1210,13 @@
 				<groupId>net.imagej</groupId>
 				<artifactId>imagej-ops</artifactId>
 				<version>${imagej-ops.version}</version>
+			</dependency>
+
+			<!-- ImageJ Plugins: Batch - https://github.com/imagej/imagej-plugins-batch -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-plugins-batch</artifactId>
+				<version>${imagej-plugins-batch.version}</version>
 			</dependency>
 
 			<!-- ImageJ Plugins: Commands - https://github.com/imagej/imagej-plugins-commands -->
@@ -3358,6 +3368,7 @@
 				<imagej-omero.version>LATEST</imagej-omero.version>
 				<imagej-omero-legacy.version>LATEST</imagej-omero-legacy.version>
 				<imagej-ops.version>LATEST</imagej-ops.version>
+				<imagej-plugins-batch.version>LATEST</imagej-plugins-batch.version>
 				<imagej-plugins-commands.version>LATEST</imagej-plugins-commands.version>
 				<imagej-plugins-tools.version>LATEST</imagej-plugins-tools.version>
 				<imagej-plugins-uploader-ssh.version>LATEST</imagej-plugins-uploader-ssh.version>
