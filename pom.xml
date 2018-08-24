@@ -185,6 +185,9 @@
 		<!-- SciJava Plugins: Commands - https://github.com/scijava/scijava-plugins-commands -->
 		<scijava-plugins-commands.version>0.2.3</scijava-plugins-commands.version>
 
+		<!-- SciJava Plugins: I/O: Table - https://github.com/scijava/scijava-plugins-io-table -->
+		<scijava-plugins-io-table.version>0.1.0</scijava-plugins-io-table.version>
+
 		<!-- SciJava Plugins: Platforms - https://github.com/scijava/scijava-plugins-platforms -->
 		<scijava-plugins-platforms.version>0.3.1</scijava-plugins-platforms.version>
 
@@ -979,6 +982,13 @@
 				<groupId>org.scijava</groupId>
 				<artifactId>scijava-plugins-commands</artifactId>
 				<version>${scijava-plugins-commands.version}</version>
+			</dependency>
+
+			<!-- SciJava Plugins: I/O: Table - https://github.com/scijava/scijava-plugins-io-table -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-plugins-io-table</artifactId>
+				<version>${scijava-plugins-io-table.version}</version>
 			</dependency>
 
 			<!-- SciJava Plugins: Platforms - https://github.com/scijava/scijava-plugins-platforms -->
@@ -3391,6 +3401,7 @@
 				<scijava-jupyter-kernel.version>LATEST</scijava-jupyter-kernel.version>
 				<scijava-log-slf4j.version>LATEST</scijava-log-slf4j.version>
 				<scijava-plugins-commands.version>LATEST</scijava-plugins-commands.version>
+				<scijava-plugins-io-table.version>LATEST</scijava-plugins-io-table.version>
 				<scijava-plugins-platforms.version>LATEST</scijava-plugins-platforms.version>
 				<scijava-plugins-text-markdown.version>LATEST</scijava-plugins-text-markdown.version>
 				<scijava-plugins-text-plain.version>LATEST</scijava-plugins-text-plain.version>
