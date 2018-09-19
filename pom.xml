@@ -850,6 +850,9 @@
 		<slf4j-nop.version>${slf4j.version}</slf4j-nop.version>
 		<slf4j-simple.version>${slf4j.version}</slf4j-simple.version>
 
+		<!-- SnakeYAML - https://bitbucket.org/asomov/snakeyaml -->
+		<snakeyaml.version>1.13</snakeyaml.version>
+
 		<!-- TensorFlow - https://www.tensorflow.org/ -->
 		<tensorflow.version>1.6.0</tensorflow.version>
 		<proto.version>${tensorflow.version}</proto.version>
@@ -3170,6 +3173,12 @@
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-simple</artifactId>
 				<version>${slf4j-simple.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.yaml</groupId>
+				<artifactId>snakeyaml</artifactId>
+				<version>${snakeyaml.version}</version>
 			</dependency>
 
 			<!-- TensorFlow - https://www.tensorflow.org/ -->
