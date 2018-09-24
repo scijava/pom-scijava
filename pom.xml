@@ -531,7 +531,7 @@
 		<trakem2_tps.version>1.1.4</trakem2_tps.version>
 
 		<!-- Z-Spacing correction - https://github.com/saalfeldlab/z-spacing -->
-		<z_spacing.version>1.1.0</z_spacing.version>
+		<z_spacing.version>1.1.1</z_spacing.version>
 
 		<!-- BigDataViewer - https://github.com/bigdataviewer -->
 
