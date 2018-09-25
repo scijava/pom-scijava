@@ -518,7 +518,7 @@
 		<!-- External Fiji projects -->
 
 		<!-- Sholl Analysis - https://github.com/tferr/ASA -->
-		<Sholl_Analysis.version>3.7.3</Sholl_Analysis.version>
+		<Sholl_Analysis.version>3.7.4</Sholl_Analysis.version>
 
 		<!-- JITK TPS - https://github.com/saalfeldlab/jitk-tps -->
 		<jitk-tps.version>3.0.0</jitk-tps.version>
