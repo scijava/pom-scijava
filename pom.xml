@@ -809,7 +809,7 @@
 		<logback-core.version>${logback.version}</logback-core.version>
 
 		<!-- LWJGL - https://www.lwjgl.org/ -->
-		<lwjgl.version>3.1.6</lwjgl.version>
+		<lwjgl.version>3.2.0</lwjgl.version>
 
 		<!-- MapDB - http://www.mapdb.org/ -->
 		<mapdb.version>3.0.7</mapdb.version>
