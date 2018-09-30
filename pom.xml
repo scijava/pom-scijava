@@ -252,7 +252,7 @@
 		<imagej.version>2.0.0-rc-68</imagej.version>
 
 		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
-		<imagej1.version>1.52e</imagej1.version>
+		<imagej1.version>1.52g</imagej1.version>
 
 		<!-- ImageJ 1.x patcher - https://github.com/imagej/ij1-patcher -->
 		<ij1-patcher.version>0.12.9</ij1-patcher.version>
@@ -288,7 +288,7 @@
 		<imagej-omero-legacy.version>0.1.1</imagej-omero-legacy.version>
 
 		<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
-		<imagej-ops.version>0.41.1</imagej-ops.version>
+		<imagej-ops.version>0.42.0</imagej-ops.version>
 
 		<!-- ImageJ Plugins: Batch - https://github.com/imagej/imagej-plugins-batch -->
 		<imagej-plugins-batch.version>0.1.0</imagej-plugins-batch.version>
@@ -335,7 +335,7 @@
 		<imglib2.version>5.5.0</imglib2.version>
 
 		<!-- ImgLib2 Algorithms - https://github.com/imglib/imglib2-algorithm -->
-		<imglib2-algorithm.version>0.9.0</imglib2-algorithm.version>
+		<imglib2-algorithm.version>0.10.0</imglib2-algorithm.version>
 
 		<!-- ImgLib2 Algorithms FFT - https://github.com/imglib/imglib2-algorithm-fft -->
 		<imglib2-algorithm-fft.version>0.2.0</imglib2-algorithm-fft.version>
@@ -415,7 +415,7 @@
 		<Descriptor_based_registration.version>2.1.2</Descriptor_based_registration.version>
 		<Dichromacy.version>2.1.1</Dichromacy.version>
 		<Dichromacy_.version>${Dichromacy.version}</Dichromacy_.version>
-		<Directionality.version>2.2.0</Directionality.version>
+		<Directionality.version>2.3.0</Directionality.version>
 		<Directionality_.version>${Directionality.version}</Directionality_.version>
 		<FS_Align_TrakEM2.version>2.0.3</FS_Align_TrakEM2.version>
 		<Feature_Detection.version>2.0.2</Feature_Detection.version>
@@ -531,7 +531,7 @@
 		<trakem2_tps.version>1.1.4</trakem2_tps.version>
 
 		<!-- Z-Spacing correction - https://github.com/saalfeldlab/z-spacing -->
-		<z_spacing.version>1.0.3</z_spacing.version>
+		<z_spacing.version>1.1.1</z_spacing.version>
 
 		<!-- BigDataViewer - https://github.com/bigdataviewer -->
 
@@ -580,7 +580,7 @@
 		<formats-gpl.version>${bio-formats.version}</formats-gpl.version>
 
 		<!-- OMERO - https://github.com/openmicroscopy/openmicroscopy -->
-		<omero.version>5.4.7-ice36-b93</omero.version>
+		<omero.version>5.4.8-ice36-b99</omero.version>
 		<blitz.version>${omero.version}</blitz.version>
 		<common.version>${omero.version}</common.version>
 		<dsl.version>${omero.version}</dsl.version>
