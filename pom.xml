@@ -108,9 +108,11 @@
 		HACK: The following list of allowed-to-be-duplicated classes
 		facilitates intended combinations of artifacts:
 		* omero:blitz + org.hibernate:hibernate-core
+		* org.apache.hadoop:hadoop-yarn-*
+		* org.apache.spark:spark-*_2.11
 		* org.jmockit:jmockit + junit:junit
 		-->
-		<allowedDuplicateClasses>org.hibernate.stat.ConcurrentStatisticsImpl,org.junit.runner.Runner</allowedDuplicateClasses>
+		<allowedDuplicateClasses>org.apache.hadoop.yarn.*.package-info,org.apache.spark.unused.UnusedStubClass,org.hibernate.stat.ConcurrentStatisticsImpl,org.junit.runner.Runner</allowedDuplicateClasses>
 
 		<!--
 		NB: We override these properties to make the enforcer happy.
@@ -2397,6 +2399,37 @@
 				<groupId>org.apache.spark</groupId>
 				<artifactId>spark-core_2.11</artifactId>
 				<version>${spark.version}</version>
+				<exclusions>
+					<exclusion>
+						<!--
+						Conflicts with javax.ws.rs:javax.ws.rs-api
+						And this artifact is a ghost anyway somehow...
+						Not sure why/how it gets brought in.
+						-->
+						<groupId>com.sun.jersey</groupId>
+						<artifactId>jersey-core</artifactId>
+					</exclusion>
+					<exclusion>
+						<!--
+						Conflicts with commons-beanutils:commons-beanutils
+						and commons-collections:commons-collections
+						-->
+						<groupId>commons-beanutils</groupId>
+						<artifactId>commons-beanutils-core</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.slf4j</groupId>
+						<artifactId>jcl-over-slf4j</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.slf4j</groupId>
+						<artifactId>slf4j-log4j12</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<!-- Batik - https://xmlgraphics.apache.org/batik/ -->
 			<dependency>
