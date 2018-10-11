@@ -853,6 +853,9 @@
 		<!-- SnakeYAML - https://bitbucket.org/asomov/snakeyaml -->
 		<snakeyaml.version>1.23</snakeyaml.version>
 
+		<!-- SnakeYAML Engine - https://bitbucket.org/asomov/snakeyaml-engine -->
+		<snakeyaml-engine.version>1.0</snakeyaml-engine.version>
+
 		<!-- TensorFlow - https://www.tensorflow.org/ -->
 		<tensorflow.version>1.6.0</tensorflow.version>
 		<proto.version>${tensorflow.version}</proto.version>
@@ -3180,6 +3183,13 @@
 				<groupId>org.yaml</groupId>
 				<artifactId>snakeyaml</artifactId>
 				<version>${snakeyaml.version}</version>
+			</dependency>
+
+			<!-- SnakeYAML Engine - https://bitbucket.org/asomov/snakeyaml-engine -->
+			<dependency>
+				<groupId>org.snakeyaml</groupId>
+				<artifactId>snakeyaml-engine</artifactId>
+				<version>${snakeyaml-engine.version}</version>
 			</dependency>
 
 			<!-- TensorFlow - https://www.tensorflow.org/ -->
