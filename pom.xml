@@ -851,7 +851,7 @@
 		<slf4j-simple.version>${slf4j.version}</slf4j-simple.version>
 
 		<!-- SnakeYAML - https://bitbucket.org/asomov/snakeyaml -->
-		<snakeyaml.version>1.13</snakeyaml.version>
+		<snakeyaml.version>1.23</snakeyaml.version>
 
 		<!-- TensorFlow - https://www.tensorflow.org/ -->
 		<tensorflow.version>1.6.0</tensorflow.version>
