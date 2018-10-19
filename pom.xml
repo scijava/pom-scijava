@@ -162,7 +162,7 @@
 		<scijava-cache.version>0.1.2</scijava-cache.version>
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.75.1</scijava-common.version>
+		<scijava-common.version>2.76.0</scijava-common.version>
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
 		<scijava-config.version>2.0.2</scijava-config.version>
@@ -171,7 +171,7 @@
 		<scijava-grab.version>0.1.0</scijava-grab.version>
 
 		<!-- SciJava I/O: HTTP - https://github.com/scijava/scijava-io-http -->
-		<scijava-io-http.version>0.1.2</scijava-io-http.version>
+		<scijava-io-http.version>0.2.0</scijava-io-http.version>
 
 		<!-- SciJava Java 3D Tools - https://github.com/scijava/scijava-java3d -->
 		<scijava-java3d.version>0.1.0</scijava-java3d.version>
@@ -207,7 +207,7 @@
 		<scijava-ui-awt.version>0.1.6</scijava-ui-awt.version>
 
 		<!-- SciJava UI: Swing - https://github.com/scijava/scijava-ui-swing -->
-		<scijava-ui-swing.version>0.11.1</scijava-ui-swing.version>
+		<scijava-ui-swing.version>0.12.0</scijava-ui-swing.version>
 
 		<!-- Script Editor - https://github.com/scijava/script-editor -->
 		<script-editor.version>0.3.0</script-editor.version>
@@ -257,7 +257,7 @@
 		<imagej.version>2.0.0-rc-68</imagej.version>
 
 		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
-		<imagej1.version>1.52g</imagej1.version>
+		<imagej1.version>1.52h</imagej1.version>
 
 		<!-- ImageJ 1.x patcher - https://github.com/imagej/ij1-patcher -->
 		<ij1-patcher.version>0.12.9</ij1-patcher.version>
@@ -369,7 +369,7 @@
 		<!-- SCIFIO - https://github.com/scifio -->
 
 		<!-- SCIFIO - https://github.com/scifio/scifio -->
-		<scifio.version>0.37.2</scifio.version>
+		<scifio.version>0.37.3</scifio.version>
 
 		<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
 		<scifio-bf-compat.version>3.0.0</scifio-bf-compat.version>
@@ -566,7 +566,7 @@
 		<!-- Open Microscopy Environment - https://github.com/openmicroscopy -->
 
 		<!-- OME Common Java - https://github.com/ome/ome-common-java -->
-		<ome-common.version>5.3.6</ome-common.version>
+		<ome-common.version>5.3.7</ome-common.version>
 
 		<!-- Metakit - https://github.com/ome/ome-metakit -->
 		<metakit.version>5.3.2</metakit.version>
@@ -585,7 +585,7 @@
 		<formats-gpl.version>${bio-formats.version}</formats-gpl.version>
 
 		<!-- OMERO - https://github.com/openmicroscopy/openmicroscopy -->
-		<omero.version>5.4.8-ice36-b99</omero.version>
+		<omero.version>5.4.9-ice36-b101</omero.version>
 		<blitz.version>${omero.version}</blitz.version>
 		<common.version>${omero.version}</common.version>
 		<dsl.version>${omero.version}</dsl.version>
@@ -619,10 +619,10 @@
 		<cleargl.version>2.2.1</cleargl.version>
 
 		<!-- Scenery - https://github.com/scenerygraphics/scenery -->
-		<scenery.version>0.5.0</scenery.version>
+		<scenery.version>0.6.2</scenery.version>
 
 		<!-- SciView - https://github.com/scenerygraphics/SciView -->
-		<sciview.version>0.1.4</sciview.version>
+		<sciview.version>0.1.6</sciview.version>
 
 		<!-- Third party components -->
 
