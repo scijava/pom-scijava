@@ -210,7 +210,7 @@
 		<scijava-ui-swing.version>0.12.0</scijava-ui-swing.version>
 
 		<!-- Script Editor - https://github.com/scijava/script-editor -->
-		<script-editor.version>0.3.0</script-editor.version>
+		<script-editor.version>0.3.1</script-editor.version>
 
 		<!-- Scripting: BeanShell - https://github.com/scijava/scripting-beanshell -->
 		<scripting-beanshell.version>0.3.3</scripting-beanshell.version>
@@ -272,7 +272,7 @@
 		<imagej-launcher.version>5.0.0</imagej-launcher.version>
 
 		<!-- ImageJ Legacy - https://github.com/imagej/imagej-legacy -->
-		<imagej-legacy.version>0.33.2</imagej-legacy.version>
+		<imagej-legacy.version>0.33.3</imagej-legacy.version>
 
 		<!-- ImageJ MATLAB - https://github.com/imagej/imagej-matlab -->
 		<imagej-matlab.version>0.7.2</imagej-matlab.version>
@@ -293,7 +293,7 @@
 		<imagej-omero-legacy.version>0.1.1</imagej-omero-legacy.version>
 
 		<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
-		<imagej-ops.version>0.42.0</imagej-ops.version>
+		<imagej-ops.version>0.43.0</imagej-ops.version>
 
 		<!-- ImageJ Plugins: Batch - https://github.com/imagej/imagej-plugins-batch -->
 		<imagej-plugins-batch.version>0.1.0</imagej-plugins-batch.version>
@@ -518,7 +518,7 @@
 		<panorama_.version>${panorama.version}</panorama_.version>
 		<register_virtual_stack_slices.version>3.0.5</register_virtual_stack_slices.version>
 		<registration_3d.version>2.0.1</registration_3d.version>
-		<weave_jy2java.version>2.1.0</weave_jy2java.version>
+		<weave_jy2java.version>2.1.1</weave_jy2java.version>
 
 		<!-- External Fiji projects -->
 
@@ -540,7 +540,7 @@
 
 		<!-- BigDataViewer - https://github.com/bigdataviewer -->
 
-		<bigdataviewer-core.version>5.0.0</bigdataviewer-core.version>
+		<bigdataviewer-core.version>5.1.0</bigdataviewer-core.version>
 		<bigdataviewer-server.version>2.1.0</bigdataviewer-server.version>
 		<bigdataviewer-vistools.version>1.0.0-beta-11</bigdataviewer-vistools.version>
 		<bigdataviewer_fiji.version>5.0.0</bigdataviewer_fiji.version>
