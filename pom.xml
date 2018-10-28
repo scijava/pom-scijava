@@ -459,7 +459,6 @@
 		<Manual_Tracking.version>2.1.1</Manual_Tracking.version>
 		<MorphoLibJ_.version>${MorphoLibJ.version}</MorphoLibJ_.version>
 		<Multi_Kymograph.version>3.0.1</Multi_Kymograph.version>
-		<OMEVisual.version>1.1.2</OMEVisual.version>
 		<PIV_analyser.version>1.1.2</PIV_analyser.version>
 		<QuickPALM.version>1.1.2</QuickPALM.version>
 		<QuickPALM_.version>${QuickPALM.version}</QuickPALM_.version>
@@ -520,6 +519,9 @@
 		<weave_jy2java.version>2.1.1</weave_jy2java.version>
 
 		<!-- External Fiji projects -->
+
+		<!-- OMEVisual - https://github.com/hadim/OMEVisual -->
+		<OMEVisual.version>1.1.2</OMEVisual.version>
 
 		<!-- Sholl Analysis - https://github.com/tferr/ASA -->
 		<Sholl_Analysis.version>3.7.4</Sholl_Analysis.version>
@@ -1730,11 +1732,6 @@
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
-				<artifactId>OMEVisual</artifactId>
-				<version>${OMEVisual.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
 				<artifactId>PIV_analyser</artifactId>
 				<version>${PIV_analyser.version}</version>
 			</dependency>
@@ -1955,6 +1952,13 @@
 			</dependency>
 
 			<!-- External Fiji projects -->
+
+			<!-- OMEVisual - https://github.com/hadim/OMEVisual -->
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>OMEVisual</artifactId>
+				<version>${OMEVisual.version}</version>
+			</dependency>
 
 			<!-- Sholl Analysis - https://github.com/tferr/ASA -->
 			<dependency>
@@ -3619,7 +3623,6 @@
 				<M_I_P.version>LATEST</M_I_P.version>
 				<Manual_Tracking.version>LATEST</Manual_Tracking.version>
 				<Multi_Kymograph.version>LATEST</Multi_Kymograph.version>
-				<OMEVisual.version>LATEST</OMEVisual.version>
 				<PIV_analyser.version>LATEST</PIV_analyser.version>
 				<QuickPALM.version>LATEST</QuickPALM.version>
 				<RATS.version>LATEST</RATS.version>
@@ -3666,6 +3669,7 @@
 				<weave_jy2java.version>LATEST</weave_jy2java.version>
 
 				<!-- External Fiji projects -->
+				<OMEVisual.version>LATEST</OMEVisual.version>
 				<Sholl_Analysis.version>LATEST</Sholl_Analysis.version>
 				<jitk-tps.version>LATEST</jitk-tps.version>
 				<bigwarp.version>LATEST</bigwarp.version>
