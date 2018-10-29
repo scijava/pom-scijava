@@ -817,9 +817,6 @@
 		<logback-classic.version>${logback.version}</logback-classic.version>
 		<logback-core.version>${logback.version}</logback-core.version>
 
-		<!-- LWJGL - https://www.lwjgl.org/ -->
-		<lwjgl.version>3.2.0</lwjgl.version>
-
 		<!-- MapDB - http://www.mapdb.org/ -->
 		<mapdb.version>3.0.7</mapdb.version>
 
@@ -3125,13 +3122,6 @@
 				<groupId>ch.qos.logback</groupId>
 				<artifactId>logback-core</artifactId>
 				<version>${logback-core.version}</version>
-			</dependency>
-
-			<!-- LWJGL - https://www.lwjgl.org/ -->
-			<dependency>
-				<groupId>org.lwjgl</groupId>
-				<artifactId>lwjgl</artifactId>
-				<version>${lwjgl.version}</version>
 			</dependency>
 
 			<!-- MapDB - http://www.mapdb.org/ -->
