@@ -263,7 +263,7 @@
 		<ij1-patcher.version>0.12.9</ij1-patcher.version>
 
 		<!-- ImageJ Common - https://github.com/imagej/imagej-common -->
-		<imagej-common.version>0.27.0</imagej-common.version>
+		<imagej-common.version>0.28.0</imagej-common.version>
 
 		<!-- ImageJ Deprecated - https://github.com/imagej/imagej-deprecated -->
 		<imagej-deprecated.version>0.1.2</imagej-deprecated.version>
