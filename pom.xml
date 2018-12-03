@@ -153,10 +153,10 @@
 		<minimaven.version>2.2.1</minimaven.version>
 
 		<!-- Native Lib Loader - https://github.com/scijava/native-lib-loader -->
-		<native-lib-loader.version>2.3.1</native-lib-loader.version>
+		<native-lib-loader.version>2.3.2</native-lib-loader.version>
 
 		<!-- Parsington - https://github.com/scijava/parsington -->
-		<parsington.version>1.0.3</parsington.version>
+		<parsington.version>1.0.4</parsington.version>
 
 		<!-- SciJava Cache - https://github.com/scijava/scijava-cache -->
 		<scijava-cache.version>0.1.2</scijava-cache.version>
@@ -249,7 +249,7 @@
 		<swing-checkbox-tree.version>1.0.2</swing-checkbox-tree.version>
 
 		<!-- UI Behaviour - https://github.com/scijava/ui-behaviour -->
-		<ui-behaviour.version>1.7.3</ui-behaviour.version>
+		<ui-behaviour.version>1.7.4</ui-behaviour.version>
 
 		<!-- ImageJ - https://github.com/imagej -->
 
@@ -257,7 +257,7 @@
 		<imagej.version>2.0.0-rc-68</imagej.version>
 
 		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
-		<imagej1.version>1.52h</imagej1.version>
+		<imagej1.version>1.52i</imagej1.version>
 
 		<!-- ImageJ 1.x patcher - https://github.com/imagej/ij1-patcher -->
 		<ij1-patcher.version>0.12.9</ij1-patcher.version>
@@ -580,7 +580,7 @@
 		<ome-poi.version>5.3.3</ome-poi.version>
 
 		<!-- OME Model - https://github.com/ome/ome-model -->
-		<ome-xml.version>5.6.3</ome-xml.version>
+		<ome-xml.version>5.6.4</ome-xml.version>
 
 		<!-- Bio-Formats - https://github.com/openmicroscopy/bioformats -->
 		<bio-formats.version>5.9.2</bio-formats.version>
@@ -719,13 +719,13 @@
 		<vecmath.version>${java3d.version}</vecmath.version>
 
 		<!-- Javassist - http://www.javassist.org/ -->
-		<javassist.version>3.22.0-GA</javassist.version>
+		<javassist.version>3.24.0-GA</javassist.version>
 
 		<!-- JDOM - http://www.jdom.org/ -->
 		<jdom2.version>2.0.6</jdom2.version>
 
 		<!-- Jetty - http://eclipse.org/jetty/ -->
-		<jetty.version>9.4.12.v20180830</jetty.version>
+		<jetty.version>9.4.14.v20181114</jetty.version>
 		<jetty-annotations.version>${jetty.version}</jetty-annotations.version>
 		<jetty-ant.version>${jetty.version}</jetty-ant.version>
 		<jetty-client.version>${jetty.version}</jetty-client.version>
@@ -792,7 +792,7 @@
 		<jogl-all-main.version>${jogl.version}</jogl-all-main.version>
 
 		<!-- JOML - http://joml-ci.github.io/JOML/ -->
-		<joml.version>1.9.11</joml.version>
+		<joml.version>1.9.12</joml.version>
 
 		<!-- JPedal - http://jpedal.org/ (defunct) -->
 		<jpedal.version>2.80b11</jpedal.version>
