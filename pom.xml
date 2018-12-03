@@ -162,7 +162,7 @@
 		<scijava-cache.version>0.1.2</scijava-cache.version>
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.76.0</scijava-common.version>
+		<scijava-common.version>2.76.1</scijava-common.version>
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
 		<scijava-config.version>2.0.2</scijava-config.version>
@@ -323,10 +323,10 @@
 		<imagej-ui-awt.version>0.3.1</imagej-ui-awt.version>
 
 		<!-- ImageJ UI: Swing - https://github.com/imagej/imagej-ui-swing -->
-		<imagej-ui-swing.version>0.21.4</imagej-ui-swing.version>
+		<imagej-ui-swing.version>0.22.0</imagej-ui-swing.version>
 
 		<!-- ImageJ Updater - https://github.com/imagej/imagej-updater -->
-		<imagej-updater.version>0.9.2</imagej-updater.version>
+		<imagej-updater.version>0.9.3</imagej-updater.version>
 
 		<!-- ImageJ Usage - https://github.com/imagej/imagej-usage -->
 		<imagej-usage.version>0.4.1</imagej-usage.version>
@@ -337,7 +337,7 @@
 		<!-- ImgLib2 - https://github.com/imglib -->
 
 		<!-- ImgLib2 - https://github.com/imglib/imglib2 -->
-		<imglib2.version>5.6.1</imglib2.version>
+		<imglib2.version>5.6.3</imglib2.version>
 
 		<!-- ImgLib2 Algorithms - https://github.com/imglib/imglib2-algorithm -->
 		<imglib2-algorithm.version>0.11.1</imglib2-algorithm.version>
@@ -352,13 +352,13 @@
 		<imglib2-cache.version>1.0.0-beta-11</imglib2-cache.version>
 
 		<!-- ImgLib2 IJ - https://github.com/imglib/imglib2-ij -->
-		<imglib2-ij.version>2.0.0-beta-43</imglib2-ij.version>
+		<imglib2-ij.version>2.0.0-beta-44</imglib2-ij.version>
 
 		<!-- ImgLib2 RealTransform - https://github.com/imglib/imglib2-realtransform -->
 		<imglib2-realtransform.version>2.1.0</imglib2-realtransform.version>
 
 		<!-- ImgLib2 ROI - https://github.com/imglib/imglib2-roi -->
-		<imglib2-roi.version>0.6.1</imglib2-roi.version>
+		<imglib2-roi.version>0.7.0</imglib2-roi.version>
 
 		<!-- ImgLib2 Scripting - https://github.com/imglib/imglib2-script -->
 		<imglib2-script.version>0.2.3</imglib2-script.version>
@@ -617,7 +617,7 @@
 		<CoreMem.version>0.4.3</CoreMem.version>
 
 		<!-- ClearGL - https://github.com/ClearVolume/ClearGL -->
-		<cleargl.version>2.2.1</cleargl.version>
+		<cleargl.version>2.2.2</cleargl.version>
 
 		<!-- Scenery - https://github.com/scenerygraphics/scenery -->
 		<scenery.version>0.6.2</scenery.version>
@@ -799,7 +799,7 @@
 		<jpedalSTD.version>${jpedal.version}</jpedalSTD.version>
 
 		<!-- JSch - http://www.jcraft.com/jsch/ -->
-		<jsch.version>0.1.54</jsch.version>
+		<jsch.version>0.1.55</jsch.version>
 
 		<!-- JUnit - http://junit.org/ -->
 		<junit.version>4.12</junit.version>
@@ -837,7 +837,7 @@
 		<opencsv.version>3.9</opencsv.version>
 
 		<!-- picocli - http://picocli.info/ -->
-		<picocli.version>3.7.0</picocli.version>
+		<picocli.version>3.8.1</picocli.version>
 
 		<!-- PostgreSQL JDBC Driver - https://jdbc.postgresql.org/ -->
 		<postgresql.version>9.1-901-1.jdbc4</postgresql.version>
