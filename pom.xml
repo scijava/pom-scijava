@@ -228,7 +228,7 @@
 		<scripting-javascript.version>0.4.4</scripting-javascript.version>
 
 		<!-- Scripting: JRuby - https://github.com/scijava/scripting-jruby -->
-		<scripting-jruby.version>0.2.5</scripting-jruby.version>
+		<scripting-jruby.version>0.3.0</scripting-jruby.version>
 
 		<!-- Scripting: Jython - https://github.com/scijava/scripting-jython -->
 		<scripting-jython.version>0.4.2</scripting-jython.version>
