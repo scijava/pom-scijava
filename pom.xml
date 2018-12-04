@@ -210,7 +210,7 @@
 		<scijava-ui-swing.version>0.12.0</scijava-ui-swing.version>
 
 		<!-- Script Editor - https://github.com/scijava/script-editor -->
-		<script-editor.version>0.3.1</script-editor.version>
+		<script-editor.version>0.4.0</script-editor.version>
 
 		<!-- Scripting: BeanShell - https://github.com/scijava/scripting-beanshell -->
 		<scripting-beanshell.version>0.3.3</scripting-beanshell.version>
@@ -290,7 +290,7 @@
 		<imagej-omero.version>0.8.0</imagej-omero.version>
 
 		<!-- ImageJ OMERO Legacy - https://github.com/imagej/imagej-omero-legacy -->
-		<imagej-omero-legacy.version>0.1.1</imagej-omero-legacy.version>
+		<imagej-omero-legacy.version>0.1.2</imagej-omero-legacy.version>
 
 		<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
 		<imagej-ops.version>0.43.1</imagej-ops.version>
@@ -299,7 +299,7 @@
 		<imagej-plugins-batch.version>0.1.1</imagej-plugins-batch.version>
 
 		<!-- ImageJ Plugins: Commands - https://github.com/imagej/imagej-plugins-commands -->
-		<imagej-plugins-commands.version>0.8.0</imagej-plugins-commands.version>
+		<imagej-plugins-commands.version>0.8.1</imagej-plugins-commands.version>
 
 		<!-- ImageJ Plugins: Tools - https://github.com/imagej/imagej-plugins-tools -->
 		<imagej-plugins-tools.version>0.3.1</imagej-plugins-tools.version>
