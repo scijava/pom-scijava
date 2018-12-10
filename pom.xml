@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>24.0.1-SNAPSHOT</version>
+	<version>24.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -863,7 +863,10 @@
 		<snakeyaml-engine.version>1.0</snakeyaml-engine.version>
 
 		<!-- TensorFlow - https://www.tensorflow.org/ -->
-		<tensorflow.version>1.6.0</tensorflow.version>
+		<tensorflow.version>1.12.0</tensorflow.version>
+		<libtensorflow.version>${tensorflow.version}</libtensorflow.version>
+		<libtensorflow_jni.version>${tensorflow.version}</libtensorflow_jni.version>
+		<libtensorflow_jni_gpu.version>${tensorflow.version}</libtensorflow_jni_gpu.version>
 		<proto.version>${tensorflow.version}</proto.version>
 
 		<!-- Trove - http://trove.starlight-systems.com/ -->
@@ -3242,6 +3245,21 @@
 				<groupId>org.tensorflow</groupId>
 				<artifactId>tensorflow</artifactId>
 				<version>${tensorflow.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.tensorflow</groupId>
+				<artifactId>libtensorflow</artifactId>
+				<version>${libtensorflow.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.tensorflow</groupId>
+				<artifactId>libtensorflow_jni</artifactId>
+				<version>${libtensorflow_jni.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.tensorflow</groupId>
+				<artifactId>tensorflow_jni_gpu</artifactId>
+				<version>${tensorflow_jni_gpu.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.tensorflow</groupId>
