@@ -147,7 +147,7 @@
 		<junit-benchmarks.version>0.7.4-scijava</junit-benchmarks.version>
 
 		<!-- Jython Shaded - https://github.com/scijava/jython-shaded -->
-		<jython-shaded.version>2.7.1</jython-shaded.version>
+		<jython-shaded.version>2.7.1.1</jython-shaded.version>
 
 		<!-- MiniMaven - https://github.com/scijava/minimaven -->
 		<minimaven.version>2.2.1</minimaven.version>
@@ -162,7 +162,7 @@
 		<scijava-cache.version>0.1.2</scijava-cache.version>
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.76.1</scijava-common.version>
+		<scijava-common.version>2.77.0</scijava-common.version>
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
 		<scijava-config.version>2.0.2</scijava-config.version>
@@ -201,7 +201,7 @@
 		<scijava-search.version>0.5.0</scijava-search.version>
 
 		<!-- SciJava Table - https://github.com/scijava/scijava-table -->
-		<scijava-table.version>0.2.0</scijava-table.version>
+		<scijava-table.version>0.3.0</scijava-table.version>
 
 		<!-- SciJava UI: AWT - https://github.com/scijava/scijava-ui-awt -->
 		<scijava-ui-awt.version>0.1.6</scijava-ui-awt.version>
@@ -284,7 +284,7 @@
 		<imagej-mesh-io.version>0.1.2</imagej-mesh-io.version>
 
 		<!-- ImageJ Notebook - https://github.com/imagej/imagej-notebook -->
-		<imagej-notebook.version>0.3.0</imagej-notebook.version>
+		<imagej-notebook.version>0.4.0</imagej-notebook.version>
 
 		<!-- ImageJ OMERO - https://github.com/imagej/imagej-omero -->
 		<imagej-omero.version>0.8.0</imagej-omero.version>
