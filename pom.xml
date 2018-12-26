@@ -254,7 +254,7 @@
 		<!-- ImageJ - https://github.com/imagej -->
 
 		<!-- ImageJ - https://github.com/imagej/imagej -->
-		<imagej.version>2.0.0-rc-69</imagej.version>
+		<imagej.version>2.0.0-rc-70</imagej.version>
 
 		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
 		<imagej1.version>1.52i</imagej1.version>
@@ -284,7 +284,7 @@
 		<imagej-mesh-io.version>0.1.2</imagej-mesh-io.version>
 
 		<!-- ImageJ Notebook - https://github.com/imagej/imagej-notebook -->
-		<imagej-notebook.version>0.5.0</imagej-notebook.version>
+		<imagej-notebook.version>0.6.0</imagej-notebook.version>
 
 		<!-- ImageJ OMERO - https://github.com/imagej/imagej-omero -->
 		<imagej-omero.version>0.8.0</imagej-omero.version>
@@ -293,7 +293,7 @@
 		<imagej-omero-legacy.version>0.1.2</imagej-omero-legacy.version>
 
 		<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
-		<imagej-ops.version>0.43.1</imagej-ops.version>
+		<imagej-ops.version>0.43.2</imagej-ops.version>
 
 		<!-- ImageJ Plugins: Batch - https://github.com/imagej/imagej-plugins-batch -->
 		<imagej-plugins-batch.version>0.1.1</imagej-plugins-batch.version>
@@ -392,7 +392,7 @@
 		<!-- Fiji - https://github.com/fiji -->
 
 		<!-- Fiji - https://github.com/fiji/fiji -->
-		<fiji.version>2.0.0-pre-8</fiji.version>
+		<fiji.version>2.0.0-pre-9</fiji.version>
 
 		<!-- Standard Fiji projects -->
 
