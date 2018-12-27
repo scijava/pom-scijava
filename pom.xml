@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>24.1.1-SNAPSHOT</version>
+	<version>24.2.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -198,7 +198,7 @@
 		<scijava-plugins-text-plain.version>0.1.3</scijava-plugins-text-plain.version>
 
 		<!-- SciJava Search - https://github.com/scijava/scijava-search -->
-		<scijava-search.version>0.5.0</scijava-search.version>
+		<scijava-search.version>0.6.0</scijava-search.version>
 
 		<!-- SciJava Table - https://github.com/scijava/scijava-table -->
 		<scijava-table.version>0.4.0</scijava-table.version>
@@ -254,7 +254,7 @@
 		<!-- ImageJ - https://github.com/imagej -->
 
 		<!-- ImageJ - https://github.com/imagej/imagej -->
-		<imagej.version>2.0.0-rc-70</imagej.version>
+		<imagej.version>2.0.0-rc-71</imagej.version>
 
 		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
 		<imagej1.version>1.52i</imagej1.version>
@@ -263,7 +263,7 @@
 		<ij1-patcher.version>0.12.9</ij1-patcher.version>
 
 		<!-- ImageJ Common - https://github.com/imagej/imagej-common -->
-		<imagej-common.version>0.28.0</imagej-common.version>
+		<imagej-common.version>0.28.1</imagej-common.version>
 
 		<!-- ImageJ Deprecated - https://github.com/imagej/imagej-deprecated -->
 		<imagej-deprecated.version>0.1.2</imagej-deprecated.version>
@@ -392,7 +392,7 @@
 		<!-- Fiji - https://github.com/fiji -->
 
 		<!-- Fiji - https://github.com/fiji/fiji -->
-		<fiji.version>2.0.0-pre-9</fiji.version>
+		<fiji.version>2.0.0-pre-10</fiji.version>
 
 		<!-- Standard Fiji projects -->
 
