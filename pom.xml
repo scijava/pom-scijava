@@ -15,16 +15,16 @@
 
 	<name>SciJava Parent POM</name>
 	<description>This POM provides a parent from which participating projects can declare their build configurations. It ensures that projects all use a compatible build environment, including Java version, as well as versions of dependencies and plugins.</description>
-	<url>http://www.scijava.org/</url>
+	<url>https://scijava.org/</url>
 	<inceptionYear>2011</inceptionYear>
 	<organization>
 		<name>SciJava</name>
-		<url>http://www.scijava.org/</url>
+		<url>https://scijava.org/</url>
 	</organization>
 	<licenses>
 		<license>
 			<name>CC0 1.0 Universal License</name>
-			<url>http://creativecommons.org/publicdomain/zero/1.0/</url>
+			<url>https://creativecommons.org/publicdomain/zero/1.0/</url>
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
@@ -33,7 +33,7 @@
 		<developer>
 			<id>ctrueden</id>
 			<name>Curtis Rueden</name>
-			<url>http://imagej.net/User:Rueden</url>
+			<url>https://imagej.net/User:Rueden</url>
 			<roles>
 				<role>founder</role>
 				<role>lead</role>
@@ -48,32 +48,32 @@
 	<contributors>
 		<contributor>
 			<name>Mark Hiner</name>
-			<url>http://imagej.net/User:Hinerm</url>
+			<url>https://imagej.net/User:Hinerm</url>
 			<properties><id>hinerm</id></properties>
 		</contributor>
 		<contributor>
 			<name>Johannes Schindelin</name>
-			<url>http://imagej.net/User:Schindelin</url>
+			<url>https://imagej.net/User:Schindelin</url>
 			<properties><id>dscho</id></properties>
 		</contributor>
 		<contributor>
 			<name>Barry DeZonia</name>
-			<url>http://imagej.net/User:Bdezonia</url>
+			<url>https://imagej.net/User:Bdezonia</url>
 			<properties><id>bdezonia</id></properties>
 		</contributor>
 		<contributor>
 			<name>Jean-Yves Tinevez</name>
-			<url>http://imagej.net/User:JeanYvesTinevez</url>
+			<url>https://imagej.net/User:JeanYvesTinevez</url>
 			<properties><id>tinevez</id></properties>
 		</contributor>
 		<contributor>
 			<name>Lorenzo Scianatico</name>
-			<url>http://imagej.net/User:LoreScianatico</url>
+			<url>https://imagej.net/User:LoreScianatico</url>
 			<properties><id>LoreScianatico</id></properties>
 		</contributor>
 		<contributor>
 			<name>Jan Eglinger</name>
-			<url>http://imagej.net/User:Eglinger</url>
+			<url>https://imagej.net/User:Eglinger</url>
 			<properties><id>imagejan</id></properties>
 		</contributor>
 	</contributors>
@@ -709,7 +709,7 @@
 		<jai-codec.version>${jai.version}</jai-codec.version>
 		<jai-core.version>${jai.version}</jai-core.version>
 
-		<!-- JAMA - http://math.nist.gov/javanumerics/jama/ -->
+		<!-- JAMA - https://math.nist.gov/javanumerics/jama/ -->
 		<jama.version>1.0.3</jama.version>
 
 		<!-- Java 3D - https://github.com/scijava/java3d-core -->
@@ -718,13 +718,13 @@
 		<j3dutils.version>${java3d.version}</j3dutils.version>
 		<vecmath.version>${java3d.version}</vecmath.version>
 
-		<!-- Javassist - http://www.javassist.org/ -->
+		<!-- Javassist - https://www.javassist.org/ -->
 		<javassist.version>3.24.0-GA</javassist.version>
 
 		<!-- JDOM - http://www.jdom.org/ -->
 		<jdom2.version>2.0.6</jdom2.version>
 
-		<!-- Jetty - http://eclipse.org/jetty/ -->
+		<!-- Jetty - https://www.eclipse.org/jetty/ -->
 		<jetty.version>9.4.14.v20181114</jetty.version>
 		<jetty-annotations.version>${jetty.version}</jetty-annotations.version>
 		<jetty-ant.version>${jetty.version}</jetty-ant.version>
@@ -770,7 +770,7 @@
 		<!-- JHDF5 - https://wiki-bsse.ethz.ch/label/JHDF5/hdf5 -->
 		<jhdf5.version>14.12.6</jhdf5.version>
 
-		<!-- JMH - http://openjdk.java.net/projects/code-tools/jmh/ -->
+		<!-- JMH - https://openjdk.java.net/projects/code-tools/jmh/ -->
 		<jmh.version>1.19</jmh.version>
 		<jmh-core.version>${jmh.version}</jmh-core.version>
 		<jmh-generator-annprocess.version>${jmh.version}</jmh-generator-annprocess.version>
@@ -781,7 +781,7 @@
 		<!-- JNA - https://github.com/twall/jna -->
 		<jna.version>4.5.2</jna.version>
 
-		<!-- Joda-Time - http://www.joda.org/joda-time/ -->
+		<!-- Joda-Time - https://www.joda.org/joda-time/ -->
 		<joda-time.version>2.10.1</joda-time.version>
 
 		<!-- JOGL - https://jogamp.org/jogl/ -->
@@ -791,7 +791,7 @@
 		<jocl-main.version>${jogl.version}</jocl-main.version>
 		<jogl-all-main.version>${jogl.version}</jogl-all-main.version>
 
-		<!-- JOML - http://joml-ci.github.io/JOML/ -->
+		<!-- JOML - https://joml-ci.github.io/JOML/ -->
 		<joml.version>1.9.12</joml.version>
 
 		<!-- JPedal - http://jpedal.org/ (defunct) -->
@@ -801,7 +801,7 @@
 		<!-- JSch - http://www.jcraft.com/jsch/ -->
 		<jsch.version>0.1.55</jsch.version>
 
-		<!-- JUnit - http://junit.org/ -->
+		<!-- JUnit - https://junit.org/ -->
 		<junit.version>4.12</junit.version>
 
 		<!-- JZlib - http://www.jcraft.com/jzlib/ -->
@@ -812,12 +812,12 @@
 		<kotlin-reflect.version>${kotlin.version}</kotlin-reflect.version>
 		<kotlin-stdlib.version>${kotlin.version}</kotlin-stdlib.version>
 
-		<!-- Logback - http://logback.qos.ch/ -->
+		<!-- Logback - https://logback.qos.ch/ -->
 		<logback.version>1.2.3</logback.version>
 		<logback-classic.version>${logback.version}</logback-classic.version>
 		<logback-core.version>${logback.version}</logback-core.version>
 
-		<!-- MapDB - http://www.mapdb.org/ -->
+		<!-- MapDB - https://www.mapdb.org/ -->
 		<mapdb.version>3.0.7</mapdb.version>
 
 		<!-- MigLayout - http://www.miglayout.com/ -->
@@ -826,7 +826,7 @@
 		<!-- Mines JTK - https://github.com/dhale/jtk -->
 		<mines-jtk.version>20151125</mines-jtk.version>
 
-		<!-- Mockito - http://site.mockito.org/ -->
+		<!-- Mockito - https://site.mockito.org/ -->
 		<mockito.version>2.19.0</mockito.version>
 		<mockito-core.version>${mockito.version}</mockito-core.version>
 
@@ -836,13 +836,13 @@
 		<!-- OpenCSV - http://opencsv.sourceforge.net/ -->
 		<opencsv.version>3.9</opencsv.version>
 
-		<!-- picocli - http://picocli.info/ -->
+		<!-- picocli - https://picocli.info/ -->
 		<picocli.version>3.8.1</picocli.version>
 
 		<!-- PostgreSQL JDBC Driver - https://jdbc.postgresql.org/ -->
 		<postgresql.version>9.1-901-1.jdbc4</postgresql.version>
 
-		<!-- RSyntaxTextArea - http://bobbylight.github.io/RSyntaxTextArea/ -->
+		<!-- RSyntaxTextArea - https://bobbylight.github.io/RSyntaxTextArea/ -->
 		<rsyntaxtextarea.version>2.6.1</rsyntaxtextarea.version>
 		<autocomplete.version>${rsyntaxtextarea.version}</autocomplete.version>
 		<languagesupport.version>2.6.0</languagesupport.version>
@@ -872,7 +872,7 @@
 		<!-- Trove - http://trove.starlight-systems.com/ -->
 		<trove4j.version>3.0.3</trove4j.version>
 
-		<!-- Weka - http://www.cs.waikato.ac.nz/ml/weka/ -->
+		<!-- Weka - https://www.cs.waikato.ac.nz/ml/weka/ -->
 		<weka.version>3.9.3</weka.version>
 		<weka-dev.version>${weka.version}</weka-dev.version>
 	</properties>
