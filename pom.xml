@@ -524,7 +524,7 @@
 		<OMEVisual.version>1.1.2</OMEVisual.version>
 
 		<!-- Sholl Analysis - https://github.com/tferr/ASA -->
-		<Sholl_Analysis.version>3.7.4</Sholl_Analysis.version>
+		<Sholl_Analysis.version>4.0.0</Sholl_Analysis.version>
 
 		<!-- JITK TPS - https://github.com/saalfeldlab/jitk-tps -->
 		<jitk-tps.version>3.0.0</jitk-tps.version>
