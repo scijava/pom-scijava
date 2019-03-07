@@ -121,6 +121,13 @@
 		<license.licenseName>N/A</license.licenseName>
 		<license.copyrightOwners>N/A</license.copyrightOwners>
 
+		<!--
+		Set the coding-style property to define a coding style to be used in
+		your project.
+		Supported values are: imagej, imglib2 and scifio
+		-->
+		<coding-style>imagej</coding-style>
+
 		<!-- Managed dependency versions - SciJava component collection -->
 
 		<!--
@@ -3792,4 +3799,34 @@
 			</pluginRepositories>
 		</profile>
 	</profiles>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>net.revelc.code.formatter</groupId>
+					<artifactId>formatter-maven-plugin</artifactId>
+					<version>2.8.1</version>
+					<dependencies>
+						<dependency>
+							<groupId>org.scijava</groupId>
+							<artifactId>scijava-coding-style</artifactId>
+							<version>1.0.0-SNAPSHOT</version>
+						</dependency>
+					</dependencies>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+		<plugins>
+			<!-- Code Formatter Plugin -->
+			<plugin>
+				<groupId>net.revelc.code.formatter</groupId>
+				<artifactId>formatter-maven-plugin</artifactId>
+				<configuration>
+					<configFile>eclipse-formatter-settings/${coding-style}-coding-style.xml</configFile>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
 </project>
