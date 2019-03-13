@@ -2111,6 +2111,10 @@
 						<artifactId>logback-classic</artifactId>
 					</exclusion>
 					<exclusion>
+						<groupId>com.google.code.findbugs</groupId>
+						<artifactId>annotations</artifactId>
+					</exclusion>
+					<exclusion>
 						<groupId>xalan</groupId>
 						<artifactId>serializer</artifactId>
 					</exclusion>
