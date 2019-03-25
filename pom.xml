@@ -614,7 +614,7 @@
 		<multiview-simulation.version>0.2.0</multiview-simulation.version>
 
 		<!-- CoreMem - https://github.com/ClearControl/CoreMem -->
-		<CoreMem.version>0.4.3</CoreMem.version>
+		<coremem.version>0.4.6</coremem.version>
 
 		<!-- ClearGL - https://github.com/ClearVolume/ClearGL -->
 		<cleargl.version>2.2.2</cleargl.version>
@@ -2375,9 +2375,9 @@
 
 			<!-- CoreMem - https://github.com/ClearControl/CoreMem -->
 			<dependency>
-				<groupId>net.coremem</groupId>
-				<artifactId>CoreMem</artifactId>
-				<version>${CoreMem.version}</version>
+				<groupId>net.clearcontrol</groupId>
+				<artifactId>coremem</artifactId>
+				<version>${coremem.version}</version>
 				<exclusions>
 					<exclusion>
 						<!-- Conflicts with junit:junit. We don't need Android here. -->
