@@ -3403,14 +3403,14 @@
 			</properties>
 			<repositories>
 				<repository>
-					<id>imagej.public</id>
-					<url>https://maven.imagej.net/content/groups/public</url>
+					<id>scijava.public</id>
+					<url>https://maven.scijava.org/content/groups/public</url>
 				</repository>
 			</repositories>
 			<pluginRepositories>
 				<pluginRepository>
-					<id>imagej.public</id>
-					<url>https://maven.imagej.net/content/groups/public</url>
+					<id>scijava.public</id>
+					<url>https://maven.scijava.org/content/groups/public</url>
 					<snapshots>
 						<enabled>true</enabled>
 					</snapshots>
@@ -3463,14 +3463,14 @@
 			</properties>
 			<repositories>
 				<repository>
-					<id>imagej.public</id>
-					<url>https://maven.imagej.net/content/groups/public</url>
+					<id>scijava.public</id>
+					<url>https://maven.scijava.org/content/groups/public</url>
 				</repository>
 			</repositories>
 			<pluginRepositories>
 				<pluginRepository>
-					<id>imagej.public</id>
-					<url>https://maven.imagej.net/content/groups/public</url>
+					<id>scijava.public</id>
+					<url>https://maven.scijava.org/content/groups/public</url>
 					<snapshots>
 						<enabled>true</enabled>
 					</snapshots>
@@ -3513,14 +3513,14 @@
 			</properties>
 			<repositories>
 				<repository>
-					<id>imagej.public</id>
-					<url>https://maven.imagej.net/content/groups/public</url>
+					<id>scijava.public</id>
+					<url>https://maven.scijava.org/content/groups/public</url>
 				</repository>
 			</repositories>
 			<pluginRepositories>
 				<pluginRepository>
-					<id>imagej.public</id>
-					<url>https://maven.imagej.net/content/groups/public</url>
+					<id>scijava.public</id>
+					<url>https://maven.scijava.org/content/groups/public</url>
 					<snapshots>
 						<enabled>true</enabled>
 					</snapshots>
@@ -3548,14 +3548,14 @@
 			</properties>
 			<repositories>
 				<repository>
-					<id>imagej.public</id>
-					<url>https://maven.imagej.net/content/groups/public</url>
+					<id>scijava.public</id>
+					<url>https://maven.scijava.org/content/groups/public</url>
 				</repository>
 			</repositories>
 			<pluginRepositories>
 				<pluginRepository>
-					<id>imagej.public</id>
-					<url>https://maven.imagej.net/content/groups/public</url>
+					<id>scijava.public</id>
+					<url>https://maven.scijava.org/content/groups/public</url>
 					<snapshots>
 						<enabled>true</enabled>
 					</snapshots>
@@ -3579,14 +3579,14 @@
 			</properties>
 			<repositories>
 				<repository>
-					<id>imagej.public</id>
-					<url>https://maven.imagej.net/content/groups/public</url>
+					<id>scijava.public</id>
+					<url>https://maven.scijava.org/content/groups/public</url>
 				</repository>
 			</repositories>
 			<pluginRepositories>
 				<pluginRepository>
-					<id>imagej.public</id>
-					<url>https://maven.imagej.net/content/groups/public</url>
+					<id>scijava.public</id>
+					<url>https://maven.scijava.org/content/groups/public</url>
 					<snapshots>
 						<enabled>true</enabled>
 					</snapshots>
@@ -3713,14 +3713,14 @@
 			</properties>
 			<repositories>
 				<repository>
-					<id>imagej.public</id>
-					<url>https://maven.imagej.net/content/groups/public</url>
+					<id>scijava.public</id>
+					<url>https://maven.scijava.org/content/groups/public</url>
 				</repository>
 			</repositories>
 			<pluginRepositories>
 				<pluginRepository>
-					<id>imagej.public</id>
-					<url>https://maven.imagej.net/content/groups/public</url>
+					<id>scijava.public</id>
+					<url>https://maven.scijava.org/content/groups/public</url>
 					<snapshots>
 						<enabled>true</enabled>
 					</snapshots>
@@ -3743,14 +3743,14 @@
 			</properties>
 			<repositories>
 				<repository>
-					<id>imagej.public</id>
-					<url>https://maven.imagej.net/content/groups/public</url>
+					<id>scijava.public</id>
+					<url>https://maven.scijava.org/content/groups/public</url>
 				</repository>
 			</repositories>
 			<pluginRepositories>
 				<pluginRepository>
-					<id>imagej.public</id>
-					<url>https://maven.imagej.net/content/groups/public</url>
+					<id>scijava.public</id>
+					<url>https://maven.scijava.org/content/groups/public</url>
 					<snapshots>
 						<enabled>true</enabled>
 					</snapshots>
@@ -3773,14 +3773,14 @@
 			</properties>
 			<repositories>
 				<repository>
-					<id>imagej.public</id>
-					<url>https://maven.imagej.net/content/groups/public</url>
+					<id>scijava.public</id>
+					<url>https://maven.scijava.org/content/groups/public</url>
 				</repository>
 			</repositories>
 			<pluginRepositories>
 				<pluginRepository>
-					<id>imagej.public</id>
-					<url>https://maven.imagej.net/content/groups/public</url>
+					<id>scijava.public</id>
+					<url>https://maven.scijava.org/content/groups/public</url>
 					<snapshots>
 						<enabled>true</enabled>
 					</snapshots>
