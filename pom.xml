@@ -130,7 +130,7 @@
 		various projects in the SciJava software stack.
 
 		When possible, we advise declaring your SciJava dependencies without a
-		<version> since the versions of all SciJava components are managed in this
+		version since the versions of all SciJava components are managed in this
 		POM's <dependencyManagement> section.
 
 		If you need to override the version of a particular component, then simply
