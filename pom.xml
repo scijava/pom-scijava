@@ -571,7 +571,7 @@
 		<!-- Open Microscopy Environment - https://github.com/openmicroscopy -->
 
 		<!-- OME Common Java - https://github.com/ome/ome-common-java -->
-		<ome-common.version>6.0.0</ome-common.version>
+		<ome-common.version>6.0.3</ome-common.version>
 
 		<!-- Metakit - https://github.com/ome/ome-metakit -->
 		<metakit.version>5.3.2</metakit.version>
@@ -583,7 +583,7 @@
 		<ome-xml.version>6.0.0</ome-xml.version>
 
 		<!-- Bio-Formats - https://github.com/openmicroscopy/bioformats -->
-		<bio-formats.version>6.0.0</bio-formats.version>
+		<bio-formats.version>6.1.0</bio-formats.version>
 		<bio-formats_plugins.version>${bio-formats.version}</bio-formats_plugins.version>
 		<formats-api.version>${bio-formats.version}</formats-api.version>
 		<formats-bsd.version>${bio-formats.version}</formats-bsd.version>
