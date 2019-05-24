@@ -153,7 +153,7 @@
 		<minimaven.version>2.2.1</minimaven.version>
 
 		<!-- Native Lib Loader - https://github.com/scijava/native-lib-loader -->
-		<native-lib-loader.version>2.3.2</native-lib-loader.version>
+		<native-lib-loader.version>2.3.4</native-lib-loader.version>
 
 		<!-- Parsington - https://github.com/scijava/parsington -->
 		<parsington.version>1.0.4</parsington.version>
@@ -257,7 +257,7 @@
 		<imagej.version>2.0.0-rc-71</imagej.version>
 
 		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
-		<imagej1.version>1.52i</imagej1.version>
+		<imagej1.version>1.52o</imagej1.version>
 
 		<!-- ImageJ 1.x patcher - https://github.com/imagej/ij1-patcher -->
 		<ij1-patcher.version>0.12.9</ij1-patcher.version>
@@ -433,7 +433,7 @@
 		<FlowJ_.version>${FlowJ.version}</FlowJ_.version>
 		<Graph_Cut.version>1.0.2</Graph_Cut.version>
 		<Gray_Morphology.version>2.3.4</Gray_Morphology.version>
-		<H5J_Loader_Plugin.version>1.0.7</H5J_Loader_Plugin.version>
+		<H5J_Loader_Plugin.version>1.1.0</H5J_Loader_Plugin.version>
 		<HDF5_Vibez.version>1.0.2</HDF5_Vibez.version>
 		<Helmholtz_Analysis.version>2.0.2</Helmholtz_Analysis.version>
 		<IJ_Robot.version>2.0.1</IJ_Robot.version>
@@ -580,7 +580,7 @@
 		<ome-poi.version>5.3.3</ome-poi.version>
 
 		<!-- OME Model - https://github.com/ome/ome-model -->
-		<ome-xml.version>6.0.0</ome-xml.version>
+		<ome-xml.version>6.0.1</ome-xml.version>
 
 		<!-- Bio-Formats - https://github.com/openmicroscopy/bioformats -->
 		<bio-formats.version>6.1.0</bio-formats.version>
