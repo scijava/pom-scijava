@@ -366,6 +366,9 @@
 		<!-- ImgLib2 UI - https://github.com/imglib/imglib2-ui -->
 		<imglib2-ui.version>2.0.0</imglib2-ui.version>
 
+		<!-- ImgLib2 Unsafe - https://github.com/imglib/imglib2-unsafe -->
+		<imglib2-unsafe.version>0.2.0</imglib2-unsafe.version>
+
 		<!-- SCIFIO - https://github.com/scifio -->
 
 		<!-- SCIFIO - https://github.com/scifio/scifio -->
@@ -1406,6 +1409,13 @@
 				<groupId>net.imglib2</groupId>
 				<artifactId>imglib2-ui</artifactId>
 				<version>${imglib2-ui.version}</version>
+			</dependency>
+
+			<!-- ImgLib2 Unsafe - https://github.com/imglib/imglib2-unsafe -->
+			<dependency>
+				<groupId>net.imglib2</groupId>
+				<artifactId>imglib2-unsafe</artifactId>
+				<version>${imglib2-unsafe.version}</version>
 			</dependency>
 
 			<!-- SCIFIO - https://github.com/scifio -->
@@ -3545,6 +3555,7 @@
 				<imglib2-roi.version>LATEST</imglib2-roi.version>
 				<imglib2-script.version>LATEST</imglib2-script.version>
 				<imglib2-ui.version>LATEST</imglib2-ui.version>
+				<imglib2-unsafe.version>LATEST</imglib2-unsafe.version>
 			</properties>
 			<repositories>
 				<repository>
