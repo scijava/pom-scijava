@@ -355,7 +355,7 @@
 		<imglib2-ij.version>2.0.0-beta-44</imglib2-ij.version>
 
 		<!-- ImgLib2 RealTransform - https://github.com/imglib/imglib2-realtransform -->
-		<imglib2-realtransform.version>2.1.0</imglib2-realtransform.version>
+		<imglib2-realtransform.version>2.2.1</imglib2-realtransform.version>
 
 		<!-- ImgLib2 ROI - https://github.com/imglib/imglib2-roi -->
 		<imglib2-roi.version>0.7.0</imglib2-roi.version>
@@ -530,10 +530,10 @@
 		<Sholl_Analysis.version>4.0.0</Sholl_Analysis.version>
 
 		<!-- JITK TPS - https://github.com/saalfeldlab/jitk-tps -->
-		<jitk-tps.version>3.0.0</jitk-tps.version>
+		<jitk-tps.version>3.0.1</jitk-tps.version>
 
 		<!-- BigWarp - https://github.com/saalfeldlab/bigwarp -->
-		<bigwarp.version>3.1.2</bigwarp.version>
+		<bigwarp.version>4.0.0</bigwarp.version>
 		<bigwarp_fiji.version>${bigwarp.version}</bigwarp_fiji.version>
 
 		<!-- MPI-CBG - https://github.com/axtimwalde/mpicbg -->
