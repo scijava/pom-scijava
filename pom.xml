@@ -833,6 +833,24 @@
 		<mockito.version>2.19.0</mockito.version>
 		<mockito-core.version>${mockito.version}</mockito-core.version>
 
+		<!-- N5 https://github.com/saalfeldlab/n5 -->
+		<aws-java-sdk-s3.version>1.11.319</aws-java-sdk-s3.version>
+		<google-cloud-storage.version>1.27.0</google-cloud-storage.version>
+		<google-cloud-resourcemanager.version>0.45.0-alpha</google-cloud-resourcemanager.version>
+		<google-api-services-oauth2.version>v2-rev134-1.23.0</google-api-services-oauth2.version>
+		<google-http-client-jackson2.version>1.23.0</google-http-client-jackson2.version>
+		<google-oauth-client-jetty.version>1.23.0</google-oauth-client-jetty.version>
+		<imglib2-label-multisets.version>0.8.1</imglib2-label-multisets.version>
+		<jackson-databind.version>2.9.8</jackson-databind.version>
+		<lz4-java.version>1.5.0</lz4-java.version>
+		<xz.version>1.8</xz.version>
+		<n5.version>2.1.0</n5.version>
+		<n5-imglib2.version>3.3.0</n5-imglib2.version>
+		<n5-hdf5.version>1.0.3</n5-hdf5.version>
+		<n5-aws-s3.version>2.1.0</n5-aws-s3.version>
+		<n5-google-cloud.version>2.3.1</n5-google-cloud.version>
+		<n5-viewer.version>2.1.0</n5-viewer.version>
+
 		<!-- oj! Algorithms - https://github.com/optimatika/ojAlgo -->
 		<ojalgo.version>45.1.1</ojalgo.version>
 
@@ -3183,6 +3201,88 @@
 				<groupId>edu.mines</groupId>
 				<artifactId>mines-jtk</artifactId>
 				<version>${mines-jtk.version}</version>
+			</dependency>
+
+			<!-- N5 https://github.com/saalfeldlab/n5 -->
+			<dependency>
+				<groupId>com.amazonaws</groupId>
+				<artifactId>aws-java-sdk-s3</artifactId>
+				<version>${aws-java-sdk-s3.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.cloud</groupId>
+				<artifactId>google-cloud-storage</artifactId>
+				<version>${google-cloud-storage.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.cloud</groupId>
+				<artifactId>google-cloud-resourcemanager</artifactId>
+				<version>${google-cloud-resourcemanager.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.apis</groupId>
+				<artifactId>google-api-services-oauth2</artifactId>
+				<version>${google-api-services-oauth2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.http-client</groupId>
+				<artifactId>google-http-client-jackson2</artifactId>
+				<version>${google-http-client-jackson2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.oauth-client</groupId>
+				<artifactId>google-oauth-client-jetty</artifactId>
+				<version>${google-oauth-client-jetty.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.imglib2</groupId>
+				<artifactId>imglib2-label-multisets</artifactId>
+				<version>${imglib2-label-multisets.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-databind</artifactId>
+				<version>${jackson-databind.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.lz4</groupId>
+				<artifactId>lz4-java</artifactId>
+				<version>${lz4-java.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.tukaani</groupId>
+				<artifactId>xz</artifactId>
+				<version>${xz.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.janelia.saalfeldlab</groupId>
+				<artifactId>n5</artifactId>
+				<version>${n5.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.janelia.saalfeldlab</groupId>
+				<artifactId>n5-imglib2</artifactId>
+				<version>${n5-imglib2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.janelia.saalfeldlab</groupId>
+				<artifactId>n5-hdf5</artifactId>
+				<version>${n5-hdf5.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.janelia.saalfeldlab</groupId>
+				<artifactId>n5-aws-s3</artifactId>
+				<version>${n5-aws-s3.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.janelia.saalfeldlab</groupId>
+				<artifactId>n5-google-cloud</artifactId>
+				<version>${n5-google-cloud.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.janelia.saalfeldlab</groupId>
+				<artifactId>n5-viewer</artifactId>
+				<version>${n5-viewer.version}</version>
 			</dependency>
 
 			<!-- oj! Algorithms - https://github.com/optimatika/ojAlgo -->
