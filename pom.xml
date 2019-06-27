@@ -846,7 +846,7 @@
 		<xz.version>1.8</xz.version>
 		<n5.version>2.1.0</n5.version>
 		<n5-imglib2.version>3.3.0</n5-imglib2.version>
-		<n5-hdf5.version>1.0.3</n5-hdf5.version>
+		<n5-hdf5.version>1.0.4</n5-hdf5.version>
 		<n5-aws-s3.version>2.1.0</n5-aws-s3.version>
 		<n5-google-cloud.version>2.3.1</n5-google-cloud.version>
 		<n5-viewer.version>2.1.0</n5-viewer.version>
