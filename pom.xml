@@ -870,7 +870,7 @@
 		<tensorflow.version>1.12.0</tensorflow.version>
 		<libtensorflow.version>${tensorflow.version}</libtensorflow.version>
 		<libtensorflow_jni.version>${tensorflow.version}</libtensorflow_jni.version>
-		<libtensorflow_jni_gpu.version>${tensorflow.version}</libtensorflow_jni_gpu.version>
+		<tensorflow_jni_gpu.version>${tensorflow.version}</tensorflow_jni_gpu.version>
 		<proto.version>${tensorflow.version}</proto.version>
 
 		<!-- Trove - http://trove.starlight-systems.com/ -->
