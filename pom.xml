@@ -150,7 +150,7 @@
 		<jython-shaded.version>2.7.1.1</jython-shaded.version>
 
 		<!-- MiniMaven - https://github.com/scijava/minimaven -->
-		<minimaven.version>2.2.1</minimaven.version>
+		<minimaven.version>2.2.2</minimaven.version>
 
 		<!-- Native Lib Loader - https://github.com/scijava/native-lib-loader -->
 		<native-lib-loader.version>2.3.4</native-lib-loader.version>
@@ -257,11 +257,11 @@
 		<imagej.version>2.0.0-rc-71</imagej.version>
 
 		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
-		<imagej1.version>1.52o</imagej1.version>
+		<imagej1.version>1.52p</imagej1.version>
 		<ij.version>${imagej1.version}</ij.version>
 
 		<!-- ImageJ 1.x patcher - https://github.com/imagej/ij1-patcher -->
-		<ij1-patcher.version>0.12.9</ij1-patcher.version>
+		<ij1-patcher.version>1.0.0</ij1-patcher.version>
 
 		<!-- ImageJ Common - https://github.com/imagej/imagej-common -->
 		<imagej-common.version>0.28.2</imagej-common.version>
@@ -294,7 +294,7 @@
 		<imagej-omero-legacy.version>0.1.2</imagej-omero-legacy.version>
 
 		<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
-		<imagej-ops.version>0.43.2</imagej-ops.version>
+		<imagej-ops.version>0.45.0</imagej-ops.version>
 
 		<!-- ImageJ Plugins: Batch - https://github.com/imagej/imagej-plugins-batch -->
 		<imagej-plugins-batch.version>0.1.1</imagej-plugins-batch.version>
@@ -318,7 +318,7 @@
 		<imagej-server.version>0.1.1</imagej-server.version>
 
 		<!-- ImageJ TensorFlow - https://github.com/imagej/imagej-tensorflow -->
-		<imagej-tensorflow.version>1.0.2</imagej-tensorflow.version>
+		<imagej-tensorflow.version>1.0.4</imagej-tensorflow.version>
 
 		<!-- ImageJ UI: AWT - https://github.com/imagej/imagej-ui-awt -->
 		<imagej-ui-awt.version>0.3.1</imagej-ui-awt.version>
@@ -338,7 +338,7 @@
 		<!-- ImgLib2 - https://github.com/imglib -->
 
 		<!-- ImgLib2 - https://github.com/imglib/imglib2 -->
-		<imglib2.version>5.6.3</imglib2.version>
+		<imglib2.version>5.8.0</imglib2.version>
 
 		<!-- ImgLib2 Algorithms - https://github.com/imglib/imglib2-algorithm -->
 		<imglib2-algorithm.version>0.11.1</imglib2-algorithm.version>
@@ -359,10 +359,10 @@
 		<imglib2-realtransform.version>2.2.1</imglib2-realtransform.version>
 
 		<!-- ImgLib2 ROI - https://github.com/imglib/imglib2-roi -->
-		<imglib2-roi.version>0.7.0</imglib2-roi.version>
+		<imglib2-roi.version>0.8.1</imglib2-roi.version>
 
 		<!-- ImgLib2 Scripting - https://github.com/imglib/imglib2-script -->
-		<imglib2-script.version>0.2.3</imglib2-script.version>
+		<imglib2-script.version>0.2.4</imglib2-script.version>
 
 		<!-- ImgLib2 UI - https://github.com/imglib/imglib2-ui -->
 		<imglib2-ui.version>2.0.0</imglib2-ui.version>
@@ -400,7 +400,7 @@
 
 		<!-- Standard Fiji projects -->
 
-		<AnalyzeSkeleton.version>3.3.0</AnalyzeSkeleton.version>
+		<AnalyzeSkeleton.version>3.4.1</AnalyzeSkeleton.version>
 		<AnalyzeSkeleton_.version>${AnalyzeSkeleton.version}</AnalyzeSkeleton_.version>
 		<Anisotropic_Diffusion_2D.version>2.0.1</Anisotropic_Diffusion_2D.version>
 		<Archipelago_Plugins.version>0.5.4</Archipelago_Plugins.version>
@@ -500,13 +500,13 @@
 		<VIB.version>3.0.2</VIB.version>
 		<VIB_.version>${VIB.version}</VIB_.version>
 		<Vaa3d_Reader.version>2.0.2</Vaa3d_Reader.version>
-		<Vaa3d_Writer.version>1.0.2</Vaa3d_Writer.version>
+		<Vaa3d_Writer.version>1.0.3</Vaa3d_Writer.version>
 		<Video_Editing.version>2.0.1</Video_Editing.version>
 		<View5D.version>1.3.2</View5D.version>
 		<View5D_.version>${View5D.version}</View5D_.version>
 		<Volume_Calculator.version>2.0.2</Volume_Calculator.version>
 		<Volume_Viewer.version>2.01.2</Volume_Viewer.version>
-		<bUnwarpJ.version>2.6.9</bUnwarpJ.version>
+		<bUnwarpJ.version>2.6.10</bUnwarpJ.version>
 		<bUnwarpJ_.version>${bUnwarpJ.version}</bUnwarpJ_.version>
 		<bij.version>0.1.1</bij.version>
 		<blockmatching.version>2.1.3</blockmatching.version>
@@ -534,7 +534,7 @@
 		<jitk-tps.version>3.0.1</jitk-tps.version>
 
 		<!-- BigWarp - https://github.com/saalfeldlab/bigwarp -->
-		<bigwarp.version>4.0.0</bigwarp.version>
+		<bigwarp.version>5.0.0</bigwarp.version>
 		<bigwarp_fiji.version>${bigwarp.version}</bigwarp_fiji.version>
 
 		<!-- MPI-CBG - https://github.com/axtimwalde/mpicbg -->
@@ -549,16 +549,16 @@
 
 		<!-- BigDataViewer - https://github.com/bigdataviewer -->
 
-		<bigdataviewer-core.version>5.1.0</bigdataviewer-core.version>
+		<bigdataviewer-core.version>7.0.0</bigdataviewer-core.version>
 		<bigdataviewer-server.version>2.1.0</bigdataviewer-server.version>
-		<bigdataviewer-vistools.version>1.0.0-beta-11</bigdataviewer-vistools.version>
-		<bigdataviewer_fiji.version>5.0.0</bigdataviewer_fiji.version>
+		<bigdataviewer-vistools.version>1.0.0-beta-15</bigdataviewer-vistools.version>
+		<bigdataviewer_fiji.version>6.0.0</bigdataviewer_fiji.version>
 		<spim_data.version>2.2.2</spim_data.version>
 
 		<!-- TrakEM2 - https://github.com/trakem2 -->
 
-		<T2-NIT.version>1.1.2</T2-NIT.version>
-		<T2-TreelineGraph.version>1.1.2</T2-TreelineGraph.version>
+		<T2-NIT.version>1.1.3</T2-NIT.version>
+		<T2-TreelineGraph.version>1.1.3</T2-TreelineGraph.version>
 		<TrakEM2.version>1.3.2</TrakEM2.version>
 		<TrakEM2_.version>${TrakEM2.version}</TrakEM2_.version>
 		<VectorString.version>2.0.2</VectorString.version>
