@@ -847,9 +847,9 @@
 		<postgresql.version>9.1-901-1.jdbc4</postgresql.version>
 
 		<!-- RSyntaxTextArea - https://bobbylight.github.io/RSyntaxTextArea/ -->
-		<rsyntaxtextarea.version>2.6.1</rsyntaxtextarea.version>
-		<autocomplete.version>${rsyntaxtextarea.version}</autocomplete.version>
-		<languagesupport.version>2.6.0</languagesupport.version>
+		<rsyntaxtextarea.version>3.0.3</rsyntaxtextarea.version>
+		<autocomplete.version>3.0.0</autocomplete.version>
+		<languagesupport.version>3.0.0</languagesupport.version>
 
 		<!-- SLF4J - http://slf4j.org/ -->
 		<slf4j.version>1.7.26</slf4j.version>
