@@ -506,7 +506,7 @@
 		<View5D_.version>${View5D.version}</View5D_.version>
 		<Volume_Calculator.version>2.0.2</Volume_Calculator.version>
 		<Volume_Viewer.version>2.01.2</Volume_Viewer.version>
-		<bUnwarpJ.version>2.6.10</bUnwarpJ.version>
+		<bUnwarpJ.version>2.6.11</bUnwarpJ.version>
 		<bUnwarpJ_.version>${bUnwarpJ.version}</bUnwarpJ_.version>
 		<bij.version>0.1.1</bij.version>
 		<blockmatching.version>2.1.3</blockmatching.version>
@@ -594,7 +594,7 @@
 		<formats-gpl.version>${bio-formats.version}</formats-gpl.version>
 
 		<!-- OMERO - https://github.com/openmicroscopy/openmicroscopy -->
-		<omero.version>5.4.9-ice36-b101</omero.version>
+		<omero.version>5.4.10-ice36-b105</omero.version>
 		<blitz.version>${omero.version}</blitz.version>
 		<common.version>${omero.version}</common.version>
 		<dsl.version>${omero.version}</dsl.version>
@@ -609,19 +609,19 @@
 		<MorphoLibJ.version>1.4.0</MorphoLibJ.version>
 
 		<!-- BigStitcher - https://github.com/PreibischLab/BigStitcher -->
-		<BigStitcher.version>0.2.11</BigStitcher.version>
+		<BigStitcher.version>0.3.4</BigStitcher.version>
 
 		<!-- multiview-reconstruction - https://github.com/PreibischLab/multiview-reconstruction -->
-		<multiview-reconstruction.version>0.2.17</multiview-reconstruction.version>
+		<multiview-reconstruction.version>0.3.5</multiview-reconstruction.version>
 
 		<!-- multiview-simulation - https://github.com/PreibischLab/multiview-simulation -->
 		<multiview-simulation.version>0.2.0</multiview-simulation.version>
 
 		<!-- CoreMem - https://github.com/ClearControl/CoreMem -->
-		<coremem.version>0.4.6</coremem.version>
+		<coremem.version>0.4.7</coremem.version>
 
 		<!-- ClearGL - https://github.com/ClearVolume/ClearGL -->
-		<cleargl.version>2.2.2</cleargl.version>
+		<cleargl.version>2.2.6</cleargl.version>
 
 		<!-- Scenery - https://github.com/scenerygraphics/scenery -->
 		<scenery.version>0.6.2</scenery.version>
@@ -638,7 +638,7 @@
 		<spark.version>2.3.1</spark.version>
 
 		<!-- Batik - https://xmlgraphics.apache.org/batik/ -->
-		<batik.version>1.10</batik.version>
+		<batik.version>1.11</batik.version>
 		<batik-anim.version>${batik.version}</batik-anim.version>
 		<batik-awt-util.version>${batik.version}</batik-awt-util.version>
 		<batik-bridge.version>${batik.version}</batik-bridge.version>
@@ -672,7 +672,7 @@
 		<commons-beanutils.version>1.9.3</commons-beanutils.version>
 
 		<!-- Commons Codec - https://commons.apache.org/proper/commons-codec/ -->
-		<commons-codec.version>1.11</commons-codec.version>
+		<commons-codec.version>1.12</commons-codec.version>
 
 		<!-- Commons Collections - https://commons.apache.org/proper/commons-collections/ -->
 		<commons-collections.version>3.2.2</commons-collections.version>
@@ -682,7 +682,7 @@
 
 		<!-- Commons Lang - https://commons.apache.org/proper/commons-lang/ -->
 		<commons-lang.version>2.6</commons-lang.version>
-		<commons-lang3.version>3.8.1</commons-lang3.version>
+		<commons-lang3.version>3.9</commons-lang3.version>
 
 		<!-- Commons Logging - https://commons.apache.org/proper/commons-logging/ -->
 		<commons-logging.version>1.2</commons-logging.version>
@@ -694,7 +694,7 @@
 		<commons-text.version>1.6</commons-text.version>
 
 		<!-- Byte Code Generation Library - https://github.com/cglib/cglib -->
-		<cglib.version>3.2.9</cglib.version>
+		<cglib.version>3.2.12</cglib.version>
 
 		<!-- Gson - https://code.google.com/p/google-gson/ -->
 		<gson.version>2.8.5</gson.version>
@@ -706,7 +706,7 @@
 		<hsqldb.version>1.8.0.10</hsqldb.version>
 
 		<!-- iText PDF - https://github.com/itext/itextpdf -->
-		<itextpdf.version>5.5.13</itextpdf.version>
+		<itextpdf.version>5.5.13.1</itextpdf.version>
 
 		<!-- Java Advanced Imaging - https://java.net/projects/jai-core -->
 		<jai.version>1.1.3</jai.version>
@@ -723,13 +723,13 @@
 		<vecmath.version>${java3d.version}</vecmath.version>
 
 		<!-- Javassist - https://www.javassist.org/ -->
-		<javassist.version>3.24.0-GA</javassist.version>
+		<javassist.version>3.25.0-GA</javassist.version>
 
 		<!-- JDOM - http://www.jdom.org/ -->
 		<jdom2.version>2.0.6</jdom2.version>
 
 		<!-- Jetty - https://www.eclipse.org/jetty/ -->
-		<jetty.version>9.4.14.v20181114</jetty.version>
+		<jetty.version>9.4.19.v20190610</jetty.version>
 		<jetty-annotations.version>${jetty.version}</jetty-annotations.version>
 		<jetty-ant.version>${jetty.version}</jetty-ant.version>
 		<jetty-client.version>${jetty.version}</jetty-client.version>
@@ -766,7 +766,7 @@
 		<jfreechart.version>1.5.0</jfreechart.version>
 
 		<!-- JGraphT - https://github.com/jgrapht/jgrapht -->
-		<jgrapht.version>1.3.0</jgrapht.version>
+		<jgrapht.version>1.3.1</jgrapht.version>
 
 		<!-- JGraphX - https://github.com/jgraph/jgraphx -->
 		<jgraphx.version>3.4.1.3</jgraphx.version>
@@ -786,7 +786,7 @@
 		<jna.version>4.5.2</jna.version>
 
 		<!-- Joda-Time - https://www.joda.org/joda-time/ -->
-		<joda-time.version>2.10.1</joda-time.version>
+		<joda-time.version>2.10.2</joda-time.version>
 
 		<!-- JOGL - https://jogamp.org/jogl/ -->
 		<jogl.version>2.3.2</jogl.version>
@@ -796,7 +796,7 @@
 		<jogl-all-main.version>${jogl.version}</jogl-all-main.version>
 
 		<!-- JOML - https://joml-ci.github.io/JOML/ -->
-		<joml.version>1.9.12</joml.version>
+		<joml.version>1.9.16</joml.version>
 
 		<!-- JPedal - http://jpedal.org/ (defunct) -->
 		<jpedal.version>2.80b11</jpedal.version>
@@ -852,7 +852,7 @@
 		<languagesupport.version>2.6.0</languagesupport.version>
 
 		<!-- SLF4J - http://slf4j.org/ -->
-		<slf4j.version>1.7.25</slf4j.version>
+		<slf4j.version>1.7.26</slf4j.version>
 		<slf4j-api.version>${slf4j.version}</slf4j-api.version>
 		<slf4j-ext.version>${slf4j.version}</slf4j-ext.version>
 		<slf4j-jcl.version>${slf4j.version}</slf4j-jcl.version>
@@ -861,7 +861,7 @@
 		<slf4j-simple.version>${slf4j.version}</slf4j-simple.version>
 
 		<!-- SnakeYAML - https://bitbucket.org/asomov/snakeyaml -->
-		<snakeyaml.version>1.23</snakeyaml.version>
+		<snakeyaml.version>1.24</snakeyaml.version>
 
 		<!-- SnakeYAML Engine - https://bitbucket.org/asomov/snakeyaml-engine -->
 		<snakeyaml-engine.version>1.0</snakeyaml-engine.version>
