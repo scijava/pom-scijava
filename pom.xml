@@ -258,6 +258,7 @@
 
 		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
 		<imagej1.version>1.52o</imagej1.version>
+		<ij.version>${imagej1.version}</ij.version>
 
 		<!-- ImageJ 1.x patcher - https://github.com/imagej/ij1-patcher -->
 		<ij1-patcher.version>0.12.9</ij1-patcher.version>
@@ -1155,7 +1156,7 @@
 			<dependency>
 				<groupId>net.imagej</groupId>
 				<artifactId>ij</artifactId>
-				<version>${imagej1.version}</version>
+				<version>${ij.version}</version>
 				<exclusions>
 					<exclusion>
 						<groupId>com.sun</groupId>
