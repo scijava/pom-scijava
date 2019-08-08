@@ -309,7 +309,7 @@
 		<imagej-plugins-uploader-ssh.version>0.3.2</imagej-plugins-uploader-ssh.version>
 
 		<!-- ImageJ Plugins: Uploader: WebDAV - https://github.com/imagej/imagej-plugins-uploader-webdav -->
-		<imagej-plugins-uploader-webdav.version>0.2.2</imagej-plugins-uploader-webdav.version>
+		<imagej-plugins-uploader-webdav.version>0.3.1</imagej-plugins-uploader-webdav.version>
 
 		<!-- ImageJ Scripting - https://github.com/imagej/imagej-scripting -->
 		<imagej-scripting.version>0.8.2</imagej-scripting.version>
@@ -324,10 +324,10 @@
 		<imagej-ui-awt.version>0.3.1</imagej-ui-awt.version>
 
 		<!-- ImageJ UI: Swing - https://github.com/imagej/imagej-ui-swing -->
-		<imagej-ui-swing.version>0.22.0</imagej-ui-swing.version>
+		<imagej-ui-swing.version>0.23.1</imagej-ui-swing.version>
 
 		<!-- ImageJ Updater - https://github.com/imagej/imagej-updater -->
-		<imagej-updater.version>0.9.3</imagej-updater.version>
+		<imagej-updater.version>0.10.1</imagej-updater.version>
 
 		<!-- ImageJ Usage - https://github.com/imagej/imagej-usage -->
 		<imagej-usage.version>0.4.1</imagej-usage.version>
