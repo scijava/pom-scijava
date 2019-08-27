@@ -825,7 +825,7 @@
 		<mapdb.version>3.0.7</mapdb.version>
 
 		<!-- MigLayout - http://www.miglayout.com/ -->
-		<miglayout.version>3.7.4</miglayout.version>
+		<miglayout.version>5.2</miglayout.version>
 
 		<!-- Mines JTK - https://github.com/dhale/jtk -->
 		<mines-jtk.version>20151125</mines-jtk.version>
@@ -3174,7 +3174,12 @@
 			<!-- MigLayout - http://www.miglayout.com/ -->
 			<dependency>
 				<groupId>com.miglayout</groupId>
-				<artifactId>miglayout</artifactId>
+				<artifactId>miglayout-core</artifactId>
+				<version>${miglayout.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.miglayout</groupId>
+				<artifactId>miglayout-swing</artifactId>
 				<version>${miglayout.version}</version>
 				<classifier>swing</classifier>
 			</dependency>
