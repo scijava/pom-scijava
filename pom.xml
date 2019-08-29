@@ -765,6 +765,9 @@
 		<!-- JFreeChart - http://www.jfree.org/jfreechart/ -->
 		<jfreechart.version>1.5.0</jfreechart.version>
 
+		<!-- JFreeSVG - http://www.jfree.org/jfreesvg/ -->
+		<jfreesvg.version>3.4</jfreesvg.version>
+
 		<!-- JGraphT - https://github.com/jgrapht/jgrapht -->
 		<jgrapht.version>1.3.1</jgrapht.version>
 
@@ -3023,6 +3026,13 @@
 						<artifactId>xml-apis</artifactId>
 					</exclusion>
 				</exclusions>
+			</dependency>
+
+			<!-- JFreeSVG - http://www.jfree.org/jfreesvg/ -->
+			<dependency>
+				<groupId>org.jfree</groupId>
+				<artifactId>jfreesvg</artifactId>
+				<version>${jfreesvg.version}</version>
 			</dependency>
 
 			<!-- JGraphT - https://github.com/jgrapht/jgrapht -->
