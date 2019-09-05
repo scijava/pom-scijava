@@ -107,7 +107,7 @@
 		<!--
 		HACK: The following list of allowed-to-be-duplicated classes
 		facilitates intended combinations of artifacts:
-		* omero:blitz + org.hibernate:hibernate-core
+		* org.openmicroscopy:omero-blitz + org.hibernate:hibernate-core
 		* org.apache.hadoop:hadoop-yarn-*
 		* org.apache.spark:spark-*_2.11
 		* org.jmockit:jmockit + junit:junit
@@ -572,7 +572,7 @@
 		above.
 		-->
 
-		<!-- Open Microscopy Environment - https://github.com/openmicroscopy -->
+		<!-- Open Microscopy Environment - https://github.com/ome -->
 
 		<!-- OME Common Java - https://github.com/ome/ome-common-java -->
 		<ome-common.version>6.0.3</ome-common.version>
@@ -593,15 +593,15 @@
 		<formats-bsd.version>${bio-formats.version}</formats-bsd.version>
 		<formats-gpl.version>${bio-formats.version}</formats-gpl.version>
 
-		<!-- OMERO - https://github.com/openmicroscopy/openmicroscopy -->
-		<omero.version>5.4.10-ice36-b105</omero.version>
-		<blitz.version>${omero.version}</blitz.version>
-		<common.version>${omero.version}</common.version>
-		<dsl.version>${omero.version}</dsl.version>
-		<model-psql.version>${omero.version}</model-psql.version>
-		<rendering.version>${omero.version}</rendering.version>
-		<romio.version>${omero.version}</romio.version>
-		<server.version>${omero.version}</server.version>
+		<!-- OMERO - https://github.com/ome/openmicroscopy -->
+		<omero-blitz.version>5.5.3</omero-blitz.version>
+		<omero-common.version>5.5.2</omero-common.version>
+		<omero-dsl-plugin.version>5.5.0</omero-dsl-plugin.version>
+		<omero-gateway.version>5.5.3</omero-gateway.version>
+		<omero-model.version>5.5.2</omero-model.version>
+		<omero-renderer.version>5.5.2</omero-renderer.version>
+		<omero-romio.version>5.5.2</omero-romio.version>
+		<omero-server.version>5.5.4</omero-server.version>
 
 		<!-- Other SciJava components -->
 
@@ -2077,7 +2077,7 @@
 				<version>${trakem2-transform.version}</version>
 			</dependency>
 
-			<!-- Open Microscopy Environment - https://github.com/openmicroscopy -->
+			<!-- Open Microscopy Environment - https://github.com/ome -->
 
 			<!-- Metakit - https://github.com/ome/ome-metakit -->
 			<dependency>
@@ -2125,10 +2125,6 @@
 						<artifactId>logback-classic</artifactId>
 					</exclusion>
 					<exclusion>
-						<groupId>com.google.code.findbugs</groupId>
-						<artifactId>annotations</artifactId>
-					</exclusion>
-					<exclusion>
 						<groupId>xalan</groupId>
 						<artifactId>serializer</artifactId>
 					</exclusion>
@@ -2153,7 +2149,7 @@
 				<version>${ome-xml.version}</version>
 			</dependency>
 
-			<!-- Bio-Formats - https://github.com/openmicroscopy/bioformats -->
+			<!-- Bio-Formats - https://github.com/ome/bioformats -->
 			<dependency>
 				<groupId>ome</groupId>
 				<artifactId>bio-formats_plugins</artifactId>
@@ -2199,160 +2195,102 @@
 				<version>${formats-gpl.version}</version>
 			</dependency>
 
-			<!-- OMERO - https://github.com/openmicroscopy/openmicroscopy -->
+			<!-- OMERO - https://github.com/ome/openmicroscopy -->
 			<dependency>
-				<groupId>omero</groupId>
-				<artifactId>blitz</artifactId>
-				<version>${blitz.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>omero</groupId>
-				<artifactId>common</artifactId>
-				<version>${common.version}</version>
+				<groupId>org.openmicroscopy</groupId>
+				<artifactId>omero-blitz</artifactId>
+				<version>${omero-blitz.version}</version>
 				<exclusions>
 					<exclusion>
-						<!--
-						The banDuplicateClasses rule of the maven-enforcer-plugin reports a
-						conflict between logback-classic & slf4j-simple in some scenarios.
-						Both include an SLF4J binding (org.slf4j.impl.StaticLoggerBinder).
-						Perhaps the classpath of the tooling also includes slf4j-simple?
-						Regardless, it is generally problematic to inflict a specific SLF4J
-						binding on downstream consumers. "Embedded components such as
-						libraries or frameworks should not declare a dependency on any
-						SLF4J binding but only depend on slf4j-api."
-						See: https://www.slf4j.org/manual.html#libraries
-						-->
-						<groupId>ch.qos.logback</groupId>
-						<artifactId>logback-classic</artifactId>
+						<!-- Conflicts with javax.activation:activation -->
+						<groupId>com.sun.activation</groupId>
+						<artifactId>javax.activation</artifactId>
 					</exclusion>
-				</exclusions>
-			</dependency>
-			<dependency>
-				<groupId>omero</groupId>
-				<artifactId>dsl</artifactId>
-				<version>${dsl.version}</version>
-				<exclusions>
-					<exclusion>
-						<!--
-						The banDuplicateClasses rule of the maven-enforcer-plugin reports a
-						conflict between logback-classic & slf4j-simple in some scenarios.
-						Both include an SLF4J binding (org.slf4j.impl.StaticLoggerBinder).
-						Perhaps the classpath of the tooling also includes slf4j-simple?
-						Regardless, it is generally problematic to inflict a specific SLF4J
-						binding on downstream consumers. "Embedded components such as
-						libraries or frameworks should not declare a dependency on any
-						SLF4J binding but only depend on slf4j-api."
-						See: https://www.slf4j.org/manual.html#libraries
-						-->
-						<groupId>ch.qos.logback</groupId>
-						<artifactId>logback-classic</artifactId>
-					</exclusion>
-					<exclusion>
-						<!-- Conflicts with commons-beanutils:commons-beanutils -->
-						<groupId>commons-beanutils</groupId>
-						<artifactId>commons-beanutils-core</artifactId>
-					</exclusion>
-					<exclusion>
-						<!-- Conflicts with net.sourceforge.findbugs:findbugs -->
-						<groupId>net.sourceforge.findbugs</groupId>
-						<artifactId>findbugs-ant</artifactId>
-					</exclusion>
-					<exclusion>
-						<!-- Conflicts with commons-logging:commons-logging -->
-						<groupId>org.slf4j</groupId>
-						<artifactId>jcl-over-slf4j</artifactId>
-					</exclusion>
-					<exclusion>
-						<!--
-						HACK: The omero:dsl artifact depends on org.testng:testng and
-						org.uncommons:reportng. Unfortunately, org.uncommons:reportng
-						depends on org.testng:testng:jdk15. So omero:dsl ends up depending
-						on two different testng artifacts simultaneously, resulting in
-						illegal class duplication. Maven dependency management does not
-						support classifier-specific exclusion, so we exclude
-						org.testng:testng as a whole to avoid the issue.
-						-->
-						<groupId>org.testng</groupId>
-						<artifactId>testng</artifactId>
-					</exclusion>
-					<exclusion>
-						<!-- Conflicts with velocity:velocity -->
-						<groupId>velocity</groupId>
-						<artifactId>velocity-dep</artifactId>
-					</exclusion>
-				</exclusions>
-			</dependency>
-			<dependency>
-				<groupId>omero</groupId>
-				<artifactId>model-psql</artifactId>
-				<version>${model-psql.version}</version>
-				<exclusions>
-					<exclusion>
-						<!-- Conflicts with org.hibernate:hibernate-core -->
-						<groupId>org.hibernate</groupId>
-						<artifactId>hibernate-commons-annotations</artifactId>
-					</exclusion>
-					<exclusion>
-						<!-- Conflicts with org.hibernate.javax.persistence:hibernate-jpa-2.0-api -->
-						<groupId>org.hibernate</groupId>
-						<artifactId>ejb3-persistence</artifactId>
-					</exclusion>
-					<exclusion>
-						<!-- Conflicts with org.javassist:javassist -->
-						<groupId>javassist</groupId>
-						<artifactId>javassist</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>xml-apis</groupId>
-						<artifactId>xml-apis</artifactId>
-					</exclusion>
-				</exclusions>
-			</dependency>
-			<dependency>
-				<groupId>omero</groupId>
-				<artifactId>rendering</artifactId>
-				<version>${rendering.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>omero</groupId>
-				<artifactId>romio</artifactId>
-				<version>${romio.version}</version>
-				<exclusions>
-					<exclusion>
-						<!-- Conflicts with commons-io:commons-io and commons-lang:commons-lang -->
-						<groupId>ch.systems.cisd</groupId>
-						<artifactId>jhdf5</artifactId>
-					</exclusion>
-				</exclusions>
-			</dependency>
-			<dependency>
-				<groupId>omero</groupId>
-				<artifactId>server</artifactId>
-				<version>${server.version}</version>
-				<exclusions>
 					<exclusion>
 						<!-- Uber-JAR of all batik components -->
-						<groupId>batik</groupId>
+						<groupId>org.apache.xmlgraphics</groupId>
 						<artifactId>batik-all</artifactId>
 					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.openmicroscopy</groupId>
+				<artifactId>omero-common</artifactId>
+				<version>${omero-common.version}</version>
+				<exclusions>
 					<exclusion>
-						<!-- Conflicts with edu.ucar:netcdf -->
-						<groupId>edu.ucar</groupId>
-						<artifactId>grib</artifactId>
+						<!--
+						The banDuplicateClasses rule of the maven-enforcer-plugin reports a
+						conflict between logback-classic & slf4j-simple in some scenarios.
+						Both include an SLF4J binding (org.slf4j.impl.StaticLoggerBinder).
+						Perhaps the classpath of the tooling also includes slf4j-simple?
+						Regardless, it is generally problematic to inflict a specific SLF4J
+						binding on downstream consumers. "Embedded components such as
+						libraries or frameworks should not declare a dependency on any
+						SLF4J binding but only depend on slf4j-api."
+						See: https://www.slf4j.org/manual.html#libraries
+						-->
+						<groupId>ch.qos.logback</groupId>
+						<artifactId>logback-classic</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.openmicroscopy</groupId>
+				<artifactId>omero-dsl-plugin</artifactId>
+				<version>${omero-dsl-plugin.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.openmicroscopy</groupId>
+				<artifactId>omero-gateway</artifactId>
+				<version>${omero-gateway.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.openmicroscopy</groupId>
+				<artifactId>omero-model</artifactId>
+				<version>${omero-model.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.openmicroscopy</groupId>
+				<artifactId>omero-renderer</artifactId>
+				<version>${omero-renderer.version}</version>
+				<exclusions>
+					<exclusion>
+						<!-- Conflicts with com.mchange:c3p0 and com.mchange:mchange-commons-java -->
+						<groupId>c3p0</groupId>
+						<artifactId>c3p0</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.openmicroscopy</groupId>
+				<artifactId>omero-romio</artifactId>
+				<version>${omero-romio.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.openmicroscopy</groupId>
+				<artifactId>omero-server</artifactId>
+				<version>${omero-server.version}</version>
+				<exclusions>
+					<exclusion>
+						<!-- Conflicts with org.springframework:spring-aop -->
+						<groupId>aopalliance</groupId>
+						<artifactId>aopalliance</artifactId>
 					</exclusion>
 					<exclusion>
-						<!-- Conflicts with javax.transaction:jta -->
-						<groupId>geronimo-spec</groupId>
-						<artifactId>geronimo-spec-jta</artifactId>
+						<!-- Conflicts with com.mchange:c3p0 and com.mchange:mchange-commons-java -->
+						<groupId>c3p0</groupId>
+						<artifactId>c3p0</artifactId>
 					</exclusion>
 					<exclusion>
-						<!-- Conflicts with org.aspectj:aspectjweaver -->
-						<groupId>org.aspectj</groupId>
-						<artifactId>aspectjrt</artifactId>
+						<!-- Conflicts with javax.mail:mail -->
+						<groupId>com.sun.mail</groupId>
+						<artifactId>javax.mail</artifactId>
 					</exclusion>
 					<exclusion>
-						<groupId>xml-apis</groupId>
-						<artifactId>xml-apis</artifactId>
+						<!-- Uber-JAR of all batik components -->
+						<groupId>org.apache.xmlgraphics</groupId>
+						<artifactId>batik-all</artifactId>
 					</exclusion>
 				</exclusions>
 			</dependency>
@@ -3420,7 +3358,14 @@
 				<ome-poi.version>LATEST</ome-poi.version>
 				<ome-xml.version>LATEST</ome-xml.version>
 				<bio-formats.version>LATEST</bio-formats.version>
-				<omero.version>LATEST</omero.version>
+				<omero-blitz.version>LATEST</omero-blitz.version>
+				<omero-common.version>LATEST</omero-common.version>
+				<omero-dsl-plugin.version>LATEST</omero-dsl-plugin.version>
+				<omero-gateway.version>LATEST</omero-gateway.version>
+				<omero-model.version>LATEST</omero-model.version>
+				<omero-renderer.version>LATEST</omero-renderer.version>
+				<omero-romio.version>LATEST</omero-romio.version>
+				<omero-server.version>LATEST</omero-server.version>
 			</properties>
 			<repositories>
 				<repository>
