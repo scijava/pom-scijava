@@ -586,21 +586,35 @@
 		<!-- OME Model - https://github.com/ome/ome-model -->
 		<ome-xml.version>6.0.1</ome-xml.version>
 
-		<!-- Bio-Formats - https://github.com/openmicroscopy/bioformats -->
+		<!-- Bio-Formats - https://github.com/ome/bioformats -->
 		<bio-formats.version>6.2.1</bio-formats.version>
 		<bio-formats_plugins.version>${bio-formats.version}</bio-formats_plugins.version>
 		<formats-api.version>${bio-formats.version}</formats-api.version>
 		<formats-bsd.version>${bio-formats.version}</formats-bsd.version>
 		<formats-gpl.version>${bio-formats.version}</formats-gpl.version>
 
-		<!-- OMERO - https://github.com/ome/openmicroscopy -->
+		<!-- OMERO Blitz - https://github.com/ome/omero-blitz -->
 		<omero-blitz.version>5.5.3</omero-blitz.version>
+
+		<!-- OMERO Common - https://github.com/ome/omero-common -->
 		<omero-common.version>5.5.2</omero-common.version>
+
+		<!-- OMERO DSL Plugin - https://github.com/ome/omero-dsl-plugin -->
 		<omero-dsl-plugin.version>5.5.0</omero-dsl-plugin.version>
+
+		<!-- OMERO Gateway - https://github.com/ome/omero-gateway-java -->
 		<omero-gateway.version>5.5.3</omero-gateway.version>
+
+		<!-- OMERO Model - https://github.com/ome/omero-model -->
 		<omero-model.version>5.5.2</omero-model.version>
+
+		<!-- OMERO Renderer - https://github.com/ome/omero-renderer -->
 		<omero-renderer.version>5.5.2</omero-renderer.version>
+
+		<!-- OMERO ROMIO - https://github.com/ome/omero-romio -->
 		<omero-romio.version>5.5.2</omero-romio.version>
+
+		<!-- OMERO Server - https://github.com/ome/omero-server -->
 		<omero-server.version>5.5.4</omero-server.version>
 
 		<!-- Other SciJava components -->
@@ -2195,7 +2209,7 @@
 				<version>${formats-gpl.version}</version>
 			</dependency>
 
-			<!-- OMERO - https://github.com/ome/openmicroscopy -->
+			<!-- OMERO Blitz - https://github.com/ome/omero-blitz -->
 			<dependency>
 				<groupId>org.openmicroscopy</groupId>
 				<artifactId>omero-blitz</artifactId>
@@ -2213,6 +2227,8 @@
 					</exclusion>
 				</exclusions>
 			</dependency>
+
+			<!-- OMERO Common - https://github.com/ome/omero-common -->
 			<dependency>
 				<groupId>org.openmicroscopy</groupId>
 				<artifactId>omero-common</artifactId>
@@ -2235,21 +2251,29 @@
 					</exclusion>
 				</exclusions>
 			</dependency>
+
+			<!-- OMERO DSL Plugin - https://github.com/ome/omero-dsl-plugin -->
 			<dependency>
 				<groupId>org.openmicroscopy</groupId>
 				<artifactId>omero-dsl-plugin</artifactId>
 				<version>${omero-dsl-plugin.version}</version>
 			</dependency>
+
+			<!-- OMERO Gateway - https://github.com/ome/omero-gateway-java -->
 			<dependency>
 				<groupId>org.openmicroscopy</groupId>
 				<artifactId>omero-gateway</artifactId>
 				<version>${omero-gateway.version}</version>
 			</dependency>
+
+			<!-- OMERO Model - https://github.com/ome/omero-model -->
 			<dependency>
 				<groupId>org.openmicroscopy</groupId>
 				<artifactId>omero-model</artifactId>
 				<version>${omero-model.version}</version>
 			</dependency>
+
+			<!-- OMERO Renderer - https://github.com/ome/omero-renderer -->
 			<dependency>
 				<groupId>org.openmicroscopy</groupId>
 				<artifactId>omero-renderer</artifactId>
@@ -2262,11 +2286,15 @@
 					</exclusion>
 				</exclusions>
 			</dependency>
+
+			<!-- OMERO ROMIO - https://github.com/ome/omero-romio -->
 			<dependency>
 				<groupId>org.openmicroscopy</groupId>
 				<artifactId>omero-romio</artifactId>
 				<version>${omero-romio.version}</version>
 			</dependency>
+
+			<!-- OMERO Server - https://github.com/ome/omero-server -->
 			<dependency>
 				<groupId>org.openmicroscopy</groupId>
 				<artifactId>omero-server</artifactId>
