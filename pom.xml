@@ -287,10 +287,10 @@
 		<!-- ImageJ Notebook - https://github.com/imagej/imagej-notebook -->
 		<imagej-notebook.version>0.7.1</imagej-notebook.version>
 
-		<!-- ImageJ OMERO - https://github.com/imagej/imagej-omero -->
+		<!-- ImageJ-OMERO - https://github.com/imagej/imagej-omero -->
 		<imagej-omero.version>0.8.0</imagej-omero.version>
 
-		<!-- ImageJ OMERO Legacy - https://github.com/imagej/imagej-omero-legacy -->
+		<!-- ImageJ-OMERO Legacy - https://github.com/imagej/imagej-omero-legacy -->
 		<imagej-omero-legacy.version>0.1.2</imagej-omero-legacy.version>
 
 		<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
