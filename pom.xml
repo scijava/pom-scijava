@@ -840,16 +840,16 @@
 		<google-api-services-oauth2.version>v2-rev134-1.23.0</google-api-services-oauth2.version>
 		<google-http-client-jackson2.version>1.23.0</google-http-client-jackson2.version>
 		<google-oauth-client-jetty.version>1.23.0</google-oauth-client-jetty.version>
-		<imglib2-label-multisets.version>0.8.1</imglib2-label-multisets.version>
+		<imglib2-label-multisets.version>0.9.0</imglib2-label-multisets.version>
 		<jackson-databind.version>2.9.8</jackson-databind.version>
 		<lz4-java.version>1.5.0</lz4-java.version>
 		<xz.version>1.8</xz.version>
-		<n5.version>2.1.0</n5.version>
-		<n5-imglib2.version>3.3.0</n5-imglib2.version>
+		<n5.version>2.1.2</n5.version>
+		<n5-imglib2.version>3.4.1</n5-imglib2.version>
 		<n5-hdf5.version>1.0.4</n5-hdf5.version>
 		<n5-aws-s3.version>2.1.0</n5-aws-s3.version>
 		<n5-google-cloud.version>2.3.1</n5-google-cloud.version>
-		<n5-viewer.version>2.1.0</n5-viewer.version>
+		<n5-viewer.version>2.2.0</n5-viewer.version>
 
 		<!-- oj! Algorithms - https://github.com/optimatika/ojAlgo -->
 		<ojalgo.version>45.1.1</ojalgo.version>
