@@ -1218,6 +1218,13 @@
 				<version>${imagej-legacy.version}</version>
 			</dependency>
 
+			<!-- ImageJ MATLAB - https://github.com/imagej/imagej-matlab -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-matlab</artifactId>
+				<version>${imagej-matlab.version}</version>
+			</dependency>
+
 			<!-- ImageJ Mesh - https://github.com/imagej/imagej-mesh -->
 			<dependency>
 				<groupId>net.imagej</groupId>
