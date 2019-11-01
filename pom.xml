@@ -270,7 +270,7 @@
 		<imagej-deprecated.version>0.1.2</imagej-deprecated.version>
 
 		<!-- ImageJ Launcher - https://github.com/imagej/imagej-launcher -->
-		<imagej-launcher.version>5.0.0</imagej-launcher.version>
+		<imagej-launcher.version>5.0.3</imagej-launcher.version>
 
 		<!-- ImageJ Legacy - https://github.com/imagej/imagej-legacy -->
 		<imagej-legacy.version>0.35.0</imagej-legacy.version>
@@ -1208,7 +1208,6 @@
 				<groupId>net.imagej</groupId>
 				<artifactId>imagej-launcher</artifactId>
 				<version>${imagej-launcher.version}</version>
-				<type>nar</type>
 			</dependency>
 
 			<!-- ImageJ Legacy - https://github.com/imagej/imagej-legacy -->
