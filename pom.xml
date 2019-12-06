@@ -691,6 +691,9 @@
 		<!-- Commons Collections - https://commons.apache.org/proper/commons-collections/ -->
 		<commons-collections.version>3.2.2</commons-collections.version>
 
+		<!-- Commons Compress - https://commons.apache.org/proper/commons-compress/ -->
+		<commons-compress.version>1.18</commons-compress.version>
+
 		<!-- Commons IO - https://commons.apache.org/proper/commons-io/ -->
 		<commons-io.version>2.6</commons-io.version>
 
@@ -2703,6 +2706,13 @@
 				<groupId>commons-collections</groupId>
 				<artifactId>commons-collections</artifactId>
 				<version>${commons-collections.version}</version>
+			</dependency>
+
+			<!-- Commons Compress - https://commons.apache.org/proper/commons-compress/ -->
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-compress</artifactId>
+				<version>${commons-compress.version}</version>
 			</dependency>
 
 			<!-- Commons IO - https://commons.apache.org/proper/commons-io/ -->
