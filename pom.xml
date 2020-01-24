@@ -293,6 +293,9 @@
 		<!-- ImageJ-OMERO Legacy - https://github.com/imagej/imagej-omero-legacy -->
 		<imagej-omero-legacy.version>0.1.2</imagej-omero-legacy.version>
 
+		<!-- ImageJ OpenCV - https://github.com/imagej/imagej-opencv -->
+		<imagej-opencv.version>0.1.0</imagej-opencv.version>
+
 		<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
 		<imagej-ops.version>0.45.0</imagej-ops.version>
 
@@ -1260,6 +1263,13 @@
 				<groupId>net.imagej</groupId>
 				<artifactId>imagej-omero-legacy</artifactId>
 				<version>${imagej-omero-legacy.version}</version>
+			</dependency>
+
+			<!-- ImageJ OpenCV - https://github.com/imagej/imagej-opencv -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-opencv</artifactId>
+				<version>${imagej-opencv.version}</version>
 			</dependency>
 
 			<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
@@ -3506,6 +3516,7 @@
 				<imagej-notebook.version>LATEST</imagej-notebook.version>
 				<imagej-omero.version>LATEST</imagej-omero.version>
 				<imagej-omero-legacy.version>LATEST</imagej-omero-legacy.version>
+				<imagej-opencv.version>LATEST</imagej-opencv.version>
 				<imagej-ops.version>LATEST</imagej-ops.version>
 				<imagej-plugins-batch.version>LATEST</imagej-plugins-batch.version>
 				<imagej-plugins-commands.version>LATEST</imagej-plugins-commands.version>
