@@ -359,7 +359,7 @@
 		<imglib2-ij.version>2.0.0-beta-44</imglib2-ij.version>
 
 		<!-- ImgLib2 RealTransform - https://github.com/imglib/imglib2-realtransform -->
-		<imglib2-realtransform.version>2.2.1</imglib2-realtransform.version>
+		<imglib2-realtransform.version>3.0.0</imglib2-realtransform.version>
 
 		<!-- ImgLib2 ROI - https://github.com/imglib/imglib2-roi -->
 		<imglib2-roi.version>0.8.1</imglib2-roi.version>
