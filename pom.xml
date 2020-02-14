@@ -826,6 +826,8 @@
 
 		<!-- MigLayout - http://www.miglayout.com/ -->
 		<miglayout.version>5.2</miglayout.version>
+		<miglayout-core.version>${miglayout.version}</miglayout-core.version>
+		<miglayout-swing.version>${miglayout.version}</miglayout-swing.version>
 
 		<!-- Mines JTK - https://github.com/dhale/jtk -->
 		<mines-jtk.version>20151125</mines-jtk.version>
@@ -3175,13 +3177,12 @@
 			<dependency>
 				<groupId>com.miglayout</groupId>
 				<artifactId>miglayout-core</artifactId>
-				<version>${miglayout.version}</version>
+				<version>${miglayout-core.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.miglayout</groupId>
 				<artifactId>miglayout-swing</artifactId>
-				<version>${miglayout.version}</version>
-				<classifier>swing</classifier>
+				<version>${miglayout-swing.version}</version>
 			</dependency>
 
 			<!-- Mines JTK - https://github.com/dhale/jtk -->
