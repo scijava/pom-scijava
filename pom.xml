@@ -857,7 +857,7 @@
 		<mockito.version>2.19.0</mockito.version>
 		<mockito-core.version>${mockito.version}</mockito-core.version>
 
-		<!-- N5 https://github.com/saalfeldlab/n5 -->
+		<!-- N5 - https://github.com/saalfeldlab/n5 -->
 		<aws-java-sdk-s3.version>1.11.319</aws-java-sdk-s3.version>
 		<google-cloud-storage.version>1.27.0</google-cloud-storage.version>
 		<google-cloud-resourcemanager.version>0.45.0-alpha</google-cloud-resourcemanager.version>
@@ -3206,7 +3206,7 @@
 				<version>${mines-jtk.version}</version>
 			</dependency>
 
-			<!-- N5 https://github.com/saalfeldlab/n5 -->
+			<!-- N5 - https://github.com/saalfeldlab/n5 -->
 			<dependency>
 				<groupId>com.amazonaws</groupId>
 				<artifactId>aws-java-sdk-s3</artifactId>
