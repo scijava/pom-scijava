@@ -330,7 +330,7 @@
 		<imagej-ui-swing.version>0.23.1</imagej-ui-swing.version>
 
 		<!-- ImageJ Updater - https://github.com/imagej/imagej-updater -->
-		<imagej-updater.version>0.10.3</imagej-updater.version>
+		<imagej-updater.version>0.10.4</imagej-updater.version>
 
 		<!-- ImageJ Usage - https://github.com/imagej/imagej-usage -->
 		<imagej-usage.version>0.4.1</imagej-usage.version>
