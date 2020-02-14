@@ -891,7 +891,7 @@
 		<opencsv.version>3.9</opencsv.version>
 
 		<!-- picocli - https://picocli.info/ -->
-		<picocli.version>3.8.1</picocli.version>
+		<picocli.version>4.0.4</picocli.version>
 
 		<!-- PostgreSQL JDBC Driver - https://jdbc.postgresql.org/ -->
 		<postgresql.version>9.1-901-1.jdbc4</postgresql.version>
