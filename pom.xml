@@ -655,8 +655,8 @@
 		<spark.version>2.3.1</spark.version>
 
 		<!-- Apache HTTPComponents - https://hc.apache.org/ -->
-		<apache-httpclient.version>4.5.6</apache-httpclient.version>
-		<apache-httpcore.version>4.4.11</apache-httpcore.version>
+		<httpclient.version>4.5.11</httpclient.version>
+		<httpcore.version>4.4.13</httpcore.version>
 
 		<!-- Batik - https://xmlgraphics.apache.org/batik/ -->
 		<batik.version>1.11</batik.version>
@@ -2476,7 +2476,7 @@
 			<dependency>
 				<groupId>org.apache.httpcomponents</groupId>
 				<artifactId>httpclient</artifactId>
-				<version>${apache-httpclient.version}</version>
+				<version>${httpclient.version}</version>
 				<exclusions>
 					<exclusion>
 						<groupId>commons-logging</groupId>
@@ -2487,7 +2487,7 @@
 			<dependency>
 				<groupId>org.apache.httpcomponents</groupId>
 				<artifactId>httpcore</artifactId>
-				<version>${apache-httpcore.version}</version>
+				<version>${httpcore.version}</version>
 			</dependency>
 			<!-- Batik - https://xmlgraphics.apache.org/batik/ -->
 			<dependency>
