@@ -301,7 +301,7 @@
 		<scijava-ui-swing.version>0.13.1</scijava-ui-swing.version>
 
 		<!-- Script Editor - https://github.com/scijava/script-editor -->
-		<script-editor.version>0.5.3</script-editor.version>
+		<script-editor.version>0.5.4</script-editor.version>
 
 		<!-- Scripting: BeanShell - https://github.com/scijava/scripting-beanshell -->
 		<scripting-beanshell.version>0.3.4</scripting-beanshell.version>
@@ -418,7 +418,7 @@
 		<imagej-ui-awt.version>0.3.1</imagej-ui-awt.version>
 
 		<!-- ImageJ UI: Swing - https://github.com/imagej/imagej-ui-swing -->
-		<imagej-ui-swing.version>0.23.1</imagej-ui-swing.version>
+		<imagej-ui-swing.version>0.23.2</imagej-ui-swing.version>
 
 		<!-- ImageJ Updater - https://github.com/imagej/imagej-updater -->
 		<imagej-updater.version>0.10.4</imagej-updater.version>
