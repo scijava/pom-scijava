@@ -732,7 +732,7 @@
 		<!-- iText PDF - https://github.com/itext/itextpdf -->
 		<itextpdf.version>5.5.13.1</itextpdf.version>
 
-		<!-- Apache Jackrabbit WEBDAV Library - https://jackrabbit.apache.org/jcr/components/jackrabbit-webdav-library.html -->
+		<!-- Jackrabbit WebDAV - https://jackrabbit.apache.org/jcr/components/jackrabbit-webdav-library.html -->
 		<jackrabbit-webdav.version>2.21.0</jackrabbit-webdav.version>
 
 		<!-- Java Advanced Imaging - https://java.net/projects/jai-core -->
@@ -2845,7 +2845,7 @@
 				<version>${itextpdf.version}</version>
 			</dependency>
 
-			<!-- Apache Jackrabbit WEBDAV Library - https://jackrabbit.apache.org/jcr/components/jackrabbit-webdav-library.html -->
+			<!-- Jackrabbit WebDAV - https://jackrabbit.apache.org/jcr/components/jackrabbit-webdav-library.html -->
 			<dependency>
 				<groupId>org.apache.jackrabbit</groupId>
 				<artifactId>jackrabbit-webdav</artifactId>
