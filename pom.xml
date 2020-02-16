@@ -567,6 +567,16 @@
 		<VectorString.version>2.0.2</VectorString.version>
 		<trakem2-transform.version>1.0.1</trakem2-transform.version>
 
+		<!-- N5 - https://github.com/saalfeldlab/n5 -->
+
+		<imglib2-label-multisets.version>0.9.0</imglib2-label-multisets.version>
+		<n5.version>2.1.2</n5.version>
+		<n5-imglib2.version>3.4.1</n5-imglib2.version>
+		<n5-hdf5.version>1.0.4</n5-hdf5.version>
+		<n5-aws-s3.version>2.1.0</n5-aws-s3.version>
+		<n5-google-cloud.version>2.3.1</n5-google-cloud.version>
+		<n5-viewer.version>2.2.0</n5-viewer.version>
+
 		<!--
 		BEGIN MANUALLY MANAGED VERSIONS
 
@@ -648,6 +658,9 @@
 
 		<!-- Third party components -->
 
+		<!-- Amazon S3 - https://aws.amazon.com/sdkforjava -->
+		<aws-java-sdk-s3.version>1.11.723</aws-java-sdk-s3.version>
+
 		<!-- Apache POI - https://poi.apache.org/ -->
 		<poi.version>3.17</poi.version>
 
@@ -720,6 +733,13 @@
 		<!-- Byte Code Generation Library - https://github.com/cglib/cglib -->
 		<cglib.version>3.3.0</cglib.version>
 
+		<!-- Google Cloud Storage - https://github.com/googleapis/google-cloud-java -->
+		<google-api-services-oauth2.version>v2-rev20190313-1.30.8</google-api-services-oauth2.version>
+		<google-cloud-resourcemanager.version>0.117.1-alpha</google-cloud-resourcemanager.version>
+		<google-cloud-storage.version>1.103.1</google-cloud-storage.version>
+		<google-http-client-jackson2.version>1.34.2</google-http-client-jackson2.version>
+		<google-oauth-client-jetty.version>1.30.5</google-oauth-client-jetty.version>
+
 		<!-- Gson - https://code.google.com/p/google-gson/ -->
 		<gson.version>2.8.6</gson.version>
 
@@ -734,6 +754,9 @@
 
 		<!-- Jackrabbit WebDAV - https://jackrabbit.apache.org/jcr/components/jackrabbit-webdav-library.html -->
 		<jackrabbit-webdav.version>2.21.0</jackrabbit-webdav.version>
+
+		<!-- Jackson - https://github.com/FasterXML/jackson -->
+		<jackson-databind.version>2.10.2</jackson-databind.version>
 
 		<!-- Java Advanced Imaging - https://java.net/projects/jai-core -->
 		<jai.version>1.1.3</jai.version>
@@ -851,6 +874,9 @@
 		<logback-classic.version>${logback.version}</logback-classic.version>
 		<logback-core.version>${logback.version}</logback-core.version>
 
+		<!-- LZ4 compression for Java - https://github.com/lz4/lz4-java -->
+		<lz4-java.version>1.7.1</lz4-java.version>
+
 		<!-- MapDB - https://www.mapdb.org/ -->
 		<mapdb.version>3.0.8</mapdb.version>
 
@@ -866,24 +892,6 @@
 		<!-- Mockito - https://site.mockito.org/ -->
 		<mockito.version>2.19.0</mockito.version>
 		<mockito-core.version>${mockito.version}</mockito-core.version>
-
-		<!-- N5 - https://github.com/saalfeldlab/n5 -->
-		<aws-java-sdk-s3.version>1.11.723</aws-java-sdk-s3.version>
-		<google-cloud-storage.version>1.103.1</google-cloud-storage.version>
-		<google-cloud-resourcemanager.version>0.117.1-alpha</google-cloud-resourcemanager.version>
-		<google-api-services-oauth2.version>v2-rev20190313-1.30.8</google-api-services-oauth2.version>
-		<google-http-client-jackson2.version>1.34.2</google-http-client-jackson2.version>
-		<google-oauth-client-jetty.version>1.30.5</google-oauth-client-jetty.version>
-		<imglib2-label-multisets.version>0.9.0</imglib2-label-multisets.version>
-		<jackson-databind.version>2.10.2</jackson-databind.version>
-		<lz4-java.version>1.7.1</lz4-java.version>
-		<xz.version>1.8</xz.version>
-		<n5.version>2.1.2</n5.version>
-		<n5-imglib2.version>3.4.1</n5-imglib2.version>
-		<n5-hdf5.version>1.0.4</n5-hdf5.version>
-		<n5-aws-s3.version>2.1.0</n5-aws-s3.version>
-		<n5-google-cloud.version>2.3.1</n5-google-cloud.version>
-		<n5-viewer.version>2.2.0</n5-viewer.version>
 
 		<!-- oj! Algorithms - https://github.com/optimatika/ojAlgo -->
 		<ojalgo.version>45.1.1</ojalgo.version>
@@ -930,6 +938,9 @@
 		<!-- Weka - https://www.cs.waikato.ac.nz/ml/weka/ -->
 		<weka.version>3.9.4</weka.version>
 		<weka-dev.version>${weka.version}</weka-dev.version>
+
+		<!-- XZ for Java - https://tukaani.org/xz/java.html -->
+		<xz.version>1.8</xz.version>
 	</properties>
 
 	<dependencyManagement>
@@ -2138,6 +2149,44 @@
 				<version>${trakem2-transform.version}</version>
 			</dependency>
 
+			<!-- N5 - https://github.com/saalfeldlab/n5 -->
+
+			<dependency>
+				<groupId>net.imglib2</groupId>
+				<artifactId>imglib2-label-multisets</artifactId>
+				<version>${imglib2-label-multisets.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.janelia.saalfeldlab</groupId>
+				<artifactId>n5</artifactId>
+				<version>${n5.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.janelia.saalfeldlab</groupId>
+				<artifactId>n5-imglib2</artifactId>
+				<version>${n5-imglib2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.janelia.saalfeldlab</groupId>
+				<artifactId>n5-hdf5</artifactId>
+				<version>${n5-hdf5.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.janelia.saalfeldlab</groupId>
+				<artifactId>n5-aws-s3</artifactId>
+				<version>${n5-aws-s3.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.janelia.saalfeldlab</groupId>
+				<artifactId>n5-google-cloud</artifactId>
+				<version>${n5-google-cloud.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.janelia.saalfeldlab</groupId>
+				<artifactId>n5-viewer</artifactId>
+				<version>${n5-viewer.version}</version>
+			</dependency>
+
 			<!-- Open Microscopy Environment - https://github.com/ome -->
 
 			<!-- Metakit - https://github.com/ome/ome-metakit -->
@@ -2436,6 +2485,13 @@
 			</dependency>
 
 			<!-- Third party components -->
+
+			<!-- Amazon S3 - https://aws.amazon.com/sdkforjava -->
+			<dependency>
+				<groupId>com.amazonaws</groupId>
+				<artifactId>aws-java-sdk-s3</artifactId>
+				<version>${aws-java-sdk-s3.version}</version>
+			</dependency>
 
 			<!-- Apache POI - https://poi.apache.org/ -->
 			<dependency>
@@ -2817,6 +2873,33 @@
 				<version>${cglib.version}</version>
 			</dependency>
 
+			<!-- Google Cloud Storage - https://github.com/googleapis/google-cloud-java -->
+			<dependency>
+				<groupId>com.google.apis</groupId>
+				<artifactId>google-api-services-oauth2</artifactId>
+				<version>${google-api-services-oauth2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.cloud</groupId>
+				<artifactId>google-cloud-resourcemanager</artifactId>
+				<version>${google-cloud-resourcemanager.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.cloud</groupId>
+				<artifactId>google-cloud-storage</artifactId>
+				<version>${google-cloud-storage.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.http-client</groupId>
+				<artifactId>google-http-client-jackson2</artifactId>
+				<version>${google-http-client-jackson2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.oauth-client</groupId>
+				<artifactId>google-oauth-client-jetty</artifactId>
+				<version>${google-oauth-client-jetty.version}</version>
+			</dependency>
+
 			<!-- Gson - https://code.google.com/p/google-gson/ -->
 			<dependency>
 				<groupId>com.google.code.gson</groupId>
@@ -2850,6 +2933,13 @@
 				<groupId>org.apache.jackrabbit</groupId>
 				<artifactId>jackrabbit-webdav</artifactId>
 				<version>${jackrabbit-webdav.version}</version>
+			</dependency>
+
+			<!-- Jackson - https://github.com/FasterXML/jackson -->
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-databind</artifactId>
+				<version>${jackson-databind.version}</version>
 			</dependency>
 
 			<!-- Java Advanced Imaging - https://java.net/projects/jai-core -->
@@ -3218,6 +3308,13 @@
 				<version>${logback-core.version}</version>
 			</dependency>
 
+			<!-- LZ4 compression for Java - https://github.com/lz4/lz4-java -->
+			<dependency>
+				<groupId>org.lz4</groupId>
+				<artifactId>lz4-java</artifactId>
+				<version>${lz4-java.version}</version>
+			</dependency>
+
 			<!-- MapDB - http://www.mapdb.org/ -->
 			<dependency>
 				<groupId>org.mapdb</groupId>
@@ -3247,88 +3344,6 @@
 				<groupId>edu.mines</groupId>
 				<artifactId>mines-jtk</artifactId>
 				<version>${mines-jtk.version}</version>
-			</dependency>
-
-			<!-- N5 - https://github.com/saalfeldlab/n5 -->
-			<dependency>
-				<groupId>com.amazonaws</groupId>
-				<artifactId>aws-java-sdk-s3</artifactId>
-				<version>${aws-java-sdk-s3.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.google.cloud</groupId>
-				<artifactId>google-cloud-storage</artifactId>
-				<version>${google-cloud-storage.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.google.cloud</groupId>
-				<artifactId>google-cloud-resourcemanager</artifactId>
-				<version>${google-cloud-resourcemanager.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.google.apis</groupId>
-				<artifactId>google-api-services-oauth2</artifactId>
-				<version>${google-api-services-oauth2.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.google.http-client</groupId>
-				<artifactId>google-http-client-jackson2</artifactId>
-				<version>${google-http-client-jackson2.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.google.oauth-client</groupId>
-				<artifactId>google-oauth-client-jetty</artifactId>
-				<version>${google-oauth-client-jetty.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>net.imglib2</groupId>
-				<artifactId>imglib2-label-multisets</artifactId>
-				<version>${imglib2-label-multisets.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.fasterxml.jackson.core</groupId>
-				<artifactId>jackson-databind</artifactId>
-				<version>${jackson-databind.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.lz4</groupId>
-				<artifactId>lz4-java</artifactId>
-				<version>${lz4-java.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.tukaani</groupId>
-				<artifactId>xz</artifactId>
-				<version>${xz.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.janelia.saalfeldlab</groupId>
-				<artifactId>n5</artifactId>
-				<version>${n5.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.janelia.saalfeldlab</groupId>
-				<artifactId>n5-imglib2</artifactId>
-				<version>${n5-imglib2.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.janelia.saalfeldlab</groupId>
-				<artifactId>n5-hdf5</artifactId>
-				<version>${n5-hdf5.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.janelia.saalfeldlab</groupId>
-				<artifactId>n5-aws-s3</artifactId>
-				<version>${n5-aws-s3.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.janelia.saalfeldlab</groupId>
-				<artifactId>n5-google-cloud</artifactId>
-				<version>${n5-google-cloud.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.janelia.saalfeldlab</groupId>
-				<artifactId>n5-viewer</artifactId>
-				<version>${n5-viewer.version}</version>
 			</dependency>
 
 			<!-- oj! Algorithms - https://github.com/optimatika/ojAlgo -->
@@ -3483,6 +3498,13 @@
 						<artifactId>arpack_combined_all</artifactId>
 					</exclusion>
 				</exclusions>
+			</dependency>
+
+			<!-- XZ for Java - https://tukaani.org/xz/java.html -->
+			<dependency>
+				<groupId>org.tukaani</groupId>
+				<artifactId>xz</artifactId>
+				<version>${xz.version}</version>
 			</dependency>
 
 			<!-- Test scope dependencies -->
