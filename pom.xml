@@ -289,40 +289,40 @@
 		<scijava-plugins-text-plain.version>0.1.3</scijava-plugins-text-plain.version>
 
 		<!-- SciJava Search - https://github.com/scijava/scijava-search -->
-		<scijava-search.version>0.6.0</scijava-search.version>
+		<scijava-search.version>0.7.0</scijava-search.version>
 
 		<!-- SciJava Table - https://github.com/scijava/scijava-table -->
 		<scijava-table.version>0.4.0</scijava-table.version>
 
 		<!-- SciJava UI: AWT - https://github.com/scijava/scijava-ui-awt -->
-		<scijava-ui-awt.version>0.1.6</scijava-ui-awt.version>
+		<scijava-ui-awt.version>0.1.7</scijava-ui-awt.version>
 
 		<!-- SciJava UI: Swing - https://github.com/scijava/scijava-ui-swing -->
-		<scijava-ui-swing.version>0.13.0</scijava-ui-swing.version>
+		<scijava-ui-swing.version>0.13.1</scijava-ui-swing.version>
 
 		<!-- Script Editor - https://github.com/scijava/script-editor -->
 		<script-editor.version>0.5.0</script-editor.version>
 
 		<!-- Scripting: BeanShell - https://github.com/scijava/scripting-beanshell -->
-		<scripting-beanshell.version>0.3.3</scripting-beanshell.version>
+		<scripting-beanshell.version>0.3.4</scripting-beanshell.version>
 
 		<!-- Scripting: Clojure - https://github.com/scijava/scripting-clojure -->
 		<scripting-clojure.version>0.1.6</scripting-clojure.version>
 
 		<!-- Scripting: Groovy - https://github.com/scijava/scripting-groovy -->
-		<scripting-groovy.version>0.2.7</scripting-groovy.version>
+		<scripting-groovy.version>0.3.0</scripting-groovy.version>
 
 		<!-- Scripting: Java - https://github.com/scijava/scripting-java -->
 		<scripting-java.version>0.4.1</scripting-java.version>
 
 		<!-- Scripting: JavaScript - https://github.com/scijava/scripting-javascript -->
-		<scripting-javascript.version>0.4.4</scripting-javascript.version>
+		<scripting-javascript.version>0.5.0</scripting-javascript.version>
 
 		<!-- Scripting: JRuby - https://github.com/scijava/scripting-jruby -->
-		<scripting-jruby.version>0.3.0</scripting-jruby.version>
+		<scripting-jruby.version>0.3.1</scripting-jruby.version>
 
 		<!-- Scripting: Jython - https://github.com/scijava/scripting-jython -->
-		<scripting-jython.version>0.4.2</scripting-jython.version>
+		<scripting-jython.version>0.5.0</scripting-jython.version>
 
 		<!-- Scripting: Kotlin - https://github.com/scijava/scripting-kotlin -->
 		<scripting-kotlin.version>0.1.0</scripting-kotlin.version>
@@ -331,10 +331,10 @@
 		<scripting-matlab.version>0.5.2</scripting-matlab.version>
 
 		<!-- Scripting: Renjin - https://github.com/scijava/scripting-renjin -->
-		<scripting-renjin.version>0.2.2</scripting-renjin.version>
+		<scripting-renjin.version>0.2.3</scripting-renjin.version>
 
 		<!-- Scripting: Scala - https://github.com/scijava/scripting-scala -->
-		<scripting-scala.version>0.2.1</scripting-scala.version>
+		<scripting-scala.version>0.2.2</scripting-scala.version>
 
 		<!-- Swing Checkbox Tree - https://github.com/scijava/swing-checkbox-tree -->
 		<swing-checkbox-tree.version>1.0.2</swing-checkbox-tree.version>
@@ -358,7 +358,7 @@
 		<imagej-common.version>0.31.0</imagej-common.version>
 
 		<!-- ImageJ Deprecated - https://github.com/imagej/imagej-deprecated -->
-		<imagej-deprecated.version>0.1.2</imagej-deprecated.version>
+		<imagej-deprecated.version>0.1.4</imagej-deprecated.version>
 
 		<!-- ImageJ Launcher - https://github.com/imagej/imagej-launcher -->
 		<imagej-launcher.version>5.0.3</imagej-launcher.version>
@@ -367,10 +367,10 @@
 		<imagej-legacy.version>0.35.0</imagej-legacy.version>
 
 		<!-- ImageJ MATLAB - https://github.com/imagej/imagej-matlab -->
-		<imagej-matlab.version>0.7.2</imagej-matlab.version>
+		<imagej-matlab.version>0.7.4</imagej-matlab.version>
 
 		<!-- ImageJ Mesh - https://github.com/imagej/imagej-mesh -->
-		<imagej-mesh.version>0.7.1</imagej-mesh.version>
+		<imagej-mesh.version>0.8.0</imagej-mesh.version>
 
 		<!-- ImageJ Mesh IO - https://github.com/imagej/imagej-mesh-io -->
 		<imagej-mesh-io.version>0.1.2</imagej-mesh-io.version>
@@ -403,7 +403,7 @@
 		<imagej-plugins-uploader-ssh.version>0.3.2</imagej-plugins-uploader-ssh.version>
 
 		<!-- ImageJ Plugins: Uploader: WebDAV - https://github.com/imagej/imagej-plugins-uploader-webdav -->
-		<imagej-plugins-uploader-webdav.version>0.3.1</imagej-plugins-uploader-webdav.version>
+		<imagej-plugins-uploader-webdav.version>0.3.2</imagej-plugins-uploader-webdav.version>
 
 		<!-- ImageJ Scripting - https://github.com/imagej/imagej-scripting -->
 		<imagej-scripting.version>0.8.2</imagej-scripting.version>
@@ -435,19 +435,19 @@
 		<imglib2.version>5.8.0</imglib2.version>
 
 		<!-- ImgLib2 Algorithms - https://github.com/imglib/imglib2-algorithm -->
-		<imglib2-algorithm.version>0.11.1</imglib2-algorithm.version>
+		<imglib2-algorithm.version>0.11.2</imglib2-algorithm.version>
 
 		<!-- ImgLib2 Algorithms FFT - https://github.com/imglib/imglib2-algorithm-fft -->
 		<imglib2-algorithm-fft.version>0.2.0</imglib2-algorithm-fft.version>
 
 		<!-- ImgLib2 Algorithms GPL - https://github.com/imglib/imglib2-algorithm-gpl -->
-		<imglib2-algorithm-gpl.version>0.2.3</imglib2-algorithm-gpl.version>
+		<imglib2-algorithm-gpl.version>0.2.4</imglib2-algorithm-gpl.version>
 
 		<!-- ImgLib2 Cache - https://github.com/imglib/imglib2-cache -->
-		<imglib2-cache.version>1.0.0-beta-11</imglib2-cache.version>
+		<imglib2-cache.version>1.0.0-beta-13</imglib2-cache.version>
 
 		<!-- ImgLib2 IJ - https://github.com/imglib/imglib2-ij -->
-		<imglib2-ij.version>2.0.0-beta-44</imglib2-ij.version>
+		<imglib2-ij.version>2.0.0-beta-45</imglib2-ij.version>
 
 		<!-- ImgLib2 RealTransform - https://github.com/imglib/imglib2-realtransform -->
 		<imglib2-realtransform.version>3.0.0</imglib2-realtransform.version>
@@ -459,10 +459,10 @@
 		<imglib2-script.version>0.2.4</imglib2-script.version>
 
 		<!-- ImgLib2 UI - https://github.com/imglib/imglib2-ui -->
-		<imglib2-ui.version>2.0.0</imglib2-ui.version>
+		<imglib2-ui.version>2.0.1</imglib2-ui.version>
 
 		<!-- ImgLib2 Unsafe - https://github.com/imglib/imglib2-unsafe -->
-		<imglib2-unsafe.version>0.2.0</imglib2-unsafe.version>
+		<imglib2-unsafe.version>0.3.1</imglib2-unsafe.version>
 
 		<!-- SCIFIO - https://github.com/scifio -->
 
@@ -500,23 +500,23 @@
 		<Archipelago_Plugins.version>0.5.4</Archipelago_Plugins.version>
 		<Arrow.version>2.0.2</Arrow.version>
 		<Arrow_.version>${Arrow.version}</Arrow_.version>
-		<Auto_Local_Threshold.version>1.10.0</Auto_Local_Threshold.version>
-		<Auto_Threshold.version>1.17.1</Auto_Threshold.version>
+		<Auto_Local_Threshold.version>1.10.1</Auto_Local_Threshold.version>
+		<Auto_Threshold.version>1.17.2</Auto_Threshold.version>
 		<BalloonSegmentation.version>3.0.1</BalloonSegmentation.version>
 		<BalloonSegmentation_.version>${BalloonSegmentation.version}</BalloonSegmentation_.version>
 		<Bug_Submitter.version>2.1.1</Bug_Submitter.version>
 		<CPU_Meter.version>2.0.1</CPU_Meter.version>
 		<Calculator_Plus.version>2.0.1</Calculator_Plus.version>
-		<Cell_Counter.version>2.2.2</Cell_Counter.version>
+		<Cell_Counter.version>3.0.0</Cell_Counter.version>
 		<Colocalisation_Analysis.version>3.0.5</Colocalisation_Analysis.version>
 		<Color_Histogram.version>2.0.7</Color_Histogram.version>
-		<Color_Inspector_3D.version>2.3.2</Color_Inspector_3D.version>
-		<Colour_Deconvolution.version>3.0.2</Colour_Deconvolution.version>
-		<CorrectBleach.version>2.0.2</CorrectBleach.version>
+		<Color_Inspector_3D.version>2.5.0</Color_Inspector_3D.version>
+		<Colour_Deconvolution.version>3.0.3</Colour_Deconvolution.version>
+		<CorrectBleach.version>2.0.3</CorrectBleach.version>
 		<CorrectBleach_.version>${CorrectBleach.version}</CorrectBleach_.version>
 		<Correct_3D_Drift.version>1.0.3</Correct_3D_Drift.version>
 		<Descriptor_based_registration.version>2.1.4</Descriptor_based_registration.version>
-		<Dichromacy.version>2.1.1</Dichromacy.version>
+		<Dichromacy.version>2.1.2</Dichromacy.version>
 		<Dichromacy_.version>${Dichromacy.version}</Dichromacy_.version>
 		<Directionality.version>2.3.0</Directionality.version>
 		<Directionality_.version>${Directionality.version}</Directionality_.version>
@@ -532,13 +532,13 @@
 		<Graph_Cut.version>1.0.2</Graph_Cut.version>
 		<Gray_Morphology.version>2.3.4</Gray_Morphology.version>
 		<H5J_Loader_Plugin.version>1.1.0</H5J_Loader_Plugin.version>
-		<HDF5_Vibez.version>1.0.2</HDF5_Vibez.version>
+		<HDF5_Vibez.version>1.1.0</HDF5_Vibez.version>
 		<Helmholtz_Analysis.version>2.0.2</Helmholtz_Analysis.version>
 		<IJ_Robot.version>2.0.1</IJ_Robot.version>
-		<IO.version>3.0.4</IO.version>
+		<IO.version>4.1.0</IO.version>
 		<IO_.version>${IO.version}</IO_.version>
 		<ImageJ_3D_Objects_Counter.version>2.0.1</ImageJ_3D_Objects_Counter.version>
-		<ImageJ_3D_Viewer.version>4.0.2</ImageJ_3D_Viewer.version>
+		<ImageJ_3D_Viewer.version>4.0.3</ImageJ_3D_Viewer.version>
 		<Image_5D.version>2.0.2</Image_5D.version>
 		<Image_Expression_Parser.version>3.0.1</Image_Expression_Parser.version>
 		<Interactive_3D_Surface_Plot.version>3.0.0</Interactive_3D_Surface_Plot.version>
@@ -574,13 +574,13 @@
 		<Skeletonize3D_.version>${Skeletonize3D.version}</Skeletonize3D_.version>
 		<SplineDeformationGenerator.version>2.0.2</SplineDeformationGenerator.version>
 		<SplineDeformationGenerator_.version>${SplineDeformationGenerator.version}</SplineDeformationGenerator_.version>
-		<Stack_Manipulation.version>2.1.1</Stack_Manipulation.version>
+		<Stack_Manipulation.version>2.1.2</Stack_Manipulation.version>
 		<Statistical_Region_Merging.version>2.0.1</Statistical_Region_Merging.version>
 		<Stitching.version>3.1.6</Stitching.version>
 		<Stitching_.version>${Stitching.version}</Stitching_.version>
 		<Sync_Win.version>1.7-fiji4</Sync_Win.version>
 		<Thread_Killer.version>2.0.1</Thread_Killer.version>
-		<Time_Lapse.version>2.1.0</Time_Lapse.version>
+		<Time_Lapse.version>2.1.1</Time_Lapse.version>
 		<Time_Stamper.version>2.1.0</Time_Stamper.version>
 		<ToAST.version>25.0.2</ToAST.version>
 		<ToAST_.version>${ToAST.version}</ToAST_.version>
@@ -591,9 +591,9 @@
 		<Trainable_Segmentation.version>3.2.29</Trainable_Segmentation.version>
 		<TrakEM2_Archipelago.version>2.0.3</TrakEM2_Archipelago.version>
 		<VIB-lib.version>2.2.0</VIB-lib.version>
-		<VIB.version>3.0.2</VIB.version>
+		<VIB.version>3.0.3</VIB.version>
 		<VIB_.version>${VIB.version}</VIB_.version>
-		<Vaa3d_Reader.version>2.0.2</Vaa3d_Reader.version>
+		<Vaa3d_Reader.version>2.0.3</Vaa3d_Reader.version>
 		<Vaa3d_Writer.version>1.0.3</Vaa3d_Writer.version>
 		<Video_Editing.version>2.0.1</Video_Editing.version>
 		<View5D.version>1.3.2</View5D.version>
@@ -632,7 +632,7 @@
 		<bigwarp_fiji.version>${bigwarp.version}</bigwarp_fiji.version>
 
 		<!-- MPI-CBG - https://github.com/axtimwalde/mpicbg -->
-		<mpicbg.version>1.2.0</mpicbg.version>
+		<mpicbg.version>1.3.0</mpicbg.version>
 		<mpicbg_.version>${mpicbg.version}</mpicbg_.version>
 
 		<!-- TrakEM2 TPS - https://github.com/saalfeldlab/trakem2-tps -->
@@ -646,8 +646,8 @@
 		<bigdataviewer-core.version>7.0.0</bigdataviewer-core.version>
 		<bigdataviewer-server.version>2.1.0</bigdataviewer-server.version>
 		<bigdataviewer-vistools.version>1.0.0-beta-15</bigdataviewer-vistools.version>
-		<bigdataviewer_fiji.version>6.0.0</bigdataviewer_fiji.version>
-		<spim_data.version>2.2.2</spim_data.version>
+		<bigdataviewer_fiji.version>6.1.0</bigdataviewer_fiji.version>
+		<spim_data.version>2.2.3</spim_data.version>
 
 		<!-- TrakEM2 - https://github.com/trakem2 -->
 
@@ -661,10 +661,10 @@
 		<!-- N5 - https://github.com/saalfeldlab/n5 -->
 
 		<imglib2-label-multisets.version>0.9.0</imglib2-label-multisets.version>
-		<n5.version>2.1.2</n5.version>
+		<n5.version>2.1.4</n5.version>
 		<n5-imglib2.version>3.4.1</n5-imglib2.version>
 		<n5-hdf5.version>1.0.4</n5-hdf5.version>
-		<n5-aws-s3.version>2.1.0</n5-aws-s3.version>
+		<n5-aws-s3.version>3.0.0</n5-aws-s3.version>
 		<n5-google-cloud.version>2.3.1</n5-google-cloud.version>
 		<n5-viewer.version>2.2.0</n5-viewer.version>
 
@@ -698,45 +698,45 @@
 		<formats-gpl.version>${bio-formats.version}</formats-gpl.version>
 
 		<!-- OMERO Blitz - https://github.com/ome/omero-blitz -->
-		<omero-blitz.version>5.5.3</omero-blitz.version>
+		<omero-blitz.version>5.5.5</omero-blitz.version>
 
 		<!-- OMERO Common - https://github.com/ome/omero-common -->
-		<omero-common.version>5.5.2</omero-common.version>
+		<omero-common.version>5.5.3</omero-common.version>
 
 		<!-- OMERO DSL Plugin - https://github.com/ome/omero-dsl-plugin -->
 		<omero-dsl-plugin.version>5.5.0</omero-dsl-plugin.version>
 
 		<!-- OMERO Gateway - https://github.com/ome/omero-gateway-java -->
-		<omero-gateway.version>5.5.3</omero-gateway.version>
+		<omero-gateway.version>5.6.2</omero-gateway.version>
 
 		<!-- OMERO Model - https://github.com/ome/omero-model -->
-		<omero-model.version>5.5.2</omero-model.version>
+		<omero-model.version>5.5.3</omero-model.version>
 
 		<!-- OMERO Renderer - https://github.com/ome/omero-renderer -->
-		<omero-renderer.version>5.5.2</omero-renderer.version>
+		<omero-renderer.version>5.5.3</omero-renderer.version>
 
 		<!-- OMERO ROMIO - https://github.com/ome/omero-romio -->
-		<omero-romio.version>5.5.2</omero-romio.version>
+		<omero-romio.version>5.5.3</omero-romio.version>
 
 		<!-- OMERO Server - https://github.com/ome/omero-server -->
-		<omero-server.version>5.5.4</omero-server.version>
+		<omero-server.version>5.5.5</omero-server.version>
 
 		<!-- Other SciJava components -->
 
 		<!-- MorphoLibJ - https://github.com/ijpb/MorphoLibJ -->
-		<MorphoLibJ.version>1.4.0</MorphoLibJ.version>
+		<MorphoLibJ.version>1.4.1</MorphoLibJ.version>
 
 		<!-- BigStitcher - https://github.com/PreibischLab/BigStitcher -->
-		<BigStitcher.version>0.3.4</BigStitcher.version>
+		<BigStitcher.version>0.3.6</BigStitcher.version>
 
 		<!-- multiview-reconstruction - https://github.com/PreibischLab/multiview-reconstruction -->
-		<multiview-reconstruction.version>0.3.5</multiview-reconstruction.version>
+		<multiview-reconstruction.version>0.4.1</multiview-reconstruction.version>
 
 		<!-- multiview-simulation - https://github.com/PreibischLab/multiview-simulation -->
 		<multiview-simulation.version>0.2.0</multiview-simulation.version>
 
 		<!-- CoreMem - https://github.com/ClearControl/CoreMem -->
-		<coremem.version>0.4.7</coremem.version>
+		<coremem.version>0.4.8</coremem.version>
 
 		<!-- ClearGL - https://github.com/ClearVolume/ClearGL -->
 		<cleargl.version>2.2.10</cleargl.version>
@@ -745,7 +745,7 @@
 		<scenery.version>0.7.0-beta-7</scenery.version>
 
 		<!-- SciView - https://github.com/scenerygraphics/SciView -->
-		<sciview.version>0.1.6</sciview.version>
+		<sciview.version>0.2.0-beta-4</sciview.version>
 
 		<!-- Third party components -->
 
@@ -985,7 +985,7 @@
 		<mockito-core.version>${mockito.version}</mockito-core.version>
 
 		<!-- oj! Algorithms - https://github.com/optimatika/ojAlgo -->
-		<ojalgo.version>45.1.1</ojalgo.version>
+		<ojalgo.version>48.1.0</ojalgo.version>
 
 		<!-- OpenCSV - http://opencsv.sourceforge.net/ -->
 		<opencsv.version>3.9</opencsv.version>
