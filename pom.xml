@@ -883,10 +883,8 @@
 		<jetty-jaspi.version>${jetty.version}</jetty-jaspi.version>
 		<jetty-jmx.version>${jetty.version}</jetty-jmx.version>
 		<jetty-jndi.version>${jetty.version}</jetty-jndi.version>
-		<jetty-jsp.version>${jetty.version}</jetty-jsp.version>
 		<jetty-jspc-maven-plugin.version>${jetty.version}</jetty-jspc-maven-plugin.version>
 		<jetty-maven-plugin.version>${jetty.version}</jetty-maven-plugin.version>
-		<jetty-monitor.version>${jetty.version}</jetty-monitor.version>
 		<jetty-nosql.version>${jetty.version}</jetty-nosql.version>
 		<jetty-plus.version>${jetty.version}</jetty-plus.version>
 		<jetty-proxy.version>${jetty.version}</jetty-proxy.version>
@@ -3146,11 +3144,6 @@
 			</dependency>
 			<dependency>
 				<groupId>org.eclipse.jetty</groupId>
-				<artifactId>jetty-jsp</artifactId>
-				<version>${jetty-jsp.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-jspc-maven-plugin</artifactId>
 				<version>${jetty-jspc-maven-plugin.version}</version>
 			</dependency>
@@ -3158,11 +3151,6 @@
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
 				<version>${jetty-maven-plugin.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.eclipse.jetty</groupId>
-				<artifactId>jetty-monitor</artifactId>
-				<version>${jetty-monitor.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.eclipse.jetty</groupId>
