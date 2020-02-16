@@ -1020,7 +1020,7 @@
 		<tensorflow.version>1.12.0</tensorflow.version>
 		<libtensorflow.version>${tensorflow.version}</libtensorflow.version>
 		<libtensorflow_jni.version>${tensorflow.version}</libtensorflow_jni.version>
-		<tensorflow_jni_gpu.version>${tensorflow.version}</tensorflow_jni_gpu.version>
+		<libtensorflow_jni_gpu.version>${tensorflow.version}</libtensorflow_jni_gpu.version>
 		<proto.version>${tensorflow.version}</proto.version>
 
 		<!-- Trove - http://trove.starlight-systems.com/ -->
@@ -3546,8 +3546,8 @@
 			</dependency>
 			<dependency>
 				<groupId>org.tensorflow</groupId>
-				<artifactId>tensorflow_jni_gpu</artifactId>
-				<version>${tensorflow_jni_gpu.version}</version>
+				<artifactId>libtensorflow_jni_gpu</artifactId>
+				<version>${libtensorflow_jni_gpu.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.tensorflow</groupId>
