@@ -292,7 +292,7 @@
 		<scijava-search.version>0.7.0</scijava-search.version>
 
 		<!-- SciJava Table - https://github.com/scijava/scijava-table -->
-		<scijava-table.version>0.4.0</scijava-table.version>
+		<scijava-table.version>0.5.0</scijava-table.version>
 
 		<!-- SciJava UI: AWT - https://github.com/scijava/scijava-ui-awt -->
 		<scijava-ui-awt.version>0.1.7</scijava-ui-awt.version>
