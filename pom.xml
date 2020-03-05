@@ -549,7 +549,7 @@
 		<LSM_Toolbox.version>4.1.2</LSM_Toolbox.version>
 		<Lasso_and_Blow_Tool.version>2.0.2</Lasso_and_Blow_Tool.version>
 		<Linear_Kuwahara.version>2.0.1</Linear_Kuwahara.version>
-		<LocalThickness.version>4.0.2</LocalThickness.version>
+		<LocalThickness.version>4.0.3</LocalThickness.version>
 		<LocalThickness_.version>${LocalThickness.version}</LocalThickness_.version>
 		<MTrack2.version>2.0.1</MTrack2.version>
 		<MTrack2_.version>${MTrack2.version}</MTrack2_.version>
