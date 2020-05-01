@@ -853,11 +853,8 @@
 		<cglib.version>3.3.0</cglib.version>
 
 		<!-- Google Cloud Storage - https://github.com/googleapis/google-cloud-java -->
-		<google-api-services-oauth2.version>v2-rev20190313-1.30.8</google-api-services-oauth2.version>
-		<google-cloud-resourcemanager.version>0.117.1-alpha</google-cloud-resourcemanager.version>
-		<google-cloud-storage.version>1.104.0</google-cloud-storage.version>
-		<google-http-client-jackson2.version>1.34.2</google-http-client-jackson2.version>
-		<google-oauth-client-jetty.version>1.30.5</google-oauth-client-jetty.version>
+		<google-cloud-resourcemanager.version>0.117.2-alpha</google-cloud-resourcemanager.version>
+		<google-cloud-storage.version>1.106.0</google-cloud-storage.version>
 
 		<!-- Gson - https://code.google.com/p/google-gson/ -->
 		<gson.version>2.8.6</gson.version>
@@ -3130,11 +3127,6 @@
 
 			<!-- Google Cloud Storage - https://github.com/googleapis/google-cloud-java -->
 			<dependency>
-				<groupId>com.google.apis</groupId>
-				<artifactId>google-api-services-oauth2</artifactId>
-				<version>${google-api-services-oauth2.version}</version>
-			</dependency>
-			<dependency>
 				<groupId>com.google.cloud</groupId>
 				<artifactId>google-cloud-resourcemanager</artifactId>
 				<version>${google-cloud-resourcemanager.version}</version>
@@ -3143,16 +3135,6 @@
 				<groupId>com.google.cloud</groupId>
 				<artifactId>google-cloud-storage</artifactId>
 				<version>${google-cloud-storage.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.google.http-client</groupId>
-				<artifactId>google-http-client-jackson2</artifactId>
-				<version>${google-http-client-jackson2.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.google.oauth-client</groupId>
-				<artifactId>google-oauth-client-jetty</artifactId>
-				<version>${google-oauth-client-jetty.version}</version>
 			</dependency>
 
 			<!-- Gson - https://code.google.com/p/google-gson/ -->
