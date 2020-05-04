@@ -932,7 +932,7 @@
 		<jetty-plus.version>${jetty.version}</jetty-plus.version>
 		<jetty-proxy.version>${jetty.version}</jetty-proxy.version>
 		<jetty-rewrite.version>${jetty.version}</jetty-rewrite.version>
-		<jetty-runner.version>${jetty.version}</jetty-runner.version>
+		<!-- NB: We do not manage jetty-runner. It is an unshaded uber-JAR. -->
 		<jetty-security.version>${jetty.version}</jetty-security.version>
 		<jetty-server.version>${jetty.version}</jetty-server.version>
 		<jetty-servlet.version>${jetty.version}</jetty-servlet.version>
@@ -3414,11 +3414,6 @@
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-rewrite</artifactId>
 				<version>${jetty-rewrite.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.eclipse.jetty</groupId>
-				<artifactId>jetty-runner</artifactId>
-				<version>${jetty-runner.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.eclipse.jetty</groupId>
