@@ -915,7 +915,10 @@
 		<!-- Jetty - https://www.eclipse.org/jetty/ -->
 		<jetty.version>9.4.26.v20200117</jetty.version>
 		<jetty-annotations.version>${jetty.version}</jetty-annotations.version>
-		<jetty-ant.version>${jetty.version}</jetty-ant.version>
+		<!--
+		NB: We do not manage jetty-ant. It depends on ant with old groupId (ant),
+		which conflicts with other dependencies using new groupId (org.apache.ant).
+		-->
 		<jetty-client.version>${jetty.version}</jetty-client.version>
 		<jetty-continuation.version>${jetty.version}</jetty-continuation.version>
 		<jetty-deploy.version>${jetty.version}</jetty-deploy.version>
@@ -3329,11 +3332,6 @@
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-annotations</artifactId>
 				<version>${jetty-annotations.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.eclipse.jetty</groupId>
-				<artifactId>jetty-ant</artifactId>
-				<version>${jetty-ant.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.eclipse.jetty</groupId>
