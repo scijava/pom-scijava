@@ -237,9 +237,6 @@
 		<!-- JUnit Benchmarks - https://github.com/scijava/junit-benchmarks -->
 		<junit-benchmarks.version>0.7.4-scijava</junit-benchmarks.version>
 
-		<!-- Jython Shaded - https://github.com/scijava/jython-shaded -->
-		<jython-shaded.version>2.7.1.1</jython-shaded.version>
-
 		<!-- MiniMaven - https://github.com/scijava/minimaven -->
 		<minimaven.version>2.2.2</minimaven.version>
 
@@ -322,7 +319,7 @@
 		<scripting-jruby.version>0.3.1</scripting-jruby.version>
 
 		<!-- Scripting: Jython - https://github.com/scijava/scripting-jython -->
-		<scripting-jython.version>0.5.0</scripting-jython.version>
+		<scripting-jython.version>1.0.0</scripting-jython.version>
 
 		<!-- Scripting: Kotlin - https://github.com/scijava/scripting-kotlin -->
 		<scripting-kotlin.version>0.1.1</scripting-kotlin.version>
@@ -653,7 +650,7 @@
 
 		<T2-NIT.version>1.1.3</T2-NIT.version>
 		<T2-TreelineGraph.version>1.1.3</T2-TreelineGraph.version>
-		<TrakEM2.version>1.3.2</TrakEM2.version>
+		<TrakEM2.version>1.3.3</TrakEM2.version>
 		<TrakEM2_.version>${TrakEM2.version}</TrakEM2_.version>
 		<VectorString.version>2.0.2</VectorString.version>
 		<trakem2-transform.version>1.0.1</trakem2-transform.version>
@@ -1002,6 +999,10 @@
 		<!-- JUnit - https://junit.org/ -->
 		<junit.version>4.13</junit.version>
 
+		<!-- Jython - https://jython.org/ -->
+		<jython.version>2.7.2</jython.version>
+		<jython-slim.version>${jython.version}</jython-slim.version>
+
 		<!-- JZlib - http://www.jcraft.com/jzlib/ -->
 		<jzlib.version>1.1.3</jzlib.version>
 
@@ -1093,13 +1094,6 @@
 				<groupId>org.scijava</groupId>
 				<artifactId>batch-processor</artifactId>
 				<version>${batch-processor.version}</version>
-			</dependency>
-
-			<!-- Jython Shaded - https://github.com/scijava/jython-shaded -->
-			<dependency>
-				<groupId>org.scijava</groupId>
-				<artifactId>jython-shaded</artifactId>
-				<version>${jython-shaded.version}</version>
 			</dependency>
 
 			<!-- MiniMaven - https://github.com/scijava/minimaven -->
@@ -2192,6 +2186,13 @@
 				<groupId>ca.mcgill</groupId>
 				<artifactId>Sholl_Analysis</artifactId>
 				<version>${Sholl_Analysis.version}</version>
+				<exclusions>
+					<exclusion>
+						<!-- TEMP: Until tferr/ASA#32 is merged and released. -->
+						<groupId>net.imagej</groupId>
+						<artifactId>imagej</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<!-- JITK TPS - https://github.com/saalfeldlab/jitk-tps -->
@@ -3592,6 +3593,13 @@
 				<version>${jsch.version}</version>
 			</dependency>
 
+			<!-- Jython - https://jython.org/ -->
+			<dependency>
+				<groupId>org.python</groupId>
+				<artifactId>jython-slim</artifactId>
+				<version>${jython-slim.version}</version>
+			</dependency>
+
 			<!-- JZlib - http://www.jcraft.com/jzlib/ -->
 			<dependency>
 				<groupId>com.jcraft</groupId>
@@ -3926,7 +3934,6 @@
 			</activation>
 			<properties>
 				<batch-processor.version>LATEST</batch-processor.version>
-				<jython-shaded.version>LATEST</jython-shaded.version>
 				<minimaven.version>LATEST</minimaven.version>
 				<native-lib-loader.version>LATEST</native-lib-loader.version>
 				<parsington.version>LATEST</parsington.version>
