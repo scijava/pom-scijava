@@ -202,8 +202,12 @@
 		* org.apache.hadoop:hadoop-yarn-*
 		* org.apache.spark:spark-*_2.11
 		* org.jmockit:jmockit + junit:junit
+		* ome:jxrlib-all + com.sun.istack:istack-commons-runtime
+		* ome:jxrlib-all + javax.xml.bind:jaxb-api or jakarta.xml.bind:jakarta.xml.bind-api
+		* ome:jxrlib-all + org.glassfish.jaxb:jaxb-runtime
+		* ome:jxrlib-all + org.glassfish.jaxb:txw2
 		-->
-		<allowedDuplicateClasses>org.apache.hadoop.yarn.*.package-info,org.apache.spark.unused.UnusedStubClass,org.hibernate.stat.ConcurrentStatisticsImpl,org.junit.runner.Runner</allowedDuplicateClasses>
+		<allowedDuplicateClasses>META-INF/versions/9/javax.xml.bind.ModuleUtil,com.sun.istack.*,com.sun.xml.bind.*,com.sun.xml.txw2.*,javax.xml.bind.*,org.apache.hadoop.yarn.*.package-info,org.apache.spark.unused.UnusedStubClass,org.hibernate.stat.ConcurrentStatisticsImpl,org.junit.runner.Runner</allowedDuplicateClasses>
 
 		<!--
 		NB: We override these properties to make the enforcer happy.
