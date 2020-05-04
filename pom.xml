@@ -852,6 +852,24 @@
 		<!-- Byte Code Generation Library - https://github.com/cglib/cglib -->
 		<cglib.version>3.3.0</cglib.version>
 
+		<!-- Eclipse SWT - https://www.eclipse.org/swt/ -->
+		<eclipse-swt.version>4.3</eclipse-swt.version>
+		<org.eclipse.swt.cocoa.macosx.version>${eclipse-swt.version}</org.eclipse.swt.cocoa.macosx.version>
+		<org.eclipse.swt.cocoa.macosx.x86_64.version>${eclipse-swt.version}</org.eclipse.swt.cocoa.macosx.x86_64.version>
+		<org.eclipse.swt.gtk.aix.ppc.version>${eclipse-swt.version}</org.eclipse.swt.gtk.aix.ppc.version>
+		<org.eclipse.swt.gtk.aix.ppc64.version>${eclipse-swt.version}</org.eclipse.swt.gtk.aix.ppc64.version>
+		<org.eclipse.swt.gtk.hpux.ia64.version>${eclipse-swt.version}</org.eclipse.swt.gtk.hpux.ia64.version>
+		<org.eclipse.swt.gtk.linux.ppc.version>${eclipse-swt.version}</org.eclipse.swt.gtk.linux.ppc.version>
+		<org.eclipse.swt.gtk.linux.ppc64.version>${eclipse-swt.version}</org.eclipse.swt.gtk.linux.ppc64.version>
+		<org.eclipse.swt.gtk.linux.s390.version>${eclipse-swt.version}</org.eclipse.swt.gtk.linux.s390.version>
+		<org.eclipse.swt.gtk.linux.s390x.version>${eclipse-swt.version}</org.eclipse.swt.gtk.linux.s390x.version>
+		<org.eclipse.swt.gtk.linux.x86.version>${eclipse-swt.version}</org.eclipse.swt.gtk.linux.x86.version>
+		<org.eclipse.swt.gtk.linux.x86_64.version>${eclipse-swt.version}</org.eclipse.swt.gtk.linux.x86_64.version>
+		<org.eclipse.swt.gtk.solaris.sparc.version>${eclipse-swt.version}</org.eclipse.swt.gtk.solaris.sparc.version>
+		<org.eclipse.swt.gtk.solaris.x86.version>${eclipse-swt.version}</org.eclipse.swt.gtk.solaris.x86.version>
+		<org.eclipse.swt.win32.win32.x86.version>${eclipse-swt.version}</org.eclipse.swt.win32.win32.x86.version>
+		<org.eclipse.swt.win32.win32.x86_64.version>${eclipse-swt.version}</org.eclipse.swt.win32.win32.x86_64.version>
+
 		<!-- Google Cloud Storage - https://github.com/googleapis/google-cloud-java -->
 		<google-cloud-resourcemanager.version>0.117.2-alpha</google-cloud-resourcemanager.version>
 		<google-cloud-storage.version>1.106.0</google-cloud-storage.version>
@@ -3123,6 +3141,83 @@
 				<groupId>cglib</groupId>
 				<artifactId>cglib</artifactId>
 				<version>${cglib.version}</version>
+			</dependency>
+
+			<!-- Eclipse SWT - https://www.eclipse.org/swt/ -->
+			<dependency>
+				<groupId>org.eclipse.swt</groupId>
+				<artifactId>org.eclipse.swt.cocoa.macosx</artifactId>
+				<version>${org.eclipse.swt.cocoa.macosx.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.swt</groupId>
+				<artifactId>org.eclipse.swt.cocoa.macosx.x86_64</artifactId>
+				<version>${org.eclipse.swt.cocoa.macosx.x86_64.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.swt</groupId>
+				<artifactId>org.eclipse.swt.gtk.aix.ppc</artifactId>
+				<version>${org.eclipse.swt.gtk.aix.ppc.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.swt</groupId>
+				<artifactId>org.eclipse.swt.gtk.aix.ppc64</artifactId>
+				<version>${org.eclipse.swt.gtk.aix.ppc64.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.swt</groupId>
+				<artifactId>org.eclipse.swt.gtk.hpux.ia64</artifactId>
+				<version>${org.eclipse.swt.gtk.hpux.ia64.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.swt</groupId>
+				<artifactId>org.eclipse.swt.gtk.linux.ppc</artifactId>
+				<version>${org.eclipse.swt.gtk.linux.ppc.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.swt</groupId>
+				<artifactId>org.eclipse.swt.gtk.linux.ppc64</artifactId>
+				<version>${org.eclipse.swt.gtk.linux.ppc64.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.swt</groupId>
+				<artifactId>org.eclipse.swt.gtk.linux.s390</artifactId>
+				<version>${org.eclipse.swt.gtk.linux.s390.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.swt</groupId>
+				<artifactId>org.eclipse.swt.gtk.linux.s390x</artifactId>
+				<version>${org.eclipse.swt.gtk.linux.s390x.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.swt</groupId>
+				<artifactId>org.eclipse.swt.gtk.linux.x86</artifactId>
+				<version>${org.eclipse.swt.gtk.linux.x86.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.swt</groupId>
+				<artifactId>org.eclipse.swt.gtk.linux.x86_64</artifactId>
+				<version>${org.eclipse.swt.gtk.linux.x86_64.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.swt</groupId>
+				<artifactId>org.eclipse.swt.gtk.solaris.sparc</artifactId>
+				<version>${org.eclipse.swt.gtk.solaris.sparc.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.swt</groupId>
+				<artifactId>org.eclipse.swt.gtk.solaris.x86</artifactId>
+				<version>${org.eclipse.swt.gtk.solaris.x86.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.swt</groupId>
+				<artifactId>org.eclipse.swt.win32.win32.x86</artifactId>
+				<version>${org.eclipse.swt.win32.win32.x86.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.swt</groupId>
+				<artifactId>org.eclipse.swt.win32.win32.x86_64</artifactId>
+				<version>${org.eclipse.swt.win32.win32.x86_64.version}</version>
 			</dependency>
 
 			<!-- Google Cloud Storage - https://github.com/googleapis/google-cloud-java -->
