@@ -3825,6 +3825,11 @@
 						<artifactId>all</artifactId>
 					</exclusion>
 					<exclusion>
+						<!-- Conflicts with com.github.vbmacher:java-cup -->
+						<groupId>com.github.vbmacher</groupId>
+						<artifactId>java-cup-runtime</artifactId>
+					</exclusion>
+					<exclusion>
 						<groupId>com.googlecode.netlib-java</groupId>
 						<artifactId>netlib-java</artifactId>
 					</exclusion>
