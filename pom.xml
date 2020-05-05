@@ -2515,6 +2515,13 @@
 				<groupId>org.openmicroscopy</groupId>
 				<artifactId>omero-model</artifactId>
 				<version>${omero-model.version}</version>
+				<exclusions>
+					<exclusion>
+						<!-- Conflicts with javax.transaction:javax.transaction-api -->
+						<groupId>javax.transaction</groupId>
+						<artifactId>jta</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<!-- OMERO Renderer - https://github.com/ome/omero-renderer -->
@@ -3399,6 +3406,13 @@
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-jspc-maven-plugin</artifactId>
 				<version>${jetty-jspc-maven-plugin.version}</version>
+				<exclusions>
+					<exclusion>
+						<!-- Conflicts with javax.annotation:javax.annotation-api -->
+						<groupId>javax.annotation</groupId>
+						<artifactId>jsr250-api</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.eclipse.jetty</groupId>
