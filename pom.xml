@@ -208,8 +208,9 @@
 		* ome:jxrlib-all + org.glassfish.jaxb:txw2
 		* com.codahale.metrics:metrics-logback + io.dropwizard.metrics:metrics-logback
 		* com.codahale.metrics:metrics-graphite + io.dropwizard.metrics:metrics-graphite
+		* com.github.jnr:jnr-ffi + org.jruby:jruby-core
 		-->
-		<allowedDuplicateClasses>META-INF/versions/9/javax.xml.bind.ModuleUtil,com.codahale.metrics.graphite.*,com.codahale.metrics.logback.InstrumentedAppender,com.sun.istack.*,com.sun.xml.bind.*,com.sun.xml.txw2.*,javax.xml.bind.*,org.apache.hadoop.yarn.*.package-info,org.apache.spark.unused.UnusedStubClass,org.hibernate.stat.ConcurrentStatisticsImpl,org.junit.runner.Runner</allowedDuplicateClasses>
+		<allowedDuplicateClasses>META-INF/versions/9/javax.xml.bind.ModuleUtil,com.codahale.metrics.graphite.*,com.codahale.metrics.logback.InstrumentedAppender,com.sun.istack.*,com.sun.xml.bind.*,com.sun.xml.txw2.*,javax.xml.bind.*,jnr.ffi.*,org.apache.hadoop.yarn.*.package-info,org.apache.spark.unused.UnusedStubClass,org.hibernate.stat.ConcurrentStatisticsImpl,org.junit.runner.Runner</allowedDuplicateClasses>
 
 		<!--
 		NB: We override these properties to make the enforcer happy.
