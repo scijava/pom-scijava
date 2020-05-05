@@ -646,7 +646,7 @@
 
 		<!-- BigDataViewer - https://github.com/bigdataviewer -->
 
-		<bigdataviewer-core.version>9.0.0</bigdataviewer-core.version>
+		<bigdataviewer-core.version>9.0.4</bigdataviewer-core.version>
 		<bigdataviewer-server.version>2.1.0</bigdataviewer-server.version>
 		<bigdataviewer-vistools.version>1.0.0-beta-19</bigdataviewer-vistools.version>
 		<bigdataviewer_fiji.version>6.1.0</bigdataviewer_fiji.version>
