@@ -2850,6 +2850,7 @@
 					</exclusion>
 				</exclusions>
 			</dependency>
+
 			<!-- Apache HTTPComponents - https://hc.apache.org/ -->
 			<dependency>
 				<groupId>org.apache.httpcomponents</groupId>
@@ -2867,6 +2868,7 @@
 				<artifactId>httpcore</artifactId>
 				<version>${httpcore.version}</version>
 			</dependency>
+
 			<!-- Batik - https://xmlgraphics.apache.org/batik/ -->
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
