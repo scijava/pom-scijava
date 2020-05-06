@@ -206,11 +206,9 @@
 		* ome:jxrlib-all + javax.xml.bind:jaxb-api or jakarta.xml.bind:jakarta.xml.bind-api
 		* ome:jxrlib-all + org.glassfish.jaxb:jaxb-runtime
 		* ome:jxrlib-all + org.glassfish.jaxb:txw2
-		* com.codahale.metrics:metrics-logback + io.dropwizard.metrics:metrics-logback
-		* com.codahale.metrics:metrics-graphite + io.dropwizard.metrics:metrics-graphite
 		* com.github.jnr:jnr-ffi + org.jruby:jruby-core
 		-->
-		<allowedDuplicateClasses>META-INF/versions/9/javax.xml.bind.ModuleUtil,com.codahale.metrics.graphite.*,com.codahale.metrics.logback.InstrumentedAppender,com.sun.istack.*,com.sun.xml.bind.*,com.sun.xml.txw2.*,javax.xml.bind.*,jnr.ffi.*,org.apache.hadoop.yarn.*.package-info,org.apache.spark.unused.UnusedStubClass,org.hibernate.stat.ConcurrentStatisticsImpl,org.junit.runner.Runner</allowedDuplicateClasses>
+		<allowedDuplicateClasses>META-INF/versions/9/javax.xml.bind.ModuleUtil,com.com.sun.istack.*,com.sun.xml.bind.*,com.sun.xml.txw2.*,javax.xml.bind.*,jnr.ffi.*,org.apache.hadoop.yarn.*.package-info,org.apache.spark.unused.UnusedStubClass,org.hibernate.stat.ConcurrentStatisticsImpl,org.junit.runner.Runner</allowedDuplicateClasses>
 
 		<!--
 		NB: We override these properties to make the enforcer happy.
@@ -234,6 +232,19 @@
 		If you need to override the version of a particular component, then simply
 		override that component's version property in your POM's <properties>
 		section, rather than hardcoding them.
+
+		WARNING: While most artifacts in this BOM can be successfully combined,
+		there are a handful of exceptions requiring some downstream effort:
+
+		- net.imagej:imagej-server depends on Dropwizard, which ships its own
+		  metrics-graphite and metrics-logback libraries, among other issues.
+		- org.apache.spark:spark-core_2.11 has a large number of dependencies,
+		  some of which are incompatible with other artifact trees in this BOM;
+		  e.g., Spark depends on kryo-shaded while Bio-Formats depends on kryo.
+
+		If you make use of any of the above artifacts, you may need to add
+		dependency exclusions, ignore additional duplicate class patterns,
+		and/or manually tune your runtime classpath.
 		-->
 
 		<!-- SciJava - https://github.com/scijava -->
