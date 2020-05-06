@@ -784,6 +784,12 @@
 		<groovy-xml.version>${groovy.version}</groovy-xml.version>
 		<groovy-yaml.version>${groovy.version}</groovy-yaml.version>
 
+		<!-- Apache Maven - https://maven.apache.org/ -->
+		<maven-artifact-transfer.version>0.12.0</maven-artifact-transfer.version>
+		<maven-common-artifact-filters.version>3.1.0</maven-common-artifact-filters.version>
+		<maven-core.version>3.6.3</maven-core.version>
+		<maven-plugin-tools-api.version>3.6.0</maven-plugin-tools-api.version>
+
 		<!-- Apache POI - https://poi.apache.org/ -->
 		<poi.version>3.17</poi.version>
 
@@ -2781,6 +2787,28 @@
 				<version>${groovy-yaml.version}</version>
 			</dependency>
 
+			<!-- Apache Maven - https://maven.apache.org/ -->
+			<dependency>
+				<groupId>org.apache.maven.shared</groupId>
+				<artifactId>maven-artifact-transfer</artifactId>
+				<version>${maven-artifact-transfer.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.maven.shared</groupId>
+				<artifactId>maven-common-artifact-filters</artifactId>
+				<version>${maven-common-artifact-filters.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.maven</groupId>
+				<artifactId>maven-core</artifactId>
+				<version>${maven-core.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.maven.plugin-tools</groupId>
+				<artifactId>maven-plugin-tools-api</artifactId>
+				<version>${maven-plugin-tools-api.version}</version>
+			</dependency>
+
 			<!-- Apache POI - https://poi.apache.org/ -->
 			<dependency>
 				<groupId>org.apache.poi</groupId>
@@ -3412,6 +3440,11 @@
 						<!-- Conflicts with javax.annotation:javax.annotation-api -->
 						<groupId>javax.annotation</groupId>
 						<artifactId>jsr250-api</artifactId>
+					</exclusion>
+					<exclusion>
+						<!-- Conflicts with org.codehaus.plexus:plexus-classworlds -->
+						<groupId>classworlds</groupId>
+						<artifactId>classworlds</artifactId>
 					</exclusion>
 				</exclusions>
 			</dependency>
