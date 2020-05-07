@@ -542,7 +542,7 @@
 		<Fiji_Developer.version>2.0.7</Fiji_Developer.version>
 		<Fiji_Package_Maker.version>2.1.1</Fiji_Package_Maker.version>
 		<Fiji_Plugins.version>3.1.1</Fiji_Plugins.version>
-		<FlowJ.version>1.29.4</FlowJ.version>
+		<FlowJ.version>2.0.0</FlowJ.version>
 		<FlowJ_.version>${FlowJ.version}</FlowJ_.version>
 		<Graph_Cut.version>1.0.2</Graph_Cut.version>
 		<Gray_Morphology.version>2.3.4</Gray_Morphology.version>
@@ -617,7 +617,7 @@
 		<Volume_Viewer.version>2.01.2</Volume_Viewer.version>
 		<bUnwarpJ.version>2.6.12</bUnwarpJ.version>
 		<bUnwarpJ_.version>${bUnwarpJ.version}</bUnwarpJ_.version>
-		<bij.version>0.1.1</bij.version>
+		<bij.version>1.0.0</bij.version>
 		<blockmatching.version>2.1.3</blockmatching.version>
 		<blockmatching_.version>${blockmatching.version}</blockmatching_.version>
 		<fiji-lib.version>2.1.2</fiji-lib.version>
