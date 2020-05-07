@@ -984,7 +984,7 @@
 		<jgrapht-opt.version>${jgrapht.version}</jgrapht-opt.version>
 
 		<!-- JGraphX - https://github.com/jgraph/jgraphx -->
-		<jgraphx.version>3.4.1.3</jgraphx.version>
+		<jgraphx.version>4.1.0</jgraphx.version>
 
 		<!-- JHDF5 - https://wiki-bsse.ethz.ch/label/JHDF5/hdf5 -->
 		<jhdf5.version>14.12.6</jhdf5.version>
@@ -3591,7 +3591,7 @@
 
 			<!-- JGraphX - https://github.com/jgraph/jgraphx -->
 			<dependency>
-				<groupId>org.tinyjee.jgraphx</groupId>
+				<groupId>com.github.vlsi.mxgraph</groupId>
 				<artifactId>jgraphx</artifactId>
 				<version>${jgraphx.version}</version>
 			</dependency>
