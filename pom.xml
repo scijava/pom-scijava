@@ -199,6 +199,20 @@
 		HACK: The following list of allowed-to-be-duplicated classes
 		facilitates intended combinations of artifacts:
 		==
+		TEMP: Until ome/ome-common-java#50 and ome/bioformats#3557 merge.
+		Classes:
+			com.esotericsoftware.kryo.*,
+			com.esotericsoftware.minlog.*,
+			com.esotericsoftware.reflectasm.*
+		Part of:
+			com.esotericsoftware.kryo:kryo,
+			com.esotericsoftware:kryo,
+			com.esotericsoftware:minlog,
+			com.esotericsoftware:reflectasm
+		Enables:
+			org.openmicroscopy:ome-common (com.esotericsoftware.kryo:kryo) +
+			graphics.scenery:scenery (com.esotericsoftware:kryo)
+		==
 		Classes: com.google.inject.*
 		Part of: com.google.inject:guice:no_aop
 		Also in: org.sonatype.sisu:sisu-guice
@@ -238,7 +252,7 @@
 		Also in: ome:jxrlib-all
 		Enables: args4j:args4j + ome:jxrlib-all
 		-->
-		<allowedDuplicateClasses>com.google.inject.*,jnr.ffi.*,org.apache.hadoop.yarn.*.package-info,org.apache.spark.unused.UnusedStubClass,org.hibernate.stat.ConcurrentStatisticsImpl,org.junit.runner.Runner,org.kohsuke.args4j.*</allowedDuplicateClasses>
+		<allowedDuplicateClasses>com.esotericsoftware.kryo.*,com.esotericsoftware.minlog.*,com.esotericsoftware.reflectasm.*,com.google.inject.*,jnr.ffi.*,org.apache.hadoop.yarn.*.package-info,org.apache.spark.unused.UnusedStubClass,org.hibernate.stat.ConcurrentStatisticsImpl,org.junit.runner.Runner,org.kohsuke.args4j.*</allowedDuplicateClasses>
 
 		<!--
 		NB: We override these properties to make the enforcer happy.
