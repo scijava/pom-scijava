@@ -198,14 +198,40 @@
 		<!--
 		HACK: The following list of allowed-to-be-duplicated classes
 		facilitates intended combinations of artifacts:
-		* org.openmicroscopy:omero-blitz + org.hibernate:hibernate-core
-		* org.apache.hadoop:hadoop-yarn-*
-		* org.apache.spark:spark-*_2.11
-		* org.jmockit:jmockit + junit:junit
-		* ome:jxrlib-all + args4j:args4j
-		* com.github.jnr:jnr-ffi + org.jruby:jruby-core
+		==
+		Classes: jnr.ffi.*
+		Part of: com.github.jnr:jnr-ffi
+		Also in: org.jruby:jruby-core
+		Enables: org.jruby:jruby-core + org.python:jython-slim (jnr-ffi)
+		==
+		Classes: org.apache.hadoop.yarn.*.package-info
+		Part of: org.apache.hadoop:hadoop-yarn-*
+		Enables:
+			org.apache.hadoop:hadoop-yarn-<foo> +
+			org.apache.hadoop:hadoop-yarn-<bar>
+		==
+		Classes: org.apache.spark.unused.UnusedStubClass
+		Part of: org.apache.spark:spark-*
+		Enables: org.apache.spark:spark-core_2.11 (spark-*)
+		==
+		Classes: org.hibernate.stat.ConcurrentStatisticsImpl
+		Part of: org.hibernate:hibernate-core
+		Also in: org.openmicroscopy:omero-blitz
+		Enables:
+			org.openmicroscopy:omero-blitz +
+			org.openmicroscopy:omero-model (hibernate-core)
+		==
+		Classes: org.junit.runner.Runner
+		Part of: junit:junit
+		Also in: org.jmockit:jmockit
+		Enables: junit:junit + org.jmockit:jmockit
+		==
+		Classes: org.kohsuke.args4j.*
+		Part of: args4j:args4j
+		Also in: ome:jxrlib-all
+		Enables: args4j:args4j + ome:jxrlib-all
 		-->
-		<allowedDuplicateClasses>META-INF/versions/9/javax.xml.bind.ModuleUtil,jnr.ffi.*,org.apache.hadoop.yarn.*.package-info,org.apache.spark.unused.UnusedStubClass,org.hibernate.stat.ConcurrentStatisticsImpl,org.kohsuke.args4j.*,org.junit.runner.Runner</allowedDuplicateClasses>
+		<allowedDuplicateClasses>jnr.ffi.*,org.apache.hadoop.yarn.*.package-info,org.apache.spark.unused.UnusedStubClass,org.hibernate.stat.ConcurrentStatisticsImpl,org.junit.runner.Runner,org.kohsuke.args4j.*</allowedDuplicateClasses>
 
 		<!--
 		NB: We override these properties to make the enforcer happy.
