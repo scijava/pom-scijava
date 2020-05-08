@@ -202,13 +202,10 @@
 		* org.apache.hadoop:hadoop-yarn-*
 		* org.apache.spark:spark-*_2.11
 		* org.jmockit:jmockit + junit:junit
-		* ome:jxrlib-all + com.sun.istack:istack-commons-runtime
-		* ome:jxrlib-all + javax.xml.bind:jaxb-api or jakarta.xml.bind:jakarta.xml.bind-api
-		* ome:jxrlib-all + org.glassfish.jaxb:jaxb-runtime
-		* ome:jxrlib-all + org.glassfish.jaxb:txw2
+		* ome:jxrlib-all + args4j:args4j
 		* com.github.jnr:jnr-ffi + org.jruby:jruby-core
 		-->
-		<allowedDuplicateClasses>META-INF/versions/9/javax.xml.bind.ModuleUtil,com.com.sun.istack.*,com.sun.xml.bind.*,com.sun.xml.txw2.*,javax.xml.bind.*,jnr.ffi.*,org.apache.hadoop.yarn.*.package-info,org.apache.spark.unused.UnusedStubClass,org.hibernate.stat.ConcurrentStatisticsImpl,org.junit.runner.Runner</allowedDuplicateClasses>
+		<allowedDuplicateClasses>META-INF/versions/9/javax.xml.bind.ModuleUtil,jnr.ffi.*,org.apache.hadoop.yarn.*.package-info,org.apache.spark.unused.UnusedStubClass,org.hibernate.stat.ConcurrentStatisticsImpl,org.kohsuke.args4j.*,org.junit.runner.Runner</allowedDuplicateClasses>
 
 		<!--
 		NB: We override these properties to make the enforcer happy.
@@ -704,6 +701,10 @@
 
 		<!-- OME Model - https://github.com/ome/ome-model -->
 		<ome-xml.version>6.0.1</ome-xml.version>
+
+		<!-- Glencoe Software jxrlib - https://github.com/glencoesoftware/jxrlib -->
+		<jxrlib.version>0.2.3</jxrlib.version>
+		<jxrlib-all.version>${jxrlib.version}</jxrlib-all.version>
 
 		<!-- Bio-Formats - https://github.com/ome/bioformats -->
 		<bio-formats.version>6.5.0</bio-formats.version>
@@ -2425,6 +2426,13 @@
 				<version>${ome-xml.version}</version>
 			</dependency>
 
+			<!-- Glencoe Software jxrlib - https://github.com/glencoesoftware/jxrlib -->
+			<dependency>
+				<groupId>ome</groupId>
+				<artifactId>jxrlib-all</artifactId>
+				<version>${jxrlib-all.version}</version>
+			</dependency>
+
 			<!-- Bio-Formats - https://github.com/ome/bioformats -->
 			<dependency>
 				<groupId>ome</groupId>
@@ -3971,6 +3979,7 @@
 				<metakit.version>LATEST</metakit.version>
 				<ome-poi.version>LATEST</ome-poi.version>
 				<ome-xml.version>LATEST</ome-xml.version>
+				<jxrlib-all.version>LATEST</jxrlib-all.version>
 				<bio-formats.version>LATEST</bio-formats.version>
 				<omero-blitz.version>LATEST</omero-blitz.version>
 				<omero-common.version>LATEST</omero-common.version>
