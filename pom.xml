@@ -199,6 +199,13 @@
 		HACK: The following list of allowed-to-be-duplicated classes
 		facilitates intended combinations of artifacts:
 		==
+		Classes: com.google.inject.*
+		Part of: com.google.inject:guice:no_aop
+		Also in: org.sonatype.sisu:sisu-guice
+		Enables:
+			org.apache.maven:maven-core (guice) +
+			org.apache.maven.shared:maven-common-artifact-filters (sisu-guice)
+		==
 		Classes: jnr.ffi.*
 		Part of: com.github.jnr:jnr-ffi
 		Also in: org.jruby:jruby-core
@@ -231,7 +238,7 @@
 		Also in: ome:jxrlib-all
 		Enables: args4j:args4j + ome:jxrlib-all
 		-->
-		<allowedDuplicateClasses>jnr.ffi.*,org.apache.hadoop.yarn.*.package-info,org.apache.spark.unused.UnusedStubClass,org.hibernate.stat.ConcurrentStatisticsImpl,org.junit.runner.Runner,org.kohsuke.args4j.*</allowedDuplicateClasses>
+		<allowedDuplicateClasses>com.google.inject.*,jnr.ffi.*,org.apache.hadoop.yarn.*.package-info,org.apache.spark.unused.UnusedStubClass,org.hibernate.stat.ConcurrentStatisticsImpl,org.junit.runner.Runner,org.kohsuke.args4j.*</allowedDuplicateClasses>
 
 		<!--
 		NB: We override these properties to make the enforcer happy.
@@ -824,6 +831,8 @@
 		<maven-common-artifact-filters.version>3.1.0</maven-common-artifact-filters.version>
 		<maven-core.version>3.6.3</maven-core.version>
 		<maven-plugin-tools-api.version>3.6.0</maven-plugin-tools-api.version>
+		<sisu-inject-bean.version>2.6.0</sisu-inject-bean.version>
+		<sisu-inject-plexus.version>2.6.0</sisu-inject-plexus.version>
 
 		<!-- Apache POI - https://poi.apache.org/ -->
 		<poi.version>3.17</poi.version>
@@ -2842,6 +2851,16 @@
 				<groupId>org.apache.maven.plugin-tools</groupId>
 				<artifactId>maven-plugin-tools-api</artifactId>
 				<version>${maven-plugin-tools-api.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.sonatype.sisu</groupId>
+				<artifactId>sisu-inject-bean</artifactId>
+				<version>${sisu-inject-bean.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.sonatype.sisu</groupId>
+				<artifactId>sisu-inject-plexus</artifactId>
+				<version>${sisu-inject-plexus.version}</version>
 			</dependency>
 
 			<!-- Apache POI - https://poi.apache.org/ -->
