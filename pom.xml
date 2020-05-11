@@ -1136,6 +1136,14 @@
 		<!-- SnakeYAML Engine - https://bitbucket.org/asomov/snakeyaml-engine -->
 		<snakeyaml-engine.version>2.1</snakeyaml-engine.version>
 
+		<!-- Spring - https://spring.io/ -->
+		<!--
+		NB: 3.2.9.RELEASE is the last version not to depend properly on
+		aopalliance:aopalliance, rather than including org.aopalliance
+		classes unshadowed!
+		-->
+		<spring-aop.version>3.2.9.RELEASE</spring-aop.version>
+
 		<!-- TensorFlow - https://www.tensorflow.org/ -->
 		<tensorflow.version>1.12.0</tensorflow.version>
 		<libtensorflow.version>${tensorflow.version}</libtensorflow.version>
@@ -2615,11 +2623,6 @@
 				<version>${omero-server.version}</version>
 				<exclusions>
 					<exclusion>
-						<!-- Conflicts with org.springframework:spring-aop -->
-						<groupId>aopalliance</groupId>
-						<artifactId>aopalliance</artifactId>
-					</exclusion>
-					<exclusion>
 						<!-- Conflicts with com.mchange:c3p0 and com.mchange:mchange-commons-java -->
 						<groupId>c3p0</groupId>
 						<artifactId>c3p0</artifactId>
@@ -3895,6 +3898,13 @@
 				<groupId>org.snakeyaml</groupId>
 				<artifactId>snakeyaml-engine</artifactId>
 				<version>${snakeyaml-engine.version}</version>
+			</dependency>
+
+			<!-- Spring - https://spring.io/ -->
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-aop</artifactId>
+				<version>${spring-aop.version}</version>
 			</dependency>
 
 			<!-- TensorFlow - https://www.tensorflow.org/ -->
