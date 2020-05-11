@@ -246,13 +246,8 @@
 		Part of: junit:junit
 		Also in: org.jmockit:jmockit
 		Enables: junit:junit + org.jmockit:jmockit
-		==
-		Classes: org.kohsuke.args4j.*
-		Part of: args4j:args4j
-		Also in: ome:jxrlib-all
-		Enables: args4j:args4j + ome:jxrlib-all
 		-->
-		<allowedDuplicateClasses>com.esotericsoftware.kryo.*,com.esotericsoftware.minlog.*,com.esotericsoftware.reflectasm.*,com.google.inject.*,jnr.ffi.*,org.apache.hadoop.yarn.*.package-info,org.apache.spark.unused.UnusedStubClass,org.hibernate.stat.ConcurrentStatisticsImpl,org.junit.runner.Runner,org.kohsuke.args4j.*</allowedDuplicateClasses>
+		<allowedDuplicateClasses>com.esotericsoftware.kryo.*,com.esotericsoftware.minlog.*,com.esotericsoftware.reflectasm.*,com.google.inject.*,jnr.ffi.*,org.apache.hadoop.yarn.*.package-info,org.apache.spark.unused.UnusedStubClass,org.hibernate.stat.ConcurrentStatisticsImpl,org.junit.runner.Runner</allowedDuplicateClasses>
 
 		<!--
 		NB: We override these properties to make the enforcer happy.
@@ -747,7 +742,7 @@
 		<ome-xml.version>6.0.1</ome-xml.version>
 
 		<!-- Glencoe Software jxrlib - https://github.com/glencoesoftware/jxrlib -->
-		<jxrlib.version>0.2.3</jxrlib.version>
+		<jxrlib.version>0.2.4</jxrlib.version>
 		<jxrlib-all.version>${jxrlib.version}</jxrlib-all.version>
 
 		<!-- Bio-Formats - https://github.com/ome/bioformats -->
