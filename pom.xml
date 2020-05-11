@@ -884,6 +884,9 @@
 		<batik-xml.version>${batik.version}</batik-xml.version>
 		<xmlgraphics-commons.version>2.4</xmlgraphics-commons.version>
 
+		<!-- CDI - http://cdi-spec.org/ -->
+		<cdi-api.version>1.2</cdi-api.version>
+
 		<!-- Commons BeanUtils - https://commons.apache.org/proper/commons-beanutils/ -->
 		<commons-beanutils.version>1.9.4</commons-beanutils.version>
 
@@ -3182,6 +3185,13 @@
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>xmlgraphics-commons</artifactId>
 				<version>${xmlgraphics-commons.version}</version>
+			</dependency>
+
+			<!-- CDI - http://cdi-spec.org/ -->
+			<dependency>
+				<groupId>javax.enterprise</groupId>
+				<artifactId>cdi-api</artifactId>
+				<version>${cdi-api.version}</version>
 			</dependency>
 
 			<!-- Commons BeanUtils - https://commons.apache.org/proper/commons-beanutils/ -->
