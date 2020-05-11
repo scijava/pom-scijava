@@ -2630,6 +2630,14 @@
 						<artifactId>javax.mail</artifactId>
 					</exclusion>
 					<exclusion>
+						<!--
+						Conflicts with jakarta.activation:activation-api
+						See: https://wiki.eclipse.org/Jakarta_EE_Maven_Coordinates
+						-->
+						<groupId>javax.activation</groupId>
+						<artifactId>activation</artifactId>
+					</exclusion>
+					<exclusion>
 						<!-- Uber-JAR of all batik components -->
 						<groupId>org.apache.xmlgraphics</groupId>
 						<artifactId>batik-all</artifactId>
