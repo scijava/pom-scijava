@@ -220,6 +220,7 @@
 			org.apache.maven:maven-core (guice) +
 			org.apache.maven.shared:maven-common-artifact-filters (sisu-guice)
 		==
+		TEMP: Until jruby/jruby#6205 is addressed.
 		Classes: jnr.ffi.*
 		Part of: com.github.jnr:jnr-ffi
 		Also in: org.jruby:jruby-core
