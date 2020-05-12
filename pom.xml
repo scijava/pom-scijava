@@ -248,7 +248,14 @@
 		Also in: org.jmockit:jmockit
 		Enables: junit:junit + org.jmockit:jmockit
 		-->
-		<allowedDuplicateClasses>com.esotericsoftware.kryo.*,com.esotericsoftware.minlog.*,com.esotericsoftware.reflectasm.*,com.google.inject.*,jnr.ffi.*,org.apache.hadoop.yarn.*.package-info,org.apache.spark.unused.UnusedStubClass,org.hibernate.stat.ConcurrentStatisticsImpl,org.junit.runner.Runner</allowedDuplicateClasses>
+		<scijava.allowedDuplicateClasses>com.esotericsoftware.kryo.*,com.esotericsoftware.minlog.*,com.esotericsoftware.reflectasm.*,com.google.inject.*,jnr.ffi.*,org.apache.hadoop.yarn.*.package-info,org.apache.spark.unused.UnusedStubClass,org.hibernate.stat.ConcurrentStatisticsImpl,org.junit.runner.Runner</scijava.allowedDuplicateClasses>
+		<!--
+		NB: The scijava.allowedDuplicateClasses property above makes it easier to
+		append to the list of allowed duplicate classes in downstream projects.
+		Simply override the property in your POM with something like this:
+		<allowedDuplicateClasses>${scijava.allowedDuplicateClasses},com.example.AnotherDuplicate</allowedDuplicateClasses>
+		-->
+		<allowedDuplicateClasses>${scijava.allowedDuplicateClasses}</allowedDuplicateClasses>
 
 		<!--
 		NB: We override these properties to make the enforcer happy.
