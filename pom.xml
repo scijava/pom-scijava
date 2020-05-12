@@ -247,8 +247,14 @@
 		Part of: junit:junit
 		Also in: org.jmockit:jmockit
 		Enables: junit:junit + org.jmockit:jmockit
+		==
+		Classes: org.jetbrains.kotlin.daemon.common.*
+		Part of: kotlin-daemon-client, kotlin-daemon-embeddable
+		Enables:
+			org.jetbrains.kotlin:kotlin-compiler-embeddable (kotlin-daemon-embeddable) +
+			org.jetbrains.kotlin:kotlin-script-util (kotlin-compiler-client)
 		-->
-		<scijava.allowedDuplicateClasses>com.esotericsoftware.kryo.*,com.esotericsoftware.minlog.*,com.esotericsoftware.reflectasm.*,com.google.inject.*,jnr.ffi.*,org.apache.hadoop.yarn.*.package-info,org.apache.spark.unused.UnusedStubClass,org.hibernate.stat.ConcurrentStatisticsImpl,org.junit.runner.Runner</scijava.allowedDuplicateClasses>
+		<scijava.allowedDuplicateClasses>com.esotericsoftware.kryo.*,com.esotericsoftware.minlog.*,com.esotericsoftware.reflectasm.*,com.google.inject.*,jnr.ffi.*,org.apache.hadoop.yarn.*.package-info,org.apache.spark.unused.UnusedStubClass,org.hibernate.stat.ConcurrentStatisticsImpl,org.jetbrains.kotlin.daemon.common.*,org.junit.runner.Runner</scijava.allowedDuplicateClasses>
 		<!--
 		NB: The scijava.allowedDuplicateClasses property above makes it easier to
 		append to the list of allowed duplicate classes in downstream projects.
@@ -1085,8 +1091,16 @@
 
 		<!-- Kotlin - https://kotlinlang.org/ -->
 		<!-- NB: kotlin.version is defined in pom-scijava-base. -->
+		<kotlin-compiler-embeddable.version>${kotlin.version}</kotlin-compiler-embeddable.version>
+		<kotlin-daemon-embeddable.version>${kotlin.version}</kotlin-daemon-embeddable.version>
 		<kotlin-reflect.version>${kotlin.version}</kotlin-reflect.version>
+		<kotlin-script-runtime.version>${kotlin.version}</kotlin-script-runtime.version>
+		<kotlin-script-util.version>${kotlin.version}</kotlin-script-util.version>
+		<kotlin-scripting-common.version>${kotlin.version}</kotlin-scripting-common.version>
+		<kotlin-scripting-compiler-embeddable.version>${kotlin.version}</kotlin-scripting-compiler-embeddable.version>
+		<kotlin-scripting-jvm.version>${kotlin.version}</kotlin-scripting-jvm.version>
 		<kotlin-stdlib.version>${kotlin.version}</kotlin-stdlib.version>
+
 
 		<!-- Logback - https://logback.qos.ch/ -->
 		<logback.version>1.2.3</logback.version>
@@ -3772,13 +3786,48 @@
 			<!-- Kotlin - https://kotlinlang.org/ -->
 			<dependency>
 				<groupId>org.jetbrains.kotlin</groupId>
-				<artifactId>kotlin-stdlib-jdk8</artifactId>
-				<version>${kotlin-stdlib.version}</version>
+				<artifactId>kotlin-compiler-embeddable</artifactId>
+				<version>${kotlin-compiler-embeddable.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jetbrains.kotlin</groupId>
+				<artifactId>kotlin-daemon-embeddable</artifactId>
+				<version>${kotlin-daemon-embeddable.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jetbrains.kotlin</groupId>
 				<artifactId>kotlin-reflect</artifactId>
 				<version>${kotlin-reflect.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jetbrains.kotlin</groupId>
+				<artifactId>kotlin-script-runtime</artifactId>
+				<version>${kotlin-script-runtime.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jetbrains.kotlin</groupId>
+				<artifactId>kotlin-script-util</artifactId>
+				<version>${kotlin-script-util.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jetbrains.kotlin</groupId>
+				<artifactId>kotlin-scripting-common</artifactId>
+				<version>${kotlin-scripting-common.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jetbrains.kotlin</groupId>
+				<artifactId>kotlin-scripting-compiler-embeddable</artifactId>
+				<version>${kotlin-scripting-compiler-embeddable.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jetbrains.kotlin</groupId>
+				<artifactId>kotlin-scripting-jvm</artifactId>
+				<version>${kotlin-scripting-jvm.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jetbrains.kotlin</groupId>
+				<artifactId>kotlin-stdlib-jdk8</artifactId>
+				<version>${kotlin-stdlib.version}</version>
 			</dependency>
 
 			<!-- Logback - http://logback.qos.ch/ -->
