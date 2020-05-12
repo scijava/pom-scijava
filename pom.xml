@@ -1009,8 +1009,14 @@
 		<jetty-jaspi.version>${jetty.version}</jetty-jaspi.version>
 		<jetty-jmx.version>${jetty.version}</jetty-jmx.version>
 		<jetty-jndi.version>${jetty.version}</jetty-jndi.version>
-		<jetty-jspc-maven-plugin.version>${jetty.version}</jetty-jspc-maven-plugin.version>
-		<jetty-maven-plugin.version>${jetty.version}</jetty-maven-plugin.version>
+		<!--
+		NB: We do not manage jetty-jspc-maven-plugin or jetty-maven-plugin.
+		Their dependencies include several artifacts conflicting with elsewhere:
+		* classworlds:classworlds vs. org.codehaus.plexus:plexus-classworlds
+		* javax.annotation:jsr250-api vs. javax.annotation:javax.annotation-api
+		* javax.websocket:javax.websocket-api vs. javax.websocket:javax.websocket-client-api
+		* org.mortbay.jasper:apache-el vs. javax.el:javax.el-api
+		-->
 		<jetty-nosql.version>${jetty.version}</jetty-nosql.version>
 		<jetty-plus.version>${jetty.version}</jetty-plus.version>
 		<jetty-proxy.version>${jetty.version}</jetty-proxy.version>
@@ -3548,35 +3554,6 @@
 			</dependency>
 			<dependency>
 				<groupId>org.eclipse.jetty</groupId>
-				<artifactId>jetty-jspc-maven-plugin</artifactId>
-				<version>${jetty-jspc-maven-plugin.version}</version>
-				<exclusions>
-					<exclusion>
-						<!-- Conflicts with javax.annotation:javax.annotation-api -->
-						<groupId>javax.annotation</groupId>
-						<artifactId>jsr250-api</artifactId>
-					</exclusion>
-					<exclusion>
-						<!-- Conflicts with org.codehaus.plexus:plexus-classworlds -->
-						<groupId>classworlds</groupId>
-						<artifactId>classworlds</artifactId>
-					</exclusion>
-				</exclusions>
-			</dependency>
-			<dependency>
-				<groupId>org.eclipse.jetty</groupId>
-				<artifactId>jetty-maven-plugin</artifactId>
-				<version>${jetty-maven-plugin.version}</version>
-				<exclusions>
-					<exclusion>
-						<!-- Conflicts with javax.websocket:javax.websocket-api -->
-						<groupId>javax.websocket</groupId>
-						<artifactId>javax.websocket-client-api</artifactId>
-					</exclusion>
-				</exclusions>
-			</dependency>
-			<dependency>
-				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-nosql</artifactId>
 				<version>${jetty-nosql.version}</version>
 			</dependency>
@@ -3854,6 +3831,16 @@
 				<groupId>org.mapdb</groupId>
 				<artifactId>mapdb</artifactId>
 				<version>${mapdb.version}</version>
+				<exclusions>
+					<exclusion>
+						<!--
+						Conflicts with org.lz4:lz4-java.
+						You may need to add it to your deps.
+						-->
+						<groupId>net.jpountz.lz4</groupId>
+						<artifactId>lz4</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<!-- MigLayout - http://www.miglayout.com/ -->
