@@ -3538,6 +3538,13 @@
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
 				<version>${jetty-maven-plugin.version}</version>
+				<exclusions>
+					<exclusion>
+						<!-- Conflicts with javax.websocket:javax.websocket-api -->
+						<groupId>javax.websocket</groupId>
+						<artifactId>javax.websocket-client-api</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.eclipse.jetty</groupId>
