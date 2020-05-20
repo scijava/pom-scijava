@@ -488,9 +488,6 @@
 		<!-- ImageJ Updater - https://github.com/imagej/imagej-updater -->
 		<imagej-updater.version>0.10.4</imagej-updater.version>
 
-		<!-- ImageJ Usage - https://github.com/imagej/imagej-usage -->
-		<imagej-usage.version>0.4.1</imagej-usage.version>
-
 		<!-- Op Finder - https://github.com/imagej/op-finder -->
 		<op-finder.version>0.1.4</op-finder.version>
 
@@ -1641,13 +1638,6 @@
 				<artifactId>imagej-updater</artifactId>
 				<version>${imagej-updater.version}</version>
 				<classifier>tests</classifier>
-			</dependency>
-
-			<!-- ImageJ Usage - https://github.com/imagej/imagej-usage -->
-			<dependency>
-				<groupId>net.imagej</groupId>
-				<artifactId>imagej-usage</artifactId>
-				<version>${imagej-usage.version}</version>
 			</dependency>
 
 			<!-- Op-Finder - https://github.com/imagej/op-finder -->
@@ -4268,7 +4258,6 @@
 				<imagej-ui-awt.version>LATEST</imagej-ui-awt.version>
 				<imagej-ui-swing.version>LATEST</imagej-ui-swing.version>
 				<imagej-updater.version>LATEST</imagej-updater.version>
-				<imagej-usage.version>LATEST</imagej-usage.version>
 				<op-finder.version>LATEST</op-finder.version>
 			</properties>
 			<repositories>
