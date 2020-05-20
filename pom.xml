@@ -741,6 +741,14 @@
 		above.
 		-->
 
+		<!-- BoneJ - http://bonej.org/ -->
+		<bonej.version>7.0.5</bonej.version>
+		<bonej-plugins.version>${bonej.version}</bonej-plugins.version>
+		<bonej-ops.version>${bonej.version}</bonej-ops.version>
+		<bonej-legacy-plugins_.version>${bonej.version}</bonej-legacy-plugins_.version>
+		<bonej-legacy-util_.version>${bonej.version}</bonej-legacy-util_.version>
+		<bonej-utilities.version>${bonej.version}</bonej-utilities.version>
+
 		<!-- Open Microscopy Environment - https://github.com/ome -->
 
 		<!-- OME Common Java - https://github.com/ome/ome-common-java -->
@@ -2426,6 +2434,34 @@
 				<groupId>org.janelia.saalfeldlab</groupId>
 				<artifactId>n5-viewer_fiji</artifactId>
 				<version>${n5-viewer_fiji.version}</version>
+			</dependency>
+
+			<!-- BoneJ - http://bonej.org/ -->
+
+			<dependency>
+				<groupId>org.bonej</groupId>
+				<artifactId>bonej-plugins</artifactId>
+				<version>${bonej-plugins.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.bonej</groupId>
+				<artifactId>bonej-ops</artifactId>
+				<version>${bonej-ops.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.bonej</groupId>
+				<artifactId>bonej-legacy-plugins_</artifactId>
+				<version>${bonej-legacy-plugins_.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.bonej</groupId>
+				<artifactId>bonej-legacy-util_</artifactId>
+				<version>${bonej-legacy-util_.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.bonej</groupId>
+				<artifactId>bonej-utilities</artifactId>
+				<version>${bonej-utilities.version}</version>
 			</dependency>
 
 			<!-- Open Microscopy Environment - https://github.com/ome -->
