@@ -198,12 +198,70 @@
 		<!--
 		HACK: The following list of allowed-to-be-duplicated classes
 		facilitates intended combinations of artifacts:
-		* org.openmicroscopy:omero-blitz + org.hibernate:hibernate-core
-		* org.apache.hadoop:hadoop-yarn-*
-		* org.apache.spark:spark-*_2.11
-		* org.jmockit:jmockit + junit:junit
+		==
+		TEMP: Until ome/ome-common-java#50 and ome/bioformats#3557 merge.
+		Classes:
+			com.esotericsoftware.kryo.*,
+			com.esotericsoftware.minlog.*,
+			com.esotericsoftware.reflectasm.*
+		Part of:
+			com.esotericsoftware.kryo:kryo,
+			com.esotericsoftware:kryo,
+			com.esotericsoftware:minlog,
+			com.esotericsoftware:reflectasm
+		Enables:
+			org.openmicroscopy:ome-common (com.esotericsoftware.kryo:kryo) +
+			graphics.scenery:scenery (com.esotericsoftware:kryo)
+		==
+		Classes: com.google.inject.*
+		Part of: com.google.inject:guice:no_aop
+		Also in: org.sonatype.sisu:sisu-guice
+		Enables:
+			org.apache.maven:maven-core (guice) +
+			org.apache.maven.shared:maven-common-artifact-filters (sisu-guice)
+		==
+		TEMP: Until jruby/jruby#6205 is addressed.
+		Classes: jnr.ffi.*
+		Part of: com.github.jnr:jnr-ffi
+		Also in: org.jruby:jruby-core
+		Enables: org.jruby:jruby-core + org.python:jython-slim (jnr-ffi)
+		==
+		Classes: org.apache.hadoop.yarn.*.package-info
+		Part of: org.apache.hadoop:hadoop-yarn-*
+		Enables:
+			org.apache.hadoop:hadoop-yarn-<foo> +
+			org.apache.hadoop:hadoop-yarn-<bar>
+		==
+		Classes: org.apache.spark.unused.UnusedStubClass
+		Part of: org.apache.spark:spark-*
+		Enables: org.apache.spark:spark-core_2.11 (spark-*)
+		==
+		Classes: org.hibernate.stat.ConcurrentStatisticsImpl
+		Part of: org.hibernate:hibernate-core
+		Also in: org.openmicroscopy:omero-blitz
+		Enables:
+			org.openmicroscopy:omero-blitz +
+			org.openmicroscopy:omero-model (hibernate-core)
+		==
+		Classes: org.junit.runner.Runner
+		Part of: junit:junit
+		Also in: org.jmockit:jmockit
+		Enables: junit:junit + org.jmockit:jmockit
+		==
+		Classes: org.jetbrains.kotlin.daemon.common.*
+		Part of: kotlin-daemon-client, kotlin-daemon-embeddable
+		Enables:
+			org.jetbrains.kotlin:kotlin-compiler-embeddable (kotlin-daemon-embeddable) +
+			org.jetbrains.kotlin:kotlin-script-util (kotlin-compiler-client)
 		-->
-		<allowedDuplicateClasses>org.apache.hadoop.yarn.*.package-info,org.apache.spark.unused.UnusedStubClass,org.hibernate.stat.ConcurrentStatisticsImpl,org.junit.runner.Runner</allowedDuplicateClasses>
+		<scijava.allowedDuplicateClasses>com.esotericsoftware.kryo.*,com.esotericsoftware.minlog.*,com.esotericsoftware.reflectasm.*,com.google.inject.*,jnr.ffi.*,org.apache.hadoop.yarn.*.package-info,org.apache.spark.unused.UnusedStubClass,org.hibernate.stat.ConcurrentStatisticsImpl,org.jetbrains.kotlin.daemon.common.*,org.junit.runner.Runner</scijava.allowedDuplicateClasses>
+		<!--
+		NB: The scijava.allowedDuplicateClasses property above makes it easier to
+		append to the list of allowed duplicate classes in downstream projects.
+		Simply override the property in your POM with something like this:
+		<allowedDuplicateClasses>${scijava.allowedDuplicateClasses},com.example.AnotherDuplicate</allowedDuplicateClasses>
+		-->
+		<allowedDuplicateClasses>${scijava.allowedDuplicateClasses}</allowedDuplicateClasses>
 
 		<!--
 		NB: We override these properties to make the enforcer happy.
@@ -227,6 +285,19 @@
 		If you need to override the version of a particular component, then simply
 		override that component's version property in your POM's <properties>
 		section, rather than hardcoding them.
+
+		WARNING: While most artifacts in this BOM can be successfully combined,
+		there are a handful of exceptions requiring some downstream effort:
+
+		- net.imagej:imagej-server depends on Dropwizard, which ships its own
+		  metrics-graphite and metrics-logback libraries, among other issues.
+		- org.apache.spark:spark-core_2.11 has a large number of dependencies,
+		  some of which are incompatible with other artifact trees in this BOM;
+		  e.g., Spark depends on kryo-shaded while Bio-Formats depends on kryo.
+
+		If you make use of any of the above artifacts, you may need to add
+		dependency exclusions, ignore additional duplicate class patterns,
+		and/or manually tune your runtime classpath.
 		-->
 
 		<!-- SciJava - https://github.com/scijava -->
@@ -236,9 +307,6 @@
 
 		<!-- JUnit Benchmarks - https://github.com/scijava/junit-benchmarks -->
 		<junit-benchmarks.version>0.7.4-scijava</junit-benchmarks.version>
-
-		<!-- Jython Shaded - https://github.com/scijava/jython-shaded -->
-		<jython-shaded.version>2.7.1.1</jython-shaded.version>
 
 		<!-- MiniMaven - https://github.com/scijava/minimaven -->
 		<minimaven.version>2.2.2</minimaven.version>
@@ -266,9 +334,6 @@
 
 		<!-- SciJava Java 3D Tools - https://github.com/scijava/scijava-java3d -->
 		<scijava-java3d.version>0.1.0</scijava-java3d.version>
-
-		<!-- SciJava Jupyter Kernel - https://github.com/scijava/scijava-jupyter-kernel -->
-		<scijava-jupyter-kernel.version>0.6.1</scijava-jupyter-kernel.version>
 
 		<!-- SciJava SLF4J Logging - https://github.com/scijava/scijava-log-slf4j -->
 		<scijava-log-slf4j.version>1.0.5</scijava-log-slf4j.version>
@@ -322,7 +387,7 @@
 		<scripting-jruby.version>0.3.1</scripting-jruby.version>
 
 		<!-- Scripting: Jython - https://github.com/scijava/scripting-jython -->
-		<scripting-jython.version>0.5.0</scripting-jython.version>
+		<scripting-jython.version>1.0.0</scripting-jython.version>
 
 		<!-- Scripting: Kotlin - https://github.com/scijava/scripting-kotlin -->
 		<scripting-kotlin.version>0.1.1</scripting-kotlin.version>
@@ -422,9 +487,6 @@
 
 		<!-- ImageJ Updater - https://github.com/imagej/imagej-updater -->
 		<imagej-updater.version>0.10.4</imagej-updater.version>
-
-		<!-- ImageJ Usage - https://github.com/imagej/imagej-usage -->
-		<imagej-usage.version>0.4.1</imagej-usage.version>
 
 		<!-- Op Finder - https://github.com/imagej/op-finder -->
 		<op-finder.version>0.1.4</op-finder.version>
@@ -527,7 +589,7 @@
 		<Fiji_Developer.version>2.0.7</Fiji_Developer.version>
 		<Fiji_Package_Maker.version>2.1.1</Fiji_Package_Maker.version>
 		<Fiji_Plugins.version>3.1.1</Fiji_Plugins.version>
-		<FlowJ.version>1.29.3</FlowJ.version>
+		<FlowJ.version>2.0.0</FlowJ.version>
 		<FlowJ_.version>${FlowJ.version}</FlowJ_.version>
 		<Graph_Cut.version>1.0.2</Graph_Cut.version>
 		<Gray_Morphology.version>2.3.4</Gray_Morphology.version>
@@ -564,7 +626,7 @@
 		<RATS_.version>${RATS.version}</RATS_.version>
 		<Reconstruct_Reader.version>2.0.4</Reconstruct_Reader.version>
 		<SPIM_Opener.version>2.0.2</SPIM_Opener.version>
-		<SPIM_Registration.version>5.0.20</SPIM_Registration.version>
+		<SPIM_Registration.version>5.0.21</SPIM_Registration.version>
 		<Samples.version>2.0.2</Samples.version>
 		<Samples_.version>${Samples.version}</Samples_.version>
 		<Series_Labeler.version>2.0.1</Series_Labeler.version>
@@ -586,7 +648,7 @@
 		<ToAST_.version>${ToAST.version}</ToAST_.version>
 		<TopoJ.version>2.0.1</TopoJ.version>
 		<TopoJ_.version>${TopoJ.version}</TopoJ_.version>
-		<TrackMate.version>5.2.0</TrackMate.version>
+		<TrackMate.version>6.0.0</TrackMate.version>
 		<TrackMate_.version>${TrackMate.version}</TrackMate_.version>
 		<Trainable_Segmentation.version>3.2.29</Trainable_Segmentation.version>
 		<TrakEM2_Archipelago.version>2.0.3</TrakEM2_Archipelago.version>
@@ -602,7 +664,7 @@
 		<Volume_Viewer.version>2.01.2</Volume_Viewer.version>
 		<bUnwarpJ.version>2.6.12</bUnwarpJ.version>
 		<bUnwarpJ_.version>${bUnwarpJ.version}</bUnwarpJ_.version>
-		<bij.version>0.1.1</bij.version>
+		<bij.version>1.0.0</bij.version>
 		<blockmatching.version>2.1.3</blockmatching.version>
 		<blockmatching_.version>${blockmatching.version}</blockmatching_.version>
 		<fiji-lib.version>2.1.2</fiji-lib.version>
@@ -643,7 +705,7 @@
 
 		<!-- BigDataViewer - https://github.com/bigdataviewer -->
 
-		<bigdataviewer-core.version>9.0.0</bigdataviewer-core.version>
+		<bigdataviewer-core.version>9.0.4</bigdataviewer-core.version>
 		<bigdataviewer-server.version>2.1.0</bigdataviewer-server.version>
 		<bigdataviewer-vistools.version>1.0.0-beta-19</bigdataviewer-vistools.version>
 		<bigdataviewer_fiji.version>6.1.0</bigdataviewer_fiji.version>
@@ -653,7 +715,7 @@
 
 		<T2-NIT.version>1.1.3</T2-NIT.version>
 		<T2-TreelineGraph.version>1.1.3</T2-TreelineGraph.version>
-		<TrakEM2.version>1.3.2</TrakEM2.version>
+		<TrakEM2.version>1.3.4</TrakEM2.version>
 		<TrakEM2_.version>${TrakEM2.version}</TrakEM2_.version>
 		<VectorString.version>2.0.2</VectorString.version>
 		<trakem2-transform.version>1.0.1</trakem2-transform.version>
@@ -676,6 +738,14 @@
 		above.
 		-->
 
+		<!-- BoneJ - http://bonej.org/ -->
+		<bonej.version>7.0.5</bonej.version>
+		<bonej-plugins.version>${bonej.version}</bonej-plugins.version>
+		<bonej-ops.version>${bonej.version}</bonej-ops.version>
+		<bonej-legacy-plugins_.version>${bonej.version}</bonej-legacy-plugins_.version>
+		<bonej-legacy-util_.version>${bonej.version}</bonej-legacy-util_.version>
+		<bonej-utilities.version>${bonej.version}</bonej-utilities.version>
+
 		<!-- Open Microscopy Environment - https://github.com/ome -->
 
 		<!-- OME Common Java - https://github.com/ome/ome-common-java -->
@@ -689,6 +759,10 @@
 
 		<!-- OME Model - https://github.com/ome/ome-model -->
 		<ome-xml.version>6.0.1</ome-xml.version>
+
+		<!-- Glencoe Software jxrlib - https://github.com/glencoesoftware/jxrlib -->
+		<jxrlib.version>0.2.4</jxrlib.version>
+		<jxrlib-all.version>${jxrlib.version}</jxrlib-all.version>
 
 		<!-- Bio-Formats - https://github.com/ome/bioformats -->
 		<bio-formats.version>6.5.0</bio-formats.version>
@@ -780,6 +854,14 @@
 		<groovy-xml.version>${groovy.version}</groovy-xml.version>
 		<groovy-yaml.version>${groovy.version}</groovy-yaml.version>
 
+		<!-- Apache Maven - https://maven.apache.org/ -->
+		<maven-artifact-transfer.version>0.12.0</maven-artifact-transfer.version>
+		<maven-common-artifact-filters.version>3.1.0</maven-common-artifact-filters.version>
+		<maven-core.version>3.6.3</maven-core.version>
+		<maven-plugin-tools-api.version>3.6.0</maven-plugin-tools-api.version>
+		<sisu-inject-bean.version>2.6.0</sisu-inject-bean.version>
+		<sisu-inject-plexus.version>2.6.0</sisu-inject-plexus.version>
+
 		<!-- Apache POI - https://poi.apache.org/ -->
 		<poi.version>3.17</poi.version>
 
@@ -821,6 +903,9 @@
 		<batik-xml.version>${batik.version}</batik-xml.version>
 		<xmlgraphics-commons.version>2.4</xmlgraphics-commons.version>
 
+		<!-- CDI - http://cdi-spec.org/ -->
+		<cdi-api.version>1.2</cdi-api.version>
+
 		<!-- Commons BeanUtils - https://commons.apache.org/proper/commons-beanutils/ -->
 		<commons-beanutils.version>1.9.4</commons-beanutils.version>
 
@@ -851,6 +936,24 @@
 
 		<!-- Byte Code Generation Library - https://github.com/cglib/cglib -->
 		<cglib.version>3.3.0</cglib.version>
+
+		<!-- Eclipse SWT - https://www.eclipse.org/swt/ -->
+		<eclipse-swt.version>4.3</eclipse-swt.version>
+		<org.eclipse.swt.cocoa.macosx.version>${eclipse-swt.version}</org.eclipse.swt.cocoa.macosx.version>
+		<org.eclipse.swt.cocoa.macosx.x86_64.version>${eclipse-swt.version}</org.eclipse.swt.cocoa.macosx.x86_64.version>
+		<org.eclipse.swt.gtk.aix.ppc.version>${eclipse-swt.version}</org.eclipse.swt.gtk.aix.ppc.version>
+		<org.eclipse.swt.gtk.aix.ppc64.version>${eclipse-swt.version}</org.eclipse.swt.gtk.aix.ppc64.version>
+		<org.eclipse.swt.gtk.hpux.ia64.version>${eclipse-swt.version}</org.eclipse.swt.gtk.hpux.ia64.version>
+		<org.eclipse.swt.gtk.linux.ppc.version>${eclipse-swt.version}</org.eclipse.swt.gtk.linux.ppc.version>
+		<org.eclipse.swt.gtk.linux.ppc64.version>${eclipse-swt.version}</org.eclipse.swt.gtk.linux.ppc64.version>
+		<org.eclipse.swt.gtk.linux.s390.version>${eclipse-swt.version}</org.eclipse.swt.gtk.linux.s390.version>
+		<org.eclipse.swt.gtk.linux.s390x.version>${eclipse-swt.version}</org.eclipse.swt.gtk.linux.s390x.version>
+		<org.eclipse.swt.gtk.linux.x86.version>${eclipse-swt.version}</org.eclipse.swt.gtk.linux.x86.version>
+		<org.eclipse.swt.gtk.linux.x86_64.version>${eclipse-swt.version}</org.eclipse.swt.gtk.linux.x86_64.version>
+		<org.eclipse.swt.gtk.solaris.sparc.version>${eclipse-swt.version}</org.eclipse.swt.gtk.solaris.sparc.version>
+		<org.eclipse.swt.gtk.solaris.x86.version>${eclipse-swt.version}</org.eclipse.swt.gtk.solaris.x86.version>
+		<org.eclipse.swt.win32.win32.x86.version>${eclipse-swt.version}</org.eclipse.swt.win32.win32.x86.version>
+		<org.eclipse.swt.win32.win32.x86_64.version>${eclipse-swt.version}</org.eclipse.swt.win32.win32.x86_64.version>
 
 		<!-- Google Cloud Storage - https://github.com/googleapis/google-cloud-java -->
 		<google-cloud-resourcemanager.version>0.117.2-alpha</google-cloud-resourcemanager.version>
@@ -897,7 +1000,10 @@
 		<!-- Jetty - https://www.eclipse.org/jetty/ -->
 		<jetty.version>9.4.26.v20200117</jetty.version>
 		<jetty-annotations.version>${jetty.version}</jetty-annotations.version>
-		<jetty-ant.version>${jetty.version}</jetty-ant.version>
+		<!--
+		NB: We do not manage jetty-ant. It depends on ant with old groupId (ant),
+		which conflicts with other dependencies using new groupId (org.apache.ant).
+		-->
 		<jetty-client.version>${jetty.version}</jetty-client.version>
 		<jetty-continuation.version>${jetty.version}</jetty-continuation.version>
 		<jetty-deploy.version>${jetty.version}</jetty-deploy.version>
@@ -908,13 +1014,19 @@
 		<jetty-jaspi.version>${jetty.version}</jetty-jaspi.version>
 		<jetty-jmx.version>${jetty.version}</jetty-jmx.version>
 		<jetty-jndi.version>${jetty.version}</jetty-jndi.version>
-		<jetty-jspc-maven-plugin.version>${jetty.version}</jetty-jspc-maven-plugin.version>
-		<jetty-maven-plugin.version>${jetty.version}</jetty-maven-plugin.version>
+		<!--
+		NB: We do not manage jetty-jspc-maven-plugin or jetty-maven-plugin.
+		Their dependencies include several artifacts conflicting with elsewhere:
+		* classworlds:classworlds vs. org.codehaus.plexus:plexus-classworlds
+		* javax.annotation:jsr250-api vs. javax.annotation:javax.annotation-api
+		* javax.websocket:javax.websocket-api vs. javax.websocket:javax.websocket-client-api
+		* org.mortbay.jasper:apache-el vs. javax.el:javax.el-api
+		-->
 		<jetty-nosql.version>${jetty.version}</jetty-nosql.version>
 		<jetty-plus.version>${jetty.version}</jetty-plus.version>
 		<jetty-proxy.version>${jetty.version}</jetty-proxy.version>
 		<jetty-rewrite.version>${jetty.version}</jetty-rewrite.version>
-		<jetty-runner.version>${jetty.version}</jetty-runner.version>
+		<!-- NB: We do not manage jetty-runner. It is an unshaded uber-JAR. -->
 		<jetty-security.version>${jetty.version}</jetty-security.version>
 		<jetty-server.version>${jetty.version}</jetty-server.version>
 		<jetty-servlet.version>${jetty.version}</jetty-servlet.version>
@@ -942,7 +1054,7 @@
 		<jgrapht-opt.version>${jgrapht.version}</jgrapht-opt.version>
 
 		<!-- JGraphX - https://github.com/jgraph/jgraphx -->
-		<jgraphx.version>3.4.1.3</jgraphx.version>
+		<jgraphx.version>4.1.0</jgraphx.version>
 
 		<!-- JHDF5 - https://wiki-bsse.ethz.ch/label/JHDF5/hdf5 -->
 		<jhdf5.version>14.12.6</jhdf5.version>
@@ -981,13 +1093,25 @@
 		<!-- JUnit - https://junit.org/ -->
 		<junit.version>4.13</junit.version>
 
+		<!-- Jython - https://jython.org/ -->
+		<jython.version>2.7.2</jython.version>
+		<jython-slim.version>${jython.version}</jython-slim.version>
+
 		<!-- JZlib - http://www.jcraft.com/jzlib/ -->
 		<jzlib.version>1.1.3</jzlib.version>
 
 		<!-- Kotlin - https://kotlinlang.org/ -->
 		<!-- NB: kotlin.version is defined in pom-scijava-base. -->
+		<kotlin-compiler-embeddable.version>${kotlin.version}</kotlin-compiler-embeddable.version>
+		<kotlin-daemon-embeddable.version>${kotlin.version}</kotlin-daemon-embeddable.version>
 		<kotlin-reflect.version>${kotlin.version}</kotlin-reflect.version>
+		<kotlin-script-runtime.version>${kotlin.version}</kotlin-script-runtime.version>
+		<kotlin-script-util.version>${kotlin.version}</kotlin-script-util.version>
+		<kotlin-scripting-common.version>${kotlin.version}</kotlin-scripting-common.version>
+		<kotlin-scripting-compiler-embeddable.version>${kotlin.version}</kotlin-scripting-compiler-embeddable.version>
+		<kotlin-scripting-jvm.version>${kotlin.version}</kotlin-scripting-jvm.version>
 		<kotlin-stdlib.version>${kotlin.version}</kotlin-stdlib.version>
+
 
 		<!-- Logback - https://logback.qos.ch/ -->
 		<logback.version>1.2.3</logback.version>
@@ -1023,7 +1147,7 @@
 		<picocli.version>4.2.0</picocli.version>
 
 		<!-- PostgreSQL JDBC Driver - https://jdbc.postgresql.org/ -->
-		<postgresql.version>9.1-901-1.jdbc4</postgresql.version>
+		<postgresql.version>42.2.12</postgresql.version>
 
 		<!-- RSyntaxTextArea - https://bobbylight.github.io/RSyntaxTextArea/ -->
 		<rsyntaxtextarea.version>3.0.8</rsyntaxtextarea.version>
@@ -1038,12 +1162,21 @@
 		<slf4j-jdk14.version>${slf4j.version}</slf4j-jdk14.version>
 		<slf4j-nop.version>${slf4j.version}</slf4j-nop.version>
 		<slf4j-simple.version>${slf4j.version}</slf4j-simple.version>
+		<jcl-over-slf4j.version>${slf4j.version}</jcl-over-slf4j.version>
 
 		<!-- SnakeYAML - https://bitbucket.org/asomov/snakeyaml -->
 		<snakeyaml.version>1.25</snakeyaml.version>
 
 		<!-- SnakeYAML Engine - https://bitbucket.org/asomov/snakeyaml-engine -->
 		<snakeyaml-engine.version>2.1</snakeyaml-engine.version>
+
+		<!-- Spring - https://spring.io/ -->
+		<!--
+		NB: 3.2.9.RELEASE is the last version not to depend properly on
+		aopalliance:aopalliance, rather than including org.aopalliance
+		classes unshadowed!
+		-->
+		<spring-aop.version>3.2.9.RELEASE</spring-aop.version>
 
 		<!-- TensorFlow - https://www.tensorflow.org/ -->
 		<tensorflow.version>1.12.0</tensorflow.version>
@@ -1072,13 +1205,6 @@
 				<groupId>org.scijava</groupId>
 				<artifactId>batch-processor</artifactId>
 				<version>${batch-processor.version}</version>
-			</dependency>
-
-			<!-- Jython Shaded - https://github.com/scijava/jython-shaded -->
-			<dependency>
-				<groupId>org.scijava</groupId>
-				<artifactId>jython-shaded</artifactId>
-				<version>${jython-shaded.version}</version>
 			</dependency>
 
 			<!-- MiniMaven - https://github.com/scijava/minimaven -->
@@ -1148,13 +1274,6 @@
 				<groupId>org.scijava</groupId>
 				<artifactId>scijava-java3d</artifactId>
 				<version>${scijava-java3d.version}</version>
-			</dependency>
-
-			<!-- SciJava Jupyter Kernel - https://github.com/scijava/scijava-jupyter-kernel -->
-			<dependency>
-				<groupId>org.scijava</groupId>
-				<artifactId>scijava-jupyter-kernel</artifactId>
-				<version>${scijava-jupyter-kernel.version}</version>
 			</dependency>
 
 			<!-- SciJava SLF4J Logging - https://github.com/scijava/scijava-log-slf4j -->
@@ -1519,13 +1638,6 @@
 				<artifactId>imagej-updater</artifactId>
 				<version>${imagej-updater.version}</version>
 				<classifier>tests</classifier>
-			</dependency>
-
-			<!-- ImageJ Usage - https://github.com/imagej/imagej-usage -->
-			<dependency>
-				<groupId>net.imagej</groupId>
-				<artifactId>imagej-usage</artifactId>
-				<version>${imagej-usage.version}</version>
 			</dependency>
 
 			<!-- Op-Finder - https://github.com/imagej/op-finder -->
@@ -2171,6 +2283,13 @@
 				<groupId>ca.mcgill</groupId>
 				<artifactId>Sholl_Analysis</artifactId>
 				<version>${Sholl_Analysis.version}</version>
+				<exclusions>
+					<exclusion>
+						<!-- TEMP: Until tferr/ASA#32 is merged and released. -->
+						<groupId>net.imagej</groupId>
+						<artifactId>imagej</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<!-- JITK TPS - https://github.com/saalfeldlab/jitk-tps -->
@@ -2307,6 +2426,34 @@
 				<version>${n5-viewer_fiji.version}</version>
 			</dependency>
 
+			<!-- BoneJ - http://bonej.org/ -->
+
+			<dependency>
+				<groupId>org.bonej</groupId>
+				<artifactId>bonej-plugins</artifactId>
+				<version>${bonej-plugins.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.bonej</groupId>
+				<artifactId>bonej-ops</artifactId>
+				<version>${bonej-ops.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.bonej</groupId>
+				<artifactId>bonej-legacy-plugins_</artifactId>
+				<version>${bonej-legacy-plugins_.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.bonej</groupId>
+				<artifactId>bonej-legacy-util_</artifactId>
+				<version>${bonej-legacy-util_.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.bonej</groupId>
+				<artifactId>bonej-utilities</artifactId>
+				<version>${bonej-utilities.version}</version>
+			</dependency>
+
 			<!-- Open Microscopy Environment - https://github.com/ome -->
 
 			<!-- Metakit - https://github.com/ome/ome-metakit -->
@@ -2377,6 +2524,13 @@
 				<groupId>org.openmicroscopy</groupId>
 				<artifactId>ome-xml</artifactId>
 				<version>${ome-xml.version}</version>
+			</dependency>
+
+			<!-- Glencoe Software jxrlib - https://github.com/glencoesoftware/jxrlib -->
+			<dependency>
+				<groupId>ome</groupId>
+				<artifactId>jxrlib-all</artifactId>
+				<version>${jxrlib-all.version}</version>
 			</dependency>
 
 			<!-- Bio-Formats - https://github.com/ome/bioformats -->
@@ -2487,6 +2641,13 @@
 				<groupId>org.openmicroscopy</groupId>
 				<artifactId>omero-model</artifactId>
 				<version>${omero-model.version}</version>
+				<exclusions>
+					<exclusion>
+						<!-- Conflicts with javax.transaction:javax.transaction-api -->
+						<groupId>javax.transaction</groupId>
+						<artifactId>jta</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<!-- OMERO Renderer - https://github.com/ome/omero-renderer -->
@@ -2517,11 +2678,6 @@
 				<version>${omero-server.version}</version>
 				<exclusions>
 					<exclusion>
-						<!-- Conflicts with org.springframework:spring-aop -->
-						<groupId>aopalliance</groupId>
-						<artifactId>aopalliance</artifactId>
-					</exclusion>
-					<exclusion>
 						<!-- Conflicts with com.mchange:c3p0 and com.mchange:mchange-commons-java -->
 						<groupId>c3p0</groupId>
 						<artifactId>c3p0</artifactId>
@@ -2530,6 +2686,14 @@
 						<!-- Conflicts with javax.mail:mail -->
 						<groupId>com.sun.mail</groupId>
 						<artifactId>javax.mail</artifactId>
+					</exclusion>
+					<exclusion>
+						<!--
+						Conflicts with jakarta.activation:activation-api
+						See: https://wiki.eclipse.org/Jakarta_EE_Maven_Coordinates
+						-->
+						<groupId>javax.activation</groupId>
+						<artifactId>activation</artifactId>
 					</exclusion>
 					<exclusion>
 						<!-- Uber-JAR of all batik components -->
@@ -2745,6 +2909,38 @@
 				<version>${groovy-yaml.version}</version>
 			</dependency>
 
+			<!-- Apache Maven - https://maven.apache.org/ -->
+			<dependency>
+				<groupId>org.apache.maven.shared</groupId>
+				<artifactId>maven-artifact-transfer</artifactId>
+				<version>${maven-artifact-transfer.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.maven.shared</groupId>
+				<artifactId>maven-common-artifact-filters</artifactId>
+				<version>${maven-common-artifact-filters.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.maven</groupId>
+				<artifactId>maven-core</artifactId>
+				<version>${maven-core.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.maven.plugin-tools</groupId>
+				<artifactId>maven-plugin-tools-api</artifactId>
+				<version>${maven-plugin-tools-api.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.sonatype.sisu</groupId>
+				<artifactId>sisu-inject-bean</artifactId>
+				<version>${sisu-inject-bean.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.sonatype.sisu</groupId>
+				<artifactId>sisu-inject-plexus</artifactId>
+				<version>${sisu-inject-plexus.version}</version>
+			</dependency>
+
 			<!-- Apache POI - https://poi.apache.org/ -->
 			<dependency>
 				<groupId>org.apache.poi</groupId>
@@ -2776,28 +2972,29 @@
 						<artifactId>commons-beanutils-core</artifactId>
 					</exclusion>
 					<exclusion>
+						<!-- Uber-JAR of all netty components -->
+						<groupId>io.netty</groupId>
+						<artifactId>netty-all</artifactId>
+					</exclusion>
+					<exclusion>
 						<groupId>xml-apis</groupId>
 						<artifactId>xml-apis</artifactId>
 					</exclusion>
 				</exclusions>
 			</dependency>
+
 			<!-- Apache HTTPComponents - https://hc.apache.org/ -->
 			<dependency>
 				<groupId>org.apache.httpcomponents</groupId>
 				<artifactId>httpclient</artifactId>
 				<version>${httpclient.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>commons-logging</groupId>
-						<artifactId>commons-logging</artifactId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.httpcomponents</groupId>
 				<artifactId>httpcore</artifactId>
 				<version>${httpcore.version}</version>
 			</dependency>
+
 			<!-- Batik - https://xmlgraphics.apache.org/batik/ -->
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
@@ -3050,6 +3247,13 @@
 				<version>${xmlgraphics-commons.version}</version>
 			</dependency>
 
+			<!-- CDI - http://cdi-spec.org/ -->
+			<dependency>
+				<groupId>javax.enterprise</groupId>
+				<artifactId>cdi-api</artifactId>
+				<version>${cdi-api.version}</version>
+			</dependency>
+
 			<!-- Commons BeanUtils - https://commons.apache.org/proper/commons-beanutils/ -->
 			<dependency>
 				<groupId>commons-beanutils</groupId>
@@ -3125,6 +3329,83 @@
 				<version>${cglib.version}</version>
 			</dependency>
 
+			<!-- Eclipse SWT - https://www.eclipse.org/swt/ -->
+			<dependency>
+				<groupId>org.eclipse.swt</groupId>
+				<artifactId>org.eclipse.swt.cocoa.macosx</artifactId>
+				<version>${org.eclipse.swt.cocoa.macosx.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.swt</groupId>
+				<artifactId>org.eclipse.swt.cocoa.macosx.x86_64</artifactId>
+				<version>${org.eclipse.swt.cocoa.macosx.x86_64.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.swt</groupId>
+				<artifactId>org.eclipse.swt.gtk.aix.ppc</artifactId>
+				<version>${org.eclipse.swt.gtk.aix.ppc.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.swt</groupId>
+				<artifactId>org.eclipse.swt.gtk.aix.ppc64</artifactId>
+				<version>${org.eclipse.swt.gtk.aix.ppc64.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.swt</groupId>
+				<artifactId>org.eclipse.swt.gtk.hpux.ia64</artifactId>
+				<version>${org.eclipse.swt.gtk.hpux.ia64.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.swt</groupId>
+				<artifactId>org.eclipse.swt.gtk.linux.ppc</artifactId>
+				<version>${org.eclipse.swt.gtk.linux.ppc.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.swt</groupId>
+				<artifactId>org.eclipse.swt.gtk.linux.ppc64</artifactId>
+				<version>${org.eclipse.swt.gtk.linux.ppc64.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.swt</groupId>
+				<artifactId>org.eclipse.swt.gtk.linux.s390</artifactId>
+				<version>${org.eclipse.swt.gtk.linux.s390.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.swt</groupId>
+				<artifactId>org.eclipse.swt.gtk.linux.s390x</artifactId>
+				<version>${org.eclipse.swt.gtk.linux.s390x.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.swt</groupId>
+				<artifactId>org.eclipse.swt.gtk.linux.x86</artifactId>
+				<version>${org.eclipse.swt.gtk.linux.x86.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.swt</groupId>
+				<artifactId>org.eclipse.swt.gtk.linux.x86_64</artifactId>
+				<version>${org.eclipse.swt.gtk.linux.x86_64.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.swt</groupId>
+				<artifactId>org.eclipse.swt.gtk.solaris.sparc</artifactId>
+				<version>${org.eclipse.swt.gtk.solaris.sparc.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.swt</groupId>
+				<artifactId>org.eclipse.swt.gtk.solaris.x86</artifactId>
+				<version>${org.eclipse.swt.gtk.solaris.x86.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.swt</groupId>
+				<artifactId>org.eclipse.swt.win32.win32.x86</artifactId>
+				<version>${org.eclipse.swt.win32.win32.x86.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.swt</groupId>
+				<artifactId>org.eclipse.swt.win32.win32.x86_64</artifactId>
+				<version>${org.eclipse.swt.win32.win32.x86_64.version}</version>
+			</dependency>
+
 			<!-- Google Cloud Storage - https://github.com/googleapis/google-cloud-java -->
 			<dependency>
 				<groupId>com.google.cloud</groupId>
@@ -3170,6 +3451,18 @@
 				<groupId>org.apache.jackrabbit</groupId>
 				<artifactId>jackrabbit-webdav</artifactId>
 				<version>${jackrabbit-webdav.version}</version>
+				<exclusions>
+					<exclusion>
+						<!--
+						Conflicts with commons-logging:commons-logging.
+						If you depend on jackrabbit-webdav, add either
+						commons-logging or jcl-over-slfj to your deps.
+						See: http://www.slf4j.org/legacy.html#jcl-over-slf4j
+						-->
+						<groupId>org.slf4j</groupId>
+						<artifactId>jcl-over-slf4j</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<!-- Jackson - https://github.com/FasterXML/jackson -->
@@ -3237,11 +3530,6 @@
 			</dependency>
 			<dependency>
 				<groupId>org.eclipse.jetty</groupId>
-				<artifactId>jetty-ant</artifactId>
-				<version>${jetty-ant.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-client</artifactId>
 				<version>${jetty-client.version}</version>
 			</dependency>
@@ -3292,16 +3580,6 @@
 			</dependency>
 			<dependency>
 				<groupId>org.eclipse.jetty</groupId>
-				<artifactId>jetty-jspc-maven-plugin</artifactId>
-				<version>${jetty-jspc-maven-plugin.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.eclipse.jetty</groupId>
-				<artifactId>jetty-maven-plugin</artifactId>
-				<version>${jetty-maven-plugin.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-nosql</artifactId>
 				<version>${jetty-nosql.version}</version>
 			</dependency>
@@ -3319,11 +3597,6 @@
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-rewrite</artifactId>
 				<version>${jetty-rewrite.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.eclipse.jetty</groupId>
-				<artifactId>jetty-runner</artifactId>
-				<version>${jetty-runner.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.eclipse.jetty</groupId>
@@ -3430,7 +3703,7 @@
 
 			<!-- JGraphX - https://github.com/jgraph/jgraphx -->
 			<dependency>
-				<groupId>org.tinyjee.jgraphx</groupId>
+				<groupId>com.github.vlsi.mxgraph</groupId>
 				<artifactId>jgraphx</artifactId>
 				<version>${jgraphx.version}</version>
 			</dependency>
@@ -3499,6 +3772,13 @@
 				<version>${jsch.version}</version>
 			</dependency>
 
+			<!-- Jython - https://jython.org/ -->
+			<dependency>
+				<groupId>org.python</groupId>
+				<artifactId>jython-slim</artifactId>
+				<version>${jython-slim.version}</version>
+			</dependency>
+
 			<!-- JZlib - http://www.jcraft.com/jzlib/ -->
 			<dependency>
 				<groupId>com.jcraft</groupId>
@@ -3509,13 +3789,48 @@
 			<!-- Kotlin - https://kotlinlang.org/ -->
 			<dependency>
 				<groupId>org.jetbrains.kotlin</groupId>
-				<artifactId>kotlin-stdlib-jdk8</artifactId>
-				<version>${kotlin-stdlib.version}</version>
+				<artifactId>kotlin-compiler-embeddable</artifactId>
+				<version>${kotlin-compiler-embeddable.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jetbrains.kotlin</groupId>
+				<artifactId>kotlin-daemon-embeddable</artifactId>
+				<version>${kotlin-daemon-embeddable.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jetbrains.kotlin</groupId>
 				<artifactId>kotlin-reflect</artifactId>
 				<version>${kotlin-reflect.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jetbrains.kotlin</groupId>
+				<artifactId>kotlin-script-runtime</artifactId>
+				<version>${kotlin-script-runtime.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jetbrains.kotlin</groupId>
+				<artifactId>kotlin-script-util</artifactId>
+				<version>${kotlin-script-util.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jetbrains.kotlin</groupId>
+				<artifactId>kotlin-scripting-common</artifactId>
+				<version>${kotlin-scripting-common.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jetbrains.kotlin</groupId>
+				<artifactId>kotlin-scripting-compiler-embeddable</artifactId>
+				<version>${kotlin-scripting-compiler-embeddable.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jetbrains.kotlin</groupId>
+				<artifactId>kotlin-scripting-jvm</artifactId>
+				<version>${kotlin-scripting-jvm.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jetbrains.kotlin</groupId>
+				<artifactId>kotlin-stdlib-jdk8</artifactId>
+				<version>${kotlin-stdlib.version}</version>
 			</dependency>
 
 			<!-- Logback - http://logback.qos.ch/ -->
@@ -3542,6 +3857,16 @@
 				<groupId>org.mapdb</groupId>
 				<artifactId>mapdb</artifactId>
 				<version>${mapdb.version}</version>
+				<exclusions>
+					<exclusion>
+						<!--
+						Conflicts with org.lz4:lz4-java.
+						You may need to add it to your deps.
+						-->
+						<groupId>net.jpountz.lz4</groupId>
+						<artifactId>lz4</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<!-- MigLayout - http://www.miglayout.com/ -->
@@ -3591,7 +3916,7 @@
 
 			<!-- PostgreSQL JDBC Driver - https://jdbc.postgresql.org/ -->
 			<dependency>
-				<groupId>postgresql</groupId>
+				<groupId>org.postgresql</groupId>
 				<artifactId>postgresql</artifactId>
 				<version>${postgresql.version}</version>
 			</dependency>
@@ -3644,6 +3969,11 @@
 				<artifactId>slf4j-simple</artifactId>
 				<version>${slf4j-simple.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>jcl-over-slf4j</artifactId>
+				<version>${jcl-over-slf4j.version}</version>
+			</dependency>
 
 			<!-- SnakeYAML - https://bitbucket.org/asomov/snakeyaml -->
 			<dependency>
@@ -3657,6 +3987,13 @@
 				<groupId>org.snakeyaml</groupId>
 				<artifactId>snakeyaml-engine</artifactId>
 				<version>${snakeyaml-engine.version}</version>
+			</dependency>
+
+			<!-- Spring - https://spring.io/ -->
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-aop</artifactId>
+				<version>${spring-aop.version}</version>
 			</dependency>
 
 			<!-- TensorFlow - https://www.tensorflow.org/ -->
@@ -3702,6 +4039,11 @@
 					<exclusion>
 						<groupId>com.github.fommil.netlib</groupId>
 						<artifactId>all</artifactId>
+					</exclusion>
+					<exclusion>
+						<!-- Conflicts with com.github.vbmacher:java-cup -->
+						<groupId>com.github.vbmacher</groupId>
+						<artifactId>java-cup-runtime</artifactId>
 					</exclusion>
 					<exclusion>
 						<groupId>com.googlecode.netlib-java</groupId>
@@ -3798,6 +4140,7 @@
 				<metakit.version>LATEST</metakit.version>
 				<ome-poi.version>LATEST</ome-poi.version>
 				<ome-xml.version>LATEST</ome-xml.version>
+				<jxrlib-all.version>LATEST</jxrlib-all.version>
 				<bio-formats.version>LATEST</bio-formats.version>
 				<omero-blitz.version>LATEST</omero-blitz.version>
 				<omero-common.version>LATEST</omero-common.version>
@@ -3833,7 +4176,6 @@
 			</activation>
 			<properties>
 				<batch-processor.version>LATEST</batch-processor.version>
-				<jython-shaded.version>LATEST</jython-shaded.version>
 				<minimaven.version>LATEST</minimaven.version>
 				<native-lib-loader.version>LATEST</native-lib-loader.version>
 				<parsington.version>LATEST</parsington.version>
@@ -3916,7 +4258,6 @@
 				<imagej-ui-awt.version>LATEST</imagej-ui-awt.version>
 				<imagej-ui-swing.version>LATEST</imagej-ui-swing.version>
 				<imagej-updater.version>LATEST</imagej-updater.version>
-				<imagej-usage.version>LATEST</imagej-usage.version>
 				<op-finder.version>LATEST</op-finder.version>
 			</properties>
 			<repositories>
