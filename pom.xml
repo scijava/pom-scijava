@@ -315,13 +315,13 @@
 		<native-lib-loader.version>2.3.4</native-lib-loader.version>
 
 		<!-- Parsington - https://github.com/scijava/parsington -->
-		<parsington.version>1.0.5</parsington.version>
+		<parsington.version>2.0.0</parsington.version>
 
 		<!-- SciJava Cache - https://github.com/scijava/scijava-cache -->
 		<scijava-cache.version>0.1.2</scijava-cache.version>
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.82.0</scijava-common.version>
+		<scijava-common.version>2.83.1</scijava-common.version>
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
 		<scijava-config.version>2.0.2</scijava-config.version>
@@ -413,14 +413,14 @@
 		<imagej.version>2.0.0-rc-72</imagej.version>
 
 		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
-		<imagej1.version>1.52t</imagej1.version>
+		<imagej1.version>1.53a</imagej1.version>
 		<ij.version>${imagej1.version}</ij.version>
 
 		<!-- ImageJ 1.x patcher - https://github.com/imagej/ij1-patcher -->
 		<ij1-patcher.version>1.0.1</ij1-patcher.version>
 
 		<!-- ImageJ Common - https://github.com/imagej/imagej-common -->
-		<imagej-common.version>0.31.0</imagej-common.version>
+		<imagej-common.version>0.33.0</imagej-common.version>
 
 		<!-- ImageJ Deprecated - https://github.com/imagej/imagej-deprecated -->
 		<imagej-deprecated.version>0.1.4</imagej-deprecated.version>
@@ -429,7 +429,7 @@
 		<imagej-launcher.version>5.0.3</imagej-launcher.version>
 
 		<!-- ImageJ Legacy - https://github.com/imagej/imagej-legacy -->
-		<imagej-legacy.version>0.37.2</imagej-legacy.version>
+		<imagej-legacy.version>0.37.3</imagej-legacy.version>
 
 		<!-- ImageJ MATLAB - https://github.com/imagej/imagej-matlab -->
 		<imagej-matlab.version>0.7.4</imagej-matlab.version>
@@ -453,7 +453,7 @@
 		<imagej-opencv.version>0.1.0</imagej-opencv.version>
 
 		<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
-		<imagej-ops.version>0.45.2</imagej-ops.version>
+		<imagej-ops.version>0.45.4</imagej-ops.version>
 
 		<!-- ImageJ Plugins: Batch - https://github.com/imagej/imagej-plugins-batch -->
 		<imagej-plugins-batch.version>0.1.1</imagej-plugins-batch.version>
@@ -515,7 +515,7 @@
 		<imglib2-realtransform.version>3.0.0</imglib2-realtransform.version>
 
 		<!-- ImgLib2 ROI - https://github.com/imglib/imglib2-roi -->
-		<imglib2-roi.version>0.10.0</imglib2-roi.version>
+		<imglib2-roi.version>0.10.2</imglib2-roi.version>
 
 		<!-- ImgLib2 Scripting - https://github.com/imglib/imglib2-script -->
 		<imglib2-script.version>0.2.4</imglib2-script.version>
@@ -650,7 +650,7 @@
 		<TopoJ_.version>${TopoJ.version}</TopoJ_.version>
 		<TrackMate.version>6.0.0</TrackMate.version>
 		<TrackMate_.version>${TrackMate.version}</TrackMate_.version>
-		<Trainable_Segmentation.version>3.2.29</Trainable_Segmentation.version>
+		<Trainable_Segmentation.version>3.2.34</Trainable_Segmentation.version>
 		<TrakEM2_Archipelago.version>2.0.3</TrakEM2_Archipelago.version>
 		<VIB-lib.version>2.2.0</VIB-lib.version>
 		<VIB.version>3.0.3</VIB.version>
@@ -690,7 +690,7 @@
 		<jitk-tps.version>3.0.1</jitk-tps.version>
 
 		<!-- BigWarp - https://github.com/saalfeldlab/bigwarp -->
-		<bigwarp.version>5.1.0</bigwarp.version>
+		<bigwarp.version>6.0.0</bigwarp.version>
 		<bigwarp_fiji.version>${bigwarp.version}</bigwarp_fiji.version>
 
 		<!-- MPI-CBG - https://github.com/axtimwalde/mpicbg -->
@@ -705,11 +705,11 @@
 
 		<!-- BigDataViewer - https://github.com/bigdataviewer -->
 
-		<bigdataviewer-core.version>9.0.4</bigdataviewer-core.version>
-		<bigdataviewer-server.version>2.1.0</bigdataviewer-server.version>
-		<bigdataviewer-vistools.version>1.0.0-beta-19</bigdataviewer-vistools.version>
-		<bigdataviewer_fiji.version>6.1.0</bigdataviewer_fiji.version>
-		<spim_data.version>2.2.3</spim_data.version>
+		<bigdataviewer-core.version>9.0.5</bigdataviewer-core.version>
+		<bigdataviewer-server.version>3.0.0</bigdataviewer-server.version>
+		<bigdataviewer-vistools.version>1.0.0-beta-20</bigdataviewer-vistools.version>
+		<bigdataviewer_fiji.version>6.2.0</bigdataviewer_fiji.version>
+		<spim_data.version>2.2.4</spim_data.version>
 
 		<!-- TrakEM2 - https://github.com/trakem2 -->
 
@@ -758,7 +758,7 @@
 		<ome-poi.version>5.3.3</ome-poi.version>
 
 		<!-- OME Model - https://github.com/ome/ome-model -->
-		<ome-xml.version>6.0.1</ome-xml.version>
+		<ome-xml.version>6.1.0</ome-xml.version>
 
 		<!-- Glencoe Software jxrlib - https://github.com/glencoesoftware/jxrlib -->
 		<jxrlib.version>0.2.4</jxrlib.version>
@@ -772,28 +772,28 @@
 		<formats-gpl.version>${bio-formats.version}</formats-gpl.version>
 
 		<!-- OMERO Blitz - https://github.com/ome/omero-blitz -->
-		<omero-blitz.version>5.5.5</omero-blitz.version>
+		<omero-blitz.version>5.5.6</omero-blitz.version>
 
 		<!-- OMERO Common - https://github.com/ome/omero-common -->
-		<omero-common.version>5.5.4</omero-common.version>
+		<omero-common.version>5.5.5</omero-common.version>
 
 		<!-- OMERO DSL Plugin - https://github.com/ome/omero-dsl-plugin -->
 		<omero-dsl-plugin.version>5.5.0</omero-dsl-plugin.version>
 
 		<!-- OMERO Gateway - https://github.com/ome/omero-gateway-java -->
-		<omero-gateway.version>5.6.2</omero-gateway.version>
+		<omero-gateway.version>5.6.3</omero-gateway.version>
 
 		<!-- OMERO Model - https://github.com/ome/omero-model -->
-		<omero-model.version>5.5.4</omero-model.version>
+		<omero-model.version>5.6.0</omero-model.version>
 
 		<!-- OMERO Renderer - https://github.com/ome/omero-renderer -->
-		<omero-renderer.version>5.5.4</omero-renderer.version>
+		<omero-renderer.version>5.5.5</omero-renderer.version>
 
 		<!-- OMERO ROMIO - https://github.com/ome/omero-romio -->
-		<omero-romio.version>5.5.4</omero-romio.version>
+		<omero-romio.version>5.6.0</omero-romio.version>
 
 		<!-- OMERO Server - https://github.com/ome/omero-server -->
-		<omero-server.version>5.5.5</omero-server.version>
+		<omero-server.version>5.5.6</omero-server.version>
 
 		<!-- Other SciJava components -->
 
@@ -801,10 +801,10 @@
 		<MorphoLibJ.version>1.4.1</MorphoLibJ.version>
 
 		<!-- BigStitcher - https://github.com/PreibischLab/BigStitcher -->
-		<BigStitcher.version>0.3.6</BigStitcher.version>
+		<BigStitcher.version>0.5.5</BigStitcher.version>
 
 		<!-- multiview-reconstruction - https://github.com/PreibischLab/multiview-reconstruction -->
-		<multiview-reconstruction.version>0.4.1</multiview-reconstruction.version>
+		<multiview-reconstruction.version>0.6.5</multiview-reconstruction.version>
 
 		<!-- multiview-simulation - https://github.com/PreibischLab/multiview-simulation -->
 		<multiview-simulation.version>0.2.0</multiview-simulation.version>
@@ -827,7 +827,7 @@
 		<aws-java-sdk-s3.version>1.11.729</aws-java-sdk-s3.version>
 
 		<!-- Apache Groovy - https://groovy-lang.org/ -->
-		<groovy.version>3.0.3</groovy.version>
+		<groovy.version>3.0.4</groovy.version>
 		<groovy-ant.version>${groovy.version}</groovy-ant.version>
 		<groovy-astbuilder.version>${groovy.version}</groovy-astbuilder.version>
 		<groovy-bsf.version>${groovy.version}</groovy-bsf.version>
@@ -869,11 +869,11 @@
 		<spark.version>2.3.1</spark.version>
 
 		<!-- Apache HTTPComponents - https://hc.apache.org/ -->
-		<httpclient.version>4.5.11</httpclient.version>
+		<httpclient.version>4.5.12</httpclient.version>
 		<httpcore.version>4.4.13</httpcore.version>
 
 		<!-- Batik - https://xmlgraphics.apache.org/batik/ -->
-		<batik.version>1.12</batik.version>
+		<batik.version>1.13</batik.version>
 		<batik-anim.version>${batik.version}</batik-anim.version>
 		<batik-awt-util.version>${batik.version}</batik-awt-util.version>
 		<batik-bridge.version>${batik.version}</batik-bridge.version>
@@ -923,7 +923,7 @@
 
 		<!-- Commons Lang - https://commons.apache.org/proper/commons-lang/ -->
 		<commons-lang.version>2.6</commons-lang.version>
-		<commons-lang3.version>3.9</commons-lang3.version>
+		<commons-lang3.version>3.10</commons-lang3.version>
 
 		<!-- Commons Logging - https://commons.apache.org/proper/commons-logging/ -->
 		<commons-logging.version>1.2</commons-logging.version>
@@ -972,10 +972,10 @@
 		<itextpdf.version>5.5.13.1</itextpdf.version>
 
 		<!-- Jackrabbit WebDAV - https://jackrabbit.apache.org/jcr/components/jackrabbit-webdav-library.html -->
-		<jackrabbit-webdav.version>2.21.0</jackrabbit-webdav.version>
+		<jackrabbit-webdav.version>2.21.1</jackrabbit-webdav.version>
 
 		<!-- Jackson - https://github.com/FasterXML/jackson -->
-		<jackson-databind.version>2.6.7.3</jackson-databind.version>
+		<jackson-databind.version>2.11.0</jackson-databind.version>
 
 		<!-- Java Advanced Imaging - https://java.net/projects/jai-core -->
 		<jai.version>1.1.3</jai.version>
@@ -992,7 +992,7 @@
 		<vecmath.version>${java3d.version}</vecmath.version>
 
 		<!-- Javassist - https://www.javassist.org/ -->
-		<javassist.version>3.26.0-GA</javassist.version>
+		<javassist.version>3.27.0-GA</javassist.version>
 
 		<!-- JDOM - http://www.jdom.org/ -->
 		<jdom2.version>2.0.6</jdom2.version>
@@ -1081,7 +1081,7 @@
 		<jogl-all-main.version>${jogl.version}</jogl-all-main.version>
 
 		<!-- JOML - https://joml-ci.github.io/JOML/ -->
-		<joml.version>1.9.22</joml.version>
+		<joml.version>1.9.24</joml.version>
 
 		<!-- JPedal - http://jpedal.org/ (defunct) -->
 		<jpedal.version>2.80b11</jpedal.version>
@@ -1150,9 +1150,9 @@
 		<postgresql.version>42.2.12</postgresql.version>
 
 		<!-- RSyntaxTextArea - https://bobbylight.github.io/RSyntaxTextArea/ -->
-		<rsyntaxtextarea.version>3.0.8</rsyntaxtextarea.version>
-		<autocomplete.version>3.0.5</autocomplete.version>
-		<languagesupport.version>3.0.2</languagesupport.version>
+		<rsyntaxtextarea.version>3.1.1</rsyntaxtextarea.version>
+		<autocomplete.version>3.1.0</autocomplete.version>
+		<languagesupport.version>3.1.0</languagesupport.version>
 
 		<!-- SLF4J - http://slf4j.org/ -->
 		<slf4j.version>1.7.30</slf4j.version>
@@ -1165,7 +1165,7 @@
 		<jcl-over-slf4j.version>${slf4j.version}</jcl-over-slf4j.version>
 
 		<!-- SnakeYAML - https://bitbucket.org/asomov/snakeyaml -->
-		<snakeyaml.version>1.25</snakeyaml.version>
+		<snakeyaml.version>1.26</snakeyaml.version>
 
 		<!-- SnakeYAML Engine - https://bitbucket.org/asomov/snakeyaml-engine -->
 		<snakeyaml-engine.version>2.1</snakeyaml-engine.version>
