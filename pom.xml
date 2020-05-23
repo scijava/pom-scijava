@@ -724,11 +724,13 @@
 
 		<imglib2-label-multisets.version>0.9.0</imglib2-label-multisets.version>
 		<n5.version>2.2.0</n5.version>
-		<n5-imglib2.version>3.5.0</n5-imglib2.version>
-		<n5-hdf5.version>1.0.4</n5-hdf5.version>
 		<n5-aws-s3.version>3.1.1</n5-aws-s3.version>
+		<n5-blosc.version>1.0.1</n5-blosc.version>
 		<n5-google-cloud.version>3.2.1</n5-google-cloud.version>
+		<n5-hdf5.version>1.0.4</n5-hdf5.version>
+		<n5-imglib2.version>3.5.0</n5-imglib2.version>
 		<n5-viewer_fiji.version>2.2.0</n5-viewer_fiji.version>
+		<n5-zarr.version>0.0.3-beta</n5-zarr.version>
 
 		<!--
 		BEGIN MANUALLY MANAGED VERSIONS
@@ -2402,18 +2404,13 @@
 			</dependency>
 			<dependency>
 				<groupId>org.janelia.saalfeldlab</groupId>
-				<artifactId>n5-imglib2</artifactId>
-				<version>${n5-imglib2.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.janelia.saalfeldlab</groupId>
-				<artifactId>n5-hdf5</artifactId>
-				<version>${n5-hdf5.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.janelia.saalfeldlab</groupId>
 				<artifactId>n5-aws-s3</artifactId>
 				<version>${n5-aws-s3.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.janelia.saalfeldlab</groupId>
+				<artifactId>n5-blosc</artifactId>
+				<version>${n5-blosc.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.janelia.saalfeldlab</groupId>
@@ -2422,8 +2419,23 @@
 			</dependency>
 			<dependency>
 				<groupId>org.janelia.saalfeldlab</groupId>
+				<artifactId>n5-hdf5</artifactId>
+				<version>${n5-hdf5.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.janelia.saalfeldlab</groupId>
+				<artifactId>n5-imglib2</artifactId>
+				<version>${n5-imglib2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.janelia.saalfeldlab</groupId>
 				<artifactId>n5-viewer_fiji</artifactId>
 				<version>${n5-viewer_fiji.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.janelia.saalfeldlab</groupId>
+				<artifactId>n5-zarr</artifactId>
+				<version>${n5-zarr.version}</version>
 			</dependency>
 
 			<!-- BoneJ - http://bonej.org/ -->
