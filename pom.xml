@@ -450,7 +450,7 @@
 		<imagej-omero-legacy.version>0.1.2</imagej-omero-legacy.version>
 
 		<!-- ImageJ OpenCV - https://github.com/imagej/imagej-opencv -->
-		<imagej-opencv.version>0.1.0</imagej-opencv.version>
+		<imagej-opencv.version>0.1.1</imagej-opencv.version>
 
 		<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
 		<imagej-ops.version>0.45.4</imagej-ops.version>
@@ -477,7 +477,7 @@
 		<imagej-server.version>0.1.2</imagej-server.version>
 
 		<!-- ImageJ TensorFlow - https://github.com/imagej/imagej-tensorflow -->
-		<imagej-tensorflow.version>1.0.4</imagej-tensorflow.version>
+		<imagej-tensorflow.version>1.1.5</imagej-tensorflow.version>
 
 		<!-- ImageJ UI: AWT - https://github.com/imagej/imagej-ui-awt -->
 		<imagej-ui-awt.version>0.3.1</imagej-ui-awt.version>
@@ -494,7 +494,7 @@
 		<!-- ImgLib2 - https://github.com/imglib -->
 
 		<!-- ImgLib2 - https://github.com/imglib/imglib2 -->
-		<imglib2.version>5.9.0</imglib2.version>
+		<imglib2.version>5.9.2</imglib2.version>
 
 		<!-- ImgLib2 Algorithms - https://github.com/imglib/imglib2-algorithm -->
 		<imglib2-algorithm.version>0.11.2</imglib2-algorithm.version>
@@ -529,16 +529,16 @@
 		<!-- SCIFIO - https://github.com/scifio -->
 
 		<!-- SCIFIO - https://github.com/scifio/scifio -->
-		<scifio.version>0.38.2</scifio.version>
+		<scifio.version>0.39.1</scifio.version>
 
 		<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
-		<scifio-bf-compat.version>4.0.0</scifio-bf-compat.version>
+		<scifio-bf-compat.version>4.0.2</scifio-bf-compat.version>
 
 		<!-- SCIFIO Command Line Tools - https://github.com/scifio/scifio-cli -->
-		<scifio-cli.version>0.6.0</scifio-cli.version>
+		<scifio-cli.version>0.6.1</scifio-cli.version>
 
 		<!-- SCIFIO HDF5 - https://github.com/scifio/scifio-hdf5 -->
-		<scifio-hdf5.version>0.2.0</scifio-hdf5.version>
+		<scifio-hdf5.version>0.2.1</scifio-hdf5.version>
 
 		<!-- SCIFIO JAI Image I/O - https://github.com/scifio/scifio-jai-imageio -->
 		<scifio-jai-imageio.version>1.1.1</scifio-jai-imageio.version>
@@ -547,7 +547,7 @@
 		<scifio-lifesci.version>0.9.0</scifio-lifesci.version>
 
 		<!-- SCIFIO-OME-XML - https://github.com/scifio/scifio-ome-xml -->
-		<scifio-ome-xml.version>0.16.0</scifio-ome-xml.version>
+		<scifio-ome-xml.version>0.16.1</scifio-ome-xml.version>
 
 		<!-- Fiji - https://github.com/fiji -->
 
@@ -576,7 +576,7 @@
 		<Colour_Deconvolution.version>3.0.3</Colour_Deconvolution.version>
 		<CorrectBleach.version>2.0.3</CorrectBleach.version>
 		<CorrectBleach_.version>${CorrectBleach.version}</CorrectBleach_.version>
-		<Correct_3D_Drift.version>1.0.3</Correct_3D_Drift.version>
+		<Correct_3D_Drift.version>1.0.5</Correct_3D_Drift.version>
 		<Descriptor_based_registration.version>2.1.4</Descriptor_based_registration.version>
 		<Dichromacy.version>2.1.2</Dichromacy.version>
 		<Dichromacy_.version>${Dichromacy.version}</Dichromacy_.version>
@@ -617,7 +617,6 @@
 		<MTrack2_.version>${MTrack2.version}</MTrack2_.version>
 		<M_I_P.version>2.0.1</M_I_P.version>
 		<Manual_Tracking.version>2.1.1</Manual_Tracking.version>
-		<MorphoLibJ_.version>${MorphoLibJ.version}</MorphoLibJ_.version>
 		<Multi_Kymograph.version>3.0.1</Multi_Kymograph.version>
 		<PIV_analyser.version>1.1.2</PIV_analyser.version>
 		<QuickPALM.version>1.1.2</QuickPALM.version>
@@ -800,7 +799,8 @@
 		<!-- Other SciJava components -->
 
 		<!-- MorphoLibJ - https://github.com/ijpb/MorphoLibJ -->
-		<MorphoLibJ.version>1.4.1</MorphoLibJ.version>
+		<MorphoLibJ.version>1.4.2.1</MorphoLibJ.version>
+		<MorphoLibJ_.version>${MorphoLibJ.version}</MorphoLibJ_.version>
 
 		<!-- BigStitcher - https://github.com/PreibischLab/BigStitcher -->
 		<BigStitcher.version>0.5.5</BigStitcher.version>
@@ -1073,7 +1073,7 @@
 		<jna.version>4.5.2</jna.version>
 
 		<!-- Joda-Time - https://www.joda.org/joda-time/ -->
-		<joda-time.version>2.10.5</joda-time.version>
+		<joda-time.version>2.10.6</joda-time.version>
 
 		<!-- JOGL - https://jogamp.org/jogl/ -->
 		<jogl.version>2.3.2</jogl.version>
@@ -1146,7 +1146,7 @@
 		<opencsv.version>3.9</opencsv.version>
 
 		<!-- picocli - https://picocli.info/ -->
-		<picocli.version>4.2.0</picocli.version>
+		<picocli.version>4.3.2</picocli.version>
 
 		<!-- PostgreSQL JDBC Driver - https://jdbc.postgresql.org/ -->
 		<postgresql.version>42.2.12</postgresql.version>
