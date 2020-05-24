@@ -453,7 +453,7 @@
 		<imagej-opencv.version>0.1.1</imagej-opencv.version>
 
 		<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
-		<imagej-ops.version>0.45.4</imagej-ops.version>
+		<imagej-ops.version>0.45.5</imagej-ops.version>
 
 		<!-- ImageJ Plugins: Batch - https://github.com/imagej/imagej-plugins-batch -->
 		<imagej-plugins-batch.version>0.1.1</imagej-plugins-batch.version>
