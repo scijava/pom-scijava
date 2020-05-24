@@ -1140,7 +1140,7 @@
 		<mockito-core.version>${mockito.version}</mockito-core.version>
 
 		<!-- oj! Algorithms - https://github.com/optimatika/ojAlgo -->
-		<ojalgo.version>48.1.0</ojalgo.version>
+		<ojalgo.version>45.1.1</ojalgo.version>
 
 		<!-- OpenCSV - http://opencsv.sourceforge.net/ -->
 		<opencsv.version>3.9</opencsv.version>
