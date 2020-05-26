@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>999-mega-melt</version>
+		<relativePath />
+	</parent>
+	<artifactId>mega-melt</artifactId>
+	<version>0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>Mega Melt</name>
+	<description>The whole BOM in one project</description>
+	<url>https://scijava.org/</url>
+	<inceptionYear>now</inceptionYear>
+	<organization>
+		<name>SciJava</name>
+		<url>https://scijava.org/</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>CC0 1.0 Universal License</name>
+			<url>https://creativecommons.org/publicdomain/zero/1.0/</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<id>ctrueden</id>
+			<name>Curtis Rueden</name>
+		</developer>
+	</developers>
+	<contributors>
+		<contributor>
+			<name>None</name>
+		</contributor>
+	</contributors>
+	<mailingLists>
+		<mailingList>
+			<name>None</name>
+		</mailingList>
+	</mailingLists>
+	<scm>
+		<connection>scm:git:git://github.com/scijava/pom-scijava</connection>
+		<developerConnection>scm:git:git@github.com:scijava/pom-scijava</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/scijava/pom-scijava</url>
+	</scm>
+	<issueManagement>
+		<system>None</system>
+	</issueManagement>
+	<ciManagement>
+		<system>None</system>
+	</ciManagement>
+	<properties>
+		<license.licenseName>N/A</license.licenseName>
+		<license.copyrightOwners>N/A</license.copyrightOwners>
+	</properties>
+	<repositories>
+		<repository>
+			<id>scijava.public</id>
+			<url>https://maven.scijava.org/content/groups/public</url>
+		</repository>
+	</repositories>
+</project>
