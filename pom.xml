@@ -693,7 +693,7 @@
 		<bigwarp_fiji.version>${bigwarp.version}</bigwarp_fiji.version>
 
 		<!-- MPI-CBG - https://github.com/axtimwalde/mpicbg -->
-		<mpicbg.version>1.2.0</mpicbg.version>
+		<mpicbg.version>1.4.0</mpicbg.version>
 		<mpicbg_.version>${mpicbg.version}</mpicbg_.version>
 
 		<!-- TrakEM2 TPS - https://github.com/saalfeldlab/trakem2-tps -->
