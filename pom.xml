@@ -722,14 +722,14 @@
 		<!-- N5 - https://github.com/saalfeldlab/n5 -->
 
 		<imglib2-label-multisets.version>0.9.0</imglib2-label-multisets.version>
-		<n5.version>2.2.0</n5.version>
+		<n5.version>2.2.1</n5.version>
 		<n5-aws-s3.version>3.1.1</n5-aws-s3.version>
-		<n5-blosc.version>1.0.1</n5-blosc.version>
+		<n5-blosc.version>1.1.0</n5-blosc.version>
 		<n5-google-cloud.version>3.2.1</n5-google-cloud.version>
-		<n5-hdf5.version>1.0.4</n5-hdf5.version>
-		<n5-imglib2.version>3.5.0</n5-imglib2.version>
+		<n5-hdf5.version>1.1.0</n5-hdf5.version>
+		<n5-imglib2.version>3.5.1</n5-imglib2.version>
 		<n5-viewer_fiji.version>2.2.0</n5-viewer_fiji.version>
-		<n5-zarr.version>0.0.3-beta</n5-zarr.version>
+		<n5-zarr.version>0.0.4</n5-zarr.version>
 
 		<!--
 		BEGIN MANUALLY MANAGED VERSIONS
@@ -803,10 +803,10 @@
 		<MorphoLibJ_.version>${MorphoLibJ.version}</MorphoLibJ_.version>
 
 		<!-- BigStitcher - https://github.com/PreibischLab/BigStitcher -->
-		<BigStitcher.version>0.5.5</BigStitcher.version>
+		<BigStitcher.version>0.5.6</BigStitcher.version>
 
 		<!-- multiview-reconstruction - https://github.com/PreibischLab/multiview-reconstruction -->
-		<multiview-reconstruction.version>0.6.5</multiview-reconstruction.version>
+		<multiview-reconstruction.version>0.7.0</multiview-reconstruction.version>
 
 		<!-- multiview-simulation - https://github.com/PreibischLab/multiview-simulation -->
 		<multiview-simulation.version>0.2.0</multiview-simulation.version>
