@@ -330,7 +330,7 @@
 		<scijava-grab.version>0.1.0</scijava-grab.version>
 
 		<!-- SciJava I/O: HTTP - https://github.com/scijava/scijava-io-http -->
-		<scijava-io-http.version>0.2.0</scijava-io-http.version>
+		<scijava-io-http.version>0.2.1</scijava-io-http.version>
 
 		<!-- SciJava Java 3D Tools - https://github.com/scijava/scijava-java3d -->
 		<scijava-java3d.version>0.1.0</scijava-java3d.version>
