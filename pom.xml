@@ -618,6 +618,7 @@
 		<M_I_P.version>2.0.1</M_I_P.version>
 		<Manual_Tracking.version>2.1.1</Manual_Tracking.version>
 		<Multi_Kymograph.version>3.0.1</Multi_Kymograph.version>
+		<OMEVisual.version>2.0.0</OMEVisual.version>
 		<PIV_analyser.version>1.1.2</PIV_analyser.version>
 		<QuickPALM.version>1.1.2</QuickPALM.version>
 		<QuickPALM_.version>${QuickPALM.version}</QuickPALM_.version>
@@ -629,7 +630,7 @@
 		<Samples.version>2.0.2</Samples.version>
 		<Samples_.version>${Samples.version}</Samples_.version>
 		<Series_Labeler.version>2.0.1</Series_Labeler.version>
-		<Simple_Neurite_Tracer.version>3.1.6</Simple_Neurite_Tracer.version>
+		<Simple_Neurite_Tracer.version>3.1.7</Simple_Neurite_Tracer.version>
 		<Siox_Segmentation.version>1.0.5</Siox_Segmentation.version>
 		<Skeletonize3D.version>2.1.1</Skeletonize3D.version>
 		<Skeletonize3D_.version>${Skeletonize3D.version}</Skeletonize3D_.version>
@@ -678,9 +679,6 @@
 		<weave_jy2java.version>2.1.1</weave_jy2java.version>
 
 		<!-- External Fiji projects -->
-
-		<!-- OMEVisual - https://github.com/hadim/OMEVisual -->
-		<OMEVisual.version>1.1.2</OMEVisual.version>
 
 		<!-- Sholl Analysis - https://github.com/tferr/ASA -->
 		<Sholl_Analysis.version>4.0.1</Sholl_Analysis.version>
@@ -2052,6 +2050,11 @@
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
+				<artifactId>OMEVisual</artifactId>
+				<version>${OMEVisual.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
 				<artifactId>PIV_analyser</artifactId>
 				<version>${PIV_analyser.version}</version>
 			</dependency>
@@ -2272,13 +2275,6 @@
 			</dependency>
 
 			<!-- External Fiji projects -->
-
-			<!-- OMEVisual - https://github.com/hadim/OMEVisual -->
-			<dependency>
-				<groupId>sc.fiji</groupId>
-				<artifactId>OMEVisual</artifactId>
-				<version>${OMEVisual.version}</version>
-			</dependency>
 
 			<!-- Sholl Analysis - https://github.com/tferr/ASA -->
 			<dependency>
@@ -4419,6 +4415,7 @@
 				<M_I_P.version>LATEST</M_I_P.version>
 				<Manual_Tracking.version>LATEST</Manual_Tracking.version>
 				<Multi_Kymograph.version>LATEST</Multi_Kymograph.version>
+				<OMEVisual.version>LATEST</OMEVisual.version>
 				<PIV_analyser.version>LATEST</PIV_analyser.version>
 				<QuickPALM.version>LATEST</QuickPALM.version>
 				<RATS.version>LATEST</RATS.version>
@@ -4465,7 +4462,6 @@
 				<weave_jy2java.version>LATEST</weave_jy2java.version>
 
 				<!-- External Fiji projects -->
-				<OMEVisual.version>LATEST</OMEVisual.version>
 				<Sholl_Analysis.version>LATEST</Sholl_Analysis.version>
 				<jitk-tps.version>LATEST</jitk-tps.version>
 				<bigwarp.version>LATEST</bigwarp.version>
