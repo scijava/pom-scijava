@@ -998,7 +998,7 @@
 		<jdom2.version>2.0.6</jdom2.version>
 
 		<!-- Jetty - https://www.eclipse.org/jetty/ -->
-		<jetty.version>9.4.26.v20200521</jetty.version>
+		<jetty.version>9.4.29.v20200521</jetty.version>
 		<jetty-annotations.version>${jetty.version}</jetty-annotations.version>
 		<!--
 		NB: We do not manage jetty-ant. It depends on ant with old groupId (ant),
