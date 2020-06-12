@@ -1090,7 +1090,7 @@
 		<!-- JSch - http://www.jcraft.com/jsch/ -->
 		<jsch.version>0.1.55</jsch.version>
 
-		<!-- JUnit - https://junit.org/ -->
+		<!-- JUnit 4 - https://junit.org/junit4/ -->
 		<junit.version>4.13</junit.version>
 
 		<!-- Jython - https://jython.org/ -->
@@ -4081,7 +4081,7 @@
 
 			<!-- Test scope dependencies -->
 
-			<!-- JUnit - http://junit.org/ -->
+			<!-- JUnit 4 - https://junit.org/junit4/ -->
 			<dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
