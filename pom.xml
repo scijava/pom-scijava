@@ -1093,6 +1093,14 @@
 		<!-- JUnit 4 - https://junit.org/junit4/ -->
 		<junit.version>4.13</junit.version>
 
+		<!-- JUnit 5 - https://junit.org/junit5/ -->
+		<junit-jupiter.version>5.6.2</junit-jupiter.version>
+		<junit-jupiter-api.version>${junit-jupiter.version}</junit-jupiter-api.version>
+		<junit-jupiter-engine.version>${junit-jupiter.version}</junit-jupiter-engine.version>
+		<junit-jupiter-migrationsupport.version>${junit-jupiter.version}</junit-jupiter-migrationsupport.version>
+		<junit-jupiter-params.version>${junit-jupiter.version}</junit-jupiter-params.version>
+		<junit-vintage-engine.version>${junit-jupiter.version}</junit-vintage-engine.version>
+
 		<!-- Jython - https://jython.org/ -->
 		<jython.version>2.7.2</jython.version>
 		<jython-slim.version>${jython.version}</jython-slim.version>
@@ -4086,6 +4094,38 @@
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
 				<version>${junit.version}</version>
+				<scope>test</scope>
+			</dependency>
+
+			<!-- JUnit 5 - https://junit.org/junit5/ -->
+			<dependency>
+				<groupId>org.junit.jupiter</groupId>
+				<artifactId>junit-jupiter-api</artifactId>
+				<version>${junit-jupiter-api.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.junit.jupiter</groupId>
+				<artifactId>junit-jupiter-engine</artifactId>
+				<version>${junit-jupiter-engine.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.junit.jupiter</groupId>
+				<artifactId>junit-jupiter-migrationsupport</artifactId>
+				<version>${junit-jupiter-migrationsupport.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.junit.jupiter</groupId>
+				<artifactId>junit-jupiter-params</artifactId>
+				<version>${junit-jupiter-params.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.junit.vintage</groupId>
+				<artifactId>junit-vintage-engine</artifactId>
+				<version>${junit-vintage-engine.version}</version>
 				<scope>test</scope>
 			</dependency>
 
