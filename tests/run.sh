@@ -47,8 +47,8 @@ mvn -f "$megaMeltPOM" -U clean package > "$validationLog" || {
 }
 echo 'Done!'
 
-# Run mega-melt through the melting pot,
-# with all SciJava-affiliated groupIds.
+# Run mega-melt through the melting pot, with all SciJava-affiliated groupIds,
+# minus excluded artifacts (see ignoredArtifacts in generate-mega-melt.py).
 echo &&
 echo 'Executing melting pot...' &&
 curl -fsL "$meltingPotURL" > "$meltingPotScript" &&
@@ -69,6 +69,14 @@ chmod +x "$meltingPotScript" &&
   -i 'org.scijava:*' \
   -i 'sc.fiji:*' \
   -i 'sc.iview:*' \
+  -e 'graphics.scenery:scenery' \
+  -e 'org.janelia.saalfeldlab:n5-blosc' \
+  -e 'org.janelia.saalfeldlab:n5-zarr' \
+  -e 'org.scijava:j3dcore' \
+  -e 'org.scijava:j3dutils' \
+  -e 'org.scijava:jep' \
+  -e 'org.scijava:junit-benchmarks' \
+  -e 'org.scijava:vecmath'  \
   -f -v $@ || die 'Melting pot build failed!'
 
 echo
