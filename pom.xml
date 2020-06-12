@@ -903,6 +903,10 @@
 		<batik-xml.version>${batik.version}</batik-xml.version>
 		<xmlgraphics-commons.version>2.4</xmlgraphics-commons.version>
 
+		<!-- Blosc - https://blosc.org/ -->
+		<jblosc.version>1.0.1</jblosc.version>
+		<libblosc.version>1.18.1</libblosc.version>
+
 		<!-- CDI - http://cdi-spec.org/ -->
 		<cdi-api.version>1.2</cdi-api.version>
 
@@ -956,6 +960,7 @@
 		<org.eclipse.swt.win32.win32.x86_64.version>${eclipse-swt.version}</org.eclipse.swt.win32.win32.x86_64.version>
 
 		<!-- Google Cloud Storage - https://github.com/googleapis/google-cloud-java -->
+		<google-cloud-nio.version>0.120.0-alpha</google-cloud-nio.version>
 		<google-cloud-resourcemanager.version>0.117.2-alpha</google-cloud-resourcemanager.version>
 		<google-cloud-storage.version>1.108.0</google-cloud-storage.version>
 
@@ -3263,6 +3268,13 @@
 				<version>${xmlgraphics-commons.version}</version>
 			</dependency>
 
+			<!-- Blosc - https://blosc.org/ -->
+			<dependency>
+				<groupId>org.lasersonlab</groupId>
+				<artifactId>jblosc</artifactId>
+				<version>${jblosc.version}</version>
+			</dependency>
+
 			<!-- CDI - http://cdi-spec.org/ -->
 			<dependency>
 				<groupId>javax.enterprise</groupId>
@@ -3423,6 +3435,11 @@
 			</dependency>
 
 			<!-- Google Cloud Storage - https://github.com/googleapis/google-cloud-java -->
+			<dependency>
+				<groupId>com.google.cloud</groupId>
+				<artifactId>google-cloud-nio</artifactId>
+				<version>${google-cloud-nio.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>com.google.cloud</groupId>
 				<artifactId>google-cloud-resourcemanager</artifactId>
