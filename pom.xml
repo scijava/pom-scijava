@@ -338,6 +338,9 @@
 		<!-- SciJava SLF4J Logging - https://github.com/scijava/scijava-log-slf4j -->
 		<scijava-log-slf4j.version>1.0.5</scijava-log-slf4j.version>
 
+		<!-- SciJava Optional - https://github.com/scijava/scijava-optional -->
+		<scijava-optional.version>1.0.0</scijava-optional.version>
+
 		<!-- SciJava Plugins: Commands - https://github.com/scijava/scijava-plugins-commands -->
 		<scijava-plugins-commands.version>0.2.3</scijava-plugins-commands.version>
 
@@ -1296,6 +1299,13 @@
 				<groupId>org.scijava</groupId>
 				<artifactId>scijava-log-slf4j</artifactId>
 				<version>${scijava-log-slf4j.version}</version>
+			</dependency>
+
+			<!-- SciJava Optional - https://github.com/scijava/scijava-optional -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-optional</artifactId>
+				<version>${scijava-optional.version}</version>
 			</dependency>
 
 			<!-- SciJava Plugins: Commands - https://github.com/scijava/scijava-plugins-commands -->
@@ -4255,6 +4265,7 @@
 				<scijava-java3d.version>LATEST</scijava-java3d.version>
 				<scijava-jupyter-kernel.version>LATEST</scijava-jupyter-kernel.version>
 				<scijava-log-slf4j.version>LATEST</scijava-log-slf4j.version>
+				<scijava-optional.version>LATEST</scijava-optional.version>
 				<scijava-plugins-commands.version>LATEST</scijava-plugins-commands.version>
 				<scijava-plugins-io-table.version>LATEST</scijava-plugins-io-table.version>
 				<scijava-plugins-platforms.version>LATEST</scijava-plugins-platforms.version>
