@@ -942,6 +942,9 @@
 		
 		<!--  Eclipse Collections - https://www.eclipse.org/collections/ -->
 		<eclipse-collections.version>10.2.0</eclipse-collections.version>
+		<eclipse-collections-api.version>${eclipse-collections.version}</eclipse-collections-api.version>
+		<eclipse-collections-forkjoin.version>${eclipse-collections.version}</eclipse-collections-forkjoin.version>
+		<eclipse-collections-testutils.version>${eclipse-collections.version}</eclipse-collections-testutils.version>
 
 		<!-- Eclipse SWT - https://www.eclipse.org/swt/ -->
 		<eclipse-swt.version>4.3</eclipse-swt.version>
@@ -3359,15 +3362,24 @@
 
 			<!-- Eclipse Collections - https://www.eclipse.org/collections/ -->
 			<dependency>
-  				<groupId>org.eclipse.collections</groupId>
-  				<artifactId>eclipse-collections-api</artifactId>
-  				<version>${eclipse-collections.version}</version>
+				<groupId>org.eclipse.collections</groupId>
+				<artifactId>eclipse-collections</artifactId>
+				<version>${eclipse-collections.version}</version>
 			</dependency>
-
 			<dependency>
-  				<groupId>org.eclipse.collections</groupId>
-  				<artifactId>eclipse-collections</artifactId>
-  				<version>${eclipse-collections.version}</version>
+				<groupId>org.eclipse.collections</groupId>
+				<artifactId>eclipse-collections-api</artifactId>
+				<version>${eclipse-collections-api.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.collections</groupId>
+				<artifactId>eclipse-collections-forkjoin</artifactId>
+				<version>${eclipse-collections-forkjoin.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.collections</groupId>
+				<artifactId>eclipse-collections-testutils</artifactId>
+				<version>${eclipse-collections-testutils.version}</version>
 			</dependency>
 
 			<!-- Eclipse SWT - https://www.eclipse.org/swt/ -->
