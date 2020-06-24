@@ -939,6 +939,9 @@
 
 		<!-- Byte Code Generation Library - https://github.com/cglib/cglib -->
 		<cglib.version>3.3.0</cglib.version>
+		
+		<!--  Eclipse Collections - https://www.eclipse.org/collections/ -->
+		<eclipse-collections.version>10.2.0</eclipse-collections.version>
 
 		<!-- Eclipse SWT - https://www.eclipse.org/swt/ -->
 		<eclipse-swt.version>4.3</eclipse-swt.version>
@@ -3352,6 +3355,19 @@
 				<groupId>cglib</groupId>
 				<artifactId>cglib</artifactId>
 				<version>${cglib.version}</version>
+			</dependency>
+
+			<!-- Eclipse Collections - https://www.eclipse.org/collections/ -->
+			<dependency>
+  				<groupId>org.eclipse.collections</groupId>
+  				<artifactId>eclipse-collections-api</artifactId>
+  				<version>${eclipse-collections.version}</version>
+			</dependency>
+
+			<dependency>
+  				<groupId>org.eclipse.collections</groupId>
+  				<artifactId>eclipse-collections</artifactId>
+  				<version>${eclipse-collections.version}</version>
 			</dependency>
 
 			<!-- Eclipse SWT - https://www.eclipse.org/swt/ -->
