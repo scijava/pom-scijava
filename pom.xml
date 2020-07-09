@@ -1170,7 +1170,7 @@
 		<ojalgo.version>45.1.1</ojalgo.version>
 
 		<!-- OpenCSV - http://opencsv.sourceforge.net/ -->
-		<opencsv.version>3.9</opencsv.version>
+		<opencsv.version>5.2</opencsv.version>
 
 		<!-- picocli - https://picocli.info/ -->
 		<picocli.version>4.3.2</picocli.version>
