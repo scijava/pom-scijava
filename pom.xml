@@ -489,7 +489,7 @@
 		<imagej-ui-swing.version>0.23.2</imagej-ui-swing.version>
 
 		<!-- ImageJ Updater - https://github.com/imagej/imagej-updater -->
-		<imagej-updater.version>0.10.4</imagej-updater.version>
+		<imagej-updater.version>0.10.5</imagej-updater.version>
 
 		<!-- Op Finder - https://github.com/imagej/op-finder -->
 		<op-finder.version>0.1.4</op-finder.version>
