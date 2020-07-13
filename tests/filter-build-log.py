@@ -25,7 +25,7 @@ def print_filtered_log(log):
         atbeginning = False
         if parsingdups:
             if line.startswith('    '):
-                if line.index('/') >= 0:
+                if line.find('/') >= 0:
                     # Strip to containing package only.
                     line = line[:line.rindex('/')]
                 dups.append(line)
