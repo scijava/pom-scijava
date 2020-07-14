@@ -335,6 +335,9 @@
 		<!-- SciJava Java 3D Tools - https://github.com/scijava/scijava-java3d -->
 		<scijava-java3d.version>0.1.0</scijava-java3d.version>
 
+		<!-- SciJava Listeners - https://github.com/scijava/scijava-listeners -->
+		<scijava-listeners.version>1.0.0-beta-3</scijava-listeners.version>
+
 		<!-- SciJava SLF4J Logging - https://github.com/scijava/scijava-log-slf4j -->
 		<scijava-log-slf4j.version>1.0.5</scijava-log-slf4j.version>
 
@@ -1298,6 +1301,13 @@
 				<groupId>org.scijava</groupId>
 				<artifactId>scijava-java3d</artifactId>
 				<version>${scijava-java3d.version}</version>
+			</dependency>
+
+			<!-- SciJava Listeners - https://github.com/scijava/scijava-listeners -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-listeners</artifactId>
+				<version>${scijava-listeners.version}</version>
 			</dependency>
 
 			<!-- SciJava SLF4J Logging - https://github.com/scijava/scijava-log-slf4j -->
@@ -4292,6 +4302,7 @@
 				<scijava-io-http.version>LATEST</scijava-io-http.version>
 				<scijava-java3d.version>LATEST</scijava-java3d.version>
 				<scijava-jupyter-kernel.version>LATEST</scijava-jupyter-kernel.version>
+				<scijava-listeners.version>LATEST</scijava-listeners.version>
 				<scijava-log-slf4j.version>LATEST</scijava-log-slf4j.version>
 				<scijava-optional.version>LATEST</scijava-optional.version>
 				<scijava-plugins-commands.version>LATEST</scijava-plugins-commands.version>
