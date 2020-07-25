@@ -4,6 +4,8 @@ branches:
   only:
   - master
   - "/.*-[0-9]+\\..*/"
+before_install:
+  - sudo apt-get install -y libxml2-utils
 install: true
 script: ".travis/build.sh"
 cache:
