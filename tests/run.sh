@@ -6,6 +6,27 @@
 
 die () { echo "$*" >&2; exit 1; }
 
+# Wait for a launched background command to complete, emitting
+# an occasional message to avoid long periods without output.
+# Return the same exit code as the launched command.
+keep_alive() {
+	pid="$1"
+	if [ "$pid" = "" ]
+	then
+		echo "[ERROR] No PID given"
+		return
+	fi
+	i=0
+	while kill -0 "$pid" 2>/dev/null; do
+		i=$((i+1))
+		m=$((i/60))
+		s=$((i%60))
+		test $s -eq 0 && echo "[$m minutes elapsed]"
+		sleep 1
+	done
+	wait "$pid"
+}
+
 echo &&
 printf 'Generating mega-melt project... ' &&
 
@@ -106,7 +127,7 @@ done
 if [ "doMelt" ]
 then
   echo &&
-  (cd "$meltingPotDir" && sh melt.sh) || die 'Melting pot failed!'
+  (cd "$meltingPotDir" && sh melt.sh) & keep_alive $! || die 'Melting pot failed!'
 else
   echo &&
   echo 'Melting the pot... SKIPPED'
