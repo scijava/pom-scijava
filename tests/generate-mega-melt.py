@@ -23,6 +23,9 @@ depList = deps.getElementsByTagName('dependency')
 ignoredArtifacts = [
     # TEMP: Until scenerygraphics/scenery#314 is addressed.
     'scenery',
+    # TEMP: Until imagej-omero is updated for pom-scijava 29.
+    'imagej-omero',
+    'imagej-omero-legacy',
     # NB: The following artifacts have messy dependency trees.
     # Too many problems to test as part of the mega-melt.
     # See WARNING block in pom-scijava's pom.xml for details.
