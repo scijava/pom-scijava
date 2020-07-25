@@ -416,7 +416,7 @@
 		<!-- ImageJ - https://github.com/imagej -->
 
 		<!-- ImageJ - https://github.com/imagej/imagej -->
-		<imagej.version>2.0.0-rc-72</imagej.version>
+		<imagej.version>2.0.0</imagej.version>
 
 		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
 		<imagej1.version>1.52p</imagej1.version>
@@ -450,10 +450,10 @@
 		<imagej-notebook.version>0.7.1</imagej-notebook.version>
 
 		<!-- ImageJ-OMERO - https://github.com/imagej/imagej-omero -->
-		<imagej-omero.version>0.8.1</imagej-omero.version>
+		<imagej-omero.version>1.0.0-5.5</imagej-omero.version>
 
 		<!-- ImageJ-OMERO Legacy - https://github.com/imagej/imagej-omero-legacy -->
-		<imagej-omero-legacy.version>0.1.2</imagej-omero-legacy.version>
+		<imagej-omero-legacy.version>1.0.0-5.5</imagej-omero-legacy.version>
 
 		<!-- ImageJ OpenCV - https://github.com/imagej/imagej-opencv -->
 		<imagej-opencv.version>0.1.1</imagej-opencv.version>
@@ -480,7 +480,7 @@
 		<imagej-scripting.version>0.8.2</imagej-scripting.version>
 
 		<!-- ImageJ Server - https://github.com/imagej/imagej-server -->
-		<imagej-server.version>0.1.2</imagej-server.version>
+		<imagej-server.version>0.2.0</imagej-server.version>
 
 		<!-- ImageJ TensorFlow - https://github.com/imagej/imagej-tensorflow -->
 		<imagej-tensorflow.version>1.1.5</imagej-tensorflow.version>
@@ -558,7 +558,7 @@
 		<!-- Fiji - https://github.com/fiji -->
 
 		<!-- Fiji - https://github.com/fiji/fiji -->
-		<fiji.version>2.0.0-pre-11</fiji.version>
+		<fiji.version>2.0.0</fiji.version>
 
 		<!-- Standard Fiji projects -->
 
