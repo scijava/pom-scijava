@@ -24,6 +24,7 @@ validationErrorsLog="$megaMeltDir/validation-errors.log"
 megaMeltPOM="$megaMeltDir/pom.xml"
 meltingPotURL=https://raw.githubusercontent.com/scijava/scijava-scripts/master/melting-pot.sh
 meltingPotScript="$megaMeltDir/melting-pot.sh"
+meltingPotDir="$megaMeltDir/melting-pot"
 
 rm -rf "$megaMeltDir" && mkdir -p "$megaMeltDir" || die "Creation of $megaMeltDir failed!"
 mvn -f "$pom" versions:set -DnewVersion=999-mega-melt > "$versionSwapLog" &&
@@ -54,7 +55,7 @@ echo 'Executing melting pot...' &&
 curl -fsL "$meltingPotURL" > "$meltingPotScript" &&
 chmod +x "$meltingPotScript" &&
 "$meltingPotScript" "$megaMeltDir" \
-  -o "$megaMeltDir/melting-pot" \
+  -o "$meltingPotDir" \
   -i 'ca.mcgill:*' \
   -i 'graphics.scenery:*' \
   -i 'io.scif:*' \
