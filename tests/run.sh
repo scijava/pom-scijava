@@ -36,7 +36,7 @@ echo 'Done!'
 
 # Ensure the mega-melt dependency structure validates.
 # In particular, this runs our enforcer rules: the build
-# will fail if there are any snapshots dependencies, or
+# will fail if there are any snapshot dependencies, or
 # any duplicate classes across artifacts on the classpath.
 echo &&
 printf 'Validating mega-melt project... ' &&
