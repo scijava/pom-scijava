@@ -51,7 +51,7 @@ echo 'Done!'
 # Run mega-melt through the melting pot, with all SciJava-affiliated groupIds,
 # minus excluded artifacts (see ignoredArtifacts in generate-mega-melt.py).
 echo &&
-echo 'Executing melting pot...' &&
+echo 'Generating melting pot...' &&
 curl -fsL "$meltingPotURL" > "$meltingPotScript" &&
 chmod +x "$meltingPotScript" &&
 "$meltingPotScript" "$megaMeltDir" \
@@ -78,7 +78,40 @@ chmod +x "$meltingPotScript" &&
   -e 'org.scijava:jep' \
   -e 'org.scijava:junit-benchmarks' \
   -e 'org.scijava:vecmath'  \
-  -f -v $@ || die 'Melting pot build failed!'
+  -f -v -s $@ || die 'Melting pot build failed!'
 
+# HACK: Remove known-duplicate artifactIds from version property overrides.
+# The plan is for this step to become unnecessary once the melting pot has
+# been improved to include a strategy for dealing with components with same
+# artifactId but different groupIds. For now, we just prune these overrides.
+meltScript="$meltingPotDir/melt.sh"
+buildScript="$meltingPotDir/build.sh"
+buildScriptBackup="$buildScript.original"
+echo &&
+printf 'Adjusting melting pot build script... ' &&
+mv "$buildScript" "$buildScriptBackup" &&
+awk '!/-D(annotations|antlr|jocl|kryo|minlog|trove4j)\.version/' "$buildScriptBackup" > "$buildScript" ||
+  die 'Error adjusting melting pot build script!'
+echo 'Done!'
+
+# Run the melting pot now, unless -s flag was given.
+doMelt=t
+for arg in "$@"
+do
+  if [ "$arg" = '-s' ]
+  then
+    doMelt=
+  fi
+done
+if [ "doMelt" ]
+then
+  echo &&
+  (cd "$meltingPotDir" && sh melt.sh) || die 'Melting pot failed!'
+else
+  echo &&
+  echo 'Melting the pot... SKIPPED'
+fi
+
+# Complete!
 echo
 echo 'All checks succeeded! :-D'
