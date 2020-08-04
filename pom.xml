@@ -558,7 +558,7 @@
 		<!-- Fiji - https://github.com/fiji -->
 
 		<!-- Fiji - https://github.com/fiji/fiji -->
-		<fiji.version>2.1.0</fiji.version>
+		<fiji.version>2.1.1</fiji.version>
 
 		<!-- Standard Fiji projects -->
 
@@ -707,7 +707,7 @@
 
 		<!-- BigDataViewer - https://github.com/bigdataviewer -->
 
-		<bigdataviewer-core.version>9.0.5</bigdataviewer-core.version>
+		<bigdataviewer-core.version>9.0.6</bigdataviewer-core.version>
 		<bigdataviewer-server.version>3.0.0</bigdataviewer-server.version>
 		<bigdataviewer-vistools.version>1.0.0-beta-20</bigdataviewer-vistools.version>
 		<bigdataviewer_fiji.version>6.2.0</bigdataviewer_fiji.version>
