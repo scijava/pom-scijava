@@ -1138,6 +1138,8 @@
 		<kotlin-scripting-compiler-embeddable.version>${kotlin.version}</kotlin-scripting-compiler-embeddable.version>
 		<kotlin-scripting-jvm.version>${kotlin.version}</kotlin-scripting-jvm.version>
 		<kotlin-stdlib.version>${kotlin.version}</kotlin-stdlib.version>
+		<kotlin-stdlib-common.version>${kotlin.version}</kotlin-stdlib-common.version>
+		<kotlin-stdlib-jdk8.version>${kotlin.version}</kotlin-stdlib-jdk8.version>
 
 
 		<!-- Logback - https://logback.qos.ch/ -->
@@ -3914,8 +3916,18 @@
 			</dependency>
 			<dependency>
 				<groupId>org.jetbrains.kotlin</groupId>
-				<artifactId>kotlin-stdlib-jdk8</artifactId>
+				<artifactId>kotlin-stdlib</artifactId>
 				<version>${kotlin-stdlib.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jetbrains.kotlin</groupId>
+				<artifactId>kotlin-stdlib-common</artifactId>
+				<version>${kotlin-stdlib-common.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jetbrains.kotlin</groupId>
+				<artifactId>kotlin-stdlib-jdk8</artifactId>
+				<version>${kotlin-stdlib-jdk8.version}</version>
 			</dependency>
 
 			<!-- Logback - http://logback.qos.ch/ -->
