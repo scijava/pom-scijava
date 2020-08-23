@@ -23,8 +23,8 @@
 	</organization>
 	<licenses>
 		<license>
-			<name>CC0 1.0 Universal License</name>
-			<url>https://creativecommons.org/publicdomain/zero/1.0/</url>
+			<name>Unlicense</name>
+			<url>https://unlicense.org/</url>
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
@@ -321,7 +321,7 @@
 		<scijava-cache.version>0.1.2</scijava-cache.version>
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.83.3</scijava-common.version>
+		<scijava-common.version>2.84.0</scijava-common.version>
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
 		<scijava-config.version>2.0.2</scijava-config.version>
@@ -348,7 +348,7 @@
 		<scijava-plugins-commands.version>0.2.3</scijava-plugins-commands.version>
 
 		<!-- SciJava Plugins: I/O: Table - https://github.com/scijava/scijava-plugins-io-table -->
-		<scijava-plugins-io-table.version>0.3.0</scijava-plugins-io-table.version>
+		<scijava-plugins-io-table.version>0.4.0</scijava-plugins-io-table.version>
 
 		<!-- SciJava Plugins: Platforms - https://github.com/scijava/scijava-plugins-platforms -->
 		<scijava-plugins-platforms.version>0.3.1</scijava-plugins-platforms.version>
@@ -363,7 +363,7 @@
 		<scijava-search.version>0.7.0</scijava-search.version>
 
 		<!-- SciJava Table - https://github.com/scijava/scijava-table -->
-		<scijava-table.version>0.6.1</scijava-table.version>
+		<scijava-table.version>0.7.0</scijava-table.version>
 
 		<!-- SciJava UI: AWT - https://github.com/scijava/scijava-ui-awt -->
 		<scijava-ui-awt.version>0.1.7</scijava-ui-awt.version>
@@ -416,7 +416,7 @@
 		<!-- ImageJ - https://github.com/imagej -->
 
 		<!-- ImageJ - https://github.com/imagej/imagej -->
-		<imagej.version>2.1.0</imagej.version>
+		<imagej.version>2.2.0</imagej.version>
 
 		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
 		<imagej1.version>1.53c</imagej1.version>
@@ -558,7 +558,7 @@
 		<!-- Fiji - https://github.com/fiji -->
 
 		<!-- Fiji - https://github.com/fiji/fiji -->
-		<fiji.version>2.1.1</fiji.version>
+		<fiji.version>2.2.0</fiji.version>
 
 		<!-- Standard Fiji projects -->
 
