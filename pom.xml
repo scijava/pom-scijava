@@ -612,6 +612,7 @@
 		<Image_Expression_Parser.version>3.0.1</Image_Expression_Parser.version>
 		<Interactive_3D_Surface_Plot.version>3.0.0</Interactive_3D_Surface_Plot.version>
 		<IsoData_Classifier.version>2.0.1</IsoData_Classifier.version>
+		<Kappa.version>2.0.0</Kappa.version>
 		<Kuwahara_Filter.version>2.0.1</Kuwahara_Filter.version>
 		<KymographBuilder.version>2.1.1</KymographBuilder.version>
 		<LSM_Reader.version>4.1.2</LSM_Reader.version>
@@ -2041,6 +2042,11 @@
 				<groupId>sc.fiji</groupId>
 				<artifactId>IsoData_Classifier</artifactId>
 				<version>${IsoData_Classifier.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>Kappa</artifactId>
+				<version>${Kappa.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
@@ -4534,6 +4540,7 @@
 				<Image_Expression_Parser.version>LATEST</Image_Expression_Parser.version>
 				<Interactive_3D_Surface_Plot.version>LATEST</Interactive_3D_Surface_Plot.version>
 				<IsoData_Classifier.version>LATEST</IsoData_Classifier.version>
+				<Kappa.version>LATEST</Kappa.version>
 				<Kuwahara_Filter.version>LATEST</Kuwahara_Filter.version>
 				<KymographBuilder.version>LATEST</KymographBuilder.version>
 				<LSM_Reader.version>LATEST</LSM_Reader.version>
