@@ -419,7 +419,7 @@
 		<imagej.version>2.2.0</imagej.version>
 
 		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
-		<imagej1.version>1.53c</imagej1.version>
+		<imagej1.version>1.53d</imagej1.version>
 		<ij.version>${imagej1.version}</ij.version>
 
 		<!-- ImageJ 1.x patcher - https://github.com/imagej/ij1-patcher -->
