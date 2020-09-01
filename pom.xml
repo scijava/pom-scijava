@@ -595,6 +595,7 @@
 		<Fiji_Developer.version>2.0.7</Fiji_Developer.version>
 		<Fiji_Package_Maker.version>2.1.1</Fiji_Package_Maker.version>
 		<Fiji_Plugins.version>3.1.1</Fiji_Plugins.version>
+		<FilamentDetector.version>1.0.0</FilamentDetector.version>
 		<FlowJ.version>2.0.1</FlowJ.version>
 		<FlowJ_.version>${FlowJ.version}</FlowJ_.version>
 		<Graph_Cut.version>1.0.2</Graph_Cut.version>
@@ -1965,6 +1966,11 @@
 				<groupId>sc.fiji</groupId>
 				<artifactId>Fiji_Plugins</artifactId>
 				<version>${Fiji_Plugins.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>FilamentDetector</artifactId>
+				<version>${FilamentDetector.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
@@ -4513,6 +4519,7 @@
 				<Fiji_Developer.version>LATEST</Fiji_Developer.version>
 				<Fiji_Package_Maker.version>LATEST</Fiji_Package_Maker.version>
 				<Fiji_Plugins.version>LATEST</Fiji_Plugins.version>
+				<FilamentDetector.version>LATEST</FilamentDetector.version>
 				<FlowJ.version>LATEST</FlowJ.version>
 				<Graph_Cut.version>LATEST</Graph_Cut.version>
 				<Gray_Morphology.version>LATEST</Gray_Morphology.version>
