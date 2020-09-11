@@ -500,7 +500,7 @@
 		<!-- ImgLib2 - https://github.com/imglib -->
 
 		<!-- ImgLib2 - https://github.com/imglib/imglib2 -->
-		<imglib2.version>5.10.0</imglib2.version>
+		<imglib2.version>5.10.1</imglib2.version>
 
 		<!-- ImgLib2 Algorithms - https://github.com/imglib/imglib2-algorithm -->
 		<imglib2-algorithm.version>0.11.2</imglib2-algorithm.version>
@@ -512,16 +512,16 @@
 		<imglib2-algorithm-gpl.version>0.2.4</imglib2-algorithm-gpl.version>
 
 		<!-- ImgLib2 Cache - https://github.com/imglib/imglib2-cache -->
-		<imglib2-cache.version>1.0.0-beta-13</imglib2-cache.version>
+		<imglib2-cache.version>1.0.0-beta-15</imglib2-cache.version>
 
 		<!-- ImgLib2 IJ - https://github.com/imglib/imglib2-ij -->
 		<imglib2-ij.version>2.0.0-beta-46</imglib2-ij.version>
 
 		<!-- ImgLib2 RealTransform - https://github.com/imglib/imglib2-realtransform -->
-		<imglib2-realtransform.version>3.0.0</imglib2-realtransform.version>
+		<imglib2-realtransform.version>3.1.0</imglib2-realtransform.version>
 
 		<!-- ImgLib2 ROI - https://github.com/imglib/imglib2-roi -->
-		<imglib2-roi.version>0.10.3</imglib2-roi.version>
+		<imglib2-roi.version>0.10.4</imglib2-roi.version>
 
 		<!-- ImgLib2 Scripting - https://github.com/imglib/imglib2-script -->
 		<imglib2-script.version>0.2.4</imglib2-script.version>
