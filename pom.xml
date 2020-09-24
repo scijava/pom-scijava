@@ -432,7 +432,7 @@
 		<imagej-deprecated.version>0.1.4</imagej-deprecated.version>
 
 		<!-- ImageJ Launcher - https://github.com/imagej/imagej-launcher -->
-		<imagej-launcher.version>5.0.3</imagej-launcher.version>
+		<imagej-launcher.version>6.0.0</imagej-launcher.version>
 
 		<!-- ImageJ Legacy - https://github.com/imagej/imagej-legacy -->
 		<imagej-legacy.version>0.37.4</imagej-legacy.version>
