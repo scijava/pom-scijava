@@ -509,7 +509,7 @@
 		<imglib2-algorithm-fft.version>0.2.0</imglib2-algorithm-fft.version>
 
 		<!-- ImgLib2 Algorithms GPL - https://github.com/imglib/imglib2-algorithm-gpl -->
-		<imglib2-algorithm-gpl.version>0.2.4</imglib2-algorithm-gpl.version>
+		<imglib2-algorithm-gpl.version>0.2.5</imglib2-algorithm-gpl.version>
 
 		<!-- ImgLib2 Cache - https://github.com/imglib/imglib2-cache -->
 		<imglib2-cache.version>1.0.0-beta-15</imglib2-cache.version>
