@@ -638,7 +638,6 @@
 		<Samples.version>2.0.2</Samples.version>
 		<Samples_.version>${Samples.version}</Samples_.version>
 		<Series_Labeler.version>2.0.1</Series_Labeler.version>
-		<Simple_Neurite_Tracer.version>3.1.7</Simple_Neurite_Tracer.version>
 		<Siox_Segmentation.version>1.0.5</Siox_Segmentation.version>
 		<Skeletonize3D.version>2.1.1</Skeletonize3D.version>
 		<Skeletonize3D_.version>${Skeletonize3D.version}</Skeletonize3D_.version>
@@ -687,8 +686,8 @@
 
 		<!-- External Fiji projects -->
 
-		<!-- Sholl Analysis - https://github.com/tferr/ASA -->
-		<Sholl_Analysis.version>4.0.1</Sholl_Analysis.version>
+		<!-- SNT - https://github.com/morphonets/SNT -->
+		<SNT.version>3.1.112</SNT.version>
 
 		<!-- JITK TPS - https://github.com/saalfeldlab/jitk-tps -->
 		<jitk-tps.version>3.0.1</jitk-tps.version>
@@ -2150,11 +2149,6 @@
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
-				<artifactId>Simple_Neurite_Tracer</artifactId>
-				<version>${Simple_Neurite_Tracer.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
 				<artifactId>Siox_Segmentation</artifactId>
 				<version>${Siox_Segmentation.version}</version>
 			</dependency>
@@ -2326,18 +2320,11 @@
 
 			<!-- External Fiji projects -->
 
-			<!-- Sholl Analysis - https://github.com/tferr/ASA -->
+			<!-- SNT - https://github.com/morphonets/SNT -->
 			<dependency>
-				<groupId>ca.mcgill</groupId>
-				<artifactId>Sholl_Analysis</artifactId>
-				<version>${Sholl_Analysis.version}</version>
-				<exclusions>
-					<exclusion>
-						<!-- TEMP: Until tferr/ASA#32 is merged and released. -->
-						<groupId>net.imagej</groupId>
-						<artifactId>imagej</artifactId>
-					</exclusion>
-				</exclusions>
+				<groupId>org.morphonets</groupId>
+				<artifactId>SNT</artifactId>
+				<version>${SNT.version}</version>
 			</dependency>
 
 			<!-- JITK TPS - https://github.com/saalfeldlab/jitk-tps -->
@@ -4598,7 +4585,7 @@
 				<weave_jy2java.version>LATEST</weave_jy2java.version>
 
 				<!-- External Fiji projects -->
-				<Sholl_Analysis.version>LATEST</Sholl_Analysis.version>
+				<SNT.version>LATEST</SNT.version>
 				<jitk-tps.version>LATEST</jitk-tps.version>
 				<bigwarp.version>LATEST</bigwarp.version>
 				<mpicbg.version>LATEST</mpicbg.version>
