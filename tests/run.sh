@@ -119,7 +119,7 @@ echo 'Done!'
 doMelt=t
 for arg in "$@"
 do
-  if [ "$arg" = '-s' ]
+  if [ "$arg" = '-s' ] || [ "$arg" = '--skipBuild' ]
   then
     doMelt=
   fi
