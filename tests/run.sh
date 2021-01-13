@@ -124,7 +124,7 @@ do
     doMelt=
   fi
 done
-if [ "doMelt" ]
+if [ "$doMelt" ]
 then
   echo &&
   (cd "$meltingPotDir" && sh melt.sh) & keep_alive $! || die 'Melting pot failed!'
