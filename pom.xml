@@ -423,7 +423,7 @@
 		<ij.version>${imagej1.version}</ij.version>
 
 		<!-- ImageJ 1.x patcher - https://github.com/imagej/ij1-patcher -->
-		<ij1-patcher.version>1.1.0</ij1-patcher.version>
+		<ij1-patcher.version>1.2.0</ij1-patcher.version>
 
 		<!-- ImageJ Common - https://github.com/imagej/imagej-common -->
 		<imagej-common.version>0.34.0</imagej-common.version>
