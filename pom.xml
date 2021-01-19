@@ -321,7 +321,7 @@
 		<scijava-cache.version>0.1.2</scijava-cache.version>
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.85.0</scijava-common.version>
+		<scijava-common.version>2.86.1</scijava-common.version>
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
 		<scijava-config.version>2.0.2</scijava-config.version>
@@ -638,6 +638,7 @@
 		<Samples.version>2.0.2</Samples.version>
 		<Samples_.version>${Samples.version}</Samples_.version>
 		<Series_Labeler.version>2.0.1</Series_Labeler.version>
+		<Simple_Neurite_Tracer.version>3.1.10</Simple_Neurite_Tracer.version>
 		<Siox_Segmentation.version>1.0.5</Siox_Segmentation.version>
 		<Skeletonize3D.version>2.1.1</Skeletonize3D.version>
 		<Skeletonize3D_.version>${Skeletonize3D.version}</Skeletonize3D_.version>
