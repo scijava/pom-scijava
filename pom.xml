@@ -521,7 +521,7 @@
 		<imglib2-realtransform.version>3.1.0</imglib2-realtransform.version>
 
 		<!-- ImgLib2 ROI - https://github.com/imglib/imglib2-roi -->
-		<imglib2-roi.version>0.10.4</imglib2-roi.version>
+		<imglib2-roi.version>0.11.0</imglib2-roi.version>
 
 		<!-- ImgLib2 Scripting - https://github.com/imglib/imglib2-script -->
 		<imglib2-script.version>0.2.4</imglib2-script.version>
