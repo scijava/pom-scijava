@@ -812,7 +812,7 @@
 		<BigStitcher.version>0.5.8</BigStitcher.version>
 
 		<!-- multiview-reconstruction - https://github.com/PreibischLab/multiview-reconstruction -->
-		<multiview-reconstruction.version>0.7.2</multiview-reconstruction.version>
+		<multiview-reconstruction.version>0.9.3</multiview-reconstruction.version>
 
 		<!-- multiview-simulation - https://github.com/PreibischLab/multiview-simulation -->
 		<multiview-simulation.version>0.2.0</multiview-simulation.version>
