@@ -745,7 +745,7 @@
 		-->
 
 		<!-- BoneJ - https://bonej.org/ -->
-		<bonej.version>7.0.9</bonej.version>
+		<bonej.version>7.0.10</bonej.version>
 		<bonej-plugins.version>${bonej.version}</bonej-plugins.version>
 		<bonej-ops.version>${bonej.version}</bonej-ops.version>
 		<bonej-legacy-plugins_.version>${bonej.version}</bonej-legacy-plugins_.version>
