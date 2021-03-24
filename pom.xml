@@ -694,7 +694,7 @@
 		<jitk-tps.version>3.0.1</jitk-tps.version>
 
 		<!-- BigWarp - https://github.com/saalfeldlab/bigwarp -->
-		<bigwarp.version>6.0.0</bigwarp.version>
+		<bigwarp.version>6.1.0</bigwarp.version>
 		<bigwarp_fiji.version>${bigwarp.version}</bigwarp_fiji.version>
 
 		<!-- MPI-CBG - https://github.com/axtimwalde/mpicbg -->
