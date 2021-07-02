@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>30.0.1-SNAPSHOT</version>
+	<version>31.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -525,9 +525,6 @@
 
 		<!-- ImgLib2 Scripting - https://github.com/imglib/imglib2-script -->
 		<imglib2-script.version>0.2.4</imglib2-script.version>
-
-		<!-- ImgLib2 UI - https://github.com/imglib/imglib2-ui -->
-		<imglib2-ui.version>2.0.1</imglib2-ui.version>
 
 		<!-- ImgLib2 Unsafe - https://github.com/imglib/imglib2-unsafe -->
 		<imglib2-unsafe.version>0.4.0</imglib2-unsafe.version>
