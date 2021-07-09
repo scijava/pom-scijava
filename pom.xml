@@ -1223,6 +1223,9 @@
 
 		<!-- XZ for Java - https://tukaani.org/xz/java.html -->
 		<xz.version>1.8</xz.version>
+
+		<!-- NB: Deploy releases to the SciJava Maven repository. -->
+		<releaseProfiles>sign,deploy-to-scijava</releaseProfiles>
 	</properties>
 
 	<dependencyManagement>
