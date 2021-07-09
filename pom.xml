@@ -190,8 +190,8 @@
 		<url>https://github.com/scijava/pom-scijava/issues</url>
 	</issueManagement>
 	<ciManagement>
-		<system>Travis CI</system>
-		<url>https://travis-ci.org/scijava/pom-scijava</url>
+		<system>GitHub Actions</system>
+		<url>https://github.com/scijava/pom-scijava/actions</url>
 	</ciManagement>
 
 	<properties>
