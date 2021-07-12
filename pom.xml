@@ -527,7 +527,7 @@
 		<imglib2-script.version>0.2.4</imglib2-script.version>
 
 		<!-- ImgLib2 Unsafe - https://github.com/imglib/imglib2-unsafe -->
-		<imglib2-unsafe.version>0.4.0</imglib2-unsafe.version>
+		<imglib2-unsafe.version>0.4.1</imglib2-unsafe.version>
 
 		<!-- SCIFIO - https://github.com/scifio -->
 
