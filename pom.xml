@@ -312,7 +312,7 @@
 		<minimaven.version>2.2.2</minimaven.version>
 
 		<!-- Native Lib Loader - https://github.com/scijava/native-lib-loader -->
-		<native-lib-loader.version>2.3.4</native-lib-loader.version>
+		<native-lib-loader.version>2.3.6</native-lib-loader.version>
 
 		<!-- Parsington - https://github.com/scijava/parsington -->
 		<parsington.version>2.0.0</parsington.version>
