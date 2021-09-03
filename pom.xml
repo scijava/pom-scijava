@@ -653,8 +653,7 @@
 		<ToAST_.version>${ToAST.version}</ToAST_.version>
 		<TopoJ.version>2.0.1</TopoJ.version>
 		<TopoJ_.version>${TopoJ.version}</TopoJ_.version>
-		<TrackMate.version>6.0.1</TrackMate.version>
-		<TrackMate_.version>${TrackMate.version}</TrackMate_.version>
+		<TrackMate.version>7.0.3</TrackMate.version>
 		<Trainable_Segmentation.version>3.2.34</Trainable_Segmentation.version>
 		<TrakEM2_Archipelago.version>2.0.3</TrakEM2_Archipelago.version>
 		<VIB-lib.version>2.2.0</VIB-lib.version>
@@ -2211,8 +2210,8 @@
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
-				<artifactId>TrackMate_</artifactId>
-				<version>${TrackMate_.version}</version>
+				<artifactId>TrackMate</artifactId>
+				<version>${TrackMate.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
