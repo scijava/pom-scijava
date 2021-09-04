@@ -733,6 +733,10 @@
 		<n5-viewer_fiji.version>4.2.1</n5-viewer_fiji.version>
 		<n5-zarr.version>0.0.6</n5-zarr.version>
 
+		<!-- MaMuT - https://github.com/fiji/MaMuT -->
+		<MaMuT.version>0.30.0</MaMuT.version>
+		<MaMuT_.version>${MaMuT.version}</MaMuT_.version>
+
 		<!-- BoneJ - https://bonej.org/ -->
 		<bonej.version>7.0.11</bonej.version>
 		<bonej-plugins.version>${bonej.version}</bonej-plugins.version>
@@ -2462,6 +2466,14 @@
 				<groupId>org.janelia.saalfeldlab</groupId>
 				<artifactId>n5-zarr</artifactId>
 				<version>${n5-zarr.version}</version>
+			</dependency>
+
+			<!-- MaMuT - https://github.com/fiji/MaMuT -->
+
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>MaMuT_</artifactId>
+				<version>${MaMuT_.version}</version>
 			</dependency>
 
 			<!-- BoneJ - http://bonej.org/ -->
