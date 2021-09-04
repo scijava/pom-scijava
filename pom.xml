@@ -733,14 +733,6 @@
 		<n5-viewer_fiji.version>4.2.1</n5-viewer_fiji.version>
 		<n5-zarr.version>0.0.6</n5-zarr.version>
 
-		<!--
-		BEGIN MANUALLY MANAGED VERSIONS
-
-		The SciJava project uses tools in https://github.com/scijava/scijava-scripts
-		and https://github.com/scijava/scijava-maven-plugin to manage the properties
-		above.
-		-->
-
 		<!-- BoneJ - https://bonej.org/ -->
 		<bonej.version>7.0.11</bonej.version>
 		<bonej-plugins.version>${bonej.version}</bonej-plugins.version>
