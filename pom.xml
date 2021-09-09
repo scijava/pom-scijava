@@ -2447,6 +2447,11 @@
 			</dependency>
 			<dependency>
 				<groupId>org.janelia.saalfeldlab</groupId>
+				<artifactId>n5-ij</artifactId>
+				<version>${n5-ij.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.janelia.saalfeldlab</groupId>
 				<artifactId>n5-imglib2</artifactId>
 				<version>${n5-imglib2.version}</version>
 			</dependency>
