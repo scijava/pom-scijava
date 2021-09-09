@@ -415,8 +415,8 @@
 
 		<!-- ImageJ - https://github.com/imagej -->
 
-		<!-- ImageJ - https://github.com/imagej/imagej -->
-		<imagej.version>2.2.0</imagej.version>
+		<!-- ImageJ2 - https://github.com/imagej/imagej2 -->
+		<imagej2.version>2.2.0</imagej2.version>
 
 		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
 		<imagej1.version>1.53d</imagej1.version>
@@ -1487,11 +1487,11 @@
 
 			<!-- ImageJ - https://github.com/imagej -->
 
-			<!-- ImageJ - https://github.com/imagej/imagej -->
+			<!-- ImageJ2 - https://github.com/imagej/imagej2 -->
 			<dependency>
 				<groupId>net.imagej</groupId>
 				<artifactId>imagej</artifactId>
-				<version>${imagej.version}</version>
+				<version>${imagej2.version}</version>
 			</dependency>
 
 			<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
@@ -4367,7 +4367,7 @@
 				</file>
 			</activation>
 			<properties>
-				<imagej.version>LATEST</imagej.version>
+				<imagej2.version>LATEST</imagej2.version>
 				<ij1-patcher.version>LATEST</ij1-patcher.version>
 				<imagej-common.version>LATEST</imagej-common.version>
 				<imagej-deprecated.version>LATEST</imagej-deprecated.version>
