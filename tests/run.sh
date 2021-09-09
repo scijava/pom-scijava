@@ -111,7 +111,7 @@ buildScriptBackup="$buildScript.original"
 echo &&
 printf 'Adjusting melting pot build script... ' &&
 mv "$buildScript" "$buildScriptBackup" &&
-awk '!/-D(annotations|antlr|jocl|kryo|minlog|trove4j)\.version/' "$buildScriptBackup" > "$buildScript" ||
+awk '!/-D(annotations|antlr|jocl|kryo|minlog|opencsv|trove4j)\.version/' "$buildScriptBackup" > "$buildScript" ||
   die 'Error adjusting melting pot build script!'
 echo 'Done!'
 
