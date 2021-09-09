@@ -722,7 +722,7 @@
 
 		<!-- N5 - https://github.com/saalfeldlab/n5 -->
 
-		<imglib2-label-multisets.version>0.9.0</imglib2-label-multisets.version>
+		<imglib2-label-multisets.version>0.10.0</imglib2-label-multisets.version>
 		<n5.version>2.5.0</n5.version>
 		<n5-aws-s3.version>3.2.0</n5-aws-s3.version>
 		<n5-blosc.version>1.1.0</n5-blosc.version>
