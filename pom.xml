@@ -735,8 +735,7 @@
 		<n5-zarr.version>0.0.6</n5-zarr.version>
 
 		<!-- MaMuT - https://github.com/fiji/MaMuT -->
-		<MaMuT.version>0.30.0</MaMuT.version>
-		<MaMuT_.version>${MaMuT.version}</MaMuT_.version>
+		<MaMuT.version>7.0.1</MaMuT.version>
 
 		<!-- BoneJ - https://bonej.org/ -->
 		<bonej.version>7.0.11</bonej.version>
@@ -2471,8 +2470,8 @@
 
 			<dependency>
 				<groupId>sc.fiji</groupId>
-				<artifactId>MaMuT_</artifactId>
-				<version>${MaMuT_.version}</version>
+				<artifactId>MaMuT</artifactId>
+				<version>${MaMuT.version}</version>
 			</dependency>
 
 			<!-- BoneJ - http://bonej.org/ -->
