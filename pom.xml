@@ -644,7 +644,7 @@
 		<SplineDeformationGenerator_.version>${SplineDeformationGenerator.version}</SplineDeformationGenerator_.version>
 		<Stack_Manipulation.version>2.1.2</Stack_Manipulation.version>
 		<Statistical_Region_Merging.version>2.0.1</Statistical_Region_Merging.version>
-		<Stitching.version>3.1.6</Stitching.version>
+		<Stitching.version>3.1.8</Stitching.version>
 		<Stitching_.version>${Stitching.version}</Stitching_.version>
 		<Sync_Win.version>1.7-fiji4</Sync_Win.version>
 		<Thread_Killer.version>2.0.1</Thread_Killer.version>
