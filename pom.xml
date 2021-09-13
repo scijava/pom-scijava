@@ -369,7 +369,7 @@
 		<scijava-ui-awt.version>0.1.7</scijava-ui-awt.version>
 
 		<!-- SciJava UI: Swing - https://github.com/scijava/scijava-ui-swing -->
-		<scijava-ui-swing.version>0.13.2</scijava-ui-swing.version>
+		<scijava-ui-swing.version>0.13.3</scijava-ui-swing.version>
 
 		<!-- Script Editor - https://github.com/scijava/script-editor -->
 		<script-editor.version>0.5.9</script-editor.version>
