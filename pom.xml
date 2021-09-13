@@ -416,7 +416,7 @@
 		<!-- ImageJ - https://github.com/imagej -->
 
 		<!-- ImageJ2 - https://github.com/imagej/imagej2 -->
-		<imagej2.version>2.2.0</imagej2.version>
+		<imagej2.version>2.3.0</imagej2.version>
 		<imagej.version>${imagej2.version}</imagej.version>
 
 		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
@@ -427,7 +427,7 @@
 		<ij1-patcher.version>1.2.1</ij1-patcher.version>
 
 		<!-- ImageJ Common - https://github.com/imagej/imagej-common -->
-		<imagej-common.version>0.34.0</imagej-common.version>
+		<imagej-common.version>0.34.1</imagej-common.version>
 
 		<!-- ImageJ Deprecated - https://github.com/imagej/imagej-deprecated -->
 		<imagej-deprecated.version>0.1.4</imagej-deprecated.version>
@@ -436,7 +436,7 @@
 		<imagej-launcher.version>6.0.1</imagej-launcher.version>
 
 		<!-- ImageJ Legacy - https://github.com/imagej/imagej-legacy -->
-		<imagej-legacy.version>0.37.4</imagej-legacy.version>
+		<imagej-legacy.version>0.38.0</imagej-legacy.version>
 
 		<!-- ImageJ MATLAB - https://github.com/imagej/imagej-matlab -->
 		<imagej-matlab.version>0.7.4</imagej-matlab.version>
@@ -556,7 +556,7 @@
 		<!-- Fiji - https://github.com/fiji -->
 
 		<!-- Fiji - https://github.com/fiji/fiji -->
-		<fiji.version>2.2.0</fiji.version>
+		<fiji.version>2.3.0</fiji.version>
 
 		<!-- Standard Fiji projects -->
 
@@ -593,7 +593,7 @@
 		<Fiji_Developer.version>2.0.7</Fiji_Developer.version>
 		<Fiji_Package_Maker.version>2.1.1</Fiji_Package_Maker.version>
 		<Fiji_Plugins.version>3.1.1</Fiji_Plugins.version>
-		<FilamentDetector.version>1.0.0</FilamentDetector.version>
+		<FilamentDetector.version>2.0.0</FilamentDetector.version>
 		<FlowJ.version>2.0.1</FlowJ.version>
 		<FlowJ_.version>${FlowJ.version}</FlowJ_.version>
 		<Graph_Cut.version>1.0.2</Graph_Cut.version>
@@ -632,7 +632,7 @@
 		<RATS_.version>${RATS.version}</RATS_.version>
 		<Reconstruct_Reader.version>2.0.4</Reconstruct_Reader.version>
 		<SPIM_Opener.version>2.0.2</SPIM_Opener.version>
-		<SPIM_Registration.version>5.0.21</SPIM_Registration.version>
+		<SPIM_Registration.version>5.0.22</SPIM_Registration.version>
 		<Samples.version>2.0.2</Samples.version>
 		<Samples_.version>${Samples.version}</Samples_.version>
 		<Series_Labeler.version>2.0.1</Series_Labeler.version>
@@ -654,7 +654,7 @@
 		<ToAST_.version>${ToAST.version}</ToAST_.version>
 		<TopoJ.version>2.0.1</TopoJ.version>
 		<TopoJ_.version>${TopoJ.version}</TopoJ_.version>
-		<TrackMate.version>7.0.3</TrackMate.version>
+		<TrackMate.version>7.0.5</TrackMate.version>
 		<Trainable_Segmentation.version>3.2.34</Trainable_Segmentation.version>
 		<TrakEM2_Archipelago.version>2.0.3</TrakEM2_Archipelago.version>
 		<VIB-lib.version>2.2.0</VIB-lib.version>
@@ -672,7 +672,7 @@
 		<bij.version>1.0.0</bij.version>
 		<blockmatching.version>2.1.3</blockmatching.version>
 		<blockmatching_.version>${blockmatching.version}</blockmatching_.version>
-		<fiji-lib.version>2.1.2</fiji-lib.version>
+		<fiji-lib.version>2.1.3</fiji-lib.version>
 		<legacy-imglib1.version>1.1.9</legacy-imglib1.version>
 		<level_sets.version>1.0.2</level_sets.version>
 		<pal-optimization.version>2.0.1</pal-optimization.version>
@@ -691,7 +691,7 @@
 		<jitk-tps.version>3.0.1</jitk-tps.version>
 
 		<!-- BigWarp - https://github.com/saalfeldlab/bigwarp -->
-		<bigwarp.version>6.1.0</bigwarp.version>
+		<bigwarp.version>7.0.2</bigwarp.version>
 		<bigwarp_fiji.version>${bigwarp.version}</bigwarp_fiji.version>
 
 		<!-- MPI-CBG - https://github.com/axtimwalde/mpicbg -->
