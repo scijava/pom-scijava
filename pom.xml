@@ -33,7 +33,7 @@
 		<developer>
 			<id>ctrueden</id>
 			<name>Curtis Rueden</name>
-			<url>https://imagej.net/User:Rueden</url>
+			<url>https://imagej.net/people/ctrueden</url>
 			<roles>
 				<role>founder</role>
 				<role>lead</role>
@@ -48,56 +48,57 @@
 	<contributors>
 		<contributor>
 			<name>Mark Hiner</name>
-			<url>https://imagej.net/User:Hinerm</url>
+			<url>https://imagej.net/people/hinerm</url>
 			<properties><id>hinerm</id></properties>
 		</contributor>
 		<contributor>
 			<name>Johannes Schindelin</name>
-			<url>https://imagej.net/User:Schindelin</url>
+			<url>https://imagej.net/people/dscho</url>
 			<properties><id>dscho</id></properties>
 		</contributor>
 		<contributor>
 			<name>Sébastien Besson</name>
-			<url>https://imagej.net/User:Sbesson</url>
+			<url>https://imagej.net/people/sbesson</url>
 			<properties><id>sbesson</id></properties>
 		</contributor>
 		<contributor>
 			<name>John Bogovic</name>
-			<url>https://imagej.net/User:Bogovic</url>
+			<url>https://imagej.net/people/bogovicj</url>
 			<properties><id>bogovicj</id></properties>
 		</contributor>
 		<contributor>
 			<name>Nicolas Chiaruttini</name>
-			<url>https://imagej.net/User:NicoKiaru</url>
+			<url>https://imagej.net/people/NicoKiaru</url>
 			<properties><id>NicoKiaru</id></properties>
 		</contributor>
 		<contributor>
 			<name>Barry DeZonia</name>
-			<url>https://imagej.net/User:Bdezonia</url>
+			<url>https://imagej.net/people/bdezonia</url>
 			<properties><id>bdezonia</id></properties>
 		</contributor>
 		<contributor>
 			<name>Richard Domander</name>
-			<url>https://imagej.net/User:Rdom</url>
+			<url>https://imagej.net/people/rimadoma</url>
 			<properties><id>rimadoma</id></properties>
 		</contributor>
 		<contributor>
 			<name>Karl Duderstadt</name>
+			<url>https://imagej.net/people/karlduderstadt</url>
 			<properties><id>karlduderstadt</id></properties>
 		</contributor>
 		<contributor>
 			<name>Jan Eglinger</name>
-			<url>https://imagej.net/User:Eglinger</url>
+			<url>https://imagej.net/people/imagejan</url>
 			<properties><id>imagejan</id></properties>
 		</contributor>
 		<contributor>
 			<name>Gabriel Einsdorf</name>
-			<url>https://imagej.net/User:Gab1one</url>
+			<url>https://imagej.net/people/gab1one</url>
 			<properties><id>gab1one</id></properties>
 		</contributor>
 		<contributor>
 			<name>Tiago Ferreira</name>
-			<url>https://imagej.net/User:Tiago</url>
+			<url>https://imagej.net/people/tferr</url>
 			<properties><id>tferr</id></properties>
 		</contributor>
 		<contributor>
@@ -106,65 +107,67 @@
 		</contributor>
 		<contributor>
 			<name>Ulrik Günther</name>
-			<url>https://imagej.net/User:Skalarproduktraum</url>
+			<url>https://imagej.net/people/skalarproduktraum</url>
 			<properties><id>skalarproduktraum</id></properties>
 		</contributor>
 		<contributor>
 			<name>Philipp Hanslovsky</name>
-			<url>https://imagej.net/User:Hanslovsky</url>
+			<url>https://imagej.net/people/hanslovsky</url>
 			<properties><id>hanslovsky</id></properties>
 		</contributor>
 		<contributor>
 			<name>Stefan Helfrich</name>
-			<url>https://imagej.net/User:stelfrich</url>
+			<url>https://imagej.net/people/stelfrich</url>
 			<properties><id>stelfrich</id></properties>
 		</contributor>
 		<contributor>
 			<name>Cameron Lloyd</name>
+			<url>https://imagej.net/people/camlloyd</url>
 			<properties><id>camlloyd</id></properties>
 		</contributor>
 		<contributor>
 			<name>Hadrien Mary</name>
-			<url>https://imagej.net/User:Hadim</url>
+			<url>https://imagej.net/people/hadim</url>
 			<properties><id>hadim</id></properties>
 		</contributor>
 		<contributor>
 			<name>Tobias Pietzsch</name>
-			<url>https://imagej.net/User:Pietzsch</url>
+			<url>https://imagej.net/people/tpietzsch</url>
 			<properties><id>tpietzsch</id></properties>
 		</contributor>
 		<contributor>
 			<name>Stephan Preibisch</name>
-			<url>https://imagej.net/User:StephanP</url>
+			<url>https://imagej.net/people/StephanPreibisch</url>
 			<properties><id>StephanPreibisch</id></properties>
 		</contributor>
 		<contributor>
 			<name>Stephan Saalfeld</name>
-			<url>https://imagej.net/User:Saalfeld</url>
+			<url>https://imagej.net/people/axtimwalde</url>
 			<properties><id>axtimwalde</id></properties>
 		</contributor>
 		<contributor>
 			<name>Deborah Schmidt</name>
-			<url>https://imagej.net/User:Frauzufall</url>
+			<url>https://imagej.net/people/frauzufall</url>
 			<properties><id>frauzufall</id></properties>
 		</contributor>
 		<contributor>
 			<name>Lorenzo Scianatico</name>
-			<url>https://imagej.net/User:LoreScianatico</url>
+			<url>https://imagej.net/people/LoreScianatico</url>
 			<properties><id>LoreScianatico</id></properties>
 		</contributor>
 		<contributor>
 			<name>Jean-Yves Tinevez</name>
-			<url>https://imagej.net/User:JeanYvesTinevez</url>
+			<url>https://imagej.net/people/tinevez</url>
 			<properties><id>tinevez</id></properties>
 		</contributor>
 		<contributor>
 			<name>Christian Tischer</name>
+			<url>https://imagej.net/people/tischi</url>
 			<properties><id>tischi</id></properties>
 		</contributor>
 		<contributor>
 			<name>Gabriella Turek</name>
-			<url>https://imagej.net/User:Turek</url>
+			<url>https://imagej.net/people/turekg</url>
 			<properties><id>turekg</id></properties>
 		</contributor>
 	</contributors>
