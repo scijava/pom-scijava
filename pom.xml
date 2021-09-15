@@ -539,7 +539,7 @@
 		<!-- SCIFIO - https://github.com/scifio -->
 
 		<!-- SCIFIO - https://github.com/scifio/scifio -->
-		<scifio.version>0.41.2</scifio.version>
+		<scifio.version>0.42.0</scifio.version>
 
 		<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
 		<scifio-bf-compat.version>4.1.0</scifio-bf-compat.version>
@@ -661,7 +661,7 @@
 		<TopoJ.version>2.0.1</TopoJ.version>
 		<TopoJ_.version>${TopoJ.version}</TopoJ_.version>
 		<TrackMate.version>7.0.5</TrackMate.version>
-		<Trainable_Segmentation.version>3.2.34</Trainable_Segmentation.version>
+		<Trainable_Segmentation.version>3.2.35</Trainable_Segmentation.version>
 		<TrakEM2_Archipelago.version>2.0.3</TrakEM2_Archipelago.version>
 		<VIB-lib.version>2.2.0</VIB-lib.version>
 		<VIB.version>3.0.3</VIB.version>
@@ -669,7 +669,7 @@
 		<Vaa3d_Reader.version>2.0.3</Vaa3d_Reader.version>
 		<Vaa3d_Writer.version>1.0.3</Vaa3d_Writer.version>
 		<Video_Editing.version>2.0.1</Video_Editing.version>
-		<View5D.version>2.3.1</View5D.version>
+		<View5D.version>2.3.4</View5D.version>
 		<View5D_.version>${View5D.version}</View5D_.version>
 		<Volume_Calculator.version>2.0.2</Volume_Calculator.version>
 		<Volume_Viewer.version>2.01.2</Volume_Viewer.version>
@@ -754,16 +754,16 @@
 		<!-- Open Microscopy Environment - https://github.com/ome -->
 
 		<!-- OME Common Java - https://github.com/ome/ome-common-java -->
-		<ome-common.version>6.0.4</ome-common.version>
+		<ome-common.version>6.0.7</ome-common.version>
 
 		<!-- Metakit - https://github.com/ome/ome-metakit -->
-		<metakit.version>5.3.2</metakit.version>
+		<metakit.version>5.3.3</metakit.version>
 
 		<!-- OME POI - https://github.com/ome/ome-poi -->
-		<ome-poi.version>5.3.3</ome-poi.version>
+		<ome-poi.version>5.3.4</ome-poi.version>
 
 		<!-- OME Model - https://github.com/ome/ome-model -->
-		<ome-xml.version>6.1.0</ome-xml.version>
+		<ome-xml.version>6.2.3</ome-xml.version>
 
 		<!-- Glencoe Software jxrlib - https://github.com/glencoesoftware/jxrlib -->
 		<jxrlib.version>0.2.4</jxrlib.version>
