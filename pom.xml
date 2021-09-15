@@ -946,7 +946,7 @@
 
 		<!-- Byte Code Generation Library - https://github.com/cglib/cglib -->
 		<cglib.version>3.3.0</cglib.version>
-		
+
 		<!--  Eclipse Collections - https://www.eclipse.org/collections/ -->
 		<eclipse-collections.version>10.4.0</eclipse-collections.version>
 		<eclipse-collections-api.version>${eclipse-collections.version}</eclipse-collections-api.version>
@@ -976,6 +976,12 @@
 		<google-cloud-resourcemanager.version>0.117.2-alpha</google-cloud-resourcemanager.version>
 		<google-cloud-storage.version>1.108.0</google-cloud-storage.version>
 
+		<!-- Google HTTP Client Library for Java - https://github.com/googleapis/google-http-java-client -->
+		<google-http-client.version>1.40.0</google-http-client.version>
+		<google-http-client-appengine.version>${google-http-client.version}</google-http-client-appengine.version>
+		<google-http-client-jackson2.version>${google-http-client.version}</google-http-client-jackson2.version>
+		<google-http-client-xml.version>${google-http-client.version}</google-http-client-xml.version>
+
 		<!-- Gson - https://code.google.com/p/google-gson/ -->
 		<gson.version>2.8.6</gson.version>
 
@@ -992,7 +998,11 @@
 		<jackrabbit-webdav.version>2.21.1</jackrabbit-webdav.version>
 
 		<!-- Jackson - https://github.com/FasterXML/jackson -->
-		<jackson-databind.version>2.11.0</jackson-databind.version>
+		<jackson.version>2.12.5</jackson.version>
+		<jackson-annotations.version>${jackson.version}</jackson-annotations.version>
+		<jackson-core.version>${jackson.version}</jackson-core.version>
+		<jackson-databind.version>${jackson.version}</jackson-databind.version>
+		<jackson-dataformat-cbor.version>${jackson.version}</jackson-dataformat-cbor.version>
 
 		<!-- Java Advanced Imaging - https://java.net/projects/jai-core -->
 		<jai.version>1.1.3</jai.version>
@@ -1010,6 +1020,9 @@
 
 		<!-- Javassist - https://www.javassist.org/ -->
 		<javassist.version>3.27.0-GA</javassist.version>
+
+		<!-- JCodings - https://github.com/jruby/jcodings -->
+		<jcodings.version>1.0.55</jcodings.version>
 
 		<!-- JDOM - http://www.jdom.org/ -->
 		<jdom2.version>2.0.6</jdom2.version>
@@ -3510,6 +3523,28 @@
 				<version>${google-cloud-storage.version}</version>
 			</dependency>
 
+			<!-- Google HTTP Client Library for Java - https://github.com/googleapis/google-http-java-client -->
+			<dependency>
+				<groupId>com.google.http-client</groupId>
+				<artifactId>google-http-client</artifactId>
+				<version>${google-http-client.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.http-client</groupId>
+				<artifactId>google-http-client-appengine</artifactId>
+				<version>${google-http-client-appengine.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.http-client</groupId>
+				<artifactId>google-http-client-jackson2</artifactId>
+				<version>${google-http-client-jackson2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.http-client</groupId>
+				<artifactId>google-http-client-xml</artifactId>
+				<version>${google-http-client-xml.version}</version>
+			</dependency>
+
 			<!-- Gson - https://code.google.com/p/google-gson/ -->
 			<dependency>
 				<groupId>com.google.code.gson</groupId>
@@ -3560,8 +3595,23 @@
 			<!-- Jackson - https://github.com/FasterXML/jackson -->
 			<dependency>
 				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-annotations</artifactId>
+				<version>${jackson-annotations.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-core</artifactId>
+				<version>${jackson-core.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
 				<artifactId>jackson-databind</artifactId>
 				<version>${jackson-databind.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.dataformat</groupId>
+				<artifactId>jackson-dataformat-cbor</artifactId>
+				<version>${jackson-dataformat-cbor.version}</version>
 			</dependency>
 
 			<!-- Java Advanced Imaging - https://java.net/projects/jai-core -->
@@ -3605,6 +3655,13 @@
 				<groupId>org.javassist</groupId>
 				<artifactId>javassist</artifactId>
 				<version>${javassist.version}</version>
+			</dependency>
+
+			<!-- JCodings - https://github.com/jruby/jcodings -->
+			<dependency>
+				<groupId>org.jruby.jcodings</groupId>
+				<artifactId>jcodings</artifactId>
+				<version>${jcodings.version}</version>
 			</dependency>
 
 			<!-- JDOM - http://www.jdom.org/ -->
