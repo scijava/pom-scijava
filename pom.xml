@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>31.0.1-SNAPSHOT</version>
+	<version>31.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -520,6 +520,9 @@
 
 		<!-- ImgLib2 IJ - https://github.com/imglib/imglib2-ij -->
 		<imglib2-ij.version>2.0.0-beta-46</imglib2-ij.version>
+
+		<!-- ImgLib2 ImgLyb - https://github.com/imglib/imglib2-imglyb -->
+		<imglib2-imglyb.version>1.0.0</imglib2-imglyb.version>
 
 		<!-- ImgLib2 RealTransform - https://github.com/imglib/imglib2-realtransform -->
 		<imglib2-realtransform.version>3.1.0</imglib2-realtransform.version>
@@ -1730,6 +1733,13 @@
 				<groupId>net.imglib2</groupId>
 				<artifactId>imglib2-ij</artifactId>
 				<version>${imglib2-ij.version}</version>
+			</dependency>
+
+			<!-- ImgLib2 ImgLyb - https://github.com/imglib/imglib2-imglyb -->
+			<dependency>
+				<groupId>net.imglib2</groupId>
+				<artifactId>imglib2-imglyb</artifactId>
+				<version>${imglib2-imglyb.version}</version>
 			</dependency>
 
 			<!-- ImgLib2 RealTransform - https://github.com/imglib/imglib2-realtransform -->
