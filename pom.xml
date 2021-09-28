@@ -658,7 +658,7 @@
 		<TopoJ.version>2.0.1</TopoJ.version>
 		<TopoJ_.version>${TopoJ.version}</TopoJ_.version>
 		<TrackMate.version>7.0.5</TrackMate.version>
-		<Trainable_Segmentation.version>3.2.35</Trainable_Segmentation.version>
+		<Trainable_Segmentation.version>3.3.0</Trainable_Segmentation.version>
 		<TrakEM2_Archipelago.version>2.0.3</TrakEM2_Archipelago.version>
 		<VIB-lib.version>2.2.0</VIB-lib.version>
 		<VIB.version>3.0.3</VIB.version>
