@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>31.1.1-SNAPSHOT</version>
+	<version>32.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -529,9 +529,6 @@
 
 		<!-- ImgLib2 ROI - https://github.com/imglib/imglib2-roi -->
 		<imglib2-roi.version>0.11.0</imglib2-roi.version>
-
-		<!-- ImgLib2 Scripting - https://github.com/imglib/imglib2-script -->
-		<imglib2-script.version>0.2.4</imglib2-script.version>
 
 		<!-- ImgLib2 Unsafe - https://github.com/imglib/imglib2-unsafe -->
 		<imglib2-unsafe.version>0.4.1</imglib2-unsafe.version>
@@ -1767,13 +1764,6 @@
 				<groupId>net.imglib2</groupId>
 				<artifactId>imglib2-roi</artifactId>
 				<version>${imglib2-roi.version}</version>
-			</dependency>
-
-			<!-- ImgLib2 Scripting - https://github.com/imglib/imglib2-script -->
-			<dependency>
-				<groupId>net.imglib2</groupId>
-				<artifactId>imglib2-script</artifactId>
-				<version>${imglib2-script.version}</version>
 			</dependency>
 
 			<!-- ImgLib2 Unsafe - https://github.com/imglib/imglib2-unsafe -->
@@ -4492,7 +4482,6 @@
 				<imglib2-ij.version>LATEST</imglib2-ij.version>
 				<imglib2-realtransform.version>LATEST</imglib2-realtransform.version>
 				<imglib2-roi.version>LATEST</imglib2-roi.version>
-				<imglib2-script.version>LATEST</imglib2-script.version>
 				<imglib2-unsafe.version>LATEST</imglib2-unsafe.version>
 			</properties>
 			<repositories>
