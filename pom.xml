@@ -911,7 +911,6 @@
 
 		<!-- Blosc - https://blosc.org/ -->
 		<jblosc.version>1.0.1</jblosc.version>
-		<libblosc.version>1.18.1</libblosc.version>
 
 		<!-- CDI - http://cdi-spec.org/ -->
 		<cdi-api.version>1.2</cdi-api.version>
