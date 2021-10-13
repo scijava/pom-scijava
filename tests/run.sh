@@ -48,8 +48,8 @@ meltingPotScript="$megaMeltDir/melting-pot.sh"
 meltingPotDir="$megaMeltDir/melting-pot"
 
 rm -rf "$megaMeltDir" && mkdir -p "$megaMeltDir" || die "Creation of $megaMeltDir failed!"
-mvn -f "$pom" versions:set -DnewVersion=999-mega-melt > "$versionSwapLog" &&
-mvn -f "$pom" install >> "$versionSwapLog" ||
+mvn -B -f "$pom" versions:set -DnewVersion=999-mega-melt > "$versionSwapLog" &&
+mvn -B -f "$pom" install >> "$versionSwapLog" ||
   die "pom-scijava version swap failed:\n$(cat "$versionSwapLog")"
 mv -f "$pom.versionsBackup" "$pom" || die 'POM restoration failed!'
 python "$generateMegaMeltScript" "$megaMeltDir" || die 'Generation failed!'
@@ -61,9 +61,9 @@ echo 'Done!'
 # any duplicate classes across artifacts on the classpath.
 echo &&
 printf 'Validating mega-melt project... ' &&
-mvn -f "$megaMeltPOM" dependency:tree > "$dependencyTreeLog" ||
+mvn -B -f "$megaMeltPOM" dependency:tree > "$dependencyTreeLog" ||
   die "Invalid dependency tree:\n$(cat "$dependencyTreeLog")"
-mvn -f "$megaMeltPOM" -U clean package > "$validationLog" || {
+mvn -B -f "$megaMeltPOM" -U clean package > "$validationLog" || {
   python "$filterBuildLogScript" "$validationLog" > "$validationErrorsLog"
   die "Validation build failed!\n\nDependency tree:\n$(cat "$dependencyTreeLog")\n\nBuild log:\n$(cat "$validationErrorsLog")"
 }
