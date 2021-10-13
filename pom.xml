@@ -687,9 +687,6 @@
 
 		<!-- External Fiji projects (part of the Fiji distribution) -->
 
-		<!-- SNT - https://github.com/morphonets/SNT -->
-		<SNT.version>4.0.1</SNT.version>
-
 		<!-- JITK TPS - https://github.com/saalfeldlab/jitk-tps -->
 		<jitk-tps.version>3.0.1</jitk-tps.version>
 
@@ -741,6 +738,13 @@
 
 		<!-- MaMuT - https://github.com/fiji/MaMuT -->
 		<MaMuT.version>7.0.1</MaMuT.version>
+
+		<!-- MorphoLibJ - https://github.com/ijpb/MorphoLibJ -->
+		<MorphoLibJ.version>1.4.2.1</MorphoLibJ.version>
+		<MorphoLibJ_.version>${MorphoLibJ.version}</MorphoLibJ_.version>
+
+		<!-- SNT - https://github.com/morphonets/SNT -->
+		<SNT.version>4.0.1</SNT.version>
 
 		<!-- BoneJ - https://bonej.org/ -->
 		<bonej.version>7.0.11</bonej.version>
@@ -800,10 +804,6 @@
 		<omero-server.version>5.6.1</omero-server.version>
 
 		<!-- Other SciJava components -->
-
-		<!-- MorphoLibJ - https://github.com/ijpb/MorphoLibJ -->
-		<MorphoLibJ.version>1.4.2.1</MorphoLibJ.version>
-		<MorphoLibJ_.version>${MorphoLibJ.version}</MorphoLibJ_.version>
 
 		<!-- BigStitcher - https://github.com/PreibischLab/BigStitcher -->
 		<BigStitcher.version>0.8.2</BigStitcher.version>
@@ -2326,13 +2326,6 @@
 
 			<!-- External Fiji projects (part of the Fiji distribution) -->
 
-			<!-- SNT - https://github.com/morphonets/SNT -->
-			<dependency>
-				<groupId>org.morphonets</groupId>
-				<artifactId>SNT</artifactId>
-				<version>${SNT.version}</version>
-			</dependency>
-
 			<!-- JITK TPS - https://github.com/saalfeldlab/jitk-tps -->
 			<dependency>
 				<groupId>jitk</groupId>
@@ -2485,11 +2478,24 @@
 			<!-- Fiji-adjacent projects (available from ImageJ update sites) -->
 
 			<!-- MaMuT - https://github.com/fiji/MaMuT -->
-
 			<dependency>
 				<groupId>sc.fiji</groupId>
 				<artifactId>MaMuT</artifactId>
 				<version>${MaMuT.version}</version>
+			</dependency>
+
+			<!-- MorphoLibJ - https://github.com/ijpb/MorphoLibJ -->
+			<dependency>
+				<groupId>fr.inra.ijpb</groupId>
+				<artifactId>MorphoLibJ_</artifactId>
+				<version>${MorphoLibJ_.version}</version>
+			</dependency>
+
+			<!-- SNT - https://github.com/morphonets/SNT -->
+			<dependency>
+				<groupId>org.morphonets</groupId>
+				<artifactId>SNT</artifactId>
+				<version>${SNT.version}</version>
 			</dependency>
 
 			<!-- BoneJ - http://bonej.org/ -->
@@ -2770,13 +2776,6 @@
 			</dependency>
 
 			<!-- Other SciJava components -->
-
-			<!-- MorphoLibJ - https://github.com/ijpb/MorphoLibJ -->
-			<dependency>
-				<groupId>fr.inra.ijpb</groupId>
-				<artifactId>MorphoLibJ_</artifactId>
-				<version>${MorphoLibJ_.version}</version>
-			</dependency>
 
 			<!-- BigStitcher - https://github.com/PreibischLab/BigStitcher -->
 			<dependency>
