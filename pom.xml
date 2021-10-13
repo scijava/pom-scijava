@@ -1605,7 +1605,7 @@
 		<org.jfree.jfreesvg.version>${jfreesvg.version}</org.jfree.jfreesvg.version>
 
 		<!-- JGraphT - https://github.com/jgrapht/jgrapht -->
-		<jgrapht.version>1.5.1</jgrapht.version>
+		<jgrapht.version>1.4.0</jgrapht.version>
 		<jgrapht-core.version>${jgrapht.version}</jgrapht-core.version>
 		<jgrapht-demo.version>${jgrapht.version}</jgrapht-demo.version>
 		<jgrapht-ext.version>${jgrapht.version}</jgrapht-ext.version>
