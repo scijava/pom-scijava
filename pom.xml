@@ -3360,7 +3360,7 @@
 					</exclusion>
 					<exclusion>
 						<!--
-						Conflicts with jakarta.activation:activation-api
+						Conflicts with jakarta.activation:jakarta.activation-api
 						See: https://wiki.eclipse.org/Jakarta_EE_Maven_Coordinates
 						-->
 						<groupId>javax.activation</groupId>
@@ -4809,6 +4809,14 @@
 					<exclusion>
 						<groupId>com.googlecode.netlib-java</groupId>
 						<artifactId>netlib-java</artifactId>
+					</exclusion>
+					<exclusion>
+						<!--
+						Conflicts with jakarta.activation:jakarta.activation-api
+						See: https://wiki.eclipse.org/Jakarta_EE_Maven_Coordinates
+						-->
+						<groupId>com.sun.activation</groupId>
+						<artifactId>jakarta.activation</artifactId>
 					</exclusion>
 					<exclusion>
 						<groupId>nz.ac.waikato.cms.weka.thirdparty</groupId>
