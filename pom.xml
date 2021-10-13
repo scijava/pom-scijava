@@ -685,7 +685,7 @@
 		<registration_3d.version>2.0.1</registration_3d.version>
 		<weave_jy2java.version>2.1.1</weave_jy2java.version>
 
-		<!-- External Fiji projects -->
+		<!-- External Fiji projects (part of the Fiji distribution) -->
 
 		<!-- SNT - https://github.com/morphonets/SNT -->
 		<SNT.version>4.0.1</SNT.version>
@@ -736,6 +736,8 @@
 		<n5-imglib2.version>4.1.1</n5-imglib2.version>
 		<n5-viewer_fiji.version>4.3.0</n5-viewer_fiji.version>
 		<n5-zarr.version>0.0.6</n5-zarr.version>
+
+		<!-- Fiji-adjacent projects (available from ImageJ update sites) -->
 
 		<!-- MaMuT - https://github.com/fiji/MaMuT -->
 		<MaMuT.version>7.0.1</MaMuT.version>
@@ -2322,7 +2324,7 @@
 				<version>${weave_jy2java.version}</version>
 			</dependency>
 
-			<!-- External Fiji projects -->
+			<!-- External Fiji projects (part of the Fiji distribution) -->
 
 			<!-- SNT - https://github.com/morphonets/SNT -->
 			<dependency>
@@ -2479,6 +2481,8 @@
 				<artifactId>n5-zarr</artifactId>
 				<version>${n5-zarr.version}</version>
 			</dependency>
+
+			<!-- Fiji-adjacent projects (available from ImageJ update sites) -->
 
 			<!-- MaMuT - https://github.com/fiji/MaMuT -->
 
