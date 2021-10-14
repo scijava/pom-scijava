@@ -38,6 +38,7 @@ generateMegaMeltScript="$dir/generate-mega-melt.py"
 filterBuildLogScript="$dir/filter-build-log.py"
 
 megaMeltDir="$dir/../target/mega-melt"
+pomParent="$megaMeltDir/../pom.xml"
 versionSwapLog="$megaMeltDir/version-swap.log"
 dependencyTreeLog="$megaMeltDir/dependency-tree.log"
 validationLog="$megaMeltDir/validation.log"
@@ -48,10 +49,9 @@ meltingPotScript="$megaMeltDir/melting-pot.sh"
 meltingPotDir="$megaMeltDir/melting-pot"
 
 rm -rf "$megaMeltDir" && mkdir -p "$megaMeltDir" || die "Creation of $megaMeltDir failed!"
-mvn -B -f "$pom" versions:set -DnewVersion=999-mega-melt > "$versionSwapLog" &&
-mvn -B -f "$pom" install >> "$versionSwapLog" ||
-  die "pom-scijava version swap failed:\n$(cat "$versionSwapLog")"
-mv -f "$pom.versionsBackup" "$pom" || die 'POM restoration failed!'
+cp "$pom" "$pomParent" &&
+mvn -B -f "$pomParent" versions:set -DnewVersion=999-mega-melt > "$versionSwapLog" ||
+  die "pom-scijava version update failed:\n$(cat "$versionSwapLog")"
 python "$generateMegaMeltScript" "$megaMeltDir" || die 'Generation failed!'
 echo 'Done!'
 
