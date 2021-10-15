@@ -645,6 +645,15 @@
 
 		<!-- Standard Fiji projects -->
 
+		<_3D_Blob_Segmentation.version>3.0.1</_3D_Blob_Segmentation.version>
+		<sc.fiji.3D_Blob_Segmentation.version>${_3D_Blob_Segmentation.version}</sc.fiji.3D_Blob_Segmentation.version>
+
+		<_3D_Objects_Counter.version>2.0.1</_3D_Objects_Counter.version>
+		<sc.fiji.3D_Objects_Counter.version>${_3D_Objects_Counter.version}</sc.fiji.3D_Objects_Counter.version>
+
+		<_3D_Viewer.version>4.0.3</_3D_Viewer.version>
+		<sc.fiji.3D_Viewer.version>${_3D_Viewer.version}</sc.fiji.3D_Viewer.version>
+
 		<AnalyzeSkeleton.version>3.4.2</AnalyzeSkeleton.version>
 		<AnalyzeSkeleton_.version>${AnalyzeSkeleton.version}</AnalyzeSkeleton_.version>
 		<sc.fiji.AnalyzeSkeleton_.version>${AnalyzeSkeleton_.version}</sc.fiji.AnalyzeSkeleton_.version>
@@ -719,9 +728,6 @@
 		<Feature_Detection.version>2.0.2</Feature_Detection.version>
 		<sc.fiji.Feature_Detection.version>${Feature_Detection.version}</sc.fiji.Feature_Detection.version>
 
-		<Fiji_3D_Blob_Segmentation.version>3.0.1</Fiji_3D_Blob_Segmentation.version>
-		<sc.fiji.Fiji_3D_Blob_Segmentation.version>${Fiji_3D_Blob_Segmentation.version}</sc.fiji.Fiji_3D_Blob_Segmentation.version>
-
 		<Fiji_Archipelago.version>2.0.1</Fiji_Archipelago.version>
 		<sc.fiji.Fiji_Archipelago.version>${Fiji_Archipelago.version}</sc.fiji.Fiji_Archipelago.version>
 
@@ -762,12 +768,6 @@
 		<IO.version>4.1.0</IO.version>
 		<IO_.version>${IO.version}</IO_.version>
 		<sc.fiji.IO_.version>${IO_.version}</sc.fiji.IO_.version>
-
-		<ImageJ_3D_Objects_Counter.version>2.0.1</ImageJ_3D_Objects_Counter.version>
-		<sc.fiji.ImageJ_3D_Objects_Counter.version>${ImageJ_3D_Objects_Counter.version}</sc.fiji.ImageJ_3D_Objects_Counter.version>
-
-		<ImageJ_3D_Viewer.version>4.0.3</ImageJ_3D_Viewer.version>
-		<sc.fiji.ImageJ_3D_Viewer.version>${ImageJ_3D_Viewer.version}</sc.fiji.ImageJ_3D_Viewer.version>
 
 		<Image_5D.version>2.0.2</Image_5D.version>
 		<sc.fiji.Image_5D.version>${Image_5D.version}</sc.fiji.Image_5D.version>
@@ -2440,6 +2440,21 @@
 
 			<dependency>
 				<groupId>sc.fiji</groupId>
+				<artifactId>3D_Blob_Segmentation</artifactId>
+				<version>${sc.fiji.3D_Blob_Segmentation.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>3D_Objects_Counter</artifactId>
+				<version>${sc.fiji.3D_Objects_Counter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>3D_Viewer</artifactId>
+				<version>${sc.fiji.3D_Viewer.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
 				<artifactId>AnalyzeSkeleton_</artifactId>
 				<version>${sc.fiji.AnalyzeSkeleton_.version}</version>
 			</dependency>
@@ -2550,11 +2565,6 @@
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
-				<artifactId>3D_Blob_Segmentation</artifactId>
-				<version>${sc.fiji.Fiji_3D_Blob_Segmentation.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
 				<artifactId>Fiji_Archipelago</artifactId>
 				<version>${sc.fiji.Fiji_Archipelago.version}</version>
 			</dependency>
@@ -2622,16 +2632,6 @@
 				<groupId>sc.fiji</groupId>
 				<artifactId>Image_5D</artifactId>
 				<version>${sc.fiji.Image_5D.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
-				<artifactId>3D_Objects_Counter</artifactId>
-				<version>${sc.fiji.ImageJ_3D_Objects_Counter.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
-				<artifactId>3D_Viewer</artifactId>
-				<version>${sc.fiji.ImageJ_3D_Viewer.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
