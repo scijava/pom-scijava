@@ -330,7 +330,7 @@
 		<org.scijava.scijava-cache.version>${scijava-cache.version}</org.scijava.scijava-cache.version>
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.87.0</scijava-common.version>
+		<scijava-common.version>2.87.1</scijava-common.version>
 		<org.scijava.scijava-common.version>${scijava-common.version}</org.scijava.scijava-common.version>
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
@@ -358,7 +358,7 @@
 		<org.scijava.scijava-log-slf4j.version>${scijava-log-slf4j.version}</org.scijava.scijava-log-slf4j.version>
 
 		<!-- SciJava Optional - https://github.com/scijava/scijava-optional -->
-		<scijava-optional.version>1.0.0</scijava-optional.version>
+		<scijava-optional.version>1.0.1</scijava-optional.version>
 		<org.scijava.scijava-optional.version>${scijava-optional.version}</org.scijava.scijava-optional.version>
 
 		<!-- SciJava Plugins: Commands - https://github.com/scijava/scijava-plugins-commands -->
@@ -382,7 +382,7 @@
 		<org.scijava.scijava-plugins-text-plain.version>${scijava-plugins-text-plain.version}</org.scijava.scijava-plugins-text-plain.version>
 
 		<!-- SciJava Search - https://github.com/scijava/scijava-search -->
-		<scijava-search.version>0.7.0</scijava-search.version>
+		<scijava-search.version>1.0.0</scijava-search.version>
 		<org.scijava.scijava-search.version>${scijava-search.version}</org.scijava.scijava-search.version>
 
 		<!-- SciJava Table - https://github.com/scijava/scijava-table -->
@@ -410,7 +410,7 @@
 		<org.scijava.scripting-clojure.version>${scripting-clojure.version}</org.scijava.scripting-clojure.version>
 
 		<!-- Scripting: Groovy - https://github.com/scijava/scripting-groovy -->
-		<scripting-groovy.version>0.3.0</scripting-groovy.version>
+		<scripting-groovy.version>0.4.1</scripting-groovy.version>
 		<org.scijava.scripting-groovy.version>${scripting-groovy.version}</org.scijava.scripting-groovy.version>
 
 		<!-- Scripting: Java - https://github.com/scijava/scripting-java -->
@@ -482,7 +482,7 @@
 		<net.imagej.imagej-launcher.version>${imagej-launcher.version}</net.imagej.imagej-launcher.version>
 
 		<!-- ImageJ Legacy - https://github.com/imagej/imagej-legacy -->
-		<imagej-legacy.version>0.38.0</imagej-legacy.version>
+		<imagej-legacy.version>0.38.1</imagej-legacy.version>
 		<net.imagej.imagej-legacy.version>${imagej-legacy.version}</net.imagej.imagej-legacy.version>
 
 		<!-- ImageJ MATLAB - https://github.com/imagej/imagej-matlab -->
@@ -600,7 +600,7 @@
 		<net.imglib2.imglib2-realtransform.version>${imglib2-realtransform.version}</net.imglib2.imglib2-realtransform.version>
 
 		<!-- ImgLib2 ROI - https://github.com/imglib/imglib2-roi -->
-		<imglib2-roi.version>0.11.0</imglib2-roi.version>
+		<imglib2-roi.version>0.12.0</imglib2-roi.version>
 		<net.imglib2.imglib2-roi.version>${imglib2-roi.version}</net.imglib2.imglib2-roi.version>
 
 		<!-- ImgLib2 Unsafe - https://github.com/imglib/imglib2-unsafe -->
@@ -668,7 +668,7 @@
 		<Arrow_.version>${Arrow.version}</Arrow_.version>
 		<sc.fiji.Arrow_.version>${Arrow_.version}</sc.fiji.Arrow_.version>
 
-		<Auto_Local_Threshold.version>1.10.1</Auto_Local_Threshold.version>
+		<Auto_Local_Threshold.version>1.11.0</Auto_Local_Threshold.version>
 		<sc.fiji.Auto_Local_Threshold.version>${Auto_Local_Threshold.version}</sc.fiji.Auto_Local_Threshold.version>
 
 		<Auto_Threshold.version>1.17.2</Auto_Threshold.version>
@@ -753,7 +753,7 @@
 		<Gray_Morphology.version>2.3.5</Gray_Morphology.version>
 		<sc.fiji.Gray_Morphology.version>${Gray_Morphology.version}</sc.fiji.Gray_Morphology.version>
 
-		<H5J_Loader_Plugin.version>1.1.0</H5J_Loader_Plugin.version>
+		<H5J_Loader_Plugin.version>1.1.2</H5J_Loader_Plugin.version>
 		<org.janelia.H5J_Loader_Plugin.version>${H5J_Loader_Plugin.version}</org.janelia.H5J_Loader_Plugin.version>
 
 		<HDF5_Vibez.version>1.1.0</HDF5_Vibez.version>
@@ -765,7 +765,7 @@
 		<IJ_Robot.version>2.0.1</IJ_Robot.version>
 		<sc.fiji.IJ_Robot.version>${IJ_Robot.version}</sc.fiji.IJ_Robot.version>
 
-		<IO.version>4.1.0</IO.version>
+		<IO.version>4.2.0</IO.version>
 		<IO_.version>${IO.version}</IO_.version>
 		<sc.fiji.IO_.version>${IO_.version}</sc.fiji.IO_.version>
 
@@ -775,7 +775,7 @@
 		<Image_Expression_Parser.version>3.0.1</Image_Expression_Parser.version>
 		<sc.fiji.Image_Expression_Parser.version>${Image_Expression_Parser.version}</sc.fiji.Image_Expression_Parser.version>
 
-		<Interactive_3D_Surface_Plot.version>3.0.0</Interactive_3D_Surface_Plot.version>
+		<Interactive_3D_Surface_Plot.version>3.0.1</Interactive_3D_Surface_Plot.version>
 		<sc.fiji.Interactive_3D_Surface_Plot.version>${Interactive_3D_Surface_Plot.version}</sc.fiji.Interactive_3D_Surface_Plot.version>
 
 		<IsoData_Classifier.version>2.0.1</IsoData_Classifier.version>
@@ -844,7 +844,7 @@
 		<SPIM_Registration.version>5.0.22</SPIM_Registration.version>
 		<sc.fiji.SPIM_Registration.version>${SPIM_Registration.version}</sc.fiji.SPIM_Registration.version>
 
-		<Samples.version>2.0.2</Samples.version>
+		<Samples.version>2.0.3</Samples.version>
 		<Samples_.version>${Samples.version}</Samples_.version>
 		<sc.fiji.Samples_.version>${Samples_.version}</sc.fiji.Samples_.version>
 
@@ -920,7 +920,7 @@
 		<Video_Editing.version>2.0.1</Video_Editing.version>
 		<sc.fiji.Video_Editing.version>${Video_Editing.version}</sc.fiji.Video_Editing.version>
 
-		<View5D.version>2.3.6</View5D.version>
+		<View5D.version>2.4.0</View5D.version>
 		<View5D_.version>${View5D.version}</View5D_.version>
 		<sc.fiji.View5D_.version>${View5D_.version}</sc.fiji.View5D_.version>
 
@@ -973,12 +973,12 @@
 		<jitk.jitk-tps.version>${jitk-tps.version}</jitk.jitk-tps.version>
 
 		<!-- BigWarp - https://github.com/saalfeldlab/bigwarp -->
-		<bigwarp.version>7.0.2</bigwarp.version>
+		<bigwarp.version>7.0.4</bigwarp.version>
 		<bigwarp_fiji.version>${bigwarp.version}</bigwarp_fiji.version>
 		<sc.fiji.bigwarp_fiji.version>${bigwarp_fiji.version}</sc.fiji.bigwarp_fiji.version>
 
 		<!-- MPI-CBG - https://github.com/axtimwalde/mpicbg -->
-		<mpicbg.version>1.4.1</mpicbg.version>
+		<mpicbg.version>1.4.2</mpicbg.version>
 		<mpicbg_.version>${mpicbg.version}</mpicbg_.version>
 		<mpicbg.mpicbg.version>${mpicbg.version}</mpicbg.mpicbg.version>
 		<mpicbg.mpicbg_.version>${mpicbg_.version}</mpicbg.mpicbg_.version>
@@ -1083,7 +1083,7 @@
 		<!-- Fiji-adjacent projects (available from ImageJ update sites) -->
 
 		<!-- MaMuT - https://github.com/fiji/MaMuT -->
-		<MaMuT.version>7.0.1</MaMuT.version>
+		<MaMuT.version>7.0.2</MaMuT.version>
 		<sc.fiji.MaMuT.version>${MaMuT.version}</sc.fiji.MaMuT.version>
 
 		<!-- MorphoLibJ - https://github.com/ijpb/MorphoLibJ -->
@@ -1092,7 +1092,7 @@
 		<fr.inra.ijpb.MorphoLibJ_.version>${MorphoLibJ_.version}</fr.inra.ijpb.MorphoLibJ_.version>
 
 		<!-- SNT - https://github.com/morphonets/SNT -->
-		<SNT.version>4.0.1</SNT.version>
+		<SNT.version>4.0.2</SNT.version>
 		<org.morphonets.SNT.version>${SNT.version}</org.morphonets.SNT.version>
 
 		<!-- BoneJ2 - https://github.com/bonej-org/BoneJ2 -->
@@ -1123,7 +1123,7 @@
 		<org.openmicroscopy.ome-poi.version>${ome-poi.version}</org.openmicroscopy.ome-poi.version>
 
 		<!-- OME Model - https://github.com/ome/ome-model -->
-		<ome-xml.version>6.2.3</ome-xml.version>
+		<ome-xml.version>6.3.0</ome-xml.version>
 		<org.openmicroscopy.ome-xml.version>${ome-xml.version}</org.openmicroscopy.ome-xml.version>
 
 		<!-- Glencoe Software jxrlib - https://github.com/glencoesoftware/jxrlib -->
