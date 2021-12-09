@@ -1356,6 +1356,10 @@
 		<jblosc.version>1.0.1</jblosc.version>
 		<org.lasersonlab.jblosc.version>${jblosc.version}</org.lasersonlab.jblosc.version>
 
+		<!-- BridJ - https://github.com/nativelibs4java/BridJ -->
+		<bridj.version>0.7.0</bridj.version>
+		<com.nativelibs4java.bridj.version>${bridj.version}</com.nativelibs4java.bridj.version>
+
 		<!-- CDI - http://cdi-spec.org/ -->
 		<cdi-api.version>1.2</cdi-api.version>
 		<javax.enterprise.cdi-api.version>${cdi-api.version}</javax.enterprise.cdi-api.version>
@@ -3918,6 +3922,13 @@
 				<groupId>org.lasersonlab</groupId>
 				<artifactId>jblosc</artifactId>
 				<version>${org.lasersonlab.jblosc.version}</version>
+			</dependency>
+
+			<!-- BridJ - https://github.com/nativelibs4java/BridJ -->
+			<dependency>
+				<groupId>com.nativelibs4java</groupId>
+				<artifactId>bridj</artifactId>
+				<version>${com.nativelibs4java.bridj.version}</version>
 			</dependency>
 
 			<!-- CDI - http://cdi-spec.org/ -->
