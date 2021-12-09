@@ -1398,6 +1398,10 @@
 		<commons-math3.version>3.6.1</commons-math3.version>
 		<org.apache.commons.commons-math3.version>${commons-math3.version}</org.apache.commons.commons-math3.version>
 
+		<!-- Commons Pool2 - https://commons.apache.org/proper/commons-pool/ -->
+		<commons-pool2.version>2.11.1</commons-pool2.version>
+		<org.apache.commons.commons-pool2.version>${commons-pool2.version}</org.apache.commons.commons-pool2.version>
+
 		<!-- Commons Text - https://commons.apache.org/proper/commons-text/ -->
 		<commons-text.version>1.9</commons-text.version>
 		<org.apache.commons.commons-text.version>${commons-text.version}</org.apache.commons.commons-text.version>
@@ -4001,6 +4005,13 @@
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-math3</artifactId>
 				<version>${org.apache.commons.commons-math3.version}</version>
+			</dependency>
+
+			<!-- Commons Pool - https://commons.apache.org/proper/commons-pool/ -->
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-pool2</artifactId>
+				<version>${org.apache.commons.commons-pool2.version}</version>
 			</dependency>
 
 			<!-- Commons Text - https://commons.apache.org/proper/commons-text/ -->
