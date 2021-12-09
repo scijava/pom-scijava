@@ -1759,6 +1759,12 @@
 		<org.jetbrains.kotlin.kotlin-stdlib-common.version>${kotlin-stdlib-common.version}</org.jetbrains.kotlin.kotlin-stdlib-common.version>
 		<org.jetbrains.kotlin.kotlin-stdlib-jdk8.version>${kotlin-stdlib-jdk8.version}</org.jetbrains.kotlin.kotlin-stdlib-jdk8.version>
 
+		<!-- Labkit - https://imagej.net/plugins/labkit -->
+		<labkit-ui.version>0.3.0</labkit-ui.version>
+		<sc.fiji.labkit-ui.version>${labkit-ui.version}</sc.fiji.labkit-ui.version>
+		<labkit.pixel-classification.version>0.1.13</labkit.pixel-classification.version>
+		<sc.fiji.labkit-pixel-classification.version>${labkit.pixel-classification.version}</sc.fiji.labkit-pixel-classification.version>
+
 		<!-- Logback - https://logback.qos.ch/ -->
 		<logback.version>1.2.3</logback.version>
 		<logback-classic.version>${logback.version}</logback-classic.version>
@@ -4692,6 +4698,18 @@
 				<groupId>org.jetbrains.kotlin</groupId>
 				<artifactId>kotlin-stdlib-jdk8</artifactId>
 				<version>${org.jetbrains.kotlin.kotlin-stdlib-jdk8.version}</version>
+			</dependency>
+
+			<!-- Labkit - https://imagej.net/plugins/labkit -->
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>labkit-ui</artifactId>
+				<version>${sc.fiji.labkit-ui.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>labkit-pixel-classification</artifactId>
+				<version>${sc.fiji.labkit-pixel-classification.version}</version>
 			</dependency>
 
 			<!-- Logback - http://logback.qos.ch/ -->
