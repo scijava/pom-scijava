@@ -1650,6 +1650,10 @@
 		<joda-time.version>2.10.6</joda-time.version>
 		<joda-time.joda-time.version>${joda-time.version}</joda-time.joda-time.version>
 
+		<!-- JOCL - https://www.jocl.org -->
+		<jocl.version>2.0.4</jocl.version>
+		<org.jocl.jocl.version>${jocl.version}</org.jocl.jocl.version>
+
 		<!-- JOGL - https://jogamp.org/jogl/ -->
 		<jogl.version>2.3.2</jogl.version>
 		<gluegen-rt-main.version>${jogl.version}</gluegen-rt-main.version>
@@ -4489,6 +4493,13 @@
 				<groupId>joda-time</groupId>
 				<artifactId>joda-time</artifactId>
 				<version>${joda-time.joda-time.version}</version>
+			</dependency>
+
+			<!-- JOCL - https://www.jocl.org -->
+			<dependency>
+				<groupId>org.jocl</groupId>
+				<artifactId>jocl</artifactId>
+				<version>${org.jocl.jocl.version}</version>
 			</dependency>
 
 			<!-- JOGL - https://jogamp.org/jogl/ -->
