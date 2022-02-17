@@ -313,6 +313,10 @@
 		<junit-benchmarks.version>0.7.4-scijava</junit-benchmarks.version>
 		<org.scijava.junit-benchmarks.version>${junit-benchmarks.version}</org.scijava.junit-benchmarks.version>
 
+		<!-- Jython Autocompletion - https://github.com/scijava/jython-autocompletion -->
+		<jython-autocompletion.version>0.0.4</jython-autocompletion.version>
+		<org.scijava.jython-autocompletion.version>${jython-autocompletion.version}</org.scijava.jython-autocompletion.version>
+
 		<!-- MiniMaven - https://github.com/scijava/minimaven -->
 		<minimaven.version>2.2.2</minimaven.version>
 		<org.scijava.minimaven.version>${minimaven.version}</org.scijava.minimaven.version>
@@ -780,9 +784,6 @@
 
 		<IsoData_Classifier.version>2.0.1</IsoData_Classifier.version>
 		<sc.fiji.IsoData_Classifier.version>${IsoData_Classifier.version}</sc.fiji.IsoData_Classifier.version>
-
-		<jython-autocompletion.version>0.0.4</jython-autocompletion.version>
-		<sc.fiji.jython-autocompletion.version>${jython-autocompletion.version}</sc.fiji.jython-autocompletion.version>
 
 		<Kappa.version>2.0.0</Kappa.version>
 		<sc.fiji.Kappa.version>${Kappa.version}</sc.fiji.Kappa.version>
@@ -1853,6 +1854,13 @@
 				<version>${org.scijava.batch-processor.version}</version>
 			</dependency>
 
+			<!-- Jython Autocompletion - https://github.com/scijava/jython-autocompletion -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>jython-autocompletion</artifactId>
+				<version>${org.scijava.jython-autocompletion.version}</version>
+			</dependency>
+
 			<!-- MiniMaven - https://github.com/scijava/minimaven -->
 			<dependency>
 				<groupId>org.scijava</groupId>
@@ -2650,11 +2658,6 @@
 				<groupId>sc.fiji</groupId>
 				<artifactId>IsoData_Classifier</artifactId>
 				<version>${sc.fiji.IsoData_Classifier.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
-				<artifactId>jython-autocompletion</artifactId>
-				<version>${sc.fiji.jython-autocompletion.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
