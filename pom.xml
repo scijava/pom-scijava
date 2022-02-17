@@ -781,6 +781,9 @@
 		<IsoData_Classifier.version>2.0.1</IsoData_Classifier.version>
 		<sc.fiji.IsoData_Classifier.version>${IsoData_Classifier.version}</sc.fiji.IsoData_Classifier.version>
 
+		<jython-autocompletion.version>0.0.4</jython-autocompletion.version>
+		<sc.fiji.jython-autocompletion.version>${jython-autocompletion.version}</sc.fiji.jython-autocompletion.version>
+
 		<Kappa.version>2.0.0</Kappa.version>
 		<sc.fiji.Kappa.version>${Kappa.version}</sc.fiji.Kappa.version>
 
@@ -2647,6 +2650,11 @@
 				<groupId>sc.fiji</groupId>
 				<artifactId>IsoData_Classifier</artifactId>
 				<version>${sc.fiji.IsoData_Classifier.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>jython-autocompletion</artifactId>
+				<version>${sc.fiji.jython-autocompletion.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
