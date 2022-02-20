@@ -1815,6 +1815,10 @@
 		<org.tensorflow.libtensorflow_jni_gpu.version>${libtensorflow_jni_gpu.version}</org.tensorflow.libtensorflow_jni_gpu.version>
 		<org.tensorflow.proto.version>${proto.version}</org.tensorflow.proto.version>
 
+		<!-- Therapi Runtime Javadoc - https://github.com/dnault/therapi-runtime-javadoc -->
+		<!-- NB: therapi.version is defined in pom-scijava-base. -->
+		<com.github.therapi.therapi-runtime-javadoc.version>${therapi.version}</com.github.therapi.therapi-runtime-javadoc.version>
+
 		<!-- Trove - https://bitbucket.org/trove4j/trove -->
 		<trove4j.version>3.0.3</trove4j.version>
 		<net.sf.trove4j.trove4j.version>${trove4j.version}</net.sf.trove4j.trove4j.version>
@@ -4786,6 +4790,13 @@
 				<groupId>org.tensorflow</groupId>
 				<artifactId>proto</artifactId>
 				<version>${org.tensorflow.proto.version}</version>
+			</dependency>
+
+			<!-- Therapi Runtime Javadoc - https://github.com/dnault/therapi-runtime-javadoc -->
+			<dependency>
+				<groupId>com.github.therapi</groupId>
+				<artifactId>therapi-runtime-javadoc</artifactId>
+				<version>${com.github.therapi.therapi-runtime-javadoc.version}</version>
 			</dependency>
 
 			<!-- Trove - https://bitbucket.org/trove4j/trove -->
