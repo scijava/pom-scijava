@@ -1815,7 +1815,7 @@
 		<org.tensorflow.libtensorflow_jni_gpu.version>${libtensorflow_jni_gpu.version}</org.tensorflow.libtensorflow_jni_gpu.version>
 		<org.tensorflow.proto.version>${proto.version}</org.tensorflow.proto.version>
 
-		<!-- Trove - http://trove.starlight-systems.com/ -->
+		<!-- Trove - https://bitbucket.org/trove4j/trove -->
 		<trove4j.version>3.0.3</trove4j.version>
 		<net.sf.trove4j.trove4j.version>${trove4j.version}</net.sf.trove4j.trove4j.version>
 
@@ -4788,7 +4788,7 @@
 				<version>${org.tensorflow.proto.version}</version>
 			</dependency>
 
-			<!-- Trove - http://trove.starlight-systems.com/ -->
+			<!-- Trove - https://bitbucket.org/trove4j/trove -->
 			<dependency>
 				<groupId>net.sf.trove4j</groupId>
 				<artifactId>trove4j</artifactId>
