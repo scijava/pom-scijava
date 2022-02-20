@@ -963,11 +963,11 @@
 		<!-- External Fiji projects (part of the Fiji distribution) -->
 
 		<!-- JITK TPS - https://github.com/saalfeldlab/jitk-tps -->
-		<jitk-tps.version>3.0.1</jitk-tps.version>
+		<jitk-tps.version>3.0.2</jitk-tps.version>
 		<jitk.jitk-tps.version>${jitk-tps.version}</jitk.jitk-tps.version>
 
 		<!-- BigWarp - https://github.com/saalfeldlab/bigwarp -->
-		<bigwarp.version>7.0.4</bigwarp.version>
+		<bigwarp.version>7.0.5</bigwarp.version>
 		<bigwarp_fiji.version>${bigwarp.version}</bigwarp_fiji.version>
 		<sc.fiji.bigwarp_fiji.version>${bigwarp_fiji.version}</sc.fiji.bigwarp_fiji.version>
 
