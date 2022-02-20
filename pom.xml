@@ -225,6 +225,15 @@
 		Part of: org.apache.spark:spark-*
 		Enables: org.apache.spark:spark-core_2.11 (spark-*)
 		==
+		Classes: org.eclipse.aether.*
+		Part of:
+			org.apache.maven.resolver:maven-resolver-api
+			org.apache.maven.resolver:maven-resolver-util
+			org.apache.maven.shared:maven-artifact-transfer
+			org.eclipse.aether:aether-api
+			org.eclipse.aether:aether-util
+		Enables: dependence on Apache Maven libraries
+		==
 		Classes: org.hibernate.stat.ConcurrentStatisticsImpl
 		Part of: org.hibernate:hibernate-core
 		Also in: org.openmicroscopy:omero-blitz
@@ -242,8 +251,13 @@
 		Enables:
 			org.jetbrains.kotlin:kotlin-compiler-embeddable (kotlin-daemon-embeddable) +
 			org.jetbrains.kotlin:kotlin-script-util (kotlin-compiler-client)
+		==
+		Classes: org.jzy3d.plot3d.pipelines.*
+		Part of: org.jzy3d:jzy3d-core, org.jzy3d:jzy3d-native-jogl-awt
+		Enables: org.jzy3d:jzy3d-core + org.jzy3d:jzy3d-native-jogl-awt
 		-->
-		<scijava.allowedDuplicateClasses>com.google.inject.*,jnr.ffi.*,org.apache.hadoop.yarn.*.package-info,org.apache.spark.unused.UnusedStubClass,org.hibernate.stat.ConcurrentStatisticsImpl,org.jetbrains.kotlin.daemon.common.*,org.junit.runner.Runner</scijava.allowedDuplicateClasses>
+		<scijava.allowedDuplicateClasses>com.google.inject.*,jnr.ffi.*,org.apache.hadoop.yarn.*.package-info,org.apache.spark.unused.UnusedStubClass,org.eclipse.aether.*,org.hibernate.stat.ConcurrentStatisticsImpl,org.jetbrains.kotlin.daemon.common.*,org.junit.runner.Runner,org.jzy3d.plot3d.pipelines.*</scijava.allowedDuplicateClasses>
+
 		<!--
 		NB: The scijava.allowedDuplicateClasses property above makes it easier to
 		append to the list of allowed duplicate classes in downstream projects.
