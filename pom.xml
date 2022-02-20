@@ -1086,7 +1086,7 @@
 		<fr.inra.ijpb.MorphoLibJ_.version>${MorphoLibJ_.version}</fr.inra.ijpb.MorphoLibJ_.version>
 
 		<!-- SNT - https://github.com/morphonets/SNT -->
-		<SNT.version>4.0.2</SNT.version>
+		<SNT.version>4.0.10</SNT.version>
 		<org.morphonets.SNT.version>${SNT.version}</org.morphonets.SNT.version>
 
 		<!-- BoneJ2 - https://github.com/bonej-org/BoneJ2 -->
