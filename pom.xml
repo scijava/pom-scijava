@@ -1808,6 +1808,10 @@
 		<postgresql.version>42.2.24</postgresql.version>
 		<org.postgresql.postgresql.version>${postgresql.version}</org.postgresql.postgresql.version>
 
+		<!-- reload4j - https://reload4j.qos.ch/ -->
+		<reload4j.version>1.2.18.3</reload4j.version>
+		<ch.qos.reload4j.reload4j.version>${reload4j.version}</ch.qos.reload4j.reload4j.version>
+
 		<!-- RSyntaxTextArea - https://bobbylight.github.io/RSyntaxTextArea/ -->
 		<rsyntaxtextarea.version>3.1.1</rsyntaxtextarea.version>
 		<autocomplete.version>3.1.0</autocomplete.version>
@@ -4817,6 +4821,13 @@
 				<groupId>org.postgresql</groupId>
 				<artifactId>postgresql</artifactId>
 				<version>${org.postgresql.postgresql.version}</version>
+			</dependency>
+
+			<!-- reload4j - https://reload4j.qos.ch/ -->
+			<dependency>
+				<groupId>ch.qos.reload4j</groupId>
+				<artifactId>reload4j</artifactId>
+				<version>${ch.qos.reload4j.reload4j.version}</version>
 			</dependency>
 
 			<!-- RSyntaxTextArea - https://bobbylight.github.io/RSyntaxTextArea/ -->
