@@ -1816,7 +1816,7 @@
 		<com.fifesoft.autocomplete.version>${autocomplete.version}</com.fifesoft.autocomplete.version>
 		<com.fifesoft.languagesupport.version>${languagesupport.version}</com.fifesoft.languagesupport.version>
 
-		<!-- SLF4J - http://slf4j.org/ -->
+		<!-- SLF4J - https://www.slf4j.org/ -->
 		<slf4j.version>1.7.32</slf4j.version>
 		<slf4j-api.version>${slf4j.version}</slf4j-api.version>
 		<slf4j-ext.version>${slf4j.version}</slf4j-ext.version>
@@ -4290,7 +4290,7 @@
 						Conflicts with commons-logging:commons-logging.
 						If you depend on jackrabbit-webdav, add either
 						commons-logging or jcl-over-slfj to your deps.
-						See: http://www.slf4j.org/legacy.html#jcl-over-slf4j
+						See: https://www.slf4j.org/legacy.html#jcl-over-slf4j
 						-->
 						<groupId>org.slf4j</groupId>
 						<artifactId>jcl-over-slf4j</artifactId>
@@ -4819,7 +4819,7 @@
 				<version>${org.postgresql.postgresql.version}</version>
 			</dependency>
 
-			<!-- RSyntaxTextArea - http://bobbylight.github.io/RSyntaxTextArea/ -->
+			<!-- RSyntaxTextArea - https://bobbylight.github.io/RSyntaxTextArea/ -->
 			<dependency>
 				<groupId>com.fifesoft</groupId>
 				<artifactId>rsyntaxtextarea</artifactId>
@@ -4836,7 +4836,7 @@
 				<version>${com.fifesoft.languagesupport.version}</version>
 			</dependency>
 
-			<!-- SLF4J - http://slf4j.org/ -->
+			<!-- SLF4J - https://www.slf4j.org/ -->
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-api</artifactId>
