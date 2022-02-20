@@ -1186,6 +1186,31 @@
 		<cleargl.version>2.2.10</cleargl.version>
 		<net.clearvolume.cleargl.version>${cleargl.version}</net.clearvolume.cleargl.version>
 
+		<!-- CLIJ - https://clij.github.io -->
+		<clij_.version>1.9.0.1</clij_.version>
+		<net.heasleinhuepf.clij_.version>${clij_.version}</net.heasleinhuepf.clij_.version>
+
+		<clij-core.version>1.8.1.1</clij-core.version>
+		<net.heasleinhuepf.clij-core.version>${clij-core.version}</net.heasleinhuepf.clij-core.version>
+
+		<clij-coremem.version>2.3.0.4</clij-coremem.version>
+		<net.heasleinhuepf.clij-coremem.version>${clij-coremem.version}</net.heasleinhuepf.clij-coremem.version>
+
+		<clij-clearcl.version>2.5.0.1</clij-clearcl.version>
+		<net.heasleinhuepf.clij-clearcl.version>${clij-clearcl.version}</net.heasleinhuepf.clij-clearcl.version>
+
+		<clij2_.version>2.5.1.4</clij2_.version>
+		<net.heasleinhuepf.clij2_.version>${clij2_.version}</net.heasleinhuepf.clij2_.version>
+
+		<clij2-assistant_.version>2.5.1.1</clij2-assistant_.version>
+		<net.heasleinhuepf.clij2-assistant_.version>${clij2-assistant_.version}</net.heasleinhuepf.clij2-assistant_.version>
+
+		<clijx_.version>0.32.1.1</clijx_.version>
+		<net.heasleinhuepf.clijx_.version>${clijx_.version}</net.heasleinhuepf.clijx_.version>
+
+		<clijx-weka_.version>0.32.1.1</clijx-weka_.version>
+		<net.heasleinhuepf.clijx-weka_.version>${clijx-weka_.version}</net.heasleinhuepf.clijx-weka_.version>
+
 		<!-- Scenery - https://github.com/scenerygraphics/scenery -->
 		<scenery.version>0.7.0-beta-7</scenery.version>
 		<graphics.scenery.scenery.version>${scenery.version}</graphics.scenery.scenery.version>
@@ -1346,6 +1371,10 @@
 		<jblosc.version>1.0.1</jblosc.version>
 		<org.lasersonlab.jblosc.version>${jblosc.version}</org.lasersonlab.jblosc.version>
 
+		<!-- BridJ - https://github.com/nativelibs4java/BridJ -->
+		<bridj.version>0.7.0</bridj.version>
+		<com.nativelibs4java.bridj.version>${bridj.version}</com.nativelibs4java.bridj.version>
+
 		<!-- CDI - http://cdi-spec.org/ -->
 		<cdi-api.version>1.2</cdi-api.version>
 		<javax.enterprise.cdi-api.version>${cdi-api.version}</javax.enterprise.cdi-api.version>
@@ -1383,6 +1412,10 @@
 		<!-- Commons Math - https://commons.apache.org/proper/commons-math/ -->
 		<commons-math3.version>3.6.1</commons-math3.version>
 		<org.apache.commons.commons-math3.version>${commons-math3.version}</org.apache.commons.commons-math3.version>
+
+		<!-- Commons Pool2 - https://commons.apache.org/proper/commons-pool/ -->
+		<commons-pool2.version>2.11.1</commons-pool2.version>
+		<org.apache.commons.commons-pool2.version>${commons-pool2.version}</org.apache.commons.commons-pool2.version>
 
 		<!-- Commons Text - https://commons.apache.org/proper/commons-text/ -->
 		<commons-text.version>1.9</commons-text.version>
@@ -1636,6 +1669,10 @@
 		<joda-time.version>2.10.6</joda-time.version>
 		<joda-time.joda-time.version>${joda-time.version}</joda-time.joda-time.version>
 
+		<!-- JOCL - https://www.jocl.org -->
+		<jocl.version>2.0.4</jocl.version>
+		<org.jocl.jocl.version>${jocl.version}</org.jocl.jocl.version>
+
 		<!-- JOGL - https://jogamp.org/jogl/ -->
 		<jogl.version>2.3.2</jogl.version>
 		<gluegen-rt-main.version>${jogl.version}</gluegen-rt-main.version>
@@ -1711,6 +1748,12 @@
 		<org.jetbrains.kotlin.kotlin-stdlib.version>${kotlin-stdlib.version}</org.jetbrains.kotlin.kotlin-stdlib.version>
 		<org.jetbrains.kotlin.kotlin-stdlib-common.version>${kotlin-stdlib-common.version}</org.jetbrains.kotlin.kotlin-stdlib-common.version>
 		<org.jetbrains.kotlin.kotlin-stdlib-jdk8.version>${kotlin-stdlib-jdk8.version}</org.jetbrains.kotlin.kotlin-stdlib-jdk8.version>
+
+		<!-- Labkit - https://imagej.net/plugins/labkit -->
+		<labkit-ui.version>0.3.0</labkit-ui.version>
+		<sc.fiji.labkit-ui.version>${labkit-ui.version}</sc.fiji.labkit-ui.version>
+		<labkit.pixel-classification.version>0.1.13</labkit.pixel-classification.version>
+		<sc.fiji.labkit-pixel-classification.version>${labkit.pixel-classification.version}</sc.fiji.labkit-pixel-classification.version>
 
 		<!-- Logback - https://logback.qos.ch/ -->
 		<logback.version>1.2.3</logback.version>
@@ -3421,6 +3464,48 @@
 				<version>${net.clearvolume.cleargl.version}</version>
 			</dependency>
 
+			<!-- CLIJ - clij.github.io -->
+			<dependency>
+				<groupId>net.haesleinhuepf</groupId>
+				<artifactId>clij_</artifactId>
+				<version>${net.heasleinhuepf.clij_.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.haesleinhuepf</groupId>
+				<artifactId>clij-core</artifactId>
+				<version>${net.heasleinhuepf.clij-core.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.haesleinhuepf</groupId>
+				<artifactId>clij-coremem</artifactId>
+				<version>${net.heasleinhuepf.clij-coremem.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.haesleinhuepf</groupId>
+				<artifactId>clij-clearcl</artifactId>
+				<version>${net.heasleinhuepf.clij-clearcl.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.haesleinhuepf</groupId>
+				<artifactId>clij2_</artifactId>
+				<version>${net.heasleinhuepf.clij2_.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.haesleinhuepf</groupId>
+				<artifactId>clij2-assistant_</artifactId>
+				<version>${net.heasleinhuepf.clij2-assistant_.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.haesleinhuepf</groupId>
+				<artifactId>clijx_</artifactId>
+				<version>${net.heasleinhuepf.clijx_.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.haesleinhuepf</groupId>
+				<artifactId>clijx-weka_</artifactId>
+				<version>${net.heasleinhuepf.clijx-weka_.version}</version>
+			</dependency>
+
 			<!-- Scenery - https://github.com/scenerygraphics/scenery -->
 			<dependency>
 				<groupId>graphics.scenery</groupId>
@@ -3921,6 +4006,13 @@
 				<version>${org.lasersonlab.jblosc.version}</version>
 			</dependency>
 
+			<!-- BridJ - https://github.com/nativelibs4java/BridJ -->
+			<dependency>
+				<groupId>com.nativelibs4java</groupId>
+				<artifactId>bridj</artifactId>
+				<version>${com.nativelibs4java.bridj.version}</version>
+			</dependency>
+
 			<!-- CDI - http://cdi-spec.org/ -->
 			<dependency>
 				<groupId>javax.enterprise</groupId>
@@ -3987,6 +4079,13 @@
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-math3</artifactId>
 				<version>${org.apache.commons.commons-math3.version}</version>
+			</dependency>
+
+			<!-- Commons Pool - https://commons.apache.org/proper/commons-pool/ -->
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-pool2</artifactId>
+				<version>${org.apache.commons.commons-pool2.version}</version>
 			</dependency>
 
 			<!-- Commons Text - https://commons.apache.org/proper/commons-text/ -->
@@ -4488,6 +4587,13 @@
 				<version>${joda-time.joda-time.version}</version>
 			</dependency>
 
+			<!-- JOCL - https://www.jocl.org -->
+			<dependency>
+				<groupId>org.jocl</groupId>
+				<artifactId>jocl</artifactId>
+				<version>${org.jocl.jocl.version}</version>
+			</dependency>
+
 			<!-- JOGL - https://jogamp.org/jogl/ -->
 			<dependency>
 				<groupId>org.jogamp.gluegen</groupId>
@@ -4600,6 +4706,18 @@
 				<groupId>org.jetbrains.kotlin</groupId>
 				<artifactId>kotlin-stdlib-jdk8</artifactId>
 				<version>${org.jetbrains.kotlin.kotlin-stdlib-jdk8.version}</version>
+			</dependency>
+
+			<!-- Labkit - https://imagej.net/plugins/labkit -->
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>labkit-ui</artifactId>
+				<version>${sc.fiji.labkit-ui.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>labkit-pixel-classification</artifactId>
+				<version>${sc.fiji.labkit-pixel-classification.version}</version>
 			</dependency>
 
 			<!-- Logback - http://logback.qos.ch/ -->
