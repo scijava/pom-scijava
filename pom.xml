@@ -388,8 +388,12 @@
 		<org.scijava.scijava-ui-swing.version>${scijava-ui-swing.version}</org.scijava.scijava-ui-swing.version>
 
 		<!-- Script Editor - https://github.com/scijava/script-editor -->
-		<script-editor.version>0.5.9</script-editor.version>
+		<script-editor.version>0.6.1</script-editor.version>
 		<org.scijava.script-editor.version>${script-editor.version}</org.scijava.script-editor.version>
+
+		<!-- Script Editor: Jython - https://github.com/scijava/script-editor-jython -->
+		<script-editor-jython.version>0.1.1</script-editor-jython.version>
+		<org.scijava.script-editor-jython.version>${script-editor-jython.version}</org.scijava.script-editor-jython.version>
 
 		<!-- Scripting: BeanShell - https://github.com/scijava/scripting-beanshell -->
 		<scripting-beanshell.version>0.3.4</scripting-beanshell.version>
@@ -2052,6 +2056,13 @@
 				<groupId>org.scijava</groupId>
 				<artifactId>script-editor</artifactId>
 				<version>${org.scijava.script-editor.version}</version>
+			</dependency>
+
+			<!-- Script Editor: Jython - https://github.com/scijava/script-editor-jython -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>script-editor-jython</artifactId>
+				<version>${org.scijava.script-editor-jython.version}</version>
 			</dependency>
 
 			<!-- Scripting: BeanShell - https://github.com/scijava/scripting-beanshell -->
