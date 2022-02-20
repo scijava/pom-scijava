@@ -4447,6 +4447,13 @@
 				<groupId>org.jgrapht</groupId>
 				<artifactId>jgrapht-opt</artifactId>
 				<version>${org.jgrapht.jgrapht-opt.version}</version>
+				<exclusions>
+					<exclusion>
+						<!-- Uber-JAR including fastutil-core -->
+						<groupId>it.unimi.dsi</groupId>
+						<artifactId>fastutil</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<!-- JGraphX - https://github.com/jgraph/jgraphx -->
