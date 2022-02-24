@@ -1229,14 +1229,6 @@
 		<clijx-weka_.version>0.32.1.1</clijx-weka_.version>
 		<net.heasleinhuepf.clijx-weka_.version>${clijx-weka_.version}</net.heasleinhuepf.clijx-weka_.version>
 
-		<!-- Scenery - https://github.com/scenerygraphics/scenery -->
-		<scenery.version>0.7.0-beta-7</scenery.version>
-		<graphics.scenery.scenery.version>${scenery.version}</graphics.scenery.scenery.version>
-
-		<!-- SciView - https://github.com/scenerygraphics/SciView -->
-		<sciview.version>0.2.0-beta-9</sciview.version>
-		<sc.iview.sciview.version>${sciview.version}</sc.iview.sciview.version>
-
 		<!-- Third party components -->
 
 		<!-- Amazon S3 - https://aws.amazon.com/sdkforjava -->
@@ -3533,20 +3525,6 @@
 				<groupId>net.haesleinhuepf</groupId>
 				<artifactId>clijx-weka_</artifactId>
 				<version>${net.heasleinhuepf.clijx-weka_.version}</version>
-			</dependency>
-
-			<!-- Scenery - https://github.com/scenerygraphics/scenery -->
-			<dependency>
-				<groupId>graphics.scenery</groupId>
-				<artifactId>scenery</artifactId>
-				<version>${graphics.scenery.scenery.version}</version>
-			</dependency>
-
-			<!-- SciView - https://github.com/scenerygraphics/SciView -->
-			<dependency>
-				<groupId>sc.iview</groupId>
-				<artifactId>sciview</artifactId>
-				<version>${sc.iview.sciview.version}</version>
 			</dependency>
 
 			<!-- Third party components -->

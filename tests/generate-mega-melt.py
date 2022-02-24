@@ -21,8 +21,6 @@ depList = deps.getElementsByTagName('dependency')
 
 # Artifacts to exclude from the mega melt.
 ignoredArtifacts = [
-    # TEMP: Until scenerygraphics/scenery#314 is addressed.
-    'scenery',
     # TEMP: Until imagej-omero is updated for pom-scijava 29.
     'imagej-omero',
     'imagej-omero-legacy',

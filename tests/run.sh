@@ -78,7 +78,6 @@ chmod +x "$meltingPotScript" &&
 "$meltingPotScript" "$megaMeltDir" \
   -o "$meltingPotDir" \
   -i 'ca.mcgill:*' \
-  -i 'graphics.scenery:*' \
   -i 'io.scif:*' \
   -i 'jitk:*' \
   -i 'mpicbg:*' \
@@ -90,8 +89,6 @@ chmod +x "$meltingPotScript" &&
   -i 'org.janelia:*' \
   -i 'org.scijava:*' \
   -i 'sc.fiji:*' \
-  -i 'sc.iview:*' \
-  -e 'graphics.scenery:scenery' \
   -e 'org.janelia.saalfeldlab:n5-blosc' \
   -e 'org.janelia.saalfeldlab:n5-zarr' \
   -e 'org.scijava:j3dcore' \
