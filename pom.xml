@@ -1304,8 +1304,18 @@
 		<org.sonatype.sisu.sisu-inject-plexus.version>${sisu-inject-plexus.version}</org.sonatype.sisu.sisu-inject-plexus.version>
 
 		<!-- Apache POI - https://poi.apache.org/ -->
-		<poi.version>3.17</poi.version>
+		<poi.version>5.2.0</poi.version>
+		<poi-examples.version>${poi.version}</poi-examples.version>
+		<poi-excelant.version>${poi.version}</poi-excelant.version>
+		<poi-ooxml.version>${poi.version}</poi-ooxml.version>
+		<poi-ooxml-lite.version>${poi.version}</poi-ooxml-lite.version>
+		<poi-scratchpad.version>${poi.version}</poi-scratchpad.version>
 		<org.apache.poi.poi.version>${poi.version}</org.apache.poi.poi.version>
+		<org.apache.poi.poi-examples.version>${poi-examples.version}</org.apache.poi.poi-examples.version>
+		<org.apache.poi.poi-excelant.version>${poi-excelant.version}</org.apache.poi.poi-excelant.version>
+		<org.apache.poi.poi-ooxml.version>${poi-ooxml.version}</org.apache.poi.poi-ooxml.version>
+		<org.apache.poi.poi-ooxml-lite.version>${poi-ooxml-lite.version}</org.apache.poi.poi-ooxml-lite.version>
+		<org.apache.poi.poi-scratchpad.version>${poi-scratchpad.version}</org.apache.poi.poi-scratchpad.version>
 
 		<!-- Apache Spark - https://spark.apache.org/ -->
 		<spark.version>2.4.8</spark.version>
@@ -3705,6 +3715,37 @@
 				<groupId>org.apache.poi</groupId>
 				<artifactId>poi</artifactId>
 				<version>${org.apache.poi.poi.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.poi</groupId>
+				<artifactId>poi-examples</artifactId>
+				<version>${org.apache.poi.poi-examples.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.poi</groupId>
+				<artifactId>poi-excelant</artifactId>
+				<version>${org.apache.poi.poi-excelant.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.poi</groupId>
+				<artifactId>poi-ooxml</artifactId>
+				<version>${org.apache.poi.poi-ooxml.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.poi</groupId>
+				<artifactId>poi-ooxml-lite</artifactId>
+				<version>${org.apache.poi.poi-ooxml-lite.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.poi</groupId>
+				<artifactId>poi-scratchpad</artifactId>
+				<version>${org.apache.poi.poi-scratchpad.version}</version>
 			</dependency>
 
 			<!-- Apache Spark - https://spark.apache.org/ -->
