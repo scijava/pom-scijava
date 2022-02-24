@@ -44,7 +44,7 @@ dependencyTreeLog="$megaMeltDir/dependency-tree.log"
 validationLog="$megaMeltDir/validation.log"
 validationErrorsLog="$megaMeltDir/validation-errors.log"
 megaMeltPOM="$megaMeltDir/pom.xml"
-meltingPotURL=https://raw.githubusercontent.com/scijava/scijava-scripts/master/melting-pot.sh
+meltingPotURL=https://raw.githubusercontent.com/scijava/scijava-scripts/main/melting-pot.sh
 meltingPotScript="$megaMeltDir/melting-pot.sh"
 meltingPotDir="$megaMeltDir/melting-pot"
 
