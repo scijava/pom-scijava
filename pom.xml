@@ -903,7 +903,7 @@
 		<TopoJ_.version>${TopoJ.version}</TopoJ_.version>
 		<sc.fiji.TopoJ_.version>${TopoJ_.version}</sc.fiji.TopoJ_.version>
 
-		<TrackMate.version>7.0.7</TrackMate.version>
+		<TrackMate.version>7.6.1</TrackMate.version>
 		<sc.fiji.TrackMate.version>${TrackMate.version}</sc.fiji.TrackMate.version>
 
 		<Trainable_Segmentation.version>3.3.0</Trainable_Segmentation.version>
