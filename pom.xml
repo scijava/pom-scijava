@@ -630,7 +630,7 @@
 		<io.scif.scifio-cli.version>${scifio-cli.version}</io.scif.scifio-cli.version>
 
 		<!-- SCIFIO HDF5 - https://github.com/scifio/scifio-hdf5 -->
-		<scifio-hdf5.version>0.2.1</scifio-hdf5.version>
+		<scifio-hdf5.version>0.2.2</scifio-hdf5.version>
 		<io.scif.scifio-hdf5.version>${scifio-hdf5.version}</io.scif.scifio-hdf5.version>
 
 		<!-- SCIFIO JAI Image I/O - https://github.com/scifio/scifio-jai-imageio -->
