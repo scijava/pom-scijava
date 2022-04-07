@@ -365,6 +365,10 @@
 		<scijava-optional.version>1.0.1</scijava-optional.version>
 		<org.scijava.scijava-optional.version>${scijava-optional.version}</org.scijava.scijava-optional.version>
 
+		<!-- SciJava Plot - https://github.com/scijava/scijava-plot -->
+		<scijava-plot.version>0.2.0</scijava-plot.version>
+		<org.scijava.scijava-plot.version>${scijava-plot.version}</org.scijava.scijava-plot.version>
+
 		<!-- SciJava Plugins: Commands - https://github.com/scijava/scijava-plugins-commands -->
 		<scijava-plugins-commands.version>0.2.3</scijava-plugins-commands.version>
 		<org.scijava.scijava-plugins-commands.version>${scijava-plugins-commands.version}</org.scijava.scijava-plugins-commands.version>
@@ -398,7 +402,7 @@
 		<org.scijava.scijava-ui-awt.version>${scijava-ui-awt.version}</org.scijava.scijava-ui-awt.version>
 
 		<!-- SciJava UI: Swing - https://github.com/scijava/scijava-ui-swing -->
-		<scijava-ui-swing.version>0.13.3</scijava-ui-swing.version>
+		<scijava-ui-swing.version>0.14.0</scijava-ui-swing.version>
 		<org.scijava.scijava-ui-swing.version>${scijava-ui-swing.version}</org.scijava.scijava-ui-swing.version>
 
 		<!-- Script Editor - https://github.com/scijava/script-editor -->
@@ -2002,6 +2006,13 @@
 				<groupId>org.scijava</groupId>
 				<artifactId>scijava-optional</artifactId>
 				<version>${org.scijava.scijava-optional.version}</version>
+			</dependency>
+
+			<!-- SciJava Plot - https://github.com/scijava/scijava-plot -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-plot</artifactId>
+				<version>${org.scijava.scijava-plot.version}</version>
 			</dependency>
 
 			<!-- SciJava Plugins: Commands - https://github.com/scijava/scijava-plugins-commands -->
