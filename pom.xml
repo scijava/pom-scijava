@@ -1446,7 +1446,7 @@
 		<cglib.cglib.version>${cglib.version}</cglib.cglib.version>
 
 		<!--  Eclipse Collections - https://www.eclipse.org/collections/ -->
-		<eclipse-collections.version>10.4.0</eclipse-collections.version>
+		<eclipse-collections.version>11.0.0</eclipse-collections.version>
 		<eclipse-collections-api.version>${eclipse-collections.version}</eclipse-collections-api.version>
 		<eclipse-collections-forkjoin.version>${eclipse-collections.version}</eclipse-collections-forkjoin.version>
 		<eclipse-collections-testutils.version>${eclipse-collections.version}</eclipse-collections-testutils.version>
