@@ -608,7 +608,7 @@
 		<net.imglib2.imglib2-imglyb.version>${imglib2-imglyb.version}</net.imglib2.imglib2-imglyb.version>
 
 		<!-- ImgLib2 RealTransform - https://github.com/imglib/imglib2-realtransform -->
-		<imglib2-realtransform.version>3.1.1</imglib2-realtransform.version>
+		<imglib2-realtransform.version>3.1.2</imglib2-realtransform.version>
 		<net.imglib2.imglib2-realtransform.version>${imglib2-realtransform.version}</net.imglib2.imglib2-realtransform.version>
 
 		<!-- ImgLib2 ROI - https://github.com/imglib/imglib2-roi -->
