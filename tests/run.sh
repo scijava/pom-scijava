@@ -23,6 +23,7 @@ dependencyTreeLog="$megaMeltDir/dependency-tree.log"
 validationLog="$megaMeltDir/validation.log"
 validationErrorsLog="$megaMeltDir/validation-errors.log"
 megaMeltPOM="$megaMeltDir/pom.xml"
+meltingPotLocal="$dir/../../scijava-scripts/melting-pot.sh"
 meltingPotURL=https://raw.githubusercontent.com/scijava/scijava-scripts/main/melting-pot.sh
 meltingPotScript="$megaMeltDir/melting-pot.sh"
 meltingPotDir="$megaMeltDir/melting-pot"
@@ -52,7 +53,12 @@ echo 'Done!'
 # minus excluded artifacts (see ignoredArtifacts in generate-mega-melt.py).
 echo &&
 echo 'Generating melting pot...' &&
-curl -fsL "$meltingPotURL" > "$meltingPotScript" &&
+if [ -e "$meltingPotLocal" ]
+then
+	cp "$meltingPotLocal" "$meltingPotScript"
+else
+	curl -fsL "$meltingPotURL" > "$meltingPotScript"
+fi &&
 chmod +x "$meltingPotScript" &&
 "$meltingPotScript" "$megaMeltDir" \
   -o "$meltingPotDir" \
