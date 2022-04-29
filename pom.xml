@@ -1247,6 +1247,7 @@
 		<groovy-jaxb.version>${groovy.version}</groovy-jaxb.version>
 		<groovy-jmx.version>${groovy.version}</groovy-jmx.version>
 		<groovy-json.version>${groovy.version}</groovy-json.version>
+		<groovy-jsr223.version>${groovy.version}</groovy-jsr223.version>
 		<groovy-macro.version>${groovy.version}</groovy-macro.version>
 		<groovy-nio.version>${groovy.version}</groovy-nio.version>
 		<groovy-servlet.version>${groovy.version}</groovy-servlet.version>
@@ -1273,6 +1274,7 @@
 		<org.codehaus.groovy.groovy-jaxb.version>${groovy-jaxb.version}</org.codehaus.groovy.groovy-jaxb.version>
 		<org.codehaus.groovy.groovy-jmx.version>${groovy-jmx.version}</org.codehaus.groovy.groovy-jmx.version>
 		<org.codehaus.groovy.groovy-json.version>${groovy-json.version}</org.codehaus.groovy.groovy-json.version>
+		<org.codehaus.groovy.groovy-jsr223.version>${groovy-jsr223.version}</org.codehaus.groovy.groovy-jsr223.version>
 		<org.codehaus.groovy.groovy-macro.version>${groovy-macro.version}</org.codehaus.groovy.groovy-macro.version>
 		<org.codehaus.groovy.groovy-nio.version>${groovy-nio.version}</org.codehaus.groovy.groovy-nio.version>
 		<org.codehaus.groovy.groovy-servlet.version>${groovy-servlet.version}</org.codehaus.groovy.groovy-servlet.version>
@@ -3616,6 +3618,11 @@
 				<groupId>org.codehaus.groovy</groupId>
 				<artifactId>groovy-json</artifactId>
 				<version>${org.codehaus.groovy.groovy-json.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.codehaus.groovy</groupId>
+				<artifactId>groovy-jsr223</artifactId>
+				<version>${org.codehaus.groovy.groovy-jsr223.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.codehaus.groovy</groupId>
