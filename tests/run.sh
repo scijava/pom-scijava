@@ -96,6 +96,17 @@ awk '!/-D(annotations|antlr|jocl|kryo|minlog|opencsv|trove4j)\.version/' "$build
   die 'Error adjusting melting pot build script!'
 echo 'Done!'
 
+# HACK: Adjust component POMs to satisfy Maven HTTPS strictness.
+echo &&
+printf 'Adjusting melting pot project POMs... ' &&
+find "$meltingPotDir" -name pom.xml | while read pom
+do
+  mv "$pom" "$pom.original" &&
+  sed -e 's_\(https\?://maven.imagej.net\|http://maven.scijava.org\)_https://maven.scijava.org_g' \
+    -e 's_http://maven.apache.org/xsd_https://maven.apache.org/xsd_g' "$pom.original" > "$pom" ||
+    die "Failed to adjust $pom"
+done
+
 # Run the melting pot now, unless -s flag was given.
 doMelt=t
 for arg in "$@"
