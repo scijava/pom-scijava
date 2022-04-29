@@ -313,10 +313,6 @@
 		<junit-benchmarks.version>0.7.4-scijava</junit-benchmarks.version>
 		<org.scijava.junit-benchmarks.version>${junit-benchmarks.version}</org.scijava.junit-benchmarks.version>
 
-		<!-- Jython Autocompletion - https://github.com/scijava/jython-autocompletion -->
-		<jython-autocompletion.version>0.0.4</jython-autocompletion.version>
-		<org.scijava.jython-autocompletion.version>${jython-autocompletion.version}</org.scijava.jython-autocompletion.version>
-
 		<!-- MiniMaven - https://github.com/scijava/minimaven -->
 		<minimaven.version>2.2.2</minimaven.version>
 		<org.scijava.minimaven.version>${minimaven.version}</org.scijava.minimaven.version>
@@ -1909,13 +1905,6 @@
 				<groupId>org.scijava</groupId>
 				<artifactId>batch-processor</artifactId>
 				<version>${org.scijava.batch-processor.version}</version>
-			</dependency>
-
-			<!-- Jython Autocompletion - https://github.com/scijava/jython-autocompletion -->
-			<dependency>
-				<groupId>org.scijava</groupId>
-				<artifactId>jython-autocompletion</artifactId>
-				<version>${org.scijava.jython-autocompletion.version}</version>
 			</dependency>
 
 			<!-- MiniMaven - https://github.com/scijava/minimaven -->
