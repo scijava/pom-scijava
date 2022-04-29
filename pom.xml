@@ -326,7 +326,7 @@
 		<org.scijava.native-lib-loader.version>${native-lib-loader.version}</org.scijava.native-lib-loader.version>
 
 		<!-- Parsington - https://github.com/scijava/parsington -->
-		<parsington.version>2.0.1</parsington.version>
+		<parsington.version>3.0.0</parsington.version>
 		<org.scijava.parsington.version>${parsington.version}</org.scijava.parsington.version>
 
 		<!-- SciJava Cache - https://github.com/scijava/scijava-cache -->
@@ -442,7 +442,7 @@
 		<org.scijava.scripting-jython.version>${scripting-jython.version}</org.scijava.scripting-jython.version>
 
 		<!-- Scripting: Kotlin - https://github.com/scijava/scripting-kotlin -->
-		<scripting-kotlin.version>0.1.1</scripting-kotlin.version>
+		<scripting-kotlin.version>0.2.0</scripting-kotlin.version>
 		<org.scijava.scripting-kotlin.version>${scripting-kotlin.version}</org.scijava.scripting-kotlin.version>
 
 		<!-- Scripting: MATLAB - https://github.com/scijava/scripting-matlab -->
@@ -482,7 +482,7 @@
 		<net.imagej.ij1-patcher.version>${ij1-patcher.version}</net.imagej.ij1-patcher.version>
 
 		<!-- ImageJ Common - https://github.com/imagej/imagej-common -->
-		<imagej-common.version>0.34.1</imagej-common.version>
+		<imagej-common.version>0.34.2</imagej-common.version>
 		<net.imagej.imagej-common.version>${imagej-common.version}</net.imagej.imagej-common.version>
 
 		<!-- ImageJ Deprecated - https://github.com/imagej/imagej-deprecated -->
@@ -526,7 +526,7 @@
 		<net.imagej.imagej-opencv.version>${imagej-opencv.version}</net.imagej.imagej-opencv.version>
 
 		<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
-		<imagej-ops.version>0.45.8</imagej-ops.version>
+		<imagej-ops.version>0.46.1</imagej-ops.version>
 		<net.imagej.imagej-ops.version>${imagej-ops.version}</net.imagej.imagej-ops.version>
 
 		<!-- ImageJ Plugins: Batch - https://github.com/imagej/imagej-plugins-batch -->
@@ -584,7 +584,7 @@
 		<net.imglib2.imglib2.version>${imglib2.version}</net.imglib2.imglib2.version>
 
 		<!-- ImgLib2 Algorithms - https://github.com/imglib/imglib2-algorithm -->
-		<imglib2-algorithm.version>0.12.0</imglib2-algorithm.version>
+		<imglib2-algorithm.version>0.12.1</imglib2-algorithm.version>
 		<net.imglib2.imglib2-algorithm.version>${imglib2-algorithm.version}</net.imglib2.imglib2-algorithm.version>
 
 		<!-- ImgLib2 Algorithms FFT - https://github.com/imglib/imglib2-algorithm-fft -->
@@ -612,7 +612,7 @@
 		<net.imglib2.imglib2-realtransform.version>${imglib2-realtransform.version}</net.imglib2.imglib2-realtransform.version>
 
 		<!-- ImgLib2 ROI - https://github.com/imglib/imglib2-roi -->
-		<imglib2-roi.version>0.12.0</imglib2-roi.version>
+		<imglib2-roi.version>0.12.1</imglib2-roi.version>
 		<net.imglib2.imglib2-roi.version>${imglib2-roi.version}</net.imglib2.imglib2-roi.version>
 
 		<!-- ImgLib2 Unsafe - https://github.com/imglib/imglib2-unsafe -->
@@ -836,7 +836,7 @@
 		<OMEVisual.version>2.0.0</OMEVisual.version>
 		<sc.fiji.OMEVisual.version>${OMEVisual.version}</sc.fiji.OMEVisual.version>
 
-		<PIV_analyser.version>1.1.2</PIV_analyser.version>
+		<PIV_analyser.version>2.0.0</PIV_analyser.version>
 		<sc.fiji.PIV_analyser.version>${PIV_analyser.version}</sc.fiji.PIV_analyser.version>
 
 		<QuickPALM.version>1.1.2</QuickPALM.version>
@@ -910,7 +910,7 @@
 		<TrackMate.version>7.6.1</TrackMate.version>
 		<sc.fiji.TrackMate.version>${TrackMate.version}</sc.fiji.TrackMate.version>
 
-		<Trainable_Segmentation.version>3.3.0</Trainable_Segmentation.version>
+		<Trainable_Segmentation.version>3.3.1</Trainable_Segmentation.version>
 		<sc.fiji.Trainable_Segmentation.version>${Trainable_Segmentation.version}</sc.fiji.Trainable_Segmentation.version>
 
 		<TrakEM2_Archipelago.version>2.0.3</TrakEM2_Archipelago.version>
@@ -939,7 +939,7 @@
 		<Volume_Calculator.version>2.0.2</Volume_Calculator.version>
 		<sc.fiji.Volume_Calculator.version>${Volume_Calculator.version}</sc.fiji.Volume_Calculator.version>
 
-		<Volume_Viewer.version>2.01.2</Volume_Viewer.version>
+		<Volume_Viewer.version>2.01.3</Volume_Viewer.version>
 		<sc.fiji.Volume_Viewer.version>${Volume_Viewer.version}</sc.fiji.Volume_Viewer.version>
 
 		<bUnwarpJ.version>2.6.13</bUnwarpJ.version>
@@ -1006,7 +1006,7 @@
 		<!-- BigDataViewer - https://github.com/bigdataviewer -->
 
 		<!-- BigDataViewer Core - https://github.com/bigdataviewer/bigdataviewer-core -->
-		<bigdataviewer-core.version>10.2.1</bigdataviewer-core.version>
+		<bigdataviewer-core.version>10.2.2</bigdataviewer-core.version>
 		<sc.fiji.bigdataviewer-core.version>${bigdataviewer-core.version}</sc.fiji.bigdataviewer-core.version>
 
 		<!-- BigDataServer - https://github.com/bigdataviewer/bigdataviewer-server -->
@@ -1018,7 +1018,7 @@
 		<sc.fiji.bigdataviewer-vistools.version>${bigdataviewer-vistools.version}</sc.fiji.bigdataviewer-vistools.version>
 
 		<!-- BigDataViewer Fiji - https://github.com/bigdataviewer/bigdataviewer_fiji -->
-		<bigdataviewer_fiji.version>6.2.1</bigdataviewer_fiji.version>
+		<bigdataviewer_fiji.version>6.2.2</bigdataviewer_fiji.version>
 		<sc.fiji.bigdataviewer_fiji.version>${bigdataviewer_fiji.version}</sc.fiji.bigdataviewer_fiji.version>
 
 		<!-- SPIM Data - https://github.com/bigdataviewer/spimdata -->
@@ -1051,7 +1051,7 @@
 		<!-- N5 - https://github.com/saalfeldlab/n5 -->
 
 		<!-- ImgLib2 Label Multisets - https://github.com/saalfeldlab/imglib2-label-multisets -->
-		<imglib2-label-multisets.version>0.10.0</imglib2-label-multisets.version>
+		<imglib2-label-multisets.version>0.11.0</imglib2-label-multisets.version>
 		<net.imglib2.imglib2-label-multisets.version>${imglib2-label-multisets.version}</net.imglib2.imglib2-label-multisets.version>
 
 		<!-- N5 - https://github.com/saalfeldlab/n5 -->
@@ -1185,11 +1185,11 @@
 		<!-- Other SciJava components -->
 
 		<!-- BigStitcher - https://github.com/PreibischLab/BigStitcher -->
-		<BigStitcher.version>0.8.2</BigStitcher.version>
+		<BigStitcher.version>0.8.3</BigStitcher.version>
 		<net.preibisch.BigStitcher.version>${BigStitcher.version}</net.preibisch.BigStitcher.version>
 
 		<!-- multiview-reconstruction - https://github.com/PreibischLab/multiview-reconstruction -->
-		<multiview-reconstruction.version>0.11.0</multiview-reconstruction.version>
+		<multiview-reconstruction.version>0.11.5</multiview-reconstruction.version>
 		<net.preibisch.multiview-reconstruction.version>${multiview-reconstruction.version}</net.preibisch.multiview-reconstruction.version>
 
 		<!-- multiview-simulation - https://github.com/PreibischLab/multiview-simulation -->
