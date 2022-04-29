@@ -342,7 +342,7 @@
 		<org.scijava.scijava-config.version>${scijava-config.version}</org.scijava.scijava-config.version>
 
 		<!-- SciJava Grab - https://github.com/scijava/scijava-grab -->
-		<scijava-grab.version>0.1.0</scijava-grab.version>
+		<scijava-grab.version>0.1.1</scijava-grab.version>
 		<org.scijava.scijava-grab.version>${scijava-grab.version}</org.scijava.scijava-grab.version>
 
 		<!-- SciJava I/O: HTTP - https://github.com/scijava/scijava-io-http -->
@@ -468,17 +468,17 @@
 		<!-- ImageJ - https://github.com/imagej -->
 
 		<!-- ImageJ2 - https://github.com/imagej/imagej2 -->
-		<imagej2.version>2.3.0</imagej2.version>
+		<imagej2.version>2.4.0</imagej2.version>
 		<imagej.version>${imagej2.version}</imagej.version>
 		<net.imagej.imagej.version>${imagej.version}</net.imagej.imagej.version>
 
 		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
-		<imagej1.version>1.53f</imagej1.version>
+		<imagej1.version>1.53r</imagej1.version>
 		<ij.version>${imagej1.version}</ij.version>
 		<net.imagej.ij.version>${ij.version}</net.imagej.ij.version>
 
 		<!-- ImageJ 1.x patcher - https://github.com/imagej/ij1-patcher -->
-		<ij1-patcher.version>1.2.1</ij1-patcher.version>
+		<ij1-patcher.version>1.2.2</ij1-patcher.version>
 		<net.imagej.ij1-patcher.version>${ij1-patcher.version}</net.imagej.ij1-patcher.version>
 
 		<!-- ImageJ Common - https://github.com/imagej/imagej-common -->
@@ -522,7 +522,7 @@
 		<net.imagej.imagej-omero-legacy.version>${imagej-omero-legacy.version}</net.imagej.imagej-omero-legacy.version>
 
 		<!-- ImageJ OpenCV - https://github.com/imagej/imagej-opencv -->
-		<imagej-opencv.version>0.1.1</imagej-opencv.version>
+		<imagej-opencv.version>0.1.2</imagej-opencv.version>
 		<net.imagej.imagej-opencv.version>${imagej-opencv.version}</net.imagej.imagej-opencv.version>
 
 		<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
@@ -652,7 +652,7 @@
 		<!-- Fiji - https://github.com/fiji -->
 
 		<!-- Fiji - https://github.com/fiji/fiji -->
-		<fiji.version>2.3.1</fiji.version>
+		<fiji.version>2.4.0</fiji.version>
 		<sc.fiji.fiji.version>${fiji.version}</sc.fiji.fiji.version>
 
 		<!-- Standard Fiji projects -->
