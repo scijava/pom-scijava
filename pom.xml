@@ -1232,7 +1232,7 @@
 		<com.amazonaws.aws-java-sdk-s3.version>${aws-java-sdk-s3.version}</com.amazonaws.aws-java-sdk-s3.version>
 
 		<!-- Apache Groovy - https://groovy-lang.org/ -->
-		<groovy.version>3.0.9</groovy.version>
+		<groovy.version>3.0.4</groovy.version>
 		<groovy-ant.version>${groovy.version}</groovy-ant.version>
 		<groovy-astbuilder.version>${groovy.version}</groovy-astbuilder.version>
 		<groovy-bsf.version>${groovy.version}</groovy-bsf.version>
