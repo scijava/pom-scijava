@@ -55,9 +55,9 @@ echo &&
 echo 'Generating melting pot...' &&
 if [ -e "$meltingPotLocal" ]
 then
-	cp "$meltingPotLocal" "$meltingPotScript"
+  cp "$meltingPotLocal" "$meltingPotScript"
 else
-	curl -fsL "$meltingPotURL" > "$meltingPotScript"
+  curl -fsL "$meltingPotURL" > "$meltingPotScript"
 fi &&
 chmod +x "$meltingPotScript" &&
 "$meltingPotScript" "$megaMeltDir" \
@@ -80,14 +80,13 @@ chmod +x "$meltingPotScript" &&
   -e 'org.scijava:j3dutils' \
   -e 'org.scijava:jep' \
   -e 'org.scijava:junit-benchmarks' \
-  -e 'org.scijava:vecmath'  \
-  -f -v -s $@ || die 'Melting pot build failed!'
+  -e 'org.scijava:vecmath' \
+  -f -v -s $@ | grep -v '\(Skipping the build\|Melt complete\)' || die 'Melting pot build failed!'
 
 # HACK: Remove known-duplicate artifactIds from version property overrides.
 # The plan is for this step to become unnecessary once the melting pot has
 # been improved to include a strategy for dealing with components with same
 # artifactId but different groupIds. For now, we just prune these overrides.
-meltScript="$meltingPotDir/melt.sh"
 buildScript="$meltingPotDir/build.sh"
 buildScriptBackup="$buildScript.original"
 echo &&
