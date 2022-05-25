@@ -1137,10 +1137,12 @@
 
 		<!-- Bio-Formats - https://github.com/ome/bioformats -->
 		<bio-formats.version>6.9.1</bio-formats.version>
+		<bio-formats-tools.version>${bio-formats.version}</bio-formats-tools.version>
 		<bio-formats_plugins.version>${bio-formats.version}</bio-formats_plugins.version>
 		<formats-api.version>${bio-formats.version}</formats-api.version>
 		<formats-bsd.version>${bio-formats.version}</formats-bsd.version>
 		<formats-gpl.version>${bio-formats.version}</formats-gpl.version>
+		<ome.bio-formats-tools.version>${bio-formats-tools.version}</ome.bio-formats-tools.version>
 		<ome.bio-formats_plugins.version>${bio-formats_plugins.version}</ome.bio-formats_plugins.version>
 		<ome.formats-api.version>${formats-api.version}</ome.formats-api.version>
 		<ome.formats-bsd.version>${formats-bsd.version}</ome.formats-bsd.version>
@@ -3277,6 +3279,17 @@
 			</dependency>
 
 			<!-- Bio-Formats - https://github.com/ome/bioformats -->
+			<dependency>
+				<groupId>ome</groupId>
+				<artifactId>bio-formats-tools</artifactId>
+				<version>${ome.bio-formats-tools.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xalan</groupId>
+						<artifactId>serializer</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
 			<dependency>
 				<groupId>ome</groupId>
 				<artifactId>bio-formats_plugins</artifactId>
