@@ -1682,7 +1682,7 @@
 		<org.jmockit.jmockit.version>${jmockit.version}</org.jmockit.jmockit.version>
 
 		<!-- JNA - https://github.com/twall/jna -->
-		<jna.version>4.5.2</jna.version>
+		<jna.version>5.11.0</jna.version>
 		<net.java.dev.jna.jna.version>${jna.version}</net.java.dev.jna.jna.version>
 
 		<!-- Joda-Time - https://www.joda.org/joda-time/ -->
