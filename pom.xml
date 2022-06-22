@@ -642,7 +642,7 @@
 		<io.scif.scifio-lifesci.version>${scifio-lifesci.version}</io.scif.scifio-lifesci.version>
 
 		<!-- SCIFIO-OME-XML - https://github.com/scifio/scifio-ome-xml -->
-		<scifio-ome-xml.version>0.16.1</scifio-ome-xml.version>
+		<scifio-ome-xml.version>0.17.0</scifio-ome-xml.version>
 		<io.scif.scifio-ome-xml.version>${scifio-ome-xml.version}</io.scif.scifio-ome-xml.version>
 
 		<!-- Fiji - https://github.com/fiji -->
