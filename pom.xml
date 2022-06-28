@@ -4272,7 +4272,7 @@
 			<dependency>
 				<groupId>com.googlecode.efficient-java-matrix-library</groupId>
 				<artifactId>ejml</artifactId>
-				<version>${ejml.version}</version>
+				<version>${com.googlecode.efficient-java-matrix-library.ejml.version}</version>
 			</dependency>
 
 			<!-- Google Cloud Storage - https://github.com/googleapis/google-cloud-java -->
