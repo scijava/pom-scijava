@@ -1149,11 +1149,11 @@
 		<ome.formats-gpl.version>${formats-gpl.version}</ome.formats-gpl.version>
 
 		<!-- OMERO Blitz - https://github.com/ome/omero-blitz -->
-		<omero-blitz.version>5.5.8</omero-blitz.version>
+		<omero-blitz.version>5.5.10</omero-blitz.version>
 		<org.openmicroscopy.omero-blitz.version>${omero-blitz.version}</org.openmicroscopy.omero-blitz.version>
 
 		<!-- OMERO Common - https://github.com/ome/omero-common -->
-		<omero-common.version>5.5.7</omero-common.version>
+		<omero-common.version>5.5.9</omero-common.version>
 		<org.openmicroscopy.omero-common.version>${omero-common.version}</org.openmicroscopy.omero-common.version>
 
 		<!-- OMERO DSL Plugin - https://github.com/ome/omero-dsl-plugin -->
@@ -1161,23 +1161,23 @@
 		<org.openmicroscopy.omero-dsl-plugin.version>${omero-dsl-plugin.version}</org.openmicroscopy.omero-dsl-plugin.version>
 
 		<!-- OMERO Gateway - https://github.com/ome/omero-gateway-java -->
-		<omero-gateway.version>5.6.7</omero-gateway.version>
+		<omero-gateway.version>5.6.9</omero-gateway.version>
 		<org.openmicroscopy.omero-gateway.version>${omero-gateway.version}</org.openmicroscopy.omero-gateway.version>
 
 		<!-- OMERO Model - https://github.com/ome/omero-model -->
-		<omero-model.version>5.6.3</omero-model.version>
+		<omero-model.version>5.6.5</omero-model.version>
 		<org.openmicroscopy.omero-model.version>${omero-model.version}</org.openmicroscopy.omero-model.version>
 
 		<!-- OMERO Renderer - https://github.com/ome/omero-renderer -->
-		<omero-renderer.version>5.5.7</omero-renderer.version>
+		<omero-renderer.version>5.5.9</omero-renderer.version>
 		<org.openmicroscopy.omero-renderer.version>${omero-renderer.version}</org.openmicroscopy.omero-renderer.version>
 
 		<!-- OMERO ROMIO - https://github.com/ome/omero-romio -->
-		<omero-romio.version>5.6.2</omero-romio.version>
+		<omero-romio.version>5.6.4</omero-romio.version>
 		<org.openmicroscopy.omero-romio.version>${omero-romio.version}</org.openmicroscopy.omero-romio.version>
 
 		<!-- OMERO Server - https://github.com/ome/omero-server -->
-		<omero-server.version>5.6.1</omero-server.version>
+		<omero-server.version>5.6.3</omero-server.version>
 		<org.openmicroscopy.omero-server.version>${omero-server.version}</org.openmicroscopy.omero-server.version>
 
 		<!-- Other SciJava components -->
