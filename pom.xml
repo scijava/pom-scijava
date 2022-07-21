@@ -1114,6 +1114,10 @@
 
 		<!-- Open Microscopy Environment - https://github.com/ome -->
 
+		<!-- Zeroc software - https://zeroc.com/ -->
+		<ice.version>3.6.5</ice.version>
+		<glacier2.version>${ice.version}</glacier2.version>
+
 		<!-- OME Common Java - https://github.com/ome/ome-common-java -->
 		<ome-common.version>6.0.7</ome-common.version>
 		<org.openmicroscopy.ome-common.version>${ome-common.version}</org.openmicroscopy.ome-common.version>
@@ -3204,6 +3208,18 @@
 			</dependency>
 
 			<!-- Open Microscopy Environment - https://github.com/ome -->
+
+			<!-- Zeroc software - https://zeroc.com/ -->
+			<dependency>
+				<groupId>com.zeroc</groupId>
+				<artifactId>glacier2</artifactId>
+				<version>${glacier2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.zeroc</groupId>
+				<artifactId>ice</artifactId>
+				<version>${ice.version}</version>
+			</dependency>
 
 			<!-- Metakit - https://github.com/ome/ome-metakit -->
 			<dependency>
