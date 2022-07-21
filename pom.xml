@@ -510,11 +510,11 @@
 		<net.imagej.imagej-notebook.version>${imagej-notebook.version}</net.imagej.imagej-notebook.version>
 
 		<!-- ImageJ-OMERO - https://github.com/imagej/imagej-omero -->
-		<imagej-omero.version>1.0.0-5.5</imagej-omero.version>
+		<imagej-omero.version>1.0.0-5.6</imagej-omero.version>
 		<net.imagej.imagej-omero.version>${imagej-omero.version}</net.imagej.imagej-omero.version>
 
 		<!-- ImageJ-OMERO Legacy - https://github.com/imagej/imagej-omero-legacy -->
-		<imagej-omero-legacy.version>1.0.0-5.5</imagej-omero-legacy.version>
+		<imagej-omero-legacy.version>1.0.0-5.6</imagej-omero-legacy.version>
 		<net.imagej.imagej-omero-legacy.version>${imagej-omero-legacy.version}</net.imagej.imagej-omero-legacy.version>
 
 		<!-- ImageJ OpenCV - https://github.com/imagej/imagej-opencv -->
