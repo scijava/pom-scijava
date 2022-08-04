@@ -458,7 +458,7 @@
 		<org.scijava.swing-checkbox-tree.version>${swing-checkbox-tree.version}</org.scijava.swing-checkbox-tree.version>
 
 		<!-- UI Behaviour - https://github.com/scijava/ui-behaviour -->
-		<ui-behaviour.version>2.0.6</ui-behaviour.version>
+		<ui-behaviour.version>2.0.7</ui-behaviour.version>
 		<org.scijava.ui-behaviour.version>${ui-behaviour.version}</org.scijava.ui-behaviour.version>
 
 		<!-- ImageJ - https://github.com/imagej -->
