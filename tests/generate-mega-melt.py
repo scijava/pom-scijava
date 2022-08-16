@@ -21,6 +21,10 @@ depList = deps.getElementsByTagName('dependency')
 
 # Artifacts to exclude from the mega melt.
 ignoredArtifacts = [
+    # TEMP: The original ImageJ requires Java 9+ to compile,
+    # because it has a module-info.java, so skip it until the
+    # component collection is updated from Java 8 to Java 11.
+    'ij',
     # TEMP: Until imagej-omero is updated for pom-scijava 29.
     'imagej-omero',
     'imagej-omero-legacy',
