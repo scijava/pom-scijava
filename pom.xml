@@ -1519,7 +1519,7 @@
 		<com.google.code.gson.gson.version>${gson.version}</com.google.code.gson.gson.version>
 
 		<!-- Guava - https://github.com/google/guava -->
-		<guava.version>21.0</guava.version>
+		<guava.version>27.1-jre</guava.version>
 		<com.google.guava.guava.version>${guava.version}</com.google.guava.guava.version>
 
 		<!-- HyperSQL DataBase - http://hsqldb.org/ -->
