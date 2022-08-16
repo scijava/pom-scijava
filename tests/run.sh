@@ -26,6 +26,7 @@ megaMeltPOM="$megaMeltDir/pom.xml"
 meltingPotLocal="$dir/../../scijava-scripts/melting-pot.sh"
 meltingPotURL=https://raw.githubusercontent.com/scijava/scijava-scripts/main/melting-pot.sh
 meltingPotScript="$megaMeltDir/melting-pot.sh"
+meltingPotLog="$megaMeltDir/melting-pot.log"
 meltingPotDir="$megaMeltDir/melting-pot"
 
 rm -rf "$megaMeltDir" && mkdir -p "$megaMeltDir" || die "Creation of $megaMeltDir failed!"
@@ -81,7 +82,8 @@ chmod +x "$meltingPotScript" &&
   -e 'org.scijava:jep' \
   -e 'org.scijava:junit-benchmarks' \
   -e 'org.scijava:vecmath' \
-  -f -v -s $@ | grep -v '\(Skipping the build\|Melt complete\)' || die 'Melting pot build failed!'
+  -f -v -s $@ 2>&1 | tee "$meltingPotLog" ||
+  die 'Melting pot build failed!'
 
 # HACK: Remove known-duplicate artifactIds from version property overrides.
 # The plan is for this step to become unnecessary once the melting pot has
