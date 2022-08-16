@@ -75,6 +75,7 @@ chmod +x "$meltingPotScript" &&
   -i 'org.janelia:*' \
   -i 'org.scijava:*' \
   -i 'sc.fiji:*' \
+  -e 'net.imagej:ij' \
   -e 'org.janelia.saalfeldlab:n5-blosc' \
   -e 'org.janelia.saalfeldlab:n5-zarr' \
   -e 'org.scijava:j3dcore' \
