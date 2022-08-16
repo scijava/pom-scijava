@@ -209,6 +209,11 @@
 			org.apache.maven:maven-core (guice) +
 			org.apache.maven.shared:maven-common-artifact-filters (sisu-guice)
 		==
+		Class: javax.xml.namespace.QName
+		Part of: Java Runtime Environment
+		Also in: xml-apis:xml-apis, xpp3:xpp3
+		Enables: xml-apis:xml-apis + xpp3:xpp3
+		==
 		TEMP: Until scijava/scripting-jruby#5 is resolved.
 		Classes: jnr.ffi.*
 		Part of: com.github.jnr:jnr-ffi
@@ -256,7 +261,7 @@
 		Part of: org.jzy3d:jzy3d-core, org.jzy3d:jzy3d-native-jogl-awt
 		Enables: org.jzy3d:jzy3d-core + org.jzy3d:jzy3d-native-jogl-awt
 		-->
-		<scijava.allowedDuplicateClasses>com.google.inject.*,jnr.ffi.*,org.apache.hadoop.yarn.*.package-info,org.apache.spark.unused.UnusedStubClass,org.eclipse.aether.*,org.hibernate.stat.ConcurrentStatisticsImpl,org.jetbrains.kotlin.daemon.common.*,org.junit.runner.Runner,org.jzy3d.plot3d.pipelines.*</scijava.allowedDuplicateClasses>
+		<scijava.allowedDuplicateClasses>com.google.inject.*,javax.xml.namespace.QName,jnr.ffi.*,org.apache.hadoop.yarn.*.package-info,org.apache.spark.unused.UnusedStubClass,org.eclipse.aether.*,org.hibernate.stat.ConcurrentStatisticsImpl,org.jetbrains.kotlin.daemon.common.*,org.junit.runner.Runner,org.jzy3d.plot3d.pipelines.*</scijava.allowedDuplicateClasses>
 
 		<!--
 		NB: The scijava.allowedDuplicateClasses property above makes it easier to
@@ -3347,10 +3352,6 @@
 						<groupId>xalan</groupId>
 						<artifactId>xalan</artifactId>
 					</exclusion>
-					<exclusion>
-						<groupId>xml-apis</groupId>
-						<artifactId>xml-apis</artifactId>
-					</exclusion>
 				</exclusions>
 			</dependency>
 			<dependency>
@@ -3769,12 +3770,6 @@
 				<groupId>org.apache.poi</groupId>
 				<artifactId>poi-ooxml</artifactId>
 				<version>${org.apache.poi.poi-ooxml.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>xml-apis</groupId>
-						<artifactId>xml-apis</artifactId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.poi</groupId>
@@ -3815,10 +3810,6 @@
 						<groupId>io.netty</groupId>
 						<artifactId>netty-all</artifactId>
 					</exclusion>
-					<exclusion>
-						<groupId>xml-apis</groupId>
-						<artifactId>xml-apis</artifactId>
-					</exclusion>
 				</exclusions>
 			</dependency>
 
@@ -3839,12 +3830,6 @@
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-anim</artifactId>
 				<version>${org.apache.xmlgraphics.batik-anim.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>xml-apis</groupId>
-						<artifactId>xml-apis</artifactId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
@@ -3860,22 +3845,12 @@
 						<groupId>xalan</groupId>
 						<artifactId>xalan</artifactId>
 					</exclusion>
-					<exclusion>
-						<groupId>xml-apis</groupId>
-						<artifactId>xml-apis</artifactId>
-					</exclusion>
 				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-codec</artifactId>
 				<version>${org.apache.xmlgraphics.batik-codec.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>xml-apis</groupId>
-						<artifactId>xml-apis</artifactId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
@@ -3886,12 +3861,6 @@
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-css</artifactId>
 				<version>${org.apache.xmlgraphics.batik-css.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>xml-apis</groupId>
-						<artifactId>xml-apis</artifactId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
@@ -3902,33 +3871,17 @@
 						<groupId>xalan</groupId>
 						<artifactId>xalan</artifactId>
 					</exclusion>
-					<exclusion>
-						<groupId>xml-apis</groupId>
-						<artifactId>xml-apis</artifactId>
-					</exclusion>
 				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-ext</artifactId>
 				<version>${org.apache.xmlgraphics.batik-ext.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>xml-apis</groupId>
-						<artifactId>xml-apis</artifactId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-extension</artifactId>
 				<version>${org.apache.xmlgraphics.batik-extension.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>xml-apis</groupId>
-						<artifactId>xml-apis</artifactId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
@@ -3949,12 +3902,6 @@
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-parser</artifactId>
 				<version>${org.apache.xmlgraphics.batik-parser.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>xml-apis</groupId>
-						<artifactId>xml-apis</artifactId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
@@ -3976,34 +3923,16 @@
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-script</artifactId>
 				<version>${org.apache.xmlgraphics.batik-script.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>xml-apis</groupId>
-						<artifactId>xml-apis</artifactId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-slideshow</artifactId>
 				<version>${org.apache.xmlgraphics.batik-slideshow.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>xml-apis</groupId>
-						<artifactId>xml-apis</artifactId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-squiggle</artifactId>
 				<version>${org.apache.xmlgraphics.batik-squiggle.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>xml-apis</groupId>
-						<artifactId>xml-apis</artifactId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
@@ -4020,23 +3949,11 @@
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-svg-dom</artifactId>
 				<version>${org.apache.xmlgraphics.batik-svg-dom.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>xml-apis</groupId>
-						<artifactId>xml-apis</artifactId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-svggen</artifactId>
 				<version>${org.apache.xmlgraphics.batik-svggen.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>xml-apis</groupId>
-						<artifactId>xml-apis</artifactId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
@@ -4047,23 +3964,11 @@
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-swing</artifactId>
 				<version>${org.apache.xmlgraphics.batik-swing.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>xml-apis</groupId>
-						<artifactId>xml-apis</artifactId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-transcoder</artifactId>
 				<version>${org.apache.xmlgraphics.batik-transcoder.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>xml-apis</groupId>
-						<artifactId>xml-apis</artifactId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
@@ -4599,12 +4504,6 @@
 				<groupId>org.jfree</groupId>
 				<artifactId>jfreechart</artifactId>
 				<version>${org.jfree.jfreechart.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>xml-apis</groupId>
-						<artifactId>xml-apis</artifactId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 
 			<!-- JFreeSVG - http://www.jfree.org/jfreesvg/ -->
