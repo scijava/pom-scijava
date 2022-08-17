@@ -1683,7 +1683,7 @@
 		<com.github.vlsi.mxgraph.jgraphx.version>${jgraphx.version}</com.github.vlsi.mxgraph.jgraphx.version>
 
 		<!-- JHDF5 - https://wiki-bsse.ethz.ch/label/JHDF5/hdf5 -->
-		<jhdf5.version>19.04.0</jhdf5.version>
+		<jhdf5.version>19.04.1</jhdf5.version>
 		<cisd.jhdf5.version>${jhdf5.version}</cisd.jhdf5.version>
 
 		<!-- JMH - https://openjdk.java.net/projects/code-tools/jmh/ -->
