@@ -41,10 +41,6 @@ ignoredArtifacts = [
     'jep',
     'junit-benchmarks',
     'vecmath',
-    # NB: The following artifacts require native libraries to
-    # build/test successfully, which might not be installed.
-    'n5-blosc',
-    'n5-zarr',
     # NB: All the SWT platform JARs have the same classes.
     # The current platform will be brought in transitively.
     'org.eclipse.swt.cocoa.macosx',
