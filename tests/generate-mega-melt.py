@@ -25,9 +25,6 @@ ignoredArtifacts = [
     # because it has a module-info.java, so skip it until the
     # component collection is updated from Java 8 to Java 11.
     'ij',
-    # TEMP: Until imagej-omero is updated for pom-scijava 29.
-    'imagej-omero',
-    'imagej-omero-legacy',
     # NB: The following artifacts have messy dependency trees.
     # Too many problems to test as part of the mega-melt.
     # See WARNING block in pom-scijava's pom.xml for details.
