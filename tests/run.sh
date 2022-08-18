@@ -28,6 +28,8 @@ meltingPotURL=https://raw.githubusercontent.com/scijava/scijava-scripts/main/mel
 meltingPotScript="$megaMeltDir/melting-pot.sh"
 meltingPotLog="$megaMeltDir/melting-pot.log"
 meltingPotDir="$megaMeltDir/melting-pot"
+skipTestsFile="$meltingPotDir/skipTests.txt"
+meltScript="$meltingPotDir/melt.sh"
 
 rm -rf "$megaMeltDir" && mkdir -p "$megaMeltDir" || die "Creation of $megaMeltDir failed!"
 cp "$pom" "$pomParent" &&
@@ -118,6 +120,29 @@ do
     -e 's_http://maven.apache.org/xsd_https://maven.apache.org/xsd_g' "$pom.original" > "$pom" ||
     die "Failed to adjust $pom"
 done
+echo 'Done!'
+
+# HACK: Skip tests for projects with known problems.
+
+echo &&
+printf 'Adjusting melting pot melt script... ' &&
+mv "$meltScript" "$meltScript.original" &&
+sed 's_\s*sh "$dir/build.sh"_\
+# HACK: If project is on the skipTests list, then skip the tests.\
+buildFlags=\
+grep -qF ":$f:" $dir/skipTests.txt \&\& buildFlags=-DskipTests\
+\
+& $buildFlags_' "$meltScript.original" > "$meltScript" ||
+  die "Failed to adjust $meltScript"
+echo 'Done!'
+
+# com.amazonaws.services.s3.model.AmazonS3Exception: The specified bucket does
+# not exist (Service: Amazon S3; Status Code: 404; Error Code: NoSuchBucket;
+# Request ID: null; S3 Extended Request ID: null; Proxy: null)
+echo ":org.janelia.saalfeldlab/n5-aws-s3:" > "$skipTestsFile"
+
+# Error while checking the CLIJ2 installation: null
+echo ":sc.fiji/labkit-pixel-classification:" >> "$skipTestsFile"
 
 # Run the melting pot now, unless -s flag was given.
 doMelt=t
