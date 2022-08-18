@@ -84,8 +84,6 @@ chmod +x "$meltingPotScript" &&
   -i 'org.scijava:*' \
   -i 'sc.fiji:*' \
   -e 'net.imagej:ij' \
-  -e 'org.janelia.saalfeldlab:n5-blosc' \
-  -e 'org.janelia.saalfeldlab:n5-zarr' \
   -e 'org.scijava:j3dcore' \
   -e 'org.scijava:j3dutils' \
   -e 'org.scijava:jep' \
@@ -140,6 +138,10 @@ echo 'Done!'
 # not exist (Service: Amazon S3; Status Code: 404; Error Code: NoSuchBucket;
 # Request ID: null; S3 Extended Request ID: null; Proxy: null)
 echo ":org.janelia.saalfeldlab/n5-aws-s3:" > "$skipTestsFile"
+
+# java.lang.UnsatisfiedLinkError: Unable to load library 'blosc'
+echo ":org.janelia.saalfeldlab/n5-blosc:" >> "$skipTestsFile"
+echo ":org.janelia.saalfeldlab/n5-zarr:" >> "$skipTestsFile"
 
 # Error while checking the CLIJ2 installation: null
 echo ":sc.fiji/labkit-pixel-classification:" >> "$skipTestsFile"
