@@ -60,6 +60,12 @@ then
 else
   curl -fsL "$meltingPotURL" > "$meltingPotScript"
 fi &&
+
+# Prevent tee from eating the melting-pot error code.
+# See: https://stackoverflow.com/a/6872163/1207769
+set -o pipefail
+
+# Build the melting pot structure.
 chmod +x "$meltingPotScript" &&
 "$meltingPotScript" "$megaMeltDir" \
   -o "$meltingPotDir" \
@@ -85,6 +91,9 @@ chmod +x "$meltingPotScript" &&
   -e 'org.scijava:vecmath' \
   -f -v -s $@ 2>&1 | tee "$meltingPotLog" ||
   die 'Melting pot build failed!'
+
+# Restore original exit code behavior.
+set +o pipefail
 
 # HACK: Remove known-duplicate artifactIds from version property overrides.
 # The plan is for this step to become unnecessary once the melting pot has
