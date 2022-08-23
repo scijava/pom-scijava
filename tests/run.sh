@@ -81,6 +81,7 @@ chmod +x "$meltingPotScript" &&
   -i 'org.bonej:*' \
   -i 'org.janelia.saalfeldlab:*' \
   -i 'org.janelia:*' \
+  -i 'org.morphonets:*' \
   -i 'org.scijava:*' \
   -i 'sc.fiji:*' \
   -e 'net.imagej:ij' \

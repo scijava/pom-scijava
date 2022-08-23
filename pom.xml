@@ -1104,6 +1104,10 @@
 		<MorphoLibJ_.version>${MorphoLibJ.version}</MorphoLibJ_.version>
 		<fr.inra.ijpb.MorphoLibJ_.version>${MorphoLibJ_.version}</fr.inra.ijpb.MorphoLibJ_.version>
 
+		<!-- SNT - https://github.com/morphonets/SNT -->
+		<SNT.version>4.1.2</SNT.version>
+		<org.morphonets.SNT.version>${SNT.version}</org.morphonets.SNT.version>
+
 		<!-- BoneJ2 - https://github.com/bonej-org/BoneJ2 -->
 		<bonej.version>7.0.13</bonej.version>
 		<bonej-plugins.version>${bonej.version}</bonej-plugins.version>
@@ -3101,12 +3105,6 @@
 				<groupId>sc.fiji</groupId>
 				<artifactId>TrakEM2_</artifactId>
 				<version>${sc.fiji.TrakEM2_.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>org.morphonets</groupId>
-						<artifactId>SNT</artifactId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
@@ -3186,6 +3184,13 @@
 				<groupId>fr.inra.ijpb</groupId>
 				<artifactId>MorphoLibJ_</artifactId>
 				<version>${fr.inra.ijpb.MorphoLibJ_.version}</version>
+			</dependency>
+
+			<!-- SNT - https://github.com/morphonets/SNT -->
+			<dependency>
+				<groupId>org.morphonets</groupId>
+				<artifactId>SNT</artifactId>
+				<version>${org.morphonets.SNT.version}</version>
 			</dependency>
 
 			<!-- BoneJ2 - https://github.com/bonej-org/BoneJ2 -->
