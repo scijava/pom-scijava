@@ -1773,6 +1773,7 @@
 		<kotlin-script-util.version>${kotlin.version}</kotlin-script-util.version>
 		<kotlin-scripting-common.version>${kotlin.version}</kotlin-scripting-common.version>
 		<kotlin-scripting-compiler-embeddable.version>${kotlin.version}</kotlin-scripting-compiler-embeddable.version>
+		<kotlin-scripting-jsr223.version>${kotlin.version}</kotlin-scripting-jsr223.version>
 		<kotlin-scripting-jvm.version>${kotlin.version}</kotlin-scripting-jvm.version>
 		<kotlin-stdlib.version>${kotlin.version}</kotlin-stdlib.version>
 		<kotlin-stdlib-common.version>${kotlin.version}</kotlin-stdlib-common.version>
@@ -1784,6 +1785,7 @@
 		<org.jetbrains.kotlin.kotlin-script-util.version>${kotlin-script-util.version}</org.jetbrains.kotlin.kotlin-script-util.version>
 		<org.jetbrains.kotlin.kotlin-scripting-common.version>${kotlin-scripting-common.version}</org.jetbrains.kotlin.kotlin-scripting-common.version>
 		<org.jetbrains.kotlin.kotlin-scripting-compiler-embeddable.version>${kotlin-scripting-compiler-embeddable.version}</org.jetbrains.kotlin.kotlin-scripting-compiler-embeddable.version>
+		<org.jetbrains.kotlin.kotlin-scripting-jsr223.version>${kotlin-scripting-jsr223.version}</org.jetbrains.kotlin.kotlin-scripting-jsr223.version>
 		<org.jetbrains.kotlin.kotlin-scripting-jvm.version>${kotlin-scripting-jvm.version}</org.jetbrains.kotlin.kotlin-scripting-jvm.version>
 		<org.jetbrains.kotlin.kotlin-stdlib.version>${kotlin-stdlib.version}</org.jetbrains.kotlin.kotlin-stdlib.version>
 		<org.jetbrains.kotlin.kotlin-stdlib-common.version>${kotlin-stdlib-common.version}</org.jetbrains.kotlin.kotlin-stdlib-common.version>
@@ -4694,6 +4696,11 @@
 				<groupId>org.jetbrains.kotlin</groupId>
 				<artifactId>kotlin-scripting-compiler-embeddable</artifactId>
 				<version>${org.jetbrains.kotlin.kotlin-scripting-compiler-embeddable.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jetbrains.kotlin</groupId>
+				<artifactId>kotlin-scripting-jsr223</artifactId>
+				<version>${org.jetbrains.kotlin.kotlin-scripting-jsr223.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jetbrains.kotlin</groupId>
