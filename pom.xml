@@ -982,7 +982,7 @@
 		<!-- External Fiji projects (part of the Fiji distribution) -->
 
 		<!-- JITK TPS - https://github.com/saalfeldlab/jitk-tps -->
-		<jitk-tps.version>3.0.2</jitk-tps.version>
+		<jitk-tps.version>3.0.3</jitk-tps.version>
 		<jitk.jitk-tps.version>${jitk-tps.version}</jitk.jitk-tps.version>
 
 		<!-- BigWarp - https://github.com/saalfeldlab/bigwarp -->
