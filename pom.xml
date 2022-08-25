@@ -335,7 +335,7 @@
 		<org.scijava.scijava-cache.version>${scijava-cache.version}</org.scijava.scijava-cache.version>
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.88.1</scijava-common.version>
+		<scijava-common.version>2.89.0</scijava-common.version>
 		<org.scijava.scijava-common.version>${scijava-common.version}</org.scijava.scijava-common.version>
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
@@ -415,7 +415,7 @@
 		<org.scijava.script-editor-jython.version>${script-editor-jython.version}</org.scijava.script-editor-jython.version>
 
 		<!-- Scripting: BeanShell - https://github.com/scijava/scripting-beanshell -->
-		<scripting-beanshell.version>0.3.4</scripting-beanshell.version>
+		<scripting-beanshell.version>0.4.0</scripting-beanshell.version>
 		<org.scijava.scripting-beanshell.version>${scripting-beanshell.version}</org.scijava.scripting-beanshell.version>
 
 		<!-- Scripting: Clojure - https://github.com/scijava/scripting-clojure -->
@@ -463,7 +463,7 @@
 		<org.scijava.swing-checkbox-tree.version>${swing-checkbox-tree.version}</org.scijava.swing-checkbox-tree.version>
 
 		<!-- UI Behaviour - https://github.com/scijava/ui-behaviour -->
-		<ui-behaviour.version>2.0.6</ui-behaviour.version>
+		<ui-behaviour.version>2.0.7</ui-behaviour.version>
 		<org.scijava.ui-behaviour.version>${ui-behaviour.version}</org.scijava.ui-behaviour.version>
 
 		<!-- ImageJ - https://github.com/imagej -->
@@ -474,7 +474,7 @@
 		<net.imagej.imagej.version>${imagej.version}</net.imagej.imagej.version>
 
 		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
-		<imagej1.version>1.53r</imagej1.version>
+		<imagej1.version>1.53t</imagej1.version>
 		<ij.version>${imagej1.version}</ij.version>
 		<net.imagej.ij.version>${ij.version}</net.imagej.ij.version>
 
@@ -750,7 +750,7 @@
 		<Fiji_Package_Maker.version>2.1.1</Fiji_Package_Maker.version>
 		<sc.fiji.Fiji_Package_Maker.version>${Fiji_Package_Maker.version}</sc.fiji.Fiji_Package_Maker.version>
 
-		<Fiji_Plugins.version>3.1.1</Fiji_Plugins.version>
+		<Fiji_Plugins.version>3.1.2</Fiji_Plugins.version>
 		<sc.fiji.Fiji_Plugins.version>${Fiji_Plugins.version}</sc.fiji.Fiji_Plugins.version>
 
 		<FilamentDetector.version>2.0.0</FilamentDetector.version>
@@ -908,10 +908,10 @@
 		<TopoJ_.version>${TopoJ.version}</TopoJ_.version>
 		<sc.fiji.TopoJ_.version>${TopoJ_.version}</sc.fiji.TopoJ_.version>
 
-		<TrackMate.version>7.6.1</TrackMate.version>
+		<TrackMate.version>7.7.2</TrackMate.version>
 		<sc.fiji.TrackMate.version>${TrackMate.version}</sc.fiji.TrackMate.version>
 
-		<Trainable_Segmentation.version>3.3.1</Trainable_Segmentation.version>
+		<Trainable_Segmentation.version>3.3.2</Trainable_Segmentation.version>
 		<sc.fiji.Trainable_Segmentation.version>${Trainable_Segmentation.version}</sc.fiji.Trainable_Segmentation.version>
 
 		<TrakEM2_Archipelago.version>2.0.3</TrakEM2_Archipelago.version>
@@ -986,7 +986,7 @@
 		<jitk.jitk-tps.version>${jitk-tps.version}</jitk.jitk-tps.version>
 
 		<!-- BigWarp - https://github.com/saalfeldlab/bigwarp -->
-		<bigwarp.version>7.0.5</bigwarp.version>
+		<bigwarp.version>7.0.6</bigwarp.version>
 		<bigwarp_fiji.version>${bigwarp.version}</bigwarp_fiji.version>
 		<sc.fiji.bigwarp_fiji.version>${bigwarp_fiji.version}</sc.fiji.bigwarp_fiji.version>
 
@@ -1007,7 +1007,7 @@
 		<!-- BigDataViewer - https://github.com/bigdataviewer -->
 
 		<!-- BigDataViewer Core - https://github.com/bigdataviewer/bigdataviewer-core -->
-		<bigdataviewer-core.version>10.4.2</bigdataviewer-core.version>
+		<bigdataviewer-core.version>10.4.3</bigdataviewer-core.version>
 		<sc.fiji.bigdataviewer-core.version>${bigdataviewer-core.version}</sc.fiji.bigdataviewer-core.version>
 
 		<!-- BigDataServer - https://github.com/bigdataviewer/bigdataviewer-server -->
@@ -1023,7 +1023,7 @@
 		<sc.fiji.bigdataviewer_fiji.version>${bigdataviewer_fiji.version}</sc.fiji.bigdataviewer_fiji.version>
 
 		<!-- SPIM Data - https://github.com/bigdataviewer/spimdata -->
-		<spim_data.version>2.2.6</spim_data.version>
+		<spim_data.version>2.2.7</spim_data.version>
 		<sc.fiji.spim_data.version>${spim_data.version}</sc.fiji.spim_data.version>
 
 		<!-- TrakEM2 - https://github.com/trakem2 -->
@@ -1052,7 +1052,7 @@
 		<!-- N5 - https://github.com/saalfeldlab/n5 -->
 
 		<!-- ImgLib2 Label Multisets - https://github.com/saalfeldlab/imglib2-label-multisets -->
-		<imglib2-label-multisets.version>0.11.0</imglib2-label-multisets.version>
+		<imglib2-label-multisets.version>0.11.4</imglib2-label-multisets.version>
 		<net.imglib2.imglib2-label-multisets.version>${imglib2-label-multisets.version}</net.imglib2.imglib2-label-multisets.version>
 
 		<!-- N5 - https://github.com/saalfeldlab/n5 -->
@@ -1076,7 +1076,7 @@
 		<org.janelia.saalfeldlab.n5-hdf5.version>${n5-hdf5.version}</org.janelia.saalfeldlab.n5-hdf5.version>
 
 		<!-- N5 ImageJ Bindings - https://github.com/saalfeldlab/n5-ij -->
-		<n5-ij.version>3.2.0</n5-ij.version>
+		<n5-ij.version>3.2.2</n5-ij.version>
 		<org.janelia.saalfeldlab.n5-ij.version>${n5-ij.version}</org.janelia.saalfeldlab.n5-ij.version>
 
 		<!-- N5 ImgLib2 Bindings - https://github.com/saalfeldlab/n5-imglib2 -->
@@ -1128,19 +1128,19 @@
 		<glacier2.version>${ice.version}</glacier2.version>
 
 		<!-- OME Common Java - https://github.com/ome/ome-common-java -->
-		<ome-common.version>6.0.7</ome-common.version>
+		<ome-common.version>6.0.13</ome-common.version>
 		<org.openmicroscopy.ome-common.version>${ome-common.version}</org.openmicroscopy.ome-common.version>
 
 		<!-- Metakit - https://github.com/ome/ome-metakit -->
-		<metakit.version>5.3.3</metakit.version>
+		<metakit.version>5.3.4</metakit.version>
 		<org.openmicroscopy.metakit.version>${metakit.version}</org.openmicroscopy.metakit.version>
 
 		<!-- OME POI - https://github.com/ome/ome-poi -->
-		<ome-poi.version>5.3.4</ome-poi.version>
+		<ome-poi.version>5.3.7</ome-poi.version>
 		<org.openmicroscopy.ome-poi.version>${ome-poi.version}</org.openmicroscopy.ome-poi.version>
 
 		<!-- OME Model - https://github.com/ome/ome-model -->
-		<ome-xml.version>6.3.0</ome-xml.version>
+		<ome-xml.version>6.3.1</ome-xml.version>
 		<org.openmicroscopy.ome-xml.version>${ome-xml.version}</org.openmicroscopy.ome-xml.version>
 
 		<!-- Glencoe Software jxrlib - https://github.com/glencoesoftware/jxrlib -->
@@ -1792,9 +1792,9 @@
 		<org.jetbrains.kotlin.kotlin-stdlib-jdk8.version>${kotlin-stdlib-jdk8.version}</org.jetbrains.kotlin.kotlin-stdlib-jdk8.version>
 
 		<!-- Labkit - https://imagej.net/plugins/labkit -->
-		<labkit-ui.version>0.3.0</labkit-ui.version>
+		<labkit-ui.version>0.3.7</labkit-ui.version>
 		<sc.fiji.labkit-ui.version>${labkit-ui.version}</sc.fiji.labkit-ui.version>
-		<labkit.pixel-classification.version>0.1.13</labkit.pixel-classification.version>
+		<labkit.pixel-classification.version>0.1.14</labkit.pixel-classification.version>
 		<sc.fiji.labkit-pixel-classification.version>${labkit.pixel-classification.version}</sc.fiji.labkit-pixel-classification.version>
 
 		<!-- Logback - https://logback.qos.ch/ -->
