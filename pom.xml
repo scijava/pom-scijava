@@ -443,7 +443,7 @@
 		<org.scijava.scripting-jython.version>${scripting-jython.version}</org.scijava.scripting-jython.version>
 
 		<!-- Scripting: Kotlin - https://github.com/scijava/scripting-kotlin -->
-		<scripting-kotlin.version>0.2.0</scripting-kotlin.version>
+		<scripting-kotlin.version>0.2.1</scripting-kotlin.version>
 		<org.scijava.scripting-kotlin.version>${scripting-kotlin.version}</org.scijava.scripting-kotlin.version>
 
 		<!-- Scripting: MATLAB - https://github.com/scijava/scripting-matlab -->
