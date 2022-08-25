@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 #
 # run.sh - Tests correctness of the pom-scijava BOM.
