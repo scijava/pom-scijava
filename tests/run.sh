@@ -61,7 +61,8 @@ then
   cp "$meltingPotLocal" "$meltingPotScript"
 else
   curl -fsL "$meltingPotURL" > "$meltingPotScript"
-fi &&
+fi ||
+  die "Failed to obtain melting pot script!"
 
 # Prevent tee from eating the melting-pot error code.
 # See: https://stackoverflow.com/a/6872163/1207769
