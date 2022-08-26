@@ -311,7 +311,7 @@
 		<!-- SciJava - https://github.com/scijava -->
 
 		<!-- Batch Processor - https://github.com/scijava/batch-processor -->
-		<batch-processor.version>0.4.1</batch-processor.version>
+		<batch-processor.version>0.4.2</batch-processor.version>
 		<org.scijava.batch-processor.version>${batch-processor.version}</org.scijava.batch-processor.version>
 
 		<!-- JUnit Benchmarks - https://github.com/scijava/junit-benchmarks -->
