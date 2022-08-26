@@ -105,9 +105,15 @@ buildScriptBackup="$buildScript.original"
 echo &&
 printf 'Adjusting melting pot build script... ' &&
 mv "$buildScript" "$buildScriptBackup" &&
-awk '!/-D(annotations|antlr|jocl|kryo|minlog|opencsv|trove4j)\.version/' "$buildScriptBackup" > "$buildScript" ||
+awk '!/-D(annotations|antlr|jocl|kryo|minlog|opencsv|trove4j)\.version/' "$buildScriptBackup" > "$buildScript" &&
+# HACK: Add non-standard net.imagej:ij version property used prior to
+# pom-scijava 28.0.0; see 7d2cc442b107b3ac2dcb799d282f2c0b5822649d.
+mv "$buildScript" "$buildScriptBackup" &&
+sed -E 's_ -Dij\.version=([^ ]*)_& -Dimagej1.version=\1_' "$buildScriptBackup" > "$buildScript" ||
   die 'Error adjusting melting pot build script!'
 echo 'Done!'
+
+echo &&
 
 # HACK: Adjust component POMs to satisfy Maven HTTPS strictness.
 echo &&
