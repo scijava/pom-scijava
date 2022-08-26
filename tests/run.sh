@@ -100,16 +100,26 @@ grep -qF "[ERROR]" "$meltingPotLog" &&
 # been improved to include a strategy for dealing with components with same
 # artifactId but different groupIds. For now, we just prune these overrides.
 buildScript="$meltingPotDir/build.sh"
-buildScriptBackup="$buildScript.original"
+buildScriptTemp="$buildScript.tmp"
 echo &&
 printf 'Adjusting melting pot build script... ' &&
-mv "$buildScript" "$buildScriptBackup" &&
-awk '!/-D(annotations|antlr|jocl|kryo|minlog|opencsv|trove4j)\.version/' "$buildScriptBackup" > "$buildScript" &&
+cp "$buildScript" "$buildScript.original" &&
+mv -f "$buildScript" "$buildScriptTemp" &&
+awk '!/-D(annotations|antlr|jocl|kryo|minlog|opencsv|trove4j)\.version/' "$buildScriptTemp" > "$buildScript" &&
+# HACK: Add leading underscore to version properties that start with a digit.
+mv -f "$buildScript" "$buildScriptTemp" &&
+sed -E 's; -D([0-9][^ ]*);& -D_\1;' "$buildScriptTemp" > "$buildScript" &&
+# HACK: Add non-standard version properties used prior to
+# pom-scijava 32.0.0-beta-1; see d0bf752070d96a2613c42e4e1ab86ebdd07c29ee.
+mv -f "$buildScript" "$buildScriptTemp" &&
+sed -E 's; -Dsc.fiji.3D_Blob_Segmentation\.version=([^ ]*);& -DFiji_3D_Blob_Segmentation.version=\1;' "$buildScriptTemp" > "$buildScript" &&
+mv -f "$buildScript" "$buildScriptTemp" &&
+sed -E 's; -Dsc.fiji.(3D_Objects_Counter|3D_Viewer)\.version=([^ ]*);& -DImageJ_\1.version=\2;' "$buildScriptTemp" > "$buildScript" &&
 # HACK: Add non-standard net.imagej:ij version property used prior to
 # pom-scijava 28.0.0; see 7d2cc442b107b3ac2dcb799d282f2c0b5822649d.
-mv "$buildScript" "$buildScriptBackup" &&
-sed -E 's_ -Dij\.version=([^ ]*)_& -Dimagej1.version=\1_' "$buildScriptBackup" > "$buildScript" ||
-  die 'Error adjusting melting pot build script!'
+mv -f "$buildScript" "$buildScriptTemp" &&
+sed -E 's; -Dij\.version=([^ ]*);& -Dimagej1.version=\1;' "$buildScriptTemp" > "$buildScript" &&
+rm "$buildScriptTemp" || die 'Error adjusting melting pot build script!'
 echo 'Done!'
 
 echo &&
