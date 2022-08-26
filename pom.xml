@@ -423,7 +423,7 @@
 		<org.scijava.scripting-clojure.version>${scripting-clojure.version}</org.scijava.scripting-clojure.version>
 
 		<!-- Scripting: Groovy - https://github.com/scijava/scripting-groovy -->
-		<scripting-groovy.version>0.4.1</scripting-groovy.version>
+		<scripting-groovy.version>0.4.2</scripting-groovy.version>
 		<org.scijava.scripting-groovy.version>${scripting-groovy.version}</org.scijava.scripting-groovy.version>
 
 		<!-- Scripting: Java - https://github.com/scijava/scripting-java -->
