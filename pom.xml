@@ -415,7 +415,7 @@
 		<org.scijava.script-editor-jython.version>${script-editor-jython.version}</org.scijava.script-editor-jython.version>
 
 		<!-- Scripting: BeanShell - https://github.com/scijava/scripting-beanshell -->
-		<scripting-beanshell.version>0.4.0</scripting-beanshell.version>
+		<scripting-beanshell.version>0.4.1</scripting-beanshell.version>
 		<org.scijava.scripting-beanshell.version>${scripting-beanshell.version}</org.scijava.scripting-beanshell.version>
 
 		<!-- Scripting: Clojure - https://github.com/scijava/scripting-clojure -->
