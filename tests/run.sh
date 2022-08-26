@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 #
 # run.sh - Tests correctness of the pom-scijava BOM.
@@ -64,10 +64,6 @@ else
 fi ||
   die "Failed to obtain melting pot script!"
 
-# Prevent tee from eating the melting-pot error code.
-# See: https://stackoverflow.com/a/6872163/1207769
-set -o pipefail
-
 # Build the melting pot structure.
 chmod +x "$meltingPotScript" &&
 "$meltingPotScript" "$megaMeltDir" \
@@ -91,11 +87,13 @@ chmod +x "$meltingPotScript" &&
   -e 'org.scijava:jep' \
   -e 'org.scijava:junit-benchmarks' \
   -e 'org.scijava:vecmath' \
-  -f -v -s $@ 2>&1 | tee "$meltingPotLog" ||
-  die 'Melting pot build failed!'
+  -f -v -s $@ 2>&1 | tee "$meltingPotLog"
 
-# Restore original exit code behavior.
-set +o pipefail
+# NB: The pipe to tee eats the melting-pot error code.
+# Even with the POSIX-unfriendly pipefail flag set.
+# So we resort to this hacky error check of the log.
+grep -qF "[ERROR]" "$meltingPotLog" &&
+  die 'Melting pot generation failed!'
 
 # HACK: Remove known-duplicate artifactIds from version property overrides.
 # The plan is for this step to become unnecessary once the melting pot has
