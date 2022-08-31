@@ -1104,7 +1104,7 @@
 		<fr.inra.ijpb.MorphoLibJ_.version>${MorphoLibJ_.version}</fr.inra.ijpb.MorphoLibJ_.version>
 
 		<!-- BoneJ2 - https://github.com/bonej-org/BoneJ2 -->
-		<bonej.version>7.0.13</bonej.version>
+		<bonej.version>7.0.14</bonej.version>
 		<bonej-plugins.version>${bonej.version}</bonej-plugins.version>
 		<bonej-ops.version>${bonej.version}</bonej-ops.version>
 		<bonej-legacy-plugins_.version>${bonej.version}</bonej-legacy-plugins_.version>
