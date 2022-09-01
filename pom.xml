@@ -5228,6 +5228,15 @@
 				<scope>test</scope>
 			</dependency>
 
+			<!-- ImageJ Legacy - https://github.com/imagej/imagej-legacy -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-legacy</artifactId>
+				<version>${net.imagej.imagej-legacy.version}</version>
+				<classifier>tests</classifier>
+				<scope>test</scope>
+			</dependency>
+
 			<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
 			<dependency>
 				<groupId>net.imagej</groupId>
@@ -5242,6 +5251,24 @@
 				<groupId>net.imagej</groupId>
 				<artifactId>imagej-updater</artifactId>
 				<version>${net.imagej.imagej-updater.version}</version>
+				<classifier>tests</classifier>
+				<scope>test</scope>
+			</dependency>
+
+			<!-- ImgLib2 - https://github.com/imglib/imglib2 -->
+			<dependency>
+				<groupId>net.imglib2</groupId>
+				<artifactId>imglib2</artifactId>
+				<version>${net.imglib2.imglib2.version}</version>
+				<classifier>tests</classifier>
+				<scope>test</scope>
+			</dependency>
+
+			<!-- N5 - https://github.com/saalfeldlab/n5 -->
+			<dependency>
+				<groupId>org.janelia.saalfeldlab</groupId>
+				<artifactId>n5</artifactId>
+				<version>${org.janelia.saalfeldlab.n5.version}</version>
 				<classifier>tests</classifier>
 				<scope>test</scope>
 			</dependency>
