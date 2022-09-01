@@ -1969,12 +1969,6 @@
 				<artifactId>scijava-common</artifactId>
 				<version>${org.scijava.scijava-common.version}</version>
 			</dependency>
-			<dependency>
-				<groupId>org.scijava</groupId>
-				<artifactId>scijava-common</artifactId>
-				<version>${org.scijava.scijava-common.version}</version>
-				<classifier>tests</classifier>
-			</dependency>
 
 			<!-- SciJava Config - https://github.com/scijava/scijava-config -->
 			<dependency>
@@ -2388,12 +2382,6 @@
 				<groupId>net.imagej</groupId>
 				<artifactId>imagej-updater</artifactId>
 				<version>${net.imagej.imagej-updater.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>net.imagej</groupId>
-				<artifactId>imagej-updater</artifactId>
-				<version>${net.imagej.imagej-updater.version}</version>
-				<classifier>tests</classifier>
 			</dependency>
 
 			<!-- Op-Finder - https://github.com/imagej/op-finder -->
@@ -5003,6 +4991,33 @@
 			</dependency>
 
 			<!-- Test scope dependencies -->
+
+			<!-- SciJava Common - https://github.com/scijava/scijava-common -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-common</artifactId>
+				<version>${org.scijava.scijava-common.version}</version>
+				<classifier>tests</classifier>
+				<scope>test</scope>
+			</dependency>
+
+			<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-ops</artifactId>
+				<version>${net.imagej.imagej-ops.version}</version>
+				<classifier>tests</classifier>
+				<scope>test</scope>
+			</dependency>
+
+			<!-- ImageJ Updater - https://github.com/imagej/imagej-updater -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-updater</artifactId>
+				<version>${net.imagej.imagej-updater.version}</version>
+				<classifier>tests</classifier>
+				<scope>test</scope>
+			</dependency>
 
 			<!-- JUnit 4 - https://junit.org/junit4/ -->
 			<dependency>
