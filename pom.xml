@@ -1582,39 +1582,39 @@
 		<!-- JavaCPP - https://github.com/bytedeco/javacpp -->
 
 		<javacpp.version>1.5.2</javacpp.version>
-		<org.bytedeco.javacpp.version>${javacpp.version}</org.bytedeco.javacpp.version>
 		<javacpp-presets.version>${org.bytedeco.javacpp.version}</javacpp-presets.version>
-		<org.bytedeco.javacpp-presets.version>${javacpp-presets.version}</org.bytedeco.javacpp-presets.version>
 		<javacv.version>${org.bytedeco.javacpp.version}</javacv.version>
+		<org.bytedeco.javacpp.version>${javacpp.version}</org.bytedeco.javacpp.version>
+		<org.bytedeco.javacpp-presets.version>${javacpp-presets.version}</org.bytedeco.javacpp-presets.version>
 		<org.bytedeco.javacv.version>${javacv.version}</org.bytedeco.javacv.version>
 
 		<artoolkitplus.version>2.3.1-${org.bytedeco.javacpp.version}</artoolkitplus.version>
-		<org.bytedeco.artoolkitplus.version>${artoolkitplus.version}</org.bytedeco.artoolkitplus.version>
 		<ffmpeg.version>4.2.1-${org.bytedeco.javacpp.version}</ffmpeg.version>
-		<org.bytedeco.ffmpeg.version>${ffmpeg.version}</org.bytedeco.ffmpeg.version>
 		<flandmark.version>1.07-${org.bytedeco.javacpp.version}</flandmark.version>
-		<org.bytedeco.flandmark.version>${flandmark.version}</org.bytedeco.flandmark.version>
 		<flycapture.version>2.13.3.31-${org.bytedeco.javacpp.version}</flycapture.version>
-		<org.bytedeco.flycapture.version>${flycapture.version}</org.bytedeco.flycapture.version>
 		<hdf5.version>1.10.5-${org.bytedeco.javacpp.version}</hdf5.version>
-		<org.bytedeco.hdf5.version>${hdf5.version}</org.bytedeco.hdf5.version>
 		<leptonica.version>1.78.0-${org.bytedeco.javacpp.version}</leptonica.version>
-		<org.bytedeco.leptonica.version>${leptonica.version}</org.bytedeco.leptonica.version>
 		<libdc1394.version>2.2.6-${org.bytedeco.javacpp.version}</libdc1394.version>
-		<org.bytedeco.libdc1394.version>${libdc1394.version}</org.bytedeco.libdc1394.version>
 		<libfreenect.version>0.5.7-${org.bytedeco.javacpp.version}</libfreenect.version>
-		<org.bytedeco.libfreenect.version>${libfreenect.version}</org.bytedeco.libfreenect.version>
 		<libfreenect2.version>0.2.0-${org.bytedeco.javacpp.version}</libfreenect2.version>
-		<org.bytedeco.libfreenect2.version>${libfreenect2.version}</org.bytedeco.libfreenect2.version>
 		<librealsense.version>1.12.4-${org.bytedeco.javacpp.version}</librealsense.version>
-		<org.bytedeco.librealsense.version>${librealsense.version}</org.bytedeco.librealsense.version>
 		<openblas.version>0.3.7-${org.bytedeco.javacpp.version}</openblas.version>
-		<org.bytedeco.openblas.version>${openblas.version}</org.bytedeco.openblas.version>
 		<opencv.version>4.1.2-${org.bytedeco.javacpp.version}</opencv.version>
-		<org.bytedeco.opencv.version>${opencv.version}</org.bytedeco.opencv.version>
 		<tesseract.version>4.1.0-${org.bytedeco.javacpp.version}</tesseract.version>
-		<org.bytedeco.tesseract.version>${tesseract.version}</org.bytedeco.tesseract.version>
 		<videoinput.version>0.200-${org.bytedeco.javacpp.version}</videoinput.version>
+		<org.bytedeco.artoolkitplus.version>${artoolkitplus.version}</org.bytedeco.artoolkitplus.version>
+		<org.bytedeco.ffmpeg.version>${ffmpeg.version}</org.bytedeco.ffmpeg.version>
+		<org.bytedeco.flandmark.version>${flandmark.version}</org.bytedeco.flandmark.version>
+		<org.bytedeco.flycapture.version>${flycapture.version}</org.bytedeco.flycapture.version>
+		<org.bytedeco.hdf5.version>${hdf5.version}</org.bytedeco.hdf5.version>
+		<org.bytedeco.leptonica.version>${leptonica.version}</org.bytedeco.leptonica.version>
+		<org.bytedeco.libdc1394.version>${libdc1394.version}</org.bytedeco.libdc1394.version>
+		<org.bytedeco.libfreenect.version>${libfreenect.version}</org.bytedeco.libfreenect.version>
+		<org.bytedeco.libfreenect2.version>${libfreenect2.version}</org.bytedeco.libfreenect2.version>
+		<org.bytedeco.librealsense.version>${librealsense.version}</org.bytedeco.librealsense.version>
+		<org.bytedeco.openblas.version>${openblas.version}</org.bytedeco.openblas.version>
+		<org.bytedeco.opencv.version>${opencv.version}</org.bytedeco.opencv.version>
+		<org.bytedeco.tesseract.version>${tesseract.version}</org.bytedeco.tesseract.version>
 		<org.bytedeco.videoinput.version>${videoinput.version}</org.bytedeco.videoinput.version>
 
 		<scijava.natives.classifier.artoolkitplus>${scijava.natives.classifier.javacpp}</scijava.natives.classifier.artoolkitplus>
