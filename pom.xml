@@ -1764,7 +1764,7 @@
 		<joda-time.version>2.10.6</joda-time.version>
 		<joda-time.joda-time.version>${joda-time.version}</joda-time.joda-time.version>
 
-		<!-- JOCL - https://www.jocl.org -->
+		<!-- JOCL - http://www.jocl.org -->
 		<jocl.version>2.0.4</jocl.version>
 		<org.jocl.jocl.version>${jocl.version}</org.jocl.jocl.version>
 
@@ -4819,7 +4819,7 @@
 				<version>${joda-time.joda-time.version}</version>
 			</dependency>
 
-			<!-- JOCL - https://www.jocl.org -->
+			<!-- JOCL - http://www.jocl.org -->
 			<dependency>
 				<groupId>org.jocl</groupId>
 				<artifactId>jocl</artifactId>
