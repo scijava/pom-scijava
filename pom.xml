@@ -1508,6 +1508,10 @@
 		<ejml.version>0.25</ejml.version>
 		<com.googlecode.efficient-java-matrix-library.ejml.version>${ejml.version}</com.googlecode.efficient-java-matrix-library.ejml.version>
 
+		<!-- FlatLaf - -->
+		<flatlaf.version>2.4</flatlaf.version>
+		<com.formdev.flatlaf.version>2.4</com.formdev.flatlaf.version>
+
 		<!-- Google Cloud Storage - https://github.com/googleapis/google-cloud-java -->
 		<google-cloud-nio.version>0.120.0-alpha</google-cloud-nio.version>
 		<google-cloud-resourcemanager.version>0.117.2-alpha</google-cloud-resourcemanager.version>
@@ -4283,6 +4287,13 @@
 				<groupId>com.googlecode.efficient-java-matrix-library</groupId>
 				<artifactId>ejml</artifactId>
 				<version>${com.googlecode.efficient-java-matrix-library.ejml.version}</version>
+			</dependency>
+
+			<!-- FlatLaf - https://www.formdev.com/flatlaf/ -->
+			<dependency>
+				<groupId>com.formdev</groupId>
+				<artifactId>flatlaf</artifactId>
+				<version>${com.formdev.flatlaf.version}</version>
 			</dependency>
 
 			<!-- Google Cloud Storage - https://github.com/googleapis/google-cloud-java -->
