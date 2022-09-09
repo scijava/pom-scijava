@@ -1774,34 +1774,20 @@
 
 		<!-- JogAmp - https://jogamp.org/ -->
 
-		<jogamp.version>2.3.2</jogamp.version>
+		<jogamp.version>2.4.0-rc-20210111</jogamp.version>
 
 		<gluegen.version>${jogamp.version}</gluegen.version>
 		<gluegen-rt.version>${jogamp.version}</gluegen-rt.version>
-		<gluegen-rt-main.version>${jogamp.version}</gluegen-rt-main.version>
 		<joal.version>${jogamp.version}</joal.version>
-		<joal-main.version>${jogamp.version}</joal-main.version>
 		<!--<jocl.version>${jogamp.version}</jocl.version>--> <!-- NB: Avoid short name clash with org.jocl:jocl. -->
-		<jocl-main.version>${jogamp.version}</jocl-main.version>
-		<jogl.version>${jogamp.version}</jogl.version>
-		<jogl-main.version>${jogamp.version}</jogl-main.version>
 		<jogl-all.version>${jogamp.version}</jogl-all.version>
-		<jogl-all-main.version>${jogamp.version}</jogl-all-main.version>
 		<jogl-all-noawt.version>${jogamp.version}</jogl-all-noawt.version>
-		<jogl-all-noawt-main.version>${jogamp.version}</jogl-all-noawt-main.version>
 		<org.jogamp.gluegen.gluegen.version>${jogamp.version}</org.jogamp.gluegen.gluegen.version>
 		<org.jogamp.gluegen.gluegen-rt.version>${jogamp.version}</org.jogamp.gluegen.gluegen-rt.version>
-		<org.jogamp.gluegen.gluegen-rt-main.version>${jogamp.version}</org.jogamp.gluegen.gluegen-rt-main.version>
 		<org.jogamp.joal.joal.version>${jogamp.version}</org.jogamp.joal.joal.version>
-		<org.jogamp.joal.joal-main.version>${jogamp.version}</org.jogamp.joal.joal-main.version>
 		<org.jogamp.jocl.jocl.version>${jogamp.version}</org.jogamp.jocl.jocl.version>
-		<org.jogamp.jocl.jocl-main.version>${jogamp.version}</org.jogamp.jocl.jocl-main.version>
-		<org.jogamp.jogl.jogl.version>${jogamp.version}</org.jogamp.jogl.jogl.version>
-		<org.jogamp.jogl.jogl-main.version>${jogamp.version}</org.jogamp.jogl.jogl-main.version>
 		<org.jogamp.jogl.jogl-all.version>${jogamp.version}</org.jogamp.jogl.jogl-all.version>
-		<org.jogamp.jogl.jogl-all-main.version>${jogamp.version}</org.jogamp.jogl.jogl-all-main.version>
 		<org.jogamp.jogl.jogl-all-noawt.version>${jogamp.version}</org.jogamp.jogl.jogl-all-noawt.version>
-		<org.jogamp.jogl.jogl-all-noawt-main.version>${jogamp.version}</org.jogamp.jogl.jogl-all-noawt-main.version>
 
 		<scijava.natives.classifier.gluegen>${scijava.natives.classifier.jogamp}</scijava.natives.classifier.gluegen>
 		<scijava.natives.classifier.joal>${scijava.natives.classifier.jogamp}</scijava.natives.classifier.joal>
@@ -4875,39 +4861,14 @@
 				<version>${org.jogamp.gluegen.gluegen-rt.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.jogamp.gluegen</groupId>
-				<artifactId>gluegen-rt-main</artifactId>
-				<version>${org.jogamp.gluegen.gluegen-rt-main.version}</version>
-			</dependency>
-			<dependency>
 				<groupId>org.jogamp.joal</groupId>
 				<artifactId>joal</artifactId>
 				<version>${org.jogamp.joal.joal.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.jogamp.joal</groupId>
-				<artifactId>joal-main</artifactId>
-				<version>${org.jogamp.joal.joal-main.version}</version>
-			</dependency>
-			<dependency>
 				<groupId>org.jogamp.jocl</groupId>
 				<artifactId>jocl</artifactId>
 				<version>${org.jogamp.jocl.jocl.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.jocl</groupId>
-				<artifactId>jocl-main</artifactId>
-				<version>${org.jogamp.jocl.jocl-main.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.jogl</groupId>
-				<artifactId>jogl</artifactId>
-				<version>${org.jogamp.jogl.jogl.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.jogl</groupId>
-				<artifactId>jogl-main</artifactId>
-				<version>${org.jogamp.jogl.jogl-main.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jogamp.jogl</groupId>
@@ -4916,18 +4877,8 @@
 			</dependency>
 			<dependency>
 				<groupId>org.jogamp.jogl</groupId>
-				<artifactId>jogl-all-main</artifactId>
-				<version>${org.jogamp.jogl.jogl-all-main.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.jogl</groupId>
 				<artifactId>jogl-all-noawt</artifactId>
 				<version>${org.jogamp.jogl.jogl-all-noawt.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.jogl</groupId>
-				<artifactId>jogl-all-noawt-main</artifactId>
-				<version>${org.jogamp.jogl.jogl-all-noawt-main.version}</version>
 			</dependency>
 
 			<dependency>
@@ -4947,12 +4898,6 @@
 				<artifactId>jocl</artifactId>
 				<version>${org.jogamp.jocl.jocl.version}</version>
 				<classifier>${scijava.natives.classifier.jocl}</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.jogl</groupId>
-				<artifactId>jogl</artifactId>
-				<version>${org.jogamp.jogl.jogl.version}</version>
-				<classifier>${scijava.natives.classifier.jogl}</classifier>
 			</dependency>
 			<dependency>
 				<groupId>org.jogamp.jogl</groupId>
