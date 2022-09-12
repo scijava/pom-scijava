@@ -403,7 +403,7 @@
 		<org.scijava.scijava-ui-awt.version>${scijava-ui-awt.version}</org.scijava.scijava-ui-awt.version>
 
 		<!-- SciJava UI: Swing - https://github.com/scijava/scijava-ui-swing -->
-		<scijava-ui-swing.version>0.16.1</scijava-ui-swing.version>
+		<scijava-ui-swing.version>0.16.2</scijava-ui-swing.version>
 		<org.scijava.scijava-ui-swing.version>${scijava-ui-swing.version}</org.scijava.scijava-ui-swing.version>
 
 		<!-- Script Editor - https://github.com/scijava/script-editor -->
@@ -469,7 +469,7 @@
 		<!-- ImageJ - https://github.com/imagej -->
 
 		<!-- ImageJ2 - https://github.com/imagej/imagej2 -->
-		<imagej2.version>2.6.0</imagej2.version>
+		<imagej2.version>2.7.0</imagej2.version>
 		<imagej.version>${imagej2.version}</imagej.version>
 		<net.imagej.imagej.version>${imagej.version}</net.imagej.imagej.version>
 
@@ -653,7 +653,7 @@
 		<!-- Fiji - https://github.com/fiji -->
 
 		<!-- Fiji - https://github.com/fiji/fiji -->
-		<fiji.version>2.6.0</fiji.version>
+		<fiji.version>2.7.0</fiji.version>
 		<sc.fiji.fiji.version>${fiji.version}</sc.fiji.fiji.version>
 
 		<!-- Standard Fiji projects -->
