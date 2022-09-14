@@ -1586,16 +1586,13 @@
 		<!-- JavaCPP - https://github.com/bytedeco/javacpp -->
 
 		<javacpp.version>1.5.2</javacpp.version>
-		<javacpp-presets.version>${org.bytedeco.javacpp.version}</javacpp-presets.version>
 		<javacv.version>${org.bytedeco.javacpp.version}</javacv.version>
 		<org.bytedeco.javacpp.version>${javacpp.version}</org.bytedeco.javacpp.version>
-		<org.bytedeco.javacpp-presets.version>${javacpp-presets.version}</org.bytedeco.javacpp-presets.version>
 		<org.bytedeco.javacv.version>${javacv.version}</org.bytedeco.javacv.version>
 
 		<artoolkitplus.version>2.3.1-${org.bytedeco.javacpp.version}</artoolkitplus.version>
 		<ffmpeg.version>4.2.1-${org.bytedeco.javacpp.version}</ffmpeg.version>
 		<flandmark.version>1.07-${org.bytedeco.javacpp.version}</flandmark.version>
-		<flycapture.version>2.13.3.31-${org.bytedeco.javacpp.version}</flycapture.version>
 		<hdf5.version>1.10.5-${org.bytedeco.javacpp.version}</hdf5.version>
 		<leptonica.version>1.78.0-${org.bytedeco.javacpp.version}</leptonica.version>
 		<libdc1394.version>2.2.6-${org.bytedeco.javacpp.version}</libdc1394.version>
@@ -1605,11 +1602,9 @@
 		<openblas.version>0.3.7-${org.bytedeco.javacpp.version}</openblas.version>
 		<opencv.version>4.1.2-${org.bytedeco.javacpp.version}</opencv.version>
 		<tesseract.version>4.1.0-${org.bytedeco.javacpp.version}</tesseract.version>
-		<videoinput.version>0.200-${org.bytedeco.javacpp.version}</videoinput.version>
 		<org.bytedeco.artoolkitplus.version>${artoolkitplus.version}</org.bytedeco.artoolkitplus.version>
 		<org.bytedeco.ffmpeg.version>${ffmpeg.version}</org.bytedeco.ffmpeg.version>
 		<org.bytedeco.flandmark.version>${flandmark.version}</org.bytedeco.flandmark.version>
-		<org.bytedeco.flycapture.version>${flycapture.version}</org.bytedeco.flycapture.version>
 		<org.bytedeco.hdf5.version>${hdf5.version}</org.bytedeco.hdf5.version>
 		<org.bytedeco.leptonica.version>${leptonica.version}</org.bytedeco.leptonica.version>
 		<org.bytedeco.libdc1394.version>${libdc1394.version}</org.bytedeco.libdc1394.version>
@@ -1619,12 +1614,10 @@
 		<org.bytedeco.openblas.version>${openblas.version}</org.bytedeco.openblas.version>
 		<org.bytedeco.opencv.version>${opencv.version}</org.bytedeco.opencv.version>
 		<org.bytedeco.tesseract.version>${tesseract.version}</org.bytedeco.tesseract.version>
-		<org.bytedeco.videoinput.version>${videoinput.version}</org.bytedeco.videoinput.version>
 
 		<scijava.natives.classifier.artoolkitplus>${scijava.natives.classifier.javacpp}</scijava.natives.classifier.artoolkitplus>
 		<scijava.natives.classifier.ffmpeg>${scijava.natives.classifier.javacpp}</scijava.natives.classifier.ffmpeg>
 		<scijava.natives.classifier.flandmark>${scijava.natives.classifier.javacpp}</scijava.natives.classifier.flandmark>
-		<scijava.natives.classifier.flycapture>${scijava.natives.classifier.javacpp}</scijava.natives.classifier.flycapture>
 		<scijava.natives.classifier.hdf5>${scijava.natives.classifier.javacpp}</scijava.natives.classifier.hdf5>
 		<scijava.natives.classifier.leptonica>${scijava.natives.classifier.javacpp}</scijava.natives.classifier.leptonica>
 		<scijava.natives.classifier.libdc1394>${scijava.natives.classifier.javacpp}</scijava.natives.classifier.libdc1394>
@@ -1634,7 +1627,6 @@
 		<scijava.natives.classifier.openblas>${scijava.natives.classifier.javacpp}</scijava.natives.classifier.openblas>
 		<scijava.natives.classifier.opencv>${scijava.natives.classifier.javacpp}</scijava.natives.classifier.opencv>
 		<scijava.natives.classifier.tesseract>${scijava.natives.classifier.javacpp}</scijava.natives.classifier.tesseract>
-		<scijava.natives.classifier.videoinput>${scijava.natives.classifier.javacpp}</scijava.natives.classifier.videoinput>
 
 		<!-- Javassist - https://www.javassist.org/ -->
 		<javassist.version>3.28.0-GA</javassist.version>
@@ -4440,11 +4432,6 @@
 			</dependency>
 			<dependency>
 				<groupId>org.bytedeco</groupId>
-				<artifactId>javacpp-presets</artifactId>
-				<version>${org.bytedeco.javacpp-presets.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.bytedeco</groupId>
 				<artifactId>javacv</artifactId>
 				<version>${org.bytedeco.javacv.version}</version>
 			</dependency>
@@ -4463,11 +4450,6 @@
 				<groupId>org.bytedeco</groupId>
 				<artifactId>flandmark</artifactId>
 				<version>${org.bytedeco.flandmark.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.bytedeco</groupId>
-				<artifactId>flycapture</artifactId>
-				<version>${org.bytedeco.flycapture.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.bytedeco</groupId>
@@ -4514,11 +4496,6 @@
 				<artifactId>tesseract</artifactId>
 				<version>${org.bytedeco.tesseract.version}</version>
 			</dependency>
-			<dependency>
-				<groupId>org.bytedeco</groupId>
-				<artifactId>videoinput</artifactId>
-				<version>${org.bytedeco.videoinput.version}</version>
-			</dependency>
 
 			<dependency>
 				<groupId>org.bytedeco</groupId>
@@ -4537,12 +4514,6 @@
 				<artifactId>flandmark</artifactId>
 				<version>${org.bytedeco.flandmark.version}</version>
 				<classifier>${scijava.natives.classifier.flandmark}</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.bytedeco</groupId>
-				<artifactId>flycapture</artifactId>
-				<version>${org.bytedeco.flycapture.version}</version>
-				<classifier>${scijava.natives.classifier.flycapture}</classifier>
 			</dependency>
 			<dependency>
 				<groupId>org.bytedeco</groupId>
@@ -4597,12 +4568,6 @@
 				<artifactId>tesseract</artifactId>
 				<version>${org.bytedeco.tesseract.version}</version>
 				<classifier>${scijava.natives.classifier.tesseract}</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.bytedeco</groupId>
-				<artifactId>videoinput</artifactId>
-				<version>${org.bytedeco.videoinput.version}</version>
-				<classifier>${scijava.natives.classifier.videoinput}</classifier>
 			</dependency>
 
 			<!-- Javassist - http://www.javassist.org/ -->
