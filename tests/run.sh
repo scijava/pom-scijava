@@ -122,8 +122,6 @@ sed -E 's; -Dij\.version=([^ ]*);& -Dimagej1.version=\1;' "$buildScriptTemp" > "
 rm "$buildScriptTemp" || die 'Error adjusting melting pot build script!'
 echo 'Done!'
 
-echo &&
-
 # HACK: Adjust component POMs to satisfy Maven HTTPS strictness.
 echo &&
 printf 'Adjusting melting pot project POMs... ' &&

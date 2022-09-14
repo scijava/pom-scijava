@@ -38,6 +38,9 @@ ignoredArtifacts = [
     'jep',
     'junit-benchmarks',
     'vecmath',
+    # NB: Skip alternate flavors of other managed components.
+    'gluegen',        # uberjar flavor of gluegen-rt
+    'jogl-all-noawt', # slimmed down flavor of jogl-all
     # NB: All the SWT platform JARs have the same classes.
     # The current platform will be brought in transitively.
     'org.eclipse.swt.cocoa.macosx',
