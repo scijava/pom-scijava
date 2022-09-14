@@ -407,7 +407,7 @@
 		<org.scijava.scijava-ui-swing.version>${scijava-ui-swing.version}</org.scijava.scijava-ui-swing.version>
 
 		<!-- Script Editor - https://github.com/scijava/script-editor -->
-		<script-editor.version>0.7.7</script-editor.version>
+		<script-editor.version>0.7.8</script-editor.version>
 		<org.scijava.script-editor.version>${script-editor.version}</org.scijava.script-editor.version>
 
 		<!-- Script Editor: Jython - https://github.com/scijava/script-editor-jython -->
@@ -495,7 +495,7 @@
 		<net.imagej.imagej-launcher.version>${imagej-launcher.version}</net.imagej.imagej-launcher.version>
 
 		<!-- ImageJ Legacy - https://github.com/imagej/imagej-legacy -->
-		<imagej-legacy.version>0.39.1</imagej-legacy.version>
+		<imagej-legacy.version>0.39.2</imagej-legacy.version>
 		<net.imagej.imagej-legacy.version>${imagej-legacy.version}</net.imagej.imagej-legacy.version>
 
 		<!-- ImageJ MATLAB - https://github.com/imagej/imagej-matlab -->
