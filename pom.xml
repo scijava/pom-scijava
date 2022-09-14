@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>33.1.1-SNAPSHOT</version>
+	<version>33.2.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -571,7 +571,7 @@
 		<net.imagej.imagej-ui-swing.version>${imagej-ui-swing.version}</net.imagej.imagej-ui-swing.version>
 
 		<!-- ImageJ Updater - https://github.com/imagej/imagej-updater -->
-		<imagej-updater.version>0.10.6</imagej-updater.version>
+		<imagej-updater.version>0.11.0</imagej-updater.version>
 		<net.imagej.imagej-updater.version>${imagej-updater.version}</net.imagej.imagej-updater.version>
 
 		<!-- Op Finder - https://github.com/imagej/op-finder -->
