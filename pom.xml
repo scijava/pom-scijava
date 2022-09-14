@@ -469,7 +469,7 @@
 		<!-- ImageJ - https://github.com/imagej -->
 
 		<!-- ImageJ2 - https://github.com/imagej/imagej2 -->
-		<imagej2.version>2.8.0</imagej2.version>
+		<imagej2.version>2.9.0</imagej2.version>
 		<imagej.version>${imagej2.version}</imagej.version>
 		<net.imagej.imagej.version>${imagej.version}</net.imagej.imagej.version>
 
@@ -653,7 +653,7 @@
 		<!-- Fiji - https://github.com/fiji -->
 
 		<!-- Fiji - https://github.com/fiji/fiji -->
-		<fiji.version>2.8.0</fiji.version>
+		<fiji.version>2.9.0</fiji.version>
 		<sc.fiji.fiji.version>${fiji.version}</sc.fiji.fiji.version>
 
 		<!-- Standard Fiji projects -->
