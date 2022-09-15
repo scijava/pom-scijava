@@ -911,7 +911,7 @@
 		<TrackMate.version>7.7.2</TrackMate.version>
 		<sc.fiji.TrackMate.version>${TrackMate.version}</sc.fiji.TrackMate.version>
 
-		<Trainable_Segmentation.version>3.3.2</Trainable_Segmentation.version>
+		<Trainable_Segmentation.version>3.3.3</Trainable_Segmentation.version>
 		<sc.fiji.Trainable_Segmentation.version>${Trainable_Segmentation.version}</sc.fiji.Trainable_Segmentation.version>
 
 		<TrakEM2_Archipelago.version>2.0.3</TrakEM2_Archipelago.version>
