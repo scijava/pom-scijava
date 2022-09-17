@@ -1015,7 +1015,7 @@
 		<sc.fiji.bigdataviewer-server.version>${bigdataviewer-server.version}</sc.fiji.bigdataviewer-server.version>
 
 		<!-- BigDataViewer Visualization Tools - https://github.com/bigdataviewer/bigdataviewer-vistools -->
-		<bigdataviewer-vistools.version>1.0.0-beta-30</bigdataviewer-vistools.version>
+		<bigdataviewer-vistools.version>1.0.0-beta-31</bigdataviewer-vistools.version>
 		<sc.fiji.bigdataviewer-vistools.version>${bigdataviewer-vistools.version}</sc.fiji.bigdataviewer-vistools.version>
 
 		<!-- BigDataViewer Fiji - https://github.com/bigdataviewer/bigdataviewer_fiji -->
