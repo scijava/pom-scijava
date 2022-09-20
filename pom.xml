@@ -1240,6 +1240,13 @@
 
 		<!-- Third party components -->
 
+		<!-- antlr - https://www.antlr.org/ -->
+		<antlr.version>3.5.2</antlr.version>
+		<antlr-runtime.version>${antlr.version}</antlr-runtime.version>
+		<antlr.antlr.version>2.7.7</antlr.antlr.version> <!-- NB: Avoid short name clash with org.antlr:antlr. -->
+		<org.antlr.antlr.version>${antlr.version}</org.antlr.antlr.version>
+		<org.antlr.antlr-runtime.version>${antlr-runtime.version}</org.antlr.antlr-runtime.version>
+
 		<!-- args4j - https://args4j.kohsuke.org/ -->
 		<args4j.version>2.33</args4j.version>
 		<args4j.args4j.version>${args4j.version}</args4j.args4j.version>
@@ -1851,6 +1858,12 @@
 		<org.jetbrains.kotlin.kotlin-stdlib.version>${kotlin-stdlib.version}</org.jetbrains.kotlin.kotlin-stdlib.version>
 		<org.jetbrains.kotlin.kotlin-stdlib-common.version>${kotlin-stdlib-common.version}</org.jetbrains.kotlin.kotlin-stdlib-common.version>
 		<org.jetbrains.kotlin.kotlin-stdlib-jdk8.version>${kotlin-stdlib-jdk8.version}</org.jetbrains.kotlin.kotlin-stdlib-jdk8.version>
+
+		<!-- Kryo - https://github.com/EsotericSoftware/kryo -->
+		<kryo.version>4.0.2</kryo.version>
+		<com.esotericsoftware.kryo.version>${kryo.version}</com.esotericsoftware.kryo.version>
+		<minlog.version>1.3.0</minlog.version>
+		<com.esotericsoftware.minlog.version>${minlog.version}</com.esotericsoftware.minlog.version>
 
 		<!-- Labkit - https://imagej.net/plugins/labkit -->
 		<labkit-ui.version>0.3.8</labkit-ui.version>
@@ -3633,6 +3646,23 @@
 
 			<!-- Third party components -->
 
+			<!-- Antlr - https://www.antlr.org/ -->
+			<dependency>
+				<groupId>antlr</groupId>
+				<artifactId>antlr</artifactId>
+				<version>${antlr.antlr.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.antlr</groupId>
+				<artifactId>antlr</artifactId>
+				<version>${org.antlr.antlr.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.antlr</groupId>
+				<artifactId>antlr-runtime</artifactId>
+				<version>${org.antlr.antlr-runtime.version}</version>
+			</dependency>
+
 			<!-- args4j - https://args4j.kohsuke.org/ -->
 			<dependency>
 				<groupId>args4j</groupId>
@@ -4971,6 +5001,18 @@
 				<groupId>org.jetbrains.kotlin</groupId>
 				<artifactId>kotlin-stdlib-jdk8</artifactId>
 				<version>${org.jetbrains.kotlin.kotlin-stdlib-jdk8.version}</version>
+			</dependency>
+
+			<!-- Kryo - https://github.com/EsotericSoftware/kryo -->
+			<dependency>
+				<groupId>com.esotericsoftware</groupId>
+				<artifactId>kryo</artifactId>
+				<version>${com.esotericsoftware.kryo.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.esotericsoftware</groupId>
+				<artifactId>minlog</artifactId>
+				<version>${com.esotericsoftware.minlog.version}</version>
 			</dependency>
 
 			<!-- Labkit - https://imagej.net/plugins/labkit -->
