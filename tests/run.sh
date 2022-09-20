@@ -141,7 +141,7 @@ echo 'Done!'
 echo &&
 printf 'Adjusting melting pot melt script... ' &&
 mv "$meltScript" "$meltScript.original" &&
-sed 's_\s*sh "$dir/build.sh"_\
+sed 's_\s*"$dir/build.sh"_\
 # HACK: If project is on the skipTests list, then skip the tests.\
 buildFlags=\
 grep -qF ":$f:" $dir/skipTests.txt \&\& buildFlags=-DskipTests\
