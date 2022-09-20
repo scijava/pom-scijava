@@ -157,9 +157,6 @@ echo ":org.janelia.saalfeldlab/n5-aws-s3:" > "$skipTestsFile"
 echo ":org.janelia.saalfeldlab/n5-blosc:" >> "$skipTestsFile"
 echo ":org.janelia.saalfeldlab/n5-zarr:" >> "$skipTestsFile"
 
-# Error while checking the CLIJ2 installation: null
-echo ":sc.fiji/labkit-pixel-classification:" >> "$skipTestsFile"
-
 # Run the melting pot now, unless -s flag was given.
 doMelt=t
 for arg in "$@"
