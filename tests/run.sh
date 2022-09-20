@@ -114,7 +114,7 @@ buildScript="$meltingPotDir/build.sh"
 buildScriptTemp="$buildScript.tmp"
 cp "$buildScript" "$buildScript.original" &&
 mv -f "$buildScript" "$buildScriptTemp" &&
-awk '!/-D(annotations|antlr|jocl|kryo|minlog|opencsv|trove4j)\.version/' "$buildScriptTemp" > "$buildScript" &&
+awk '!/-D(annotations|antlr|jocl|opencsv|trove4j)\.version/' "$buildScriptTemp" > "$buildScript" &&
 # HACK: Add leading underscore to version properties that start with a digit.
 mv -f "$buildScript" "$buildScriptTemp" &&
 sed -E 's; -D([0-9][^ ]*);& -D_\1;' "$buildScriptTemp" > "$buildScript" &&
