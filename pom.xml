@@ -551,7 +551,7 @@
 		<net.imagej.imagej-plugins-uploader-webdav.version>${imagej-plugins-uploader-webdav.version}</net.imagej.imagej-plugins-uploader-webdav.version>
 
 		<!-- ImageJ Scripting - https://github.com/imagej/imagej-scripting -->
-		<imagej-scripting.version>0.8.3</imagej-scripting.version>
+		<imagej-scripting.version>0.8.4</imagej-scripting.version>
 		<net.imagej.imagej-scripting.version>${imagej-scripting.version}</net.imagej.imagej-scripting.version>
 
 		<!-- ImageJ Server - https://github.com/imagej/imagej-server -->
