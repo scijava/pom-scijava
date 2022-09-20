@@ -1242,6 +1242,7 @@
 
 		<!-- args4j - https://args4j.kohsuke.org/ -->
 		<args4j.version>2.33</args4j.version>
+		<args4j.args4j.version>${args4j.version}</args4j.args4j.version>
 
 		<!-- Amazon S3 - https://aws.amazon.com/sdkforjava -->
 		<aws-java-sdk-s3.version>1.11.796</aws-java-sdk-s3.version>
@@ -3636,7 +3637,7 @@
 			<dependency>
 				<groupId>args4j</groupId>
 				<artifactId>args4j</artifactId>
-				<version>${args4j.version}</version>
+				<version>${args4j.args4j.version}</version>
 			</dependency>
 
 			<!-- Amazon S3 - https://aws.amazon.com/sdkforjava -->
