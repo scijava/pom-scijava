@@ -144,7 +144,7 @@ mv "$meltScript" "$meltScript.original" &&
 sed 's_\s*"$dir/build.sh"_\
 # HACK: If project is on the skipTests list, then skip the tests.\
 buildFlags=\
-grep -qF ":$f:" $dir/skipTests.txt \&\& buildFlags=-DskipTests\
+grep -qxF "$f" $dir/skipTests.txt \&\& buildFlags=-DskipTests\
 \
 & $buildFlags_' "$meltScript.original" > "$meltScript" &&
 chmod +x "$meltScript" ||
@@ -154,14 +154,15 @@ echo 'Done!'
 # com.amazonaws.services.s3.model.AmazonS3Exception: The specified bucket does
 # not exist (Service: Amazon S3; Status Code: 404; Error Code: NoSuchBucket;
 # Request ID: null; S3 Extended Request ID: null; Proxy: null)
-echo ":org.janelia.saalfeldlab/n5-aws-s3:" > "$skipTestsFile"
+echo "org.janelia.saalfeldlab/n5-aws-s3" > "$skipTestsFile" &&
 
 # java.lang.UnsatisfiedLinkError: Unable to load library 'blosc'
-echo ":org.janelia.saalfeldlab/n5-blosc:" >> "$skipTestsFile"
-echo ":org.janelia.saalfeldlab/n5-zarr:" >> "$skipTestsFile"
+echo "org.janelia.saalfeldlab/n5-blosc" >> "$skipTestsFile" &&
+echo "org.janelia.saalfeldlab/n5-zarr" >> "$skipTestsFile" &&
 
 # Error while checking the CLIJ2 installation: null
-echo ":sc.fiji/labkit-pixel-classification:" >> "$skipTestsFile"
+echo "sc.fiji/labkit-pixel-classification" >> "$skipTestsFile" ||
+  die "Failed to generate $skipTestsFile"
 
 # Run the melting pot now, unless -s flag was given.
 doMelt=t
