@@ -119,7 +119,9 @@ sed -E 's; -Dsc.fiji.(3D_Objects_Counter|3D_Viewer)\.version=([^ ]*);& -DImageJ_
 # pom-scijava 28.0.0; see 7d2cc442b107b3ac2dcb799d282f2c0b5822649d.
 mv -f "$buildScript" "$buildScriptTemp" &&
 sed -E 's; -Dij\.version=([^ ]*);& -Dimagej1.version=\1;' "$buildScriptTemp" > "$buildScript" &&
-rm "$buildScriptTemp" || die 'Error adjusting melting pot build script!'
+chmod +x "$buildScript" &&
+rm "$buildScriptTemp" ||
+  die 'Error adjusting melting pot build script!'
 echo 'Done!'
 
 # HACK: Adjust component POMs to satisfy Maven HTTPS strictness.
@@ -144,7 +146,8 @@ sed 's_\s*sh "$dir/build.sh"_\
 buildFlags=\
 grep -qF ":$f:" $dir/skipTests.txt \&\& buildFlags=-DskipTests\
 \
-& $buildFlags_' "$meltScript.original" > "$meltScript" ||
+& $buildFlags_' "$meltScript.original" > "$meltScript" &&
+chmod +x "$meltScript" ||
   die "Failed to adjust $meltScript"
 echo 'Done!'
 
