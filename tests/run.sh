@@ -6,8 +6,18 @@
 
 die () { echo "$*" >&2; exit 1; }
 
-echo &&
-printf 'Generating mega-melt project... ' &&
+sectionStart() {
+  startTime=$(date +%s)
+  echo
+  printf "$1... "
+}
+
+sectionEnd() {
+  endTime=$(date +%s)
+  echo "Done! [$((endTime-startTime))s]"
+}
+
+sectionStart 'Generating mega-melt project'
 
 dir=$(dirname "$0")
 pom="$dir/../pom.xml"
@@ -36,21 +46,20 @@ cp "$pom" "$pomParent" &&
 mvn -B -f "$pomParent" versions:set -DnewVersion=999-mega-melt > "$versionSwapLog" ||
   die "pom-scijava version update failed:\n$(cat "$versionSwapLog")"
 python "$generateMegaMeltScript" "$megaMeltDir" || die 'Generation failed!'
-echo 'Done!'
+sectionEnd # Generating mega-melt project
 
 # Ensure the mega-melt dependency structure validates.
 # In particular, this runs our enforcer rules: the build
 # will fail if there are any snapshot dependencies, or
 # any duplicate classes across artifacts on the classpath.
-echo &&
-printf 'Validating mega-melt project... ' &&
+sectionStart 'Validating mega-melt project'
 mvn -B -f "$megaMeltPOM" dependency:tree > "$dependencyTreeLog" ||
   die "Invalid dependency tree:\n$(cat "$dependencyTreeLog")"
 mvn -B -f "$megaMeltPOM" -U clean package > "$validationLog" || {
   python "$filterBuildLogScript" "$validationLog" > "$validationErrorsLog"
   die "Validation build failed!\n\nDependency tree:\n$(cat "$dependencyTreeLog")\n\nBuild log:\n$(cat "$validationErrorsLog")"
 }
-echo 'Done!'
+sectionEnd # Validating mega-melt project
 
 # Run mega-melt through the melting pot, with all SciJava-affiliated groupIds,
 # minus excluded artifacts (see ignoredArtifacts in generate-mega-melt.py).
@@ -95,14 +104,14 @@ chmod +x "$meltingPotScript" &&
 grep -qF "[ERROR]" "$meltingPotLog" &&
   die 'Melting pot generation failed!'
 
+sectionStart 'Adjusting the melting pot'
+
 # HACK: Remove known-duplicate artifactIds from version property overrides.
 # The plan is for this step to become unnecessary once the melting pot has
 # been improved to include a strategy for dealing with components with same
 # artifactId but different groupIds. For now, we just prune these overrides.
 buildScript="$meltingPotDir/build.sh"
 buildScriptTemp="$buildScript.tmp"
-echo &&
-printf 'Adjusting melting pot build script... ' &&
 cp "$buildScript" "$buildScript.original" &&
 mv -f "$buildScript" "$buildScriptTemp" &&
 awk '!/-D(annotations|antlr|jocl|kryo|minlog|opencsv|trove4j)\.version/' "$buildScriptTemp" > "$buildScript" &&
@@ -122,11 +131,8 @@ sed -E 's; -Dij\.version=([^ ]*);& -Dimagej1.version=\1;' "$buildScriptTemp" > "
 chmod +x "$buildScript" &&
 rm "$buildScriptTemp" ||
   die 'Error adjusting melting pot build script!'
-echo 'Done!'
 
 # HACK: Adjust component POMs to satisfy Maven HTTPS strictness.
-echo &&
-printf 'Adjusting melting pot project POMs... ' &&
 find "$meltingPotDir" -name pom.xml | while read pom
 do
   mv "$pom" "$pom.original" &&
@@ -134,12 +140,9 @@ do
     -e 's_http://maven.apache.org/xsd_https://maven.apache.org/xsd_g' "$pom.original" > "$pom" ||
     die "Failed to adjust $pom"
 done
-echo 'Done!'
 
 # HACK: Skip tests for projects with known problems.
 
-echo &&
-printf 'Adjusting melting pot melt script... ' &&
 mv "$meltScript" "$meltScript.original" &&
 sed 's_\s*"$dir/build.sh"_\
 # HACK: If project is on the skipTests list, then skip the tests.\
@@ -149,7 +152,6 @@ grep -qxF "$f" $dir/skipTests.txt \&\& buildFlags=-DskipTests\
 & $buildFlags_' "$meltScript.original" > "$meltScript" &&
 chmod +x "$meltScript" ||
   die "Failed to adjust $meltScript"
-echo 'Done!'
 
 # com.amazonaws.services.s3.model.AmazonS3Exception: The specified bucket does
 # not exist (Service: Amazon S3; Status Code: 404; Error Code: NoSuchBucket;
@@ -163,6 +165,8 @@ echo "org.janelia.saalfeldlab/n5-zarr" >> "$skipTestsFile" &&
 # Error while checking the CLIJ2 installation: null
 echo "sc.fiji/labkit-pixel-classification" >> "$skipTestsFile" ||
   die "Failed to generate $skipTestsFile"
+
+sectionEnd # Adjusting the melting pot
 
 # Run the melting pot now, unless -s flag was given.
 doMelt=t
