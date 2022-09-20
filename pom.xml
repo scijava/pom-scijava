@@ -1093,8 +1093,6 @@
 
 		<!-- Fiji-adjacent projects (available from ImageJ update sites) -->
 
-		<!-- Fiji-adjacent projects (available from ImageJ update sites) -->
-
 		<!-- MaMuT - https://github.com/fiji/MaMuT -->
 		<MaMuT.version>7.0.6</MaMuT.version>
 		<sc.fiji.MaMuT.version>${MaMuT.version}</sc.fiji.MaMuT.version>
