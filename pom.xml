@@ -1042,7 +1042,7 @@
 		<sc.fiji.TrakEM2_.version>${TrakEM2_.version}</sc.fiji.TrakEM2_.version>
 
 		<!-- VectorString - https://github.com/trakem2/VectorString -->
-		<VectorString.version>2.0.2</VectorString.version>
+		<VectorString.version>2.0.3</VectorString.version>
 		<sc.fiji.VectorString.version>${VectorString.version}</sc.fiji.VectorString.version>
 
 		<!-- trakem2-transform - https://github.com/trakem2/trakem2-transform -->
