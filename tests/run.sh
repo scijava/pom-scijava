@@ -41,6 +41,14 @@ meltingPotDir="$megaMeltDir/melting-pot"
 skipTestsFile="$meltingPotDir/skipTests.txt"
 meltScript="$meltingPotDir/melt.sh"
 
+# HACK: List of artifacts with known-duplicate short version properties.
+shortVersionClashes=\
+'net.sourceforge.findbugs.annotations'\
+'|antr.antlr'\
+'|org.jogamp.jocl.jocl'\
+'|net.sf.opencsv.opencsv'\
+'|org.jetbrains.intellij.deps.trove4j'
+
 rm -rf "$megaMeltDir" && mkdir -p "$megaMeltDir" || die "Creation of $megaMeltDir failed!"
 cp "$pom" "$pomParent" &&
 mvn -B -f "$pomParent" versions:set -DnewVersion=999-mega-melt > "$versionSwapLog" ||
@@ -106,28 +114,33 @@ grep -qF "[ERROR]" "$meltingPotLog" &&
 
 sectionStart 'Adjusting the melting pot'
 
-# HACK: Remove known-duplicate artifactIds from version property overrides.
-# The plan is for this step to become unnecessary once the melting pot has
-# been improved to include a strategy for dealing with components with same
-# artifactId but different groupIds. For now, we just prune these overrides.
 buildScript="$meltingPotDir/build.sh"
 buildScriptTemp="$buildScript.tmp"
 cp "$buildScript" "$buildScript.original" &&
+
+# HACK: Remove known-duplicate short version properties, keeping
+# the short version declaration only for the more common groupId.
+# E.g.: org.antlr:antlr is preferred over antlr:antlr, so we set
+# antlr.version to match org.antlr:antlr, not antlr:antlr.
 mv -f "$buildScript" "$buildScriptTemp" &&
-awk '!/-D(annotations|antlr|jocl|opencsv|trove4j)\.version/' "$buildScriptTemp" > "$buildScript" &&
+sed -E 's;(-D('"$shortVersionClashes"').version=[^ ]*) -D[^ ]*;\1;' "$buildScriptTemp" > "$buildScript" &&
+
 # HACK: Add leading underscore to version properties that start with a digit.
 mv -f "$buildScript" "$buildScriptTemp" &&
 sed -E 's; -D([0-9][^ ]*);& -D_\1;' "$buildScriptTemp" > "$buildScript" &&
+
 # HACK: Add non-standard version properties used prior to
 # pom-scijava 32.0.0-beta-1; see d0bf752070d96a2613c42e4e1ab86ebdd07c29ee.
 mv -f "$buildScript" "$buildScriptTemp" &&
 sed -E 's; -Dsc.fiji.3D_Blob_Segmentation\.version=([^ ]*);& -DFiji_3D_Blob_Segmentation.version=\1;' "$buildScriptTemp" > "$buildScript" &&
 mv -f "$buildScript" "$buildScriptTemp" &&
 sed -E 's; -Dsc.fiji.(3D_Objects_Counter|3D_Viewer)\.version=([^ ]*);& -DImageJ_\1.version=\2;' "$buildScriptTemp" > "$buildScript" &&
+
 # HACK: Add non-standard net.imagej:ij version property used prior to
 # pom-scijava 28.0.0; see 7d2cc442b107b3ac2dcb799d282f2c0b5822649d.
 mv -f "$buildScript" "$buildScriptTemp" &&
 sed -E 's; -Dij\.version=([^ ]*);& -Dimagej1.version=\1;' "$buildScriptTemp" > "$buildScript" &&
+
 chmod +x "$buildScript" &&
 rm "$buildScriptTemp" ||
   die 'Error adjusting melting pot build script!'
