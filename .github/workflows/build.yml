@@ -22,9 +22,19 @@ jobs:
           java-version: '8'
           distribution: 'zulu'
           cache: 'maven'
+
       - name: Set up CI environment
         run: .github/setup.sh
+
+      - name: Restore the cache
+        id: restore-cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/scijava/melting-pot
+          key: ${{ runner.os }}-cache
+
       - name: Execute the build
+        id: execute-build
         run: .github/build.sh
         env:
           GPG_KEY_NAME: ${{ secrets.GPG_KEY_NAME }}
@@ -33,3 +43,19 @@ jobs:
           MAVEN_PASS: ${{ secrets.MAVEN_PASS }}
           OSSRH_PASS: ${{ secrets.OSSRH_PASS }}
           SIGNING_ASC: ${{ secrets.SIGNING_ASC }}
+
+      - name: Delete cache
+        if: env.update-cache == 'true'
+        id: delete-cache
+        run: |
+          gh api --method DELETE -H "Accept: application/vnd.github+json" /repos/scijava/pom-scijava/actions/caches?key=${{ runner.os }}-cache
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+
+      - name: Update cache post-delete
+        if: env.update-cache == 'true'
+        id: update-cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/scijava/melting-pot
+          key: ${{ runner.os }}-cache
