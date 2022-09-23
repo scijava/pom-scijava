@@ -627,7 +627,7 @@
 		<io.scif.scifio.version>${scifio.version}</io.scif.scifio.version>
 
 		<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
-		<scifio-bf-compat.version>4.1.0</scifio-bf-compat.version>
+		<scifio-bf-compat.version>4.1.1</scifio-bf-compat.version>
 		<io.scif.scifio-bf-compat.version>${scifio-bf-compat.version}</io.scif.scifio-bf-compat.version>
 
 		<!-- SCIFIO Command Line Tools - https://github.com/scifio/scifio-cli -->
@@ -658,13 +658,13 @@
 
 		<!-- Standard Fiji projects -->
 
-		<_3D_Blob_Segmentation.version>3.0.1</_3D_Blob_Segmentation.version>
+		<_3D_Blob_Segmentation.version>3.0.2</_3D_Blob_Segmentation.version>
 		<sc.fiji.3D_Blob_Segmentation.version>${_3D_Blob_Segmentation.version}</sc.fiji.3D_Blob_Segmentation.version>
 
 		<_3D_Objects_Counter.version>2.0.1</_3D_Objects_Counter.version>
 		<sc.fiji.3D_Objects_Counter.version>${_3D_Objects_Counter.version}</sc.fiji.3D_Objects_Counter.version>
 
-		<_3D_Viewer.version>4.0.3</_3D_Viewer.version>
+		<_3D_Viewer.version>4.0.4</_3D_Viewer.version>
 		<sc.fiji.3D_Viewer.version>${_3D_Viewer.version}</sc.fiji.3D_Viewer.version>
 
 		<AnalyzeSkeleton.version>3.4.2</AnalyzeSkeleton.version>
@@ -724,7 +724,7 @@
 		<Correct_3D_Drift.version>1.0.6</Correct_3D_Drift.version>
 		<sc.fiji.Correct_3D_Drift.version>${Correct_3D_Drift.version}</sc.fiji.Correct_3D_Drift.version>
 
-		<Descriptor_based_registration.version>2.1.7</Descriptor_based_registration.version>
+		<Descriptor_based_registration.version>2.1.8</Descriptor_based_registration.version>
 		<sc.fiji.Descriptor_based_registration.version>${Descriptor_based_registration.version}</sc.fiji.Descriptor_based_registration.version>
 
 		<Dichromacy.version>2.1.2</Dichromacy.version>
@@ -735,16 +735,16 @@
 		<Directionality_.version>${Directionality.version}</Directionality_.version>
 		<sc.fiji.Directionality_.version>${Directionality_.version}</sc.fiji.Directionality_.version>
 
-		<FS_Align_TrakEM2.version>2.0.3</FS_Align_TrakEM2.version>
+		<FS_Align_TrakEM2.version>2.0.4</FS_Align_TrakEM2.version>
 		<sc.fiji.FS_Align_TrakEM2.version>${FS_Align_TrakEM2.version}</sc.fiji.FS_Align_TrakEM2.version>
 
-		<Feature_Detection.version>2.0.2</Feature_Detection.version>
+		<Feature_Detection.version>2.0.3</Feature_Detection.version>
 		<sc.fiji.Feature_Detection.version>${Feature_Detection.version}</sc.fiji.Feature_Detection.version>
 
 		<Fiji_Archipelago.version>2.0.1</Fiji_Archipelago.version>
 		<sc.fiji.Fiji_Archipelago.version>${Fiji_Archipelago.version}</sc.fiji.Fiji_Archipelago.version>
 
-		<Fiji_Developer.version>2.0.7</Fiji_Developer.version>
+		<Fiji_Developer.version>2.0.8</Fiji_Developer.version>
 		<sc.fiji.Fiji_Developer.version>${Fiji_Developer.version}</sc.fiji.Fiji_Developer.version>
 
 		<Fiji_Package_Maker.version>2.1.1</Fiji_Package_Maker.version>
@@ -848,13 +848,13 @@
 		<RATS_.version>${RATS.version}</RATS_.version>
 		<sc.fiji.RATS_.version>${RATS_.version}</sc.fiji.RATS_.version>
 
-		<Reconstruct_Reader.version>2.0.4</Reconstruct_Reader.version>
+		<Reconstruct_Reader.version>2.0.5</Reconstruct_Reader.version>
 		<sc.fiji.Reconstruct_Reader.version>${Reconstruct_Reader.version}</sc.fiji.Reconstruct_Reader.version>
 
 		<SPIM_Opener.version>2.0.2</SPIM_Opener.version>
 		<sc.fiji.SPIM_Opener.version>${SPIM_Opener.version}</sc.fiji.SPIM_Opener.version>
 
-		<SPIM_Registration.version>5.0.23</SPIM_Registration.version>
+		<SPIM_Registration.version>5.0.24</SPIM_Registration.version>
 		<sc.fiji.SPIM_Registration.version>${SPIM_Registration.version}</sc.fiji.SPIM_Registration.version>
 
 		<Samples.version>2.0.3</Samples.version>
@@ -884,7 +884,7 @@
 		<Statistical_Region_Merging.version>2.0.1</Statistical_Region_Merging.version>
 		<sc.fiji.Statistical_Region_Merging.version>${Statistical_Region_Merging.version}</sc.fiji.Statistical_Region_Merging.version>
 
-		<Stitching.version>3.1.8</Stitching.version>
+		<Stitching.version>3.1.9</Stitching.version>
 		<Stitching_.version>${Stitching.version}</Stitching_.version>
 		<sc.fiji.Stitching_.version>${Stitching_.version}</sc.fiji.Stitching_.version>
 
@@ -914,13 +914,13 @@
 		<Trainable_Segmentation.version>3.3.3</Trainable_Segmentation.version>
 		<sc.fiji.Trainable_Segmentation.version>${Trainable_Segmentation.version}</sc.fiji.Trainable_Segmentation.version>
 
-		<TrakEM2_Archipelago.version>2.0.3</TrakEM2_Archipelago.version>
+		<TrakEM2_Archipelago.version>2.0.4</TrakEM2_Archipelago.version>
 		<sc.fiji.TrakEM2_Archipelago.version>${TrakEM2_Archipelago.version}</sc.fiji.TrakEM2_Archipelago.version>
 
 		<VIB-lib.version>2.2.0</VIB-lib.version>
 		<sc.fiji.VIB-lib.version>${VIB-lib.version}</sc.fiji.VIB-lib.version>
 
-		<VIB.version>3.0.3</VIB.version>
+		<VIB.version>3.0.4</VIB.version>
 		<VIB_.version>${VIB.version}</VIB_.version>
 		<sc.fiji.VIB_.version>${VIB_.version}</sc.fiji.VIB_.version>
 
@@ -937,7 +937,7 @@
 		<View5D_.version>${View5D.version}</View5D_.version>
 		<sc.fiji.View5D_.version>${View5D_.version}</sc.fiji.View5D_.version>
 
-		<Volume_Calculator.version>2.0.2</Volume_Calculator.version>
+		<Volume_Calculator.version>2.0.3</Volume_Calculator.version>
 		<sc.fiji.Volume_Calculator.version>${Volume_Calculator.version}</sc.fiji.Volume_Calculator.version>
 
 		<Volume_Viewer.version>2.01.3</Volume_Viewer.version>
@@ -950,14 +950,14 @@
 		<bij.version>1.0.0</bij.version>
 		<sc.fiji.bij.version>${bij.version}</sc.fiji.bij.version>
 
-		<blockmatching.version>2.1.3</blockmatching.version>
+		<blockmatching.version>2.1.4</blockmatching.version>
 		<blockmatching_.version>${blockmatching.version}</blockmatching_.version>
 		<sc.fiji.blockmatching_.version>${blockmatching_.version}</sc.fiji.blockmatching_.version>
 
 		<fiji-lib.version>2.1.3</fiji-lib.version>
 		<sc.fiji.fiji-lib.version>${fiji-lib.version}</sc.fiji.fiji-lib.version>
 
-		<legacy-imglib1.version>1.1.9</legacy-imglib1.version>
+		<legacy-imglib1.version>1.1.10</legacy-imglib1.version>
 		<sc.fiji.legacy-imglib1.version>${legacy-imglib1.version}</sc.fiji.legacy-imglib1.version>
 
 		<level_sets.version>1.0.2</level_sets.version>
@@ -970,7 +970,7 @@
 		<panorama_.version>${panorama.version}</panorama_.version>
 		<sc.fiji.panorama_.version>${panorama_.version}</sc.fiji.panorama_.version>
 
-		<register_virtual_stack_slices.version>3.0.7</register_virtual_stack_slices.version>
+		<register_virtual_stack_slices.version>3.0.8</register_virtual_stack_slices.version>
 		<sc.fiji.register_virtual_stack_slices.version>${register_virtual_stack_slices.version}</sc.fiji.register_virtual_stack_slices.version>
 
 		<registration_3d.version>2.0.1</registration_3d.version>
@@ -986,7 +986,7 @@
 		<jitk.jitk-tps.version>${jitk-tps.version}</jitk.jitk-tps.version>
 
 		<!-- BigWarp - https://github.com/saalfeldlab/bigwarp -->
-		<bigwarp.version>7.0.6</bigwarp.version>
+		<bigwarp.version>7.0.7</bigwarp.version>
 		<bigwarp_fiji.version>${bigwarp.version}</bigwarp_fiji.version>
 		<sc.fiji.bigwarp_fiji.version>${bigwarp_fiji.version}</sc.fiji.bigwarp_fiji.version>
 
@@ -1007,11 +1007,11 @@
 		<!-- BigDataViewer - https://github.com/bigdataviewer -->
 
 		<!-- BigDataViewer Core - https://github.com/bigdataviewer/bigdataviewer-core -->
-		<bigdataviewer-core.version>10.4.3</bigdataviewer-core.version>
+		<bigdataviewer-core.version>10.4.5</bigdataviewer-core.version>
 		<sc.fiji.bigdataviewer-core.version>${bigdataviewer-core.version}</sc.fiji.bigdataviewer-core.version>
 
 		<!-- BigDataServer - https://github.com/bigdataviewer/bigdataviewer-server -->
-		<bigdataviewer-server.version>3.1.0</bigdataviewer-server.version>
+		<bigdataviewer-server.version>3.1.1</bigdataviewer-server.version>
 		<sc.fiji.bigdataviewer-server.version>${bigdataviewer-server.version}</sc.fiji.bigdataviewer-server.version>
 
 		<!-- BigDataViewer Visualization Tools - https://github.com/bigdataviewer/bigdataviewer-vistools -->
@@ -1019,7 +1019,7 @@
 		<sc.fiji.bigdataviewer-vistools.version>${bigdataviewer-vistools.version}</sc.fiji.bigdataviewer-vistools.version>
 
 		<!-- BigDataViewer Fiji - https://github.com/bigdataviewer/bigdataviewer_fiji -->
-		<bigdataviewer_fiji.version>6.2.2</bigdataviewer_fiji.version>
+		<bigdataviewer_fiji.version>6.2.3</bigdataviewer_fiji.version>
 		<sc.fiji.bigdataviewer_fiji.version>${bigdataviewer_fiji.version}</sc.fiji.bigdataviewer_fiji.version>
 
 		<!-- SPIM Data - https://github.com/bigdataviewer/spimdata -->
@@ -1029,11 +1029,11 @@
 		<!-- TrakEM2 - https://github.com/trakem2 -->
 
 		<!-- T2-NIT - https://github.com/trakem2/T2-NIT -->
-		<T2-NIT.version>1.1.3</T2-NIT.version>
+		<T2-NIT.version>1.1.4</T2-NIT.version>
 		<sc.fiji.T2-NIT.version>${T2-NIT.version}</sc.fiji.T2-NIT.version>
 
 		<!-- T2-TreelineGraph - https://github.com/trakem2/T2-TreelineGraph -->
-		<T2-TreelineGraph.version>1.1.3</T2-TreelineGraph.version>
+		<T2-TreelineGraph.version>1.1.4</T2-TreelineGraph.version>
 		<sc.fiji.T2-TreelineGraph.version>${T2-TreelineGraph.version}</sc.fiji.T2-TreelineGraph.version>
 
 		<!-- TrakEM2 - https://github.com/trakem2/TrakEM2 -->
