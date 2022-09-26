@@ -172,10 +172,6 @@ chmod +x "$meltScript" ||
 # Request ID: null; S3 Extended Request ID: null; Proxy: null)
 echo "org.janelia.saalfeldlab/n5-aws-s3" > "$skipTestsFile" &&
 
-# java.lang.UnsatisfiedLinkError: Unable to load library 'blosc'
-echo "org.janelia.saalfeldlab/n5-blosc" >> "$skipTestsFile" &&
-echo "org.janelia.saalfeldlab/n5-zarr" >> "$skipTestsFile" &&
-
 # Error while checking the CLIJ2 installation: null
 echo "sc.fiji/labkit-pixel-classification" >> "$skipTestsFile" ||
   die "Failed to generate $skipTestsFile"
