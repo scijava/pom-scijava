@@ -146,7 +146,8 @@ rm "$buildScriptTemp" ||
   die 'Error adjusting melting pot build script!'
 
 # HACK: Adjust component POMs to satisfy Maven HTTPS strictness.
-find "$meltingPotDir" -name pom.xml | while read pom
+find "$meltingPotDir" -name pom.xml |
+  while read pom
 do
   mv "$pom" "$pom.original" &&
   sed -E -e 's_(https?://maven.imagej.net|http://maven.scijava.org)_https://maven.scijava.org_g' \
