@@ -1,7 +1,6 @@
 #!/bin/sh
-set -e
-curl -fsLO https://raw.githubusercontent.com/scijava/scijava-scripts/master/ci-build.sh
-sh ci-build.sh
+curl -fsLO https://raw.githubusercontent.com/scijava/scijava-scripts/master/ci-build.sh &&
+sh ci-build.sh || { echo "Maven build failed. Skipping melting pot tests."; exit 1; }
 
 # Helper method to get the last cache modified date as seconds since epoch
 last_cache_modified () {
@@ -20,6 +19,7 @@ fi
 
 # run melting-pot
 tests/run.sh
+meltResult=$?
 
 # Record the last time of cache modification after running melting-pot
 if [ -f "~/.cache/scijava/melting-pot" ]; then
@@ -32,3 +32,5 @@ if [ "$cache_modified_post" -gt "$cache_modified_pre" ]; then
 else
   echo "update-cache=false" >> $GITHUB_ENV
 fi
+
+exit $meltResult
