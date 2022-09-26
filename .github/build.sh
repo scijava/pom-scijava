@@ -13,7 +13,7 @@ if [ -f "~/.cache/scijava/melting-pot" ]; then
 fi
 
 # run melting-pot
-sh tests/run.sh
+tests/run.sh
 
 # Record the last time of cache modification after running melting-pot
 if [ -f "~/.cache/scijava/melting-pot" ]; then
