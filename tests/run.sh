@@ -146,7 +146,8 @@ rm "$buildScriptTemp" ||
   die 'Error adjusting melting pot build script!'
 
 # HACK: Adjust component POMs to satisfy Maven HTTPS strictness.
-find "$meltingPotDir" -name pom.xml | while read pom
+find "$meltingPotDir" -name pom.xml |
+  while read pom
 do
   mv "$pom" "$pom.original" &&
   sed -E -e 's_(https?://maven.imagej.net|http://maven.scijava.org)_https://maven.scijava.org_g' \
@@ -171,10 +172,6 @@ chmod +x "$meltScript" ||
 # Request ID: null; S3 Extended Request ID: null; Proxy: null)
 echo "org.janelia.saalfeldlab/n5-aws-s3" > "$skipTestsFile" &&
 
-# java.lang.UnsatisfiedLinkError: Unable to load library 'blosc'
-echo "org.janelia.saalfeldlab/n5-blosc" >> "$skipTestsFile" &&
-echo "org.janelia.saalfeldlab/n5-zarr" >> "$skipTestsFile" &&
-
 # Error while checking the CLIJ2 installation: null
 echo "sc.fiji/labkit-pixel-classification" >> "$skipTestsFile" ||
   die "Failed to generate $skipTestsFile"
@@ -192,8 +189,47 @@ do
 done
 if [ "$doMelt" ]
 then
-  echo &&
-  cd "$meltingPotDir" && sh melt.sh || die 'Melting pot failed!'
+  echo
+  cd "$meltingPotDir"
+  sh melt.sh
+  meltResult=$?
+
+  # Dump logs for failing builds and/or tests.
+  for d in */*
+  do
+    test -d "$d" || continue
+
+    # Check for failing build log.
+    buildLog="$d/build.log"
+    if [ -f "$buildLog" ]
+    then
+      if grep -qF 'BUILD FAILURE' "$buildLog"
+      then
+        echo
+        echo "[$buildLog]"
+        cat "$buildLog"
+      fi
+    fi
+
+    # Check for failing test logs.
+    testLogsDir="$dir/target/surefire-reports"
+    if [ -d "$testLogsDir" ]
+    then
+      find "$testLogsDir" -name '*.txt' |
+        while read report
+      do
+        if grep -qF 'FAILURE!' "$report"
+        then
+          echo
+          echo "[$report]"
+          cat "$report"
+        fi
+      done
+    fi
+  done
+
+  # Terminate the script with same exit code if the melt failed.
+  test "$meltResult" -eq 0 || exit "$meltResult"
 else
   echo &&
   echo 'Melting the pot... SKIPPED'
