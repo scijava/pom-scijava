@@ -193,8 +193,47 @@ do
 done
 if [ "$doMelt" ]
 then
-  echo &&
-  cd "$meltingPotDir" && sh melt.sh || die 'Melting pot failed!'
+  echo
+  cd "$meltingPotDir"
+  sh melt.sh
+  meltResult=$?
+
+  # Dump logs for failing builds and/or tests.
+  for d in */*
+  do
+    test -d "$d" || continue
+
+    # Check for failing build log.
+    buildLog="$d/build.log"
+    if [ -f "$buildLog" ]
+    then
+      if grep -qF 'BUILD FAILURE' "$buildLog"
+      then
+        echo
+        echo "[$buildLog]"
+        cat "$buildLog"
+      fi
+    fi
+
+    # Check for failing test logs.
+    testLogsDir="$dir/target/surefire-reports"
+    if [ -d "$testLogsDir" ]
+    then
+      find "$testLogsDir" -name '*.txt' |
+        while read report
+      do
+        if grep -qF 'FAILURE!' "$report"
+        then
+          echo
+          echo "[$report]"
+          cat "$report"
+        fi
+      done
+    fi
+  done
+
+  # Terminate the script with same exit code if the melt failed.
+  test "$meltResult" -eq 0 || exit "$meltResult"
 else
   echo &&
   echo 'Melting the pot... SKIPPED'
