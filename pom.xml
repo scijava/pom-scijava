@@ -904,9 +904,6 @@
 		<TopoJ_.version>${TopoJ.version}</TopoJ_.version>
 		<sc.fiji.TopoJ_.version>${TopoJ_.version}</sc.fiji.TopoJ_.version>
 
-		<TrackMate.version>7.7.2</TrackMate.version>
-		<sc.fiji.TrackMate.version>${TrackMate.version}</sc.fiji.TrackMate.version>
-
 		<Trainable_Segmentation.version>3.3.3</Trainable_Segmentation.version>
 		<sc.fiji.Trainable_Segmentation.version>${Trainable_Segmentation.version}</sc.fiji.Trainable_Segmentation.version>
 
@@ -1021,6 +1018,56 @@
 		<!-- SPIM Data - https://github.com/bigdataviewer/spimdata -->
 		<spim_data.version>2.2.7</spim_data.version>
 		<sc.fiji.spim_data.version>${spim_data.version}</sc.fiji.spim_data.version>
+
+		<!-- TrackMate - https://github.com/trackmate-sc -->
+
+		<!-- TrackMate - https://github.com/trackmate-sc/TrackMate -->
+		<TrackMate.version>7.7.2</TrackMate.version>
+		<sc.fiji.TrackMate.version>${TrackMate.version}</sc.fiji.TrackMate.version>
+
+		<!-- TrackMate-Cellpose - https://github.com/trackmate-sc/TrackMate-Cellpose -->
+		<TrackMate-Cellpose.version>0.0.7</TrackMate-Cellpose.version>
+		<sc.fiji.TrackMate-Cellpose.version>${TrackMate-Cellpose.version}</sc.fiji.TrackMate-Cellpose.version>
+
+		<!-- TrackMate-Cellpose - https://github.com/trackmate-sc/TrackMate-Cellpose -->
+		<TrackMate-CSVImporter.version>3.1.2</TrackMate-CSVImporter.version>
+		<sc.fiji.TrackMate-CSVImporter.version>${TrackMate-CSVImporter.version}</sc.fiji.TrackMate-CSVImporter.version>
+
+		<!-- TrackMate-CTCRunner - https://github.com/trackmate-sc/TrackMate-CTCRunner -->
+		<!-- Disabled until trackmate-sc/TrackMate-CTCRunner#5 is addressed.
+		<TrackMate-CTCRunner.version>NONE</TrackMate-CTCRunner.version>
+		<sc.fiji.TrackMate-CTCRunner.version>${TrackMate-CTCRunner.version}</sc.fiji.TrackMate-CTCRunner.version>
+		-->
+
+		<!-- TrackMate-ExTrack - https://github.com/trackmate-sc/TrackMate-ExTrack -->
+		<TrackMate-ExTrack.version>1.2.4</TrackMate-ExTrack.version>
+		<sc.fiji.TrackMate-ExTrack.version>${TrackMate-ExTrack.version}</sc.fiji.TrackMate-ExTrack.version>
+
+		<!-- TrackMate-Ilastik - https://github.com/trackmate-sc/TrackMate-Ilastik -->
+		<TrackMate-Ilastik.version>1.2.2</TrackMate-Ilastik.version>
+		<sc.fiji.TrackMate-Ilastik.version>${TrackMate-Ilastik.version}</sc.fiji.TrackMate-Ilastik.version>
+
+		<!-- TrackMate-MorphoLibJ - https://github.com/trackmate-sc/TrackMate-MorphoLibJ -->
+		<TrackMate-MorphoLibJ.version>1.1.2</TrackMate-MorphoLibJ.version>
+		<sc.fiji.TrackMate-MorphoLibJ.version>${TrackMate-MorphoLibJ.version}</sc.fiji.TrackMate-MorphoLibJ.version>
+
+		<!-- TrackMate-Oneat - https://github.com/trackmate-sc/TrackMate-Oneat -->
+		<TrackMate-Oneat.version>3.0.0</TrackMate-Oneat.version>
+		<sc.fiji.TrackMate-Oneat.version>${TrackMate-Oneat.version}</sc.fiji.TrackMate-Oneat.version>
+
+		<!-- TrackMate-Skeleton - https://github.com/trackmate-sc/TrackMate-Skeleton -->
+		<TrackMate-Skeleton.version>2.0.0</TrackMate-Skeleton.version>
+		<sc.fiji.TrackMate-Skeleton.version>${TrackMate-Skeleton.version}</sc.fiji.TrackMate-Skeleton.version>
+
+		<!-- TrackMate-StarDist - https://github.com/trackmate-sc/TrackMate-StarDist -->
+		<!-- Disabled until trackmate-sc/TrackMate-StarDist#5 is addressed.
+		<TrackMate-StarDist.version>NONE</TrackMate-StarDist.version>
+		<sc.fiji.TrackMate-StarDist.version>${TrackMate-StarDist.version}</sc.fiji.TrackMate-StarDist.version>
+		-->
+
+		<!-- TrackMate-Weka - https://github.com/trackmate-sc/TrackMate-Weka -->
+		<TrackMate-Weka.version>1.1.1</TrackMate-Weka.version>
+		<sc.fiji.TrackMate-Weka.version>${TrackMate-Weka.version}</sc.fiji.TrackMate-Weka.version>
 
 		<!-- TrakEM2 - https://github.com/trakem2 -->
 
@@ -2956,11 +3003,6 @@
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
-				<artifactId>TrackMate</artifactId>
-				<version>${sc.fiji.TrackMate.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
 				<artifactId>Trainable_Segmentation</artifactId>
 				<version>${sc.fiji.Trainable_Segmentation.version}</version>
 			</dependency>
@@ -3133,6 +3175,68 @@
 				<groupId>sc.fiji</groupId>
 				<artifactId>spim_data</artifactId>
 				<version>${sc.fiji.spim_data.version}</version>
+			</dependency>
+
+			<!-- TrackMate - https://github.com/trackmate-sc -->
+
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>TrackMate</artifactId>
+				<version>${sc.fiji.TrackMate.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>TrackMate-Cellpose</artifactId>
+				<version>${sc.fiji.TrackMate-Cellpose.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>TrackMate-CSVImporter</artifactId>
+				<version>${sc.fiji.TrackMate-CSVImporter.version}</version>
+			</dependency>
+			<!-- Disabled until trackmate-sc/TrackMate-CTCRunner#5 is addressed.
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>TrackMate-CTCRunner</artifactId>
+				<version>${sc.fiji.TrackMate-CTCRunner.version}</version>
+			</dependency>
+			-->
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>TrackMate-ExTrack</artifactId>
+				<version>${sc.fiji.TrackMate-ExTrack.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>TrackMate-Ilastik</artifactId>
+				<version>${sc.fiji.TrackMate-Ilastik.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>TrackMate-MorphoLibJ</artifactId>
+				<version>${sc.fiji.TrackMate-MorphoLibJ.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>TrackMate-Oneat</artifactId>
+				<version>${sc.fiji.TrackMate-Oneat.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>TrackMate-Skeleton</artifactId>
+				<version>${sc.fiji.TrackMate-Skeleton.version}</version>
+			</dependency>
+			<!-- Disabled until trackmate-sc/TrackMate-StarDist#5 is addressed.
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>TrackMate-StarDist</artifactId>
+				<version>${sc.fiji.TrackMate-StarDist.version}</version>
+			</dependency>
+			-->
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>TrackMate-Weka</artifactId>
+				<version>${sc.fiji.TrackMate-Weka.version}</version>
 			</dependency>
 
 			<!-- TrakEM2 - https://github.com/trakem2 -->
