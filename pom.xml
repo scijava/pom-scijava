@@ -1060,10 +1060,8 @@
 		<sc.fiji.TrackMate-Skeleton.version>${TrackMate-Skeleton.version}</sc.fiji.TrackMate-Skeleton.version>
 
 		<!-- TrackMate-StarDist - https://github.com/trackmate-sc/TrackMate-StarDist -->
-		<!-- Disabled until trackmate-sc/TrackMate-StarDist#5 is addressed.
-		<TrackMate-StarDist.version>NONE</TrackMate-StarDist.version>
+		<TrackMate-StarDist.version>1.1.4</TrackMate-StarDist.version>
 		<sc.fiji.TrackMate-StarDist.version>${TrackMate-StarDist.version}</sc.fiji.TrackMate-StarDist.version>
-		-->
 
 		<!-- TrackMate-Weka - https://github.com/trackmate-sc/TrackMate-Weka -->
 		<TrackMate-Weka.version>1.1.1</TrackMate-Weka.version>
@@ -3226,13 +3224,11 @@
 				<artifactId>TrackMate-Skeleton</artifactId>
 				<version>${sc.fiji.TrackMate-Skeleton.version}</version>
 			</dependency>
-			<!-- Disabled until trackmate-sc/TrackMate-StarDist#5 is addressed.
 			<dependency>
 				<groupId>sc.fiji</groupId>
 				<artifactId>TrackMate-StarDist</artifactId>
 				<version>${sc.fiji.TrackMate-StarDist.version}</version>
 			</dependency>
-			-->
 			<dependency>
 				<groupId>sc.fiji</groupId>
 				<artifactId>TrackMate-Weka</artifactId>
