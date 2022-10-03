@@ -1022,7 +1022,7 @@
 		<!-- TrackMate - https://github.com/trackmate-sc -->
 
 		<!-- TrackMate - https://github.com/trackmate-sc/TrackMate -->
-		<TrackMate.version>7.7.2</TrackMate.version>
+		<TrackMate.version>7.9.1</TrackMate.version>
 		<sc.fiji.TrackMate.version>${TrackMate.version}</sc.fiji.TrackMate.version>
 
 		<!-- TrackMate-Cellpose - https://github.com/trackmate-sc/TrackMate-Cellpose -->
