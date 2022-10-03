@@ -1026,7 +1026,7 @@
 		<sc.fiji.TrackMate.version>${TrackMate.version}</sc.fiji.TrackMate.version>
 
 		<!-- TrackMate-Cellpose - https://github.com/trackmate-sc/TrackMate-Cellpose -->
-		<TrackMate-Cellpose.version>0.0.7</TrackMate-Cellpose.version>
+		<TrackMate-Cellpose.version>0.1.0</TrackMate-Cellpose.version>
 		<sc.fiji.TrackMate-Cellpose.version>${TrackMate-Cellpose.version}</sc.fiji.TrackMate-Cellpose.version>
 
 		<!-- TrackMate-Cellpose - https://github.com/trackmate-sc/TrackMate-Cellpose -->
@@ -1048,7 +1048,7 @@
 		<sc.fiji.TrackMate-Ilastik.version>${TrackMate-Ilastik.version}</sc.fiji.TrackMate-Ilastik.version>
 
 		<!-- TrackMate-MorphoLibJ - https://github.com/trackmate-sc/TrackMate-MorphoLibJ -->
-		<TrackMate-MorphoLibJ.version>1.1.2</TrackMate-MorphoLibJ.version>
+		<TrackMate-MorphoLibJ.version>1.2.0</TrackMate-MorphoLibJ.version>
 		<sc.fiji.TrackMate-MorphoLibJ.version>${TrackMate-MorphoLibJ.version}</sc.fiji.TrackMate-MorphoLibJ.version>
 
 		<!-- TrackMate-Oneat - https://github.com/trackmate-sc/TrackMate-Oneat -->
@@ -1060,11 +1060,11 @@
 		<sc.fiji.TrackMate-Skeleton.version>${TrackMate-Skeleton.version}</sc.fiji.TrackMate-Skeleton.version>
 
 		<!-- TrackMate-StarDist - https://github.com/trackmate-sc/TrackMate-StarDist -->
-		<TrackMate-StarDist.version>1.1.4</TrackMate-StarDist.version>
+		<TrackMate-StarDist.version>1.2.0</TrackMate-StarDist.version>
 		<sc.fiji.TrackMate-StarDist.version>${TrackMate-StarDist.version}</sc.fiji.TrackMate-StarDist.version>
 
 		<!-- TrackMate-Weka - https://github.com/trackmate-sc/TrackMate-Weka -->
-		<TrackMate-Weka.version>1.1.1</TrackMate-Weka.version>
+		<TrackMate-Weka.version>1.2.0</TrackMate-Weka.version>
 		<sc.fiji.TrackMate-Weka.version>${TrackMate-Weka.version}</sc.fiji.TrackMate-Weka.version>
 
 		<!-- TrakEM2 - https://github.com/trakem2 -->
