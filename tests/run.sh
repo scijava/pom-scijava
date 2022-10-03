@@ -173,9 +173,7 @@ echo "net.imagej/imagej-legacy" >> "$skipTestsFile" &&
 # TEMP: Until saalfeldlab/n5-zarr#11 is merged and released.
 echo "org.janelia.saalfeldlab/n5-zarr" >> "$skipTestsFile" &&
 
-# com.amazonaws.services.s3.model.AmazonS3Exception: The specified bucket does
-# not exist (Service: Amazon S3; Status Code: 404; Error Code: NoSuchBucket;
-# Request ID: null; S3 Extended Request ID: null; Proxy: null)
+# TEMP: Until saalfeldlab/n5-aws-s3#13 is fixed.
 echo "org.janelia.saalfeldlab/n5-aws-s3" >> "$skipTestsFile" &&
 
 # Error while checking the CLIJ2 installation: null
