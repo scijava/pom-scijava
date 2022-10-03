@@ -1471,6 +1471,10 @@
 		<commons-compress.version>1.21</commons-compress.version>
 		<org.apache.commons.commons-compress.version>${commons-compress.version}</org.apache.commons.commons-compress.version>
 
+		<!-- Commons CSV - https://commons.apache.org/proper/commons-csv/ -->
+		<commons-csv.version>1.9.0</commons-csv.version>
+		<org.apache.commons.commons-csv.version>${commons-csv.version}</org.apache.commons.commons-csv.version>
+
 		<!-- Commons IO - https://commons.apache.org/proper/commons-io/ -->
 		<commons-io.version>2.7</commons-io.version>
 		<commons-io.commons-io.version>${commons-io.version}</commons-io.commons-io.version>
@@ -3582,6 +3586,11 @@
 						<groupId>javax.transaction</groupId>
 						<artifactId>jta</artifactId>
 					</exclusion>
+					<exclusion>
+						<!-- Conflicts with org.apache.commons:commons-csv -->
+						<groupId>org.apache.solr</groupId>
+						<artifactId>solr-commons-csv</artifactId>
+					</exclusion>
 				</exclusions>
 			</dependency>
 
@@ -4216,6 +4225,13 @@
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-compress</artifactId>
 				<version>${org.apache.commons.commons-compress.version}</version>
+			</dependency>
+
+			<!-- Commons CSV - https://commons.apache.org/proper/commons-csv/ -->
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-csv</artifactId>
+				<version>${org.apache.commons.commons-csv.version}</version>
 			</dependency>
 
 			<!-- Commons IO - https://commons.apache.org/proper/commons-io/ -->
