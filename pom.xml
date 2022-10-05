@@ -638,6 +638,10 @@
 		<scifio-jai-imageio.version>1.1.1</scifio-jai-imageio.version>
 		<io.scif.scifio-jai-imageio.version>${scifio-jai-imageio.version}</io.scif.scifio-jai-imageio.version>
 
+		<!-- SCIFIO Labeling - https://github.com/scifio/scifio-labeling -->
+		<scifio-labeling.version>0.3.1</scifio-labeling.version>
+		<io.scif.scifio-labeling.version>${scifio-labeling.version}</io.scif.scifio-labeling.version>
+
 		<!-- SCIFIO-LifeSci - https://github.com/scifio/scifio-lifesci -->
 		<scifio-lifesci.version>0.9.0</scifio-lifesci.version>
 		<io.scif.scifio-lifesci.version>${scifio-lifesci.version}</io.scif.scifio-lifesci.version>
@@ -2601,6 +2605,13 @@
 				<groupId>io.scif</groupId>
 				<artifactId>scifio-jai-imageio</artifactId>
 				<version>${io.scif.scifio-jai-imageio.version}</version>
+			</dependency>
+
+			<!-- SCIFIO Labeling - https://github.com/scifio/scifio-labeling -->
+			<dependency>
+				<groupId>io.scif</groupId>
+				<artifactId>scifio-labeling</artifactId>
+				<version>${io.scif.scifio-labeling.version}</version>
 			</dependency>
 
 			<!-- SCIFIO-LifeSci - https://github.com/scifio/scifio-lifesci -->
