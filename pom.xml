@@ -3425,6 +3425,13 @@
 						libraries or frameworks should not declare a dependency on any
 						SLF4J binding but only depend on slf4j-api."
 						See: https://www.slf4j.org/manual.html#libraries
+
+						In any case: the ome-common usage of logback-classic is limited to
+						the class loci.common.LogbackTools, accessed only via reflection
+						from loci.common.DebugTools, with the intent that this dependency
+						may or may not actually be present at runtime. So this dependency
+						really should be marked optional in the ome-common POM, but since
+						it is not marked so, we exclude it here in pom-scijava instead.
 						-->
 						<groupId>ch.qos.logback</groupId>
 						<artifactId>logback-classic</artifactId>
