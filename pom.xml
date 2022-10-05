@@ -495,7 +495,7 @@
 		<net.imagej.imagej-legacy.version>${imagej-legacy.version}</net.imagej.imagej-legacy.version>
 
 		<!-- ImageJ MATLAB - https://github.com/imagej/imagej-matlab -->
-		<imagej-matlab.version>0.7.4</imagej-matlab.version>
+		<imagej-matlab.version>0.7.5</imagej-matlab.version>
 		<net.imagej.imagej-matlab.version>${imagej-matlab.version}</net.imagej.imagej-matlab.version>
 
 		<!-- ImageJ Mesh - https://github.com/imagej/imagej-mesh -->
