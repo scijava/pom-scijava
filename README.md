@@ -1,5 +1,5 @@
 [![](https://img.shields.io/maven-central/v/org.scijava/pom-scijava.svg)](https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22org.scijava%22%20AND%20a%3A%22pom-scijava%22)
-[![](https://github.com/scijava/pom-scijava/actions/workflows/build-main.yml/badge.svg)](https://github.com/scijava/pom-scijava/actions/workflows/build-main.yml)
+[![](https://github.com/scijava/pom-scijava/actions/workflows/build.yml/badge.svg)](https://github.com/scijava/pom-scijava/actions/workflows/build.yml)
 
 This POM provides a parent from which SciJava-based projects can declare their build configurations. It ensures that projects all use a compatible build environment, as well as versions of dependencies and plugins. Projects extending this POM inherit the unified SciJava [Bill of Materials](https://imagej.net/develop/architecture#bill-of-materials): component versions which have been tested to work together.
 
