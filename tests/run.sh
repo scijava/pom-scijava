@@ -167,9 +167,6 @@ grep -qxF "$f" $dir/skipTests.txt \&\& buildFlags=-DskipTests\
 chmod +x "$meltScript" ||
   die "Failed to adjust $meltScript"
 
-# TEMP: Until imagej/imagej-legacy#285 is fixed.
-echo "net.imagej/imagej-legacy" >> "$skipTestsFile" &&
-
 # TEMP: Until saalfeldlab/n5-zarr#11 is merged and released.
 echo "org.janelia.saalfeldlab/n5-zarr" >> "$skipTestsFile" &&
 

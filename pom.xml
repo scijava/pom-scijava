@@ -469,13 +469,13 @@
 		<imagej.version>${imagej2.version}</imagej.version>
 		<net.imagej.imagej.version>${imagej.version}</net.imagej.imagej.version>
 
-		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
+		<!-- ImageJ - https://github.com/imagej/ImageJ -->
 		<imagej1.version>1.53t</imagej1.version>
 		<ij.version>${imagej1.version}</ij.version>
 		<net.imagej.ij.version>${ij.version}</net.imagej.ij.version>
 
-		<!-- ImageJ 1.x patcher - https://github.com/imagej/ij1-patcher -->
-		<ij1-patcher.version>1.2.2</ij1-patcher.version>
+		<!-- ImageJ patcher - https://github.com/imagej/ij1-patcher -->
+		<ij1-patcher.version>1.2.3</ij1-patcher.version>
 		<net.imagej.ij1-patcher.version>${ij1-patcher.version}</net.imagej.ij1-patcher.version>
 
 		<!-- ImageJ Common - https://github.com/imagej/imagej-common -->
