@@ -1192,7 +1192,7 @@
 		<ome.jxrlib-all.version>${jxrlib-all.version}</ome.jxrlib-all.version>
 
 		<!-- Bio-Formats - https://github.com/ome/bioformats -->
-		<bio-formats.version>6.10.1</bio-formats.version>
+		<bio-formats.version>6.11.0</bio-formats.version>
 		<bio-formats-tools.version>${bio-formats.version}</bio-formats-tools.version>
 		<bio-formats_plugins.version>${bio-formats.version}</bio-formats_plugins.version>
 		<formats-api.version>${bio-formats.version}</formats-api.version>
