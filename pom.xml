@@ -1558,7 +1558,7 @@
 
 		<!-- FlatLaf - -->
 		<flatlaf.version>2.4</flatlaf.version>
-		<com.formdev.flatlaf.version>2.4</com.formdev.flatlaf.version>
+		<com.formdev.flatlaf.version>${flatlaf.version}</com.formdev.flatlaf.version>
 
 		<!-- Google Cloud Storage - https://github.com/googleapis/google-cloud-java -->
 		<google-cloud-nio.version>0.120.0-alpha</google-cloud-nio.version>
