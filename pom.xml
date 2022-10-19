@@ -335,7 +335,7 @@
 		<org.scijava.scijava-cache.version>${scijava-cache.version}</org.scijava.scijava-cache.version>
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.89.2</scijava-common.version>
+		<scijava-common.version>2.90.0</scijava-common.version>
 		<org.scijava.scijava-common.version>${scijava-common.version}</org.scijava.scijava-common.version>
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
@@ -391,7 +391,7 @@
 		<org.scijava.scijava-search.version>${scijava-search.version}</org.scijava.scijava-search.version>
 
 		<!-- SciJava Table - https://github.com/scijava/scijava-table -->
-		<scijava-table.version>1.0.0</scijava-table.version>
+		<scijava-table.version>1.0.1</scijava-table.version>
 		<org.scijava.scijava-table.version>${scijava-table.version}</org.scijava.scijava-table.version>
 
 		<!-- SciJava UI: AWT - https://github.com/scijava/scijava-ui-awt -->
@@ -399,7 +399,7 @@
 		<org.scijava.scijava-ui-awt.version>${scijava-ui-awt.version}</org.scijava.scijava-ui-awt.version>
 
 		<!-- SciJava UI: Swing - https://github.com/scijava/scijava-ui-swing -->
-		<scijava-ui-swing.version>0.17.1</scijava-ui-swing.version>
+		<scijava-ui-swing.version>0.17.2</scijava-ui-swing.version>
 		<org.scijava.scijava-ui-swing.version>${scijava-ui-swing.version}</org.scijava.scijava-ui-swing.version>
 
 		<!-- Script Editor - https://github.com/scijava/script-editor -->
@@ -470,7 +470,7 @@
 		<net.imagej.imagej.version>${imagej.version}</net.imagej.imagej.version>
 
 		<!-- ImageJ - https://github.com/imagej/ImageJ -->
-		<imagej1.version>1.53t</imagej1.version>
+		<imagej1.version>1.53u</imagej1.version>
 		<ij.version>${imagej1.version}</ij.version>
 		<net.imagej.ij.version>${ij.version}</net.imagej.ij.version>
 
@@ -581,7 +581,7 @@
 		<net.imglib2.imglib2.version>${imglib2.version}</net.imglib2.imglib2.version>
 
 		<!-- ImgLib2 Algorithms - https://github.com/imglib/imglib2-algorithm -->
-		<imglib2-algorithm.version>0.12.1</imglib2-algorithm.version>
+		<imglib2-algorithm.version>0.13.0</imglib2-algorithm.version>
 		<net.imglib2.imglib2-algorithm.version>${imglib2-algorithm.version}</net.imglib2.imglib2-algorithm.version>
 
 		<!-- ImgLib2 Algorithms FFT - https://github.com/imglib/imglib2-algorithm-fft -->
@@ -1026,7 +1026,7 @@
 		<!-- TrackMate - https://github.com/trackmate-sc -->
 
 		<!-- TrackMate - https://github.com/trackmate-sc/TrackMate -->
-		<TrackMate.version>7.9.1</TrackMate.version>
+		<TrackMate.version>7.9.2</TrackMate.version>
 		<sc.fiji.TrackMate.version>${TrackMate.version}</sc.fiji.TrackMate.version>
 
 		<!-- TrackMate-Cellpose - https://github.com/trackmate-sc/TrackMate-Cellpose -->
@@ -1068,7 +1068,7 @@
 		<sc.fiji.TrackMate-StarDist.version>${TrackMate-StarDist.version}</sc.fiji.TrackMate-StarDist.version>
 
 		<!-- TrackMate-Weka - https://github.com/trackmate-sc/TrackMate-Weka -->
-		<TrackMate-Weka.version>1.2.0</TrackMate-Weka.version>
+		<TrackMate-Weka.version>1.3.0</TrackMate-Weka.version>
 		<sc.fiji.TrackMate-Weka.version>${TrackMate-Weka.version}</sc.fiji.TrackMate-Weka.version>
 
 		<!-- TrakEM2 - https://github.com/trakem2 -->
@@ -1125,7 +1125,7 @@
 		<org.janelia.saalfeldlab.n5-ij.version>${n5-ij.version}</org.janelia.saalfeldlab.n5-ij.version>
 
 		<!-- N5 ImgLib2 Bindings - https://github.com/saalfeldlab/n5-imglib2 -->
-		<n5-imglib2.version>4.3.0</n5-imglib2.version>
+		<n5-imglib2.version>4.4.0</n5-imglib2.version>
 		<org.janelia.saalfeldlab.n5-imglib2.version>${n5-imglib2.version}</org.janelia.saalfeldlab.n5-imglib2.version>
 
 		<!-- N5 Viewer for Fiji - https://github.com/saalfeldlab/n5-viewer_fiji -->
@@ -1139,16 +1139,16 @@
 		<!-- Fiji-adjacent projects (available from ImageJ update sites) -->
 
 		<!-- MaMuT - https://github.com/fiji/MaMuT -->
-		<MaMuT.version>7.0.6</MaMuT.version>
+		<MaMuT.version>7.1.0</MaMuT.version>
 		<sc.fiji.MaMuT.version>${MaMuT.version}</sc.fiji.MaMuT.version>
 
 		<!-- MorphoLibJ - https://github.com/ijpb/MorphoLibJ -->
-		<MorphoLibJ.version>1.4.2.1</MorphoLibJ.version>
+		<MorphoLibJ.version>1.5.0</MorphoLibJ.version>
 		<MorphoLibJ_.version>${MorphoLibJ.version}</MorphoLibJ_.version>
 		<fr.inra.ijpb.MorphoLibJ_.version>${MorphoLibJ_.version}</fr.inra.ijpb.MorphoLibJ_.version>
 
 		<!-- SNT - https://github.com/morphonets/SNT -->
-		<SNT.version>4.1.3</SNT.version>
+		<SNT.version>4.1.9</SNT.version>
 		<org.morphonets.SNT.version>${SNT.version}</org.morphonets.SNT.version>
 
 		<!-- BoneJ2 - https://github.com/bonej-org/BoneJ2 -->
@@ -1265,9 +1265,9 @@
 		<clij-core.version>1.8.1.1</clij-core.version>
 		<clij-coremem.version>2.3.0.4</clij-coremem.version>
 		<clij-clearcl.version>2.5.0.1</clij-clearcl.version>
-		<clij2_.version>2.5.1.4</clij2_.version>
-		<clij2-assistant_.version>2.5.1.1</clij2-assistant_.version>
-		<clijx_.version>0.32.1.1</clijx_.version>
+		<clij2_.version>2.5.3.1</clij2_.version>
+		<clij2-assistant_.version>2.5.1.4</clij2-assistant_.version>
+		<clijx_.version>0.32.2.0</clijx_.version>
 		<clijx-weka_.version>0.32.1.1</clijx-weka_.version>
 		<net.haesleinhuepf.clij_.version>${clij_.version}</net.haesleinhuepf.clij_.version>
 		<net.haesleinhuepf.clij-core.version>${clij-core.version}</net.haesleinhuepf.clij-core.version>
