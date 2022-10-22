@@ -1559,7 +1559,7 @@
 		<com.googlecode.efficient-java-matrix-library.ejml.version>${ejml.version}</com.googlecode.efficient-java-matrix-library.ejml.version>
 
 		<!-- FlatLaf - -->
-		<flatlaf.version>2.4</flatlaf.version>
+		<flatlaf.version>2.6</flatlaf.version>
 		<com.formdev.flatlaf.version>${flatlaf.version}</com.formdev.flatlaf.version>
 
 		<!-- Google Cloud Storage - https://github.com/googleapis/google-cloud-java -->
