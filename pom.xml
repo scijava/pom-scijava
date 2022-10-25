@@ -800,7 +800,7 @@
 		<Kuwahara_Filter.version>2.0.1</Kuwahara_Filter.version>
 		<sc.fiji.Kuwahara_Filter.version>${Kuwahara_Filter.version}</sc.fiji.Kuwahara_Filter.version>
 
-		<KymographBuilder.version>2.1.1</KymographBuilder.version>
+		<KymographBuilder.version>3.0.0</KymographBuilder.version>
 		<sc.fiji.KymographBuilder.version>${KymographBuilder.version}</sc.fiji.KymographBuilder.version>
 
 		<LSM_Reader.version>4.1.2</LSM_Reader.version>
