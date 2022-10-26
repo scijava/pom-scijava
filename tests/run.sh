@@ -173,6 +173,9 @@ echo "org.janelia.saalfeldlab/n5-zarr" >> "$skipTestsFile" &&
 # TEMP: Until saalfeldlab/n5-aws-s3#13 is fixed.
 echo "org.janelia.saalfeldlab/n5-aws-s3" >> "$skipTestsFile" &&
 
+# TEMP: Until fiji/Trainable_Segmentation#75 is fixed.
+echo "sc.fiji/Trainable_Segmentation" >> "$skipTestsFile" &&
+
 # Error while checking the CLIJ2 installation: null
 echo "sc.fiji/labkit-pixel-classification" >> "$skipTestsFile" ||
   die "Failed to generate $skipTestsFile"
