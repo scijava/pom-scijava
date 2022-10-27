@@ -84,6 +84,7 @@ fi ||
 # Build the melting pot structure.
 chmod +x "$meltingPotScript" &&
 "$meltingPotScript" "$megaMeltDir" \
+  -r scijava.public::::https://maven.scijava.org/content/groups/public \
   -o "$meltingPotDir" \
   -i 'ca.mcgill:*' \
   -i 'io.scif:*' \
