@@ -1969,9 +1969,9 @@
 		<ch.qos.reload4j.reload4j.version>${reload4j.version}</ch.qos.reload4j.reload4j.version>
 
 		<!-- RSyntaxTextArea - https://bobbylight.github.io/RSyntaxTextArea/ -->
-		<rsyntaxtextarea.version>3.1.6</rsyntaxtextarea.version>
-		<autocomplete.version>3.1.5</autocomplete.version>
-		<languagesupport.version>3.1.4</languagesupport.version>
+		<rsyntaxtextarea.version>3.3.0</rsyntaxtextarea.version>
+		<autocomplete.version>3.3.0</autocomplete.version>
+		<languagesupport.version>3.3.0</languagesupport.version>
 		<com.fifesoft.rsyntaxtextarea.version>${rsyntaxtextarea.version}</com.fifesoft.rsyntaxtextarea.version>
 		<com.fifesoft.autocomplete.version>${autocomplete.version}</com.fifesoft.autocomplete.version>
 		<com.fifesoft.languagesupport.version>${languagesupport.version}</com.fifesoft.languagesupport.version>
