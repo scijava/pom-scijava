@@ -519,7 +519,7 @@
 		<net.imagej.imagej-omero-legacy.version>${imagej-omero-legacy.version}</net.imagej.imagej-omero-legacy.version>
 
 		<!-- ImageJ OpenCV - https://github.com/imagej/imagej-opencv -->
-		<imagej-opencv.version>0.1.2</imagej-opencv.version>
+		<imagej-opencv.version>0.1.3</imagej-opencv.version>
 		<net.imagej.imagej-opencv.version>${imagej-opencv.version}</net.imagej.imagej-opencv.version>
 
 		<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
