@@ -339,7 +339,7 @@
 		<org.scijava.scijava-common.version>${scijava-common.version}</org.scijava.scijava-common.version>
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
-		<scijava-config.version>2.0.2</scijava-config.version>
+		<scijava-config.version>2.0.3</scijava-config.version>
 		<org.scijava.scijava-config.version>${scijava-config.version}</org.scijava.scijava-config.version>
 
 		<!-- SciJava Grab - https://github.com/scijava/scijava-grab -->
@@ -359,7 +359,7 @@
 		<org.scijava.scijava-listeners.version>${scijava-listeners.version}</org.scijava.scijava-listeners.version>
 
 		<!-- SciJava SLF4J Logging - https://github.com/scijava/scijava-log-slf4j -->
-		<scijava-log-slf4j.version>1.0.5</scijava-log-slf4j.version>
+		<scijava-log-slf4j.version>1.0.6</scijava-log-slf4j.version>
 		<org.scijava.scijava-log-slf4j.version>${scijava-log-slf4j.version}</org.scijava.scijava-log-slf4j.version>
 
 		<!-- SciJava Optional - https://github.com/scijava/scijava-optional -->
@@ -766,7 +766,7 @@
 		<Gray_Morphology.version>2.3.5</Gray_Morphology.version>
 		<sc.fiji.Gray_Morphology.version>${Gray_Morphology.version}</sc.fiji.Gray_Morphology.version>
 
-		<H5J_Loader_Plugin.version>1.1.4</H5J_Loader_Plugin.version>
+		<H5J_Loader_Plugin.version>1.1.5</H5J_Loader_Plugin.version>
 		<org.janelia.H5J_Loader_Plugin.version>${H5J_Loader_Plugin.version}</org.janelia.H5J_Loader_Plugin.version>
 
 		<HDF5_Vibez.version>1.1.1</HDF5_Vibez.version>
