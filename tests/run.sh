@@ -169,7 +169,7 @@ done
 mv "$meltScript" "$meltScript.original" &&
 sed 's_\s*"$dir/build.sh"_\
 # HACK: If project is on the skipTests list, then skip the tests.\
-buildFlags=\
+buildFlags=-Djava.awt.headless=true\
 grep -qxF "$f" $dir/skipTests.txt \&\& buildFlags=-DskipTests\
 \
 & $buildFlags_' "$meltScript.original" > "$meltScript" &&
