@@ -391,7 +391,7 @@
 		<org.scijava.scijava-search.version>${scijava-search.version}</org.scijava.scijava-search.version>
 
 		<!-- SciJava Table - https://github.com/scijava/scijava-table -->
-		<scijava-table.version>1.0.1</scijava-table.version>
+		<scijava-table.version>1.0.2</scijava-table.version>
 		<org.scijava.scijava-table.version>${scijava-table.version}</org.scijava.scijava-table.version>
 
 		<!-- SciJava UI: AWT - https://github.com/scijava/scijava-ui-awt -->
