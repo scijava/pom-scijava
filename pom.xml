@@ -1588,6 +1588,11 @@
 		<guava.version>27.1-jre</guava.version>
 		<com.google.guava.guava.version>${guava.version}</com.google.guava.guava.version>
 
+		<!-- Humble Video - https://github.com/artclarke/humble-video -->
+		<humble-video.version>0.3.0</humble-video.version>
+		<humble-video-all.version>${humble-video.version}</humble-video-all.version>
+		<io.humble.humble-video-all.version>${humble-video-all.version}</io.humble.humble-video-all.version>
+
 		<!-- HyperSQL DataBase - http://hsqldb.org/ -->
 		<hsqldb.version>1.8.0.10</hsqldb.version>
 		<hsqldb.hsqldb.version>${hsqldb.version}</hsqldb.hsqldb.version>
@@ -4500,6 +4505,13 @@
 				<groupId>com.google.guava</groupId>
 				<artifactId>guava</artifactId>
 				<version>${com.google.guava.guava.version}</version>
+			</dependency>
+
+			<!-- Humble Video - https://github.com/artclarke/humble-video -->
+			<dependency>
+				<groupId>io.humble</groupId>
+				<artifactId>humble-video-all</artifactId>
+				<version>${io.humble.humble-video-all.version}</version>
 			</dependency>
 
 			<!-- HyperSQL DataBase - http://hsqldb.org/ -->
