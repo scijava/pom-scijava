@@ -470,7 +470,7 @@
 		<net.imagej.imagej.version>${imagej.version}</net.imagej.imagej.version>
 
 		<!-- ImageJ - https://github.com/imagej/ImageJ -->
-		<imagej1.version>1.53u</imagej1.version>
+		<imagej1.version>1.53v</imagej1.version>
 		<ij.version>${imagej1.version}</ij.version>
 		<net.imagej.ij.version>${ij.version}</net.imagej.ij.version>
 
