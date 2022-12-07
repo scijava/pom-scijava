@@ -1138,20 +1138,38 @@
 
 		<!-- Fiji-adjacent projects (available from ImageJ update sites) -->
 
-		<!-- MaMuT - https://github.com/fiji/MaMuT -->
-		<MaMuT.version>7.1.0</MaMuT.version>
-		<sc.fiji.MaMuT.version>${MaMuT.version}</sc.fiji.MaMuT.version>
-
-		<!-- MorphoLibJ - https://github.com/ijpb/MorphoLibJ -->
+		<!-- MorphoLibJ - https://imagej.net/plugins/morpholibj -->
 		<MorphoLibJ.version>1.5.0</MorphoLibJ.version>
 		<MorphoLibJ_.version>${MorphoLibJ.version}</MorphoLibJ_.version>
 		<fr.inra.ijpb.MorphoLibJ_.version>${MorphoLibJ_.version}</fr.inra.ijpb.MorphoLibJ_.version>
 
-		<!-- SNT - https://github.com/morphonets/SNT -->
-		<SNT.version>4.1.9</SNT.version>
-		<org.morphonets.SNT.version>${SNT.version}</org.morphonets.SNT.version>
+		<!-- CLIJ - https://clij.github.io -->
+		<clij_.version>1.9.0.1</clij_.version>
+		<clij-core.version>1.8.1.1</clij-core.version>
+		<clij-coremem.version>2.3.0.4</clij-coremem.version>
+		<clij-clearcl.version>2.5.0.1</clij-clearcl.version>
+		<clij2_.version>2.5.3.1</clij2_.version>
+		<clij2-assistant_.version>2.5.1.4</clij2-assistant_.version>
+		<clijx_.version>0.32.2.0</clijx_.version>
+		<clijx-weka_.version>0.32.1.1</clijx-weka_.version>
+		<net.haesleinhuepf.clij_.version>${clij_.version}</net.haesleinhuepf.clij_.version>
+		<net.haesleinhuepf.clij-core.version>${clij-core.version}</net.haesleinhuepf.clij-core.version>
+		<net.haesleinhuepf.clij-coremem.version>${clij-coremem.version}</net.haesleinhuepf.clij-coremem.version>
+		<net.haesleinhuepf.clij-clearcl.version>${clij-clearcl.version}</net.haesleinhuepf.clij-clearcl.version>
+		<net.haesleinhuepf.clij2_.version>${clij2_.version}</net.haesleinhuepf.clij2_.version>
+		<net.haesleinhuepf.clij2-assistant_.version>${clij2-assistant_.version}</net.haesleinhuepf.clij2-assistant_.version>
+		<net.haesleinhuepf.clijx_.version>${clijx_.version}</net.haesleinhuepf.clijx_.version>
+		<net.haesleinhuepf.clijx-weka_.version>${clijx-weka_.version}</net.haesleinhuepf.clijx-weka_.version>
 
-		<!-- BoneJ2 - https://github.com/bonej-org/BoneJ2 -->
+		<!-- BigStitcher - https://imagej.net/plugins/bigstitcher -->
+		<BigStitcher.version>0.8.3</BigStitcher.version>
+		<multiview-reconstruction.version>0.11.5</multiview-reconstruction.version>
+		<multiview-simulation.version>0.2.0</multiview-simulation.version>
+		<net.preibisch.BigStitcher.version>${BigStitcher.version}</net.preibisch.BigStitcher.version>
+		<net.preibisch.multiview-reconstruction.version>${multiview-reconstruction.version}</net.preibisch.multiview-reconstruction.version>
+		<net.preibisch.multiview-simulation.version>${multiview-simulation.version}</net.preibisch.multiview-simulation.version>
+
+		<!-- BoneJ - https://imagej.net/plugins/bonej -->
 		<bonej.version>7.0.14</bonej.version>
 		<bonej-plugins.version>${bonej.version}</bonej-plugins.version>
 		<bonej-ops.version>${bonej.version}</bonej-ops.version>
@@ -1163,6 +1181,20 @@
 		<org.bonej.bonej-legacy-plugins_.version>${bonej-legacy-plugins_.version}</org.bonej.bonej-legacy-plugins_.version>
 		<org.bonej.bonej-legacy-util_.version>${bonej-legacy-util_.version}</org.bonej.bonej-legacy-util_.version>
 		<org.bonej.bonej-utilities.version>${bonej-utilities.version}</org.bonej.bonej-utilities.version>
+
+		<!-- SNT - https://imagej.net/plugins/snt -->
+		<SNT.version>4.1.9</SNT.version>
+		<org.morphonets.SNT.version>${SNT.version}</org.morphonets.SNT.version>
+
+		<!-- MaMuT - https://github.com/fiji/MaMuT -->
+		<MaMuT.version>7.1.0</MaMuT.version>
+		<sc.fiji.MaMuT.version>${MaMuT.version}</sc.fiji.MaMuT.version>
+
+		<!-- Labkit - https://imagej.net/plugins/labkit -->
+		<labkit-pixel-classification.version>0.1.15</labkit-pixel-classification.version>
+		<labkit-ui.version>0.3.8</labkit-ui.version>
+		<sc.fiji.labkit-pixel-classification.version>${labkit-pixel-classification.version}</sc.fiji.labkit-pixel-classification.version>
+		<sc.fiji.labkit-ui.version>${labkit-ui.version}</sc.fiji.labkit-ui.version>
 
 		<!-- Open Microscopy Environment - https://github.com/ome -->
 
@@ -1240,18 +1272,6 @@
 
 		<!-- Other SciJava components -->
 
-		<!-- BigStitcher - https://github.com/PreibischLab/BigStitcher -->
-		<BigStitcher.version>0.8.3</BigStitcher.version>
-		<net.preibisch.BigStitcher.version>${BigStitcher.version}</net.preibisch.BigStitcher.version>
-
-		<!-- multiview-reconstruction - https://github.com/PreibischLab/multiview-reconstruction -->
-		<multiview-reconstruction.version>0.11.5</multiview-reconstruction.version>
-		<net.preibisch.multiview-reconstruction.version>${multiview-reconstruction.version}</net.preibisch.multiview-reconstruction.version>
-
-		<!-- multiview-simulation - https://github.com/PreibischLab/multiview-simulation -->
-		<multiview-simulation.version>0.2.0</multiview-simulation.version>
-		<net.preibisch.multiview-simulation.version>${multiview-simulation.version}</net.preibisch.multiview-simulation.version>
-
 		<!-- CoreMem - https://github.com/ClearControl/CoreMem -->
 		<coremem.version>0.4.8</coremem.version>
 		<net.clearcontrol.coremem.version>${coremem.version}</net.clearcontrol.coremem.version>
@@ -1259,24 +1279,6 @@
 		<!-- ClearGL - https://github.com/ClearVolume/ClearGL -->
 		<cleargl.version>2.2.10</cleargl.version>
 		<net.clearvolume.cleargl.version>${cleargl.version}</net.clearvolume.cleargl.version>
-
-		<!-- CLIJ - https://clij.github.io -->
-		<clij_.version>1.9.0.1</clij_.version>
-		<clij-core.version>1.8.1.1</clij-core.version>
-		<clij-coremem.version>2.3.0.4</clij-coremem.version>
-		<clij-clearcl.version>2.5.0.1</clij-clearcl.version>
-		<clij2_.version>2.5.3.1</clij2_.version>
-		<clij2-assistant_.version>2.5.1.4</clij2-assistant_.version>
-		<clijx_.version>0.32.2.0</clijx_.version>
-		<clijx-weka_.version>0.32.1.1</clijx-weka_.version>
-		<net.haesleinhuepf.clij_.version>${clij_.version}</net.haesleinhuepf.clij_.version>
-		<net.haesleinhuepf.clij-core.version>${clij-core.version}</net.haesleinhuepf.clij-core.version>
-		<net.haesleinhuepf.clij-coremem.version>${clij-coremem.version}</net.haesleinhuepf.clij-coremem.version>
-		<net.haesleinhuepf.clij-clearcl.version>${clij-clearcl.version}</net.haesleinhuepf.clij-clearcl.version>
-		<net.haesleinhuepf.clij2_.version>${clij2_.version}</net.haesleinhuepf.clij2_.version>
-		<net.haesleinhuepf.clij2-assistant_.version>${clij2-assistant_.version}</net.haesleinhuepf.clij2-assistant_.version>
-		<net.haesleinhuepf.clijx_.version>${clijx_.version}</net.haesleinhuepf.clijx_.version>
-		<net.haesleinhuepf.clijx-weka_.version>${clijx-weka_.version}</net.haesleinhuepf.clijx-weka_.version>
 
 		<!-- Third party components -->
 
@@ -1913,12 +1915,6 @@
 		<com.esotericsoftware.kryo.version>${kryo.version}</com.esotericsoftware.kryo.version>
 		<minlog.version>1.3.1</minlog.version>
 		<com.esotericsoftware.minlog.version>${minlog.version}</com.esotericsoftware.minlog.version>
-
-		<!-- Labkit - https://imagej.net/plugins/labkit -->
-		<labkit-ui.version>0.3.8</labkit-ui.version>
-		<sc.fiji.labkit-ui.version>${labkit-ui.version}</sc.fiji.labkit-ui.version>
-		<labkit-pixel-classification.version>0.1.15</labkit-pixel-classification.version>
-		<sc.fiji.labkit-pixel-classification.version>${labkit-pixel-classification.version}</sc.fiji.labkit-pixel-classification.version>
 
 		<!-- Logback - https://logback.qos.ch/ -->
 		<logback.version>1.2.9</logback.version>
@@ -3340,28 +3336,73 @@
 
 			<!-- Fiji-adjacent projects (available from ImageJ update sites) -->
 
-			<!-- MaMuT - https://github.com/fiji/MaMuT -->
-			<dependency>
-				<groupId>sc.fiji</groupId>
-				<artifactId>MaMuT</artifactId>
-				<version>${sc.fiji.MaMuT.version}</version>
-			</dependency>
-
-			<!-- MorphoLibJ - https://github.com/ijpb/MorphoLibJ -->
+			<!-- MorphoLibJ - https://imagej.net/plugins/morpholibj -->
 			<dependency>
 				<groupId>fr.inra.ijpb</groupId>
 				<artifactId>MorphoLibJ_</artifactId>
 				<version>${fr.inra.ijpb.MorphoLibJ_.version}</version>
 			</dependency>
 
-			<!-- SNT - https://github.com/morphonets/SNT -->
+			<!-- CLIJ - https://clij.github.io -->
 			<dependency>
-				<groupId>org.morphonets</groupId>
-				<artifactId>SNT</artifactId>
-				<version>${org.morphonets.SNT.version}</version>
+				<groupId>net.haesleinhuepf</groupId>
+				<artifactId>clij_</artifactId>
+				<version>${net.haesleinhuepf.clij_.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.haesleinhuepf</groupId>
+				<artifactId>clij-core</artifactId>
+				<version>${net.haesleinhuepf.clij-core.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.haesleinhuepf</groupId>
+				<artifactId>clij-coremem</artifactId>
+				<version>${net.haesleinhuepf.clij-coremem.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.haesleinhuepf</groupId>
+				<artifactId>clij-clearcl</artifactId>
+				<version>${net.haesleinhuepf.clij-clearcl.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.haesleinhuepf</groupId>
+				<artifactId>clij2_</artifactId>
+				<version>${net.haesleinhuepf.clij2_.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.haesleinhuepf</groupId>
+				<artifactId>clij2-assistant_</artifactId>
+				<version>${net.haesleinhuepf.clij2-assistant_.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.haesleinhuepf</groupId>
+				<artifactId>clijx_</artifactId>
+				<version>${net.haesleinhuepf.clijx_.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.haesleinhuepf</groupId>
+				<artifactId>clijx-weka_</artifactId>
+				<version>${net.haesleinhuepf.clijx-weka_.version}</version>
 			</dependency>
 
-			<!-- BoneJ2 - https://github.com/bonej-org/BoneJ2 -->
+			<!-- BigStitcher - https://imagej.net/plugins/bigstitcher -->
+			<dependency>
+				<groupId>net.preibisch</groupId>
+				<artifactId>BigStitcher</artifactId>
+				<version>${net.preibisch.BigStitcher.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.preibisch</groupId>
+				<artifactId>multiview-reconstruction</artifactId>
+				<version>${net.preibisch.multiview-reconstruction.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.preibisch</groupId>
+				<artifactId>multiview-simulation</artifactId>
+				<version>${net.preibisch.multiview-simulation.version}</version>
+			</dependency>
+
+			<!-- BoneJ - https://imagej.net/plugins/bonej -->
 			<dependency>
 				<groupId>org.bonej</groupId>
 				<artifactId>bonej-plugins</artifactId>
@@ -3386,6 +3427,32 @@
 				<groupId>org.bonej</groupId>
 				<artifactId>bonej-utilities</artifactId>
 				<version>${org.bonej.bonej-utilities.version}</version>
+			</dependency>
+
+			<!-- SNT - https://imagej.net/plugins/snt -->
+			<dependency>
+				<groupId>org.morphonets</groupId>
+				<artifactId>SNT</artifactId>
+				<version>${org.morphonets.SNT.version}</version>
+			</dependency>
+
+			<!-- MaMuT - https://imagej.net/plugins/mamut -->
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>MaMuT</artifactId>
+				<version>${sc.fiji.MaMuT.version}</version>
+			</dependency>
+
+			<!-- Labkit - https://imagej.net/plugins/labkit -->
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>labkit-pixel-classification</artifactId>
+				<version>${sc.fiji.labkit-pixel-classification.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>labkit-ui</artifactId>
+				<version>${sc.fiji.labkit-ui.version}</version>
 			</dependency>
 
 			<!-- Open Microscopy Environment - https://github.com/ome -->
@@ -3700,29 +3767,6 @@
 				</exclusions>
 			</dependency>
 
-			<!-- PreibischLab - https://github.com/PreibischLab -->
-
-			<!-- BigStitcher - https://github.com/PreibischLab/BigStitcher -->
-			<dependency>
-				<groupId>net.preibisch</groupId>
-				<artifactId>BigStitcher</artifactId>
-				<version>${net.preibisch.BigStitcher.version}</version>
-			</dependency>
-
-			<!-- multiview-reconstruction - https://github.com/PreibischLab/multiview-reconstruction -->
-			<dependency>
-				<groupId>net.preibisch</groupId>
-				<artifactId>multiview-reconstruction</artifactId>
-				<version>${net.preibisch.multiview-reconstruction.version}</version>
-			</dependency>
-
-			<!-- multiview-simulation - https://github.com/PreibischLab/multiview-simulation -->
-			<dependency>
-				<groupId>net.preibisch</groupId>
-				<artifactId>multiview-simulation</artifactId>
-				<version>${net.preibisch.multiview-simulation.version}</version>
-			</dependency>
-
 			<!-- Other SciJava components -->
 
 			<!-- CoreMem - https://github.com/ClearControl/CoreMem -->
@@ -3744,48 +3788,6 @@
 				<groupId>net.clearvolume</groupId>
 				<artifactId>cleargl</artifactId>
 				<version>${net.clearvolume.cleargl.version}</version>
-			</dependency>
-
-			<!-- CLIJ - clij.github.io -->
-			<dependency>
-				<groupId>net.haesleinhuepf</groupId>
-				<artifactId>clij_</artifactId>
-				<version>${net.haesleinhuepf.clij_.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>net.haesleinhuepf</groupId>
-				<artifactId>clij-core</artifactId>
-				<version>${net.haesleinhuepf.clij-core.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>net.haesleinhuepf</groupId>
-				<artifactId>clij-coremem</artifactId>
-				<version>${net.haesleinhuepf.clij-coremem.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>net.haesleinhuepf</groupId>
-				<artifactId>clij-clearcl</artifactId>
-				<version>${net.haesleinhuepf.clij-clearcl.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>net.haesleinhuepf</groupId>
-				<artifactId>clij2_</artifactId>
-				<version>${net.haesleinhuepf.clij2_.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>net.haesleinhuepf</groupId>
-				<artifactId>clij2-assistant_</artifactId>
-				<version>${net.haesleinhuepf.clij2-assistant_.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>net.haesleinhuepf</groupId>
-				<artifactId>clijx_</artifactId>
-				<version>${net.haesleinhuepf.clijx_.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>net.haesleinhuepf</groupId>
-				<artifactId>clijx-weka_</artifactId>
-				<version>${net.haesleinhuepf.clijx-weka_.version}</version>
 			</dependency>
 
 			<!-- Third party components -->
@@ -5171,18 +5173,6 @@
 				<groupId>com.esotericsoftware</groupId>
 				<artifactId>minlog</artifactId>
 				<version>${com.esotericsoftware.minlog.version}</version>
-			</dependency>
-
-			<!-- Labkit - https://imagej.net/plugins/labkit -->
-			<dependency>
-				<groupId>sc.fiji</groupId>
-				<artifactId>labkit-ui</artifactId>
-				<version>${sc.fiji.labkit-ui.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
-				<artifactId>labkit-pixel-classification</artifactId>
-				<version>${sc.fiji.labkit-pixel-classification.version}</version>
 			</dependency>
 
 			<!-- Logback - http://logback.qos.ch/ -->
