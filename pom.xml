@@ -1856,6 +1856,10 @@
 		<jsch.version>0.1.55</jsch.version>
 		<com.jcraft.jsch.version>${jsch.version}</com.jcraft.jsch.version>
 
+		<!-- JSON - https://github.com/stleary/JSON-java -->
+		<json.version>20220924</json.version>
+		<org.json.json.version>${json.version}</org.json.json.version>
+
 		<!-- JUnit 4 - https://junit.org/junit4/ -->
 		<junit.version>4.13.2</junit.version>
 		<junit.junit.version>${junit.version}</junit.junit.version>
@@ -5085,6 +5089,13 @@
 				<groupId>com.jcraft</groupId>
 				<artifactId>jsch</artifactId>
 				<version>${com.jcraft.jsch.version}</version>
+			</dependency>
+
+			<!-- JSON - https://github.com/stleary/JSON-java -->
+			<dependency>
+				<groupId>org.json</groupId>
+				<artifactId>json</artifactId>
+				<version>${org.json.json.version}</version>
 			</dependency>
 
 			<!-- Jython - https://jython.org/ -->
