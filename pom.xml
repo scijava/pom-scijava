@@ -335,7 +335,7 @@
 		<org.scijava.scijava-cache.version>${scijava-cache.version}</org.scijava.scijava-cache.version>
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.90.0</scijava-common.version>
+		<scijava-common.version>2.90.2</scijava-common.version>
 		<org.scijava.scijava-common.version>${scijava-common.version}</org.scijava.scijava-common.version>
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
@@ -383,7 +383,7 @@
 		<org.scijava.scijava-plugins-text-markdown.version>${scijava-plugins-text-markdown.version}</org.scijava.scijava-plugins-text-markdown.version>
 
 		<!-- SciJava Plugins: Text: Plain - https://github.com/scijava/scijava-plugins-text-plain -->
-		<scijava-plugins-text-plain.version>0.1.3</scijava-plugins-text-plain.version>
+		<scijava-plugins-text-plain.version>0.1.4</scijava-plugins-text-plain.version>
 		<org.scijava.scijava-plugins-text-plain.version>${scijava-plugins-text-plain.version}</org.scijava.scijava-plugins-text-plain.version>
 
 		<!-- SciJava Search - https://github.com/scijava/scijava-search -->
@@ -479,7 +479,7 @@
 		<net.imagej.ij.version>${ij.version}</net.imagej.ij.version>
 
 		<!-- ImageJ patcher - https://github.com/imagej/ij1-patcher -->
-		<ij1-patcher.version>1.2.3</ij1-patcher.version>
+		<ij1-patcher.version>1.2.5</ij1-patcher.version>
 		<net.imagej.ij1-patcher.version>${ij1-patcher.version}</net.imagej.ij1-patcher.version>
 
 		<!-- ImageJ Common - https://github.com/imagej/imagej-common -->
@@ -547,7 +547,7 @@
 		<net.imagej.imagej-plugins-uploader-ssh.version>${imagej-plugins-uploader-ssh.version}</net.imagej.imagej-plugins-uploader-ssh.version>
 
 		<!-- ImageJ Plugins: Uploader: WebDAV - https://github.com/imagej/imagej-plugins-uploader-webdav -->
-		<imagej-plugins-uploader-webdav.version>0.3.2</imagej-plugins-uploader-webdav.version>
+		<imagej-plugins-uploader-webdav.version>0.3.3</imagej-plugins-uploader-webdav.version>
 		<net.imagej.imagej-plugins-uploader-webdav.version>${imagej-plugins-uploader-webdav.version}</net.imagej.imagej-plugins-uploader-webdav.version>
 
 		<!-- ImageJ Scripting - https://github.com/imagej/imagej-scripting -->
@@ -617,7 +617,7 @@
 		<net.imglib2.imglib2-roi.version>${imglib2-roi.version}</net.imglib2.imglib2-roi.version>
 
 		<!-- ImgLib2 Unsafe - https://github.com/imglib/imglib2-unsafe -->
-		<imglib2-unsafe.version>0.4.1</imglib2-unsafe.version>
+		<imglib2-unsafe.version>1.0.0</imglib2-unsafe.version>
 		<net.imglib2.imglib2-unsafe.version>${imglib2-unsafe.version}</net.imglib2.imglib2-unsafe.version>
 
 		<!-- SCIFIO - https://github.com/scifio -->
@@ -668,7 +668,7 @@
 		<_3D_Objects_Counter.version>2.0.1</_3D_Objects_Counter.version>
 		<sc.fiji.3D_Objects_Counter.version>${_3D_Objects_Counter.version}</sc.fiji.3D_Objects_Counter.version>
 
-		<_3D_Viewer.version>4.0.4</_3D_Viewer.version>
+		<_3D_Viewer.version>4.0.5</_3D_Viewer.version>
 		<sc.fiji.3D_Viewer.version>${_3D_Viewer.version}</sc.fiji.3D_Viewer.version>
 
 		<AnalyzeSkeleton.version>3.4.2</AnalyzeSkeleton.version>
@@ -721,7 +721,7 @@
 		<Colour_Deconvolution.version>3.0.3</Colour_Deconvolution.version>
 		<sc.fiji.Colour_Deconvolution.version>${Colour_Deconvolution.version}</sc.fiji.Colour_Deconvolution.version>
 
-		<CorrectBleach.version>2.0.3</CorrectBleach.version>
+		<CorrectBleach.version>2.1.0</CorrectBleach.version>
 		<CorrectBleach_.version>${CorrectBleach.version}</CorrectBleach_.version>
 		<sc.fiji.CorrectBleach_.version>${CorrectBleach_.version}</sc.fiji.CorrectBleach_.version>
 
