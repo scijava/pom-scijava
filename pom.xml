@@ -778,7 +778,7 @@
 		<IJ_Robot.version>2.0.1</IJ_Robot.version>
 		<sc.fiji.IJ_Robot.version>${IJ_Robot.version}</sc.fiji.IJ_Robot.version>
 
-		<IO.version>4.2.0</IO.version>
+		<IO.version>4.2.1</IO.version>
 		<IO_.version>${IO.version}</IO_.version>
 		<sc.fiji.IO_.version>${IO_.version}</sc.fiji.IO_.version>
 
