@@ -446,6 +446,10 @@
 		<scripting-matlab.version>0.5.3</scripting-matlab.version>
 		<org.scijava.scripting-matlab.version>${scripting-matlab.version}</org.scijava.scripting-matlab.version>
 
+		<!-- Scripting: Python - https://github.com/scijava/scripting-python -->
+		<scripting-python.version>0.3.0</scripting-python.version>
+		<org.scijava.scripting-python.version>${scripting-python.version}</org.scijava.scripting-python.version>
+
 		<!-- Scripting: Renjin - https://github.com/scijava/scripting-renjin -->
 		<scripting-renjin.version>0.2.3</scripting-renjin.version>
 		<org.scijava.scripting-renjin.version>${scripting-renjin.version}</org.scijava.scripting-renjin.version>
@@ -2278,6 +2282,13 @@
 				<groupId>org.scijava</groupId>
 				<artifactId>scripting-matlab</artifactId>
 				<version>${org.scijava.scripting-matlab.version}</version>
+			</dependency>
+
+			<!-- Scripting: Python - https://github.com/scijava/scripting-python -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scripting-python</artifactId>
+				<version>${org.scijava.scripting-python.version}</version>
 			</dependency>
 
 			<!-- Scripting: Renjin - https://github.com/scijava/scripting-renjin -->
