@@ -1286,20 +1286,27 @@
 
 		<!-- Third party components -->
 
-		<!-- antlr - https://www.antlr.org/ -->
-		<antlr.version>3.5.3</antlr.version>
+		<!-- Amazon S3 - https://aws.amazon.com/sdkforjava -->
+		<aws.version>1.12.410</aws.version>
+		<aws-java-sdk-core.version>${aws.version}</aws-java-sdk-core.version>
+		<aws-java-sdk-s3.version>${aws.version}</aws-java-sdk-s3.version>
+		<com.amazonaws.aws-java-sdk-core.version>${aws-java-sdk-core.version}</com.amazonaws.aws-java-sdk-core.version>
+		<com.amazonaws.aws-java-sdk-s3.version>${aws-java-sdk-s3.version}</com.amazonaws.aws-java-sdk-s3.version>
+
+		<!-- Antlr - https://www.antlr.org/ -->
+		<ST4.version>4.3.4</ST4.version>
+		<antlr2.version>2.7.7</antlr2.version>
+		<antlr3.version>3.5.3</antlr3.version>
+		<antlr4.version>4.11.1</antlr4.version>
+		<antlr.version>${antlr3.version}</antlr.version>
 		<antlr-runtime.version>${antlr.version}</antlr-runtime.version>
-		<antlr.antlr.version>2.7.7</antlr.antlr.version> <!-- NB: Avoid short name clash with org.antlr:antlr. -->
+		<antlr4-runtime.version>${antlr4.version}</antlr4-runtime.version>
+		<antlr.antlr.version>${antlr2.version}</antlr.antlr.version>
+		<org.antlr.ST4.version>${ST4.version}</org.antlr.ST4.version>
 		<org.antlr.antlr.version>${antlr.version}</org.antlr.antlr.version>
 		<org.antlr.antlr-runtime.version>${antlr-runtime.version}</org.antlr.antlr-runtime.version>
-
-		<!-- args4j - https://args4j.kohsuke.org/ -->
-		<args4j.version>2.33</args4j.version>
-		<args4j.args4j.version>${args4j.version}</args4j.args4j.version>
-
-		<!-- Amazon S3 - https://aws.amazon.com/sdkforjava -->
-		<aws-java-sdk-s3.version>1.12.321</aws-java-sdk-s3.version>
-		<com.amazonaws.aws-java-sdk-s3.version>${aws-java-sdk-s3.version}</com.amazonaws.aws-java-sdk-s3.version>
+		<org.antlr.antlr4.version>${antlr4.version}</org.antlr.antlr4.version>
+		<org.antlr.antlr4-runtime.version>${antlr4-runtime.version}</org.antlr.antlr4-runtime.version>
 
 		<!-- Apache Groovy - https://groovy-lang.org/ -->
 		<groovy.version>3.0.4</groovy.version>
@@ -1357,17 +1364,27 @@
 		<org.codehaus.groovy.groovy-xml.version>${groovy-xml.version}</org.codehaus.groovy.groovy-xml.version>
 		<org.codehaus.groovy.groovy-yaml.version>${groovy-yaml.version}</org.codehaus.groovy.groovy-yaml.version>
 
+		<!-- Apache Ant - https://ant.apache.org/ -->
+		<ant.version>1.10.13</ant.version>
+		<ant-launcher.version>${ant.version}</ant-launcher.version>
+		<org.apache.ant.ant.version>${ant.version}</org.apache.ant.ant.version>
+		<org.apache.ant.ant-launcher.version>${ant-launcher.version}</org.apache.ant.ant-launcher.version>
+
 		<!-- Apache Maven - https://maven.apache.org/ -->
 		<maven-artifact-transfer.version>0.13.1</maven-artifact-transfer.version>
 		<maven-common-artifact-filters.version>3.2.0</maven-common-artifact-filters.version>
 		<maven-core.version>3.8.6</maven-core.version>
 		<maven-plugin-tools-api.version>3.6.1</maven-plugin-tools-api.version>
+		<plexus-component-annotations.version>2.1.1</plexus-component-annotations.version>
+		<plexus-utils.version>3.5.0</plexus-utils.version>
 		<sisu-inject-bean.version>2.6.0</sisu-inject-bean.version>
 		<sisu-inject-plexus.version>2.6.0</sisu-inject-plexus.version>
 		<org.apache.maven.shared.maven-artifact-transfer.version>${maven-artifact-transfer.version}</org.apache.maven.shared.maven-artifact-transfer.version>
 		<org.apache.maven.shared.maven-common-artifact-filters.version>${maven-common-artifact-filters.version}</org.apache.maven.shared.maven-common-artifact-filters.version>
 		<org.apache.maven.maven-core.version>${maven-core.version}</org.apache.maven.maven-core.version>
 		<org.apache.maven.plugin-tools.maven-plugin-tools-api.version>${maven-plugin-tools-api.version}</org.apache.maven.plugin-tools.maven-plugin-tools-api.version>
+		<org.codehaus.plexus.plexus-component-annotations.version>${plexus-component-annotations.version}</org.codehaus.plexus.plexus-component-annotations.version>
+		<org.codehaus.plexus.plexus-utils.version>${plexus-utils.version}</org.codehaus.plexus.plexus-utils.version>
 		<org.sonatype.sisu.sisu-inject-bean.version>${sisu-inject-bean.version}</org.sonatype.sisu.sisu-inject-bean.version>
 		<org.sonatype.sisu.sisu-inject-plexus.version>${sisu-inject-plexus.version}</org.sonatype.sisu.sisu-inject-plexus.version>
 
@@ -1391,10 +1408,28 @@
 		<org.apache.spark.spark-core_2.11.version>${spark-core_2.11.version}</org.apache.spark.spark-core_2.11.version>
 
 		<!-- Apache HTTPComponents - https://hc.apache.org/ -->
-		<httpclient.version>4.5.13</httpclient.version>
-		<httpcore.version>4.4.15</httpcore.version>
+		<httpclient.version>4.5.14</httpclient.version>
+		<httpcore.version>4.4.16</httpcore.version>
+		<httpmime.version>4.5.14</httpmime.version>
 		<org.apache.httpcomponents.httpclient.version>${httpclient.version}</org.apache.httpcomponents.httpclient.version>
 		<org.apache.httpcomponents.httpcore.version>${httpcore.version}</org.apache.httpcomponents.httpcore.version>
+		<org.apache.httpcomponents.httpmime.version>${httpmime.version}</org.apache.httpcomponents.httpmime.version>
+
+		<!-- args4j - https://args4j.kohsuke.org/ -->
+		<args4j.version>2.33</args4j.version>
+		<args4j.args4j.version>${args4j.version}</args4j.args4j.version>
+
+		<!-- ASM - https://asm.ow2.io/ -->
+		<asm.version>5.2</asm.version> <!-- NB: Last version with Java 8 support! -->
+		<asm-analysis.version>${asm.version}</asm-analysis.version>
+		<asm-commons.version>${asm.version}</asm-commons.version>
+		<asm-tree.version>${asm.version}</asm-tree.version>
+		<asm-util.version>${asm.version}</asm-util.version>
+		<org.ow2.asm.asm.version>${asm.version}</org.ow2.asm.asm.version>
+		<org.ow2.asm.asm-analysis.version>${asm-analysis.version}</org.ow2.asm.asm-analysis.version>
+		<org.ow2.asm.asm-commons.version>${asm-commons.version}</org.ow2.asm.asm-commons.version>
+		<org.ow2.asm.asm-tree.version>${asm-tree.version}</org.ow2.asm.asm-tree.version>
+		<org.ow2.asm.asm-util.version>${asm-util.version}</org.ow2.asm.asm-util.version>
 
 		<!-- Batik - https://xmlgraphics.apache.org/batik/ -->
 		<batik.version>1.15</batik.version>
@@ -1463,13 +1498,21 @@
 		<bridj.version>0.7.0</bridj.version>
 		<com.nativelibs4java.bridj.version>${bridj.version}</com.nativelibs4java.bridj.version>
 
-		<!-- CDI - http://cdi-spec.org/ -->
+		<!-- CDI - https://www.cdi-spec.org/ -->
 		<cdi-api.version>2.0.SP1</cdi-api.version>
 		<javax.enterprise.cdi-api.version>${cdi-api.version}</javax.enterprise.cdi-api.version>
+
+		<!-- Checker Framework - https://checkerframework.org/ -->
+		<checker-qual.version>3.31.0</checker-qual.version>
+		<org.checkerframework.checker-qual.version>${checker-qual.version}</org.checkerframework.checker-qual.version>
 
 		<!-- Commons BeanUtils - https://commons.apache.org/proper/commons-beanutils/ -->
 		<commons-beanutils.version>1.9.4</commons-beanutils.version>
 		<commons-beanutils.commons-beanutils.version>${commons-beanutils.version}</commons-beanutils.commons-beanutils.version>
+
+		<!-- Commons CLI - https://commons.apache.org/proper/commons-cli/ -->
+		<commons-cli.version>1.5.0</commons-cli.version>
+		<commons-cli.commons-cli.version>${commons-cli.version}</commons-cli.commons-cli.version>
 
 		<!-- Commons Codec - https://commons.apache.org/proper/commons-codec/ -->
 		<commons-codec.version>1.15</commons-codec.version>
@@ -1477,7 +1520,9 @@
 
 		<!-- Commons Collections - https://commons.apache.org/proper/commons-collections/ -->
 		<commons-collections.version>3.2.2</commons-collections.version>
+		<commons-collections4.version>4.4</commons-collections4.version>
 		<commons-collections.commons-collections.version>${commons-collections.version}</commons-collections.commons-collections.version>
+		<org.apache.commons.commons-collections4.version>${commons-collections4.version}</org.apache.commons.commons-collections4.version>
 
 		<!-- Commons Compress - https://commons.apache.org/proper/commons-compress/ -->
 		<commons-compress.version>1.21</commons-compress.version>
@@ -1564,27 +1609,94 @@
 		<ejml.version>0.25</ejml.version>
 		<com.googlecode.efficient-java-matrix-library.ejml.version>${ejml.version}</com.googlecode.efficient-java-matrix-library.ejml.version>
 
-		<!-- FlatLaf - -->
+		<!-- Error Prone - https://errorprone.info/ -->
+		<error_prone.version>2.18.0</error_prone.version>
+		<!--
+		NB: Several artifacts in the error_prone suite have overlapping classes.
+		So we do not manage them all here, only the one in use in SciJava code.
+		-->
+		<error_prone_annotations.version>${error_prone.version}</error_prone_annotations.version>
+		<com.google.errorprone.error_prone_annotations.version>${error_prone_annotations.version}</com.google.errorprone.error_prone_annotations.version>
+
+		<!-- FlatLaf - https://www.formdev.com/flatlaf/ -->
 		<flatlaf.version>2.6</flatlaf.version>
 		<com.formdev.flatlaf.version>${flatlaf.version}</com.formdev.flatlaf.version>
 
+		<!-- Google APIs Client - https://github.com/googleapis/google-api-java-client -->
+		<google-api-client.version>2.2.0</google-api-client.version>
+		<google-api-client-android.version>${google-api-client.version}</google-api-client-android.version>
+		<google-api-client-appengine.version>${google-api-client.version}</google-api-client-appengine.version>
+		<google-api-client-gson.version>${google-api-client.version}</google-api-client-gson.version>
+		<google-api-client-jackson2.version>${google-api-client.version}</google-api-client-jackson2.version>
+		<google-api-client-protobuf.version>${google-api-client.version}</google-api-client-protobuf.version>
+		<google-api-client-servlet.version>${google-api-client.version}</google-api-client-servlet.version>
+		<google-api-client-xml.version>${google-api-client.version}</google-api-client-xml.version>
+		<com.google.api-client.google-api-client.version>${google-api-client.version}</com.google.api-client.google-api-client.version>
+		<com.google.api-client.google-api-client-android.version>${google-api-client-android.version}</com.google.api-client.google-api-client-android.version>
+		<com.google.api-client.google-api-client-appengine.version>${google-api-client-appengine.version}</com.google.api-client.google-api-client-appengine.version>
+		<com.google.api-client.google-api-client-gson.version>${google-api-client-gson.version}</com.google.api-client.google-api-client-gson.version>
+		<com.google.api-client.google-api-client-jackson2.version>${google-api-client-jackson2.version}</com.google.api-client.google-api-client-jackson2.version>
+		<com.google.api-client.google-api-client-protobuf.version>${google-api-client-protobuf.version}</com.google.api-client.google-api-client-protobuf.version>
+		<com.google.api-client.google-api-client-servlet.version>${google-api-client-servlet.version}</com.google.api-client.google-api-client-servlet.version>
+		<com.google.api-client.google-api-client-xml.version>${google-api-client-xml.version}</com.google.api-client.google-api-client-xml.version>
+
+		<!-- Google GAPIC - https://github.com/googleapis/gapic-generator-java -->
+		<api-common.version>2.6.0</api-common.version>
+		<gax.version>2.23.0</gax.version>
+		<gax-httpjson.version>0.108.0</gax-httpjson.version>
+		<proto-google-common-protos.version>2.14.0</proto-google-common-protos.version>
+		<proto-google-iam-v1.version>1.9.0</proto-google-iam-v1.version>
+		<com.google.api.api-common.version>${api-common.version}</com.google.api.api-common.version>
+		<com.google.api.gax.version>${gax.version}</com.google.api.gax.version>
+		<com.google.api.gax-httpjson.version>${gax-httpjson.version}</com.google.api.gax-httpjson.version>
+		<com.google.api.grpc.proto-google-common-protos.version>${proto-google-common-protos.version}</com.google.api.grpc.proto-google-common-protos.version>
+		<com.google.api.grpc.proto-google-iam-v1.version>${proto-google-iam-v1.version}</com.google.api.grpc.proto-google-iam-v1.version>
+
+		<!-- Google Auth - https://github.com/googleapis/google-auth-library-java -->
+		<google-auth-library.version>1.15.0</google-auth-library.version>
+		<google-auth-library-appengine.version>${google-auth-library.version}</google-auth-library-appengine.version>
+		<google-auth-library-credentials.version>${google-auth-library.version}</google-auth-library-credentials.version>
+		<google-auth-library-oauth2-http.version>${google-auth-library.version}</google-auth-library-oauth2-http.version>
+		<com.google.auth.google-auth-library-appengine.version>${google-auth-library-appengine.version}</com.google.auth.google-auth-library-appengine.version>
+		<com.google.auth.google-auth-library-credentials.version>${google-auth-library-credentials.version}</com.google.auth.google-auth-library-credentials.version>
+		<com.google.auth.google-auth-library-oauth2-http.version>${google-auth-library-oauth2-http.version}</com.google.auth.google-auth-library-oauth2-http.version>
+
+		<!-- Google Auto - https://github.com/google/auto -->
+		<auto-value.version>1.10.1</auto-value.version>
+		<auto-value-annotations.version>${auto-value.version}</auto-value-annotations.version>
+		<com.google.auto.value.auto-value.version>${auto-value.version}</com.google.auto.value.auto-value.version>
+		<com.google.auto.value.auto-value-annotations.version>${auto-value-annotations.version}</com.google.auto.value.auto-value-annotations.version>
+
 		<!-- Google Cloud Storage - https://github.com/googleapis/google-cloud-java -->
+		<google-cloud-core.version>2.10.0</google-cloud-core.version>
+		<google-cloud-core-http.version>${google-cloud-core.version}</google-cloud-core-http.version>
 		<google-cloud-nio.version>0.124.17</google-cloud-nio.version>
 		<google-cloud-resourcemanager.version>0.117.2-alpha</google-cloud-resourcemanager.version>
 		<google-cloud-storage.version>2.13.0</google-cloud-storage.version>
+		<com.google.cloud.google-cloud-core.version>${google-cloud-core.version}</com.google.cloud.google-cloud-core.version>
+		<com.google.cloud.google-cloud-core-http.version>${google-cloud-core-http.version}</com.google.cloud.google-cloud-core-http.version>
 		<com.google.cloud.google-cloud-nio.version>${google-cloud-nio.version}</com.google.cloud.google-cloud-nio.version>
 		<com.google.cloud.google-cloud-resourcemanager.version>${google-cloud-resourcemanager.version}</com.google.cloud.google-cloud-resourcemanager.version>
 		<com.google.cloud.google-cloud-storage.version>${google-cloud-storage.version}</com.google.cloud.google-cloud-storage.version>
 
-		<!-- Google HTTP Client Library for Java - https://github.com/googleapis/google-http-java-client -->
-		<google-http-client.version>1.42.2</google-http-client.version>
+		<!-- Google HTTP Client - https://github.com/googleapis/google-http-java-client -->
+		<google-http-client.version>1.42.3</google-http-client.version>
+		<google-http-client-apache-v2.version>${google-http-client.version}</google-http-client-apache-v2.version>
 		<google-http-client-appengine.version>${google-http-client.version}</google-http-client-appengine.version>
+		<google-http-client-gson.version>${google-http-client.version}</google-http-client-gson.version>
 		<google-http-client-jackson2.version>${google-http-client.version}</google-http-client-jackson2.version>
 		<google-http-client-xml.version>${google-http-client.version}</google-http-client-xml.version>
 		<com.google.http-client.google-http-client.version>${google-http-client.version}</com.google.http-client.google-http-client.version>
+		<com.google.http-client.google-http-client-apache-v2.version>${google-http-client-apache-v2.version}</com.google.http-client.google-http-client-apache-v2.version>
 		<com.google.http-client.google-http-client-appengine.version>${google-http-client-appengine.version}</com.google.http-client.google-http-client-appengine.version>
+		<com.google.http-client.google-http-client-gson.version>${google-http-client-gson.version}</com.google.http-client.google-http-client-gson.version>
 		<com.google.http-client.google-http-client-jackson2.version>${google-http-client-jackson2.version}</com.google.http-client.google-http-client-jackson2.version>
 		<com.google.http-client.google-http-client-xml.version>${google-http-client-xml.version}</com.google.http-client.google-http-client-xml.version>
+
+		<!-- gRPC - https://grpc.io/ -->
+		<grpc.version>1.52.1</grpc.version>
+		<grpc-context.version>${grpc.version}</grpc-context.version>
+		<io.grpc.grpc-context.version>${grpc-context.version}</io.grpc.grpc-context.version>
 
 		<!-- Gson - https://code.google.com/p/google-gson/ -->
 		<gson.version>2.9.1</gson.version>
@@ -1599,13 +1711,17 @@
 		<humble-video-all.version>${humble-video.version}</humble-video-all.version>
 		<io.humble.humble-video-all.version>${humble-video-all.version}</io.humble.humble-video-all.version>
 
-		<!-- HyperSQL DataBase - http://hsqldb.org/ -->
+		<!-- HyperSQL DataBase - https://hsqldb.org/ -->
 		<hsqldb.version>1.8.0.10</hsqldb.version>
 		<hsqldb.hsqldb.version>${hsqldb.version}</hsqldb.hsqldb.version>
 
 		<!-- iText PDF - https://github.com/itext/itextpdf -->
 		<itextpdf.version>5.5.13.3</itextpdf.version>
 		<com.itextpdf.itextpdf.version>${itextpdf.version}</com.itextpdf.itextpdf.version>
+
+		<!-- J2ObjC - https://github.com/google/j2objc -->
+		<j2objc-annotations.version>1.3</j2objc-annotations.version>
+		<com.google.j2objc.j2objc-annotations.version>${j2objc-annotations.version}</com.google.j2objc.j2objc-annotations.version>
 
 		<!-- Jackrabbit WebDAV - https://jackrabbit.apache.org/jcr/components/jackrabbit-webdav-library.html -->
 		<jackrabbit-webdav.version>2.21.13</jackrabbit-webdav.version>
@@ -1771,11 +1887,11 @@
 		<org.eclipse.jetty.jetty-webapp.version>${jetty-webapp.version}</org.eclipse.jetty.jetty-webapp.version>
 		<org.eclipse.jetty.jetty-xml.version>${jetty-xml.version}</org.eclipse.jetty.jetty-xml.version>
 
-		<!-- JFreeChart - http://www.jfree.org/jfreechart/ -->
+		<!-- JFreeChart - https://www.jfree.org/jfreechart/ -->
 		<jfreechart.version>1.5.3</jfreechart.version>
 		<org.jfree.jfreechart.version>${jfreechart.version}</org.jfree.jfreechart.version>
 
-		<!-- JFreeSVG - http://www.jfree.org/jfreesvg/ -->
+		<!-- JFreeSVG - https://www.jfree.org/jfreesvg/ -->
 		<jfreesvg.version>3.4.3</jfreesvg.version>
 		<org.jfree.jfreesvg.version>${jfreesvg.version}</org.jfree.jfreesvg.version>
 
@@ -1802,6 +1918,17 @@
 		<jhdf5.version>19.04.1</jhdf5.version>
 		<cisd.jhdf5.version>${jhdf5.version}</cisd.jhdf5.version>
 
+		<!-- JHeaps - https://www.jheaps.org/ -->
+		<jheaps.version>0.14</jheaps.version>
+		<org.jheaps.jheaps.version>${jheaps.version}</org.jheaps.jheaps.version>
+
+		<!-- JLine - https://jline.github.io/ -->
+		<jline2.version>2.14.6</jline2.version>
+		<jline3.version>3.22.0</jline3.version>
+		<jline.version>${jline2.version}</jline.version>
+		<jline.jline.version>${jline.version}</jline.jline.version>
+		<org.jline.jline.version>${jline3.version}</org.jline.jline.version>
+
 		<!-- JMH - https://openjdk.java.net/projects/code-tools/jmh/ -->
 		<jmh.version>1.35</jmh.version>
 		<jmh-core.version>${jmh.version}</jmh-core.version>
@@ -1813,9 +1940,21 @@
 		<jmockit.version>1.49</jmockit.version>
 		<org.jmockit.jmockit.version>${jmockit.version}</org.jmockit.jmockit.version>
 
-		<!-- JNA - https://github.com/twall/jna -->
+		<!-- JNA - https://github.com/java-native-access/jna -->
 		<jna.version>5.12.1</jna.version>
+		<jna-platform.version>${jna.version}</jna-platform.version>
 		<net.java.dev.jna.jna.version>${jna.version}</net.java.dev.jna.jna.version>
+		<net.java.dev.jna.jna-platform.version>${jna-platform.version}</net.java.dev.jna.jna-platform.version>
+
+		<!-- JNR - https://github.com/jnr -->
+		<jffi.version>1.3.10</jffi.version>
+		<jnr-constants.version>0.9.17</jnr-constants.version>
+		<jnr-ffi.version>2.2.13</jnr-ffi.version>
+		<jnr-posix.version>3.1.16</jnr-posix.version>
+		<com.github.jnr.jffi.version>${jffi.version}</com.github.jnr.jffi.version>
+		<com.github.jnr.jnr-constants.version>${jnr-constants.version}</com.github.jnr.jnr-constants.version>
+		<com.github.jnr.jnr-ffi.version>${jnr-ffi.version}</com.github.jnr.jnr-ffi.version>
+		<com.github.jnr.jnr-posix.version>${jnr-posix.version}</com.github.jnr.jnr-posix.version>
 
 		<!-- Joda-Time - https://www.joda.org/joda-time/ -->
 		<joda-time.version>2.12.0</joda-time.version>
@@ -1832,15 +1971,16 @@
 		<gluegen.version>${jogamp.version}</gluegen.version>
 		<gluegen-rt.version>${jogamp.version}</gluegen-rt.version>
 		<joal.version>${jogamp.version}</joal.version>
-		<!--<jocl.version>${jogamp.version}</jocl.version>--> <!-- NB: Avoid short name clash with org.jocl:jocl. -->
+		<!-- NB: Avoid short name clash with org.jocl:jocl. -->
+		<!--<jocl.version>${jogamp.version}</jocl.version>-->
 		<jogl-all.version>${jogamp.version}</jogl-all.version>
 		<jogl-all-noawt.version>${jogamp.version}</jogl-all-noawt.version>
-		<org.jogamp.gluegen.gluegen.version>${jogamp.version}</org.jogamp.gluegen.gluegen.version>
-		<org.jogamp.gluegen.gluegen-rt.version>${jogamp.version}</org.jogamp.gluegen.gluegen-rt.version>
-		<org.jogamp.joal.joal.version>${jogamp.version}</org.jogamp.joal.joal.version>
+		<org.jogamp.gluegen.gluegen.version>${gluegen.version}</org.jogamp.gluegen.gluegen.version>
+		<org.jogamp.gluegen.gluegen-rt.version>${gluegen-rt.version}</org.jogamp.gluegen.gluegen-rt.version>
+		<org.jogamp.joal.joal.version>${joal.version}</org.jogamp.joal.joal.version>
 		<org.jogamp.jocl.jocl.version>${jogamp.version}</org.jogamp.jocl.jocl.version>
-		<org.jogamp.jogl.jogl-all.version>${jogamp.version}</org.jogamp.jogl.jogl-all.version>
-		<org.jogamp.jogl.jogl-all-noawt.version>${jogamp.version}</org.jogamp.jogl.jogl-all-noawt.version>
+		<org.jogamp.jogl.jogl-all.version>${jogl-all.version}</org.jogamp.jogl.jogl-all.version>
+		<org.jogamp.jogl.jogl-all-noawt.version>${jogl-all-noawt.version}</org.jogamp.jogl.jogl-all-noawt.version>
 
 		<scijava.natives.classifier.gluegen>${scijava.natives.classifier.jogamp}</scijava.natives.classifier.gluegen>
 		<scijava.natives.classifier.joal>${scijava.natives.classifier.jogamp}</scijava.natives.classifier.joal>
@@ -1851,10 +1991,18 @@
 		<joml.version>1.10.5</joml.version>
 		<org.joml.joml.version>${joml.version}</org.joml.joml.version>
 
+		<!-- joni - https://github.com/jruby/joni -->
+		<joni.version>2.1.48</joni.version>
+		<org.jruby.joni.joni.version>${joni.version}</org.jruby.joni.joni.version>
+
 		<!-- JPedal - http://jpedal.org/ (defunct) -->
 		<jpedal.version>2.80b11</jpedal.version>
 		<jpedalSTD.version>${jpedal.version}</jpedalSTD.version>
 		<org.jpedal.jpedalSTD.version>${jpedalSTD.version}</org.jpedal.jpedalSTD.version>
+
+		<!-- jPLY - https://github.com/smurn/jPly -->
+		<jply.version>0.2.1</jply.version>
+		<org.smurn.jply.version>${jply.version}</org.smurn.jply.version>
 
 		<!-- JSch - http://www.jcraft.com/jsch/ -->
 		<jsch.version>0.1.55</jsch.version>
@@ -1905,6 +2053,7 @@
 		<kotlin-stdlib.version>${kotlin.version}</kotlin-stdlib.version>
 		<kotlin-stdlib-common.version>${kotlin.version}</kotlin-stdlib-common.version>
 		<kotlin-stdlib-jdk8.version>${kotlin.version}</kotlin-stdlib-jdk8.version>
+		<kotlinx-coroutines-core-jvm.version>1.6.4</kotlinx-coroutines-core-jvm.version>
 		<org.jetbrains.kotlin.kotlin-compiler-embeddable.version>${kotlin-compiler-embeddable.version}</org.jetbrains.kotlin.kotlin-compiler-embeddable.version>
 		<org.jetbrains.kotlin.kotlin-daemon-embeddable.version>${kotlin-daemon-embeddable.version}</org.jetbrains.kotlin.kotlin-daemon-embeddable.version>
 		<org.jetbrains.kotlin.kotlin-reflect.version>${kotlin-reflect.version}</org.jetbrains.kotlin.kotlin-reflect.version>
@@ -1917,12 +2066,15 @@
 		<org.jetbrains.kotlin.kotlin-stdlib.version>${kotlin-stdlib.version}</org.jetbrains.kotlin.kotlin-stdlib.version>
 		<org.jetbrains.kotlin.kotlin-stdlib-common.version>${kotlin-stdlib-common.version}</org.jetbrains.kotlin.kotlin-stdlib-common.version>
 		<org.jetbrains.kotlin.kotlin-stdlib-jdk8.version>${kotlin-stdlib-jdk8.version}</org.jetbrains.kotlin.kotlin-stdlib-jdk8.version>
+		<org.jetbrains.kotlinx.kotlinx-coroutines-core-jvm.version>${kotlinx-coroutines-core-jvm.version}</org.jetbrains.kotlinx.kotlinx-coroutines-core-jvm.version>
 
 		<!-- Kryo - https://github.com/EsotericSoftware/kryo -->
 		<kryo.version>5.3.0</kryo.version>
-		<com.esotericsoftware.kryo.version>${kryo.version}</com.esotericsoftware.kryo.version>
 		<minlog.version>1.3.1</minlog.version>
+		<reflectasm.version>1.11.9</reflectasm.version>
+		<com.esotericsoftware.kryo.version>${kryo.version}</com.esotericsoftware.kryo.version>
 		<com.esotericsoftware.minlog.version>${minlog.version}</com.esotericsoftware.minlog.version>
+		<com.esotericsoftware.reflectasm.version>${reflectasm.version}</com.esotericsoftware.reflectasm.version>
 
 		<!-- Logback - https://logback.qos.ch/ -->
 		<logback.version>1.2.9</logback.version>
@@ -1935,11 +2087,11 @@
 		<lz4-java.version>1.8.0</lz4-java.version>
 		<org.lz4.lz4-java.version>${lz4-java.version}</org.lz4.lz4-java.version>
 
-		<!-- MapDB - https://www.mapdb.org/ -->
+		<!-- MapDB - https://mapdb.org/ -->
 		<mapdb.version>3.0.8</mapdb.version>
 		<org.mapdb.mapdb.version>${mapdb.version}</org.mapdb.mapdb.version>
 
-		<!-- MigLayout - http://www.miglayout.com/ -->
+		<!-- MigLayout - https://www.miglayout.com/ -->
 		<miglayout.version>5.3</miglayout.version>
 		<miglayout-core.version>${miglayout.version}</miglayout-core.version>
 		<miglayout-swing.version>${miglayout.version}</miglayout-swing.version>
@@ -1957,11 +2109,21 @@
 		<mockito-core.version>${mockito.version}</mockito-core.version>
 		<org.mockito.mockito-core.version>${mockito-core.version}</org.mockito.mockito-core.version>
 
+		<!-- Objenesis - http://objenesis.org/ -->
+		<objenesis.version>3.3</objenesis.version>
+		<org.objenesis.objenesis.version>${objenesis.version}</org.objenesis.objenesis.version>
+
+		<!-- OkHttp - https://square.github.io/okhttp/ -->
+		<okhttp.version>4.9.3</okhttp.version>
+		<okio.version>3.3.0</okio.version>
+		<com.squareup.okhttp3.okhttp.version>${okhttp.version}</com.squareup.okhttp3.okhttp.version>
+		<com.squareup.okio.okio.version>${okio.version}</com.squareup.okio.okio.version>
+
 		<!-- oj! Algorithms - https://github.com/optimatika/ojAlgo -->
 		<ojalgo.version>45.1.1</ojalgo.version>
 		<org.ojalgo.ojalgo.version>${ojalgo.version}</org.ojalgo.ojalgo.version>
 
-		<!-- OpenCSV - http://opencsv.sourceforge.net/ -->
+		<!-- OpenCSV - https://opencsv.sourceforge.net/ -->
 		<opencsv.version>5.7.0</opencsv.version>
 		<com.opencsv.opencsv.version>${opencsv.version}</com.opencsv.opencsv.version>
 
@@ -1972,6 +2134,19 @@
 		<!-- PostgreSQL JDBC Driver - https://jdbc.postgresql.org/ -->
 		<postgresql.version>42.5.0</postgresql.version>
 		<org.postgresql.postgresql.version>${postgresql.version}</org.postgresql.postgresql.version>
+
+		<!-- Protocol Buffers - https://protobuf.dev/ -->
+		<protobuf.version>3.21.9</protobuf.version>
+		<!--
+		NB: javalite and kotlin-lite have conflicting classes with java
+		and kotlin respectively, so we do not manage those artifacts.
+		-->
+		<protobuf-java.version>${protobuf.version}</protobuf-java.version>
+		<protobuf-java-util.version>${protobuf.version}</protobuf-java-util.version>
+		<protobuf-kotlin.version>${protobuf.version}</protobuf-kotlin.version>
+		<com.google.protobuf.protobuf-java.version>${protobuf-java.version}</com.google.protobuf.protobuf-java.version>
+		<com.google.protobuf.protobuf-java-util.version>${protobuf-java-util.version}</com.google.protobuf.protobuf-java-util.version>
+		<com.google.protobuf.protobuf-kotlin.version>${protobuf-kotlin.version}</com.google.protobuf.protobuf-kotlin.version>
 
 		<!-- reload4j - https://reload4j.qos.ch/ -->
 		<reload4j.version>1.2.22</reload4j.version>
@@ -2012,12 +2187,18 @@
 
 		<!-- Spring - https://spring.io/ -->
 		<!--
-		NB: 3.2.9.RELEASE is the last version not to depend properly on
+		NB: Although version 5.3.18 is the last version to support Java 8,
+		3.2.9.RELEASE is the last version to depend properly on
 		aopalliance:aopalliance, rather than including org.aopalliance
 		classes unshadowed!
 		-->
-		<spring-aop.version>3.2.9.RELEASE</spring-aop.version>
+		<spring.version>3.2.9.RELEASE</spring.version>
+		<spring-aop.version>${spring.version}</spring-aop.version>
+		<spring-beans.version>${spring.version}</spring-beans.version>
+		<spring-core.version>${spring.version}</spring-core.version>
 		<org.springframework.spring-aop.version>${spring-aop.version}</org.springframework.spring-aop.version>
+		<org.springframework.spring-beans.version>${spring-beans.version}</org.springframework.spring-beans.version>
+		<org.springframework.spring-core.version>${spring-core.version}</org.springframework.spring-core.version>
 
 		<!-- TensorFlow - https://www.tensorflow.org/ -->
 		<tensorflow.version>1.12.0</tensorflow.version>
@@ -2034,6 +2215,10 @@
 		<!-- Therapi Runtime Javadoc - https://github.com/dnault/therapi-runtime-javadoc -->
 		<!-- NB: therapi.version is defined in pom-scijava-base. -->
 		<com.github.therapi.therapi-runtime-javadoc.version>${therapi.version}</com.github.therapi.therapi-runtime-javadoc.version>
+
+		<!-- ThreeTen - https://www.threeten.org/ -->
+		<threetenbp.version>1.6.5</threetenbp.version>
+		<org.threeten.threetenbp.version>${threetenbp.version}</org.threeten.threetenbp.version>
 
 		<!-- Trove - https://bitbucket.org/trove4j/trove -->
 		<trove4j.version>3.0.3</trove4j.version>
@@ -3807,11 +3992,28 @@
 
 			<!-- Third party components -->
 
+			<!-- Amazon S3 - https://aws.amazon.com/sdkforjava -->
+			<dependency>
+				<groupId>com.amazonaws</groupId>
+				<artifactId>aws-java-sdk-core</artifactId>
+				<version>${com.amazonaws.aws-java-sdk-core.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.amazonaws</groupId>
+				<artifactId>aws-java-sdk-s3</artifactId>
+				<version>${com.amazonaws.aws-java-sdk-s3.version}</version>
+			</dependency>
+
 			<!-- Antlr - https://www.antlr.org/ -->
 			<dependency>
 				<groupId>antlr</groupId>
 				<artifactId>antlr</artifactId>
 				<version>${antlr.antlr.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.antlr</groupId>
+				<artifactId>ST4</artifactId>
+				<version>${org.antlr.ST4.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.antlr</groupId>
@@ -3823,20 +4025,19 @@
 				<artifactId>antlr-runtime</artifactId>
 				<version>${org.antlr.antlr-runtime.version}</version>
 			</dependency>
-
-			<!-- args4j - https://args4j.kohsuke.org/ -->
+			<!--
+			NB: antlr4 requires Java 11 at minimum!
 			<dependency>
-				<groupId>args4j</groupId>
-				<artifactId>args4j</artifactId>
-				<version>${args4j.args4j.version}</version>
+				<groupId>org.antlr</groupId>
+				<artifactId>antlr4</artifactId>
+				<version>${org.antlr.antlr4.version}</version>
 			</dependency>
-
-			<!-- Amazon S3 - https://aws.amazon.com/sdkforjava -->
 			<dependency>
-				<groupId>com.amazonaws</groupId>
-				<artifactId>aws-java-sdk-s3</artifactId>
-				<version>${com.amazonaws.aws-java-sdk-s3.version}</version>
+				<groupId>org.antlr</groupId>
+				<artifactId>antlr4-runtime</artifactId>
+				<version>${org.antlr.antlr4-runtime.version}</version>
 			</dependency>
+			-->
 
 			<!-- Apache Groovy - https://groovy-lang.org/ -->
 			<dependency>
@@ -3975,6 +4176,18 @@
 				<version>${org.codehaus.groovy.groovy-yaml.version}</version>
 			</dependency>
 
+			<!-- Apache Ant - https://ant.apache.org/ -->
+			<dependency>
+				<groupId>org.apache.ant</groupId>
+				<artifactId>ant</artifactId>
+				<version>${org.apache.ant.ant.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.ant</groupId>
+				<artifactId>ant-launcher</artifactId>
+				<version>${org.apache.ant.ant-launcher.version}</version>
+			</dependency>
+
 			<!-- Apache Maven - https://maven.apache.org/ -->
 			<dependency>
 				<groupId>org.apache.maven.shared</groupId>
@@ -3995,6 +4208,16 @@
 				<groupId>org.apache.maven.plugin-tools</groupId>
 				<artifactId>maven-plugin-tools-api</artifactId>
 				<version>${org.apache.maven.plugin-tools.maven-plugin-tools-api.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.codehaus.plexus</groupId>
+				<artifactId>plexus-component-annotations</artifactId>
+				<version>${org.codehaus.plexus.plexus-component-annotations.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.codehaus.plexus</groupId>
+				<artifactId>plexus-utils</artifactId>
+				<version>${org.codehaus.plexus.plexus-utils.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.sonatype.sisu</groupId>
@@ -4080,6 +4303,45 @@
 				<groupId>org.apache.httpcomponents</groupId>
 				<artifactId>httpcore</artifactId>
 				<version>${org.apache.httpcomponents.httpcore.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.httpcomponents</groupId>
+				<artifactId>httpmime</artifactId>
+				<version>${org.apache.httpcomponents.httpmime.version}</version>
+			</dependency>
+
+			<!-- args4j - https://args4j.kohsuke.org/ -->
+			<dependency>
+				<groupId>args4j</groupId>
+				<artifactId>args4j</artifactId>
+				<version>${args4j.args4j.version}</version>
+			</dependency>
+
+			<!-- ASM - https://asm.ow2.io/ -->
+			<dependency>
+				<groupId>org.ow2.asm</groupId>
+				<artifactId>asm</artifactId>
+				<version>${org.ow2.asm.asm.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.ow2.asm</groupId>
+				<artifactId>asm-analysis</artifactId>
+				<version>${org.ow2.asm.asm-analysis.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.ow2.asm</groupId>
+				<artifactId>asm-commons</artifactId>
+				<version>${org.ow2.asm.asm-commons.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.ow2.asm</groupId>
+				<artifactId>asm-tree</artifactId>
+				<version>${org.ow2.asm.asm-tree.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.ow2.asm</groupId>
+				<artifactId>asm-util</artifactId>
+				<version>${org.ow2.asm.asm-util.version}</version>
 			</dependency>
 
 			<!-- Batik - https://xmlgraphics.apache.org/batik/ -->
@@ -4262,11 +4524,18 @@
 				<version>${com.nativelibs4java.bridj.version}</version>
 			</dependency>
 
-			<!-- CDI - http://cdi-spec.org/ -->
+			<!-- CDI - https://cdi-spec.org/ -->
 			<dependency>
 				<groupId>javax.enterprise</groupId>
 				<artifactId>cdi-api</artifactId>
 				<version>${javax.enterprise.cdi-api.version}</version>
+			</dependency>
+
+			<!-- Checker Framework - https://checkerframework.org/ -->
+			<dependency>
+				<groupId>org.checkerframework</groupId>
+				<artifactId>checker-qual</artifactId>
+				<version>${org.checkerframework.checker-qual.version}</version>
 			</dependency>
 
 			<!-- Commons BeanUtils - https://commons.apache.org/proper/commons-beanutils/ -->
@@ -4274,6 +4543,13 @@
 				<groupId>commons-beanutils</groupId>
 				<artifactId>commons-beanutils</artifactId>
 				<version>${commons-beanutils.commons-beanutils.version}</version>
+			</dependency>
+
+			<!-- Commons CLI - https://commons.apache.org/proper/commons-cli/ -->
+			<dependency>
+				<groupId>commons-cli</groupId>
+				<artifactId>commons-cli</artifactId>
+				<version>${commons-cli.commons-cli.version}</version>
 			</dependency>
 
 			<!-- Commons Codec - https://commons.apache.org/proper/commons-codec/ -->
@@ -4288,6 +4564,11 @@
 				<groupId>commons-collections</groupId>
 				<artifactId>commons-collections</artifactId>
 				<version>${commons-collections.commons-collections.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-collections4</artifactId>
+				<version>${org.apache.commons.commons-collections4.version}</version>
 			</dependency>
 
 			<!-- Commons Compress - https://commons.apache.org/proper/commons-compress/ -->
@@ -4464,6 +4745,13 @@
 				<version>${com.googlecode.efficient-java-matrix-library.ejml.version}</version>
 			</dependency>
 
+			<!-- Error Prone - https://errorprone.info/ -->
+			<dependency>
+				<groupId>com.google.errorprone</groupId>
+				<artifactId>error_prone_annotations</artifactId>
+				<version>${com.google.errorprone.error_prone_annotations.version}</version>
+			</dependency>
+
 			<!-- FlatLaf - https://www.formdev.com/flatlaf/ -->
 			<dependency>
 				<groupId>com.formdev</groupId>
@@ -4471,7 +4759,125 @@
 				<version>${com.formdev.flatlaf.version}</version>
 			</dependency>
 
+			<!-- Google APIs Client - https://github.com/googleapis/google-api-java-client -->
+			<dependency>
+				<groupId>com.google.api-client</groupId>
+				<artifactId>google-api-client</artifactId>
+				<version>${com.google.api-client.google-api-client.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.api-client</groupId>
+				<artifactId>google-api-client-android</artifactId>
+				<version>${com.google.api-client.google-api-client-android.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.api-client</groupId>
+				<artifactId>google-api-client-appengine</artifactId>
+				<version>${com.google.api-client.google-api-client-appengine.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.api-client</groupId>
+				<artifactId>google-api-client-gson</artifactId>
+				<version>${com.google.api-client.google-api-client-gson.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.api-client</groupId>
+				<artifactId>google-api-client-jackson2</artifactId>
+				<version>${com.google.api-client.google-api-client-jackson2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.api-client</groupId>
+				<artifactId>google-api-client-protobuf</artifactId>
+				<version>${com.google.api-client.google-api-client-protobuf.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.api-client</groupId>
+				<artifactId>google-api-client-servlet</artifactId>
+				<version>${com.google.api-client.google-api-client-servlet.version}</version>
+				<exclusions>
+					<exclusion>
+						<!--
+						Conflicts with javax.servlet:javax.servlet-api.
+						The artifactId changed from v2 to v3+.
+						-->
+						<groupId>javax.servlet</groupId>
+						<artifactId>servlet-api</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>com.google.api-client</groupId>
+				<artifactId>google-api-client-xml</artifactId>
+				<version>${com.google.api-client.google-api-client-xml.version}</version>
+			</dependency>
+
+			<!-- Google GAPIC - https://github.com/googleapis/gapic-generator-java -->
+			<dependency>
+				<groupId>com.google.api</groupId>
+				<artifactId>api-common</artifactId>
+				<version>${com.google.api.api-common.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.api</groupId>
+				<artifactId>gax</artifactId>
+				<version>${com.google.api.gax.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.api</groupId>
+				<artifactId>gax-httpjson</artifactId>
+				<version>${com.google.api.gax-httpjson.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.api.grpc</groupId>
+				<artifactId>proto-google-common-protos</artifactId>
+				<version>${com.google.api.grpc.proto-google-common-protos.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.api.grpc</groupId>
+				<artifactId>proto-google-iam-v1</artifactId>
+				<version>${com.google.api.grpc.proto-google-iam-v1.version}</version>
+			</dependency>
+
+			<!-- Google Auth - https://github.com/googleapis/google-auth-library-java -->
+			<dependency>
+				<groupId>com.google.auth</groupId>
+				<artifactId>google-auth-library-appengine</artifactId>
+				<version>${com.google.auth.google-auth-library-appengine.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.auth</groupId>
+				<artifactId>google-auth-library-credentials</artifactId>
+				<version>${com.google.auth.google-auth-library-credentials.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.auth</groupId>
+				<artifactId>google-auth-library-oauth2-http</artifactId>
+				<version>${com.google.auth.google-auth-library-oauth2-http.version}</version>
+			</dependency>
+
+			<!-- Google Auto - https://github.com/google/auto -->
+			<dependency>
+				<groupId>com.google.auto.value</groupId>
+				<artifactId>auto-value</artifactId>
+				<version>${com.google.auto.value.auto-value.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.auto.value</groupId>
+				<artifactId>auto-value-annotations</artifactId>
+				<version>${com.google.auto.value.auto-value-annotations.version}</version>
+			</dependency>
+
 			<!-- Google Cloud Storage - https://github.com/googleapis/google-cloud-java -->
+			<dependency>
+				<groupId>com.google.cloud</groupId>
+				<artifactId>google-cloud-core</artifactId>
+				<version>${com.google.cloud.google-cloud-core.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.cloud</groupId>
+				<artifactId>google-cloud-core-http</artifactId>
+				<version>${com.google.cloud.google-cloud-core-http.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>com.google.cloud</groupId>
 				<artifactId>google-cloud-nio</artifactId>
@@ -4488,7 +4894,7 @@
 				<version>${com.google.cloud.google-cloud-storage.version}</version>
 			</dependency>
 
-			<!-- Google HTTP Client Library for Java - https://github.com/googleapis/google-http-java-client -->
+			<!-- Google HTTP Client - https://github.com/googleapis/google-http-java-client -->
 			<dependency>
 				<groupId>com.google.http-client</groupId>
 				<artifactId>google-http-client</artifactId>
@@ -4496,8 +4902,18 @@
 			</dependency>
 			<dependency>
 				<groupId>com.google.http-client</groupId>
+				<artifactId>google-http-client-apache-v2</artifactId>
+				<version>${com.google.http-client.google-http-client-apache-v2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.http-client</groupId>
 				<artifactId>google-http-client-appengine</artifactId>
 				<version>${com.google.http-client.google-http-client-appengine.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.http-client</groupId>
+				<artifactId>google-http-client-gson</artifactId>
+				<version>${com.google.http-client.google-http-client-gson.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.google.http-client</groupId>
@@ -4508,6 +4924,13 @@
 				<groupId>com.google.http-client</groupId>
 				<artifactId>google-http-client-xml</artifactId>
 				<version>${com.google.http-client.google-http-client-xml.version}</version>
+			</dependency>
+
+			<!-- gRPC - https://grpc.io/ -->
+			<dependency>
+				<groupId>io.grpc</groupId>
+				<artifactId>grpc-context</artifactId>
+				<version>${io.grpc.grpc-context.version}</version>
 			</dependency>
 
 			<!-- Gson - https://code.google.com/p/google-gson/ -->
@@ -4531,7 +4954,7 @@
 				<version>${io.humble.humble-video-all.version}</version>
 			</dependency>
 
-			<!-- HyperSQL DataBase - http://hsqldb.org/ -->
+			<!-- HyperSQL DataBase - https://hsqldb.org/ -->
 			<dependency>
 				<groupId>hsqldb</groupId>
 				<artifactId>hsqldb</artifactId>
@@ -4543,6 +4966,13 @@
 				<groupId>com.itextpdf</groupId>
 				<artifactId>itextpdf</artifactId>
 				<version>${com.itextpdf.itextpdf.version}</version>
+			</dependency>
+
+			<!-- J2ObjC - https://github.com/google/j2objc -->
+			<dependency>
+				<groupId>com.google.j2objc</groupId>
+				<artifactId>j2objc-annotations</artifactId>
+				<version>${com.google.j2objc.j2objc-annotations.version}</version>
 			</dependency>
 
 			<!-- Jackrabbit WebDAV - https://jackrabbit.apache.org/jcr/components/jackrabbit-webdav-library.html -->
@@ -4603,7 +5033,7 @@
 				<version>${javax.media.jai-core.version}</version>
 			</dependency>
 
-			<!-- JAMA - http://math.nist.gov/javanumerics/jama/ -->
+			<!-- JAMA - https://math.nist.gov/javanumerics/jama/ -->
 			<dependency>
 				<groupId>gov.nist.math</groupId>
 				<artifactId>jama</artifactId>
@@ -4774,7 +5204,7 @@
 				<classifier>${scijava.natives.classifier.tesseract}</classifier>
 			</dependency>
 
-			<!-- Javassist - http://www.javassist.org/ -->
+			<!-- Javassist - https://www.javassist.org/ -->
 			<dependency>
 				<groupId>org.javassist</groupId>
 				<artifactId>javassist</artifactId>
@@ -4802,7 +5232,7 @@
 				<version>${org.scijava.jep.version}</version>
 			</dependency>
 
-			<!-- Jetty - http://eclipse.org/jetty/ -->
+			<!-- Jetty - https://www.eclipse.org/jetty/ -->
 			<dependency>
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-annotations</artifactId>
@@ -4929,14 +5359,14 @@
 				<version>${org.eclipse.jetty.jetty-xml.version}</version>
 			</dependency>
 
-			<!-- JFreeChart - http://www.jfree.org/jfreechart/ -->
+			<!-- JFreeChart - https://www.jfree.org/jfreechart/ -->
 			<dependency>
 				<groupId>org.jfree</groupId>
 				<artifactId>jfreechart</artifactId>
 				<version>${org.jfree.jfreechart.version}</version>
 			</dependency>
 
-			<!-- JFreeSVG - http://www.jfree.org/jfreesvg/ -->
+			<!-- JFreeSVG - https://www.jfree.org/jfreesvg/ -->
 			<dependency>
 				<groupId>org.jfree</groupId>
 				<artifactId>jfreesvg</artifactId>
@@ -4996,14 +5426,66 @@
 				<version>${cisd.jhdf5.version}</version>
 			</dependency>
 
-			<!-- JNA - https://github.com/twall/jna -->
+			<!-- JHeaps - https://www.jheaps.org/ -->
+			<dependency>
+				<groupId>org.jheaps</groupId>
+				<artifactId>jheaps</artifactId>
+				<version>${org.jheaps.jheaps.version}</version>
+			</dependency>
+
+			<!-- JLine - https://jline.github.io/ -->
+			<dependency>
+				<groupId>jline</groupId>
+				<artifactId>jline</artifactId>
+				<version>${jline.jline.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jline</groupId>
+				<artifactId>jline</artifactId>
+				<version>${org.jline.jline.version}</version>
+			</dependency>
+
+			<!-- JNA - https://github.com/java-native-access/jna -->
 			<dependency>
 				<groupId>net.java.dev.jna</groupId>
 				<artifactId>jna</artifactId>
 				<version>${net.java.dev.jna.jna.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>net.java.dev.jna</groupId>
+				<artifactId>jna-platform</artifactId>
+				<version>${net.java.dev.jna.jna-platform.version}</version>
+			</dependency>
 
-			<!-- Joda-Time - http://www.joda.org/joda-time/ -->
+			<!-- JNR - https://github.com/jnr -->
+			<dependency>
+				<groupId>com.github.jnr</groupId>
+				<artifactId>jffi</artifactId>
+				<version>${com.github.jnr.jffi.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.jnr</groupId>
+				<artifactId>jffi</artifactId>
+				<version>${com.github.jnr.jffi.version}</version>
+				<classifier>native</classifier>
+			</dependency>
+			<dependency>
+				<groupId>com.github.jnr</groupId>
+				<artifactId>jnr-constants</artifactId>
+				<version>${com.github.jnr.jnr-constants.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.jnr</groupId>
+				<artifactId>jnr-ffi</artifactId>
+				<version>${com.github.jnr.jnr-ffi.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.jnr</groupId>
+				<artifactId>jnr-posix</artifactId>
+				<version>${com.github.jnr.jnr-posix.version}</version>
+			</dependency>
+
+			<!-- Joda-Time - https://www.joda.org/joda-time/ -->
 			<dependency>
 				<groupId>joda-time</groupId>
 				<artifactId>joda-time</artifactId>
@@ -5081,11 +5563,18 @@
 				<classifier>${scijava.natives.classifier.jogl}</classifier>
 			</dependency>
 
-			<!-- JOML - http://joml-ci.github.io/JOML/ -->
+			<!-- JOML - https://joml-ci.github.io/JOML/ -->
 			<dependency>
 				<groupId>org.joml</groupId>
 				<artifactId>joml</artifactId>
 				<version>${org.joml.joml.version}</version>
+			</dependency>
+
+			<!-- joni - https://github.com/jruby/joni -->
+			<dependency>
+				<groupId>org.jruby.joni</groupId>
+				<artifactId>joni</artifactId>
+				<version>${org.jruby.joni.joni.version}</version>
 			</dependency>
 
 			<!-- JPedal - http://jpedal.org/ (defunct) -->
@@ -5093,6 +5582,13 @@
 				<groupId>org.jpedal</groupId>
 				<artifactId>jpedalSTD</artifactId>
 				<version>${org.jpedal.jpedalSTD.version}</version>
+			</dependency>
+
+			<!-- jPLY - https://github.com/smurn/jPly -->
+			<dependency>
+				<groupId>org.smurn</groupId>
+				<artifactId>jply</artifactId>
+				<version>${org.smurn.jply.version}</version>
 			</dependency>
 
 			<!-- JSch - http://www.jcraft.com/jsch/ -->
@@ -5184,6 +5680,11 @@
 				<artifactId>kotlin-stdlib-jdk8</artifactId>
 				<version>${org.jetbrains.kotlin.kotlin-stdlib-jdk8.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.jetbrains.kotlinx</groupId>
+				<artifactId>kotlinx-coroutines-core-jvm</artifactId>
+				<version>${org.jetbrains.kotlinx.kotlinx-coroutines-core-jvm.version}</version>
+			</dependency>
 
 			<!-- Kryo - https://github.com/EsotericSoftware/kryo -->
 			<dependency>
@@ -5196,8 +5697,13 @@
 				<artifactId>minlog</artifactId>
 				<version>${com.esotericsoftware.minlog.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>com.esotericsoftware</groupId>
+				<artifactId>reflectasm</artifactId>
+				<version>${com.esotericsoftware.reflectasm.version}</version>
+			</dependency>
 
-			<!-- Logback - http://logback.qos.ch/ -->
+			<!-- Logback - https://logback.qos.ch/ -->
 			<dependency>
 				<groupId>ch.qos.logback</groupId>
 				<artifactId>logback-classic</artifactId>
@@ -5226,7 +5732,7 @@
 				<version>${org.lz4.lz4-java.version}</version>
 			</dependency>
 
-			<!-- MapDB - http://www.mapdb.org/ -->
+			<!-- MapDB - https://mapdb.org/ -->
 			<dependency>
 				<groupId>org.mapdb</groupId>
 				<artifactId>mapdb</artifactId>
@@ -5243,7 +5749,7 @@
 				</exclusions>
 			</dependency>
 
-			<!-- MigLayout - http://www.miglayout.com/ -->
+			<!-- MigLayout - https://www.miglayout.com/ -->
 			<dependency>
 				<groupId>com.miglayout</groupId>
 				<artifactId>miglayout-core</artifactId>
@@ -5267,6 +5773,25 @@
 				<version>${edu.mines.mines-jtk.version}</version>
 			</dependency>
 
+			<!-- Objenesis - http://objenesis.org/ -->
+			<dependency>
+				<groupId>org.objenesis</groupId>
+				<artifactId>objenesis</artifactId>
+				<version>${org.objenesis.objenesis.version}</version>
+			</dependency>
+
+			<!-- OkHttp - https://square.github.io/okhttp/ -->
+			<dependency>
+				<groupId>com.squareup.okhttp3</groupId>
+				<artifactId>okhttp</artifactId>
+				<version>${com.squareup.okhttp3.okhttp.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.squareup.okio</groupId>
+				<artifactId>okio</artifactId>
+				<version>${com.squareup.okio.okio.version}</version>
+			</dependency>
+
 			<!-- oj! Algorithms - https://github.com/optimatika/ojAlgo -->
 			<dependency>
 				<groupId>org.ojalgo</groupId>
@@ -5274,14 +5799,14 @@
 				<version>${org.ojalgo.ojalgo.version}</version>
 			</dependency>
 
-			<!-- OpenCSV - http://opencsv.sourceforge.net/ -->
+			<!-- OpenCSV - https://opencsv.sourceforge.net/ -->
 			<dependency>
 				<groupId>com.opencsv</groupId>
 				<artifactId>opencsv</artifactId>
 				<version>${com.opencsv.opencsv.version}</version>
 			</dependency>
 
-			<!-- picocli - http://picocli.info/ -->
+			<!-- picocli - https://picocli.info/ -->
 			<dependency>
 				<groupId>info.picocli</groupId>
 				<artifactId>picocli</artifactId>
@@ -5293,6 +5818,23 @@
 				<groupId>org.postgresql</groupId>
 				<artifactId>postgresql</artifactId>
 				<version>${org.postgresql.postgresql.version}</version>
+			</dependency>
+
+			<!-- Protocol Buffers - https://protobuf.dev/ -->
+			<dependency>
+				<groupId>com.google.protobuf</groupId>
+				<artifactId>protobuf-java</artifactId>
+				<version>${com.google.protobuf.protobuf-java.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.protobuf</groupId>
+				<artifactId>protobuf-java-util</artifactId>
+				<version>${com.google.protobuf.protobuf-java-util.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.protobuf</groupId>
+				<artifactId>protobuf-kotlin</artifactId>
+				<version>${com.google.protobuf.protobuf-kotlin.version}</version>
 			</dependency>
 
 			<!-- reload4j - https://reload4j.qos.ch/ -->
@@ -5376,6 +5918,16 @@
 				<artifactId>spring-aop</artifactId>
 				<version>${org.springframework.spring-aop.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-beans</artifactId>
+				<version>${org.springframework.spring-beans.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-core</artifactId>
+				<version>${org.springframework.spring-core.version}</version>
+			</dependency>
 
 			<!-- TensorFlow - https://www.tensorflow.org/ -->
 			<dependency>
@@ -5411,6 +5963,13 @@
 				<version>${com.github.therapi.therapi-runtime-javadoc.version}</version>
 			</dependency>
 
+			<!-- ThreeTen - https://www.threeten.org/ -->
+			<dependency>
+				<groupId>org.threeten</groupId>
+				<artifactId>threetenbp</artifactId>
+				<version>${org.threeten.threetenbp.version}</version>
+			</dependency>
+
 			<!-- Trove - https://bitbucket.org/trove4j/trove -->
 			<dependency>
 				<groupId>net.sf.trove4j</groupId>
@@ -5418,7 +5977,7 @@
 				<version>${net.sf.trove4j.trove4j.version}</version>
 			</dependency>
 
-			<!-- Weka - http://www.cs.waikato.ac.nz/ml/weka/ -->
+			<!-- Weka - https://www.cs.waikato.ac.nz/ml/weka/ -->
 			<dependency>
 				<groupId>nz.ac.waikato.cms.weka</groupId>
 				<artifactId>weka-dev</artifactId>
@@ -5579,7 +6138,7 @@
 				<scope>test</scope>
 			</dependency>
 
-			<!-- Mockito - http://site.mockito.org/ -->
+			<!-- Mockito - https://site.mockito.org/ -->
 			<dependency>
 				<groupId>org.mockito</groupId>
 				<artifactId>mockito-core</artifactId>
@@ -5587,7 +6146,7 @@
 				<scope>test</scope>
 			</dependency>
 
-			<!-- JMH - http://openjdk.java.net/projects/code-tools/jmh/ -->
+			<!-- JMH - https://openjdk.org/projects/code-tools/jmh/ -->
 			<dependency>
 				<groupId>org.openjdk.jmh</groupId>
 				<artifactId>jmh-core</artifactId>
