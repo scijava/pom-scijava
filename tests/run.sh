@@ -44,7 +44,7 @@ meltScript="$meltingPotDir/melt.sh"
 # HACK: List of artifacts with known-duplicate short version properties.
 shortVersionClashes=\
 'net.sourceforge.findbugs.annotations'\
-'|antr.antlr'\
+'|antlr.antlr'\
 '|org.jogamp.jocl.jocl'\
 '|net.sf.opencsv.opencsv'\
 '|org.jetbrains.intellij.deps.trove4j'
