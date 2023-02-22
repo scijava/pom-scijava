@@ -51,7 +51,8 @@ shortVersionClashes=\
 
 rm -rf "$megaMeltDir" && mkdir -p "$megaMeltDir" || die "Creation of $megaMeltDir failed!"
 cp "$pom" "$pomParent" &&
-mvn -B -f "$pomParent" versions:set -DnewVersion=999-mega-melt > "$versionSwapLog" ||
+mvn -B -f "$pomParent" versions:set -DnewVersion=999-mega-melt > "$versionSwapLog" &&
+  mvn -B -f "$pomParent" install >> "$versionSwapLog" ||
   die "pom-scijava version update failed:\n$(cat "$versionSwapLog")"
 python "$generateMegaMeltScript" "$megaMeltDir" || die 'Generation failed!'
 sectionEnd # Generating mega-melt project
@@ -162,6 +163,14 @@ do
   sed -E -e 's_(https?://maven.imagej.net|http://maven.scijava.org)_https://maven.scijava.org_g' \
     -e 's_http://maven.apache.org/xsd_https://maven.apache.org/xsd_g' "$pom.original" > "$pom" ||
     die "Failed to adjust $pom"
+done
+
+# HACK: Make component POMs extend the same version of pom-scijava
+# being tested. This reduces dependency skew for transitively inherited
+# components that were not managed at the time of that component release.
+find "$meltingPotDir" -name pom.xml | while read pom
+do
+  perl -0777 -i -pe 's/(<parent>\s*<groupId>org.scijava<\/groupId>\s*<artifactId>pom-scijava<\/artifactId>\s*<version>)[^\n]*/${1}999-mega-melt<\/version>/igs' "$pom"
 done
 
 # HACK: Skip tests for projects with known problems.
