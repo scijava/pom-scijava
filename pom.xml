@@ -1966,7 +1966,7 @@
 
 		<!-- JogAmp - https://jogamp.org/ -->
 
-		<jogamp.version>2.4.0-rc-20210111</jogamp.version>
+		<jogamp.version>2.4.0</jogamp.version>
 
 		<gluegen.version>${jogamp.version}</gluegen.version>
 		<gluegen-rt.version>${jogamp.version}</gluegen-rt.version>
@@ -5591,30 +5591,6 @@
 				<groupId>org.jogamp.gluegen</groupId>
 				<artifactId>gluegen-rt</artifactId>
 				<version>${org.jogamp.gluegen.gluegen-rt.version}</version>
-				<classifier>natives-android-armv6</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.gluegen</groupId>
-				<artifactId>gluegen-rt</artifactId>
-				<version>${org.jogamp.gluegen.gluegen-rt.version}</version>
-				<classifier>natives-android-x86</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.gluegen</groupId>
-				<artifactId>gluegen-rt</artifactId>
-				<version>${org.jogamp.gluegen.gluegen-rt.version}</version>
-				<classifier>natives-ios-amd64</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.gluegen</groupId>
-				<artifactId>gluegen-rt</artifactId>
-				<version>${org.jogamp.gluegen.gluegen-rt.version}</version>
-				<classifier>natives-ios-arm64</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.gluegen</groupId>
-				<artifactId>gluegen-rt</artifactId>
-				<version>${org.jogamp.gluegen.gluegen-rt.version}</version>
 				<classifier>natives-linux-aarch64</classifier>
 			</dependency>
 			<dependency>
@@ -5633,12 +5609,6 @@
 				<groupId>org.jogamp.gluegen</groupId>
 				<artifactId>gluegen-rt</artifactId>
 				<version>${org.jogamp.gluegen.gluegen-rt.version}</version>
-				<classifier>natives-linux-i586</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.gluegen</groupId>
-				<artifactId>gluegen-rt</artifactId>
-				<version>${org.jogamp.gluegen.gluegen-rt.version}</version>
 				<classifier>natives-macosx-universal</classifier>
 			</dependency>
 			<dependency>
@@ -5646,12 +5616,6 @@
 				<artifactId>gluegen-rt</artifactId>
 				<version>${org.jogamp.gluegen.gluegen-rt.version}</version>
 				<classifier>natives-windows-amd64</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.gluegen</groupId>
-				<artifactId>gluegen-rt</artifactId>
-				<version>${org.jogamp.gluegen.gluegen-rt.version}</version>
-				<classifier>natives-windows-i586</classifier>
 			</dependency>
 			<dependency>
 				<groupId>org.jogamp.joal</groupId>
@@ -5663,30 +5627,6 @@
 				<groupId>org.jogamp.joal</groupId>
 				<artifactId>joal</artifactId>
 				<version>${org.jogamp.joal.joal.version}</version>
-				<classifier>natives-android-armv6</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.joal</groupId>
-				<artifactId>joal</artifactId>
-				<version>${org.jogamp.joal.joal.version}</version>
-				<classifier>natives-android-x86</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.joal</groupId>
-				<artifactId>joal</artifactId>
-				<version>${org.jogamp.joal.joal.version}</version>
-				<classifier>natives-ios-amd64</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.joal</groupId>
-				<artifactId>joal</artifactId>
-				<version>${org.jogamp.joal.joal.version}</version>
-				<classifier>natives-ios-arm64</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.joal</groupId>
-				<artifactId>joal</artifactId>
-				<version>${org.jogamp.joal.joal.version}</version>
 				<classifier>natives-linux-aarch64</classifier>
 			</dependency>
 			<dependency>
@@ -5705,12 +5645,6 @@
 				<groupId>org.jogamp.joal</groupId>
 				<artifactId>joal</artifactId>
 				<version>${org.jogamp.joal.joal.version}</version>
-				<classifier>natives-linux-i586</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.joal</groupId>
-				<artifactId>joal</artifactId>
-				<version>${org.jogamp.joal.joal.version}</version>
 				<classifier>natives-macosx-universal</classifier>
 			</dependency>
 			<dependency>
@@ -5718,12 +5652,6 @@
 				<artifactId>joal</artifactId>
 				<version>${org.jogamp.joal.joal.version}</version>
 				<classifier>natives-windows-amd64</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.joal</groupId>
-				<artifactId>joal</artifactId>
-				<version>${org.jogamp.joal.joal.version}</version>
-				<classifier>natives-windows-i586</classifier>
 			</dependency>
 			<dependency>
 				<groupId>org.jogamp.jocl</groupId>
@@ -5735,19 +5663,6 @@
 				<groupId>org.jogamp.jocl</groupId>
 				<artifactId>jocl</artifactId>
 				<version>${org.jogamp.jocl.jocl.version}</version>
-				<classifier>natives-android-armv6</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.jocl</groupId>
-				<artifactId>jocl</artifactId>
-				<version>${org.jogamp.jocl.jocl.version}</version>
-				<classifier>natives-android-x86</classifier>
-			</dependency>
-			<!-- NB: No natives-ios classifiers for jocl. -->
-			<dependency>
-				<groupId>org.jogamp.jocl</groupId>
-				<artifactId>jocl</artifactId>
-				<version>${org.jogamp.jocl.jocl.version}</version>
 				<classifier>natives-linux-aarch64</classifier>
 			</dependency>
 			<dependency>
@@ -5766,12 +5681,6 @@
 				<groupId>org.jogamp.jocl</groupId>
 				<artifactId>jocl</artifactId>
 				<version>${org.jogamp.jocl.jocl.version}</version>
-				<classifier>natives-linux-i586</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.jocl</groupId>
-				<artifactId>jocl</artifactId>
-				<version>${org.jogamp.jocl.jocl.version}</version>
 				<classifier>natives-macosx-universal</classifier>
 			</dependency>
 			<dependency>
@@ -5779,12 +5688,6 @@
 				<artifactId>jocl</artifactId>
 				<version>${org.jogamp.jocl.jocl.version}</version>
 				<classifier>natives-windows-amd64</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.jocl</groupId>
-				<artifactId>jocl</artifactId>
-				<version>${org.jogamp.jocl.jocl.version}</version>
-				<classifier>natives-windows-i586</classifier>
 			</dependency>
 			<dependency>
 				<groupId>org.jogamp.jogl</groupId>
@@ -5796,30 +5699,6 @@
 				<groupId>org.jogamp.jogl</groupId>
 				<artifactId>jogl-all</artifactId>
 				<version>${org.jogamp.jogl.jogl-all.version}</version>
-				<classifier>natives-android-armv6</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.jogl</groupId>
-				<artifactId>jogl-all</artifactId>
-				<version>${org.jogamp.jogl.jogl-all.version}</version>
-				<classifier>natives-android-x86</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.jogl</groupId>
-				<artifactId>jogl-all</artifactId>
-				<version>${org.jogamp.jogl.jogl-all.version}</version>
-				<classifier>natives-ios-amd64</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.jogl</groupId>
-				<artifactId>jogl-all</artifactId>
-				<version>${org.jogamp.jogl.jogl-all.version}</version>
-				<classifier>natives-ios-arm64</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.jogl</groupId>
-				<artifactId>jogl-all</artifactId>
-				<version>${org.jogamp.jogl.jogl-all.version}</version>
 				<classifier>natives-linux-aarch64</classifier>
 			</dependency>
 			<dependency>
@@ -5838,12 +5717,6 @@
 				<groupId>org.jogamp.jogl</groupId>
 				<artifactId>jogl-all</artifactId>
 				<version>${org.jogamp.jogl.jogl-all.version}</version>
-				<classifier>natives-linux-i586</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.jogl</groupId>
-				<artifactId>jogl-all</artifactId>
-				<version>${org.jogamp.jogl.jogl-all.version}</version>
 				<classifier>natives-macosx-universal</classifier>
 			</dependency>
 			<dependency>
@@ -5851,12 +5724,6 @@
 				<artifactId>jogl-all</artifactId>
 				<version>${org.jogamp.jogl.jogl-all.version}</version>
 				<classifier>natives-windows-amd64</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.jogl</groupId>
-				<artifactId>jogl-all</artifactId>
-				<version>${org.jogamp.jogl.jogl-all.version}</version>
-				<classifier>natives-windows-i586</classifier>
 			</dependency>
 			<dependency>
 				<groupId>org.jogamp.jogl</groupId>
@@ -5868,30 +5735,6 @@
 				<groupId>org.jogamp.jogl</groupId>
 				<artifactId>jogl-all-noawt</artifactId>
 				<version>${org.jogamp.jogl.jogl-all-noawt.version}</version>
-				<classifier>natives-android-armv6</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.jogl</groupId>
-				<artifactId>jogl-all-noawt</artifactId>
-				<version>${org.jogamp.jogl.jogl-all-noawt.version}</version>
-				<classifier>natives-android-x86</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.jogl</groupId>
-				<artifactId>jogl-all-noawt</artifactId>
-				<version>${org.jogamp.jogl.jogl-all-noawt.version}</version>
-				<classifier>natives-ios-amd64</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.jogl</groupId>
-				<artifactId>jogl-all-noawt</artifactId>
-				<version>${org.jogamp.jogl.jogl-all-noawt.version}</version>
-				<classifier>natives-ios-arm64</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.jogl</groupId>
-				<artifactId>jogl-all-noawt</artifactId>
-				<version>${org.jogamp.jogl.jogl-all-noawt.version}</version>
 				<classifier>natives-linux-aarch64</classifier>
 			</dependency>
 			<dependency>
@@ -5910,12 +5753,6 @@
 				<groupId>org.jogamp.jogl</groupId>
 				<artifactId>jogl-all-noawt</artifactId>
 				<version>${org.jogamp.jogl.jogl-all-noawt.version}</version>
-				<classifier>natives-linux-i586</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.jogl</groupId>
-				<artifactId>jogl-all-noawt</artifactId>
-				<version>${org.jogamp.jogl.jogl-all-noawt.version}</version>
 				<classifier>natives-macosx-universal</classifier>
 			</dependency>
 			<dependency>
@@ -5923,12 +5760,6 @@
 				<artifactId>jogl-all-noawt</artifactId>
 				<version>${org.jogamp.jogl.jogl-all-noawt.version}</version>
 				<classifier>natives-windows-amd64</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.jogamp.jogl</groupId>
-				<artifactId>jogl-all-noawt</artifactId>
-				<version>${org.jogamp.jogl.jogl-all-noawt.version}</version>
-				<classifier>natives-windows-i586</classifier>
 			</dependency>
 
 			<!-- JOML - https://joml-ci.github.io/JOML/ -->
