@@ -2039,6 +2039,27 @@
 		<jzlib.version>1.1.3</jzlib.version>
 		<com.jcraft.jzlib.version>${jzlib.version}</com.jcraft.jzlib.version>
 
+		<!-- Jzy3d - http://jzy3d.org/ -->
+		<jzy3d.version>2.2.0</jzy3d.version>
+		<jzy3d-core.version>${jzy3d.version}</jzy3d-core.version>
+		<jzy3d-core-awt.version>${jzy3d.version}</jzy3d-core-awt.version>
+		<jzy3d-emul-gl-awt.version>${jzy3d.version}</jzy3d-emul-gl-awt.version>
+		<jzy3d-jGL-awt.version>${jzy3d.version}</jzy3d-jGL-awt.version>
+		<jzy3d-jdt-core.version>${jzy3d.version}</jzy3d-jdt-core.version>
+		<jzy3d-native-jogl-awt.version>${jzy3d.version}</jzy3d-native-jogl-awt.version>
+		<jzy3d-native-jogl-core.version>${jzy3d.version}</jzy3d-native-jogl-core.version>
+		<jzy3d-native-jogl-swing.version>${jzy3d.version}</jzy3d-native-jogl-swing.version>
+		<jzy3d-tester.version>${jzy3d.version}</jzy3d-tester.version>
+		<org.jzy3d.jzy3d-core-awt.version>${jzy3d-core-awt.version}</org.jzy3d.jzy3d-core-awt.version>
+		<org.jzy3d.jzy3d-core.version>${jzy3d-core.version}</org.jzy3d.jzy3d-core.version>
+		<org.jzy3d.jzy3d-emul-gl-awt.version>${jzy3d-emul-gl-awt.version}</org.jzy3d.jzy3d-emul-gl-awt.version>
+		<org.jzy3d.jzy3d-jGL-awt.version>${jzy3d-jGL-awt.version}</org.jzy3d.jzy3d-jGL-awt.version>
+		<org.jzy3d.jzy3d-jdt-core.version>${jzy3d-jdt-core.version}</org.jzy3d.jzy3d-jdt-core.version>
+		<org.jzy3d.jzy3d-native-jogl-awt.version>${jzy3d-native-jogl-awt.version}</org.jzy3d.jzy3d-native-jogl-awt.version>
+		<org.jzy3d.jzy3d-native-jogl-core.version>${jzy3d-native-jogl-core.version}</org.jzy3d.jzy3d-native-jogl-core.version>
+		<org.jzy3d.jzy3d-native-jogl-swing.version>${jzy3d-native-jogl-swing.version}</org.jzy3d.jzy3d-native-jogl-swing.version>
+		<org.jzy3d.jzy3d-tester.version>${jzy3d-tester.version}</org.jzy3d.jzy3d-tester.version>
+
 		<!-- Kotlin - https://kotlinlang.org/ -->
 		<!-- NB: kotlin.version is defined in pom-scijava-base. -->
 		<kotlin-compiler-embeddable.version>${kotlin.version}</kotlin-compiler-embeddable.version>
@@ -3634,6 +3655,22 @@
 				<groupId>org.morphonets</groupId>
 				<artifactId>SNT</artifactId>
 				<version>${org.morphonets.SNT.version}</version>
+				<exclusions>
+					<exclusion>
+						<!--
+						Replaced by org.jzy3d:jzy3d-emul-gl-awt
+						-->
+						<groupId>org.jzy3d</groupId>
+						<artifactId>jzy3d-emul-gl</artifactId>
+					</exclusion>
+					<exclusion>
+						<!--
+						Replaced by org.jzy3d:jzy3d-jGL-awt
+						-->
+						<groupId>org.jzy3d</groupId>
+						<artifactId>jGL</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<!-- MaMuT - https://imagej.net/plugins/mamut -->
@@ -3988,6 +4025,18 @@
 				<groupId>net.clearvolume</groupId>
 				<artifactId>cleargl</artifactId>
 				<version>${net.clearvolume.cleargl.version}</version>
+				<exclusions>
+					<exclusion>
+						<!-- Brings in all gluegen-rt native classifiers. -->
+						<groupId>org.jogamp.gluegen</groupId>
+						<artifactId>gluegen-rt-main</artifactId>
+					</exclusion>
+					<exclusion>
+						<!-- Brings in all jogl-all native classifiers. -->
+						<groupId>org.jogamp.jogl</groupId>
+						<artifactId>jogl-all-main</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<!-- Third party components -->
@@ -5936,6 +5985,186 @@
 				<groupId>com.jcraft</groupId>
 				<artifactId>jzlib</artifactId>
 				<version>${com.jcraft.jzlib.version}</version>
+			</dependency>
+
+			<!-- Jzy3d - http://jzy3d.org/ -->
+			<dependency>
+				<groupId>org.jzy3d</groupId>
+				<artifactId>jzy3d-core</artifactId>
+				<version>${org.jzy3d.jzy3d-core.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jzy3d</groupId>
+				<artifactId>jzy3d-core-awt</artifactId>
+				<version>${org.jzy3d.jzy3d-core-awt.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jzy3d</groupId>
+				<artifactId>jzy3d-emul-gl-awt</artifactId>
+				<version>${org.jzy3d.jzy3d-emul-gl-awt.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jzy3d</groupId>
+				<artifactId>jzy3d-jGL-awt</artifactId>
+				<version>${org.jzy3d.jzy3d-jGL-awt.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jzy3d</groupId>
+				<artifactId>jzy3d-jdt-core</artifactId>
+				<version>${org.jzy3d.jzy3d-jdt-core.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jzy3d</groupId>
+				<artifactId>jzy3d-native-jogl-awt</artifactId>
+				<version>${org.jzy3d.jzy3d-native-jogl-awt.version}</version>
+				<exclusions>
+					<!-- Conflicts with properly packaged jogamp native classifiers. -->
+					<exclusion>
+						<groupId>org.jogamp.gluegen</groupId>
+						<artifactId>gluegen-rt-natives-macosx-universal</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jogamp.gluegen</groupId>
+						<artifactId>gluegen-rt-natives-linux-aarch64</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jogamp.gluegen</groupId>
+						<artifactId>gluegen-rt-natives-linux-amd64</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jogamp.gluegen</groupId>
+						<artifactId>gluegen-rt-natives-linux-armv6hf</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jogamp.gluegen</groupId>
+						<artifactId>gluegen-rt-natives-linux-i586</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jogamp.gluegen</groupId>
+						<artifactId>gluegen-rt-natives-macosx-universal</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jogamp.gluegen</groupId>
+						<artifactId>gluegen-rt-natives-windows-amd64</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jogamp.gluegen</groupId>
+						<artifactId>gluegen-rt-natives-windows-i586</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jogamp.jogl</groupId>
+						<artifactId>jogl-all-natives-linux-aarch64</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jogamp.jogl</groupId>
+						<artifactId>jogl-all-natives-linux-amd64</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jogamp.jogl</groupId>
+						<artifactId>jogl-all-natives-linux-armv6hf</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jogamp.jogl</groupId>
+						<artifactId>jogl-all-natives-linux-i586</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jogamp.jogl</groupId>
+						<artifactId>jogl-all-natives-macosx-universal</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jogamp.jogl</groupId>
+						<artifactId>jogl-all-natives-windows-amd64</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jogamp.jogl</groupId>
+						<artifactId>jogl-all-natives-windows-i586</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.jzy3d</groupId>
+				<artifactId>jzy3d-native-jogl-core</artifactId>
+				<version>${org.jzy3d.jzy3d-native-jogl-core.version}</version>
+				<exclusions>
+					<!-- Conflicts with properly packaged jogamp native classifiers. -->
+					<exclusion>
+						<groupId>org.jogamp.gluegen</groupId>
+						<artifactId>gluegen-rt-natives-macosx-universal</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jogamp.gluegen</groupId>
+						<artifactId>gluegen-rt-natives-linux-aarch64</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jogamp.gluegen</groupId>
+						<artifactId>gluegen-rt-natives-linux-amd64</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jogamp.gluegen</groupId>
+						<artifactId>gluegen-rt-natives-linux-armv6hf</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jogamp.gluegen</groupId>
+						<artifactId>gluegen-rt-natives-linux-i586</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jogamp.gluegen</groupId>
+						<artifactId>gluegen-rt-natives-macosx-universal</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jogamp.gluegen</groupId>
+						<artifactId>gluegen-rt-natives-windows-amd64</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jogamp.gluegen</groupId>
+						<artifactId>gluegen-rt-natives-windows-i586</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jogamp.jogl</groupId>
+						<artifactId>jogl-all-natives-linux-aarch64</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jogamp.jogl</groupId>
+						<artifactId>jogl-all-natives-linux-amd64</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jogamp.jogl</groupId>
+						<artifactId>jogl-all-natives-linux-armv6hf</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jogamp.jogl</groupId>
+						<artifactId>jogl-all-natives-linux-i586</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jogamp.jogl</groupId>
+						<artifactId>jogl-all-natives-macosx-universal</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jogamp.jogl</groupId>
+						<artifactId>jogl-all-natives-windows-amd64</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jogamp.jogl</groupId>
+						<artifactId>jogl-all-natives-windows-i586</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.jzy3d</groupId>
+				<artifactId>jzy3d-native-jogl-swing</artifactId>
+				<version>${org.jzy3d.jzy3d-native-jogl-swing.version}</version>
+				<exclusions>
+					<exclusion>
+						<!-- Conflicts with com.miglayout:miglayout-swing -->
+						<groupId>com.miglayout</groupId>
+						<artifactId>miglayout</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.jzy3d</groupId>
+				<artifactId>jzy3d-tester</artifactId>
+				<version>${org.jzy3d.jzy3d-tester.version}</version>
 			</dependency>
 
 			<!-- Kotlin - https://kotlinlang.org/ -->
