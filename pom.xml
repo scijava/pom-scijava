@@ -2102,7 +2102,11 @@
 		<com.esotericsoftware.reflectasm.version>${reflectasm.version}</com.esotericsoftware.reflectasm.version>
 
 		<!-- Logback - https://logback.qos.ch/ -->
-		<logback.version>1.3.5</logback.version> <!-- NB: 1.3.x is the last version with Java 8 support! -->
+		<!--
+		NB: 1.3.x is the last version with Java 8 support,
+		and 1.2.x is the last version with an SLF4J binding in logback-classic.
+		-->
+		<logback.version>1.2.11</logback.version>
 		<logback-classic.version>${logback.version}</logback-classic.version>
 		<logback-core.version>${logback.version}</logback-core.version>
 		<ch.qos.logback.logback-classic.version>${logback-classic.version}</ch.qos.logback.logback-classic.version>
