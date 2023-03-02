@@ -335,7 +335,7 @@
 		<org.scijava.scijava-cache.version>${scijava-cache.version}</org.scijava.scijava-cache.version>
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.90.2</scijava-common.version>
+		<scijava-common.version>2.91.0</scijava-common.version>
 		<org.scijava.scijava-common.version>${scijava-common.version}</org.scijava.scijava-common.version>
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
@@ -483,7 +483,7 @@
 		<net.imagej.ij1-patcher.version>${ij1-patcher.version}</net.imagej.ij1-patcher.version>
 
 		<!-- ImageJ Common - https://github.com/imagej/imagej-common -->
-		<imagej-common.version>2.0.2</imagej-common.version>
+		<imagej-common.version>2.0.3</imagej-common.version>
 		<net.imagej.imagej-common.version>${imagej-common.version}</net.imagej.imagej-common.version>
 
 		<!-- ImageJ Deprecated - https://github.com/imagej/imagej-deprecated -->
@@ -527,7 +527,7 @@
 		<net.imagej.imagej-opencv.version>${imagej-opencv.version}</net.imagej.imagej-opencv.version>
 
 		<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
-		<imagej-ops.version>0.49.1</imagej-ops.version>
+		<imagej-ops.version>1.0.0</imagej-ops.version>
 		<net.imagej.imagej-ops.version>${imagej-ops.version}</net.imagej.imagej-ops.version>
 
 		<!-- ImageJ Plugins: Batch - https://github.com/imagej/imagej-plugins-batch -->
