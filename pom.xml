@@ -1834,7 +1834,12 @@
 		<jetty-http.version>${jetty.version}</jetty-http.version>
 		<jetty-http-spi.version>${jetty.version}</jetty-http-spi.version>
 		<jetty-io.version>${jetty.version}</jetty-io.version>
-		<jetty-jaas.version>${jetty.version}</jetty-jaas.version>
+		<!--
+		NB: We do not manage jetty-jaas. It depends on
+		org.apache.directory.api:api-ldap-model, which depends on
+		org.apache.servicemix.bundles:org.apache.servicemix.bundles.antlr,
+		which is a fork of antlr, which conflicts with antlr:antlr.
+		-->
 		<jetty-jaspi.version>${jetty.version}</jetty-jaspi.version>
 		<jetty-jmx.version>${jetty.version}</jetty-jmx.version>
 		<jetty-jndi.version>${jetty.version}</jetty-jndi.version>
@@ -1868,7 +1873,6 @@
 		<org.eclipse.jetty.jetty-http.version>${jetty-http.version}</org.eclipse.jetty.jetty-http.version>
 		<org.eclipse.jetty.jetty-http-spi.version>${jetty-http-spi.version}</org.eclipse.jetty.jetty-http-spi.version>
 		<org.eclipse.jetty.jetty-io.version>${jetty-io.version}</org.eclipse.jetty.jetty-io.version>
-		<org.eclipse.jetty.jetty-jaas.version>${jetty-jaas.version}</org.eclipse.jetty.jetty-jaas.version>
 		<org.eclipse.jetty.jetty-jaspi.version>${jetty-jaspi.version}</org.eclipse.jetty.jetty-jaspi.version>
 		<org.eclipse.jetty.jetty-jmx.version>${jetty-jmx.version}</org.eclipse.jetty.jetty-jmx.version>
 		<org.eclipse.jetty.jetty-jndi.version>${jetty-jndi.version}</org.eclipse.jetty.jetty-jndi.version>
@@ -5316,11 +5320,6 @@
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-io</artifactId>
 				<version>${org.eclipse.jetty.jetty-io.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.eclipse.jetty</groupId>
-				<artifactId>jetty-jaas</artifactId>
-				<version>${org.eclipse.jetty.jetty-jaas.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.eclipse.jetty</groupId>
