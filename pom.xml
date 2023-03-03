@@ -1420,7 +1420,7 @@
 		<args4j.args4j.version>${args4j.version}</args4j.args4j.version>
 
 		<!-- ASM - https://asm.ow2.io/ -->
-		<asm.version>5.2</asm.version> <!-- NB: 5.x is the last version with Java 8 support! -->
+		<asm.version>9.4</asm.version>
 		<asm-analysis.version>${asm.version}</asm-analysis.version>
 		<asm-commons.version>${asm.version}</asm-commons.version>
 		<asm-tree.version>${asm.version}</asm-tree.version>
