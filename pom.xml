@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>34.0.1-SNAPSHOT</version>
+	<version>34.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -571,7 +571,7 @@
 		<net.imagej.imagej-ui-swing.version>${imagej-ui-swing.version}</net.imagej.imagej-ui-swing.version>
 
 		<!-- ImageJ Updater - https://github.com/imagej/imagej-updater -->
-		<imagej-updater.version>0.11.0</imagej-updater.version>
+		<imagej-updater.version>1.0.0</imagej-updater.version>
 		<net.imagej.imagej-updater.version>${imagej-updater.version}</net.imagej.imagej-updater.version>
 
 		<!-- Op Finder - https://github.com/imagej/op-finder -->
@@ -688,7 +688,7 @@
 		<Auto_Local_Threshold.version>1.11.0</Auto_Local_Threshold.version>
 		<sc.fiji.Auto_Local_Threshold.version>${Auto_Local_Threshold.version}</sc.fiji.Auto_Local_Threshold.version>
 
-		<Auto_Threshold.version>1.17.2</Auto_Threshold.version>
+		<Auto_Threshold.version>1.18.0</Auto_Threshold.version>
 		<sc.fiji.Auto_Threshold.version>${Auto_Threshold.version}</sc.fiji.Auto_Threshold.version>
 
 		<BalloonSegmentation.version>3.0.1</BalloonSegmentation.version>
@@ -1125,7 +1125,7 @@
 		<org.janelia.saalfeldlab.n5-hdf5.version>${n5-hdf5.version}</org.janelia.saalfeldlab.n5-hdf5.version>
 
 		<!-- N5 ImageJ Bindings - https://github.com/saalfeldlab/n5-ij -->
-		<n5-ij.version>3.2.2</n5-ij.version>
+		<n5-ij.version>3.2.3</n5-ij.version>
 		<org.janelia.saalfeldlab.n5-ij.version>${n5-ij.version}</org.janelia.saalfeldlab.n5-ij.version>
 
 		<!-- N5 ImgLib2 Bindings - https://github.com/saalfeldlab/n5-imglib2 -->
@@ -1133,7 +1133,7 @@
 		<org.janelia.saalfeldlab.n5-imglib2.version>${n5-imglib2.version}</org.janelia.saalfeldlab.n5-imglib2.version>
 
 		<!-- N5 Viewer for Fiji - https://github.com/saalfeldlab/n5-viewer_fiji -->
-		<n5-viewer_fiji.version>5.1.0</n5-viewer_fiji.version>
+		<n5-viewer_fiji.version>5.3.0</n5-viewer_fiji.version>
 		<org.janelia.saalfeldlab.n5-viewer_fiji.version>${n5-viewer_fiji.version}</org.janelia.saalfeldlab.n5-viewer_fiji.version>
 
 		<!-- N5 Zarr - https://github.com/saalfeldlab/n5-zarr -->
@@ -1143,7 +1143,7 @@
 		<!-- Fiji-adjacent projects (available from ImageJ update sites) -->
 
 		<!-- MorphoLibJ - https://imagej.net/plugins/morpholibj -->
-		<MorphoLibJ.version>1.5.0</MorphoLibJ.version>
+		<MorphoLibJ.version>1.6.0.1</MorphoLibJ.version>
 		<MorphoLibJ_.version>${MorphoLibJ.version}</MorphoLibJ_.version>
 		<fr.inra.ijpb.MorphoLibJ_.version>${MorphoLibJ_.version}</fr.inra.ijpb.MorphoLibJ_.version>
 
@@ -1166,8 +1166,8 @@
 		<net.haesleinhuepf.clijx-weka_.version>${clijx-weka_.version}</net.haesleinhuepf.clijx-weka_.version>
 
 		<!-- BigStitcher - https://imagej.net/plugins/bigstitcher -->
-		<BigStitcher.version>0.8.3</BigStitcher.version>
-		<multiview-reconstruction.version>0.11.5</multiview-reconstruction.version>
+		<BigStitcher.version>1.1.3</BigStitcher.version>
+		<multiview-reconstruction.version>1.2.8</multiview-reconstruction.version>
 		<multiview-simulation.version>0.2.0</multiview-simulation.version>
 		<net.preibisch.BigStitcher.version>${BigStitcher.version}</net.preibisch.BigStitcher.version>
 		<net.preibisch.multiview-reconstruction.version>${multiview-reconstruction.version}</net.preibisch.multiview-reconstruction.version>
@@ -1187,16 +1187,16 @@
 		<org.bonej.bonej-utilities.version>${bonej-utilities.version}</org.bonej.bonej-utilities.version>
 
 		<!-- SNT - https://imagej.net/plugins/snt -->
-		<SNT.version>4.1.9</SNT.version>
+		<SNT.version>4.1.14</SNT.version>
 		<org.morphonets.SNT.version>${SNT.version}</org.morphonets.SNT.version>
 
 		<!-- MaMuT - https://github.com/fiji/MaMuT -->
-		<MaMuT.version>7.1.0</MaMuT.version>
+		<MaMuT.version>7.1.1</MaMuT.version>
 		<sc.fiji.MaMuT.version>${MaMuT.version}</sc.fiji.MaMuT.version>
 
 		<!-- Labkit - https://imagej.net/plugins/labkit -->
 		<labkit-pixel-classification.version>0.1.15</labkit-pixel-classification.version>
-		<labkit-ui.version>0.3.8</labkit-ui.version>
+		<labkit-ui.version>0.3.10</labkit-ui.version>
 		<sc.fiji.labkit-pixel-classification.version>${labkit-pixel-classification.version}</sc.fiji.labkit-pixel-classification.version>
 		<sc.fiji.labkit-ui.version>${labkit-ui.version}</sc.fiji.labkit-ui.version>
 
