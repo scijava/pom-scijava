@@ -912,7 +912,7 @@
 		<TopoJ_.version>${TopoJ.version}</TopoJ_.version>
 		<sc.fiji.TopoJ_.version>${TopoJ_.version}</sc.fiji.TopoJ_.version>
 
-		<Trainable_Segmentation.version>3.3.3</Trainable_Segmentation.version>
+		<Trainable_Segmentation.version>3.3.4</Trainable_Segmentation.version>
 		<sc.fiji.Trainable_Segmentation.version>${Trainable_Segmentation.version}</sc.fiji.Trainable_Segmentation.version>
 
 		<TrakEM2_Archipelago.version>2.0.4</TrakEM2_Archipelago.version>
@@ -1137,7 +1137,7 @@
 		<org.janelia.saalfeldlab.n5-viewer_fiji.version>${n5-viewer_fiji.version}</org.janelia.saalfeldlab.n5-viewer_fiji.version>
 
 		<!-- N5 Zarr - https://github.com/saalfeldlab/n5-zarr -->
-		<n5-zarr.version>0.0.7</n5-zarr.version>
+		<n5-zarr.version>0.0.8</n5-zarr.version>
 		<org.janelia.saalfeldlab.n5-zarr.version>${n5-zarr.version}</org.janelia.saalfeldlab.n5-zarr.version>
 
 		<!-- Fiji-adjacent projects (available from ImageJ update sites) -->
