@@ -21,6 +21,9 @@ depList = deps.getElementsByTagName('dependency')
 
 # Artifacts to exclude from the mega melt.
 ignoredArtifacts = [
+    # TEMP: The SNT project needs a new release with cleaned
+    # up dependencies before it can be reenabled in the melt.
+    'SNT',
     # TEMP: The original ImageJ requires Java 9+ to compile,
     # because it has a module-info.java, so skip it until the
     # component collection is updated from Java 8 to Java 11.
