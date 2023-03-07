@@ -757,7 +757,7 @@
 		<Fiji_Plugins.version>3.1.2</Fiji_Plugins.version>
 		<sc.fiji.Fiji_Plugins.version>${Fiji_Plugins.version}</sc.fiji.Fiji_Plugins.version>
 
-		<FilamentDetector.version>2.0.0</FilamentDetector.version>
+		<FilamentDetector.version>2.0.1</FilamentDetector.version>
 		<sc.fiji.FilamentDetector.version>${FilamentDetector.version}</sc.fiji.FilamentDetector.version>
 
 		<FlowJ.version>2.0.1</FlowJ.version>
