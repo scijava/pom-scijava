@@ -49,7 +49,7 @@ jobs:
         if: env.cacheChanged == 'true'
         id: delete-cache
         run: |
-          gh api --method DELETE -H "Accept: application/vnd.github+json" /repos/scijava/pom-scijava/actions/caches?key=${{ runner.os }}-cache
+          gh api --method DELETE -H "Accept: application/vnd.github+json" /repos/scijava/pom-scijava/actions/caches?key=${{ runner.os }}-cache || true
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 
