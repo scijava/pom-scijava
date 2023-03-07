@@ -87,7 +87,9 @@ chmod +x "$meltingPotScript" &&
 "$meltingPotScript" "$megaMeltDir" \
   -r scijava.public::::https://maven.scijava.org/content/groups/public \
   -o "$meltingPotDir" \
+  -i 'net.imagej:*' \
   -i 'org.scijava:*' \
+  -e 'net.imagej:ij' \
   -e 'org.scijava:j3dcore' \
   -e 'org.scijava:j3dutils' \
   -e 'org.scijava:jep' \
