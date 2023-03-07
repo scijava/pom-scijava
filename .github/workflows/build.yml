@@ -46,7 +46,7 @@ jobs:
           SIGNING_ASC: ${{ secrets.SIGNING_ASC }}
 
       - name: Delete the melting-pot cache
-        if: env.update-cache == 'true'
+        if: env.cacheChanged == 'true'
         id: delete-cache
         run: |
           gh api --method DELETE -H "Accept: application/vnd.github+json" /repos/scijava/pom-scijava/actions/caches?key=${{ runner.os }}-cache
@@ -54,7 +54,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 
       - name: Save the melting-pot cache
-        if: env.update-cache == 'true'
+        if: env.cacheChanged == 'true'
         id: save-cache
         uses: actions/cache/save@v3
         with:

@@ -28,9 +28,9 @@ fi
 
 # Determine if cache needs to be re-generated
 if [ "$cache_modified_post" -gt "$cache_modified_pre" ]; then
-  echo "update-cache=true" >> $GITHUB_ENV
+  echo "cacheChanged=true" >> $GITHUB_ENV
 else
-  echo "update-cache=false" >> $GITHUB_ENV
+  echo "cacheChanged=false" >> $GITHUB_ENV
 fi
 
 # NB: This script exits 0, but saves the exit code for a later build step.
