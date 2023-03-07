@@ -27,9 +27,9 @@ jobs:
       - name: Set up CI environment
         run: .github/setup.sh
 
-      - name: Restore the cache
+      - name: Restore the melting-pot cache
         id: restore-cache
-        uses: actions/cache@v3
+        uses: actions/cache/restore@v3
         with:
           path: ~/.cache/scijava/melting-pot
           key: ${{ runner.os }}-cache
@@ -45,7 +45,7 @@ jobs:
           OSSRH_PASS: ${{ secrets.OSSRH_PASS }}
           SIGNING_ASC: ${{ secrets.SIGNING_ASC }}
 
-      - name: Delete cache
+      - name: Delete the melting-pot cache
         if: env.update-cache == 'true'
         id: delete-cache
         run: |
@@ -53,10 +53,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 
-      - name: Update cache post-delete
+      - name: Save the melting-pot cache
         if: env.update-cache == 'true'
-        id: update-cache
-        uses: actions/cache@v3
+        id: save-cache
+        uses: actions/cache/save@v3
         with:
           path: ~/.cache/scijava/melting-pot
           key: ${{ runner.os }}-cache
