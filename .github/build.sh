@@ -13,7 +13,7 @@ last_cache_modified () {
 cache_modified_pre=0
 cache_modified_post=0
 
-if [ -f "~/.cache/scijava/melting-pot" ]; then
+if [ -d "$HOME/.cache/scijava/melting-pot" ]; then
   cache_modified_pre=$(last_cache_modified)
 fi
 
@@ -22,7 +22,7 @@ tests/run.sh
 meltResult=$?
 
 # Record the last time of cache modification after running melting-pot
-if [ -f "~/.cache/scijava/melting-pot" ]; then
+if [ -d "$HOME/.cache/scijava/melting-pot" ]; then
   cache_modified_post=$(last_cache_modified)
 fi
 
