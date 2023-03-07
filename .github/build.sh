@@ -33,4 +33,5 @@ else
   echo "update-cache=false" >> $GITHUB_ENV
 fi
 
-exit $meltResult
+# NB: This script exits 0, but saves the exit code for a later build step.
+echo $meltResult > exit-code

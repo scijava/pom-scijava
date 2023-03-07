@@ -60,3 +60,7 @@ jobs:
         with:
           path: ~/.cache/scijava/melting-pot
           key: ${{ runner.os }}-cache
+
+      - name: Return the exit code
+        id: exit-build
+        run: .github/exit.sh
