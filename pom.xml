@@ -623,7 +623,7 @@
 		<!-- SCIFIO - https://github.com/scifio -->
 
 		<!-- SCIFIO - https://github.com/scifio/scifio -->
-		<scifio.version>0.43.3</scifio.version>
+		<scifio.version>0.43.4</scifio.version>
 		<io.scif.scifio.version>${scifio.version}</io.scif.scifio.version>
 
 		<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
@@ -1287,7 +1287,7 @@
 		<!-- Third party components -->
 
 		<!-- Amazon S3 - https://aws.amazon.com/sdkforjava -->
-		<aws.version>1.12.420</aws.version>
+		<aws.version>1.12.421</aws.version>
 		<aws-java-sdk-core.version>${aws.version}</aws-java-sdk-core.version>
 		<aws-java-sdk-s3.version>${aws.version}</aws-java-sdk-s3.version>
 		<com.amazonaws.aws-java-sdk-core.version>${aws-java-sdk-core.version}</com.amazonaws.aws-java-sdk-core.version>
@@ -1372,9 +1372,9 @@
 
 		<!-- Apache Maven - https://maven.apache.org/ -->
 		<maven-artifact-transfer.version>0.13.1</maven-artifact-transfer.version>
-		<maven-common-artifact-filters.version>3.2.0</maven-common-artifact-filters.version>
-		<maven-core.version>3.8.6</maven-core.version>
-		<maven-plugin-tools-api.version>3.6.1</maven-plugin-tools-api.version>
+		<maven-common-artifact-filters.version>3.3.2</maven-common-artifact-filters.version>
+		<maven-core.version>3.9.0</maven-core.version>
+		<maven-plugin-tools-api.version>3.8.1</maven-plugin-tools-api.version>
 		<plexus-component-annotations.version>2.1.1</plexus-component-annotations.version>
 		<plexus-utils.version>3.5.1</plexus-utils.version>
 		<sisu-inject-bean.version>2.6.0</sisu-inject-bean.version>
@@ -1670,9 +1670,9 @@
 		<!-- Google Cloud Storage - https://github.com/googleapis/google-cloud-java -->
 		<google-cloud-core.version>2.12.0</google-cloud-core.version>
 		<google-cloud-core-http.version>${google-cloud-core.version}</google-cloud-core-http.version>
-		<google-cloud-nio.version>0.126.6</google-cloud-nio.version>
-		<google-cloud-resourcemanager.version>0.117.2-alpha</google-cloud-resourcemanager.version>
-		<google-cloud-storage.version>2.19.0</google-cloud-storage.version>
+		<google-cloud-nio.version>0.126.7</google-cloud-nio.version>
+		<google-cloud-resourcemanager.version>1.14.0</google-cloud-resourcemanager.version>
+		<google-cloud-storage.version>2.20.0</google-cloud-storage.version>
 		<com.google.cloud.google-cloud-core.version>${google-cloud-core.version}</com.google.cloud.google-cloud-core.version>
 		<com.google.cloud.google-cloud-core-http.version>${google-cloud-core-http.version}</com.google.cloud.google-cloud-core-http.version>
 		<com.google.cloud.google-cloud-nio.version>${google-cloud-nio.version}</com.google.cloud.google-cloud-nio.version>
@@ -1724,7 +1724,7 @@
 		<com.google.j2objc.j2objc-annotations.version>${j2objc-annotations.version}</com.google.j2objc.j2objc-annotations.version>
 
 		<!-- Jackrabbit WebDAV - https://jackrabbit.apache.org/jcr/components/jackrabbit-webdav-library.html -->
-		<jackrabbit-webdav.version>2.21.13</jackrabbit-webdav.version>
+		<jackrabbit-webdav.version>2.21.15</jackrabbit-webdav.version>
 		<org.apache.jackrabbit.jackrabbit-webdav.version>${jackrabbit-webdav.version}</org.apache.jackrabbit.jackrabbit-webdav.version>
 
 		<!-- Jackson - https://github.com/FasterXML/jackson -->
@@ -2021,7 +2021,7 @@
 		<junit.junit.version>${junit.version}</junit.junit.version>
 
 		<!-- JUnit 5 - https://junit.org/junit5/ -->
-		<junit-jupiter.version>5.9.1</junit-jupiter.version>
+		<junit-jupiter.version>5.9.2</junit-jupiter.version>
 		<junit-jupiter-api.version>${junit-jupiter.version}</junit-jupiter-api.version>
 		<junit-jupiter-engine.version>${junit-jupiter.version}</junit-jupiter-engine.version>
 		<junit-jupiter-migrationsupport.version>${junit-jupiter.version}</junit-jupiter-migrationsupport.version>
@@ -2144,7 +2144,7 @@
 		<org.objenesis.objenesis.version>${objenesis.version}</org.objenesis.objenesis.version>
 
 		<!-- OkHttp - https://square.github.io/okhttp/ -->
-		<okhttp.version>4.9.3</okhttp.version>
+		<okhttp.version>4.10.0</okhttp.version>
 		<okio.version>3.3.0</okio.version>
 		<com.squareup.okhttp3.okhttp.version>${okhttp.version}</com.squareup.okhttp3.okhttp.version>
 		<com.squareup.okio.okio.version>${okio.version}</com.squareup.okio.okio.version>
@@ -2231,7 +2231,7 @@
 		<org.springframework.spring-core.version>${spring-core.version}</org.springframework.spring-core.version>
 
 		<!-- TensorFlow - https://www.tensorflow.org/ -->
-		<tensorflow.version>1.12.0</tensorflow.version>
+		<tensorflow.version>1.15.0</tensorflow.version>
 		<libtensorflow.version>${tensorflow.version}</libtensorflow.version>
 		<libtensorflow_jni.version>${tensorflow.version}</libtensorflow_jni.version>
 		<libtensorflow_jni_gpu.version>${tensorflow.version}</libtensorflow_jni_gpu.version>
