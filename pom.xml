@@ -1287,7 +1287,7 @@
 		<!-- Third party components -->
 
 		<!-- Amazon S3 - https://aws.amazon.com/sdkforjava -->
-		<aws.version>1.12.421</aws.version>
+		<aws.version>1.12.423</aws.version>
 		<aws-java-sdk-core.version>${aws.version}</aws-java-sdk-core.version>
 		<aws-java-sdk-s3.version>${aws.version}</aws-java-sdk-s3.version>
 		<com.amazonaws.aws-java-sdk-core.version>${aws-java-sdk-core.version}</com.amazonaws.aws-java-sdk-core.version>
