@@ -36,6 +36,15 @@
         <ignoreVersion type="regex">.*-kohsuke-?[0-9]+</ignoreVersion>
       </ignoreVersions>
     </rule>
+    <rule groupId="com.miglayout" artifactId="*" comparisonMethod="maven">
+      <ignoreVersions>
+        <!--
+        As of version 11, MigLayout requires Java 11.
+        We cannot upgrade past 5.x while we still support Java 8.
+        -->
+        <ignoreVersion type="regex">^(?!5\.).*</ignoreVersion>
+      </ignoreVersions>
+    </rule>
     <rule groupId="com.squareup.okhttp3" artifactId="okhttp" comparisonMethod="maven">
       <ignoreVersions>
         <ignoreVersion type="regex">.*-(alpha|beta|rc)[-\.]?[0-9]+</ignoreVersion>
@@ -117,16 +126,15 @@
         <ignoreVersion type="regex">.*\.M[0-9]+</ignoreVersion>
       </ignoreVersions>
     </rule>
-    <rule groupId="com.miglayout" artifactId="*" comparisonMethod="maven">
+    <rule groupId="org.eclipse.jetty" artifactId="jetty-*" comparisonMethod="maven">
       <ignoreVersions>
-        <!-- NB: MigLayout 11+ requires Java 11. -->
-        <ignoreVersion type="regex">11\..*</ignoreVersion>
-      </ignoreVersions>
-    </rule>
-    <rule groupId="org.eclipse.jetty" artifactId="*" comparisonMethod="maven">
-      <ignoreVersions>
-        <!-- NB: Jetty 11+ requires Java 11. -->
-        <ignoreVersion type="regex">11\..*</ignoreVersion>
+        <!--
+        As of version 11, Jetty requires Java 11.
+        We cannot upgrade past 9.x while we still support Java 8.
+        -->
+        <ignoreVersion type="regex">^(?!9\.).*</ignoreVersion>
+        <ignoreVersion type="regex">.*[-\.](alpha|beta|rc)-?[0-9]+</ignoreVersion>
+        <ignoreVersion type="regex">.*\.RC[0-9]+</ignoreVersion>
       </ignoreVersions>
     </rule>
     <rule groupId="org.jetbrains.kotlin" artifactId="*" comparisonMethod="maven">
@@ -134,24 +142,27 @@
         <ignoreVersion type="regex">.*-(Beta|RC)[0-9]*</ignoreVersion>
       </ignoreVersions>
     </rule>
+    <rule groupId="org.jgrapht" artifactId="*" comparisonMethod="maven">
+      <!--
+      As of version 1.5, JGraphT requires Java 11.
+      We cannot upgrade past 1.4.x while we still support Java 8.
+      -->
+      <ignoreVersions>
+        <ignoreVersion type="regex">^(?!1\.4\.).*</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="org.mockito" artifactId="mockito-core" comparisonMethod="maven">
+      <ignoreVersions>
+        <!--
+        As of version 5, Mockito requires Java 11.
+        We cannot upgrade past 4.x while we still support Java 8.
+        -->
+        <ignoreVersion type="regex">^(?!4\.).*</ignoreVersion>
+      </ignoreVersions>
+    </rule>
     <rule groupId="org.openmicroscopy" artifactId="*" comparisonMethod="maven">
       <ignoreVersions>
         <ignoreVersion type="regex">.*-m[0-9]+</ignoreVersion>
-      </ignoreVersions>
-    </rule>
-    <rule groupId="org.eclipse.jetty" artifactId="*" comparisonMethod="maven">
-      <ignoreVersions>
-        <ignoreVersion type="regex">.*[-\.](alpha|beta|rc)-?[0-9]+</ignoreVersion>
-        <ignoreVersion type="regex">.*\.RC[0-9]+</ignoreVersion>
-      </ignoreVersions>
-    </rule>
-    <rule groupId="org.jgrapht" artifactId="*" comparisonMethod="maven">
-      <!--
-      As of version 1.5.0, the JGraphT project requires Java 11.
-      We cannot upgrade past 1.4.0 while we still support Java 8.
-      -->
-      <ignoreVersions>
-        <ignoreVersion type="regex">.*</ignoreVersion>
       </ignoreVersions>
     </rule>
     <rule groupId="org.slf4j" artifactId="*" comparisonMethod="maven">
