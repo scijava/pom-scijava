@@ -1643,12 +1643,16 @@
 		<!-- Google GAPIC - https://github.com/googleapis/gapic-generator-java -->
 		<api-common.version>2.6.2</api-common.version>
 		<gax.version>2.23.2</gax.version>
+		<gax-grpc.version>${gax.version}</gax-grpc.version>
 		<gax-httpjson.version>0.108.2</gax-httpjson.version>
 		<proto-google-common-protos.version>2.14.2</proto-google-common-protos.version>
 		<proto-google-iam-v1.version>1.9.2</proto-google-iam-v1.version>
 		<com.google.api.api-common.version>${api-common.version}</com.google.api.api-common.version>
 		<com.google.api.gax.version>${gax.version}</com.google.api.gax.version>
+		<com.google.api.gax-grpc.version>${gax-grpc.version}</com.google.api.gax-grpc.version>
 		<com.google.api.gax-httpjson.version>${gax-httpjson.version}</com.google.api.gax-httpjson.version>
+
+
 		<com.google.api.grpc.proto-google-common-protos.version>${proto-google-common-protos.version}</com.google.api.grpc.proto-google-common-protos.version>
 		<com.google.api.grpc.proto-google-iam-v1.version>${proto-google-iam-v1.version}</com.google.api.grpc.proto-google-iam-v1.version>
 
@@ -4883,6 +4887,11 @@
 				<groupId>com.google.api</groupId>
 				<artifactId>gax</artifactId>
 				<version>${com.google.api.gax.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.api</groupId>
+				<artifactId>gax-grpc</artifactId>
+				<version>${com.google.api.gax-grpc.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.google.api</groupId>
