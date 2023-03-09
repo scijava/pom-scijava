@@ -1822,7 +1822,7 @@
 		<org.scijava.jep.version>${jep.version}</org.scijava.jep.version>
 
 		<!-- Jetty - https://www.eclipse.org/jetty/ -->
-		<jetty.version>9.4.50.v20221201</jetty.version> <!-- NB: 9.x is last version with Java 8 support! -->
+		<jetty.version>9.4.51.v20230217</jetty.version> <!-- NB: 9.x is last version with Java 8 support! -->
 		<jetty-annotations.version>${jetty.version}</jetty-annotations.version>
 		<!--
 		NB: We do not manage jetty-ant. It depends on ant with old groupId (ant),
