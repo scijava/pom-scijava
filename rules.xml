@@ -1,0 +1,168 @@
+<ruleset comparisonMethod="maven"
+         xmlns="http://mojo.codehaus.org/versions-maven-plugin/rule/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://mojo.codehaus.org/versions-maven-plugin/rule/2.0.0 http://mojo.codehaus.org/versions-maven-plugin/xsd/rule-2.0.0.xsd">
+  <rules>
+    <rule groupId="antlr" artifactId="antlr" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion type="regex">20030911</ignoreVersion>
+        <ignoreVersion>3.0b5</ignoreVersion>
+        <ignoreVersion>3.0ea8</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="ch.qos.logback" artifactId="*" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion type="regex">.*-(alpha|beta|rc)-?[0-9]+</ignoreVersion>
+        <!-- NB: logback-classic does not ship an SLF4J binding after 1.2.x. -->
+        <ignoreVersion type="regex">1\.[34].*</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="com.fasterxml.jackson.core" artifactId="*" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion type="regex">.*-(alpha|beta|rc)-?[0-9]+</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="com.google.guava" artifactId="guava" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion type="regex">.*-android</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="com.google.protobuf" artifactId="*" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion type="regex">.*-(alpha|beta|rc)-?[0-9]+</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="com.jcraft" artifactId="jzlib" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion type="regex">.*-kohsuke-?[0-9]+</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="com.squareup.okhttp3" artifactId="okhttp" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion type="regex">.*-(alpha|beta|rc)[-\.]?[0-9]+</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="commons-beanutils" artifactId="commons-beanutils" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion type="regex">[0-9]{8}.*</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="commons-cli" artifactId="commons-cli" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion>20040117.000000</ignoreVersion>
+        <ignoreVersion type="regex">.*-pre[0-9]+</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="commons-codec" artifactId="commons-codec" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion type="regex">[0-9]{8}.*</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="commons-collections" artifactId="commons-collections" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion type="regex">[0-9]{8}.*</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="commons-io" artifactId="commons-io" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion type="regex">[0-9]{8}.*</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="commons-lang" artifactId="commons-lang" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion type="regex">[0-9]{8}.*</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="commons-logging" artifactId="commons-logging" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion type="regex">.*-does-not-exist</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="javax.enterprise" artifactId="cdi-api" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion type="regex">.*[\.-](Alpha|Beta|CR|EDR|PFD|PRD)([0-9]+(\.[0-9]+)*[a-z]?)?</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="jline" artifactId="jline" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion type="regex">.*\.M[0-9]+</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="junit" artifactId="*" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion type="regex">.*-(alpha|beta|rc)-?[0-9]+</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="mpicbg" artifactId="*" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion type="regex">[0-9]{8}</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="ome" artifactId="*" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion type="regex">.*-m[0-9]+</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="omero" artifactId="*" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion type="regex">.*-m[0-9]+-.*</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="org.apache.maven" artifactId="maven-core" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion type="regex">.*-(alpha|beta|rc)-?[0-9]+</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="org.eclipse.collections" artifactId="eclipse-collections" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion type="regex">.*\.M[0-9]+</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="com.miglayout" artifactId="*" comparisonMethod="maven">
+      <ignoreVersions>
+        <!-- NB: MigLayout 11+ requires Java 11. -->
+        <ignoreVersion type="regex">11\..*</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="org.eclipse.jetty" artifactId="*" comparisonMethod="maven">
+      <ignoreVersions>
+        <!-- NB: Jetty 11+ requires Java 11. -->
+        <ignoreVersion type="regex">11\..*</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="org.jetbrains.kotlin" artifactId="*" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion type="regex">.*-(Beta|RC)[0-9]*</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="org.openmicroscopy" artifactId="*" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion type="regex">.*-m[0-9]+</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="org.eclipse.jetty" artifactId="*" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion type="regex">.*[-\.](alpha|beta|rc)-?[0-9]+</ignoreVersion>
+        <ignoreVersion type="regex">.*\.RC[0-9]+</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="org.jgrapht" artifactId="*" comparisonMethod="maven">
+      <!--
+      As of version 1.5.0, the JGraphT project requires Java 11.
+      We cannot upgrade past 1.4.0 while we still support Java 8.
+      -->
+      <ignoreVersions>
+        <ignoreVersion type="regex">.*</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="org.slf4j" artifactId="*" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion type="regex">.*-(alpha|beta|rc)-?[0-9]+</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="org.tensorflow" artifactId="*" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion type="regex">.*-(alpha|beta|rc)-?[0-9]+</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+  </rules>
+</ruleset>

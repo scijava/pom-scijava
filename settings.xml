@@ -1,0 +1,10 @@
+<settings>
+	<mirrors>
+		<mirror>
+			<id>scijava-mirror</id>
+			<name>SciJava public repositories</name>
+			<url>https://maven.scijava.org/service/local/repo_groups/public/content</url>
+			<mirrorOf>*</mirrorOf>
+		</mirror>
+	</mirrors>
+</settings>
