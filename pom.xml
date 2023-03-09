@@ -2178,6 +2178,10 @@
 		<com.google.protobuf.protobuf-java-util.version>${protobuf-java-util.version}</com.google.protobuf.protobuf-java-util.version>
 		<com.google.protobuf.protobuf-kotlin.version>${protobuf-kotlin.version}</com.google.protobuf.protobuf-kotlin.version>
 
+		<!-- RE2/J - https://github.com/google/re2j -->
+		<re2j.version>1.7</re2j.version>
+		<com.google.re2j.re2j.version>${re2j.version}</com.google.re2j.re2j.version>
+
 		<!-- reload4j - https://reload4j.qos.ch/ -->
 		<reload4j.version>1.2.24</reload4j.version>
 		<ch.qos.reload4j.reload4j.version>${reload4j.version}</ch.qos.reload4j.reload4j.version>
@@ -6218,6 +6222,13 @@
 				<groupId>com.google.protobuf</groupId>
 				<artifactId>protobuf-kotlin</artifactId>
 				<version>${com.google.protobuf.protobuf-kotlin.version}</version>
+			</dependency>
+
+			<!-- RE2/J - https://github.com/google/re2j -->
+			<dependency>
+				<groupId>com.google.re2j</groupId>
+				<artifactId>re2j</artifactId>
+				<version>${com.google.re2j.re2j.version}</version>
 			</dependency>
 
 			<!-- reload4j - https://reload4j.qos.ch/ -->
