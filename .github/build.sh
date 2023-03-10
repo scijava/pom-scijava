@@ -4,9 +4,7 @@ sh ci-build.sh || { echo "Maven build failed. Skipping melting pot tests."; exit
 
 # Helper method to get the last cache modified date as seconds since epoch
 last_cache_modified () {
-  cache_modified=$(find ~/.cache/scijava/melting-pot -printf '%T@\n' | sort -r | head -n1)
-  cache_modified=${cache_modified%.*}
-  echo "$cache_modified"
+  find ~/.cache/scijava/melting-pot -printf '%T@\n' | sort -r | head -n1 | sed 's/\..*$//'
 }
 
 # Record the last time of cache modification before running melting-pot
