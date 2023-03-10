@@ -1370,6 +1370,13 @@
 		<org.codehaus.groovy.groovy-xml.version>${groovy-xml.version}</org.codehaus.groovy.groovy-xml.version>
 		<org.codehaus.groovy.groovy-yaml.version>${groovy-yaml.version}</org.codehaus.groovy.groovy-yaml.version>
 
+		<!-- Apache Log4j - https://logging.apache.org/log4j/2.x/ -->
+		<log4j.version>2.20.0</log4j.version>
+		<log4j-api.version>${log4j.version}</log4j-api.version>
+		<log4j-core.version>${log4j.version}</log4j-core.version>
+		<org.apache.logging.log4j.log4j-api.version>${log4j-api.version}</org.apache.logging.log4j.log4j-api.version>
+		<org.apache.logging.log4j.log4j-core.version>${log4j-core.version}</org.apache.logging.log4j.log4j-core.version>
+
 		<!-- Apache Maven - https://maven.apache.org/ -->
 		<maven-artifact-transfer.version>0.13.1</maven-artifact-transfer.version>
 		<maven-common-artifact-filters.version>3.3.2</maven-common-artifact-filters.version>
@@ -4252,6 +4259,18 @@
 				<groupId>org.codehaus.groovy</groupId>
 				<artifactId>groovy-yaml</artifactId>
 				<version>${org.codehaus.groovy.groovy-yaml.version}</version>
+			</dependency>
+
+			<!-- Apache Log4j - https://logging.apache.org/log4j/ -->
+			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-api</artifactId>
+				<version>${org.apache.logging.log4j.log4j-api.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-core</artifactId>
+				<version>${org.apache.logging.log4j.log4j-core.version}</version>
 			</dependency>
 
 			<!-- Apache Maven - https://maven.apache.org/ -->
