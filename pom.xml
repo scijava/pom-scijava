@@ -1308,6 +1308,12 @@
 		<org.antlr.antlr4.version>${antlr4.version}</org.antlr.antlr4.version>
 		<org.antlr.antlr4-runtime.version>${antlr4-runtime.version}</org.antlr.antlr4-runtime.version>
 
+		<!-- Apache Ant - https://ant.apache.org/ -->
+		<ant.version>1.10.13</ant.version>
+		<ant-launcher.version>${ant.version}</ant-launcher.version>
+		<org.apache.ant.ant.version>${ant.version}</org.apache.ant.ant.version>
+		<org.apache.ant.ant-launcher.version>${ant-launcher.version}</org.apache.ant.ant-launcher.version>
+
 		<!-- Apache Groovy - https://groovy-lang.org/ -->
 		<groovy.version>3.0.4</groovy.version>
 		<groovy-ant.version>${groovy.version}</groovy-ant.version>
@@ -1363,12 +1369,6 @@
 		<org.codehaus.groovy.groovy-testng.version>${groovy-testng.version}</org.codehaus.groovy.groovy-testng.version>
 		<org.codehaus.groovy.groovy-xml.version>${groovy-xml.version}</org.codehaus.groovy.groovy-xml.version>
 		<org.codehaus.groovy.groovy-yaml.version>${groovy-yaml.version}</org.codehaus.groovy.groovy-yaml.version>
-
-		<!-- Apache Ant - https://ant.apache.org/ -->
-		<ant.version>1.10.13</ant.version>
-		<ant-launcher.version>${ant.version}</ant-launcher.version>
-		<org.apache.ant.ant.version>${ant.version}</org.apache.ant.ant.version>
-		<org.apache.ant.ant-launcher.version>${ant-launcher.version}</org.apache.ant.ant-launcher.version>
 
 		<!-- Apache Maven - https://maven.apache.org/ -->
 		<maven-artifact-transfer.version>0.13.1</maven-artifact-transfer.version>
@@ -4105,6 +4105,18 @@
 			</dependency>
 			-->
 
+			<!-- Apache Ant - https://ant.apache.org/ -->
+			<dependency>
+				<groupId>org.apache.ant</groupId>
+				<artifactId>ant</artifactId>
+				<version>${org.apache.ant.ant.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.ant</groupId>
+				<artifactId>ant-launcher</artifactId>
+				<version>${org.apache.ant.ant-launcher.version}</version>
+			</dependency>
+
 			<!-- Apache Groovy - https://groovy-lang.org/ -->
 			<dependency>
 				<groupId>org.codehaus.groovy</groupId>
@@ -4240,18 +4252,6 @@
 				<groupId>org.codehaus.groovy</groupId>
 				<artifactId>groovy-yaml</artifactId>
 				<version>${org.codehaus.groovy.groovy-yaml.version}</version>
-			</dependency>
-
-			<!-- Apache Ant - https://ant.apache.org/ -->
-			<dependency>
-				<groupId>org.apache.ant</groupId>
-				<artifactId>ant</artifactId>
-				<version>${org.apache.ant.ant.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.ant</groupId>
-				<artifactId>ant-launcher</artifactId>
-				<version>${org.apache.ant.ant-launcher.version}</version>
 			</dependency>
 
 			<!-- Apache Maven - https://maven.apache.org/ -->
