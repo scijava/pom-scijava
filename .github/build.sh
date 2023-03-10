@@ -6,7 +6,7 @@ sh ci-build.sh || { echo "Maven build failed. Skipping melting pot tests."; exit
 last_cache_modified() {
   find "$HOME/.cache/scijava/melting-pot" -type f | while read f
   do
-    stat -f '%m' "$f"
+    stat -c '%Y' "$f"
   done | sort -nr | head -n1
 }
 
