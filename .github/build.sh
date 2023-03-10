@@ -2,8 +2,6 @@
 curl -fsLO https://raw.githubusercontent.com/scijava/scijava-scripts/master/ci-build.sh &&
 sh ci-build.sh || { echo "Maven build failed. Skipping melting pot tests."; exit 1; }
 
-exit 0 # TEMP: Disable mega-melt during pom-scijava release process.
-
 # Helper method to get the last cache modified date as seconds since epoch
 last_cache_modified() {
   find "$HOME/.cache/scijava/melting-pot" -type f | while read f
