@@ -1195,7 +1195,7 @@
 		<sc.fiji.MaMuT.version>${MaMuT.version}</sc.fiji.MaMuT.version>
 
 		<!-- Labkit - https://imagej.net/plugins/labkit -->
-		<labkit-pixel-classification.version>0.1.15</labkit-pixel-classification.version>
+		<labkit-pixel-classification.version>0.1.16</labkit-pixel-classification.version>
 		<labkit-ui.version>0.3.10</labkit-ui.version>
 		<sc.fiji.labkit-pixel-classification.version>${labkit-pixel-classification.version}</sc.fiji.labkit-pixel-classification.version>
 		<sc.fiji.labkit-ui.version>${labkit-ui.version}</sc.fiji.labkit-ui.version>
