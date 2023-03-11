@@ -175,5 +175,11 @@
         <ignoreVersion type="regex">.*-(alpha|beta|rc)-?[0-9]+</ignoreVersion>
       </ignoreVersions>
     </rule>
+    <rule groupId="sc.fiji" artifactId="3D_Objects_Counter" comparisonMethod="maven">
+      <ignoreVersions>
+        <!-- Ignore jitpack-built tags in favor of properly released binaries. -->
+        <ignoreVersion type="regex">3D_Objects_Counter-.*</ignoreVersion>
+      </ignoreVersions>
+    </rule>
   </rules>
 </ruleset>
