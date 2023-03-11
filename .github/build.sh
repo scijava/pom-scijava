@@ -7,7 +7,7 @@ last_cache_modified() {
   find "$HOME/.cache/scijava/melting-pot" -type f | while read f
   do
     stat -c '%Y' "$f"
-  done | sort -nr | head -n1
+  done | sort -nr 2>/dev/null | head -n1
 }
 
 # Record the last time of cache modification before running melting-pot
