@@ -754,7 +754,7 @@
 		<Fiji_Package_Maker.version>2.1.1</Fiji_Package_Maker.version>
 		<sc.fiji.Fiji_Package_Maker.version>${Fiji_Package_Maker.version}</sc.fiji.Fiji_Package_Maker.version>
 
-		<Fiji_Plugins.version>3.1.2</Fiji_Plugins.version>
+		<Fiji_Plugins.version>3.1.3</Fiji_Plugins.version>
 		<sc.fiji.Fiji_Plugins.version>${Fiji_Plugins.version}</sc.fiji.Fiji_Plugins.version>
 
 		<FilamentDetector.version>2.0.1</FilamentDetector.version>
