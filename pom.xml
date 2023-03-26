@@ -941,7 +941,7 @@
 		<Volume_Calculator.version>2.0.3</Volume_Calculator.version>
 		<sc.fiji.Volume_Calculator.version>${Volume_Calculator.version}</sc.fiji.Volume_Calculator.version>
 
-		<Volume_Viewer.version>2.01.3</Volume_Viewer.version>
+		<Volume_Viewer.version>2.01.4</Volume_Viewer.version>
 		<sc.fiji.Volume_Viewer.version>${Volume_Viewer.version}</sc.fiji.Volume_Viewer.version>
 
 		<bUnwarpJ.version>2.6.13</bUnwarpJ.version>
