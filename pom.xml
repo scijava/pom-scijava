@@ -4845,6 +4845,11 @@
 				<artifactId>flatlaf</artifactId>
 				<version>${com.formdev.flatlaf.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>com.formdev</groupId>
+				<artifactId>flatlaf-fonts-jetbrains-mono</artifactId>
+				<version>${com.formdev.flatlaf-fonts-jetbrains-mono.version}</version>
+			</dependency>
 
 			<!-- Google APIs Client - https://github.com/googleapis/google-api-java-client -->
 			<dependency>
