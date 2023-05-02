@@ -9,6 +9,8 @@ on:
   pull_request:
     branches:
       - master
+  schedule:
+    - cron: "4 5 * * 0" # every Sunday at 0405, to keep cache alive
 
 jobs:
   build:
