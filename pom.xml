@@ -335,7 +335,7 @@
 		<org.scijava.scijava-cache.version>${scijava-cache.version}</org.scijava.scijava-cache.version>
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.92.0</scijava-common.version>
+		<scijava-common.version>2.93.0</scijava-common.version>
 		<org.scijava.scijava-common.version>${scijava-common.version}</org.scijava.scijava-common.version>
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
@@ -387,7 +387,7 @@
 		<org.scijava.scijava-plugins-text-plain.version>${scijava-plugins-text-plain.version}</org.scijava.scijava-plugins-text-plain.version>
 
 		<!-- SciJava Search - https://github.com/scijava/scijava-search -->
-		<scijava-search.version>2.0.2</scijava-search.version>
+		<scijava-search.version>2.0.3</scijava-search.version>
 		<org.scijava.scijava-search.version>${scijava-search.version}</org.scijava.scijava-search.version>
 
 		<!-- SciJava Table - https://github.com/scijava/scijava-table -->
