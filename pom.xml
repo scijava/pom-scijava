@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>34.1.1-SNAPSHOT</version>
+	<version>35.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -1940,11 +1940,34 @@
 		<org.jheaps.jheaps.version>${jheaps.version}</org.jheaps.jheaps.version>
 
 		<!-- JLine - https://jline.github.io/ -->
+
 		<jline2.version>2.14.6</jline2.version>
-		<jline3.version>3.23.0</jline3.version>
 		<jline.version>${jline2.version}</jline.version>
 		<jline.jline.version>${jline.version}</jline.jline.version>
-		<org.jline.jline.version>${jline3.version}</org.jline.jline.version>
+
+		<jline3.version>3.23.0</jline3.version>
+		<jline-builtins.version>${jline3.version}</jline-builtins.version>
+		<jline-console.version>${jline3.version}</jline-console.version>
+		<!-- NB: No jline-groovy, because it depends on Groovy v4, but we currently use Groovy v3. -->
+		<!-- <jline-groovy.version>${jline3.version}</jline-groovy.version> -->
+		<jline-reader.version>${jline3.version}</jline-reader.version>
+		<jline-remote-ssh.version>${jline3.version}</jline-remote-ssh.version>
+		<jline-remote-telnet.version>${jline3.version}</jline-remote-telnet.version>
+		<jline-style.version>${jline3.version}</jline-style.version>
+		<jline-terminal.version>${jline3.version}</jline-terminal.version>
+		<!-- NB: No jline-terminal-jansi, because jline:jline (JLine v2) overlaps with it. -->
+		<!-- <jline-terminal-jansi.version>${jline3.version}</jline-terminal-jansi.version> -->
+		<jline-terminal-jna.version>${jline3.version}</jline-terminal-jna.version>
+		<org.jline.jline-builtins.version>${jline-builtins.version}</org.jline.jline-builtins.version>
+		<org.jline.jline-console.version>${jline-console.version}</org.jline.jline-console.version>
+		<!-- <org.jline.jline-groovy.version>${jline-groovy.version}</org.jline.jline-groovy.version> -->
+		<org.jline.jline-reader.version>${jline-reader.version}</org.jline.jline-reader.version>
+		<org.jline.jline-remote-ssh.version>${jline-remote-ssh.version}</org.jline.jline-remote-ssh.version>
+		<org.jline.jline-remote-telnet.version>${jline-remote-telnet.version}</org.jline.jline-remote-telnet.version>
+		<org.jline.jline-style.version>${jline-style.version}</org.jline.jline-style.version>
+		<org.jline.jline-terminal.version>${jline-terminal.version}</org.jline.jline-terminal.version>
+		<!-- <org.jline.jline-terminal-jansi.version>${jline-terminal-jansi.version}</org.jline.jline-terminal-jansi.version> -->
+		<org.jline.jline-terminal-jna.version>${jline-terminal-jna.version}</org.jline.jline-terminal-jna.version>
 
 		<!-- JMH - https://openjdk.java.net/projects/code-tools/jmh/ -->
 		<jmh.version>1.36</jmh.version>
@@ -5533,8 +5556,57 @@
 			</dependency>
 			<dependency>
 				<groupId>org.jline</groupId>
-				<artifactId>jline</artifactId>
-				<version>${org.jline.jline.version}</version>
+				<artifactId>jline-builtins</artifactId>
+				<version>${org.jline.jline-builtins.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jline</groupId>
+				<artifactId>jline-console</artifactId>
+				<version>${org.jline.jline-console.version}</version>
+			</dependency>
+			<!--
+			<dependency>
+				<groupId>org.jline</groupId>
+				<artifactId>jline-groovy</artifactId>
+				<version>${org.jline.jline-groovy.version}</version>
+			</dependency>
+			-->
+			<dependency>
+				<groupId>org.jline</groupId>
+				<artifactId>jline-reader</artifactId>
+				<version>${org.jline.jline-reader.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jline</groupId>
+				<artifactId>jline-remote-ssh</artifactId>
+				<version>${org.jline.jline-remote-ssh.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jline</groupId>
+				<artifactId>jline-remote-telnet</artifactId>
+				<version>${org.jline.jline-remote-telnet.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jline</groupId>
+				<artifactId>jline-style</artifactId>
+				<version>${org.jline.jline-style.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jline</groupId>
+				<artifactId>jline-terminal</artifactId>
+				<version>${org.jline.jline-terminal.version}</version>
+			</dependency>
+			<!--
+			<dependency>
+				<groupId>org.jline</groupId>
+				<artifactId>jline-terminal-jansi</artifactId>
+				<version>${org.jline.jline-terminal-jansi.version}</version>
+			</dependency>
+			-->
+			<dependency>
+				<groupId>org.jline</groupId>
+				<artifactId>jline-terminal-jna</artifactId>
+				<version>${org.jline.jline-terminal-jna.version}</version>
 			</dependency>
 
 			<!-- JNA - https://github.com/java-native-access/jna -->
