@@ -455,7 +455,7 @@
 		<org.scijava.scripting-renjin.version>${scripting-renjin.version}</org.scijava.scripting-renjin.version>
 
 		<!-- Scripting: Scala - https://github.com/scijava/scripting-scala -->
-		<scripting-scala.version>0.2.2</scripting-scala.version>
+		<scripting-scala.version>0.3.0</scripting-scala.version>
 		<org.scijava.scripting-scala.version>${scripting-scala.version}</org.scijava.scripting-scala.version>
 
 		<!-- Swing Checkbox Tree - https://github.com/scijava/swing-checkbox-tree -->
@@ -1187,7 +1187,7 @@
 		<org.bonej.bonej-utilities.version>${bonej-utilities.version}</org.bonej.bonej-utilities.version>
 
 		<!-- SNT - https://imagej.net/plugins/snt -->
-		<SNT.version>4.1.14</SNT.version>
+		<SNT.version>4.1.15</SNT.version>
 		<org.morphonets.SNT.version>${SNT.version}</org.morphonets.SNT.version>
 
 		<!-- MaMuT - https://github.com/fiji/MaMuT -->
@@ -1209,7 +1209,7 @@
 		<com.zeroc.ice.version>${ice.version}</com.zeroc.ice.version>
 
 		<!-- OME Common Java - https://github.com/ome/ome-common-java -->
-		<ome-common.version>6.0.14</ome-common.version>
+		<ome-common.version>6.0.16</ome-common.version>
 		<org.openmicroscopy.ome-common.version>${ome-common.version}</org.openmicroscopy.ome-common.version>
 
 		<!-- Metakit - https://github.com/ome/ome-metakit -->
@@ -1221,7 +1221,7 @@
 		<org.openmicroscopy.ome-poi.version>${ome-poi.version}</org.openmicroscopy.ome-poi.version>
 
 		<!-- OME Model - https://github.com/ome/ome-model -->
-		<ome-xml.version>6.3.2</ome-xml.version>
+		<ome-xml.version>6.3.3</ome-xml.version>
 		<org.openmicroscopy.ome-xml.version>${ome-xml.version}</org.openmicroscopy.ome-xml.version>
 
 		<!-- Glencoe Software jxrlib - https://github.com/glencoesoftware/jxrlib -->
