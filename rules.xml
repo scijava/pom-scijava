@@ -50,6 +50,15 @@
         <ignoreVersion type="regex">.*-(alpha|beta|rc)[-\.]?[0-9]+</ignoreVersion>
       </ignoreVersions>
     </rule>
+    <rule groupId="com.zeroc" artifactId="*" comparisonMethod="maven">
+      <ignoreVersions>
+        <!--
+        ZeroC Ice v3.7.x breaks backwards compatibility with v3.6.x,
+        such that OMERO does not function correctly.
+        -->
+        <ignoreVersion type="regex">^(?!3\.6\.).*</ignoreVersion>
+      </ignoreVersions>
+    </rule>
     <rule groupId="commons-beanutils" artifactId="commons-beanutils" comparisonMethod="maven">
       <ignoreVersions>
         <ignoreVersion type="regex">[0-9]{8}.*</ignoreVersion>
@@ -84,6 +93,14 @@
     <rule groupId="commons-logging" artifactId="commons-logging" comparisonMethod="maven">
       <ignoreVersions>
         <ignoreVersion type="regex">.*-does-not-exist</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="hsqldb" artifactId="hsqldb" comparisonMethod="maven">
+      <ignoreVersions>
+        <!--
+        hsqldb v1.8.1.x does not seem to work with OMERO. Stick with 1.8.0.x.
+        -->
+        <ignoreVersion type="regex">^(?!1\.8\.0\.).*</ignoreVersion>
       </ignoreVersions>
     </rule>
     <rule groupId="javax.enterprise" artifactId="cdi-api" comparisonMethod="maven">
@@ -121,6 +138,15 @@
         <ignoreVersion type="regex">.*-(alpha|beta|rc)-?[0-9]+</ignoreVersion>
       </ignoreVersions>
     </rule>
+    <rule groupId="org.codehaus.groovy" artifactId="*" comparisonMethod="maven">
+      <ignoreVersions>
+        <!--
+        Groovy past 3.0.4 changes behavior in a way that breaks scripting-groovy.
+        Until we have time to investigate and adjust, do not upgrade past that.
+        -->
+        <ignoreVersion type="regex">^(?!3\.0\.4\.).*</ignoreVersion>
+      </ignoreVersions>
+    </rule>
     <rule groupId="org.eclipse.collections" artifactId="eclipse-collections" comparisonMethod="maven">
       <ignoreVersions>
         <ignoreVersion type="regex">.*\.M[0-9]+</ignoreVersion>
@@ -143,11 +169,11 @@
       </ignoreVersions>
     </rule>
     <rule groupId="org.jgrapht" artifactId="*" comparisonMethod="maven">
-      <!--
-      As of version 1.5, JGraphT requires Java 11.
-      We cannot upgrade past 1.4.x while we still support Java 8.
-      -->
       <ignoreVersions>
+        <!--
+        As of version 1.5, JGraphT requires Java 11.
+        We cannot upgrade past 1.4.x while we still support Java 8.
+        -->
         <ignoreVersion type="regex">^(?!1\.4\.).*</ignoreVersion>
       </ignoreVersions>
     </rule>
@@ -168,6 +194,17 @@
     <rule groupId="org.slf4j" artifactId="*" comparisonMethod="maven">
       <ignoreVersions>
         <ignoreVersion type="regex">.*-(alpha|beta|rc)-?[0-9]+</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="org.springframework" artifactId="*" comparisonMethod="maven">
+      <ignoreVersions>
+        <!--
+        Although version 5.3.18 is the last version to support Java 8,
+        3.2.9.RELEASE is the last version to depend properly on
+        aopalliance:aopalliance, rather than including org.aopalliance
+        classes unshadowed!
+        -->
+        <ignoreVersion type="regex">^(?!3\.2\.9\.).*</ignoreVersion>
       </ignoreVersions>
     </rule>
     <rule groupId="org.tensorflow" artifactId="*" comparisonMethod="maven">
