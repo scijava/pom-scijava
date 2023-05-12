@@ -111,7 +111,7 @@ chmod +x "$meltingPotScript" &&
 # NB: The pipe to tee eats the melting-pot error code.
 # Even with the POSIX-unfriendly pipefail flag set.
 # So we resort to this hacky error check of the log.
-grep -qF "[ERROR]" "$meltingPotLog" &&
+test "$(grep -F "[ERROR]" "$meltingPotLog" | grep -v "using default branch")" &&
   die 'Melting pot generation failed!'
 
 sectionStart 'Adjusting the melting pot'
@@ -190,7 +190,7 @@ chmod +x "$meltScript" ||
 # fixed in imagej-ops. But for now, let's not let it ruin the melt.
 rm -f "$meltingPotDir/net.imagej/imagej-ops/src/test/java/net/imagej/ops/cached/CachedOpEnvironmentTest.java"
 
-# TEMP: Until saalfeldlab/n5-aws-s3#13 is fixed.
+# TEMP: Until saalfeldlab/n5-aws-s3#13 is released.
 echo "org.janelia.saalfeldlab/n5-aws-s3" >> "$skipTestsFile" &&
 
 # Error while checking the CLIJ2 installation: null
