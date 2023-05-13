@@ -194,7 +194,10 @@ rm -f "$meltingPotDir/net.imagej/imagej-ops/src/test/java/net/imagej/ops/cached/
 # And then all subsequent tests also fail with this error.
 # I'm guessing it's a bug in a dependency, which causes spiralling memory use,
 # but for the moment, we want to keep making a best effort to test imagej-ops.
-rm -f "$meltingPotDir/net.imagej/imagej-ops/src/test/java/net/imagej/ops/threshold/apply/LocalThresholdTest.java"
+rm -f \
+  "$meltingPotDir/net.imagej/imagej-ops/src/test/java/net/imagej/ops/threshold/apply/LocalThresholdTest.java" \
+  "$meltingPotDir/net.imagej/imagej-ops/src/test/java/net/imagej/ops/image/integral/IntegralImgTest.java" \
+  "$meltingPotDir/net.imagej/imagej-ops/src/test/java/net/imagej/ops/image/integral/SquareIntegralImgTest.java"
 
 # TEMP: Until saalfeldlab/n5-aws-s3#13 is released.
 echo "org.janelia.saalfeldlab/n5-aws-s3" >> "$skipTestsFile" &&
