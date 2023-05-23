@@ -1,9 +1,17 @@
 #!/bin/sh
+
+# Discern whether this is a release build.
+releasing=
+if [ -f release.properties ]; then
+  releasing=1
+fi
+
+# Run the SciJava CI build script.
 curl -fsLO https://raw.githubusercontent.com/scijava/scijava-scripts/master/ci-build.sh &&
 sh ci-build.sh || { echo "Maven build failed. Skipping melting pot tests."; exit 1; }
 
-if [ -f release.properties ]; then
-  # Skip melting pot when cutting a release.
+# Skip melting pot if cutting a release.
+if [ "$releasing" ]; then
   exit 0
 fi
 
