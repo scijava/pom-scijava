@@ -411,7 +411,7 @@
 		<org.scijava.script-editor-jython.version>${script-editor-jython.version}</org.scijava.script-editor-jython.version>
 
 		<!-- Script Editor: Scala - https://github.com/scijava/script-editor-scala -->
-		<script-editor-scala.version>0.2.0</script-editor-scala.version>
+		<script-editor-scala.version>0.2.1</script-editor-scala.version>
 		<org.scijava.script-editor-scala.version>${script-editor-scala.version}</org.scijava.script-editor-scala.version>
 
 		<!-- Scripting: BeanShell - https://github.com/scijava/scripting-beanshell -->
@@ -459,7 +459,7 @@
 		<org.scijava.scripting-renjin.version>${scripting-renjin.version}</org.scijava.scripting-renjin.version>
 
 		<!-- Scripting: Scala - https://github.com/scijava/scripting-scala -->
-		<scripting-scala.version>0.3.1</scripting-scala.version>
+		<scripting-scala.version>0.3.2</scripting-scala.version>
 		<org.scijava.scripting-scala.version>${scripting-scala.version}</org.scijava.scripting-scala.version>
 
 		<!-- Swing Checkbox Tree - https://github.com/scijava/swing-checkbox-tree -->
