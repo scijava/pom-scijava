@@ -410,6 +410,10 @@
 		<script-editor-jython.version>1.0.0</script-editor-jython.version>
 		<org.scijava.script-editor-jython.version>${script-editor-jython.version}</org.scijava.script-editor-jython.version>
 
+		<!-- Script Editor: Scala - https://github.com/scijava/script-editor-scala -->
+		<script-editor-scala.version>0.2.1</script-editor-scala.version>
+		<org.scijava.script-editor-scala.version>${script-editor-scala.version}</org.scijava.script-editor-scala.version>
+
 		<!-- Scripting: BeanShell - https://github.com/scijava/scripting-beanshell -->
 		<scripting-beanshell.version>0.4.1</scripting-beanshell.version>
 		<org.scijava.scripting-beanshell.version>${scripting-beanshell.version}</org.scijava.scripting-beanshell.version>
@@ -455,7 +459,7 @@
 		<org.scijava.scripting-renjin.version>${scripting-renjin.version}</org.scijava.scripting-renjin.version>
 
 		<!-- Scripting: Scala - https://github.com/scijava/scripting-scala -->
-		<scripting-scala.version>0.3.0</scripting-scala.version>
+		<scripting-scala.version>0.3.2</scripting-scala.version>
 		<org.scijava.scripting-scala.version>${scripting-scala.version}</org.scijava.scripting-scala.version>
 
 		<!-- Swing Checkbox Tree - https://github.com/scijava/swing-checkbox-tree -->
@@ -2478,6 +2482,13 @@
 				<groupId>org.scijava</groupId>
 				<artifactId>script-editor-jython</artifactId>
 				<version>${org.scijava.script-editor-jython.version}</version>
+			</dependency>
+
+			<!-- Script Editor: Scala - https://github.com/scijava/script-editor-scala -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>script-editor-scala</artifactId>
+				<version>${org.scijava.script-editor-scala.version}</version>
 			</dependency>
 
 			<!-- Scripting: BeanShell - https://github.com/scijava/scripting-beanshell -->
