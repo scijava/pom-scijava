@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>35.1.2-SNAPSHOT</version>
+	<version>35.2.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -1572,6 +1572,10 @@
 		<!-- Byte Code Generation Library - https://github.com/cglib/cglib -->
 		<cglib.version>3.3.0</cglib.version>
 		<cglib.cglib.version>${cglib.version}</cglib.cglib.version>
+
+		<!-- Directories JVM - https://github.com/dirs-dev/directories-jvm -->
+		<directories.version>26</directories.version>
+		<dev.dirs.directories.version>${directories.version}</dev.dirs.directories.version>
 
 		<!--  Eclipse Collections - https://www.eclipse.org/collections/ -->
 		<eclipse-collections.version>11.1.0</eclipse-collections.version>
@@ -4765,6 +4769,13 @@
 				<groupId>cglib</groupId>
 				<artifactId>cglib</artifactId>
 				<version>${cglib.cglib.version}</version>
+			</dependency>
+
+			<!-- Directories JVM - https://github.com/dirs-dev/directories-jvm -->
+			<dependency>
+				<groupId>dev.dirs</groupId>
+				<artifactId>directories</artifactId>
+				<version>${dev.dirs.directories.version}</version>
 			</dependency>
 
 			<!-- Eclipse Collections - https://www.eclipse.org/collections/ -->
