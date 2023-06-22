@@ -1374,6 +1374,10 @@
 		<org.codehaus.groovy.groovy-xml.version>${groovy-xml.version}</org.codehaus.groovy.groovy-xml.version>
 		<org.codehaus.groovy.groovy-yaml.version>${groovy-yaml.version}</org.codehaus.groovy.groovy-yaml.version>
 
+		<!-- Apache Ivy - https://ant.apache.org/ivy/ -->
+		<ivy.version>2.5.1</ivy.version>
+		<org.apache.ivy.ivy.version>${ivy.version}</org.apache.ivy.ivy.version>
+
 		<!-- Apache Log4j - https://logging.apache.org/log4j/2.x/ -->
 		<log4j.version>2.20.0</log4j.version>
 		<log4j-api.version>${log4j.version}</log4j-api.version>
@@ -4306,6 +4310,13 @@
 				<groupId>org.codehaus.groovy</groupId>
 				<artifactId>groovy-yaml</artifactId>
 				<version>${org.codehaus.groovy.groovy-yaml.version}</version>
+			</dependency>
+
+			<!-- Apache Ivy - https://ant.apache.org/ivy/ -->
+			<dependency>
+				<groupId>org.apache.ivy</groupId>
+				<artifactId>ivy</artifactId>
+				<version>${org.apache.ivy.ivy.version}</version>
 			</dependency>
 
 			<!-- Apache Log4j - https://logging.apache.org/log4j/ -->
