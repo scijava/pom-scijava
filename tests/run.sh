@@ -147,7 +147,7 @@ sed -E 's; -Dij\.version=([^ ]*);& -Dimagej1.version=\1;' "$buildScriptTemp" > "
 # Otherwise, components built on older pom-scijava-base will have
 # mismatched kotlin component versions.
 kotlinVersion=$(mvn -B -U -q -Denforcer.skip=true -Dexec.executable=echo \
-  -Dexec.args='${kotlin.version}' --non-recursive validate exec:exec 2>&1) &&
+  -Dexec.args='${kotlin.version}' --non-recursive validate exec:exec 2>&1 | head -n1) &&
 mv -f "$buildScript" "$buildScriptTemp" &&
 sed -E "s;mvn -Denforcer.skip;& -Dkotlin.version=$kotlinVersion;" "$buildScriptTemp" > "$buildScript" &&
 
