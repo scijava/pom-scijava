@@ -499,7 +499,7 @@
 		<net.imagej.imagej-launcher.version>${imagej-launcher.version}</net.imagej.imagej-launcher.version>
 
 		<!-- ImageJ Legacy - https://github.com/imagej/imagej-legacy -->
-		<imagej-legacy.version>1.1.0</imagej-legacy.version>
+		<imagej-legacy.version>1.2.0</imagej-legacy.version>
 		<net.imagej.imagej-legacy.version>${imagej-legacy.version}</net.imagej.imagej-legacy.version>
 
 		<!-- ImageJ MATLAB - https://github.com/imagej/imagej-matlab -->
