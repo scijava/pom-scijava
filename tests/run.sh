@@ -111,7 +111,7 @@ chmod +x "$meltingPotScript" &&
 # NB: The pipe to tee eats the melting-pot error code.
 # Even with the POSIX-unfriendly pipefail flag set.
 # So we resort to this hacky error check of the log.
-grep -qF "[ERROR]" "$meltingPotLog" &&
+test "$(grep -F "[ERROR]" "$meltingPotLog" | grep -v "using default branch")" &&
   die 'Melting pot generation failed!'
 
 sectionStart 'Adjusting the melting pot'
@@ -147,7 +147,7 @@ sed -E 's; -Dij\.version=([^ ]*);& -Dimagej1.version=\1;' "$buildScriptTemp" > "
 # Otherwise, components built on older pom-scijava-base will have
 # mismatched kotlin component versions.
 kotlinVersion=$(mvn -B -U -q -Denforcer.skip=true -Dexec.executable=echo \
-  -Dexec.args='${kotlin.version}' --non-recursive validate exec:exec 2>&1) &&
+  -Dexec.args='${kotlin.version}' --non-recursive validate exec:exec 2>&1 | head -n1) &&
 mv -f "$buildScript" "$buildScriptTemp" &&
 sed -E "s;mvn -Denforcer.skip;& -Dkotlin.version=$kotlinVersion;" "$buildScriptTemp" > "$buildScript" &&
 
@@ -185,12 +185,15 @@ grep -qxF "$f" $dir/skipTests.txt \&\& buildFlags=-DskipTests\
 chmod +x "$meltScript" ||
   die "Failed to adjust $meltScript"
 
-# HACK: Remove flaky test from imagej-ops builds.
-# This test fails intermittently. Of course, it should be somehow
-# fixed in imagej-ops. But for now, let's not let it ruin the melt.
-rm -f "$meltingPotDir/net.imagej/imagej-ops/src/test/java/net/imagej/ops/cached/CachedOpEnvironmentTest.java"
+# HACK: Remove flaky tests from imagej-ops builds.
+# CachedOpEnvironmentTest fails intermittently. Of course, it should be
+# somehow fixed in imagej-ops. But for now, let's not let it ruin the melt.
+#rm -f "$meltingPotDir/net.imagej/imagej-ops/src/test/java/net/imagej/ops/cached/CachedOpEnvironmentTest.java"
 
-# TEMP: Until saalfeldlab/n5-aws-s3#13 is fixed.
+# TEMP: Until scijava/pom-scijava#236 is solved.
+echo "net.imagej/imagej-ops" >> "$skipTestsFile" &&
+
+# TEMP: Until saalfeldlab/n5-aws-s3#13 is released.
 echo "org.janelia.saalfeldlab/n5-aws-s3" >> "$skipTestsFile" &&
 
 # Error while checking the CLIJ2 installation: null
