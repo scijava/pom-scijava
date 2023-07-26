@@ -387,7 +387,7 @@
 		<org.scijava.scijava-plugins-text-plain.version>${scijava-plugins-text-plain.version}</org.scijava.scijava-plugins-text-plain.version>
 
 		<!-- SciJava Search - https://github.com/scijava/scijava-search -->
-		<scijava-search.version>2.0.3</scijava-search.version>
+		<scijava-search.version>2.0.4</scijava-search.version>
 		<org.scijava.scijava-search.version>${scijava-search.version}</org.scijava.scijava-search.version>
 
 		<!-- SciJava Table - https://github.com/scijava/scijava-table -->
@@ -575,7 +575,7 @@
 		<net.imagej.imagej-ui-swing.version>${imagej-ui-swing.version}</net.imagej.imagej-ui-swing.version>
 
 		<!-- ImageJ Updater - https://github.com/imagej/imagej-updater -->
-		<imagej-updater.version>1.0.0</imagej-updater.version>
+		<imagej-updater.version>1.0.1</imagej-updater.version>
 		<net.imagej.imagej-updater.version>${imagej-updater.version}</net.imagej.imagej-updater.version>
 
 		<!-- Op Finder - https://github.com/imagej/op-finder -->
