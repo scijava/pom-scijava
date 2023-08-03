@@ -991,7 +991,7 @@
 		<jitk.jitk-tps.version>${jitk-tps.version}</jitk.jitk-tps.version>
 
 		<!-- BigWarp - https://github.com/saalfeldlab/bigwarp -->
-		<bigwarp.version>7.0.7</bigwarp.version>
+		<bigwarp.version>8.0.0</bigwarp.version>
 		<bigwarp_fiji.version>${bigwarp.version}</bigwarp_fiji.version>
 		<sc.fiji.bigwarp_fiji.version>${bigwarp_fiji.version}</sc.fiji.bigwarp_fiji.version>
 
@@ -1012,7 +1012,7 @@
 		<!-- BigDataViewer - https://github.com/bigdataviewer -->
 
 		<!-- BigDataViewer Core - https://github.com/bigdataviewer/bigdataviewer-core -->
-		<bigdataviewer-core.version>10.4.6</bigdataviewer-core.version>
+		<bigdataviewer-core.version>10.4.8</bigdataviewer-core.version>
 		<sc.fiji.bigdataviewer-core.version>${bigdataviewer-core.version}</sc.fiji.bigdataviewer-core.version>
 
 		<!-- BigDataServer - https://github.com/bigdataviewer/bigdataviewer-server -->
@@ -1109,11 +1109,11 @@
 		<net.imglib2.imglib2-label-multisets.version>${imglib2-label-multisets.version}</net.imglib2.imglib2-label-multisets.version>
 
 		<!-- N5 - https://github.com/saalfeldlab/n5 -->
-		<n5.version>2.5.1</n5.version>
+		<n5.version>3.0.0</n5.version>
 		<org.janelia.saalfeldlab.n5.version>${n5.version}</org.janelia.saalfeldlab.n5.version>
 
 		<!-- N5 AWS S3 - https://github.com/saalfeldlab/n5-aws-s3 -->
-		<n5-aws-s3.version>3.2.0</n5-aws-s3.version>
+		<n5-aws-s3.version>4.0.1</n5-aws-s3.version>
 		<org.janelia.saalfeldlab.n5-aws-s3.version>${n5-aws-s3.version}</org.janelia.saalfeldlab.n5-aws-s3.version>
 
 		<!-- N5 Blosc - https://github.com/saalfeldlab/n5-blosc -->
@@ -1121,28 +1121,32 @@
 		<org.janelia.saalfeldlab.n5-blosc.version>${n5-blosc.version}</org.janelia.saalfeldlab.n5-blosc.version>
 
 		<!-- N5 Google Cloud - https://github.com/saalfeldlab/n5-google-cloud -->
-		<n5-google-cloud.version>3.3.2</n5-google-cloud.version>
+		<n5-google-cloud.version>4.0.0</n5-google-cloud.version>
 		<org.janelia.saalfeldlab.n5-google-cloud.version>${n5-google-cloud.version}</org.janelia.saalfeldlab.n5-google-cloud.version>
 
 		<!-- N5 HDF5 Bindings - https://github.com/saalfeldlab/n5-hdf5 -->
-		<n5-hdf5.version>1.4.2</n5-hdf5.version>
+		<n5-hdf5.version>2.0.0</n5-hdf5.version>
 		<org.janelia.saalfeldlab.n5-hdf5.version>${n5-hdf5.version}</org.janelia.saalfeldlab.n5-hdf5.version>
 
 		<!-- N5 ImageJ Bindings - https://github.com/saalfeldlab/n5-ij -->
-		<n5-ij.version>3.2.3</n5-ij.version>
+		<n5-ij.version>3.2.6</n5-ij.version>
 		<org.janelia.saalfeldlab.n5-ij.version>${n5-ij.version}</org.janelia.saalfeldlab.n5-ij.version>
 
 		<!-- N5 ImgLib2 Bindings - https://github.com/saalfeldlab/n5-imglib2 -->
-		<n5-imglib2.version>5.0.0</n5-imglib2.version>
+		<n5-imglib2.version>7.0.0</n5-imglib2.version>
 		<org.janelia.saalfeldlab.n5-imglib2.version>${n5-imglib2.version}</org.janelia.saalfeldlab.n5-imglib2.version>
 
 		<!-- N5 Viewer for Fiji - https://github.com/saalfeldlab/n5-viewer_fiji -->
-		<n5-viewer_fiji.version>5.3.0</n5-viewer_fiji.version>
+		<n5-viewer_fiji.version>5.3.1</n5-viewer_fiji.version>
 		<org.janelia.saalfeldlab.n5-viewer_fiji.version>${n5-viewer_fiji.version}</org.janelia.saalfeldlab.n5-viewer_fiji.version>
 
 		<!-- N5 Zarr - https://github.com/saalfeldlab/n5-zarr -->
-		<n5-zarr.version>0.0.8</n5-zarr.version>
+		<n5-zarr.version>1.0.0</n5-zarr.version>
 		<org.janelia.saalfeldlab.n5-zarr.version>${n5-zarr.version}</org.janelia.saalfeldlab.n5-zarr.version>
+
+		<!-- N5 Universe - https://github.com/saalfeldlab/n5-universe -->
+		<n5-universe.version>1.1.0</n5-universe.version>
+		<org.janelia.saalfeldlab.n5-universe.version>${n5-universe.version}</org.janelia.saalfeldlab.n5-universe.version>
 
 		<!-- Fiji-adjacent projects (available from ImageJ update sites) -->
 
@@ -3628,6 +3632,11 @@
 				<groupId>org.janelia.saalfeldlab</groupId>
 				<artifactId>n5-zarr</artifactId>
 				<version>${org.janelia.saalfeldlab.n5-zarr.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.janelia.saalfeldlab</groupId>
+				<artifactId>n5-universe</artifactId>
+				<version>${org.janelia.saalfeldlab.n5-universe.version}</version>
 			</dependency>
 
 			<!-- Fiji-adjacent projects (available from ImageJ update sites) -->
