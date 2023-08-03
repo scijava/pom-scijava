@@ -1136,6 +1136,10 @@
 		<n5-imglib2.version>7.0.0</n5-imglib2.version>
 		<org.janelia.saalfeldlab.n5-imglib2.version>${n5-imglib2.version}</org.janelia.saalfeldlab.n5-imglib2.version>
 
+		<!-- N5 Universe - https://github.com/saalfeldlab/n5-universe -->
+		<n5-universe.version>1.1.0</n5-universe.version>
+		<org.janelia.saalfeldlab.n5-universe.version>${n5-universe.version}</org.janelia.saalfeldlab.n5-universe.version>
+
 		<!-- N5 Viewer for Fiji - https://github.com/saalfeldlab/n5-viewer_fiji -->
 		<n5-viewer_fiji.version>5.3.1</n5-viewer_fiji.version>
 		<org.janelia.saalfeldlab.n5-viewer_fiji.version>${n5-viewer_fiji.version}</org.janelia.saalfeldlab.n5-viewer_fiji.version>
@@ -1143,10 +1147,6 @@
 		<!-- N5 Zarr - https://github.com/saalfeldlab/n5-zarr -->
 		<n5-zarr.version>1.0.0</n5-zarr.version>
 		<org.janelia.saalfeldlab.n5-zarr.version>${n5-zarr.version}</org.janelia.saalfeldlab.n5-zarr.version>
-
-		<!-- N5 Universe - https://github.com/saalfeldlab/n5-universe -->
-		<n5-universe.version>1.1.0</n5-universe.version>
-		<org.janelia.saalfeldlab.n5-universe.version>${n5-universe.version}</org.janelia.saalfeldlab.n5-universe.version>
 
 		<!-- Fiji-adjacent projects (available from ImageJ update sites) -->
 
@@ -3625,6 +3625,11 @@
 			</dependency>
 			<dependency>
 				<groupId>org.janelia.saalfeldlab</groupId>
+				<artifactId>n5-universe</artifactId>
+				<version>${org.janelia.saalfeldlab.n5-universe.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.janelia.saalfeldlab</groupId>
 				<artifactId>n5-viewer_fiji</artifactId>
 				<version>${org.janelia.saalfeldlab.n5-viewer_fiji.version}</version>
 			</dependency>
@@ -3632,11 +3637,6 @@
 				<groupId>org.janelia.saalfeldlab</groupId>
 				<artifactId>n5-zarr</artifactId>
 				<version>${org.janelia.saalfeldlab.n5-zarr.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.janelia.saalfeldlab</groupId>
-				<artifactId>n5-universe</artifactId>
-				<version>${org.janelia.saalfeldlab.n5-universe.version}</version>
 			</dependency>
 
 			<!-- Fiji-adjacent projects (available from ImageJ update sites) -->
