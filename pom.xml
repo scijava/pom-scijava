@@ -1012,7 +1012,7 @@
 		<!-- BigDataViewer - https://github.com/bigdataviewer -->
 
 		<!-- BigDataViewer Core - https://github.com/bigdataviewer/bigdataviewer-core -->
-		<bigdataviewer-core.version>10.4.8</bigdataviewer-core.version>
+		<bigdataviewer-core.version>10.4.9</bigdataviewer-core.version>
 		<sc.fiji.bigdataviewer-core.version>${bigdataviewer-core.version}</sc.fiji.bigdataviewer-core.version>
 
 		<!-- BigDataServer - https://github.com/bigdataviewer/bigdataviewer-server -->
@@ -1135,6 +1135,10 @@
 		<!-- N5 ImgLib2 Bindings - https://github.com/saalfeldlab/n5-imglib2 -->
 		<n5-imglib2.version>7.0.0</n5-imglib2.version>
 		<org.janelia.saalfeldlab.n5-imglib2.version>${n5-imglib2.version}</org.janelia.saalfeldlab.n5-imglib2.version>
+
+		<!-- N5 Universe - https://github.com/saalfeldlab/n5-universe -->
+		<n5-universe.version>1.1.0</n5-universe.version>
+		<org.janelia.saalfeldlab.n5-universe.version>${n5-universe.version}</org.janelia.saalfeldlab.n5-universe.version>
 
 		<!-- N5 Viewer for Fiji - https://github.com/saalfeldlab/n5-viewer_fiji -->
 		<n5-viewer_fiji.version>5.3.1</n5-viewer_fiji.version>
@@ -3622,6 +3626,11 @@
 				<groupId>org.janelia.saalfeldlab</groupId>
 				<artifactId>n5-imglib2</artifactId>
 				<version>${org.janelia.saalfeldlab.n5-imglib2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.janelia.saalfeldlab</groupId>
+				<artifactId>n5-universe</artifactId>
+				<version>${org.janelia.saalfeldlab.n5-universe.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.janelia.saalfeldlab</groupId>
