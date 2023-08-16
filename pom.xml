@@ -467,7 +467,7 @@
 		<org.scijava.swing-checkbox-tree.version>${swing-checkbox-tree.version}</org.scijava.swing-checkbox-tree.version>
 
 		<!-- UI Behaviour - https://github.com/scijava/ui-behaviour -->
-		<ui-behaviour.version>2.0.7</ui-behaviour.version>
+		<ui-behaviour.version>2.0.8</ui-behaviour.version>
 		<org.scijava.ui-behaviour.version>${ui-behaviour.version}</org.scijava.ui-behaviour.version>
 
 		<!-- ImageJ - https://github.com/imagej -->
@@ -1012,7 +1012,7 @@
 		<!-- BigDataViewer - https://github.com/bigdataviewer -->
 
 		<!-- BigDataViewer Core - https://github.com/bigdataviewer/bigdataviewer-core -->
-		<bigdataviewer-core.version>10.4.9</bigdataviewer-core.version>
+		<bigdataviewer-core.version>10.4.10</bigdataviewer-core.version>
 		<sc.fiji.bigdataviewer-core.version>${bigdataviewer-core.version}</sc.fiji.bigdataviewer-core.version>
 
 		<!-- BigDataServer - https://github.com/bigdataviewer/bigdataviewer-server -->
@@ -2267,7 +2267,7 @@
 		<org.slf4j.jcl-over-slf4j.version>${jcl-over-slf4j.version}</org.slf4j.jcl-over-slf4j.version>
 
 		<!-- SnakeYAML - https://bitbucket.org/asomov/snakeyaml -->
-		<snakeyaml.version>1.33</snakeyaml.version>
+		<snakeyaml.version>2.0</snakeyaml.version>
 		<org.yaml.snakeyaml.version>${snakeyaml.version}</org.yaml.snakeyaml.version>
 
 		<!-- SnakeYAML Engine - https://bitbucket.org/asomov/snakeyaml-engine -->
