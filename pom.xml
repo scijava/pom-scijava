@@ -1267,7 +1267,7 @@
 		<org.openmicroscopy.omero-model.version>${omero-model.version}</org.openmicroscopy.omero-model.version>
 
 		<!-- OMERO Renderer - https://github.com/ome/omero-renderer -->
-		<omero-renderer.version>5.5.12</omero-renderer.version>
+		<omero-renderer.version>5.5.13</omero-renderer.version>
 		<org.openmicroscopy.omero-renderer.version>${omero-renderer.version}</org.openmicroscopy.omero-renderer.version>
 
 		<!-- OMERO ROMIO - https://github.com/ome/omero-romio -->
