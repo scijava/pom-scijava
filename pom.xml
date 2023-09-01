@@ -1259,7 +1259,7 @@
 		<org.openmicroscopy.omero-dsl-plugin.version>${omero-dsl-plugin.version}</org.openmicroscopy.omero-dsl-plugin.version>
 
 		<!-- OMERO Gateway - https://github.com/ome/omero-gateway-java -->
-		<omero-gateway.version>5.8.0</omero-gateway.version>
+		<omero-gateway.version>5.8.1</omero-gateway.version>
 		<org.openmicroscopy.omero-gateway.version>${omero-gateway.version}</org.openmicroscopy.omero-gateway.version>
 
 		<!-- OMERO Model - https://github.com/ome/omero-model -->
