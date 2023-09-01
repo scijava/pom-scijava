@@ -1251,7 +1251,7 @@
 		<org.openmicroscopy.omero-blitz.version>${omero-blitz.version}</org.openmicroscopy.omero-blitz.version>
 
 		<!-- OMERO Common - https://github.com/ome/omero-common -->
-		<omero-common.version>5.6.1</omero-common.version>
+		<omero-common.version>5.6.2</omero-common.version>
 		<org.openmicroscopy.omero-common.version>${omero-common.version}</org.openmicroscopy.omero-common.version>
 
 		<!-- OMERO DSL Plugin - https://github.com/ome/omero-dsl-plugin -->
