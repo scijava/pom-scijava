@@ -1247,7 +1247,7 @@
 		<ome.formats-gpl.version>${formats-gpl.version}</ome.formats-gpl.version>
 
 		<!-- OMERO Blitz - https://github.com/ome/omero-blitz -->
-		<omero-blitz.version>5.6.2</omero-blitz.version>
+		<omero-blitz.version>5.7.0</omero-blitz.version>
 		<org.openmicroscopy.omero-blitz.version>${omero-blitz.version}</org.openmicroscopy.omero-blitz.version>
 
 		<!-- OMERO Common - https://github.com/ome/omero-common -->
