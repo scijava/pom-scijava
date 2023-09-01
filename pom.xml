@@ -1275,7 +1275,7 @@
 		<org.openmicroscopy.omero-romio.version>${omero-romio.version}</org.openmicroscopy.omero-romio.version>
 
 		<!-- OMERO Server - https://github.com/ome/omero-server -->
-		<omero-server.version>5.6.7</omero-server.version>
+		<omero-server.version>5.6.8</omero-server.version>
 		<org.openmicroscopy.omero-server.version>${omero-server.version}</org.openmicroscopy.omero-server.version>
 
 		<!-- Other SciJava components -->
