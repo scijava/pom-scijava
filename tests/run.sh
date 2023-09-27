@@ -145,9 +145,13 @@ sed -E 's; -Dij\.version=([^ ]*);& -Dimagej1.version=\1;' "$buildScriptTemp" > "
 
 # HACK: Add explicit kotlin.version to match our pom-scijava-base.
 # Otherwise, components built on older pom-scijava-base will have
-# mismatched kotlin component versions.
-kotlinVersion=$(mvn -B -U -q -Denforcer.skip=true -Dexec.executable=echo \
-  -Dexec.args='${kotlin.version}' --non-recursive validate exec:exec 2>&1 | head -n1) &&
+# mismatched kotlin component versions. The sed expression avoids
+# a bug in mvn's batch mode that results in <ESC>[0m<ESC>[0m still
+# appearing as a leading ANSI sequence when echoing the property.
+kotlinVersion=$(
+  mvn -B -U -q -Denforcer.skip=true -Dexec.executable=echo \
+  -Dexec.args='${kotlin.version}' --non-recursive validate exec:exec 2>&1 |
+  head -n1 | sed 's;\(.\[[0-9]m\)*;;') &&
 mv -f "$buildScript" "$buildScriptTemp" &&
 sed -E "s;mvn -Denforcer.skip;& -Dkotlin.version=$kotlinVersion;" "$buildScriptTemp" > "$buildScript" &&
 
