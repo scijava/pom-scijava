@@ -6716,4 +6716,20 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<artifactId>maven-javadoc-plugin</artifactId>
+					<version>${maven-javadoc-plugin.version}</version>
+					<configuration>
+						<links combine.children="append">
+							<link>https://javadoc.scijava.org/org.scijava/pom-scijava/${project.version}/</link>
+						</links>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
 </project>
