@@ -1638,7 +1638,9 @@
 
 		<!-- Ejml - https://github.com/lessthanoptimal/ejml -->
 		<ejml.version>0.41</ejml.version>
-		<com.googlecode.efficient-java-matrix-library.ejml.version>${ejml.version}</com.googlecode.efficient-java-matrix-library.ejml.version>
+		<org.ejml.ejml-all.version>${ejml.version}</org.ejml.ejml-all.version>
+		<!-- NB: older versions had a different groupId; this should be removed in a future pom-scijava release. -->
+		<com.googlecode.efficient-java-matrix-library.ejml.version>0.25</com.googlecode.efficient-java-matrix-library.ejml.version>
 
 		<!-- Error Prone - https://errorprone.info/ -->
 		<error_prone.version>2.25.0</error_prone.version>
@@ -4919,9 +4921,9 @@
 
 			<!-- Ejml - https://github.com/lessthanoptimal/ejml -->
 			<dependency>
-				<groupId>com.googlecode.efficient-java-matrix-library</groupId>
-				<artifactId>ejml</artifactId>
-				<version>${com.googlecode.efficient-java-matrix-library.ejml.version}</version>
+				<groupId>org.ejml</groupId>
+				<artifactId>ejml-all</artifactId>
+				<version>${org.ejml.ejml-all.version}</version>
 			</dependency>
 
 			<!-- Error Prone - https://errorprone.info/ -->
