@@ -2325,6 +2325,9 @@
 		<!-- XZ for Java - https://tukaani.org/xz/java.html -->
 		<xz.version>1.9</xz.version>
 		<org.tukaani.xz.version>${xz.version}</org.tukaani.xz.version>
+
+        <zstd-jni.version>1.5.5-10</zstd-jni.version>
+        <com.github.luben.zstd-jni.version>${zstd-jni.version}</com.github.luben.zstd-jni.version>
 	</properties>
 
 	<dependencyManagement>
@@ -6580,6 +6583,12 @@
 				<artifactId>xz</artifactId>
 				<version>${org.tukaani.xz.version}</version>
 			</dependency>
+
+            <dependency>
+                <groupId>com.github.luben</groupId>
+                <artifactId>zstd-jni</artifactId>
+                <version>${com.github.luben.zstd-jni.version}</version>
+            </dependency>
 
 			<!-- Test scope dependencies -->
 
