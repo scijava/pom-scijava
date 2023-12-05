@@ -2326,8 +2326,9 @@
 		<xz.version>1.9</xz.version>
 		<org.tukaani.xz.version>${xz.version}</org.tukaani.xz.version>
 
-        <zstd-jni.version>1.5.5-10</zstd-jni.version>
-        <com.github.luben.zstd-jni.version>${zstd-jni.version}</com.github.luben.zstd-jni.version>
+		<!-- Zstd-jni - https://github.com/luben/zstd-jni -->
+		<zstd-jni.version>1.5.5-10</zstd-jni.version>
+		<com.github.luben.zstd-jni.version>${zstd-jni.version}</com.github.luben.zstd-jni.version>
 	</properties>
 
 	<dependencyManagement>
@@ -6584,11 +6585,12 @@
 				<version>${org.tukaani.xz.version}</version>
 			</dependency>
 
-            <dependency>
-                <groupId>com.github.luben</groupId>
-                <artifactId>zstd-jni</artifactId>
-                <version>${com.github.luben.zstd-jni.version}</version>
-            </dependency>
+			<!-- Zstd-jni - https://github.com/luben/zstd-jni -->
+			<dependency>
+				<groupId>com.github.luben</groupId>
+				<artifactId>zstd-jni</artifactId>
+				<version>${com.github.luben.zstd-jni.version}</version>
+			</dependency>
 
 			<!-- Test scope dependencies -->
 
