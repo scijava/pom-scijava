@@ -1217,19 +1217,19 @@
 		<com.zeroc.ice.version>${ice.version}</com.zeroc.ice.version>
 
 		<!-- OME Common Java - https://github.com/ome/ome-common-java -->
-		<ome-common.version>6.0.16</ome-common.version>
+		<ome-common.version>6.0.21</ome-common.version>
 		<org.openmicroscopy.ome-common.version>${ome-common.version}</org.openmicroscopy.ome-common.version>
 
 		<!-- Metakit - https://github.com/ome/ome-metakit -->
-		<metakit.version>5.3.5</metakit.version>
+		<metakit.version>5.3.6</metakit.version>
 		<org.openmicroscopy.metakit.version>${metakit.version}</org.openmicroscopy.metakit.version>
 
 		<!-- OME POI - https://github.com/ome/ome-poi -->
-		<ome-poi.version>5.3.7</ome-poi.version>
+		<ome-poi.version>5.3.8</ome-poi.version>
 		<org.openmicroscopy.ome-poi.version>${ome-poi.version}</org.openmicroscopy.ome-poi.version>
 
 		<!-- OME Model - https://github.com/ome/ome-model -->
-		<ome-xml.version>6.3.3</ome-xml.version>
+		<ome-xml.version>6.3.4</ome-xml.version>
 		<org.openmicroscopy.ome-xml.version>${ome-xml.version}</org.openmicroscopy.ome-xml.version>
 
 		<!-- Glencoe Software jxrlib - https://github.com/glencoesoftware/jxrlib -->
