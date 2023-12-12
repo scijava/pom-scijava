@@ -1217,7 +1217,7 @@
 		<com.zeroc.ice.version>${ice.version}</com.zeroc.ice.version>
 
 		<!-- OME Codecs - https://github.com/ome/ome-codecs -->
-		<ome-codecs.version>1.1.0</ome-codecs.version>
+		<ome-codecs.version>1.0.1</ome-codecs.version>
 		<org.openmicroscopy.ome-codecs.version>${ome-codecs.version}</org.openmicroscopy.ome-codecs.version>
 
 		<!-- OME Common Java - https://github.com/ome/ome-common-java -->
