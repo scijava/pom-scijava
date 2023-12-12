@@ -1216,6 +1216,10 @@
 		<com.zeroc.glacier2.version>${glacier2.version}</com.zeroc.glacier2.version>
 		<com.zeroc.ice.version>${ice.version}</com.zeroc.ice.version>
 
+		<!-- OME Codecs - https://github.com/ome/ome-codecs -->
+		<ome-codecs.version>1.1.0</ome-codecs.version>
+		<org.openmicroscopy.ome-codecs.version>${ome-codecs.version}</org.openmicroscopy.ome-codecs.version>
+
 		<!-- OME Common Java - https://github.com/ome/ome-common-java -->
 		<ome-common.version>6.0.21</ome-common.version>
 		<org.openmicroscopy.ome-common.version>${ome-common.version}</org.openmicroscopy.ome-common.version>
@@ -3816,6 +3820,13 @@
 						<artifactId>logback-classic</artifactId>
 					</exclusion>
 				</exclusions>
+			</dependency>
+
+			<!-- OME Codecs - https://github.com/ome/ome-codecs -->
+			<dependency>
+				<groupId>org.openmicroscopy</groupId>
+				<artifactId>ome-codecs</artifactId>
+				<version>${org.openmicroscopy.ome-codecs.version}</version>
 			</dependency>
 
 			<!-- OME Common Java - https://github.com/ome/ome-common-java -->
