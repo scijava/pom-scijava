@@ -1455,7 +1455,7 @@
 		<org.ow2.asm.asm-util.version>${asm-util.version}</org.ow2.asm.asm-util.version>
 
 		<!-- Batik - https://xmlgraphics.apache.org/batik/ -->
-		<batik.version>1.16</batik.version>
+		<batik.version>1.17</batik.version>
 		<batik-anim.version>${batik.version}</batik-anim.version>
 		<batik-awt-util.version>${batik.version}</batik-awt-util.version>
 		<batik-bridge.version>${batik.version}</batik-bridge.version>
@@ -1561,7 +1561,7 @@
 
 		<!-- Commons Lang - https://commons.apache.org/proper/commons-lang/ -->
 		<commons-lang.version>2.6</commons-lang.version>
-		<commons-lang3.version>3.12.0</commons-lang3.version>
+		<commons-lang3.version>3.14.0</commons-lang3.version>
 		<commons-lang.commons-lang.version>${commons-lang.version}</commons-lang.commons-lang.version>
 		<org.apache.commons.commons-lang3.version>${commons-lang3.version}</org.apache.commons.commons-lang3.version>
 
@@ -1578,7 +1578,7 @@
 		<org.apache.commons.commons-pool2.version>${commons-pool2.version}</org.apache.commons.commons-pool2.version>
 
 		<!-- Commons Text - https://commons.apache.org/proper/commons-text/ -->
-		<commons-text.version>1.10.0</commons-text.version>
+		<commons-text.version>1.11.0</commons-text.version>
 		<org.apache.commons.commons-text.version>${commons-text.version}</org.apache.commons.commons-text.version>
 
 		<!-- Byte Code Generation Library - https://github.com/cglib/cglib -->
@@ -1646,7 +1646,7 @@
 		<com.google.errorprone.error_prone_annotations.version>${error_prone_annotations.version}</com.google.errorprone.error_prone_annotations.version>
 
 		<!-- FlatLaf - https://www.formdev.com/flatlaf/ -->
-		<flatlaf.version>3.1.1</flatlaf.version>
+		<flatlaf.version>3.2.1</flatlaf.version>
 		<com.formdev.flatlaf.version>${flatlaf.version}</com.formdev.flatlaf.version>
 		<flatlaf-fonts-jetbrains-mono.version>2.242</flatlaf-fonts-jetbrains-mono.version>
 		<com.formdev.flatlaf-fonts-jetbrains-mono.version>${flatlaf-fonts-jetbrains-mono.version}</com.formdev.flatlaf-fonts-jetbrains-mono.version>
@@ -2207,8 +2207,8 @@
 		<org.objenesis.objenesis.version>${objenesis.version}</org.objenesis.objenesis.version>
 
 		<!-- OkHttp - https://square.github.io/okhttp/ -->
-		<okhttp.version>4.11.0</okhttp.version>
-		<okio.version>3.3.0</okio.version>
+		<okhttp.version>4.12.0</okhttp.version>
+		<okio.version>3.7.0</okio.version>
 		<com.squareup.okhttp3.okhttp.version>${okhttp.version}</com.squareup.okhttp3.okhttp.version>
 		<com.squareup.okio.okio.version>${okio.version}</com.squareup.okio.okio.version>
 
@@ -2250,7 +2250,7 @@
 		<ch.qos.reload4j.reload4j.version>${reload4j.version}</ch.qos.reload4j.reload4j.version>
 
 		<!-- RSyntaxTextArea - https://bobbylight.github.io/RSyntaxTextArea/ -->
-		<rsyntaxtextarea.version>3.3.3</rsyntaxtextarea.version>
+		<rsyntaxtextarea.version>3.3.4</rsyntaxtextarea.version>
 		<autocomplete.version>3.3.1</autocomplete.version>
 		<languagesupport.version>3.3.0</languagesupport.version>
 		<com.fifesoft.rsyntaxtextarea.version>${rsyntaxtextarea.version}</com.fifesoft.rsyntaxtextarea.version>
