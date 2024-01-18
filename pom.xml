@@ -1090,7 +1090,7 @@
 		<sc.fiji.T2-TreelineGraph.version>${T2-TreelineGraph.version}</sc.fiji.T2-TreelineGraph.version>
 
 		<!-- TrakEM2 - https://github.com/trakem2/TrakEM2 -->
-		<TrakEM2.version>1.3.9</TrakEM2.version>
+		<TrakEM2.version>1.3.10</TrakEM2.version>
 		<TrakEM2_.version>${TrakEM2.version}</TrakEM2_.version>
 		<sc.fiji.TrakEM2_.version>${TrakEM2_.version}</sc.fiji.TrakEM2_.version>
 
