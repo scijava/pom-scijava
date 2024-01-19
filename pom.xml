@@ -407,7 +407,7 @@
 		<org.scijava.script-editor.version>${script-editor.version}</org.scijava.script-editor.version>
 
 		<!-- Script Editor: Jython - https://github.com/scijava/script-editor-jython -->
-		<script-editor-jython.version>1.0.0</script-editor-jython.version>
+		<script-editor-jython.version>1.0.1</script-editor-jython.version>
 		<org.scijava.script-editor-jython.version>${script-editor-jython.version}</org.scijava.script-editor-jython.version>
 
 		<!-- Script Editor: Scala - https://github.com/scijava/script-editor-scala -->
