@@ -1650,9 +1650,9 @@
 		<com.google.errorprone.error_prone_annotations.version>${error_prone_annotations.version}</com.google.errorprone.error_prone_annotations.version>
 
 		<!-- FlatLaf - https://www.formdev.com/flatlaf/ -->
-		<flatlaf.version>3.2.1</flatlaf.version>
+		<flatlaf.version>3.3</flatlaf.version>
 		<com.formdev.flatlaf.version>${flatlaf.version}</com.formdev.flatlaf.version>
-		<flatlaf-fonts-jetbrains-mono.version>2.242</flatlaf-fonts-jetbrains-mono.version>
+		<flatlaf-fonts-jetbrains-mono.version>2.304</flatlaf-fonts-jetbrains-mono.version>
 		<com.formdev.flatlaf-fonts-jetbrains-mono.version>${flatlaf-fonts-jetbrains-mono.version}</com.formdev.flatlaf-fonts-jetbrains-mono.version>
 
 		<!-- Google APIs Client - https://github.com/googleapis/google-api-java-client -->
