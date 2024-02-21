@@ -251,17 +251,11 @@
 		Also in: org.jmockit:jmockit
 		Enables: junit:junit + org.jmockit:jmockit
 		==
-		Classes: org.jetbrains.kotlin.daemon.common.*
-		Part of: kotlin-daemon-client, kotlin-daemon-embeddable
-		Enables:
-			org.jetbrains.kotlin:kotlin-compiler-embeddable (kotlin-daemon-embeddable) +
-			org.jetbrains.kotlin:kotlin-script-util (kotlin-compiler-client)
-		==
 		Classes: org.jzy3d.plot3d.pipelines.*
 		Part of: org.jzy3d:jzy3d-core, org.jzy3d:jzy3d-native-jogl-awt
 		Enables: org.jzy3d:jzy3d-core + org.jzy3d:jzy3d-native-jogl-awt
 		-->
-		<scijava.allowedDuplicateClasses>com.google.inject.*,javax.xml.namespace.QName,jnr.ffi.*,org.apache.hadoop.yarn.*.package-info,org.apache.spark.unused.UnusedStubClass,org.eclipse.aether.*,org.hibernate.stat.ConcurrentStatisticsImpl,org.jetbrains.kotlin.daemon.common.*,org.junit.runner.Runner,org.jzy3d.plot3d.pipelines.*</scijava.allowedDuplicateClasses>
+		<scijava.allowedDuplicateClasses>com.google.inject.*,javax.xml.namespace.QName,jnr.ffi.*,org.apache.hadoop.yarn.*.package-info,org.apache.spark.unused.UnusedStubClass,org.eclipse.aether.*,org.hibernate.stat.ConcurrentStatisticsImpl,org.junit.runner.Runner,org.jzy3d.plot3d.pipelines.*</scijava.allowedDuplicateClasses>
 
 		<!--
 		NB: The scijava.allowedDuplicateClasses property above makes it easier to
@@ -6222,11 +6216,6 @@
 				<groupId>org.jetbrains.kotlin</groupId>
 				<artifactId>kotlin-script-runtime</artifactId>
 				<version>${org.jetbrains.kotlin.kotlin-script-runtime.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.jetbrains.kotlin</groupId>
-				<artifactId>kotlin-script-util</artifactId>
-				<version>${org.jetbrains.kotlin.kotlin-script-util.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jetbrains.kotlin</groupId>
