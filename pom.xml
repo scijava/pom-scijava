@@ -1334,20 +1334,21 @@
 		<groovy.version>4.0.18</groovy.version>
 		<groovy-ant.version>${groovy.version}</groovy-ant.version>
 		<groovy-astbuilder.version>${groovy.version}</groovy-astbuilder.version>
-		<groovy-bsf.version>${groovy.version}</groovy-bsf.version>
 		<groovy-cli-commons.version>${groovy.version}</groovy-cli-commons.version>
 		<groovy-cli-picocli.version>${groovy.version}</groovy-cli-picocli.version>
 		<groovy-console.version>${groovy.version}</groovy-console.version>
+		<groovy-contracts.version>${groovy.version}</groovy-contracts.version>
 		<groovy-datetime.version>${groovy.version}</groovy-datetime.version>
 		<groovy-dateutil.version>${groovy.version}</groovy-dateutil.version>
 		<groovy-docgenerator.version>${groovy.version}</groovy-docgenerator.version>
+		<groovy-ginq.version>${groovy.version}</groovy-ginq.version>
 		<groovy-groovydoc.version>${groovy.version}</groovy-groovydoc.version>
 		<groovy-groovysh.version>${groovy.version}</groovy-groovysh.version>
-		<groovy-jaxb.version>${groovy.version}</groovy-jaxb.version>
 		<groovy-jmx.version>${groovy.version}</groovy-jmx.version>
 		<groovy-json.version>${groovy.version}</groovy-json.version>
 		<groovy-jsr223.version>${groovy.version}</groovy-jsr223.version>
 		<groovy-macro.version>${groovy.version}</groovy-macro.version>
+		<groovy-macro-library.version>${groovy.version}</groovy-macro-library.version>
 		<groovy-nio.version>${groovy.version}</groovy-nio.version>
 		<groovy-servlet.version>${groovy.version}</groovy-servlet.version>
 		<groovy-sql.version>${groovy.version}</groovy-sql.version>
@@ -1356,25 +1357,28 @@
 		<groovy-test.version>${groovy.version}</groovy-test.version>
 		<groovy-test-junit5.version>${groovy.version}</groovy-test-junit5.version>
 		<groovy-testng.version>${groovy.version}</groovy-testng.version>
+		<groovy-toml.version>${groovy.version}</groovy-toml.version>
+		<groovy-typecheckers.version>${groovy.version}</groovy-typecheckers.version>
 		<groovy-xml.version>${groovy.version}</groovy-xml.version>
 		<groovy-yaml.version>${groovy.version}</groovy-yaml.version>
 		<org.apache.groovy.groovy.version>${groovy.version}</org.apache.groovy.groovy.version>
 		<org.apache.groovy.groovy-ant.version>${groovy-ant.version}</org.apache.groovy.groovy-ant.version>
 		<org.apache.groovy.groovy-astbuilder.version>${groovy-astbuilder.version}</org.apache.groovy.groovy-astbuilder.version>
-		<org.apache.groovy.groovy-bsf.version>${groovy-bsf.version}</org.apache.groovy.groovy-bsf.version>
 		<org.apache.groovy.groovy-cli-commons.version>${groovy-cli-commons.version}</org.apache.groovy.groovy-cli-commons.version>
 		<org.apache.groovy.groovy-cli-picocli.version>${groovy-cli-picocli.version}</org.apache.groovy.groovy-cli-picocli.version>
 		<org.apache.groovy.groovy-console.version>${groovy-console.version}</org.apache.groovy.groovy-console.version>
+		<org.apache.groovy.groovy-contracts.version>${groovy-contracts.version}</org.apache.groovy.groovy-contracts.version>
 		<org.apache.groovy.groovy-datetime.version>${groovy-datetime.version}</org.apache.groovy.groovy-datetime.version>
 		<org.apache.groovy.groovy-dateutil.version>${groovy-dateutil.version}</org.apache.groovy.groovy-dateutil.version>
 		<org.apache.groovy.groovy-docgenerator.version>${groovy-docgenerator.version}</org.apache.groovy.groovy-docgenerator.version>
+		<org.apache.groovy.groovy-ginq.version>${groovy-ginq.version}</org.apache.groovy.groovy-ginq.version>
 		<org.apache.groovy.groovy-groovydoc.version>${groovy-groovydoc.version}</org.apache.groovy.groovy-groovydoc.version>
 		<org.apache.groovy.groovy-groovysh.version>${groovy-groovysh.version}</org.apache.groovy.groovy-groovysh.version>
-		<org.apache.groovy.groovy-jaxb.version>${groovy-jaxb.version}</org.apache.groovy.groovy-jaxb.version>
 		<org.apache.groovy.groovy-jmx.version>${groovy-jmx.version}</org.apache.groovy.groovy-jmx.version>
 		<org.apache.groovy.groovy-json.version>${groovy-json.version}</org.apache.groovy.groovy-json.version>
 		<org.apache.groovy.groovy-jsr223.version>${groovy-jsr223.version}</org.apache.groovy.groovy-jsr223.version>
 		<org.apache.groovy.groovy-macro.version>${groovy-macro.version}</org.apache.groovy.groovy-macro.version>
+		<org.apache.groovy.groovy-macro-library.version>${groovy-macro-library.version}</org.apache.groovy.groovy-macro-library.version>
 		<org.apache.groovy.groovy-nio.version>${groovy-nio.version}</org.apache.groovy.groovy-nio.version>
 		<org.apache.groovy.groovy-servlet.version>${groovy-servlet.version}</org.apache.groovy.groovy-servlet.version>
 		<org.apache.groovy.groovy-sql.version>${groovy-sql.version}</org.apache.groovy.groovy-sql.version>
@@ -1383,6 +1387,8 @@
 		<org.apache.groovy.groovy-test.version>${groovy-test.version}</org.apache.groovy.groovy-test.version>
 		<org.apache.groovy.groovy-test-junit5.version>${groovy-test-junit5.version}</org.apache.groovy.groovy-test-junit5.version>
 		<org.apache.groovy.groovy-testng.version>${groovy-testng.version}</org.apache.groovy.groovy-testng.version>
+		<org.apache.groovy.groovy-toml.version>${groovy-toml.version}</org.apache.groovy.groovy-toml.version>
+		<org.apache.groovy.groovy-typecheckers.version>${groovy-typecheckers.version}</org.apache.groovy.groovy-typecheckers.version>
 		<org.apache.groovy.groovy-xml.version>${groovy-xml.version}</org.apache.groovy.groovy-xml.version>
 		<org.apache.groovy.groovy-yaml.version>${groovy-yaml.version}</org.apache.groovy.groovy-yaml.version>
 
@@ -4221,11 +4227,6 @@
 			</dependency>
 			<dependency>
 				<groupId>org.apache.groovy</groupId>
-				<artifactId>groovy-bsf</artifactId>
-				<version>${org.apache.groovy.groovy-bsf.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.groovy</groupId>
 				<artifactId>groovy-cli-commons</artifactId>
 				<version>${org.apache.groovy.groovy-cli-commons.version}</version>
 			</dependency>
@@ -4238,6 +4239,11 @@
 				<groupId>org.apache.groovy</groupId>
 				<artifactId>groovy-console</artifactId>
 				<version>${org.apache.groovy.groovy-console.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.groovy</groupId>
+				<artifactId>groovy-contracts</artifactId>
+				<version>${org.apache.groovy.groovy-contracts.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.groovy</groupId>
@@ -4256,6 +4262,11 @@
 			</dependency>
 			<dependency>
 				<groupId>org.apache.groovy</groupId>
+				<artifactId>groovy-ginq</artifactId>
+				<version>${org.apache.groovy.groovy-ginq.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.groovy</groupId>
 				<artifactId>groovy-groovydoc</artifactId>
 				<version>${org.apache.groovy.groovy-groovydoc.version}</version>
 			</dependency>
@@ -4263,11 +4274,6 @@
 				<groupId>org.apache.groovy</groupId>
 				<artifactId>groovy-groovysh</artifactId>
 				<version>${org.apache.groovy.groovy-groovysh.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.groovy</groupId>
-				<artifactId>groovy-jaxb</artifactId>
-				<version>${org.apache.groovy.groovy-jaxb.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.groovy</groupId>
@@ -4288,6 +4294,11 @@
 				<groupId>org.apache.groovy</groupId>
 				<artifactId>groovy-macro</artifactId>
 				<version>${org.apache.groovy.groovy-macro.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.groovy</groupId>
+				<artifactId>groovy-macro-library</artifactId>
+				<version>${org.apache.groovy.groovy-macro-library.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.groovy</groupId>
@@ -4328,6 +4339,16 @@
 				<groupId>org.apache.groovy</groupId>
 				<artifactId>groovy-testng</artifactId>
 				<version>${org.apache.groovy.groovy-testng.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.groovy</groupId>
+				<artifactId>groovy-toml</artifactId>
+				<version>${org.apache.groovy.groovy-toml.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.groovy</groupId>
+				<artifactId>groovy-typecheckers</artifactId>
+				<version>${org.apache.groovy.groovy-typecheckers.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.groovy</groupId>
