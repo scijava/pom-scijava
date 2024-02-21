@@ -1765,11 +1765,7 @@
 		<org.apache.jackrabbit.jackrabbit-webdav.version>${jackrabbit-webdav.version}</org.apache.jackrabbit.jackrabbit-webdav.version>
 
 		<!-- Jackson - https://github.com/FasterXML/jackson -->
-		<!--
-		NB: Upgrading to 2.15.0 triggers an NPE in enforcer-maven-plugin +
-		extra-enforcer-rules. For now, we stick with 2.14.2 to avoid this problem.
-		-->
-		<jackson.version>2.14.2</jackson.version>
+		<jackson.version>2.16.1</jackson.version>
 		<jackson-annotations.version>${jackson.version}</jackson-annotations.version>
 		<jackson-core.version>${jackson.version}</jackson-core.version>
 		<jackson-databind.version>${jackson.version}</jackson-databind.version>
