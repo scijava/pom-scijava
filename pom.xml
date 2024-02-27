@@ -337,7 +337,7 @@
 		<org.scijava.scijava-config.version>${scijava-config.version}</org.scijava.scijava-config.version>
 
 		<!-- SciJava Grab - https://github.com/scijava/scijava-grab -->
-		<scijava-grab.version>0.1.1</scijava-grab.version>
+		<scijava-grab.version>0.1.2</scijava-grab.version>
 		<org.scijava.scijava-grab.version>${scijava-grab.version}</org.scijava.scijava-grab.version>
 
 		<!-- SciJava I/O: HTTP - https://github.com/scijava/scijava-io-http -->
