@@ -1817,15 +1817,9 @@
 		<org.bytedeco.opencv.version>${opencv.version}</org.bytedeco.opencv.version>
 		<org.bytedeco.tesseract.version>${tesseract.version}</org.bytedeco.tesseract.version>
 
-		<scijava.natives.classifier.artoolkitplus>${scijava.natives.classifier.javacpp}</scijava.natives.classifier.artoolkitplus>
 		<scijava.natives.classifier.ffmpeg>${scijava.natives.classifier.javacpp}</scijava.natives.classifier.ffmpeg>
-		<scijava.natives.classifier.flandmark>${scijava.natives.classifier.javacpp}</scijava.natives.classifier.flandmark>
 		<scijava.natives.classifier.hdf5>${scijava.natives.classifier.javacpp}</scijava.natives.classifier.hdf5>
 		<scijava.natives.classifier.leptonica>${scijava.natives.classifier.javacpp}</scijava.natives.classifier.leptonica>
-		<scijava.natives.classifier.libdc1394>${scijava.natives.classifier.javacpp}</scijava.natives.classifier.libdc1394>
-		<scijava.natives.classifier.libfreenect>${scijava.natives.classifier.javacpp}</scijava.natives.classifier.libfreenect>
-		<scijava.natives.classifier.libfreenect2>${scijava.natives.classifier.javacpp}</scijava.natives.classifier.libfreenect2>
-		<scijava.natives.classifier.librealsense>${scijava.natives.classifier.javacpp}</scijava.natives.classifier.librealsense>
 		<scijava.natives.classifier.openblas>${scijava.natives.classifier.javacpp}</scijava.natives.classifier.openblas>
 		<scijava.natives.classifier.opencv>${scijava.natives.classifier.javacpp}</scijava.natives.classifier.opencv>
 		<scijava.natives.classifier.tesseract>${scijava.natives.classifier.javacpp}</scijava.natives.classifier.tesseract>
@@ -5261,18 +5255,8 @@
 
 			<dependency>
 				<groupId>org.bytedeco</groupId>
-				<artifactId>artoolkitplus</artifactId>
-				<version>${org.bytedeco.artoolkitplus.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.bytedeco</groupId>
 				<artifactId>ffmpeg</artifactId>
 				<version>${org.bytedeco.ffmpeg.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.bytedeco</groupId>
-				<artifactId>flandmark</artifactId>
-				<version>${org.bytedeco.flandmark.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.bytedeco</groupId>
@@ -5283,26 +5267,6 @@
 				<groupId>org.bytedeco</groupId>
 				<artifactId>leptonica</artifactId>
 				<version>${org.bytedeco.leptonica.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.bytedeco</groupId>
-				<artifactId>libdc1394</artifactId>
-				<version>${org.bytedeco.libdc1394.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.bytedeco</groupId>
-				<artifactId>libfreenect</artifactId>
-				<version>${org.bytedeco.libfreenect.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.bytedeco</groupId>
-				<artifactId>libfreenect2</artifactId>
-				<version>${org.bytedeco.libfreenect2.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.bytedeco</groupId>
-				<artifactId>librealsense</artifactId>
-				<version>${org.bytedeco.librealsense.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.bytedeco</groupId>
@@ -5322,21 +5286,9 @@
 
 			<dependency>
 				<groupId>org.bytedeco</groupId>
-				<artifactId>artoolkitplus</artifactId>
-				<version>${org.bytedeco.artoolkitplus.version}</version>
-				<classifier>${scijava.natives.classifier.artoolkitplus}</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.bytedeco</groupId>
 				<artifactId>ffmpeg</artifactId>
 				<version>${org.bytedeco.ffmpeg.version}</version>
 				<classifier>${scijava.natives.classifier.ffmpeg}</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.bytedeco</groupId>
-				<artifactId>flandmark</artifactId>
-				<version>${org.bytedeco.flandmark.version}</version>
-				<classifier>${scijava.natives.classifier.flandmark}</classifier>
 			</dependency>
 			<dependency>
 				<groupId>org.bytedeco</groupId>
@@ -5349,30 +5301,6 @@
 				<artifactId>leptonica</artifactId>
 				<version>${org.bytedeco.leptonica.version}</version>
 				<classifier>${scijava.natives.classifier.leptonica}</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.bytedeco</groupId>
-				<artifactId>libdc1394</artifactId>
-				<version>${org.bytedeco.libdc1394.version}</version>
-				<classifier>${scijava.natives.classifier.libdc1394}</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.bytedeco</groupId>
-				<artifactId>libfreenect</artifactId>
-				<version>${org.bytedeco.libfreenect.version}</version>
-				<classifier>${scijava.natives.classifier.libfreenect}</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.bytedeco</groupId>
-				<artifactId>libfreenect2</artifactId>
-				<version>${org.bytedeco.libfreenect2.version}</version>
-				<classifier>${scijava.natives.classifier.libfreenect2}</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.bytedeco</groupId>
-				<artifactId>librealsense</artifactId>
-				<version>${org.bytedeco.librealsense.version}</version>
-				<classifier>${scijava.natives.classifier.librealsense}</classifier>
 			</dependency>
 			<dependency>
 				<groupId>org.bytedeco</groupId>
