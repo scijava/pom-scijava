@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.scijava</groupId>
 		<artifactId>pom-scijava-base</artifactId>
-		<version>18.2.0</version>
+		<version>19.0.0</version>
 		<relativePath />
 	</parent>
 
@@ -337,7 +337,7 @@
 		<org.scijava.scijava-config.version>${scijava-config.version}</org.scijava.scijava-config.version>
 
 		<!-- SciJava Grab - https://github.com/scijava/scijava-grab -->
-		<scijava-grab.version>0.1.1</scijava-grab.version>
+		<scijava-grab.version>0.1.2</scijava-grab.version>
 		<org.scijava.scijava-grab.version>${scijava-grab.version}</org.scijava.scijava-grab.version>
 
 		<!-- SciJava I/O: HTTP - https://github.com/scijava/scijava-io-http -->
@@ -1400,7 +1400,7 @@
 		<!-- Apache Maven - https://maven.apache.org/ -->
 		<maven-artifact-transfer.version>0.13.1</maven-artifact-transfer.version>
 		<maven-common-artifact-filters.version>3.3.2</maven-common-artifact-filters.version>
-		<maven-core.version>3.9.1</maven-core.version>
+		<maven-core.version>3.9.6</maven-core.version>
 		<maven-plugin-tools-api.version>3.8.2</maven-plugin-tools-api.version>
 		<plexus-component-annotations.version>2.1.1</plexus-component-annotations.version>
 		<plexus-utils.version>3.5.1</plexus-utils.version>
@@ -1765,11 +1765,7 @@
 		<org.apache.jackrabbit.jackrabbit-webdav.version>${jackrabbit-webdav.version}</org.apache.jackrabbit.jackrabbit-webdav.version>
 
 		<!-- Jackson - https://github.com/FasterXML/jackson -->
-		<!--
-		NB: Upgrading to 2.15.0 triggers an NPE in enforcer-maven-plugin +
-		extra-enforcer-rules. For now, we stick with 2.14.2 to avoid this problem.
-		-->
-		<jackson.version>2.14.2</jackson.version>
+		<jackson.version>2.16.1</jackson.version>
 		<jackson-annotations.version>${jackson.version}</jackson-annotations.version>
 		<jackson-core.version>${jackson.version}</jackson-core.version>
 		<jackson-databind.version>${jackson.version}</jackson-databind.version>
@@ -1808,15 +1804,15 @@
 		<org.bytedeco.javacpp.version>${javacpp.version}</org.bytedeco.javacpp.version>
 		<org.bytedeco.javacv.version>${javacv.version}</org.bytedeco.javacv.version>
 
-		<artoolkitplus.version>2.3.1-${org.bytedeco.javacpp.version}</artoolkitplus.version>
+		<!-- NO macosx-arm64 --><artoolkitplus.version>2.3.1-${org.bytedeco.javacpp.version}</artoolkitplus.version>
 		<ffmpeg.version>5.1.2-${org.bytedeco.javacpp.version}</ffmpeg.version>
-		<flandmark.version>1.07-${org.bytedeco.javacpp.version}</flandmark.version>
-		<hdf5.version>1.12.2-${org.bytedeco.javacpp.version}</hdf5.version>
+		<!-- NO macosx-arm64 --><flandmark.version>1.07-${org.bytedeco.javacpp.version}</flandmark.version>
+		<!-- NO macosx-arm64 --><hdf5.version>1.12.2-${org.bytedeco.javacpp.version}</hdf5.version>
 		<leptonica.version>1.82.0-${org.bytedeco.javacpp.version}</leptonica.version>
-		<libdc1394.version>2.2.6-${org.bytedeco.javacpp.version}</libdc1394.version>
-		<libfreenect.version>0.5.7-${org.bytedeco.javacpp.version}</libfreenect.version>
-		<libfreenect2.version>0.2.0-${org.bytedeco.javacpp.version}</libfreenect2.version>
-		<librealsense.version>1.12.4-${org.bytedeco.javacpp.version}</librealsense.version>
+		<!-- NO macosx-arm64 --><libdc1394.version>2.2.6-${org.bytedeco.javacpp.version}</libdc1394.version>
+		<!-- NO macosx-arm64 --><libfreenect.version>0.5.7-${org.bytedeco.javacpp.version}</libfreenect.version>
+		<!-- NO macosx-arm64 --><libfreenect2.version>0.2.0-${org.bytedeco.javacpp.version}</libfreenect2.version>
+		<!-- NO macosx-arm64 --><librealsense.version>1.12.4-${org.bytedeco.javacpp.version}</librealsense.version>
 		<openblas.version>0.3.21-${org.bytedeco.javacpp.version}</openblas.version>
 		<opencv.version>4.6.0-${org.bytedeco.javacpp.version}</opencv.version>
 		<tesseract.version>5.2.0-${org.bytedeco.javacpp.version}</tesseract.version>
@@ -4708,6 +4704,13 @@
 				<groupId>com.nativelibs4java</groupId>
 				<artifactId>bridj</artifactId>
 				<version>${com.nativelibs4java.bridj.version}</version>
+				<exclusions>
+					<exclusion>
+						<!-- Conflicts with junit:junit. We don't need Android here. -->
+						<groupId>com.google.android.tools</groupId>
+						<artifactId>dx</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<!-- CDI - https://cdi-spec.org/ -->
