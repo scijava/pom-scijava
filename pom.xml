@@ -1173,7 +1173,7 @@
 
 		<!-- BigStitcher - https://imagej.net/plugins/bigstitcher -->
 		<BigStitcher.version>1.2.10</BigStitcher.version>
-		<multiview-reconstruction.version>3.2.6</multiview-reconstruction.version>
+		<multiview-reconstruction.version>3.2.7</multiview-reconstruction.version>
 		<multiview-simulation.version>0.2.0</multiview-simulation.version>
 		<net.preibisch.BigStitcher.version>${BigStitcher.version}</net.preibisch.BigStitcher.version>
 		<net.preibisch.multiview-reconstruction.version>${multiview-reconstruction.version}</net.preibisch.multiview-reconstruction.version>
@@ -1297,7 +1297,7 @@
 		<!-- Third party components -->
 
 		<!-- Amazon S3 - https://aws.amazon.com/sdkforjava -->
-		<aws.version>1.12.663</aws.version>
+		<aws.version>1.12.667</aws.version>
 		<aws-java-sdk-core.version>${aws.version}</aws-java-sdk-core.version>
 		<aws-java-sdk-s3.version>${aws.version}</aws-java-sdk-s3.version>
 		<com.amazonaws.aws-java-sdk-core.version>${aws-java-sdk-core.version}</com.amazonaws.aws-java-sdk-core.version>
@@ -1677,7 +1677,7 @@
 		<api-common.version>2.26.0</api-common.version>
 		<gax.version>2.43.0</gax.version>
 		<gax-grpc.version>${gax.version}</gax-grpc.version>
-		<gax-httpjson.version>0.111.0</gax-httpjson.version>
+		<gax-httpjson.version>${gax.version}</gax-httpjson.version>
 		<proto-google-common-protos.version>2.34.0</proto-google-common-protos.version>
 		<proto-google-iam-v1.version>1.29.0</proto-google-iam-v1.version>
 		<com.google.api.api-common.version>${api-common.version}</com.google.api.api-common.version>
@@ -1731,7 +1731,7 @@
 		<com.google.http-client.google-http-client-xml.version>${google-http-client-xml.version}</com.google.http-client.google-http-client-xml.version>
 
 		<!-- gRPC - https://grpc.io/ -->
-		<grpc.version>1.61.1</grpc.version>
+		<grpc.version>1.62.2</grpc.version>
 		<grpc-context.version>${grpc.version}</grpc-context.version>
 		<io.grpc.grpc-context.version>${grpc-context.version}</io.grpc.grpc-context.version>
 
@@ -1761,7 +1761,7 @@
 		<com.google.j2objc.j2objc-annotations.version>${j2objc-annotations.version}</com.google.j2objc.j2objc-annotations.version>
 
 		<!-- Jackrabbit WebDAV - https://jackrabbit.apache.org/jcr/components/jackrabbit-webdav-library.html -->
-		<jackrabbit-webdav.version>2.21.23</jackrabbit-webdav.version>
+		<jackrabbit-webdav.version>2.21.25</jackrabbit-webdav.version>
 		<org.apache.jackrabbit.jackrabbit-webdav.version>${jackrabbit-webdav.version}</org.apache.jackrabbit.jackrabbit-webdav.version>
 
 		<!-- Jackson - https://github.com/FasterXML/jackson -->
