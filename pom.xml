@@ -1799,32 +1799,20 @@
 
 		<!-- JavaCPP - https://github.com/bytedeco/javacpp -->
 
-		<javacpp.version>1.5.8</javacpp.version>
+		<javacpp.version>1.5.10</javacpp.version>
 		<javacv.version>${org.bytedeco.javacpp.version}</javacv.version>
 		<org.bytedeco.javacpp.version>${javacpp.version}</org.bytedeco.javacpp.version>
 		<org.bytedeco.javacv.version>${javacv.version}</org.bytedeco.javacv.version>
 
-		<!-- NO macosx-arm64 --><artoolkitplus.version>2.3.1-${org.bytedeco.javacpp.version}</artoolkitplus.version>
-		<ffmpeg.version>5.1.2-${org.bytedeco.javacpp.version}</ffmpeg.version>
-		<!-- NO macosx-arm64 --><flandmark.version>1.07-${org.bytedeco.javacpp.version}</flandmark.version>
-		<!-- NO macosx-arm64 --><hdf5.version>1.12.2-${org.bytedeco.javacpp.version}</hdf5.version>
-		<leptonica.version>1.82.0-${org.bytedeco.javacpp.version}</leptonica.version>
-		<!-- NO macosx-arm64 --><libdc1394.version>2.2.6-${org.bytedeco.javacpp.version}</libdc1394.version>
-		<!-- NO macosx-arm64 --><libfreenect.version>0.5.7-${org.bytedeco.javacpp.version}</libfreenect.version>
-		<!-- NO macosx-arm64 --><libfreenect2.version>0.2.0-${org.bytedeco.javacpp.version}</libfreenect2.version>
-		<!-- NO macosx-arm64 --><librealsense.version>1.12.4-${org.bytedeco.javacpp.version}</librealsense.version>
-		<openblas.version>0.3.21-${org.bytedeco.javacpp.version}</openblas.version>
-		<opencv.version>4.6.0-${org.bytedeco.javacpp.version}</opencv.version>
-		<tesseract.version>5.2.0-${org.bytedeco.javacpp.version}</tesseract.version>
-		<org.bytedeco.artoolkitplus.version>${artoolkitplus.version}</org.bytedeco.artoolkitplus.version>
+		<ffmpeg.version>6.1.1-${org.bytedeco.javacpp.version}</ffmpeg.version>
+		<!-- NO macosx-arm64 --><hdf5.version>1.14.3-${org.bytedeco.javacpp.version}</hdf5.version>
+		<leptonica.version>1.84.1-${org.bytedeco.javacpp.version}</leptonica.version>
+		<openblas.version>0.3.26-${org.bytedeco.javacpp.version}</openblas.version>
+		<opencv.version>4.9.0-${org.bytedeco.javacpp.version}</opencv.version>
+		<tesseract.version>5.3.4-${org.bytedeco.javacpp.version}</tesseract.version>
 		<org.bytedeco.ffmpeg.version>${ffmpeg.version}</org.bytedeco.ffmpeg.version>
-		<org.bytedeco.flandmark.version>${flandmark.version}</org.bytedeco.flandmark.version>
 		<org.bytedeco.hdf5.version>${hdf5.version}</org.bytedeco.hdf5.version>
 		<org.bytedeco.leptonica.version>${leptonica.version}</org.bytedeco.leptonica.version>
-		<org.bytedeco.libdc1394.version>${libdc1394.version}</org.bytedeco.libdc1394.version>
-		<org.bytedeco.libfreenect.version>${libfreenect.version}</org.bytedeco.libfreenect.version>
-		<org.bytedeco.libfreenect2.version>${libfreenect2.version}</org.bytedeco.libfreenect2.version>
-		<org.bytedeco.librealsense.version>${librealsense.version}</org.bytedeco.librealsense.version>
 		<org.bytedeco.openblas.version>${openblas.version}</org.bytedeco.openblas.version>
 		<org.bytedeco.opencv.version>${opencv.version}</org.bytedeco.opencv.version>
 		<org.bytedeco.tesseract.version>${tesseract.version}</org.bytedeco.tesseract.version>
