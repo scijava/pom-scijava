@@ -1761,7 +1761,8 @@
 		<com.google.j2objc.j2objc-annotations.version>${j2objc-annotations.version}</com.google.j2objc.j2objc-annotations.version>
 
 		<!-- Jackrabbit WebDAV - https://jackrabbit.apache.org/jcr/components/jackrabbit-webdav-library.html -->
-		<jackrabbit-webdav.version>2.21.25</jackrabbit-webdav.version>
+		<!-- NB: 2.21.22 is the last version compiled for Java 8! -->
+		<jackrabbit-webdav.version>2.21.22</jackrabbit-webdav.version>
 		<org.apache.jackrabbit.jackrabbit-webdav.version>${jackrabbit-webdav.version}</org.apache.jackrabbit.jackrabbit-webdav.version>
 
 		<!-- Jackson - https://github.com/FasterXML/jackson -->
