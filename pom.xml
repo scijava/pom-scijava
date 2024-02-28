@@ -1789,7 +1789,7 @@
 		<jama.version>1.0.3</jama.version>
 		<gov.nist.math.jama.version>${jama.version}</gov.nist.math.jama.version>
 
-		<!-- Java 3D - https://github.com/scijava/java3d-core -->
+		<!-- [DEPRECATED] SciJava's fork of Java 3D - TO BE REMOVED in pom-scijava 39.0.0 -->
 		<java3d.version>1.6.0-scijava-2</java3d.version>
 		<j3dcore.version>${java3d.version}</j3dcore.version>
 		<j3dutils.version>${java3d.version}</j3dutils.version>
@@ -2033,6 +2033,16 @@
 		<scijava.natives.classifier.joal>${scijava.natives.classifier.jogamp}</scijava.natives.classifier.joal>
 		<scijava.natives.classifier.jocl>${scijava.natives.classifier.jogamp}</scijava.natives.classifier.jocl>
 		<scijava.natives.classifier.jogl>${scijava.natives.classifier.jogamp}</scijava.natives.classifier.jogl>
+
+		<!-- JogAmp Java 3D - https://jogamp.org/deployment/maven-java3d/ -->
+		<jogamp-java3d.version>1.7.2</jogamp-java3d.version>
+		<java3d-core.version>${jogamp-java3d.version}</java3d-core.version>
+		<java3d-utils.version>${jogamp-java3d.version}</java3d-utils.version>
+		<!-- TEMP: Avoid short name clash with org.scijava:vecmath. -->
+		<!--<vecmath.version>${jogamp-java3d.version}</vecmath.version>-->
+		<org.jogamp.java3d.java3d-core.version>${java3d-core.version}</org.jogamp.java3d.java3d-core.version>
+		<org.jogamp.java3d.java3d-utils.version>${java3d-utils.version}</org.jogamp.java3d.java3d-utils.version>
+		<org.jogamp.java3d.vecmath.version>${jogamp-java3d.version}</org.jogamp.java3d.vecmath.version>
 
 		<!-- JOML - https://joml-ci.github.io/JOML/ -->
 		<joml.version>1.10.5</joml.version>
@@ -5230,7 +5240,7 @@
 				<version>${gov.nist.math.jama.version}</version>
 			</dependency>
 
-			<!-- Java 3D - https://github.com/scijava/java3d-core -->
+			<!-- [DEPRECATED] SciJava's fork of Java 3D - TO BE REMOVED in pom-scijava 39.0.0 -->
 			<dependency>
 				<groupId>org.scijava</groupId>
 				<artifactId>j3dcore</artifactId>
@@ -5879,6 +5889,23 @@
 				<artifactId>jogl-all-noawt</artifactId>
 				<version>${org.jogamp.jogl.jogl-all-noawt.version}</version>
 				<classifier>natives-windows-amd64</classifier>
+			</dependency>
+
+			<!-- JogAmp Java 3D - https://jogamp.org/deployment/maven-java3d/ -->
+			<dependency>
+				<groupId>org.jogamp.java3d</groupId>
+				<artifactId>java3d-core</artifactId>
+				<version>${org.jogamp.java3d.java3d-core.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jogamp.java3d</groupId>
+				<artifactId>java3d-utils</artifactId>
+				<version>${org.jogamp.java3d.java3d-utils.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jogamp.java3d</groupId>
+				<artifactId>vecmath</artifactId>
+				<version>${org.jogamp.java3d.vecmath.version}</version>
 			</dependency>
 
 			<!-- JOML - https://joml-ci.github.io/JOML/ -->
