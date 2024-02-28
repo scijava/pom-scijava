@@ -1296,6 +1296,10 @@
 
 		<!-- Third party components -->
 
+		<!-- Algart TIFF - https://algart.net/java/AlgART-TIFF/ -->
+		<algart-tiff.version>1.2.7</algart-tiff.version>
+		<net.algart.algart-tiff.version>${algart-tiff.version}</net.algart.algart-tiff.version>
+
 		<!-- Amazon S3 - https://aws.amazon.com/sdkforjava -->
 		<aws.version>1.12.667</aws.version>
 		<aws-java-sdk-core.version>${aws.version}</aws-java-sdk-core.version>
@@ -4133,6 +4137,13 @@
 			</dependency>
 
 			<!-- Third party components -->
+
+			<!-- Algart TIFF - https://algart.net/java/AlgART-TIFF/ -->
+			<dependency>
+				<groupId>net.algart</groupId>
+				<artifactId>algart-tiff</artifactId>
+				<version>${net.algart.algart-tiff.version}</version>
+			</dependency>
 
 			<!-- Amazon S3 - https://aws.amazon.com/sdkforjava -->
 			<dependency>
