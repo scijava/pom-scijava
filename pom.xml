@@ -1403,7 +1403,7 @@
 		<maven-core.version>3.9.6</maven-core.version>
 		<maven-plugin-tools-api.version>3.11.0</maven-plugin-tools-api.version>
 		<plexus-component-annotations.version>2.2.0</plexus-component-annotations.version>
-		<plexus-utils.version>3.5.1</plexus-utils.version>
+		<plexus-utils.version>4.0.0</plexus-utils.version>
 		<sisu-inject-bean.version>2.6.0</sisu-inject-bean.version>
 		<sisu-inject-plexus.version>2.6.0</sisu-inject-plexus.version>
 		<org.apache.maven.shared.maven-artifact-transfer.version>${maven-artifact-transfer.version}</org.apache.maven.shared.maven-artifact-transfer.version>
