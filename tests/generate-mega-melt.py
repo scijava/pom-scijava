@@ -27,6 +27,8 @@ ignoredArtifacts = [
     # because it has a module-info.java, so skip it until the
     # component collection is updated from Java 8 to Java 11.
     'ij',
+    # NB: Skip artifacts requiring minimum Java version >8.
+    'algart-tiff',
     # NB: The following artifacts have messy dependency trees.
     # Too many problems to test as part of the mega-melt.
     # See WARNING block in pom-scijava's pom.xml for details.
