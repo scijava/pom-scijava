@@ -152,8 +152,26 @@ kotlinVersion=$(
   mvn -B -U -q -Denforcer.skip=true -Dexec.executable=echo \
   -Dexec.args='${kotlin.version}' --non-recursive validate exec:exec 2>&1 |
   head -n1 | sed 's;\(.\[[0-9]m\)*;;') &&
+# TEMP: Also fix the version of maven-enforcer-plugin, to prevent n5 from
+# overriding it with a too-old version. Even though we pass enforcer.skip,
+# so that the enforcer plugin does not actually do any checking, this version
+# mismatch still triggers a problem:
+#
+#     [ERROR] Failed to execute goal
+#     org.apache.maven.plugins:maven-enforcer-plugin:3.0.0-M3:enforce
+#     (enforce-rules) on project n5-blosc: Unable to parse configuration of
+#     mojo org.apache.maven.plugins:maven-enforcer-plugin:3.0.0-M3:enforce
+#     for parameter banDuplicateClasses: Cannot create instance of interface
+#     org.apache.maven.enforcer.rule.api.EnforcerRule:
+#     org.apache.maven.enforcer.rule.api.EnforcerRule.<init>() -> [Help 1]
+#
+# Once n5 components stop doing that version pin, we can remove this here.
+enforcerVersion=$(
+  mvn -B -U -q -Denforcer.skip=true -Dexec.executable=echo \
+  -Dexec.args='${maven-enforcer-plugin.version}' --non-recursive validate exec:exec 2>&1 |
+  head -n1 | sed 's;\(.\[[0-9]m\)*;;') &&
 mv -f "$buildScript" "$buildScriptTemp" &&
-sed -E "s;mvn -Denforcer.skip;& -Dkotlin.version=$kotlinVersion;" "$buildScriptTemp" > "$buildScript" &&
+sed -E "s;mvn -Denforcer.skip;& -Dmaven-enforcer-plugin.version=$enforcerVersion -Dkotlin.version=$kotlinVersion;" "$buildScriptTemp" > "$buildScript" &&
 
 chmod +x "$buildScript" &&
 rm "$buildScriptTemp" ||
