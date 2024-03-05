@@ -4,6 +4,7 @@ import groovy.xml.slurpersupport.NodeChild
 
 plugins {
     `java-platform`
+    `maven-publish`
 }
 
 tasks {
@@ -12,9 +13,13 @@ tasks {
     }
 }
 
+operator fun GPathResult.div(child: String) = children().find { (it!! as NodeChild).name() == child } as GPathResult
+
+val effXml = XmlSlurper().parse("platform/eff.xml")
+
 dependencies {
-    operator fun GPathResult.div(child: String) = children().find { (it!! as NodeChild).name() == child } as GPathResult
-    val deps = XmlSlurper().parse("platform/eff.xml") / "dependencyManagement" / "dependencies"
+
+    val deps = effXml / "dependencyManagement" / "dependencies"
     constraints {
         deps.children().forEach {
             val node = it!! as NodeChild
@@ -26,3 +31,21 @@ dependencies {
         }
     }
 }
+
+
+
+publishing {
+    publications {
+        repositories {
+            maven("to fill")
+        }
+        create<MavenPublication>("sciJavaPlatform") {
+            groupId = "org.scijava"
+            artifactId = "pom-scijava"
+            version = (effXml / "version").toString()
+
+            from(components["javaPlatform"])
+        }
+    }
+}
+
