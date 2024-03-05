@@ -43,7 +43,6 @@ publishing {
             groupId = "org.scijava"
             artifactId = "pom-scijava"
             version = (effXml / "version").toString()
-
             from(components["javaPlatform"])
             pom {
                 name = "SciJava Parent POM"
@@ -108,7 +107,6 @@ publishing {
                         properties = mapOf("id" to "elect")
                     }
                 }
-
                 mailingLists {
                     mailingList {
                         name = "SciJava"
@@ -118,7 +116,6 @@ publishing {
                         archive = "https://groups.google.com/group/scijava"
                     }
                 }
-
                 scm {
                     connection = "scm:git:https://github.com/scijava/pom-scijava"
                     developerConnection = "scm:git:git@github.com:scijava/pom-scijava"
