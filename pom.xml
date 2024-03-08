@@ -1099,7 +1099,7 @@
 		<!-- N5 - https://github.com/saalfeldlab/n5 -->
 
 		<!-- ImgLib2 Label Multisets - https://github.com/saalfeldlab/imglib2-label-multisets -->
-		<imglib2-label-multisets.version>0.12.0</imglib2-label-multisets.version>
+		<imglib2-label-multisets.version>0.11.5</imglib2-label-multisets.version>
 		<net.imglib2.imglib2-label-multisets.version>${imglib2-label-multisets.version}</net.imglib2.imglib2-label-multisets.version>
 
 		<!-- N5 - https://github.com/saalfeldlab/n5 -->
