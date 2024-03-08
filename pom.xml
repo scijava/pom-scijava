@@ -1745,7 +1745,6 @@
 		<grpc-grpclb.version>${grpc.version}</grpc-grpclb.version>
 		<grpc-netty-shaded.version>${grpc.version}</grpc-netty-shaded.version>
 		<grpc-protobuf.version>${grpc.version}</grpc-protobuf.version>
-		<grpc-protobuf-lite.version>${grpc.version}</grpc-protobuf-lite.version>
 		<grpc-services.version>${grpc.version}</grpc-services.version>
 		<grpc-stub.version>${grpc.version}</grpc-stub.version>
 		<grpc-xds.version>${grpc.version}</grpc-xds.version>
@@ -1758,7 +1757,6 @@
 		<io.grpc.grpc-grpclb.version>${grpc-grpclb.version}</io.grpc.grpc-grpclb.version>
 		<io.grpc.grpc-netty-shaded.version>${grpc-netty-shaded.version}</io.grpc.grpc-netty-shaded.version>
 		<io.grpc.grpc-protobuf.version>${grpc-protobuf.version}</io.grpc.grpc-protobuf.version>
-		<io.grpc.grpc-protobuf-lite.version>${grpc-protobuf-lite.version}</io.grpc.grpc-protobuf-lite.version>
 		<io.grpc.grpc-services.version>${grpc-services.version}</io.grpc.grpc-services.version>
 		<io.grpc.grpc-stub.version>${grpc-stub.version}</io.grpc.grpc-stub.version>
 		<io.grpc.grpc-xds.version>${grpc-xds.version}</io.grpc.grpc-xds.version>
@@ -5223,11 +5221,6 @@
 				<groupId>io.grpc</groupId>
 				<artifactId>grpc-protobuf</artifactId>
 				<version>${io.grpc.grpc-protobuf.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>io.grpc</groupId>
-				<artifactId>grpc-protobuf-lite</artifactId>
-				<version>${io.grpc.grpc-protobuf-lite.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>io.grpc</groupId>
