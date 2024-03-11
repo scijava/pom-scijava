@@ -985,7 +985,7 @@
 		<jitk.jitk-tps.version>${jitk-tps.version}</jitk.jitk-tps.version>
 
 		<!-- BigWarp - https://github.com/saalfeldlab/bigwarp -->
-		<bigwarp.version>9.1.1</bigwarp.version>
+		<bigwarp.version>9.1.2</bigwarp.version>
 		<bigwarp_fiji.version>${bigwarp.version}</bigwarp_fiji.version>
 		<sc.fiji.bigwarp_fiji.version>${bigwarp_fiji.version}</sc.fiji.bigwarp_fiji.version>
 
