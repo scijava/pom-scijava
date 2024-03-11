@@ -3476,12 +3476,6 @@
 				<groupId>sc.fiji</groupId>
 				<artifactId>bigwarp_fiji</artifactId>
 				<version>${sc.fiji.bigwarp_fiji.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>com.googlecode.efficient-java-matrix-library</groupId>
-						<artifactId>ejml</artifactId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 
 			<!-- MPI-CBG - https://github.com/axtimwalde/mpicbg -->
