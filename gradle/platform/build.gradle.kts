@@ -1,21 +1,25 @@
 import groovy.xml.XmlSlurper
 import groovy.xml.slurpersupport.GPathResult
 import groovy.xml.slurpersupport.NodeChild
+import org.gradle.internal.impldep.org.junit.experimental.categories.Categories.CategoryFilter.exclude
 
 plugins {
     `java-platform`
-    `maven-publish`
+    publish
 }
 
-tasks {
-    register<Exec>("eff.xml") {
-        commandLine("bash", "-c", "mvn -B -f \"../../pom.xml\" help:effective-pom | grep -A9999999 '^<?xml' | grep -B9999999 '^</project>' > eff.xml")
-    }
-}
+group = "org.scijava"
+version = "0.1" //(effXml / "version").toString()
 
 operator fun GPathResult.div(child: String) = children().find { (it!! as NodeChild).name() == child } as GPathResult
 
-val effXml = XmlSlurper().parse("platform/eff.xml")
+val effXml = XmlSlurper().parse(projectDir.resolve("eff.xml"))
+
+javaPlatform {
+    allowDependencies()
+}
+
+val runtimeDeps = listOf("xalan:serializer", "xalan:xalan")
 
 dependencies {
 
@@ -26,112 +30,42 @@ dependencies {
             val g = node / "groupId"
             val a = node / "artifactId"
             val v = node / "version"
-            api("$g:$a:$v")
+            if ("$g:$a" in runtimeDeps)
+                runtime("$g:$a:$v")
+            else
+                api("$g:$a:$v")
             //            println("$g:$a:$v")
         }
     }
+    //    versionCatalogs.forEach { versionCatalog ->
+    //        println("catalog ${versionCatalog.name}")
+    //        versionCatalog.libraryAliases.forEach {
+    //            println(versionCatalog.findLibrary(it).get().get())
+    //        }
+    //    }
+
+    api(platform("com.fasterxml.jackson:jackson-bom:" + libs.com.fasterxml.jackson.core.jacksonCore.get().version))
+    //        api(platform("com.google.api-client:google-api-client-bom:" + libs.com.google.api.client.googleApiClient.get().version))
+    //        api(platform("com.google.api:gax-bom:" + libs.com.google.api.gax.get().version))
+    //        api(platform("com.google.api:gapic-generator-java-bom:" + libs.com.google.api.grpc.protoGoogleCommonProtos.get().version))
+    //        api(platform("com.google.auth:google-auth-library-bom:" + libs.com.google.auth.googleAuthLibraryAppengine.get().version))
+    //        // no google auto-value bom
+    //        api(platform("com.google.cloud:google-cloud-core-bom:" + libs.com.google.cloud.googleCloudCore.get().version))
 }
 
 
 
-publishing {
-    publications {
-        repositories {
-            maven("to fill")
-        }
-        create<MavenPublication>("sciJavaPlatform") {
-            groupId = "org.scijava"
-            artifactId = "pom-scijava"
-            version = (effXml / "version").toString()
-            from(components["javaPlatform"])
-            pom {
-                name = "SciJava Parent POM"
-                description = "This POM provides a parent from which participating projects can declare their build configurations. It ensures that projects all use a compatible build environment, including Java version, as well as versions of dependencies and plugins."
-                url = "https://scijava.org/"
-                inceptionYear = "2011"
-                organization {
-                    name = "SciJava"
-                    url = "https://scijava.org/"
-                }
-                licenses {
-                    license {
-                        name = "Unlicense"
-                        url = "https://unlicense.org/"
-                        distribution = "repo"
-                    }
-                }
-                developers {
-                    developer {
-                        id = "ctrueden"
-                        name = "Curtis Rueden"
-                        url = "https://imagej.net/people/ctrueden"
-                        roles.addAll("founder", "lead", "developer", "debugger", "reviewer", "support", "maintainer")
-                    }
-                }
-                contributors {
-                    operator fun String.invoke(id: String) = contributor {
-                        name = this@invoke
-                        url = "https://imagej.net/people/$id"
-                        properties = mapOf("id" to id)
-                    }
-                    "Mark Hiner"("hinerm")
-                    "Johannes Schindelin"("dscho")
-                    "Sébastien Besson"("sbesson")
-                    "John Bogovic"("bogovicj")
-                    "Nicolas Chiaruttini"("NicoKiaru")
-                    "Barry DeZonia"("bdezonia")
-                    "Richard Domander"("rimadoma")
-                    "Karl Duderstadt"("karlduderstadt")
-                    "Jan Eglinger"("imagejan")
-                    "Gabriel Einsdorf"("gab1one")
-                    "Tiago Ferreira"("tferr")
-                    contributor {
-                        name = "David Gault"
-                        properties = mapOf("id" to "dgault")
-                    }
-                    "Ulrik Günther"("skalarproduktraum")
-                    "Philipp Hanslovsky"("hanslovsky")
-                    "Stefan Helfrich"("stelfrich")
-                    "Cameron Lloyd"("camlloyd")
-                    "Hadrien Mary"("hadim")
-                    "Tobias Pietzsch"("tpietzsch")
-                    "Stephan Preibisch"("StephanPreibisch")
-                    "Stephan Saalfeld"("axtimwalde")
-                    "Deborah Schmidt"("frauzufall")
-                    "Lorenzo Scianatico"("LoreScianatico")
-                    "Jean - Yves Tinevez"("tinevez")
-                    "Christian Tischer"("tischi")
-                    "Gabriella Turek"("turekg")
-                    contributor {
-                        name = "Giuseppe Barbieri"
-                        properties = mapOf("id" to "elect")
-                    }
-                }
-                mailingLists {
-                    mailingList {
-                        name = "SciJava"
-                        subscribe = "https://groups.google.com/group/scijava"
-                        unsubscribe = subscribe
-                        post = "scijava@googlegroups.com"
-                        archive = "https://groups.google.com/group/scijava"
-                    }
-                }
-                scm {
-                    connection = "scm:git:https://github.com/scijava/pom-scijava"
-                    developerConnection = "scm:git:git@github.com:scijava/pom-scijava"
-                    tag = "HEAD"
-                    url = "https://github.com/scijava/pom-scijava"
-                }
-                issueManagement {
-                    system = "GitHub Issues"
-                    url = "https://github.com/scijava/pom-scijava/issues"
-                }
-                ciManagement {
-                    system = "GitHub Actions"
-                    url = "https: //github.com/scijava/pom-scijava/actions"
-                }
-            }
-        }
-    }
-}
 
+tasks {
+    //    named<GenerateMavenPom>("generatePomFileForSciJavaPlatformPublication") {
+    //        pom.withXml {
+    //            asNode().appendNode("parent").apply {
+    //                appendNode("groupId", group)
+    //                appendNode("artifactId", project.name)
+    //                appendNode("version", version)
+    //                appendNode("relativePath")
+    //            }
+    //            println(asNode().name())
+    //        }
+    //    }
+}
