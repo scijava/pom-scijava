@@ -985,7 +985,7 @@
 		<jitk.jitk-tps.version>${jitk-tps.version}</jitk.jitk-tps.version>
 
 		<!-- BigWarp - https://github.com/saalfeldlab/bigwarp -->
-		<bigwarp.version>9.1.0</bigwarp.version>
+		<bigwarp.version>9.1.2</bigwarp.version>
 		<bigwarp_fiji.version>${bigwarp.version}</bigwarp_fiji.version>
 		<sc.fiji.bigwarp_fiji.version>${bigwarp_fiji.version}</sc.fiji.bigwarp_fiji.version>
 
@@ -1006,7 +1006,7 @@
 		<!-- BigDataViewer - https://github.com/bigdataviewer -->
 
 		<!-- BigDataViewer Core - https://github.com/bigdataviewer/bigdataviewer-core -->
-		<bigdataviewer-core.version>10.4.13</bigdataviewer-core.version>
+		<bigdataviewer-core.version>10.4.14</bigdataviewer-core.version>
 		<sc.fiji.bigdataviewer-core.version>${bigdataviewer-core.version}</sc.fiji.bigdataviewer-core.version>
 
 		<!-- BigDataServer - https://github.com/bigdataviewer/bigdataviewer-server -->
@@ -1018,7 +1018,7 @@
 		<sc.fiji.bigdataviewer-vistools.version>${bigdataviewer-vistools.version}</sc.fiji.bigdataviewer-vistools.version>
 
 		<!-- BigDataViewer Fiji - https://github.com/bigdataviewer/bigdataviewer_fiji -->
-		<bigdataviewer_fiji.version>6.2.4</bigdataviewer_fiji.version>
+		<bigdataviewer_fiji.version>6.3.0</bigdataviewer_fiji.version>
 		<sc.fiji.bigdataviewer_fiji.version>${bigdataviewer_fiji.version}</sc.fiji.bigdataviewer_fiji.version>
 
 		<!-- SPIM Data - https://github.com/bigdataviewer/spimdata -->
@@ -1099,15 +1099,15 @@
 		<!-- N5 - https://github.com/saalfeldlab/n5 -->
 
 		<!-- ImgLib2 Label Multisets - https://github.com/saalfeldlab/imglib2-label-multisets -->
-		<imglib2-label-multisets.version>0.12.0</imglib2-label-multisets.version>
+		<imglib2-label-multisets.version>0.11.5</imglib2-label-multisets.version>
 		<net.imglib2.imglib2-label-multisets.version>${imglib2-label-multisets.version}</net.imglib2.imglib2-label-multisets.version>
 
 		<!-- N5 - https://github.com/saalfeldlab/n5 -->
-		<n5.version>3.1.2</n5.version>
+		<n5.version>3.2.0</n5.version>
 		<org.janelia.saalfeldlab.n5.version>${n5.version}</org.janelia.saalfeldlab.n5.version>
 
 		<!-- N5 AWS S3 - https://github.com/saalfeldlab/n5-aws-s3 -->
-		<n5-aws-s3.version>4.0.1</n5-aws-s3.version>
+		<n5-aws-s3.version>4.1.1</n5-aws-s3.version>
 		<org.janelia.saalfeldlab.n5-aws-s3.version>${n5-aws-s3.version}</org.janelia.saalfeldlab.n5-aws-s3.version>
 
 		<!-- N5 Blosc - https://github.com/saalfeldlab/n5-blosc -->
@@ -1115,15 +1115,15 @@
 		<org.janelia.saalfeldlab.n5-blosc.version>${n5-blosc.version}</org.janelia.saalfeldlab.n5-blosc.version>
 
 		<!-- N5 Google Cloud - https://github.com/saalfeldlab/n5-google-cloud -->
-		<n5-google-cloud.version>4.0.0</n5-google-cloud.version>
+		<n5-google-cloud.version>4.1.0</n5-google-cloud.version>
 		<org.janelia.saalfeldlab.n5-google-cloud.version>${n5-google-cloud.version}</org.janelia.saalfeldlab.n5-google-cloud.version>
 
 		<!-- N5 HDF5 Bindings - https://github.com/saalfeldlab/n5-hdf5 -->
-		<n5-hdf5.version>2.1.0</n5-hdf5.version>
+		<n5-hdf5.version>2.2.0</n5-hdf5.version>
 		<org.janelia.saalfeldlab.n5-hdf5.version>${n5-hdf5.version}</org.janelia.saalfeldlab.n5-hdf5.version>
 
 		<!-- N5 ImageJ Bindings - https://github.com/saalfeldlab/n5-ij -->
-		<n5-ij.version>4.0.2</n5-ij.version>
+		<n5-ij.version>4.1.1</n5-ij.version>
 		<org.janelia.saalfeldlab.n5-ij.version>${n5-ij.version}</org.janelia.saalfeldlab.n5-ij.version>
 
 		<!-- N5 ImgLib2 Bindings - https://github.com/saalfeldlab/n5-imglib2 -->
@@ -1131,15 +1131,15 @@
 		<org.janelia.saalfeldlab.n5-imglib2.version>${n5-imglib2.version}</org.janelia.saalfeldlab.n5-imglib2.version>
 
 		<!-- N5 Universe - https://github.com/saalfeldlab/n5-universe -->
-		<n5-universe.version>1.3.1</n5-universe.version>
+		<n5-universe.version>1.4.1</n5-universe.version>
 		<org.janelia.saalfeldlab.n5-universe.version>${n5-universe.version}</org.janelia.saalfeldlab.n5-universe.version>
 
 		<!-- N5 Viewer for Fiji - https://github.com/saalfeldlab/n5-viewer_fiji -->
-		<n5-viewer_fiji.version>6.0.1</n5-viewer_fiji.version>
+		<n5-viewer_fiji.version>6.1.0</n5-viewer_fiji.version>
 		<org.janelia.saalfeldlab.n5-viewer_fiji.version>${n5-viewer_fiji.version}</org.janelia.saalfeldlab.n5-viewer_fiji.version>
 
 		<!-- N5 Zarr - https://github.com/saalfeldlab/n5-zarr -->
-		<n5-zarr.version>1.2.0</n5-zarr.version>
+		<n5-zarr.version>1.3.1</n5-zarr.version>
 		<org.janelia.saalfeldlab.n5-zarr.version>${n5-zarr.version}</org.janelia.saalfeldlab.n5-zarr.version>
 
 		<!-- N5 ZStandard - https://github.com/JaneliaSciComp/n5-zstandard -->
@@ -1736,8 +1736,30 @@
 
 		<!-- gRPC - https://grpc.io/ -->
 		<grpc.version>1.62.2</grpc.version>
+		<grpc-alts.version>${grpc.version}</grpc-alts.version>
+		<grpc-api.version>${grpc.version}</grpc-api.version>
+		<grpc-auth.version>${grpc.version}</grpc-auth.version>
 		<grpc-context.version>${grpc.version}</grpc-context.version>
+		<grpc-core.version>${grpc.version}</grpc-core.version>
+		<grpc-googleapis.version>${grpc.version}</grpc-googleapis.version>
+		<grpc-grpclb.version>${grpc.version}</grpc-grpclb.version>
+		<grpc-netty-shaded.version>${grpc.version}</grpc-netty-shaded.version>
+		<grpc-protobuf.version>${grpc.version}</grpc-protobuf.version>
+		<grpc-services.version>${grpc.version}</grpc-services.version>
+		<grpc-stub.version>${grpc.version}</grpc-stub.version>
+		<grpc-xds.version>${grpc.version}</grpc-xds.version>
+		<io.grpc.grpc-alts.version>${grpc-alts.version}</io.grpc.grpc-alts.version>
+		<io.grpc.grpc-api.version>${grpc-api.version}</io.grpc.grpc-api.version>
+		<io.grpc.grpc-auth.version>${grpc-auth.version}</io.grpc.grpc-auth.version>
 		<io.grpc.grpc-context.version>${grpc-context.version}</io.grpc.grpc-context.version>
+		<io.grpc.grpc-core.version>${grpc-core.version}</io.grpc.grpc-core.version>
+		<io.grpc.grpc-googleapis.version>${grpc-googleapis.version}</io.grpc.grpc-googleapis.version>
+		<io.grpc.grpc-grpclb.version>${grpc-grpclb.version}</io.grpc.grpc-grpclb.version>
+		<io.grpc.grpc-netty-shaded.version>${grpc-netty-shaded.version}</io.grpc.grpc-netty-shaded.version>
+		<io.grpc.grpc-protobuf.version>${grpc-protobuf.version}</io.grpc.grpc-protobuf.version>
+		<io.grpc.grpc-services.version>${grpc-services.version}</io.grpc.grpc-services.version>
+		<io.grpc.grpc-stub.version>${grpc-stub.version}</io.grpc.grpc-stub.version>
+		<io.grpc.grpc-xds.version>${grpc-xds.version}</io.grpc.grpc-xds.version>
 
 		<!-- Gson - https://code.google.com/p/google-gson/ -->
 		<gson.version>2.10.1</gson.version>
@@ -1745,7 +1767,9 @@
 
 		<!-- Guava - https://github.com/google/guava -->
 		<guava.version>33.0.0-jre</guava.version>
+		<failureaccess.version>1.0.2</failureaccess.version>
 		<com.google.guava.guava.version>${guava.version}</com.google.guava.guava.version>
+		<com.google.guava.failureaccess.version>${failureaccess.version}</com.google.guava.failureaccess.version>
 
 		<!-- Humble Video - https://github.com/artclarke/humble-video -->
 		<humble-video.version>0.3.0</humble-video.version>
@@ -1755,6 +1779,10 @@
 		<!-- HyperSQL DataBase - https://hsqldb.org/ -->
 		<hsqldb.version>1.8.0.10</hsqldb.version>
 		<hsqldb.hsqldb.version>${hsqldb.version}</hsqldb.hsqldb.version>
+
+		<!-- ICU4J - https://unicode-org.github.io/icu/userguide/icu4j/ -->
+		<icu4j.version>74.2</icu4j.version>
+		<com.ibm.icu.icu4j.version>${icu4j.version}</com.ibm.icu.icu4j.version>
 
 		<!-- iText PDF - https://github.com/itext/itextpdf -->
 		<itextpdf.version>5.5.13.3</itextpdf.version>
@@ -1961,6 +1989,7 @@
 		<jline-console.version>${jline3.version}</jline-console.version>
 		<!-- NB: No jline-groovy, because it depends on Groovy v4, but we currently use Groovy v3. -->
 		<!-- <jline-groovy.version>${jline3.version}</jline-groovy.version> -->
+		<jline-native.version>${jline3.version}</jline-native.version>
 		<jline-reader.version>${jline3.version}</jline-reader.version>
 		<jline-remote-ssh.version>${jline3.version}</jline-remote-ssh.version>
 		<jline-remote-telnet.version>${jline3.version}</jline-remote-telnet.version>
@@ -1972,6 +2001,7 @@
 		<org.jline.jline-builtins.version>${jline-builtins.version}</org.jline.jline-builtins.version>
 		<org.jline.jline-console.version>${jline-console.version}</org.jline.jline-console.version>
 		<!-- <org.jline.jline-groovy.version>${jline-groovy.version}</org.jline.jline-groovy.version> -->
+		<org.jline.jline-native.version>${jline-native.version}</org.jline.jline-native.version>
 		<org.jline.jline-reader.version>${jline-reader.version}</org.jline.jline-reader.version>
 		<org.jline.jline-remote-ssh.version>${jline-remote-ssh.version}</org.jline.jline-remote-ssh.version>
 		<org.jline.jline-remote-telnet.version>${jline-remote-telnet.version}</org.jline.jline-remote-telnet.version>
@@ -2202,19 +2232,28 @@
 		<objenesis.version>3.3</objenesis.version>
 		<org.objenesis.objenesis.version>${objenesis.version}</org.objenesis.objenesis.version>
 
-		<!-- OkHttp - https://square.github.io/okhttp/ -->
-		<okhttp.version>4.12.0</okhttp.version>
-		<okio.version>3.8.0</okio.version>
-		<com.squareup.okhttp3.okhttp.version>${okhttp.version}</com.squareup.okhttp3.okhttp.version>
-		<com.squareup.okio.okio.version>${okio.version}</com.squareup.okio.okio.version>
-
 		<!-- oj! Algorithms - https://github.com/optimatika/ojAlgo -->
 		<ojalgo.version>45.1.1</ojalgo.version>
 		<org.ojalgo.ojalgo.version>${ojalgo.version}</org.ojalgo.ojalgo.version>
 
+		<!-- OkHttp - https://square.github.io/okhttp/ -->
+		<okhttp.version>4.12.0</okhttp.version>
+		<com.squareup.okhttp3.okhttp.version>${okhttp.version}</com.squareup.okhttp3.okhttp.version>
+
+		<!-- Okio - https://square.github.io/okio/ -->
+		<okio.version>3.8.0</okio.version>
+		<okio-jvm.version>${okio.version}</okio-jvm.version>
+		<com.squareup.okio.okio.version>${okio.version}</com.squareup.okio.okio.version>
+		<com.squareup.okio.okio-jvm.version>${okio-jvm.version}</com.squareup.okio.okio-jvm.version>
+
 		<!-- OpenCSV - https://opencsv.sourceforge.net/ -->
 		<opencsv.version>5.9</opencsv.version>
 		<com.opencsv.opencsv.version>${opencsv.version}</com.opencsv.opencsv.version>
+
+		<!-- PerfMark - https://github.com/perfmark/perfmark -->
+		<perfmark.version>0.27.0</perfmark.version>
+		<perfmark-api.version>${perfmark.version}</perfmark-api.version>
+		<io.perfmark.perfmark-api.version>${perfmark-api.version}</io.perfmark.perfmark-api.version>
 
 		<!-- picocli - https://picocli.info/ -->
 		<picocli.version>4.7.5</picocli.version>
@@ -3437,12 +3476,6 @@
 				<groupId>sc.fiji</groupId>
 				<artifactId>bigwarp_fiji</artifactId>
 				<version>${sc.fiji.bigwarp_fiji.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>com.googlecode.efficient-java-matrix-library</groupId>
-						<artifactId>ejml</artifactId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 
 			<!-- MPI-CBG - https://github.com/axtimwalde/mpicbg -->
@@ -5140,8 +5173,63 @@
 			<!-- gRPC - https://grpc.io/ -->
 			<dependency>
 				<groupId>io.grpc</groupId>
+				<artifactId>grpc-alts</artifactId>
+				<version>${io.grpc.grpc-alts.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.grpc</groupId>
+				<artifactId>grpc-api</artifactId>
+				<version>${io.grpc.grpc-api.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.grpc</groupId>
+				<artifactId>grpc-auth</artifactId>
+				<version>${io.grpc.grpc-auth.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.grpc</groupId>
 				<artifactId>grpc-context</artifactId>
 				<version>${io.grpc.grpc-context.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.grpc</groupId>
+				<artifactId>grpc-core</artifactId>
+				<version>${io.grpc.grpc-core.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.grpc</groupId>
+				<artifactId>grpc-googleapis</artifactId>
+				<version>${io.grpc.grpc-googleapis.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.grpc</groupId>
+				<artifactId>grpc-grpclb</artifactId>
+				<version>${io.grpc.grpc-grpclb.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.grpc</groupId>
+				<artifactId>grpc-netty-shaded</artifactId>
+				<version>${io.grpc.grpc-netty-shaded.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.grpc</groupId>
+				<artifactId>grpc-protobuf</artifactId>
+				<version>${io.grpc.grpc-protobuf.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.grpc</groupId>
+				<artifactId>grpc-services</artifactId>
+				<version>${io.grpc.grpc-services.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.grpc</groupId>
+				<artifactId>grpc-stub</artifactId>
+				<version>${io.grpc.grpc-stub.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.grpc</groupId>
+				<artifactId>grpc-xds</artifactId>
+				<version>${io.grpc.grpc-xds.version}</version>
 			</dependency>
 
 			<!-- Gson - https://code.google.com/p/google-gson/ -->
@@ -5157,6 +5245,11 @@
 				<artifactId>guava</artifactId>
 				<version>${com.google.guava.guava.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>com.google.guava</groupId>
+				<artifactId>failureaccess</artifactId>
+				<version>${com.google.guava.failureaccess.version}</version>
+			</dependency>
 
 			<!-- Humble Video - https://github.com/artclarke/humble-video -->
 			<dependency>
@@ -5170,6 +5263,13 @@
 				<groupId>hsqldb</groupId>
 				<artifactId>hsqldb</artifactId>
 				<version>${hsqldb.hsqldb.version}</version>
+			</dependency>
+
+			<!-- ICU4J - https://unicode-org.github.io/icu/userguide/icu4j/ -->
+			<dependency>
+				<groupId>com.ibm.icu</groupId>
+				<artifactId>icu4j</artifactId>
+				<version>${com.ibm.icu.icu4j.version}</version>
 			</dependency>
 
 			<!-- iText PDF - https://github.com/itext/itextpdf -->
@@ -5596,6 +5696,11 @@
 				<version>${org.jline.jline-groovy.version}</version>
 			</dependency>
 			-->
+			<dependency>
+				<groupId>org.jline</groupId>
+				<artifactId>jline-native</artifactId>
+				<version>${org.jline.jline-native.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>org.jline</groupId>
 				<artifactId>jline-reader</artifactId>
@@ -6316,18 +6421,6 @@
 				<version>${org.objenesis.objenesis.version}</version>
 			</dependency>
 
-			<!-- OkHttp - https://square.github.io/okhttp/ -->
-			<dependency>
-				<groupId>com.squareup.okhttp3</groupId>
-				<artifactId>okhttp</artifactId>
-				<version>${com.squareup.okhttp3.okhttp.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.squareup.okio</groupId>
-				<artifactId>okio</artifactId>
-				<version>${com.squareup.okio.okio.version}</version>
-			</dependency>
-
 			<!-- oj! Algorithms - https://github.com/optimatika/ojAlgo -->
 			<dependency>
 				<groupId>org.ojalgo</groupId>
@@ -6335,11 +6428,37 @@
 				<version>${org.ojalgo.ojalgo.version}</version>
 			</dependency>
 
+			<!-- OkHttp - https://square.github.io/okhttp/ -->
+			<dependency>
+				<groupId>com.squareup.okhttp3</groupId>
+				<artifactId>okhttp</artifactId>
+				<version>${com.squareup.okhttp3.okhttp.version}</version>
+			</dependency>
+
+			<!-- Okio - https://square.github.io/okio/ -->
+			<dependency>
+				<groupId>com.squareup.okio</groupId>
+				<artifactId>okio</artifactId>
+				<version>${com.squareup.okio.okio.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.squareup.okio</groupId>
+				<artifactId>okio-jvm</artifactId>
+				<version>${com.squareup.okio.okio-jvm.version}</version>
+			</dependency>
+
 			<!-- OpenCSV - https://opencsv.sourceforge.net/ -->
 			<dependency>
 				<groupId>com.opencsv</groupId>
 				<artifactId>opencsv</artifactId>
 				<version>${com.opencsv.opencsv.version}</version>
+			</dependency>
+
+			<!-- PerfMark - https://github.com/perfmark/perfmark -->
+			<dependency>
+				<groupId>io.perfmark</groupId>
+				<artifactId>perfmark-api</artifactId>
+				<version>${io.perfmark.perfmark-api.version}</version>
 			</dependency>
 
 			<!-- picocli - https://picocli.info/ -->
