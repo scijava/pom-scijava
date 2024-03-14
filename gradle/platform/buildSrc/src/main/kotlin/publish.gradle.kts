@@ -1,7 +1,3 @@
-import groovy.util.Node
-import groovy.util.NodeList
-import java.util.*
-
 plugins {
     `maven-publish`
 }

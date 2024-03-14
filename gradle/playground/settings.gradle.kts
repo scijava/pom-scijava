@@ -20,6 +20,8 @@ dependencyResolutionManagement {
     }
 
     includeBuild("../catalog")
+    // java-ecosystem-capabilities
+    includeBuild("../../../java-ecosystem-capabilities")
 }
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")

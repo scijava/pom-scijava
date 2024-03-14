@@ -48,12 +48,19 @@ catalog.versionCatalog {
             else -> "$g.$camel"
         }
 
-                    println("$alias($gav)")
+//                    println("$alias($gav)")
         library(alias, gav)
     }
     for ((alias, aliases) in bundles)
         bundle(alias, aliases)
+
+//    jakarta()
 }
+
+//fun VersionCatalogBuilder.jakarta() {
+//    val bom = URL.of("https://repo1.maven.org/maven2/jakarta/platform/jakarta.jakartaee-bom/10.0.0/jakarta.jakartaee-bom-10.0.0.pom")
+//    library("jakarta.json", "jakarta.json:jakarta.json-api:")
+//}
 
 publishing.publications {
     repositories.maven {
