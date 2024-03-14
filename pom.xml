@@ -6114,10 +6114,6 @@
 					<!-- Conflicts with properly packaged jogamp native classifiers. -->
 					<exclusion>
 						<groupId>org.jogamp.gluegen</groupId>
-						<artifactId>gluegen-rt-natives-macosx-universal</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.jogamp.gluegen</groupId>
 						<artifactId>gluegen-rt-natives-linux-aarch64</artifactId>
 					</exclusion>
 					<exclusion>
