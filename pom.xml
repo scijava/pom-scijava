@@ -932,10 +932,6 @@
 		<Video_Editing.version>2.0.1</Video_Editing.version>
 		<sc.fiji.Video_Editing.version>${Video_Editing.version}</sc.fiji.Video_Editing.version>
 
-		<View5D.version>2.5.0</View5D.version>
-		<View5D_.version>${View5D.version}</View5D_.version>
-		<sc.fiji.View5D_.version>${View5D_.version}</sc.fiji.View5D_.version>
-
 		<Volume_Calculator.version>2.0.3</Volume_Calculator.version>
 		<sc.fiji.Volume_Calculator.version>${Volume_Calculator.version}</sc.fiji.Volume_Calculator.version>
 
@@ -979,6 +975,11 @@
 		<sc.fiji.weave_jy2java.version>${weave_jy2java.version}</sc.fiji.weave_jy2java.version>
 
 		<!-- External Fiji projects (part of the Fiji distribution) -->
+
+		<!-- View5D - https://github.com/bionanoimaging/View5D -->
+		<View5D.version>2.5.3</View5D.version>
+		<View5D_.version>${View5D.version}</View5D_.version>
+		<de.nanoimaging.View5D_.version>${View5D_.version}</de.nanoimaging.View5D_.version>
 
 		<!-- JITK TPS - https://github.com/saalfeldlab/jitk-tps -->
 		<jitk-tps.version>3.0.4</jitk-tps.version>
@@ -3393,11 +3394,6 @@
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
-				<artifactId>View5D_</artifactId>
-				<version>${sc.fiji.View5D_.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
 				<artifactId>Volume_Calculator</artifactId>
 				<version>${sc.fiji.Volume_Calculator.version}</version>
 			</dependency>
@@ -3463,6 +3459,13 @@
 			</dependency>
 
 			<!-- External Fiji projects (part of the Fiji distribution) -->
+
+			<!-- View5D - https://github.com/bionanoimaging/View5D -->
+			<dependency>
+				<groupId>de.nanoimaging</groupId>
+				<artifactId>View5D_</artifactId>
+				<version>${de.nanoimaging.View5D_.version}</version>
+			</dependency>
 
 			<!-- JITK TPS - https://github.com/saalfeldlab/jitk-tps -->
 			<dependency>
