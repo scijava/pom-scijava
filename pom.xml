@@ -655,7 +655,7 @@
 		<!-- Fiji - https://github.com/fiji -->
 
 		<!-- Fiji - https://github.com/fiji/fiji -->
-		<fiji.version>2.15.0</fiji.version>
+		<fiji.version>2.15.1</fiji.version>
 		<sc.fiji.fiji.version>${fiji.version}</sc.fiji.fiji.version>
 
 		<!-- Standard Fiji projects -->
