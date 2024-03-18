@@ -1108,7 +1108,7 @@
 		<org.janelia.saalfeldlab.n5.version>${n5.version}</org.janelia.saalfeldlab.n5.version>
 
 		<!-- N5 AWS S3 - https://github.com/saalfeldlab/n5-aws-s3 -->
-		<n5-aws-s3.version>4.1.1</n5-aws-s3.version>
+		<n5-aws-s3.version>4.1.2</n5-aws-s3.version>
 		<org.janelia.saalfeldlab.n5-aws-s3.version>${n5-aws-s3.version}</org.janelia.saalfeldlab.n5-aws-s3.version>
 
 		<!-- N5 Blosc - https://github.com/saalfeldlab/n5-blosc -->
