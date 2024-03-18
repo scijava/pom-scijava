@@ -977,7 +977,7 @@
 		<!-- External Fiji projects (part of the Fiji distribution) -->
 
 		<!-- View5D - https://github.com/bionanoimaging/View5D -->
-		<View5D.version>2.5.3</View5D.version>
+		<View5D.version>2.5.4</View5D.version>
 		<View5D_.version>${View5D.version}</View5D_.version>
 		<de.nanoimaging.View5D_.version>${View5D_.version}</de.nanoimaging.View5D_.version>
 
