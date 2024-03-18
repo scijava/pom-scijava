@@ -14,6 +14,8 @@ dependencyResolutionManagement {
     //    repositories { .. }
     versionCatalogs {
         create("libs").from("org.scijava:gradle-catalog")
+//        maybeCreate("libs").version("groovy", "3.0.9")
+//        maybeCreate("libs").library("groovy-core", "org.codehaus.groovy:groovy:2.4.15")
 
         // fails with "Could not resolve all artifacts for configuration 'incomingCatalogForLibs0'."
 //        create("libs").from(files("../catalog/build/version-catalog/libs.versions.toml"))

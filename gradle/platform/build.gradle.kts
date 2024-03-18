@@ -11,7 +11,7 @@ plugins {
 }
 
 group = "org.scijava"
-version = "0.1" //(effXml / "version").toString()
+version = "0.13" //(effXml / "version").toString()
 
 operator fun GPathResult.div(child: String) = children().find { (it!! as NodeChild).name() == child } as GPathResult
 
@@ -39,13 +39,14 @@ dependencies {
             //            println("$g:$a:$v")
         }
     }
-    //    versionCatalogs.forEach { versionCatalog ->
-    //        println("catalog ${versionCatalog.name}")
-    //        versionCatalog.libraryAliases.forEach {
-    //            println(versionCatalog.findLibrary(it).get().get())
-    //        }
-    //    }
+//        versionCatalogs.forEach { versionCatalog ->
+//            println("catalog ${versionCatalog.name}")
+//            versionCatalog.libraryAliases.forEach {
+//                println(versionCatalog.findLibrary(it).get().get())
+//            }
+//        }
 
+//    println(libs.groovy.core.get())
     api(platform("com.fasterxml.jackson:jackson-bom:" + libs.com.fasterxml.jackson.core.jacksonCore.get().version))
     api(platform("jakarta.platform:jakarta.jakartaee-bom:10.0.0"))
     //        api(platform("com.google.api-client:google-api-client-bom:" + libs.com.google.api.client.googleApiClient.get().version))
