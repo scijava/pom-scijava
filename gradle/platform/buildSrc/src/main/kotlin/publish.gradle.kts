@@ -13,6 +13,12 @@ publishing {
         }
         create<MavenPublication>("sciJavaPlatform") {
             from(components["javaPlatform"])
+            groupId = "org.scijava"
+            println(groupId)
+            artifactId = "gradle-platform"
+            println(artifactId)
+            version = "0.13"
+            println(version)
             /*pom.withXml {
                 val nodes = Stack<Node>()
 

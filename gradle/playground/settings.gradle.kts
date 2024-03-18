@@ -9,6 +9,11 @@
 
 rootProject.name = "gradle-playground"
 
+pluginManagement.repositories {
+    gradlePluginPortal()
+    maven("https://maven.scijava.org/content/repositories/releases")
+}
+
 dependencyResolutionManagement {
 
     //    repositories { .. }
@@ -16,12 +21,11 @@ dependencyResolutionManagement {
         create("libs").from("org.scijava:gradle-catalog")
 
         // fails with "Could not resolve all artifacts for configuration 'incomingCatalogForLibs0'."
-//        create("libs").from(files("../catalog/build/version-catalog/libs.versions.toml"))
+        //        create("libs").from(files("../catalog/build/version-catalog/libs.versions.toml"))
     }
 
     includeBuild("../catalog")
-    // java-ecosystem-capabilities
-    includeBuild("../../../java-ecosystem-capabilities")
+    //    includeBuild("../../../java-ecosystem-capabilities")
 }
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")

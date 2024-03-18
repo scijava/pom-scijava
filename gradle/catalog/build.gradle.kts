@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "org.scijava"
-version = "0.1"
+version = "0.11"
 
 catalog.versionCatalog {
 
@@ -36,11 +36,14 @@ catalog.versionCatalog {
             .joinToString("") { if (it.isEmpty()) "" else it[0].uppercase() + it.substring(1).lowercase() }
             .replaceFirstChar { it.lowercase() }
 
-        fun getAlias(group: String = "$g".substringAfterLast('.')) =
-            "$group." + when {
+        fun getAlias(group: String = "$g".substringAfterLast('.')): String {
+            val alias = "$group." + when {
                 camel.startsWith(group) -> camel.substringAfter(group).replaceFirstChar { it.lowercase() }.ifEmpty { group }
                 else -> camel
-            }.also { bundles.getOrPut(group, ::ArrayList) += it }
+            }
+            bundles.getOrPut(group, ::ArrayList) += alias
+            return alias
+        }
 
         val alias = when ("$g") {
             in listOf("org.scijava", "net.imagej", "net.imglib2", "sc.fiji", "org.janelia.saalfeldlab") -> getAlias()
@@ -48,13 +51,17 @@ catalog.versionCatalog {
             else -> "$g.$camel"
         }
 
-//                    println("$alias($gav)")
+        //                    println("$alias($gav)")
         library(alias, gav)
     }
+
     for ((alias, aliases) in bundles)
         bundle(alias, aliases)
 
-//    jakarta()
+    //    jakarta()
+
+    //    version("groovy", "3.0.5")
+    //    library("groovy-core", "org.codehaus.groovy", "groovy").versionRef("groovy")
 }
 
 //fun VersionCatalogBuilder.jakarta() {
@@ -62,13 +69,17 @@ catalog.versionCatalog {
 //    library("jakarta.json", "jakarta.json:jakarta.json-api:")
 //}
 
-publishing.publications {
-    repositories.maven {
-        name = "sciJava"
-        credentials(PasswordCredentials::class)
-        url = uri("https://maven.scijava.org/content/repositories/releases")
-    }
-    create<MavenPublication>("sciJavaCatalog") {
-        from(components["versionCatalog"])
+publishing {
+    publications {
+        repositories {
+            maven {
+                name = "sciJava"
+                credentials(PasswordCredentials::class)
+                url = uri("https://maven.scijava.org/content/repositories/releases")
+            }
+        }
+        create<MavenPublication>("sciJavaCatalog") {
+            from(components["versionCatalog"])
+        }
     }
 }

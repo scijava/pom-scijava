@@ -1,6 +1,11 @@
+import org.gradle.api.publish.maven.internal.publication.DefaultMavenPom
+
 plugins {
     embeddedKotlin("jvm")
-    id("org.gradlex.java-ecosystem-capabilities-base")
+    id("org.gradlex.java-ecosystem-capabilities") version "1.5.2.00"
+    id("dev.jacomet.logging-capabilities") version "0.11.1"
+    id("io.fuchs.gradle.classpath-collision-detector") version "0.3"
+    `maven-publish`
 }
 
 repositories {
@@ -9,11 +14,13 @@ repositories {
     maven("https://maven.scijava.org/content/groups/public")
 }
 
-// it will appear as this was the original downloaded metadata of the dependency
-// @CacheableRule is more verbose but more efficient, because the rule will be applied before the dependency get cached,
+// @CacheableRule is more verbose but more efficient, because the rule will be applied before the dependency get cached
+// in Gradle, it will appear as this was the original downloaded metadata of the given dependency
+
 inline fun <reified T : ComponentMetadataRule> ComponentMetadataHandler.withModules(vararg modules: String) {
     for (module in modules) withModule<T>(module)
 }
+
 abstract class Rule : ComponentMetadataRule {
     fun ComponentMetadataContext.remove(vararg modules: String) = details.allVariants { withDependencies { removeIf { it.module.toString() in modules } } }
 }
@@ -62,12 +69,51 @@ dependencies {
         withModules<NoJogampNatives>("org.jzy3d:jzy3d-native-jogl-awt", "org.jzy3d:jzy3d-native-jogl-core")
 
         @CacheableRule open class Weka : Rule() {
-            override fun execute(context: ComponentMetadataContext) = context.remove(
+            val exclusions = listOf(
                 "com.github.fommil.netlib:all", "com.googlecode.netlib-java:netlib-java", "net.sourceforge.f2j:arpack_combined_all",
                 "nz.ac.waikato.cms.weka.thirdparty:java-cup-11b", "nz.ac.waikato.cms.weka.thirdparty:java-cup-11b-runtime")
+
+            override fun execute(context: ComponentMetadataContext) {
+                context.details.allVariants {
+                    withDependencies {
+                        removeIf { it.module.toString() in exclusions }
+                        add("runtimeClasspath", "com.github.vbmacher:java-cup-runtime")
+                    }
+                }
+            }
         }
         withModule<Weka>("nz.ac.waikato.cms.weka:weka-dev")
     }
-    implementation(libs.org.morphonets.snt)
-    implementation("org.jzy3d:jzy3d-emul-gl-awt:2.1.0")
+    //    implementation("org.jzy3d:jzy3d-emul-gl:+")
+    //    implementation("org.jzy3d:jzy3d-emul-gl-awt:+")
+
+    implementation("junit:junit:4.4")
+    //    implementation("org.hamcrest:hamcrest-core:1.2")
+}
+
+tasks.detectCollisions {
+    //    detectCollisions() // to detect on configuration time
+    //    configurations.from(project.configurations.testRuntimeClasspath)
+}
+
+publishing {
+    publications.register<MavenPublication>("maven") {
+        pom {
+            this as DefaultMavenPom
+            println(name.orNull)
+            println(licenses)
+            this.licenses {
+                license {
+                    this.name = "Nich"
+                    url = "URL"
+                    comments = "com"
+                    distribution = "dis"
+                }
+            }
+            println(licenses[0].name.orNull)
+            println(licenses[0].url.orNull)
+            println(licenses[0].comments.orNull)
+            println(licenses[0].distribution.orNull)
+        }
+    }
 }
