@@ -991,7 +991,7 @@
 		<sc.fiji.bigwarp_fiji.version>${bigwarp_fiji.version}</sc.fiji.bigwarp_fiji.version>
 
 		<!-- MPI-CBG - https://github.com/axtimwalde/mpicbg -->
-		<mpicbg.version>1.5.0</mpicbg.version>
+		<mpicbg.version>1.6.0</mpicbg.version>
 		<mpicbg_.version>${mpicbg.version}</mpicbg_.version>
 		<mpicbg.mpicbg.version>${mpicbg.version}</mpicbg.mpicbg.version>
 		<mpicbg.mpicbg_.version>${mpicbg_.version}</mpicbg.mpicbg_.version>
