@@ -606,6 +606,10 @@
 		<imglib2-imglyb.version>2.0.0</imglib2-imglyb.version>
 		<net.imglib2.imglib2-imglyb.version>${imglib2-imglyb.version}</net.imglib2.imglib2-imglyb.version>
 
+		<!-- ImgLib2 Mesh - https://github.com/imglib/imglib2-mesh -->
+		<imglib2-mesh.version>1.0.0</imglib2-mesh.version>
+		<net.imglib2.imglib2-mesh.version>${imglib2-mesh.version}</net.imglib2.imglib2-mesh.version>
+
 		<!-- ImgLib2 RealTransform - https://github.com/imglib/imglib2-realtransform -->
 		<imglib2-realtransform.version>4.0.2</imglib2-realtransform.version>
 		<net.imglib2.imglib2-realtransform.version>${imglib2-realtransform.version}</net.imglib2.imglib2-realtransform.version>
@@ -2890,6 +2894,13 @@
 				<groupId>net.imglib2</groupId>
 				<artifactId>imglib2-imglyb</artifactId>
 				<version>${net.imglib2.imglib2-imglyb.version}</version>
+			</dependency>
+
+			<!-- ImgLib2 Mesh - https://github.com/imglib/imglib2-mesh -->
+			<dependency>
+				<groupId>net.imglib2</groupId>
+				<artifactId>imglib2-mesh</artifactId>
+				<version>${net.imglib2.imglib2-mesh.version}</version>
 			</dependency>
 
 			<!-- ImgLib2 RealTransform - https://github.com/imglib/imglib2-realtransform -->
