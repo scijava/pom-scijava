@@ -365,7 +365,7 @@
 		<org.scijava.scijava-plot.version>${scijava-plot.version}</org.scijava.scijava-plot.version>
 
 		<!-- SciJava Plugins: Commands - https://github.com/scijava/scijava-plugins-commands -->
-		<scijava-plugins-commands.version>0.2.4</scijava-plugins-commands.version>
+		<scijava-plugins-commands.version>0.2.5</scijava-plugins-commands.version>
 		<org.scijava.scijava-plugins-commands.version>${scijava-plugins-commands.version}</org.scijava.scijava-plugins-commands.version>
 
 		<!-- SciJava Plugins: Platforms - https://github.com/scijava/scijava-plugins-platforms -->
@@ -481,7 +481,7 @@
 		<net.imagej.ij1-patcher.version>${ij1-patcher.version}</net.imagej.ij1-patcher.version>
 
 		<!-- ImageJ Common - https://github.com/imagej/imagej-common -->
-		<imagej-common.version>2.0.4</imagej-common.version>
+		<imagej-common.version>2.1.0</imagej-common.version>
 		<net.imagej.imagej-common.version>${imagej-common.version}</net.imagej.imagej-common.version>
 
 		<!-- ImageJ Deprecated - https://github.com/imagej/imagej-deprecated -->
