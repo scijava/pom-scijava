@@ -1236,8 +1236,11 @@
 		<org.openmicroscopy.ome-poi.version>${ome-poi.version}</org.openmicroscopy.ome-poi.version>
 
 		<!-- OME Model - https://github.com/ome/ome-model -->
-		<ome-xml.version>6.3.4</ome-xml.version>
+		<ome-model.version>6.3.6</ome-model.version>
+		<ome-xml.version>${ome-model.version}</ome-xml.version>
+		<specification.version>${ome-model.version}</specification.version>
 		<org.openmicroscopy.ome-xml.version>${ome-xml.version}</org.openmicroscopy.ome-xml.version>
+		<org.openmicroscopy.specification.version>${specification.version}</org.openmicroscopy.specification.version>
 
 		<!-- Glencoe Software jxrlib - https://github.com/glencoesoftware/jxrlib -->
 		<jxrlib.version>0.2.4</jxrlib.version>
@@ -3925,6 +3928,11 @@
 				<groupId>org.openmicroscopy</groupId>
 				<artifactId>ome-xml</artifactId>
 				<version>${org.openmicroscopy.ome-xml.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.openmicroscopy</groupId>
+				<artifactId>specification</artifactId>
+				<version>${org.openmicroscopy.specification.version}</version>
 			</dependency>
 
 			<!-- Glencoe Software jxrlib - https://github.com/glencoesoftware/jxrlib -->
