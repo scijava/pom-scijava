@@ -71,7 +71,7 @@ dependencies {
 
     //    println(libs.my.lib.get())
     //    api(platform("com.fasterxml.jackson:jackson-bom:" + libs.com.fasterxml.jackson.core.jacksonCore.get().version))
-    api(platform("jakarta.platform:jakarta.jakartaee-bom:10.0.0"))
+//    api(platform("jakarta.platform:jakarta.jakartaee-bom:10.0.0"))
     //        api(platform("com.google.api-client:google-api-client-bom:" + libs.com.google.api.client.googleApiClient.get().version))
     //        api(platform("com.google.api:gax-bom:" + libs.com.google.api.gax.get().version))
     //        api(platform("com.google.api:gapic-generator-java-bom:" + libs.com.google.api.grpc.protoGoogleCommonProtos.get().version))
