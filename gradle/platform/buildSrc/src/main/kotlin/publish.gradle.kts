@@ -7,18 +7,16 @@ publishing {
         repositories {
             maven {
                 name = "sciJava"
-                credentials(PasswordCredentials::class)
-                url = uri("https://maven.scijava.org/content/repositories/releases")
+//                credentials(PasswordCredentials::class)
+//                url = uri("https://maven.scijava.org/content/repositories/releases")
+                url = uri("repo")
             }
         }
         create<MavenPublication>("sciJavaPlatform") {
             from(components["javaPlatform"])
             groupId = "org.scijava"
-            println(groupId)
             artifactId = "gradle-platform"
-            println(artifactId)
             version = "0.13"
-            println(version)
             /*pom.withXml {
                 val nodes = Stack<Node>()
 

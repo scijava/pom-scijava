@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/gradle/catalog" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/gradle/catalog" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/gradle/platform/buildSrc" name="buildSrc">
+                <projects>
+                  <project path="$PROJECT_DIR$/gradle/platform/buildSrc" />
+                </projects>
+              </build>
+              <build path="$PROJECT_DIR$/gradle/catalog" name="gradle-catalog">
+                <projects>
+                  <project path="$PROJECT_DIR$/gradle/catalog" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/gradle/platform" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/gradle/catalog" />
+            <option value="$PROJECT_DIR$/gradle/platform" />
+            <option value="$PROJECT_DIR$/gradle/platform/buildSrc" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
