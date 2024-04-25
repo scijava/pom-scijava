@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<!-- This module was also published with a richer model, Gradle metadata,  -->
+	<!-- which should be used instead. Do not delete the following line which  -->
+	<!-- is to indicate to Gradle or any Gradle module metadata file consumer  -->
+	<!-- that they should prefer consuming it instead. -->
+	<!-- do_not_remove: published-with-gradle-metadata -->
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
@@ -6870,4 +6875,83 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+	<profiles>
+		<profile>
+			<!--			mvn -P$id-->
+			<id>gradle-catalog</id>
+			<activation>
+				<!-- we prefer file and not env because it can work also locally without any config -->
+				<file>
+					<exists>gradle/platform</exists>
+				</file>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>exec-maven-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>generate-gradle-catalog</id>
+								<phase>generate-sources</phase>
+								<goals>
+									<goal>exec</goal>
+								</goals>
+								<configuration>
+									<executable>../gradlew</executable>
+									<workingDirectory>gradle/catalog</workingDirectory>
+									<arguments>
+										<argument>generateCatalogAsToml</argument>
+									</arguments>
+								</configuration>
+							</execution>
+							<execution>
+								<id>generate-gradle-platform</id>
+								<phase>generate-sources</phase>
+								<goals>
+									<goal>exec</goal>
+								</goals>
+								<configuration>
+									<executable>../gradlew</executable>
+									<workingDirectory>gradle/platform</workingDirectory>
+									<arguments>
+										<argument>generateMetadataFileForSciJavaPlatformPublication</argument>
+									</arguments>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+					<!--		https://www.mojohaus.org/exec-maven-plugin/exec-mojo.html	-->
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>build-helper-maven-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>attach-gradle-catalog</id>
+								<!--						Check if correct-->
+								<phase>package</phase>
+								<goals>
+									<!--				https://www.mojohaus.org/build-helper-maven-plugin/attach-artifact-mojo.html			-->
+									<goal>attach-artifact</goal>
+								</goals>
+								<configuration>
+									<artifacts>
+										<artifact>
+											<file>gradle/catalog/build/version-catalog/libs.versions.toml</file>
+											<type>toml</type>
+										</artifact>
+										<artifact>
+											<file>gradle/platform/build/publications/sciJavaPlatform/module.json</file>
+											<!-- it should be published with the `.module` extension -->
+											<type>module</type>
+										</artifact>
+									</artifacts>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 </project>

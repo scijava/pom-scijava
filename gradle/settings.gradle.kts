@@ -5,7 +5,8 @@ rootProject.name = "gradle"
 
 includeBuild("catalog")
 includeBuild("platform")
-includeBuild("playground")
-includeBuild("enforcer")
+includeBuild("manifest-dependencies")
+//includeBuild("playground")
+//includeBuild("enforcer")
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")

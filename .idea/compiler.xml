@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="gradle-enforcer" target="21" />
+      <module name="gradle-enforcer.functionalTest" target="21" />
+      <module name="gradle-enforcer.main" target="21" />
+      <module name="gradle-enforcer.test" target="21" />
+      <module name="gradle-manifest-dependencies" target="21" />
+      <module name="gradle-manifest-dependencies.functionalTest" target="21" />
+      <module name="gradle-manifest-dependencies.main" target="21" />
+      <module name="gradle-manifest-dependencies.test" target="21" />
+      <module name="gradle-playground" target="21" />
+      <module name="gradle-playground.main" target="21" />
+      <module name="gradle-playground.test" target="21" />
+      <module name="gradle.buildSrc" target="21" />
+      <module name="gradle.buildSrc.main" target="21" />
+      <module name="gradle.buildSrc.test" target="21" />
+      <module name="java-ecosystem-capabilities" target="11" />
+      <module name="java-ecosystem-capabilities.main" target="1.8" />
+      <module name="java-ecosystem-capabilities.test" target="1.8" />
+      <module name="playground" target="21" />
+      <module name="playground.main" target="21" />
+      <module name="playground.test" target="21" />
+      <module name="plugins.build-lifecycle" target="21" />
+      <module name="plugins.build-lifecycle.main" target="21" />
+      <module name="plugins.build-lifecycle.test" target="21" />
+      <module name="plugins.build-parameters" target="21" />
+      <module name="plugins.build-parameters.main" target="21" />
+      <module name="plugins.build-parameters.test" target="21" />
+      <module name="plugins.documentation" target="21" />
+      <module name="plugins.documentation.main" target="21" />
+      <module name="plugins.documentation.test" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
