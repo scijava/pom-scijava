@@ -2,14 +2,12 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="declarative.main" target="21" />
+      <module name="declarative.test" target="21" />
       <module name="gradle-enforcer" target="21" />
       <module name="gradle-enforcer.functionalTest" target="21" />
       <module name="gradle-enforcer.main" target="21" />
       <module name="gradle-enforcer.test" target="21" />
-      <module name="gradle-manifest-dependencies" target="21" />
-      <module name="gradle-manifest-dependencies.functionalTest" target="21" />
-      <module name="gradle-manifest-dependencies.main" target="21" />
-      <module name="gradle-manifest-dependencies.test" target="21" />
       <module name="gradle-playground" target="21" />
       <module name="gradle-playground.main" target="21" />
       <module name="gradle-playground.test" target="21" />
