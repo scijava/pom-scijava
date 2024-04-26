@@ -17,9 +17,14 @@
                   <project path="$PROJECT_DIR$/gradle/declarative" />
                 </projects>
               </build>
-              <build path="$PROJECT_DIR$/gradle/declarative/buildSrc" name="buildSrc">
+              <build path="$PROJECT_DIR$/gradle/declarative-playground" name="declarative-playground">
                 <projects>
-                  <project path="$PROJECT_DIR$/gradle/declarative/buildSrc" />
+                  <project path="$PROJECT_DIR$/gradle/declarative-playground" />
+                  <project path="$PROJECT_DIR$/gradle/declarative-playground/java-util" />
+                  <project path="$PROJECT_DIR$/gradle/declarative-playground/kotlin-jvm-util" />
+                  <project path="$PROJECT_DIR$/gradle/declarative-playground/testbed-java-application" />
+                  <project path="$PROJECT_DIR$/gradle/declarative-playground/testbed-java-library" />
+                  <project path="$PROJECT_DIR$/gradle/declarative-playground/testbed-kotlin-jvm-application" />
                 </projects>
               </build>
               <build path="$PROJECT_DIR$/gradle/manifest-dependencies" name="gradle-manifest-dependencies">
@@ -47,7 +52,12 @@
             <option value="$PROJECT_DIR$/gradle" />
             <option value="$PROJECT_DIR$/gradle/catalog" />
             <option value="$PROJECT_DIR$/gradle/declarative" />
-            <option value="$PROJECT_DIR$/gradle/declarative/buildSrc" />
+            <option value="$PROJECT_DIR$/gradle/declarative-playground" />
+            <option value="$PROJECT_DIR$/gradle/declarative-playground/java-util" />
+            <option value="$PROJECT_DIR$/gradle/declarative-playground/kotlin-jvm-util" />
+            <option value="$PROJECT_DIR$/gradle/declarative-playground/testbed-java-application" />
+            <option value="$PROJECT_DIR$/gradle/declarative-playground/testbed-java-library" />
+            <option value="$PROJECT_DIR$/gradle/declarative-playground/testbed-kotlin-jvm-application" />
             <option value="$PROJECT_DIR$/gradle/manifest-dependencies" />
             <option value="$PROJECT_DIR$/gradle/manifest-dependencies/plugin" />
             <option value="$PROJECT_DIR$/gradle/platform" />
