@@ -7,6 +7,7 @@ includeBuild("catalog")
 includeBuild("platform")
 includeBuild("manifest-dependencies")
 includeBuild("declarative")
+includeBuild("declarative-playground")
 //includeBuild("playground")
 //includeBuild("enforcer")
 
