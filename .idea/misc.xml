@@ -3,7 +3,7 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/../java-ecosystem-capabilities" />
-    <file type="web" url="file://$PROJECT_DIR$/gradle" />
+    <file type="web" url="file://$PROJECT_DIR$/gradle-scijava" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
