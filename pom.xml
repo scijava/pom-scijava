@@ -6903,9 +6903,9 @@
 				<artifactId>build-helper-maven-plugin</artifactId>
 				<executions>
 					<execution>
-						<id>attach-gradle-catalog</id>
+						<id>attach-gradle-catalog-and-platform</id>
 						<!--						Check if correct-->
-						<phase>package</phase>
+<!--						<phase>package</phase>-->
 						<goals>
 							<!--				https://www.mojohaus.org/build-helper-maven-plugin/attach-artifact-mojo.html			-->
 							<goal>attach-artifact</goal>
