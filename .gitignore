@@ -2,3 +2,4 @@
 /.settings/
 /target/
 /gradle-scijava/.gradle
+.idea
