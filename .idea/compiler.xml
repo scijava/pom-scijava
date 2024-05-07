@@ -2,15 +2,40 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="declarative" target="21" />
+      <module name="declarative-playground.java-util" target="11" />
+      <module name="declarative-playground.java-util.main" target="11" />
+      <module name="declarative-playground.java-util.test" target="11" />
+      <module name="declarative-playground.kotlin-jvm-util" target="21" />
+      <module name="declarative-playground.kotlin-jvm-util.main" target="21" />
+      <module name="declarative-playground.kotlin-jvm-util.test" target="21" />
       <module name="declarative-playground.main" target="11" />
       <module name="declarative-playground.test" target="11" />
+      <module name="declarative-playground.testbed-java-application" target="21" />
+      <module name="declarative-playground.testbed-java-application.main" target="21" />
+      <module name="declarative-playground.testbed-java-application.test" target="21" />
+      <module name="declarative-playground.testbed-java-library" target="21" />
+      <module name="declarative-playground.testbed-java-library.main" target="21" />
+      <module name="declarative-playground.testbed-java-library.test" target="21" />
+      <module name="declarative-playground.testbed-kotlin-jvm-application" target="21" />
+      <module name="declarative-playground.testbed-kotlin-jvm-application.main" target="21" />
+      <module name="declarative-playground.testbed-kotlin-jvm-application.test" target="21" />
       <module name="declarative.buildSrc" target="21" />
       <module name="declarative.buildSrc.main" target="21" />
       <module name="declarative.buildSrc.test" target="21" />
+      <module name="declarative.main" target="21" />
+      <module name="declarative.test" target="21" />
       <module name="gradle-enforcer" target="21" />
       <module name="gradle-enforcer.functionalTest" target="21" />
       <module name="gradle-enforcer.main" target="21" />
       <module name="gradle-enforcer.test" target="21" />
+      <module name="gradle-manifest-dependencies" target="21" />
+      <module name="gradle-manifest-dependencies.functionalTest" target="21" />
+      <module name="gradle-manifest-dependencies.main" target="21" />
+      <module name="gradle-manifest-dependencies.test" target="21" />
+      <module name="gradle-platform.buildSrc" target="21" />
+      <module name="gradle-platform.buildSrc.main" target="21" />
+      <module name="gradle-platform.buildSrc.test" target="21" />
       <module name="gradle-playground" target="21" />
       <module name="gradle-playground.main" target="21" />
       <module name="gradle-playground.test" target="21" />
@@ -20,6 +45,13 @@
       <module name="java-ecosystem-capabilities" target="11" />
       <module name="java-ecosystem-capabilities.main" target="1.8" />
       <module name="java-ecosystem-capabilities.test" target="1.8" />
+      <module name="manifest-dependencies" target="21" />
+      <module name="manifest-dependencies.functionalTest" target="21" />
+      <module name="manifest-dependencies.main" target="21" />
+      <module name="manifest-dependencies.test" target="21" />
+      <module name="platform.buildSrc" target="21" />
+      <module name="platform.buildSrc.main" target="21" />
+      <module name="platform.buildSrc.test" target="21" />
       <module name="playground" target="21" />
       <module name="playground.main" target="21" />
       <module name="playground.test" target="21" />

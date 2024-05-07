@@ -4,64 +4,10 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <compositeConfiguration>
-          <compositeBuild compositeDefinitionSource="SCRIPT">
-            <builds>
-              <build path="$PROJECT_DIR$/gradle/catalog" name="gradle-catalog">
-                <projects>
-                  <project path="$PROJECT_DIR$/gradle/catalog" />
-                </projects>
-              </build>
-              <build path="$PROJECT_DIR$/gradle/declarative" name="declarative">
-                <projects>
-                  <project path="$PROJECT_DIR$/gradle/declarative" />
-                </projects>
-              </build>
-              <build path="$PROJECT_DIR$/gradle/declarative-playground" name="declarative-playground">
-                <projects>
-                  <project path="$PROJECT_DIR$/gradle/declarative-playground" />
-                  <project path="$PROJECT_DIR$/gradle/declarative-playground/java-util" />
-                  <project path="$PROJECT_DIR$/gradle/declarative-playground/kotlin-jvm-util" />
-                  <project path="$PROJECT_DIR$/gradle/declarative-playground/testbed-java-application" />
-                  <project path="$PROJECT_DIR$/gradle/declarative-playground/testbed-java-library" />
-                  <project path="$PROJECT_DIR$/gradle/declarative-playground/testbed-kotlin-jvm-application" />
-                </projects>
-              </build>
-              <build path="$PROJECT_DIR$/gradle/manifest-dependencies" name="gradle-manifest-dependencies">
-                <projects>
-                  <project path="$PROJECT_DIR$/gradle/manifest-dependencies" />
-                  <project path="$PROJECT_DIR$/gradle/manifest-dependencies/plugin" />
-                </projects>
-              </build>
-              <build path="$PROJECT_DIR$/gradle/platform" name="gradle-platform">
-                <projects>
-                  <project path="$PROJECT_DIR$/gradle/platform" />
-                </projects>
-              </build>
-              <build path="$PROJECT_DIR$/gradle/platform/buildSrc" name="buildSrc">
-                <projects>
-                  <project path="$PROJECT_DIR$/gradle/platform/buildSrc" />
-                </projects>
-              </build>
-            </builds>
-          </compositeBuild>
-        </compositeConfiguration>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/gradle" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/gradle-scijava" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/gradle" />
-            <option value="$PROJECT_DIR$/gradle/catalog" />
-            <option value="$PROJECT_DIR$/gradle/declarative" />
-            <option value="$PROJECT_DIR$/gradle/declarative-playground" />
-            <option value="$PROJECT_DIR$/gradle/declarative-playground/java-util" />
-            <option value="$PROJECT_DIR$/gradle/declarative-playground/kotlin-jvm-util" />
-            <option value="$PROJECT_DIR$/gradle/declarative-playground/testbed-java-application" />
-            <option value="$PROJECT_DIR$/gradle/declarative-playground/testbed-java-library" />
-            <option value="$PROJECT_DIR$/gradle/declarative-playground/testbed-kotlin-jvm-application" />
-            <option value="$PROJECT_DIR$/gradle/manifest-dependencies" />
-            <option value="$PROJECT_DIR$/gradle/manifest-dependencies/plugin" />
-            <option value="$PROJECT_DIR$/gradle/platform" />
-            <option value="$PROJECT_DIR$/gradle/platform/buildSrc" />
+            <option value="$PROJECT_DIR$/gradle-scijava" />
           </set>
         </option>
       </GradleProjectSettings>
