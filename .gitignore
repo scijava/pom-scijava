@@ -1,5 +1,5 @@
+/.idea/
 /.project
 /.settings/
+/gradle-scijava/.gradle/
 /target/
-/gradle-scijava/.gradle
-.idea
