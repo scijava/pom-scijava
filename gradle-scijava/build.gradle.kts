@@ -16,13 +16,10 @@ layout.buildDirectory.set(layout.projectDirectory.asFile.parentFile.resolve("tar
 group = "org.scijava"
 version = "0.13" //(effXml / "version").toString()
 
-//operator fun GPathResult.div(child: String) = children().find { (it!! as NodeChild).name() == child } as GPathResult
-
-//val effXml = XmlSlurper().parse(projectDir.resolve("eff.xml"))
-
 javaPlatform {
     allowDependencies()
 }
+
 val computeCatalogAndPlatform = tasks.register<Exec>("generateCatalog") {
 
     workingDir = projectDir.parentFile
