@@ -6846,17 +6846,17 @@
 							</arguments>
 						</configuration>
 					</execution>
-					<execution>
-						<id>ls</id>
-						<phase>generate-sources</phase>
-						<goals>
-							<goal>exec</goal>
-						</goals>
-						<configuration>
-							<executable>ls</executable>
-							<workingDirectory>${basedir}/gradle-scijava</workingDirectory>
-						</configuration>
-					</execution>
+<!--					<execution>-->
+<!--						<id>ls</id>-->
+<!--						<phase>generate-sources</phase>-->
+<!--						<goals>-->
+<!--							<goal>exec</goal>-->
+<!--						</goals>-->
+<!--						<configuration>-->
+<!--							<executable>ls</executable>-->
+<!--							<workingDirectory>${basedir}/gradle-scijava</workingDirectory>-->
+<!--						</configuration>-->
+<!--					</execution>-->
 				</executions>
 			</plugin>
 			<!--		https://www.mojohaus.org/exec-maven-plugin/exec-mojo.html	-->
