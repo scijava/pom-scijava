@@ -6838,7 +6838,7 @@
 						</goals>
 						<configuration>
 							<executable>./gradlew</executable>
-							<workingDirectory>gradle-scijava</workingDirectory>
+							<workingDirectory>${basedir}/gradle-scijava</workingDirectory>
 							<arguments>
 								<argument>--project-cache-dir</argument>
 								<argument>../target/gradle/build</argument>
