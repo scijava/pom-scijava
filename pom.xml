@@ -1128,7 +1128,7 @@
 		<org.janelia.saalfeldlab.n5-hdf5.version>${n5-hdf5.version}</org.janelia.saalfeldlab.n5-hdf5.version>
 
 		<!-- N5 ImageJ Bindings - https://github.com/saalfeldlab/n5-ij -->
-		<n5-ij.version>4.1.1</n5-ij.version>
+		<n5-ij.version>4.2.0</n5-ij.version>
 		<org.janelia.saalfeldlab.n5-ij.version>${n5-ij.version}</org.janelia.saalfeldlab.n5-ij.version>
 
 		<!-- N5 ImgLib2 Bindings - https://github.com/saalfeldlab/n5-imglib2 -->
@@ -1136,15 +1136,15 @@
 		<org.janelia.saalfeldlab.n5-imglib2.version>${n5-imglib2.version}</org.janelia.saalfeldlab.n5-imglib2.version>
 
 		<!-- N5 Universe - https://github.com/saalfeldlab/n5-universe -->
-		<n5-universe.version>1.4.1</n5-universe.version>
+		<n5-universe.version>1.5.0</n5-universe.version>
 		<org.janelia.saalfeldlab.n5-universe.version>${n5-universe.version}</org.janelia.saalfeldlab.n5-universe.version>
 
 		<!-- N5 Viewer for Fiji - https://github.com/saalfeldlab/n5-viewer_fiji -->
-		<n5-viewer_fiji.version>6.1.0</n5-viewer_fiji.version>
+		<n5-viewer_fiji.version>6.1.1</n5-viewer_fiji.version>
 		<org.janelia.saalfeldlab.n5-viewer_fiji.version>${n5-viewer_fiji.version}</org.janelia.saalfeldlab.n5-viewer_fiji.version>
 
 		<!-- N5 Zarr - https://github.com/saalfeldlab/n5-zarr -->
-		<n5-zarr.version>1.3.1</n5-zarr.version>
+		<n5-zarr.version>1.3.2</n5-zarr.version>
 		<org.janelia.saalfeldlab.n5-zarr.version>${n5-zarr.version}</org.janelia.saalfeldlab.n5-zarr.version>
 
 		<!-- N5 ZStandard - https://github.com/JaneliaSciComp/n5-zstandard -->
