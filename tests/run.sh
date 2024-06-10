@@ -52,7 +52,7 @@ shortVersionClashes=\
 rm -rf "$megaMeltDir" && mkdir -p "$megaMeltDir" || die "Creation of $megaMeltDir failed!"
 cp "$pom" "$pomParent" &&
 mvn -B -f "$pomParent" versions:set -DnewVersion=999-mega-melt > "$versionSwapLog" &&
-  mvn -B -f "$pomParent" install >> "$versionSwapLog" ||
+  mvn -B -f "$pomParent" install:install >> "$versionSwapLog" ||
   die "pom-scijava version update failed:\n$(cat "$versionSwapLog")"
 python "$generateMegaMeltScript" "$megaMeltDir" || die 'Generation failed!'
 sectionEnd # Generating mega-melt project
