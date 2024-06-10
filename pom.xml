@@ -6881,6 +6881,7 @@
 						<id>generate-gradle-catalog-and-platform</id>
 						<phase>generate-sources</phase>
 						<goals>
+							<!-- https://www.mojohaus.org/exec-maven-plugin/exec-mojo.html -->
 							<goal>exec</goal>
 						</goals>
 						<configuration>
@@ -6895,17 +6896,14 @@
 					</execution>
 				</executions>
 			</plugin>
-			<!--		https://www.mojohaus.org/exec-maven-plugin/exec-mojo.html	-->
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>build-helper-maven-plugin</artifactId>
 				<executions>
 					<execution>
 						<id>attach-gradle-catalog-and-platform</id>
-						<!--						Check if correct-->
-<!--						<phase>package</phase>-->
 						<goals>
-							<!--				https://www.mojohaus.org/build-helper-maven-plugin/attach-artifact-mojo.html			-->
+							<!-- https://www.mojohaus.org/build-helper-maven-plugin/attach-artifact-mojo.html -->
 							<goal>attach-artifact</goal>
 						</goals>
 						<configuration>
