@@ -11,7 +11,7 @@ plugins {
     //    id("org.gradlex.logging-capabilities") // logging extension
 }
 
-layout.buildDirectory.set(layout.projectDirectory.asFile.parentFile.resolve("target/gradle"))
+layout.buildDirectory = layout.projectDirectory.asFile.parentFile.resolve("target/gradle")
 
 group = "org.scijava"
 version = "0.13" //(effXml / "version").toString()
@@ -100,8 +100,15 @@ publishing {
         }
         create<MavenPublication>("pomScijava") {
             from(components["javaPlatform"])
+            //            from(components["versionCatalog"])
         }
     }
+}
+
+val versionCatalogElements by configurations
+val javaPlatform by components.existing {
+    this as AdhocComponentWithVariants
+    addVariantsFromConfiguration(versionCatalogElements) {}
 }
 
 tasks {
