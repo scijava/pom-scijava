@@ -14,7 +14,7 @@ plugins {
 layout.buildDirectory = layout.projectDirectory.asFile.parentFile.resolve("target/gradle")
 
 group = "org.scijava"
-version = "0.13" //(effXml / "version").toString()
+version = "38.0.0-SNAPSHOT"
 
 javaPlatform {
     allowDependencies()
