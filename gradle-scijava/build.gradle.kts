@@ -14,7 +14,7 @@ plugins {
 layout.buildDirectory = layout.projectDirectory.asFile.parentFile.resolve("target/gradle")
 
 group = "org.scijava"
-version = "38.0.0-SNAPSHOT"
+version = File("../pom.xm").readText().substringAfter("<version>").substringBefore('<')
 
 javaPlatform {
     allowDependencies()
