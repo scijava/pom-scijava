@@ -6874,6 +6874,28 @@
 
 	<profiles>
 		<profile>
+			<id>windows</id>
+			<activation>
+				<os>
+					<family>Windows</family>
+				</os>
+			</activation>
+			<properties>
+				<gradle.wrapper>gradle.bat</gradle.wrapper>
+			</properties>
+		</profile>
+		<profile>
+			<id>posix</id>
+			<activation>
+				<os>
+					<family>unix</family>
+				</os>
+			</activation>
+			<properties>
+				<gradle.wrapper>./gradlew</gradle.wrapper>
+			</properties>
+		</profile>
+		<profile>
 			<id>scijava-gradle-catalog-and-platform</id>
 			<activation>
 				<file>
@@ -6894,7 +6916,7 @@
 									<goal>exec</goal>
 								</goals>
 								<configuration>
-									<executable>./gradlew</executable>
+									<executable>${gradle.wrapper}</executable>
 									<workingDirectory>${basedir}/gradle-scijava</workingDirectory>
 									<arguments>
 										<argument>--project-cache-dir</argument>
