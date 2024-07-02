@@ -23,7 +23,7 @@ javaPlatform {
 val computeCatalogAndPlatform = tasks.register<Exec>("generateCatalog") {
 
     workingDir = projectDir.parentFile
-    commandLine("sh", "-c", "mvn -B -f pom.xml help:effective-pom")
+    commandLine("sh", "-c", "mvn -B -Dfile.encoding=UTF-8 -f pom.xml help:effective-pom")
     standardOutput = ByteArrayOutputStream()
 
     doLast {
