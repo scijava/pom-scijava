@@ -28,8 +28,11 @@ val computeCatalogAndPlatform = tasks.register<Exec>("generateCatalog") {
 
     doLast {
         var output = standardOutput.toString()
-        // clean output from dirty
-        output = output.substringAfter("\n\n").substringBefore("\n\n")
+        // Remove leading/trailing maven output from pom.xml
+        output = output
+          .substringAfter("Effective POMs, after inheritance, interpolation, and profiles are applied:")
+          .substringBefore("[INFO]")
+          .trim()
 
         operator fun GPathResult.div(child: String) = children().find { (it!! as NodeChild).name() == child } as GPathResult
 
