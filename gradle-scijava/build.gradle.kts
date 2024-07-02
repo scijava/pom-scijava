@@ -23,13 +23,16 @@ javaPlatform {
 val computeCatalogAndPlatform = tasks.register<Exec>("generateCatalog") {
 
     workingDir = projectDir.parentFile
-    commandLine("sh", "-c", "mvn -B -f pom.xml help:effective-pom")
+    commandLine("sh", "-c", "mvn -B -Dfile.encoding=UTF-8 -f pom.xml help:effective-pom")
     standardOutput = ByteArrayOutputStream()
 
     doLast {
         var output = standardOutput.toString()
-        // clean output from dirty
-        output = output.substringAfter("\n\n").substringBefore("\n\n")
+        // Remove leading/trailing maven output from pom.xml
+        output = output
+          .substringAfter("Effective POMs, after inheritance, interpolation, and profiles are applied:")
+          .substringBefore("[INFO]")
+          .trim()
 
         operator fun GPathResult.div(child: String) = children().find { (it!! as NodeChild).name() == child } as GPathResult
 
