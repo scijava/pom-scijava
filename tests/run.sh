@@ -210,10 +210,7 @@ chmod +x "$meltScript" ||
 # HACK: Remove flaky tests from imagej-ops builds.
 # CachedOpEnvironmentTest fails intermittently. Of course, it should be
 # somehow fixed in imagej-ops. But for now, let's not let it ruin the melt.
-#rm -f "$meltingPotDir/net.imagej/imagej-ops/src/test/java/net/imagej/ops/cached/CachedOpEnvironmentTest.java"
-
-# TEMP: Until scijava/pom-scijava#236 is solved.
-echo "net.imagej/imagej-ops" >> "$skipTestsFile" &&
+rm -f "$meltingPotDir/net.imagej/imagej-ops/src/test/java/net/imagej/ops/cached/CachedOpEnvironmentTest.java"
 
 # TEMP: Until saalfeldlab/n5-aws-s3#13 is released.
 echo "org.janelia.saalfeldlab/n5-aws-s3" >> "$skipTestsFile" &&
