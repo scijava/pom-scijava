@@ -526,7 +526,7 @@
 		<net.imagej.imagej-opencv.version>${imagej-opencv.version}</net.imagej.imagej-opencv.version>
 
 		<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
-		<imagej-ops.version>2.0.0</imagej-ops.version>
+		<imagej-ops.version>2.1.0</imagej-ops.version>
 		<net.imagej.imagej-ops.version>${imagej-ops.version}</net.imagej.imagej-ops.version>
 
 		<!-- ImageJ Plugins: Batch - https://github.com/imagej/imagej-plugins-batch -->
