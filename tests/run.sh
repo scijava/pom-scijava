@@ -19,14 +19,14 @@ sectionEnd() {
 
 sectionStart 'Generating mega-melt project'
 
-dir=$(dirname "$0")
+dir=$(cd "$(dirname "$0")" && pwd)
 pom="$dir/../pom.xml"
 test -f "$pom" || die 'Where is pom.xml?!'
 
 generateMegaMeltScript="$dir/generate-mega-melt.py"
 filterBuildLogScript="$dir/filter-build-log.py"
 
-megaMeltDir="$dir/../target/mega-melt"
+megaMeltDir=$(cd "$dir/../target/mega-melt" && pwd)
 pomParent="$megaMeltDir/../pom.xml"
 versionSwapLog="$megaMeltDir/version-swap.log"
 dependencyTreeLog="$megaMeltDir/dependency-tree.log"
