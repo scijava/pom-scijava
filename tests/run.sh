@@ -148,6 +148,15 @@ echo 'Hacking in any changed components...'
 # 4. Have its version adjusted to 999 in melting pot's build.sh;
 # 5. Be added to the list of components to build in melt.sh (if not already present).
 components='
+org.janelia.saalfeldlab|n5-imglib2|git@github.com:saalfeldlab/n5-imglib2|pull/54/head
+sc.fiji|SPIM_Registration|git@github.com:fiji/SPIM_Registration|pull/142/head
+sc.fiji|labkit-ui|git@github.com:juglab/labkit-ui|pull/115/head
+sc.fiji|labkit-pixel-classification|git@github.com:juglab/labkit-pixel-classification|pull/12/head
+sc.fiji|z_spacing|git@github.com:saalfeldlab/z-spacing|pull/28/head
+sc.fiji|TrackMate|git@github.com:trackmate-sc/TrackMate|pull/289/head
+sc.fiji|TrackMate-Skeleton|git@github.com:trackmate-sc/TrackMate-Skeleton|pull/2/head
+sc.fiji|bigwarp_fiji|git@github.com:saalfeldlab/bigwarp|pull/170/head
+net.imagej|imagej-ops|git@github.com:imagej/imagej-ops|pull/654/head
 '
 failFile="$meltingPotDir/fail"
 rm -f "$failFile"
