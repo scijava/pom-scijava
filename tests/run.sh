@@ -114,9 +114,131 @@ chmod +x "$meltingPotScript" &&
 test "$(grep -F "[ERROR]" "$meltingPotLog" | grep -v "using default branch")" &&
   die 'Melting pot generation failed!'
 
+buildScript="$meltingPotDir/build.sh"
+
+echo
+echo 'Hacking in any changed components...'
+
+# Mix in changed components. Syntax is:
+#
+#   groupId|artifactId|path-to-remote|remote-ref
+#
+# Example:
+#
+#   components='
+#   org.janelia.saalfeldlab|n5-imglib2|git@github.com:saalfeldlab/n5-imglib2|pull/54/head
+#   sc.fiji|SPIM_Registration|git@github.com:fiji/SPIM_Registration|pull/142/head
+#   sc.fiji|labkit-ui|git@github.com:juglab/labkit-ui|pull/115/head
+#   sc.fiji|labkit-pixel-classification|git@github.com:juglab/labkit-pixel-classification|pull/12/head
+#   sc.fiji|z_spacing|git@github.com:saalfeldlab/z-spacing|pull/28/head
+#   net.imagej|imagej-common|git@github.com:imagej/imagej-common|pull/112/head
+#   sc.fiji|TrackMate|git@github.com:trackmate-sc/TrackMate|pull/289/head
+#   sc.fiji|TrackMate-Skeleton|git@github.com:trackmate-sc/TrackMate-Skeleton|pull/2/head
+#   sc.fiji|bigwarp_fiji|git@github.com:saalfeldlab/bigwarp|pull/170/head
+#   net.imagej|imagej-ops|git@github.com:imagej/imagej-ops|pull/654/head
+#   '
+#
+# One entry per line inside the components variable declaration.
+# No leading or trailing whitespace anywhere.
+#
+# Each component will:
+# 1. Be updated to that ref (cloning as needed);
+# 2. Have its version adjusted to 999 in its pom.xml and gav marker;
+# 3. Be `mvn install`ed to the local repo cache at that version;
+# 4. Have its version adjusted to 999 in melting pot's build.sh;
+# 5. Be added to the list of components to build in melt.sh (if not already present).
+components='
+'
+failFile="$meltingPotDir/fail"
+rm -f "$failFile"
+echo "$components" | while read component
+do
+  test "$component" || continue
+
+  g=${component%%|*}; r=${component#*|}
+  a=${r%%|*}; r=${r#*|}
+  remote=${r%%|*}; ref=${r#*|}
+  test "$g" -a "$a" -a "$remote" -a "$ref" || {
+    touch "$failFile"
+    die "Invalid component line: $component"
+  }
+  d="$meltingPotDir/$g/$a"
+  printf "[$g:$a] "
+
+  # Update component working copy to desired ref (cloning as needed).
+  mkdir -p "$d" &&
+  echo "Log of actions for custom version of $g:$a" > "$d/surgery.log" &&
+  echo >> "$d/surgery.log" &&
+  test -f "$d/.git" || git init "$d" >> "$d/surgery.log" || {
+    touch "$failFile"
+    die "Failed to access or initialize repository in directory $d"
+  }
+  printf .
+  cd "$d" &&
+  git remote add mega-melt "$remote" >> surgery.log &&
+  printf . &&
+  git fetch mega-melt --depth 1 "$ref":mega-melt >> surgery.log 2>&1 &&
+  printf . &&
+  git switch mega-melt >> surgery.log 2>&1 || {
+    touch "$failFile"
+    die "$g:$a: failed to fetch ref '$ref' from remote $remote"
+  }
+  printf .
+
+  # Adjust component version to 999.
+  mvn versions:set -DnewVersion=999 >> surgery.log || {
+    touch "$failFile"
+    die "$g:$a: failed to adjust pom.xml version"
+  }
+  printf .
+  if [ -f gav ]
+  then
+    mv gav gav.prehacks
+    sed -E "s;:[^:]*$;:999;" gav.prehacks > gav || {
+      touch "$failFile"
+      die "$g:$a: failed to adjust gav version"
+    }
+  fi
+  printf .
+
+  # Install changed component into the local repo cache.
+  mvn -Denforcer.skip -Dmaven.test.skip install >> surgery.log || {
+    touch "$failFile"
+    die "$g:$a: failed to build and install component"
+  }
+  printf .
+
+  # Adjust component version to 999 in melting pot's build.sh.
+  cd "$meltingPotDir"
+  test -f "$buildScript.prehacks" || cp "$buildScript" "$buildScript.prehacks" || {
+    touch "$failFile"
+    die "$g:$a: failed to back up $buildScript"
+  }
+  printf .
+  mv -f "$buildScript" "$buildScript.tmp" &&
+  sed -E "s;(-D($g\\.)?$a\\.version)=[^ ]*;\1=999;g" "$buildScript.tmp" > "$buildScript" || {
+    touch "$failFile"
+    die "$g:$a: failed to adjust component version in $buildScript"
+  }
+  printf .
+
+  # Add component to the build list in melt.sh (if not already present).
+  grep -q "\b$g/$a\b" "$meltScript" || {
+    test -f "$meltScript.prehacks" || cp "$meltScript" "$meltScript.prehacks"
+    mv -f "$meltScript" "$meltScript.tmp" &&
+    perl -0777 -pe 's;\n+do\n;\n  '"$g/$a"' \\$&;igs' "$meltScript.tmp" > "$meltScript"
+  } || {
+    touch "$failFile"
+    die "$g:$a: failed to add component to the build list in $meltScript"
+  }
+  printf ".\n"
+done
+rm -f "$buildScript.tmp" "$meltScript.tmp"
+test ! -f "$failFile" ||
+  die "Failed to hack in changed components!"
+
 sectionStart 'Adjusting the melting pot: build.sh script'
 
-buildScript="$meltingPotDir/build.sh"
 cp "$buildScript" "$buildScript.original" &&
 
 # HACK: Remove known-duplicate short version properties, keeping
