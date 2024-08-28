@@ -114,7 +114,7 @@ chmod +x "$meltingPotScript" &&
 test "$(grep -F "[ERROR]" "$meltingPotLog" | grep -v "using default branch")" &&
   die 'Melting pot generation failed!'
 
-sectionStart 'Adjusting the melting pot'
+sectionStart 'Adjusting the melting pot: build.sh script'
 
 buildScript="$meltingPotDir/build.sh"
 buildScriptTemp="$buildScript.tmp"
@@ -177,6 +177,10 @@ chmod +x "$buildScript" &&
 rm "$buildScriptTemp" ||
   die 'Error adjusting melting pot build script!'
 
+sectionEnd # Adjusting the melting pot: build.sh script
+
+sectionStart 'Adjusting the melting pot: component POMs'
+
 # HACK: Adjust component POMs to satisfy Maven HTTPS strictness.
 find "$meltingPotDir" -name pom.xml |
   while read pom
@@ -195,6 +199,10 @@ do
   perl -0777 -i -pe 's/(<parent>\s*<groupId>org.scijava<\/groupId>\s*<artifactId>pom-scijava<\/artifactId>\s*<version>)[^\n]*/${1}999-mega-melt<\/version>/igs' "$pom"
 done
 
+sectionEnd # Adjusting the melting pot: component POMs
+
+sectionStart 'Adjusting the melting pot: melt.sh script'
+
 # HACK: Skip tests for projects with known problems.
 
 mv "$meltScript" "$meltScript.original" &&
@@ -206,6 +214,10 @@ grep -qxF "$f" $dir/skipTests.txt \&\& buildFlags=-DskipTests\
 & $buildFlags_' "$meltScript.original" > "$meltScript" &&
 chmod +x "$meltScript" ||
   die "Failed to adjust $meltScript"
+
+sectionEnd # Adjusting the melting pot: melt.sh script
+
+sectionStart 'Adjusting the melting pot: unit test hacks'
 
 # HACK: Remove flaky tests from imagej-ops builds.
 # CachedOpEnvironmentTest fails intermittently. Of course, it should be
@@ -219,7 +231,7 @@ echo "org.janelia.saalfeldlab/n5-aws-s3" >> "$skipTestsFile" &&
 echo "sc.fiji/labkit-pixel-classification" >> "$skipTestsFile" ||
   die "Failed to generate $skipTestsFile"
 
-sectionEnd # Adjusting the melting pot
+sectionEnd # Adjusting the melting pot: unit test hacks
 
 # Run the melting pot now, unless -s flag was given.
 doMelt=t
