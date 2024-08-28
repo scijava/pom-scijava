@@ -117,31 +117,30 @@ test "$(grep -F "[ERROR]" "$meltingPotLog" | grep -v "using default branch")" &&
 sectionStart 'Adjusting the melting pot: build.sh script'
 
 buildScript="$meltingPotDir/build.sh"
-buildScriptTemp="$buildScript.tmp"
 cp "$buildScript" "$buildScript.original" &&
 
 # HACK: Remove known-duplicate short version properties, keeping
 # the short version declaration only for the more common groupId.
 # E.g.: org.antlr:antlr is preferred over antlr:antlr, so we set
 # antlr.version to match org.antlr:antlr, not antlr:antlr.
-mv -f "$buildScript" "$buildScriptTemp" &&
-sed -E 's;(-D('"$shortVersionClashes"').version=[^ ]*) -D[^ ]*;\1;' "$buildScriptTemp" > "$buildScript" &&
+mv -f "$buildScript" "$buildScript.tmp" &&
+sed -E 's;(-D('"$shortVersionClashes"').version=[^ ]*) -D[^ ]*;\1;' "$buildScript.tmp" > "$buildScript" &&
 
 # HACK: Add leading underscore to version properties that start with a digit.
-mv -f "$buildScript" "$buildScriptTemp" &&
-sed -E 's; -D([0-9][^ ]*);& -D_\1;' "$buildScriptTemp" > "$buildScript" &&
+mv -f "$buildScript" "$buildScript.tmp" &&
+sed -E 's; -D([0-9][^ ]*);& -D_\1;' "$buildScript.tmp" > "$buildScript" &&
 
 # HACK: Add non-standard version properties used prior to
 # pom-scijava 32.0.0-beta-1; see d0bf752070d96a2613c42e4e1ab86ebdd07c29ee.
-mv -f "$buildScript" "$buildScriptTemp" &&
-sed -E 's; -Dsc.fiji.3D_Blob_Segmentation\.version=([^ ]*);& -DFiji_3D_Blob_Segmentation.version=\1;' "$buildScriptTemp" > "$buildScript" &&
-mv -f "$buildScript" "$buildScriptTemp" &&
-sed -E 's; -Dsc.fiji.(3D_Objects_Counter|3D_Viewer)\.version=([^ ]*);& -DImageJ_\1.version=\2;' "$buildScriptTemp" > "$buildScript" &&
+mv -f "$buildScript" "$buildScript.tmp" &&
+sed -E 's; -Dsc.fiji.3D_Blob_Segmentation\.version=([^ ]*);& -DFiji_3D_Blob_Segmentation.version=\1;' "$buildScript.tmp" > "$buildScript" &&
+mv -f "$buildScript" "$buildScript.tmp" &&
+sed -E 's; -Dsc.fiji.(3D_Objects_Counter|3D_Viewer)\.version=([^ ]*);& -DImageJ_\1.version=\2;' "$buildScript.tmp" > "$buildScript" &&
 
 # HACK: Add non-standard net.imagej:ij version property used prior to
 # pom-scijava 28.0.0; see 7d2cc442b107b3ac2dcb799d282f2c0b5822649d.
-mv -f "$buildScript" "$buildScriptTemp" &&
-sed -E 's; -Dij\.version=([^ ]*);& -Dimagej1.version=\1;' "$buildScriptTemp" > "$buildScript" &&
+mv -f "$buildScript" "$buildScript.tmp" &&
+sed -E 's; -Dij\.version=([^ ]*);& -Dimagej1.version=\1;' "$buildScript.tmp" > "$buildScript" &&
 
 # HACK: Add explicit kotlin.version to match our pom-scijava-base.
 # Otherwise, components built on older pom-scijava-base will have
@@ -170,11 +169,11 @@ enforcerVersion=$(
   mvn -B -U -q -Denforcer.skip=true -Dexec.executable=echo \
   -Dexec.args='${maven-enforcer-plugin.version}' --non-recursive validate exec:exec 2>&1 |
   head -n1 | sed 's;\(.\[[0-9]m\)*;;') &&
-mv -f "$buildScript" "$buildScriptTemp" &&
-sed -E "s;mvn -Denforcer.skip;& -Dmaven-enforcer-plugin.version=$enforcerVersion -Dkotlin.version=$kotlinVersion;" "$buildScriptTemp" > "$buildScript" &&
+mv -f "$buildScript" "$buildScript.tmp" &&
+sed -E "s;mvn -Denforcer.skip;& -Dmaven-enforcer-plugin.version=$enforcerVersion -Dkotlin.version=$kotlinVersion;" "$buildScript.tmp" > "$buildScript" &&
 
 chmod +x "$buildScript" &&
-rm "$buildScriptTemp" ||
+rm "$buildScript.tmp" ||
   die 'Error adjusting melting pot build script!'
 
 sectionEnd # Adjusting the melting pot: build.sh script
