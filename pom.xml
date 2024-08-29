@@ -1028,7 +1028,7 @@
 		<sc.fiji.bigdataviewer_fiji.version>${bigdataviewer_fiji.version}</sc.fiji.bigdataviewer_fiji.version>
 
 		<!-- SPIM Data - https://github.com/bigdataviewer/spimdata -->
-		<spim_data.version>2.2.7</spim_data.version>
+		<spim_data.version>2.3.1</spim_data.version>
 		<sc.fiji.spim_data.version>${spim_data.version}</sc.fiji.spim_data.version>
 
 		<!-- TrackMate - https://github.com/trackmate-sc -->
