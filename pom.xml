@@ -502,7 +502,7 @@
 		<net.imagej.imagej-matlab.version>${imagej-matlab.version}</net.imagej.imagej-matlab.version>
 
 		<!-- ImageJ Mesh - https://github.com/imagej/imagej-mesh -->
-		<imagej-mesh.version>0.8.1</imagej-mesh.version>
+		<imagej-mesh.version>0.8.2</imagej-mesh.version>
 		<net.imagej.imagej-mesh.version>${imagej-mesh.version}</net.imagej.imagej-mesh.version>
 
 		<!-- ImageJ Mesh IO - https://github.com/imagej/imagej-mesh-io -->
@@ -526,7 +526,7 @@
 		<net.imagej.imagej-opencv.version>${imagej-opencv.version}</net.imagej.imagej-opencv.version>
 
 		<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
-		<imagej-ops.version>2.1.0</imagej-ops.version>
+		<imagej-ops.version>2.2.0</imagej-ops.version>
 		<net.imagej.imagej-ops.version>${imagej-ops.version}</net.imagej.imagej-ops.version>
 
 		<!-- ImageJ Plugins: Batch - https://github.com/imagej/imagej-plugins-batch -->
@@ -608,7 +608,7 @@
 		<net.imglib2.imglib2-imglyb.version>${imglib2-imglyb.version}</net.imglib2.imglib2-imglyb.version>
 
 		<!-- ImgLib2 Mesh - https://github.com/imglib/imglib2-mesh -->
-		<imglib2-mesh.version>1.0.0</imglib2-mesh.version>
+		<imglib2-mesh.version>1.1.0</imglib2-mesh.version>
 		<net.imglib2.imglib2-mesh.version>${imglib2-mesh.version}</net.imglib2.imglib2-mesh.version>
 
 		<!-- ImgLib2 RealTransform - https://github.com/imglib/imglib2-realtransform -->
@@ -861,7 +861,7 @@
 		<SPIM_Opener.version>2.0.2</SPIM_Opener.version>
 		<sc.fiji.SPIM_Opener.version>${SPIM_Opener.version}</sc.fiji.SPIM_Opener.version>
 
-		<SPIM_Registration.version>5.0.25</SPIM_Registration.version>
+		<SPIM_Registration.version>5.0.26</SPIM_Registration.version>
 		<sc.fiji.SPIM_Registration.version>${SPIM_Registration.version}</sc.fiji.SPIM_Registration.version>
 
 		<Samples.version>2.0.3</Samples.version>
@@ -1034,7 +1034,7 @@
 		<!-- TrackMate - https://github.com/trackmate-sc -->
 
 		<!-- TrackMate - https://github.com/trackmate-sc/TrackMate -->
-		<TrackMate.version>7.12.1</TrackMate.version>
+		<TrackMate.version>7.14.0</TrackMate.version>
 		<sc.fiji.TrackMate.version>${TrackMate.version}</sc.fiji.TrackMate.version>
 
 		<!-- TrackMate-Cellpose - https://github.com/trackmate-sc/TrackMate-Cellpose -->
@@ -1068,7 +1068,7 @@
 		<sc.fiji.TrackMate-Oneat.version>${TrackMate-Oneat.version}</sc.fiji.TrackMate-Oneat.version>
 
 		<!-- TrackMate-Skeleton - https://github.com/trackmate-sc/TrackMate-Skeleton -->
-		<TrackMate-Skeleton.version>2.0.1</TrackMate-Skeleton.version>
+		<TrackMate-Skeleton.version>2.0.3</TrackMate-Skeleton.version>
 		<sc.fiji.TrackMate-Skeleton.version>${TrackMate-Skeleton.version}</sc.fiji.TrackMate-Skeleton.version>
 
 		<!-- TrackMate-StarDist - https://github.com/trackmate-sc/TrackMate-StarDist -->
@@ -1207,8 +1207,8 @@
 		<sc.fiji.MaMuT.version>${MaMuT.version}</sc.fiji.MaMuT.version>
 
 		<!-- Labkit - https://imagej.net/plugins/labkit -->
-		<labkit-pixel-classification.version>0.1.17</labkit-pixel-classification.version>
-		<labkit-ui.version>0.3.11</labkit-ui.version>
+		<labkit-pixel-classification.version>0.1.18</labkit-pixel-classification.version>
+		<labkit-ui.version>0.4.0</labkit-ui.version>
 		<sc.fiji.labkit-pixel-classification.version>${labkit-pixel-classification.version}</sc.fiji.labkit-pixel-classification.version>
 		<sc.fiji.labkit-ui.version>${labkit-ui.version}</sc.fiji.labkit-ui.version>
 
