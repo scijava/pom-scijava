@@ -410,7 +410,7 @@
 		<org.scijava.script-editor-scala.version>${script-editor-scala.version}</org.scijava.script-editor-scala.version>
 
 		<!-- Scripting: BeanShell - https://github.com/scijava/scripting-beanshell -->
-		<scripting-beanshell.version>0.4.1</scripting-beanshell.version>
+		<scripting-beanshell.version>1.0.0</scripting-beanshell.version>
 		<org.scijava.scripting-beanshell.version>${scripting-beanshell.version}</org.scijava.scripting-beanshell.version>
 
 		<!-- Scripting: Clojure - https://github.com/scijava/scripting-clojure -->
