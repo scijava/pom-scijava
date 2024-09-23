@@ -147,12 +147,7 @@ echo 'Hacking in any changed components...'
 # 3. Be `mvn install`ed to the local repo cache at that version;
 # 4. Have its version adjusted to 999 in melting pot's build.sh;
 # 5. Be added to the list of components to build in melt.sh (if not already present).
-components='
-org.janelia.saalfeldlab|n5-imglib2|git@github.com:saalfeldlab/n5-imglib2|pull/54/head
-org.janelia.saalfeldlab|n5-ij|git@github.com:ctrueden/n5-ij|imglib2-v7
-sc.fiji|z_spacing|git@github.com:saalfeldlab/z-spacing|pull/28/head
-sc.fiji|bigwarp_fiji|git@github.com:saalfeldlab/bigwarp|pull/170/head
-'
+components=''
 failFile="$meltingPotDir/fail"
 rm -f "$failFile"
 echo "$components" | while read component

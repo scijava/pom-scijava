@@ -580,11 +580,11 @@
 		<!-- ImgLib2 - https://github.com/imglib -->
 
 		<!-- ImgLib2 - https://github.com/imglib/imglib2 -->
-		<imglib2.version>7.1.0</imglib2.version>
+		<imglib2.version>7.1.1</imglib2.version>
 		<net.imglib2.imglib2.version>${imglib2.version}</net.imglib2.imglib2.version>
 
 		<!-- ImgLib2 Algorithms - https://github.com/imglib/imglib2-algorithm -->
-		<imglib2-algorithm.version>0.15.3</imglib2-algorithm.version>
+		<imglib2-algorithm.version>0.16.0</imglib2-algorithm.version>
 		<net.imglib2.imglib2-algorithm.version>${imglib2-algorithm.version}</net.imglib2.imglib2-algorithm.version>
 
 		<!-- ImgLib2 Algorithms FFT - https://github.com/imglib/imglib2-algorithm-fft -->
@@ -600,7 +600,7 @@
 		<net.imglib2.imglib2-cache.version>${imglib2-cache.version}</net.imglib2.imglib2-cache.version>
 
 		<!-- ImgLib2 IJ - https://github.com/imglib/imglib2-ij -->
-		<imglib2-ij.version>2.0.2</imglib2-ij.version>
+		<imglib2-ij.version>2.0.3</imglib2-ij.version>
 		<net.imglib2.imglib2-ij.version>${imglib2-ij.version}</net.imglib2.imglib2-ij.version>
 
 		<!-- ImgLib2 ImgLyb - https://github.com/imglib/imglib2-imglyb -->
@@ -616,7 +616,7 @@
 		<net.imglib2.imglib2-realtransform.version>${imglib2-realtransform.version}</net.imglib2.imglib2-realtransform.version>
 
 		<!-- ImgLib2 ROI - https://github.com/imglib/imglib2-roi -->
-		<imglib2-roi.version>0.15.0</imglib2-roi.version>
+		<imglib2-roi.version>0.15.1</imglib2-roi.version>
 		<net.imglib2.imglib2-roi.version>${imglib2-roi.version}</net.imglib2.imglib2-roi.version>
 
 		<!-- ImgLib2 Unsafe - https://github.com/imglib/imglib2-unsafe -->
@@ -991,7 +991,7 @@
 		<jitk.jitk-tps.version>${jitk-tps.version}</jitk.jitk-tps.version>
 
 		<!-- BigWarp - https://github.com/saalfeldlab/bigwarp -->
-		<bigwarp.version>9.1.2</bigwarp.version>
+		<bigwarp.version>9.1.4</bigwarp.version>
 		<bigwarp_fiji.version>${bigwarp.version}</bigwarp_fiji.version>
 		<sc.fiji.bigwarp_fiji.version>${bigwarp_fiji.version}</sc.fiji.bigwarp_fiji.version>
 
@@ -1006,13 +1006,13 @@
 		<sc.fiji.trakem2_tps.version>${trakem2_tps.version}</sc.fiji.trakem2_tps.version>
 
 		<!-- Z-Spacing correction - https://github.com/saalfeldlab/z-spacing -->
-		<z_spacing.version>1.1.2</z_spacing.version>
+		<z_spacing.version>1.1.3</z_spacing.version>
 		<sc.fiji.z_spacing.version>${z_spacing.version}</sc.fiji.z_spacing.version>
 
 		<!-- BigDataViewer - https://github.com/bigdataviewer -->
 
 		<!-- BigDataViewer Core - https://github.com/bigdataviewer/bigdataviewer-core -->
-		<bigdataviewer-core.version>10.6.0</bigdataviewer-core.version>
+		<bigdataviewer-core.version>10.6.1</bigdataviewer-core.version>
 		<sc.fiji.bigdataviewer-core.version>${bigdataviewer-core.version}</sc.fiji.bigdataviewer-core.version>
 
 		<!-- BigDataServer - https://github.com/bigdataviewer/bigdataviewer-server -->
@@ -1028,7 +1028,7 @@
 		<sc.fiji.bigdataviewer_fiji.version>${bigdataviewer_fiji.version}</sc.fiji.bigdataviewer_fiji.version>
 
 		<!-- SPIM Data - https://github.com/bigdataviewer/spimdata -->
-		<spim_data.version>2.3.1</spim_data.version>
+		<spim_data.version>2.3.2</spim_data.version>
 		<sc.fiji.spim_data.version>${spim_data.version}</sc.fiji.spim_data.version>
 
 		<!-- TrackMate - https://github.com/trackmate-sc -->
@@ -1129,11 +1129,11 @@
 		<org.janelia.saalfeldlab.n5-hdf5.version>${n5-hdf5.version}</org.janelia.saalfeldlab.n5-hdf5.version>
 
 		<!-- N5 ImageJ Bindings - https://github.com/saalfeldlab/n5-ij -->
-		<n5-ij.version>4.2.1</n5-ij.version>
+		<n5-ij.version>4.2.2</n5-ij.version>
 		<org.janelia.saalfeldlab.n5-ij.version>${n5-ij.version}</org.janelia.saalfeldlab.n5-ij.version>
 
 		<!-- N5 ImgLib2 Bindings - https://github.com/saalfeldlab/n5-imglib2 -->
-		<n5-imglib2.version>7.0.0</n5-imglib2.version>
+		<n5-imglib2.version>7.0.1</n5-imglib2.version>
 		<org.janelia.saalfeldlab.n5-imglib2.version>${n5-imglib2.version}</org.janelia.saalfeldlab.n5-imglib2.version>
 
 		<!-- N5 Universe - https://github.com/saalfeldlab/n5-universe -->
