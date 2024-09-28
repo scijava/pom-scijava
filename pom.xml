@@ -11,7 +11,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>38.0.2-SNAPSHOT</version>
+	<version>39.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -665,13 +665,13 @@
 
 		<!-- Standard Fiji projects -->
 
-		<_3D_Blob_Segmentation.version>3.0.2</_3D_Blob_Segmentation.version>
+		<_3D_Blob_Segmentation.version>4.0.0</_3D_Blob_Segmentation.version>
 		<sc.fiji.3D_Blob_Segmentation.version>${_3D_Blob_Segmentation.version}</sc.fiji.3D_Blob_Segmentation.version>
 
 		<_3D_Objects_Counter.version>2.0.1</_3D_Objects_Counter.version>
 		<sc.fiji.3D_Objects_Counter.version>${_3D_Objects_Counter.version}</sc.fiji.3D_Objects_Counter.version>
 
-		<_3D_Viewer.version>4.0.5</_3D_Viewer.version>
+		<_3D_Viewer.version>5.0.0</_3D_Viewer.version>
 		<sc.fiji.3D_Viewer.version>${_3D_Viewer.version}</sc.fiji.3D_Viewer.version>
 
 		<AnalyzeSkeleton.version>3.4.2</AnalyzeSkeleton.version>
@@ -728,7 +728,7 @@
 		<CorrectBleach_.version>${CorrectBleach.version}</CorrectBleach_.version>
 		<sc.fiji.CorrectBleach_.version>${CorrectBleach_.version}</sc.fiji.CorrectBleach_.version>
 
-		<Correct_3D_Drift.version>1.0.6</Correct_3D_Drift.version>
+		<Correct_3D_Drift.version>1.0.7</Correct_3D_Drift.version>
 		<sc.fiji.Correct_3D_Drift.version>${Correct_3D_Drift.version}</sc.fiji.Correct_3D_Drift.version>
 
 		<Descriptor_based_registration.version>2.1.8</Descriptor_based_registration.version>
@@ -915,7 +915,7 @@
 		<TopoJ_.version>${TopoJ.version}</TopoJ_.version>
 		<sc.fiji.TopoJ_.version>${TopoJ_.version}</sc.fiji.TopoJ_.version>
 
-		<Trainable_Segmentation.version>3.3.4</Trainable_Segmentation.version>
+		<Trainable_Segmentation.version>4.0.0</Trainable_Segmentation.version>
 		<sc.fiji.Trainable_Segmentation.version>${Trainable_Segmentation.version}</sc.fiji.Trainable_Segmentation.version>
 
 		<TrakEM2_Archipelago.version>2.0.4</TrakEM2_Archipelago.version>
@@ -924,7 +924,7 @@
 		<VIB-lib.version>2.2.0</VIB-lib.version>
 		<sc.fiji.VIB-lib.version>${VIB-lib.version}</sc.fiji.VIB-lib.version>
 
-		<VIB.version>3.0.4</VIB.version>
+		<VIB.version>4.0.0</VIB.version>
 		<VIB_.version>${VIB.version}</VIB_.version>
 		<sc.fiji.VIB_.version>${VIB_.version}</sc.fiji.VIB_.version>
 
@@ -937,7 +937,7 @@
 		<Video_Editing.version>2.0.1</Video_Editing.version>
 		<sc.fiji.Video_Editing.version>${Video_Editing.version}</sc.fiji.Video_Editing.version>
 
-		<Volume_Calculator.version>2.0.3</Volume_Calculator.version>
+		<Volume_Calculator.version>3.0.0</Volume_Calculator.version>
 		<sc.fiji.Volume_Calculator.version>${Volume_Calculator.version}</sc.fiji.Volume_Calculator.version>
 
 		<Volume_Viewer.version>2.01.4</Volume_Viewer.version>
@@ -957,7 +957,7 @@
 		<fiji-lib.version>2.1.3</fiji-lib.version>
 		<sc.fiji.fiji-lib.version>${fiji-lib.version}</sc.fiji.fiji-lib.version>
 
-		<legacy-imglib1.version>1.1.10</legacy-imglib1.version>
+		<legacy-imglib1.version>1.1.11</legacy-imglib1.version>
 		<sc.fiji.legacy-imglib1.version>${legacy-imglib1.version}</sc.fiji.legacy-imglib1.version>
 
 		<level_sets.version>1.0.2</level_sets.version>
@@ -1090,12 +1090,12 @@
 		<sc.fiji.T2-TreelineGraph.version>${T2-TreelineGraph.version}</sc.fiji.T2-TreelineGraph.version>
 
 		<!-- TrakEM2 - https://github.com/trakem2/TrakEM2 -->
-		<TrakEM2.version>1.3.10</TrakEM2.version>
+		<TrakEM2.version>2.0.0</TrakEM2.version>
 		<TrakEM2_.version>${TrakEM2.version}</TrakEM2_.version>
 		<sc.fiji.TrakEM2_.version>${TrakEM2_.version}</sc.fiji.TrakEM2_.version>
 
 		<!-- VectorString - https://github.com/trakem2/VectorString -->
-		<VectorString.version>2.0.3</VectorString.version>
+		<VectorString.version>3.0.0</VectorString.version>
 		<sc.fiji.VectorString.version>${VectorString.version}</sc.fiji.VectorString.version>
 
 		<!-- trakem2-transform - https://github.com/trakem2/trakem2-transform -->
@@ -1837,15 +1837,6 @@
 		<!-- JAMA - https://math.nist.gov/javanumerics/jama/ -->
 		<jama.version>1.0.3</jama.version>
 		<gov.nist.math.jama.version>${jama.version}</gov.nist.math.jama.version>
-
-		<!-- [DEPRECATED] SciJava's fork of Java 3D - TO BE REMOVED in pom-scijava 39.0.0 -->
-		<java3d.version>1.6.0-scijava-2</java3d.version>
-		<j3dcore.version>${java3d.version}</j3dcore.version>
-		<j3dutils.version>${java3d.version}</j3dutils.version>
-		<vecmath.version>${java3d.version}</vecmath.version>
-		<org.scijava.j3dcore.version>${j3dcore.version}</org.scijava.j3dcore.version>
-		<org.scijava.j3dutils.version>${j3dutils.version}</org.scijava.j3dutils.version>
-		<org.scijava.vecmath.version>${vecmath.version}</org.scijava.vecmath.version>
 
 		<!-- JavaCPP - https://github.com/bytedeco/javacpp -->
 
@@ -5396,23 +5387,6 @@
 				<groupId>gov.nist.math</groupId>
 				<artifactId>jama</artifactId>
 				<version>${gov.nist.math.jama.version}</version>
-			</dependency>
-
-			<!-- [DEPRECATED] SciJava's fork of Java 3D - TO BE REMOVED in pom-scijava 39.0.0 -->
-			<dependency>
-				<groupId>org.scijava</groupId>
-				<artifactId>j3dcore</artifactId>
-				<version>${org.scijava.j3dcore.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.scijava</groupId>
-				<artifactId>j3dutils</artifactId>
-				<version>${org.scijava.j3dutils.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.scijava</groupId>
-				<artifactId>vecmath</artifactId>
-				<version>${org.scijava.vecmath.version}</version>
 			</dependency>
 
 			<!-- JavaCPP - https://github.com/bytedeco/javacpp -->
