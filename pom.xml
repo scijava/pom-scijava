@@ -394,7 +394,7 @@
 		<org.scijava.scijava-ui-awt.version>${scijava-ui-awt.version}</org.scijava.scijava-ui-awt.version>
 
 		<!-- SciJava UI: Swing - https://github.com/scijava/scijava-ui-swing -->
-		<scijava-ui-swing.version>1.0.2</scijava-ui-swing.version>
+		<scijava-ui-swing.version>1.0.3</scijava-ui-swing.version>
 		<org.scijava.scijava-ui-swing.version>${scijava-ui-swing.version}</org.scijava.scijava-ui-swing.version>
 
 		<!-- Script Editor - https://github.com/scijava/script-editor -->
@@ -534,7 +534,7 @@
 		<net.imagej.imagej-plugins-batch.version>${imagej-plugins-batch.version}</net.imagej.imagej-plugins-batch.version>
 
 		<!-- ImageJ Plugins: Commands - https://github.com/imagej/imagej-plugins-commands -->
-		<imagej-plugins-commands.version>0.8.1</imagej-plugins-commands.version>
+		<imagej-plugins-commands.version>0.8.2</imagej-plugins-commands.version>
 		<net.imagej.imagej-plugins-commands.version>${imagej-plugins-commands.version}</net.imagej.imagej-plugins-commands.version>
 
 		<!-- ImageJ Plugins: Tools - https://github.com/imagej/imagej-plugins-tools -->
@@ -1155,7 +1155,7 @@
 		<!-- Fiji-adjacent projects (available from ImageJ update sites) -->
 
 		<!-- MorphoLibJ - https://imagej.net/plugins/morpholibj -->
-		<MorphoLibJ.version>1.6.2</MorphoLibJ.version>
+		<MorphoLibJ.version>1.6.3</MorphoLibJ.version>
 		<MorphoLibJ_.version>${MorphoLibJ.version}</MorphoLibJ_.version>
 		<fr.inra.ijpb.MorphoLibJ_.version>${MorphoLibJ_.version}</fr.inra.ijpb.MorphoLibJ_.version>
 
@@ -1221,19 +1221,19 @@
 		<com.zeroc.ice.version>${ice.version}</com.zeroc.ice.version>
 
 		<!-- OME Codecs - https://github.com/ome/ome-codecs -->
-		<ome-codecs.version>1.0.1</ome-codecs.version>
+		<ome-codecs.version>1.0.3</ome-codecs.version>
 		<org.openmicroscopy.ome-codecs.version>${ome-codecs.version}</org.openmicroscopy.ome-codecs.version>
 
 		<!-- OME Common Java - https://github.com/ome/ome-common-java -->
-		<ome-common.version>6.0.21</ome-common.version>
+		<ome-common.version>6.0.23</ome-common.version>
 		<org.openmicroscopy.ome-common.version>${ome-common.version}</org.openmicroscopy.ome-common.version>
 
 		<!-- Metakit - https://github.com/ome/ome-metakit -->
-		<metakit.version>5.3.6</metakit.version>
+		<metakit.version>5.3.7</metakit.version>
 		<org.openmicroscopy.metakit.version>${metakit.version}</org.openmicroscopy.metakit.version>
 
 		<!-- OME POI - https://github.com/ome/ome-poi -->
-		<ome-poi.version>5.3.8</ome-poi.version>
+		<ome-poi.version>5.3.9</ome-poi.version>
 		<org.openmicroscopy.ome-poi.version>${ome-poi.version}</org.openmicroscopy.ome-poi.version>
 
 		<!-- OME Model - https://github.com/ome/ome-model -->
@@ -1262,11 +1262,11 @@
 		<ome.formats-gpl.version>${formats-gpl.version}</ome.formats-gpl.version>
 
 		<!-- OMERO Blitz - https://github.com/ome/omero-blitz -->
-		<omero-blitz.version>5.7.2</omero-blitz.version>
+		<omero-blitz.version>5.7.4</omero-blitz.version>
 		<org.openmicroscopy.omero-blitz.version>${omero-blitz.version}</org.openmicroscopy.omero-blitz.version>
 
 		<!-- OMERO Common - https://github.com/ome/omero-common -->
-		<omero-common.version>5.6.4</omero-common.version>
+		<omero-common.version>5.6.7</omero-common.version>
 		<org.openmicroscopy.omero-common.version>${omero-common.version}</org.openmicroscopy.omero-common.version>
 
 		<!-- OMERO DSL Plugin - https://github.com/ome/omero-dsl-plugin -->
@@ -1274,23 +1274,23 @@
 		<org.openmicroscopy.omero-dsl-plugin.version>${omero-dsl-plugin.version}</org.openmicroscopy.omero-dsl-plugin.version>
 
 		<!-- OMERO Gateway - https://github.com/ome/omero-gateway-java -->
-		<omero-gateway.version>5.9.0</omero-gateway.version>
+		<omero-gateway.version>5.9.3</omero-gateway.version>
 		<org.openmicroscopy.omero-gateway.version>${omero-gateway.version}</org.openmicroscopy.omero-gateway.version>
 
 		<!-- OMERO Model - https://github.com/ome/omero-model -->
-		<omero-model.version>5.6.13</omero-model.version>
+		<omero-model.version>5.6.15</omero-model.version>
 		<org.openmicroscopy.omero-model.version>${omero-model.version}</org.openmicroscopy.omero-model.version>
 
 		<!-- OMERO Renderer - https://github.com/ome/omero-renderer -->
-		<omero-renderer.version>5.5.15</omero-renderer.version>
+		<omero-renderer.version>5.5.17</omero-renderer.version>
 		<org.openmicroscopy.omero-renderer.version>${omero-renderer.version}</org.openmicroscopy.omero-renderer.version>
 
 		<!-- OMERO ROMIO - https://github.com/ome/omero-romio -->
-		<omero-romio.version>5.7.5</omero-romio.version>
+		<omero-romio.version>5.7.7</omero-romio.version>
 		<org.openmicroscopy.omero-romio.version>${omero-romio.version}</org.openmicroscopy.omero-romio.version>
 
 		<!-- OMERO Server - https://github.com/ome/omero-server -->
-		<omero-server.version>5.6.10</omero-server.version>
+		<omero-server.version>5.6.12</omero-server.version>
 		<org.openmicroscopy.omero-server.version>${omero-server.version}</org.openmicroscopy.omero-server.version>
 
 		<!-- Other SciJava components -->
@@ -1310,11 +1310,11 @@
 		<org.abego.treelayout.org.abego.treelayout.core.version>${org.abego.treelayout.core.version}</org.abego.treelayout.org.abego.treelayout.core.version>
 
 		<!-- Algart TIFF - https://algart.net/java/AlgART-TIFF/ -->
-		<algart-tiff.version>1.2.7</algart-tiff.version>
+		<algart-tiff.version>1.3.6</algart-tiff.version>
 		<net.algart.algart-tiff.version>${algart-tiff.version}</net.algart.algart-tiff.version>
 
 		<!-- Amazon S3 - https://aws.amazon.com/sdkforjava -->
-		<aws.version>1.12.667</aws.version>
+		<aws.version>1.12.772</aws.version>
 		<aws-java-sdk-core.version>${aws.version}</aws-java-sdk-core.version>
 		<aws-java-sdk-s3.version>${aws.version}</aws-java-sdk-s3.version>
 		<com.amazonaws.aws-java-sdk-core.version>${aws-java-sdk-core.version}</com.amazonaws.aws-java-sdk-core.version>
@@ -1336,13 +1336,13 @@
 		<org.antlr.antlr4-runtime.version>${antlr4-runtime.version}</org.antlr.antlr4-runtime.version>
 
 		<!-- Apache Ant - https://ant.apache.org/ -->
-		<ant.version>1.10.14</ant.version>
+		<ant.version>1.10.15</ant.version>
 		<ant-launcher.version>${ant.version}</ant-launcher.version>
 		<org.apache.ant.ant.version>${ant.version}</org.apache.ant.ant.version>
 		<org.apache.ant.ant-launcher.version>${ant-launcher.version}</org.apache.ant.ant-launcher.version>
 
 		<!-- Apache Groovy - https://groovy-lang.org/ -->
-		<groovy.version>4.0.18</groovy.version>
+		<groovy.version>4.0.23</groovy.version>
 		<groovy-ant.version>${groovy.version}</groovy-ant.version>
 		<groovy-astbuilder.version>${groovy.version}</groovy-astbuilder.version>
 		<groovy-cli-commons.version>${groovy.version}</groovy-cli-commons.version>
@@ -1416,11 +1416,11 @@
 
 		<!-- Apache Maven - https://maven.apache.org/ -->
 		<maven-artifact-transfer.version>0.13.1</maven-artifact-transfer.version>
-		<maven-common-artifact-filters.version>3.3.2</maven-common-artifact-filters.version>
-		<maven-core.version>3.9.6</maven-core.version>
-		<maven-plugin-tools-api.version>3.11.0</maven-plugin-tools-api.version>
+		<maven-common-artifact-filters.version>3.4.0</maven-common-artifact-filters.version>
+		<maven-core.version>3.9.9</maven-core.version>
+		<maven-plugin-tools-api.version>4.0.0-beta-1</maven-plugin-tools-api.version>
 		<plexus-component-annotations.version>2.2.0</plexus-component-annotations.version>
-		<plexus-utils.version>4.0.0</plexus-utils.version>
+		<plexus-utils.version>4.0.2</plexus-utils.version>
 		<sisu-inject-bean.version>2.6.0</sisu-inject-bean.version>
 		<sisu-inject-plexus.version>2.6.0</sisu-inject-plexus.version>
 		<org.apache.maven.shared.maven-artifact-transfer.version>${maven-artifact-transfer.version}</org.apache.maven.shared.maven-artifact-transfer.version>
@@ -1433,7 +1433,7 @@
 		<org.sonatype.sisu.sisu-inject-plexus.version>${sisu-inject-plexus.version}</org.sonatype.sisu.sisu-inject-plexus.version>
 
 		<!-- Apache POI - https://poi.apache.org/ -->
-		<poi.version>5.2.5</poi.version>
+		<poi.version>5.3.0</poi.version>
 		<poi-examples.version>${poi.version}</poi-examples.version>
 		<poi-excelant.version>${poi.version}</poi-excelant.version>
 		<poi-ooxml.version>${poi.version}</poi-ooxml.version>
@@ -1460,11 +1460,12 @@
 		<org.apache.httpcomponents.httpmime.version>${httpmime.version}</org.apache.httpcomponents.httpmime.version>
 
 		<!-- args4j - https://args4j.kohsuke.org/ -->
+		<!-- NB: 2.33 is the last version compiled for Java 8! -->
 		<args4j.version>2.33</args4j.version>
 		<args4j.args4j.version>${args4j.version}</args4j.args4j.version>
 
 		<!-- ASM - https://asm.ow2.io/ -->
-		<asm.version>9.6</asm.version>
+		<asm.version>9.7</asm.version>
 		<asm-analysis.version>${asm.version}</asm-analysis.version>
 		<asm-commons.version>${asm.version}</asm-commons.version>
 		<asm-tree.version>${asm.version}</asm-tree.version>
@@ -1547,7 +1548,7 @@
 		<javax.enterprise.cdi-api.version>${cdi-api.version}</javax.enterprise.cdi-api.version>
 
 		<!-- Checker Framework - https://checkerframework.org/ -->
-		<checker-qual.version>3.42.0</checker-qual.version>
+		<checker-qual.version>3.47.0</checker-qual.version>
 		<org.checkerframework.checker-qual.version>${checker-qual.version}</org.checkerframework.checker-qual.version>
 
 		<!-- Commons BeanUtils - https://commons.apache.org/proper/commons-beanutils/ -->
@@ -1555,39 +1556,39 @@
 		<commons-beanutils.commons-beanutils.version>${commons-beanutils.version}</commons-beanutils.commons-beanutils.version>
 
 		<!-- Commons CLI - https://commons.apache.org/proper/commons-cli/ -->
-		<commons-cli.version>1.6.0</commons-cli.version>
+		<commons-cli.version>1.9.0</commons-cli.version>
 		<commons-cli.commons-cli.version>${commons-cli.version}</commons-cli.commons-cli.version>
 
 		<!-- Commons Codec - https://commons.apache.org/proper/commons-codec/ -->
-		<commons-codec.version>1.16.1</commons-codec.version>
+		<commons-codec.version>1.17.1</commons-codec.version>
 		<commons-codec.commons-codec.version>${commons-codec.version}</commons-codec.commons-codec.version>
 
 		<!-- Commons Collections - https://commons.apache.org/proper/commons-collections/ -->
 		<commons-collections.version>3.2.2</commons-collections.version>
-		<commons-collections4.version>4.4</commons-collections4.version>
+		<commons-collections4.version>4.5.0-M2</commons-collections4.version>
 		<commons-collections.commons-collections.version>${commons-collections.version}</commons-collections.commons-collections.version>
 		<org.apache.commons.commons-collections4.version>${commons-collections4.version}</org.apache.commons.commons-collections4.version>
 
 		<!-- Commons Compress - https://commons.apache.org/proper/commons-compress/ -->
-		<commons-compress.version>1.26.0</commons-compress.version>
+		<commons-compress.version>1.27.1</commons-compress.version>
 		<org.apache.commons.commons-compress.version>${commons-compress.version}</org.apache.commons.commons-compress.version>
 
 		<!-- Commons CSV - https://commons.apache.org/proper/commons-csv/ -->
-		<commons-csv.version>1.10.0</commons-csv.version>
+		<commons-csv.version>1.12.0</commons-csv.version>
 		<org.apache.commons.commons-csv.version>${commons-csv.version}</org.apache.commons.commons-csv.version>
 
 		<!-- Commons IO - https://commons.apache.org/proper/commons-io/ -->
-		<commons-io.version>2.15.1</commons-io.version>
+		<commons-io.version>2.17.0</commons-io.version>
 		<commons-io.commons-io.version>${commons-io.version}</commons-io.commons-io.version>
 
 		<!-- Commons Lang - https://commons.apache.org/proper/commons-lang/ -->
 		<commons-lang.version>2.6</commons-lang.version>
-		<commons-lang3.version>3.14.0</commons-lang3.version>
+		<commons-lang3.version>3.17.0</commons-lang3.version>
 		<commons-lang.commons-lang.version>${commons-lang.version}</commons-lang.commons-lang.version>
 		<org.apache.commons.commons-lang3.version>${commons-lang3.version}</org.apache.commons.commons-lang3.version>
 
 		<!-- Commons Logging - https://commons.apache.org/proper/commons-logging/ -->
-		<commons-logging.version>1.3.0</commons-logging.version>
+		<commons-logging.version>1.3.4</commons-logging.version>
 		<commons-logging.commons-logging.version>${commons-logging.version}</commons-logging.commons-logging.version>
 
 		<!-- Commons Math - https://commons.apache.org/proper/commons-math/ -->
@@ -1599,7 +1600,7 @@
 		<org.apache.commons.commons-pool2.version>${commons-pool2.version}</org.apache.commons.commons-pool2.version>
 
 		<!-- Commons Text - https://commons.apache.org/proper/commons-text/ -->
-		<commons-text.version>1.11.0</commons-text.version>
+		<commons-text.version>1.12.0</commons-text.version>
 		<org.apache.commons.commons-text.version>${commons-text.version}</org.apache.commons.commons-text.version>
 
 		<!-- Byte Code Generation Library - https://github.com/cglib/cglib -->
@@ -1654,11 +1655,12 @@
 		<org.eclipse.swt.org.eclipse.swt.win32.win32.x86_64.version>${org.eclipse.swt.win32.win32.x86_64.version}</org.eclipse.swt.org.eclipse.swt.win32.win32.x86_64.version>
 
 		<!-- Ejml - https://github.com/lessthanoptimal/ejml -->
+		<!-- NB: 0.41 is the last version compiled for Java 8! -->
 		<ejml.version>0.41</ejml.version>
 		<org.ejml.ejml-all.version>${ejml.version}</org.ejml.ejml-all.version>
 
 		<!-- Error Prone - https://errorprone.info/ -->
-		<error_prone.version>2.25.0</error_prone.version>
+		<error_prone.version>2.32.0</error_prone.version>
 		<!--
 		NB: Several artifacts in the error_prone suite have overlapping classes.
 		So we do not manage them all here, only the one in use in SciJava code.
@@ -1667,13 +1669,13 @@
 		<com.google.errorprone.error_prone_annotations.version>${error_prone_annotations.version}</com.google.errorprone.error_prone_annotations.version>
 
 		<!-- FlatLaf - https://www.formdev.com/flatlaf/ -->
-		<flatlaf.version>3.4</flatlaf.version>
+		<flatlaf.version>3.5.1</flatlaf.version>
 		<com.formdev.flatlaf.version>${flatlaf.version}</com.formdev.flatlaf.version>
 		<flatlaf-fonts-jetbrains-mono.version>2.304</flatlaf-fonts-jetbrains-mono.version>
 		<com.formdev.flatlaf-fonts-jetbrains-mono.version>${flatlaf-fonts-jetbrains-mono.version}</com.formdev.flatlaf-fonts-jetbrains-mono.version>
 
 		<!-- Google APIs Client - https://github.com/googleapis/google-api-java-client -->
-		<google-api-client.version>2.3.0</google-api-client.version>
+		<google-api-client.version>2.7.0</google-api-client.version>
 		<google-api-client-android.version>${google-api-client.version}</google-api-client-android.version>
 		<google-api-client-appengine.version>${google-api-client.version}</google-api-client-appengine.version>
 		<google-api-client-gson.version>${google-api-client.version}</google-api-client-gson.version>
@@ -1691,12 +1693,12 @@
 		<com.google.api-client.google-api-client-xml.version>${google-api-client-xml.version}</com.google.api-client.google-api-client-xml.version>
 
 		<!-- Google GAPIC - https://github.com/googleapis/gapic-generator-java -->
-		<api-common.version>2.26.0</api-common.version>
-		<gax.version>2.43.0</gax.version>
+		<api-common.version>2.37.1</api-common.version>
+		<gax.version>2.54.1</gax.version>
 		<gax-grpc.version>${gax.version}</gax-grpc.version>
 		<gax-httpjson.version>${gax.version}</gax-httpjson.version>
-		<proto-google-common-protos.version>2.34.0</proto-google-common-protos.version>
-		<proto-google-iam-v1.version>1.29.0</proto-google-iam-v1.version>
+		<proto-google-common-protos.version>2.45.1</proto-google-common-protos.version>
+		<proto-google-iam-v1.version>1.40.1</proto-google-iam-v1.version>
 		<com.google.api.api-common.version>${api-common.version}</com.google.api.api-common.version>
 		<com.google.api.gax.version>${gax.version}</com.google.api.gax.version>
 		<com.google.api.gax-grpc.version>${gax-grpc.version}</com.google.api.gax-grpc.version>
@@ -1707,7 +1709,7 @@
 		<com.google.api.grpc.proto-google-iam-v1.version>${proto-google-iam-v1.version}</com.google.api.grpc.proto-google-iam-v1.version>
 
 		<!-- Google Auth - https://github.com/googleapis/google-auth-library-java -->
-		<google-auth-library.version>1.23.0</google-auth-library.version>
+		<google-auth-library.version>1.27.0</google-auth-library.version>
 		<google-auth-library-appengine.version>${google-auth-library.version}</google-auth-library-appengine.version>
 		<google-auth-library-credentials.version>${google-auth-library.version}</google-auth-library-credentials.version>
 		<google-auth-library-oauth2-http.version>${google-auth-library.version}</google-auth-library-oauth2-http.version>
@@ -1716,7 +1718,7 @@
 		<com.google.auth.google-auth-library-oauth2-http.version>${google-auth-library-oauth2-http.version}</com.google.auth.google-auth-library-oauth2-http.version>
 
 		<!-- Google Auto - https://github.com/google/auto -->
-		<auto-value.version>1.10.4</auto-value.version>
+		<auto-value.version>1.11.0</auto-value.version>
 		<auto-value-annotations.version>${auto-value.version}</auto-value-annotations.version>
 		<com.google.auto.value.auto-value.version>${auto-value.version}</com.google.auto.value.auto-value.version>
 		<com.google.auto.value.auto-value-annotations.version>${auto-value-annotations.version}</com.google.auto.value.auto-value-annotations.version>
@@ -1734,7 +1736,7 @@
 		<com.google.cloud.google-cloud-storage.version>${google-cloud-storage.version}</com.google.cloud.google-cloud-storage.version>
 
 		<!-- Google HTTP Client - https://github.com/googleapis/google-http-java-client -->
-		<google-http-client.version>1.44.1</google-http-client.version>
+		<google-http-client.version>1.45.0</google-http-client.version>
 		<google-http-client-apache-v2.version>${google-http-client.version}</google-http-client-apache-v2.version>
 		<google-http-client-appengine.version>${google-http-client.version}</google-http-client-appengine.version>
 		<google-http-client-gson.version>${google-http-client.version}</google-http-client-gson.version>
@@ -1748,7 +1750,7 @@
 		<com.google.http-client.google-http-client-xml.version>${google-http-client-xml.version}</com.google.http-client.google-http-client-xml.version>
 
 		<!-- gRPC - https://grpc.io/ -->
-		<grpc.version>1.62.2</grpc.version>
+		<grpc.version>1.68.0</grpc.version>
 		<grpc-alts.version>${grpc.version}</grpc-alts.version>
 		<grpc-api.version>${grpc.version}</grpc-api.version>
 		<grpc-auth.version>${grpc.version}</grpc-auth.version>
@@ -1779,7 +1781,7 @@
 		<com.google.code.gson.gson.version>${gson.version}</com.google.code.gson.gson.version>
 
 		<!-- Guava - https://github.com/google/guava -->
-		<guava.version>33.0.0-jre</guava.version>
+		<guava.version>33.3.1-jre</guava.version>
 		<failureaccess.version>1.0.2</failureaccess.version>
 		<com.google.guava.guava.version>${guava.version}</com.google.guava.guava.version>
 		<com.google.guava.failureaccess.version>${failureaccess.version}</com.google.guava.failureaccess.version>
@@ -1798,15 +1800,15 @@
 		<hsqldb.hsqldb.version>${hsqldb.version}</hsqldb.hsqldb.version>
 
 		<!-- ICU4J - https://unicode-org.github.io/icu/userguide/icu4j/ -->
-		<icu4j.version>74.2</icu4j.version>
+		<icu4j.version>75.1</icu4j.version>
 		<com.ibm.icu.icu4j.version>${icu4j.version}</com.ibm.icu.icu4j.version>
 
 		<!-- iText PDF - https://github.com/itext/itextpdf -->
-		<itextpdf.version>5.5.13.3</itextpdf.version>
+		<itextpdf.version>5.5.13.4</itextpdf.version>
 		<com.itextpdf.itextpdf.version>${itextpdf.version}</com.itextpdf.itextpdf.version>
 
 		<!-- J2ObjC - https://github.com/google/j2objc -->
-		<j2objc-annotations.version>2.8</j2objc-annotations.version>
+		<j2objc-annotations.version>3.0.0</j2objc-annotations.version>
 		<com.google.j2objc.j2objc-annotations.version>${j2objc-annotations.version}</com.google.j2objc.j2objc-annotations.version>
 
 		<!-- Jackrabbit WebDAV - https://jackrabbit.apache.org/jcr/components/jackrabbit-webdav-library.html -->
@@ -1815,7 +1817,7 @@
 		<org.apache.jackrabbit.jackrabbit-webdav.version>${jackrabbit-webdav.version}</org.apache.jackrabbit.jackrabbit-webdav.version>
 
 		<!-- Jackson - https://github.com/FasterXML/jackson -->
-		<jackson.version>2.16.1</jackson.version>
+		<jackson.version>2.18.0</jackson.version>
 		<jackson-annotations.version>${jackson.version}</jackson-annotations.version>
 		<jackson-core.version>${jackson.version}</jackson-core.version>
 		<jackson-databind.version>${jackson.version}</jackson-databind.version>
@@ -1882,7 +1884,7 @@
 		<org.scijava.jep.version>${jep.version}</org.scijava.jep.version>
 
 		<!-- Jetty - https://www.eclipse.org/jetty/ -->
-		<jetty.version>9.4.54.v20240208</jetty.version> <!-- NB: 9.x is last version with Java 8 support! -->
+		<jetty.version>9.4.56.v20240826</jetty.version> <!-- NB: 9.x is last version with Java 8 support! -->
 		<jetty-annotations.version>${jetty.version}</jetty-annotations.version>
 		<!--
 		NB: We do not manage jetty-ant. It depends on ant with old groupId (ant),
@@ -1952,7 +1954,7 @@
 		<org.eclipse.jetty.jetty-xml.version>${jetty-xml.version}</org.eclipse.jetty.jetty-xml.version>
 
 		<!-- JFreeChart - https://www.jfree.org/jfreechart/ -->
-		<jfreechart.version>1.5.4</jfreechart.version>
+		<jfreechart.version>1.5.5</jfreechart.version>
 		<org.jfree.jfreechart.version>${jfreechart.version}</org.jfree.jfreechart.version>
 
 		<!-- JFreeSVG - https://www.jfree.org/jfreesvg/ -->
@@ -1992,7 +1994,7 @@
 		<jline.version>${jline2.version}</jline.version>
 		<jline.jline.version>${jline.version}</jline.jline.version>
 
-		<jline3.version>3.25.1</jline3.version>
+		<jline3.version>3.27.0</jline3.version>
 		<jline-builtins.version>${jline3.version}</jline-builtins.version>
 		<jline-console.version>${jline3.version}</jline-console.version>
 		<!-- NB: No jline-groovy, because it depends on Groovy v4, but we currently use Groovy v3. -->
@@ -2030,7 +2032,7 @@
 		<org.jmockit.jmockit.version>${jmockit.version}</org.jmockit.jmockit.version>
 
 		<!-- JNA - https://github.com/java-native-access/jna -->
-		<jna.version>5.14.0</jna.version>
+		<jna.version>5.15.0</jna.version>
 		<jna-platform.version>${jna.version}</jna-platform.version>
 		<net.java.dev.jna.jna.version>${jna.version}</net.java.dev.jna.jna.version>
 		<net.java.dev.jna.jna-platform.version>${jna-platform.version}</net.java.dev.jna.jna-platform.version>
@@ -2048,7 +2050,7 @@
 		<com.github.jnr.jnr-posix.version>${jnr-posix.version}</com.github.jnr.jnr-posix.version>
 
 		<!-- Joda-Time - https://www.joda.org/joda-time/ -->
-		<joda-time.version>2.12.7</joda-time.version>
+		<joda-time.version>2.13.0</joda-time.version>
 		<joda-time.joda-time.version>${joda-time.version}</joda-time.joda-time.version>
 
 		<!-- JOCL - http://www.jocl.org -->
@@ -2089,7 +2091,7 @@
 		<org.jogamp.java3d.vecmath.version>${jogamp-java3d.version}</org.jogamp.java3d.vecmath.version>
 
 		<!-- JOML - https://joml-ci.github.io/JOML/ -->
-		<joml.version>1.10.5</joml.version>
+		<joml.version>1.10.8</joml.version>
 		<org.joml.joml.version>${joml.version}</org.joml.joml.version>
 
 		<!-- joni - https://github.com/jruby/joni -->
@@ -2110,7 +2112,7 @@
 		<com.jcraft.jsch.version>${jsch.version}</com.jcraft.jsch.version>
 
 		<!-- JSON - https://github.com/stleary/JSON-java -->
-		<json.version>20240205</json.version>
+		<json.version>20240303</json.version>
 		<org.json.json.version>${json.version}</org.json.json.version>
 
 		<!-- JUnit 4 - https://junit.org/junit4/ -->
@@ -2118,7 +2120,7 @@
 		<junit.junit.version>${junit.version}</junit.junit.version>
 
 		<!-- JUnit 5 - https://junit.org/junit5/ -->
-		<junit-jupiter.version>5.10.2</junit-jupiter.version>
+		<junit-jupiter.version>5.11.1</junit-jupiter.version>
 		<junit-jupiter-api.version>${junit-jupiter.version}</junit-jupiter-api.version>
 		<junit-jupiter-engine.version>${junit-jupiter.version}</junit-jupiter-engine.version>
 		<junit-jupiter-migrationsupport.version>${junit-jupiter.version}</junit-jupiter-migrationsupport.version>
@@ -2132,7 +2134,7 @@
 		<org.junit.vintage.junit-vintage-engine.version>${junit-vintage-engine.version}</org.junit.vintage.junit-vintage-engine.version>
 
 		<!-- Jython - https://jython.org/ -->
-		<jython.version>2.7.3</jython.version>
+		<jython.version>2.7.4</jython.version>
 		<jython-slim.version>${jython.version}</jython-slim.version>
 		<org.python.jython-slim.version>${jython-slim.version}</org.python.jython-slim.version>
 
@@ -2213,7 +2215,7 @@
 		<ch.qos.logback.logback-core.version>${logback-core.version}</ch.qos.logback.logback-core.version>
 
 		<!-- LZ4 compression for Java - https://github.com/lz4/lz4-java -->
-		<lz4-java.version>1.8.0</lz4-java.version>
+		<lz4-java.version>1.9-inv</lz4-java.version>
 		<org.lz4.lz4-java.version>${lz4-java.version}</org.lz4.lz4-java.version>
 
 		<!-- MapDB - https://mapdb.org/ -->
@@ -2239,10 +2241,11 @@
 		<org.mockito.mockito-core.version>${mockito-core.version}</org.mockito.mockito-core.version>
 
 		<!-- Objenesis - http://objenesis.org/ -->
-		<objenesis.version>3.3</objenesis.version>
+		<objenesis.version>3.4</objenesis.version>
 		<org.objenesis.objenesis.version>${objenesis.version}</org.objenesis.objenesis.version>
 
 		<!-- oj! Algorithms - https://github.com/optimatika/ojAlgo -->
+		<!-- NB: 51.4.1 is the last version compiled for Java 8! -->
 		<ojalgo.version>45.1.1</ojalgo.version>
 		<org.ojalgo.ojalgo.version>${ojalgo.version}</org.ojalgo.ojalgo.version>
 
@@ -2251,7 +2254,7 @@
 		<com.squareup.okhttp3.okhttp.version>${okhttp.version}</com.squareup.okhttp3.okhttp.version>
 
 		<!-- Okio - https://square.github.io/okio/ -->
-		<okio.version>3.8.0</okio.version>
+		<okio.version>3.9.1</okio.version>
 		<okio-jvm.version>${okio.version}</okio-jvm.version>
 		<com.squareup.okio.okio.version>${okio.version}</com.squareup.okio.okio.version>
 		<com.squareup.okio.okio-jvm.version>${okio-jvm.version}</com.squareup.okio.okio-jvm.version>
@@ -2266,15 +2269,15 @@
 		<io.perfmark.perfmark-api.version>${perfmark-api.version}</io.perfmark.perfmark-api.version>
 
 		<!-- picocli - https://picocli.info/ -->
-		<picocli.version>4.7.5</picocli.version>
+		<picocli.version>4.7.6</picocli.version>
 		<info.picocli.picocli.version>${picocli.version}</info.picocli.picocli.version>
 
 		<!-- PostgreSQL JDBC Driver - https://jdbc.postgresql.org/ -->
-		<postgresql.version>42.7.2</postgresql.version>
+		<postgresql.version>42.7.4</postgresql.version>
 		<org.postgresql.postgresql.version>${postgresql.version}</org.postgresql.postgresql.version>
 
 		<!-- Protocol Buffers - https://protobuf.dev/ -->
-		<protobuf.version>3.23.0</protobuf.version>
+		<protobuf.version>4.28.2</protobuf.version>
 		<!--
 		NB: javalite and kotlin-lite have conflicting classes with java
 		and kotlin respectively, so we do not manage those artifacts.
@@ -2295,7 +2298,7 @@
 		<ch.qos.reload4j.reload4j.version>${reload4j.version}</ch.qos.reload4j.reload4j.version>
 
 		<!-- RSyntaxTextArea - https://bobbylight.github.io/RSyntaxTextArea/ -->
-		<rsyntaxtextarea.version>3.4.0</rsyntaxtextarea.version>
+		<rsyntaxtextarea.version>3.5.1</rsyntaxtextarea.version>
 		<autocomplete.version>3.3.1</autocomplete.version>
 		<languagesupport.version>3.3.0</languagesupport.version>
 		<com.fifesoft.rsyntaxtextarea.version>${rsyntaxtextarea.version}</com.fifesoft.rsyntaxtextarea.version>
@@ -2320,11 +2323,11 @@
 		<org.slf4j.jcl-over-slf4j.version>${jcl-over-slf4j.version}</org.slf4j.jcl-over-slf4j.version>
 
 		<!-- SnakeYAML - https://bitbucket.org/asomov/snakeyaml -->
-		<snakeyaml.version>2.2</snakeyaml.version>
+		<snakeyaml.version>2.3</snakeyaml.version>
 		<org.yaml.snakeyaml.version>${snakeyaml.version}</org.yaml.snakeyaml.version>
 
 		<!-- SnakeYAML Engine - https://bitbucket.org/asomov/snakeyaml-engine -->
-		<snakeyaml-engine.version>2.7</snakeyaml-engine.version>
+		<snakeyaml-engine.version>2.8</snakeyaml-engine.version>
 		<org.snakeyaml.snakeyaml-engine.version>${snakeyaml-engine.version}</org.snakeyaml.snakeyaml-engine.version>
 
 		<!-- Spring - https://spring.io/ -->
@@ -2355,7 +2358,7 @@
 		<org.tensorflow.proto.version>${proto.version}</org.tensorflow.proto.version>
 
 		<!-- ThreeTen - https://www.threeten.org/ -->
-		<threetenbp.version>1.6.8</threetenbp.version>
+		<threetenbp.version>1.7.0</threetenbp.version>
 		<org.threeten.threetenbp.version>${threetenbp.version}</org.threeten.threetenbp.version>
 
 		<!-- Trove - https://bitbucket.org/trove4j/trove -->
@@ -2368,11 +2371,11 @@
 		<nz.ac.waikato.cms.weka.weka-dev.version>${weka-dev.version}</nz.ac.waikato.cms.weka.weka-dev.version>
 
 		<!-- XZ for Java - https://tukaani.org/xz/java.html -->
-		<xz.version>1.9</xz.version>
+		<xz.version>1.10</xz.version>
 		<org.tukaani.xz.version>${xz.version}</org.tukaani.xz.version>
 
 		<!-- Zstd-jni - https://github.com/luben/zstd-jni -->
-		<zstd-jni.version>1.5.5-11</zstd-jni.version>
+		<zstd-jni.version>1.5.6-6</zstd-jni.version>
 		<com.github.luben.zstd-jni.version>${zstd-jni.version}</com.github.luben.zstd-jni.version>
 	</properties>
 
