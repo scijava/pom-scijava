@@ -1758,6 +1758,7 @@
 		<grpc-core.version>${grpc.version}</grpc-core.version>
 		<grpc-googleapis.version>${grpc.version}</grpc-googleapis.version>
 		<grpc-grpclb.version>${grpc.version}</grpc-grpclb.version>
+		<grpc-inprocess.version>${grpc.version}</grpc-inprocess.version>
 		<grpc-netty-shaded.version>${grpc.version}</grpc-netty-shaded.version>
 		<grpc-protobuf.version>${grpc.version}</grpc-protobuf.version>
 		<grpc-services.version>${grpc.version}</grpc-services.version>
@@ -1770,6 +1771,7 @@
 		<io.grpc.grpc-core.version>${grpc-core.version}</io.grpc.grpc-core.version>
 		<io.grpc.grpc-googleapis.version>${grpc-googleapis.version}</io.grpc.grpc-googleapis.version>
 		<io.grpc.grpc-grpclb.version>${grpc-grpclb.version}</io.grpc.grpc-grpclb.version>
+		<io.grpc.grpc-inprocess.version>${grpc-inprocess.version}</io.grpc.grpc-inprocess.version>
 		<io.grpc.grpc-netty-shaded.version>${grpc-netty-shaded.version}</io.grpc.grpc-netty-shaded.version>
 		<io.grpc.grpc-protobuf.version>${grpc-protobuf.version}</io.grpc.grpc-protobuf.version>
 		<io.grpc.grpc-services.version>${grpc-services.version}</io.grpc.grpc-services.version>
@@ -5243,6 +5245,11 @@
 				<groupId>io.grpc</groupId>
 				<artifactId>grpc-grpclb</artifactId>
 				<version>${io.grpc.grpc-grpclb.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.grpc</groupId>
+				<artifactId>grpc-inprocess</artifactId>
+				<version>${io.grpc.grpc-inprocess.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>io.grpc</groupId>
