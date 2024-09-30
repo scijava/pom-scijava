@@ -2032,7 +2032,11 @@
 		<org.jmockit.jmockit.version>${jmockit.version}</org.jmockit.jmockit.version>
 
 		<!-- JNA - https://github.com/java-native-access/jna -->
-		<jna.version>5.15.0</jna.version>
+		<!--
+		NB: 5.15.0 triggers false positive AV detection in some scenarios; see
+		https://imagesc.zulipchat.com/#narrow/stream/327238-Fiji/topic/Supsected.20malware.20was.20blocked.20for.20pom.2Exml.2039.2E0.2E0-SNAPSHOT/near/473632599
+		-->
+		<jna.version>5.14.0</jna.version>
 		<jna-platform.version>${jna.version}</jna-platform.version>
 		<net.java.dev.jna.jna.version>${jna.version}</net.java.dev.jna.jna.version>
 		<net.java.dev.jna.jna-platform.version>${jna-platform.version}</net.java.dev.jna.jna-platform.version>
