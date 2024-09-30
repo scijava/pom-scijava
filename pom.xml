@@ -1749,6 +1749,10 @@
 		<com.google.http-client.google-http-client-jackson2.version>${google-http-client-jackson2.version}</com.google.http-client.google-http-client-jackson2.version>
 		<com.google.http-client.google-http-client-xml.version>${google-http-client-xml.version}</com.google.http-client.google-http-client-xml.version>
 
+		<!-- Google OAuth Client Library for Java - https://github.com/googleapis/google-oauth-java-client -->
+		<google-oauth-client.version>1.36.0</google-oauth-client.version>
+		<com.google.oauth-client.google-oauth-client.version>${google-oauth-client.version}</com.google.oauth-client.google-oauth-client.version>
+
 		<!-- gRPC - https://grpc.io/ -->
 		<grpc.version>1.68.0</grpc.version>
 		<grpc-alts.version>${grpc.version}</grpc-alts.version>
@@ -5208,6 +5212,13 @@
 				<groupId>com.google.http-client</groupId>
 				<artifactId>google-http-client-xml</artifactId>
 				<version>${com.google.http-client.google-http-client-xml.version}</version>
+			</dependency>
+
+			<!-- Google OAuth Client Library for Java - https://github.com/googleapis/google-oauth-java-client -->
+			<dependency>
+				<groupId>com.google.oauth-client</groupId>
+				<artifactId>google-oauth-client</artifactId>
+				<version>${com.google.oauth-client.google-oauth-client.version}</version>
 			</dependency>
 
 			<!-- gRPC - https://grpc.io/ -->
