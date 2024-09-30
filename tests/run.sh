@@ -26,7 +26,8 @@ test -f "$pom" || die 'Where is pom.xml?!'
 generateMegaMeltScript="$dir/generate-mega-melt.py"
 filterBuildLogScript="$dir/filter-build-log.py"
 
-megaMeltDir=$(cd "$dir/../target/mega-melt" && pwd)
+megaMeltDir="$dir/../target/mega-melt"
+megaMeltDir=$(mkdir -p "$megaMeltDir" && cd "$megaMeltDir" && pwd)
 pomParent="$megaMeltDir/../pom.xml"
 versionSwapLog="$megaMeltDir/version-swap.log"
 dependencyTreeLog="$megaMeltDir/dependency-tree.log"
