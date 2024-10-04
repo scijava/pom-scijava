@@ -991,7 +991,7 @@
 		<jitk.jitk-tps.version>${jitk-tps.version}</jitk.jitk-tps.version>
 
 		<!-- BigWarp - https://github.com/saalfeldlab/bigwarp -->
-		<bigwarp.version>9.1.4</bigwarp.version>
+		<bigwarp.version>9.2.0</bigwarp.version>
 		<bigwarp_fiji.version>${bigwarp.version}</bigwarp_fiji.version>
 		<sc.fiji.bigwarp_fiji.version>${bigwarp_fiji.version}</sc.fiji.bigwarp_fiji.version>
 
@@ -1178,8 +1178,8 @@
 		<net.haesleinhuepf.clijx-weka_.version>${clijx-weka_.version}</net.haesleinhuepf.clijx-weka_.version>
 
 		<!-- BigStitcher - https://imagej.net/plugins/bigstitcher -->
-		<BigStitcher.version>2.0.0</BigStitcher.version>
-		<multiview-reconstruction.version>4.0.0</multiview-reconstruction.version>
+		<BigStitcher.version>2.0.1</BigStitcher.version>
+		<multiview-reconstruction.version>4.1.1</multiview-reconstruction.version>
 		<multiview-simulation.version>0.2.0</multiview-simulation.version>
 		<net.preibisch.BigStitcher.version>${BigStitcher.version}</net.preibisch.BigStitcher.version>
 		<net.preibisch.multiview-reconstruction.version>${multiview-reconstruction.version}</net.preibisch.multiview-reconstruction.version>
@@ -1310,7 +1310,7 @@
 		<org.abego.treelayout.org.abego.treelayout.core.version>${org.abego.treelayout.core.version}</org.abego.treelayout.org.abego.treelayout.core.version>
 
 		<!-- Algart TIFF - https://algart.net/java/AlgART-TIFF/ -->
-		<algart-tiff.version>1.3.6</algart-tiff.version>
+		<algart-tiff.version>1.3.7</algart-tiff.version>
 		<net.algart.algart-tiff.version>${algart-tiff.version}</net.algart.algart-tiff.version>
 
 		<!-- Amazon S3 - https://aws.amazon.com/sdkforjava -->
@@ -1548,7 +1548,7 @@
 		<javax.enterprise.cdi-api.version>${cdi-api.version}</javax.enterprise.cdi-api.version>
 
 		<!-- Checker Framework - https://checkerframework.org/ -->
-		<checker-qual.version>3.47.0</checker-qual.version>
+		<checker-qual.version>3.48.0</checker-qual.version>
 		<org.checkerframework.checker-qual.version>${checker-qual.version}</org.checkerframework.checker-qual.version>
 
 		<!-- Commons BeanUtils - https://commons.apache.org/proper/commons-beanutils/ -->
@@ -2130,7 +2130,7 @@
 		<junit.junit.version>${junit.version}</junit.junit.version>
 
 		<!-- JUnit 5 - https://junit.org/junit5/ -->
-		<junit-jupiter.version>5.11.1</junit-jupiter.version>
+		<junit-jupiter.version>5.11.2</junit-jupiter.version>
 		<junit-jupiter-api.version>${junit-jupiter.version}</junit-jupiter-api.version>
 		<junit-jupiter-engine.version>${junit-jupiter.version}</junit-jupiter-engine.version>
 		<junit-jupiter-migrationsupport.version>${junit-jupiter.version}</junit-jupiter-migrationsupport.version>
