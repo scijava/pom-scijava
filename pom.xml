@@ -991,7 +991,7 @@
 		<jitk.jitk-tps.version>${jitk-tps.version}</jitk.jitk-tps.version>
 
 		<!-- BigWarp - https://github.com/saalfeldlab/bigwarp -->
-		<bigwarp.version>9.2.0</bigwarp.version>
+		<bigwarp.version>9.2.1</bigwarp.version>
 		<bigwarp_fiji.version>${bigwarp.version}</bigwarp_fiji.version>
 		<sc.fiji.bigwarp_fiji.version>${bigwarp_fiji.version}</sc.fiji.bigwarp_fiji.version>
 
@@ -1129,7 +1129,7 @@
 		<org.janelia.saalfeldlab.n5-hdf5.version>${n5-hdf5.version}</org.janelia.saalfeldlab.n5-hdf5.version>
 
 		<!-- N5 ImageJ Bindings - https://github.com/saalfeldlab/n5-ij -->
-		<n5-ij.version>4.2.3</n5-ij.version>
+		<n5-ij.version>4.2.5</n5-ij.version>
 		<org.janelia.saalfeldlab.n5-ij.version>${n5-ij.version}</org.janelia.saalfeldlab.n5-ij.version>
 
 		<!-- N5 ImgLib2 Bindings - https://github.com/saalfeldlab/n5-imglib2 -->
@@ -1141,7 +1141,7 @@
 		<org.janelia.saalfeldlab.n5-universe.version>${n5-universe.version}</org.janelia.saalfeldlab.n5-universe.version>
 
 		<!-- N5 Viewer for Fiji - https://github.com/saalfeldlab/n5-viewer_fiji -->
-		<n5-viewer_fiji.version>6.1.1</n5-viewer_fiji.version>
+		<n5-viewer_fiji.version>6.1.2</n5-viewer_fiji.version>
 		<org.janelia.saalfeldlab.n5-viewer_fiji.version>${n5-viewer_fiji.version}</org.janelia.saalfeldlab.n5-viewer_fiji.version>
 
 		<!-- N5 Zarr - https://github.com/saalfeldlab/n5-zarr -->

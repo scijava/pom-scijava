@@ -347,8 +347,9 @@ sectionStart 'Adjusting the melting pot: unit test hacks'
 # somehow fixed in imagej-ops. But for now, let's not let it ruin the melt.
 rm -f "$meltingPotDir/net.imagej/imagej-ops/src/test/java/net/imagej/ops/cached/CachedOpEnvironmentTest.java"
 
-# TEMP: Until saalfeldlab/n5-aws-s3#13 is released.
-echo "org.janelia.saalfeldlab/n5-aws-s3" >> "$skipTestsFile" &&
+# In org.janelia.saalfeldlab.n5.metadata.ome.ngff.v04.WriteAxesTests.testXYT:
+# java.util.NoSuchElementException: No value present
+echo "org.janelia.saalfeldlab/n5-ij" >> "$skipTestsFile" &&
 
 # Error while checking the CLIJ2 installation: null
 echo "sc.fiji/labkit-pixel-classification" >> "$skipTestsFile" ||
