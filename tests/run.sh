@@ -6,6 +6,8 @@
 
 die () { echo "$*" >&2; exit 1; }
 
+changed () { ! diff $@ >/dev/null; }
+
 sectionStart() {
   startTime=$(date +%s)
   echo
@@ -117,6 +119,7 @@ test "$(grep -F "[ERROR]" "$meltingPotLog" | grep -v "using default branch")" &&
   die 'Melting pot generation failed!'
 
 buildScript="$meltingPotDir/build.sh"
+versionPins="$meltingPotDir/version-pins.xml"
 
 echo
 echo 'Hacking in any changed components...'
@@ -196,7 +199,7 @@ do
   if [ -f gav ]
   then
     mv gav gav.prehacks
-    sed -E "s;:[^:]*$;:999;" gav.prehacks > gav || {
+    sed -E "s;:[^:]*$;:999;" gav.prehacks > gav && changed gav.prehacks gav || {
       touch "$failFile"
       die "$g:$a: failed to adjust gav version"
     }
@@ -210,17 +213,20 @@ do
   }
   printf .
 
-  # Adjust component version to 999 in melting pot's build.sh.
+  # Adjust component version to 999 in melting pot's version-pins.xml.
   cd "$meltingPotDir"
-  test -f "$buildScript.prehacks" || cp "$buildScript" "$buildScript.prehacks" || {
+  test -f "$versionPins.prehacks" || cp "$versionPins" "$versionPins.prehacks" || {
     touch "$failFile"
-    die "$g:$a: failed to back up $buildScript"
+    die "$g:$a: failed to back up $versionPins"
   }
   printf .
-  mv -f "$buildScript" "$buildScript.tmp" &&
-  sed -E "s;(-D($g\\.)?$a\\.version)=[^ ]*;\1=999;g" "$buildScript.tmp" > "$buildScript" || {
+  echo "$a" | grep -q '^[0-9]' && aa="_$a" || aa="$a"
+  mv -f "$versionPins" "$versionPins.tmp" &&
+    sed -E "s;<\($g\\.$a\|$aa\)\\.version>[^<]*;<\1.version>999;g" "$versionPins.tmp" > "$versionPins" &&
+    changed "$versionPins.tmp" "$versionPins" ||
+  {
     touch "$failFile"
-    die "$g:$a: failed to adjust component version in $buildScript"
+    die "$g:$a: failed to adjust component version in $versionPins"
   }
   printf .
 
@@ -235,36 +241,48 @@ do
   }
   printf ".\n"
 done
-rm -f "$buildScript.tmp" "$meltScript.tmp"
+rm -f "$versionPins.tmp" "$meltScript.tmp"
 test ! -f "$failFile" ||
   die "Failed to hack in changed components!"
 
-sectionStart 'Adjusting the melting pot: build.sh script'
+sectionStart 'Adjusting the melting pot: version-pins.xml configuration'
 
-cp "$buildScript" "$buildScript.original" &&
+cp "$versionPins" "$versionPins.original" &&
 
 # HACK: Remove known-duplicate short version properties, keeping
 # the short version declaration only for the more common groupId.
 # E.g.: org.antlr:antlr is preferred over antlr:antlr, so we set
 # antlr.version to match org.antlr:antlr, not antlr:antlr.
-mv -f "$buildScript" "$buildScript.tmp" &&
-sed -E 's;(-D('"$shortVersionClashes"').version=[^ ]*) -D[^ ]*;\1;' "$buildScript.tmp" > "$buildScript" &&
-
-# HACK: Add leading underscore to version properties that start with a digit.
-mv -f "$buildScript" "$buildScript.tmp" &&
-sed -E 's; -D([0-9][^ ]*);& -D_\1;' "$buildScript.tmp" > "$buildScript" &&
+mv -f "$versionPins" "$versionPins.tmp" &&
+sed -E 's;(<('"$shortVersionClashes"')\.version>[^ ]*) <[^ ]*;\1;' "$versionPins.tmp" > "$versionPins" &&
+  changed "$versionPins.tmp" "$versionPins" ||
+  die 'Error adjusting melting pot version pins! [1]'
 
 # HACK: Add non-standard version properties used prior to
 # pom-scijava 32.0.0-beta-1; see d0bf752070d96a2613c42e4e1ab86ebdd07c29ee.
-mv -f "$buildScript" "$buildScript.tmp" &&
-sed -E 's; -Dsc.fiji.3D_Blob_Segmentation\.version=([^ ]*);& -DFiji_3D_Blob_Segmentation.version=\1;' "$buildScript.tmp" > "$buildScript" &&
-mv -f "$buildScript" "$buildScript.tmp" &&
-sed -E 's; -Dsc.fiji.(3D_Objects_Counter|3D_Viewer)\.version=([^ ]*);& -DImageJ_\1.version=\2;' "$buildScript.tmp" > "$buildScript" &&
+mv -f "$versionPins" "$versionPins.tmp" &&
+sed -E 's; <sc.fiji.3D_Blob_Segmentation\.version>([^<]*)</sc.fiji.3D_Blob_Segmentation.version>;& <Fiji_3D_Blob_Segmentation.version>\1</Fiji_3D_Blob_Segmentation.version>;' "$versionPins.tmp" > "$versionPins" &&
+  changed "$versionPins.tmp" "$versionPins" &&
+mv -f "$versionPins" "$versionPins.tmp" &&
+sed -E 's; <sc.fiji.(3D_Objects_Counter|3D_Viewer)\.version>([^<]*)</sc.fiji.(3D_Objects_Counter|3D_Viewer).version>;& <ImageJ_\1.version>\2</ImageJ_\1.version>;' "$versionPins.tmp" > "$versionPins" &&
+  changed "$versionPins.tmp" "$versionPins" ||
+  die 'Error adjusting melting pot version pins! [2]'
 
 # HACK: Add non-standard net.imagej:ij version property used prior to
 # pom-scijava 28.0.0; see 7d2cc442b107b3ac2dcb799d282f2c0b5822649d.
-mv -f "$buildScript" "$buildScript.tmp" &&
-sed -E 's; -Dij\.version=([^ ]*);& -Dimagej1.version=\1;' "$buildScript.tmp" > "$buildScript" &&
+mv -f "$versionPins" "$versionPins.tmp" &&
+sed -E 's; <ij\.version>([^<]*)</ij\.version>;& <imagej1.version>\1</imagej1.version>;' "$versionPins.tmp" > "$versionPins" &&
+  changed "$versionPins.tmp" "$versionPins" ||
+  die 'Error adjusting melting pot version pins! [3]'
+
+rm "$versionPins.tmp" ||
+  die 'Error adjusting melting pot version pins! [4]'
+
+sectionEnd # Adjusting the melting pot: version-pins.xml configuration
+
+sectionStart 'Adjusting the melting pot: build.sh script'
+
+cp "$buildScript" "$buildScript.original" &&
 
 # HACK: Add explicit kotlin.version to match our pom-scijava-base.
 # Otherwise, components built on older pom-scijava-base will have
@@ -294,7 +312,8 @@ enforcerVersion=$(
   -Dexec.args='${maven-enforcer-plugin.version}' --non-recursive validate exec:exec 2>&1 |
   head -n1 | sed 's;\(.\[[0-9]m\)*;;') &&
 mv -f "$buildScript" "$buildScript.tmp" &&
-sed -E "s;mvn -Denforcer.skip;& -Dmaven-enforcer-plugin.version=$enforcerVersion -Dkotlin.version=$kotlinVersion;" "$buildScript.tmp" > "$buildScript" &&
+sed -E "s;mvn .*-Denforcer.skip;& -Dmaven-enforcer-plugin.version=$enforcerVersion -Dkotlin.version=$kotlinVersion;" "$buildScript.tmp" > "$buildScript" &&
+  changed "$buildScript.tmp" "$buildScript" &&
 
 chmod +x "$buildScript" &&
 rm "$buildScript.tmp" ||
