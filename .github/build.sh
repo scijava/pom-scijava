@@ -10,6 +10,10 @@ fi
 curl -fsLO https://raw.githubusercontent.com/scijava/scijava-scripts/master/ci-build.sh &&
 sh ci-build.sh || { echo "Maven build failed. Skipping melting pot tests."; exit 1; }
 
+# TEMP: Disable melting pot until net.imagej:imagej and sc.fiji:fiji are released.
+echo "Skipping melting pot tests due to preemptive version bumps."
+exit 0
+
 # Skip melting pot if cutting a release.
 if [ "$releasing" ]; then
   exit 0
