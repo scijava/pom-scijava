@@ -11,7 +11,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>39.0.1-SNAPSHOT</version>
+	<version>39.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -1026,6 +1026,10 @@
 		<!-- BigDataViewer Fiji - https://github.com/bigdataviewer/bigdataviewer_fiji -->
 		<bigdataviewer_fiji.version>6.4.1</bigdataviewer_fiji.version>
 		<sc.fiji.bigdataviewer_fiji.version>${bigdataviewer_fiji.version}</sc.fiji.bigdataviewer_fiji.version>
+
+		<!-- BigVolumeViewer - https://github.com/bigdataviewer/bigvolumeviewer-core -->
+		<bigvolumeviewer.version>0.3.4</bigvolumeviewer.version>
+		<sc.fiji.bigvolumeviewer.version>${bigvolumeviewer.version}</sc.fiji.bigvolumeviewer.version>
 
 		<!-- SPIM Data - https://github.com/bigdataviewer/spimdata -->
 		<spim_data.version>2.3.4</spim_data.version>
@@ -3557,6 +3561,11 @@
 				<groupId>sc.fiji</groupId>
 				<artifactId>bigdataviewer_fiji</artifactId>
 				<version>${sc.fiji.bigdataviewer_fiji.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>bigvolumeviewer</artifactId>
+				<version>${sc.fiji.bigvolumeviewer.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
