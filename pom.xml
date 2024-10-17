@@ -1027,6 +1027,10 @@
 		<bigdataviewer_fiji.version>6.4.1</bigdataviewer_fiji.version>
 		<sc.fiji.bigdataviewer_fiji.version>${bigdataviewer_fiji.version}</sc.fiji.bigdataviewer_fiji.version>
 
+		<!-- BigDataViewer N5 - https://github.com/bigdataviewer/bigdataviewer_n5 -->
+		<bigdataviewer-n5.version>1.0.1</bigdataviewer-n5.version>
+		<org.bigdataviewer.bigdataviewer-n5.version>${bigdataviewer-n5.version}</org.bigdataviewer.bigdataviewer-n5.version>
+
 		<!-- BigVolumeViewer - https://github.com/bigdataviewer/bigvolumeviewer-core -->
 		<bigvolumeviewer.version>0.3.4</bigvolumeviewer.version>
 		<sc.fiji.bigvolumeviewer.version>${bigvolumeviewer.version}</sc.fiji.bigvolumeviewer.version>
@@ -3561,6 +3565,11 @@
 				<groupId>sc.fiji</groupId>
 				<artifactId>bigdataviewer_fiji</artifactId>
 				<version>${sc.fiji.bigdataviewer_fiji.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.bigdataviewer</groupId>
+				<artifactId>bigdataviewer-n5</artifactId>
+				<version>${org.bigdataviewer.bigdataviewer-n5.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
