@@ -1036,7 +1036,7 @@
 		<sc.fiji.bigvolumeviewer.version>${bigvolumeviewer.version}</sc.fiji.bigvolumeviewer.version>
 
 		<!-- SPIM Data - https://github.com/bigdataviewer/spimdata -->
-		<spim_data.version>2.3.4</spim_data.version>
+		<spim_data.version>2.3.5</spim_data.version>
 		<sc.fiji.spim_data.version>${spim_data.version}</sc.fiji.spim_data.version>
 
 		<!-- TrackMate - https://github.com/trackmate-sc -->
