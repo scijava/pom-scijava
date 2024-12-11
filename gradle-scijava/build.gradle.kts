@@ -14,7 +14,11 @@ plugins {
 layout.buildDirectory = layout.projectDirectory.asFile.parentFile.resolve("target/gradle")
 
 group = "org.scijava"
-version = File("../pom.xml").readText().substringAfter("<version>").substringBefore('<')
+version = File("../pom.xml")
+    .readText()
+    .substringAfter("<artifactId>pom-scijava<")
+    .substringAfter("<version>")
+    .substringBefore('<')
 
 javaPlatform {
     allowDependencies()
