@@ -2662,6 +2662,25 @@
 				<groupId>org.scijava</groupId>
 				<artifactId>scripting-renjin</artifactId>
 				<version>${org.scijava.scripting-renjin.version}</version>
+				<exclusions>
+					<exclusion>
+						<!--
+						Conflicts with commons-math:commons-math:1.x, which
+						ome:formats-gpl:8.0.1 depends on via edu.ucar:cdm-core:5.6.0.
+						It's not ideal that we are excluding the newer 2.x version of
+						commons-math here rather than the older 1.x version, but:
+
+						A) both of them are superseded by commons-math3 regardless; and
+
+						B) pragmatically, ome:formats-gpl is a much more common dependency
+						for pom-scijava-based projects than scripting-renjin is, and
+						we want to minimize the problems (ClassNotFoundExceptions)
+						people might hit when depending on formats-gpl out of the box.
+						-->
+						<groupId>org.apache.commons</groupId>
+						<artifactId>commons-math</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<!-- Scripting: Scala - https://github.com/scijava/scripting-scala -->
