@@ -306,7 +306,7 @@
 		<!-- SciJava - https://github.com/scijava -->
 
 		<!-- App Launcher - https://github.com/scijava/app-launcher -->
-		<app-launcher.version>2.0.0</app-launcher.version>
+		<app-launcher.version>2.1.0</app-launcher.version>
 		<org.scijava.app-launcher.version>${app-launcher.version}</org.scijava.app-launcher.version>
 
 		<!-- Batch Processor - https://github.com/scijava/batch-processor -->
