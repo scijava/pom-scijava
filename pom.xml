@@ -1198,7 +1198,7 @@
 		<net.preibisch.multiview-simulation.version>${multiview-simulation.version}</net.preibisch.multiview-simulation.version>
 
 		<!-- BoneJ - https://imagej.net/plugins/bonej -->
-		<bonej.version>7.0.19</bonej.version>
+		<bonej.version>7.0.20</bonej.version>
 		<bonej-plugins.version>${bonej.version}</bonej-plugins.version>
 		<bonej-ops.version>${bonej.version}</bonej-ops.version>
 		<bonej-legacy-plugins_.version>${bonej.version}</bonej-legacy-plugins_.version>
