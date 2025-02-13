@@ -3757,6 +3757,11 @@
 				<artifactId>n5-zarr</artifactId>
 				<version>${org.janelia.saalfeldlab.n5-zarr.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.janelia.saalfeldlab</groupId>
+				<artifactId>n5-zstandard</artifactId>
+				<version>${org.janelia.saalfeldlab.n5-zstandard.version}</version>
+			</dependency>
 
 			<!-- Fiji-adjacent projects (available from ImageJ update sites) -->
 
