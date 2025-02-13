@@ -1162,7 +1162,7 @@
 
 		<!-- N5 ZStandard - https://github.com/JaneliaSciComp/n5-zstandard -->
 		<n5-zstandard.version>1.0.2</n5-zstandard.version>
-		<org.janelia.n5-zstandard.version>${n5-zstandard.version}</org.janelia.n5-zstandard.version>
+		<org.janelia.saalfeldlab.n5-zstandard.version>${n5-zstandard.version}</org.janelia.saalfeldlab.n5-zstandard.version>
 
 		<!-- Fiji-adjacent projects (available from ImageJ update sites) -->
 
