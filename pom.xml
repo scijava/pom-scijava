@@ -1311,8 +1311,8 @@
 		<coremem.version>0.4.8</coremem.version>
 		<net.clearcontrol.coremem.version>${coremem.version}</net.clearcontrol.coremem.version>
 
-		<!-- ClearGL - https://github.com/ClearVolume/ClearGL -->
-		<cleargl.version>2.2.10</cleargl.version>
+		<!-- ClearGL - https://github.com/ClearVolume/cleargl -->
+		<cleargl.version>2.2.11</cleargl.version>
 		<net.clearvolume.cleargl.version>${cleargl.version}</net.clearvolume.cleargl.version>
 
 		<!-- Third party components -->
@@ -4240,23 +4240,11 @@
 				</exclusions>
 			</dependency>
 
-			<!-- ClearGL - https://github.com/ClearVolume/ClearGL -->
+			<!-- ClearGL - https://github.com/ClearVolume/cleargl -->
 			<dependency>
 				<groupId>net.clearvolume</groupId>
 				<artifactId>cleargl</artifactId>
 				<version>${net.clearvolume.cleargl.version}</version>
-				<exclusions>
-					<exclusion>
-						<!-- Brings in all gluegen-rt native classifiers. -->
-						<groupId>org.jogamp.gluegen</groupId>
-						<artifactId>gluegen-rt-main</artifactId>
-					</exclusion>
-					<exclusion>
-						<!-- Brings in all jogl-all native classifiers. -->
-						<groupId>org.jogamp.jogl</groupId>
-						<artifactId>jogl-all-main</artifactId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 
 			<!-- Third party components -->
