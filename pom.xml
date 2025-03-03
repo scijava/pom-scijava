@@ -1840,11 +1840,13 @@
 		<jackson-core.version>${jackson.version}</jackson-core.version>
 		<jackson-databind.version>${jackson.version}</jackson-databind.version>
 		<jackson-dataformat-cbor.version>${jackson.version}</jackson-dataformat-cbor.version>
+		<jackson-dataformat-smile.version>${jackson.version}</jackson-dataformat-smile.version>
 		<jackson-dataformat-yaml.version>${jackson.version}</jackson-dataformat-yaml.version>
 		<com.fasterxml.jackson.core.jackson-annotations.version>${jackson-annotations.version}</com.fasterxml.jackson.core.jackson-annotations.version>
 		<com.fasterxml.jackson.core.jackson-core.version>${jackson-core.version}</com.fasterxml.jackson.core.jackson-core.version>
 		<com.fasterxml.jackson.core.jackson-databind.version>${jackson-databind.version}</com.fasterxml.jackson.core.jackson-databind.version>
 		<com.fasterxml.jackson.dataformat.jackson-dataformat-cbor.version>${jackson-dataformat-cbor.version}</com.fasterxml.jackson.dataformat.jackson-dataformat-cbor.version>
+		<com.fasterxml.jackson.dataformat.jackson-dataformat-smile.version>${jackson-dataformat-smile.version}</com.fasterxml.jackson.dataformat.jackson-dataformat-smile.version>
 		<com.fasterxml.jackson.dataformat.jackson-dataformat-yaml.version>${jackson-dataformat-yaml.version}</com.fasterxml.jackson.dataformat.jackson-dataformat-yaml.version>
 
 		<!-- Java Advanced Imaging - https://java.net/projects/jai-core -->
@@ -5429,6 +5431,11 @@
 				<groupId>com.fasterxml.jackson.dataformat</groupId>
 				<artifactId>jackson-dataformat-cbor</artifactId>
 				<version>${com.fasterxml.jackson.dataformat.jackson-dataformat-cbor.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.dataformat</groupId>
+				<artifactId>jackson-dataformat-smile</artifactId>
+				<version>${com.fasterxml.jackson.dataformat.jackson-dataformat-smile.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.fasterxml.jackson.dataformat</groupId>
