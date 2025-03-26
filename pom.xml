@@ -418,7 +418,7 @@
 		<org.scijava.scripting-beanshell.version>${scripting-beanshell.version}</org.scijava.scripting-beanshell.version>
 
 		<!-- Scripting: Clojure - https://github.com/scijava/scripting-clojure -->
-		<scripting-clojure.version>0.1.6</scripting-clojure.version>
+		<scripting-clojure.version>1.0.0</scripting-clojure.version>
 		<org.scijava.scripting-clojure.version>${scripting-clojure.version}</org.scijava.scripting-clojure.version>
 
 		<!-- Scripting: Groovy - https://github.com/scijava/scripting-groovy -->
