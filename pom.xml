@@ -588,7 +588,7 @@
 		<net.imglib2.imglib2.version>${imglib2.version}</net.imglib2.imglib2.version>
 
 		<!-- ImgLib2 Algorithms - https://github.com/imglib/imglib2-algorithm -->
-		<imglib2-algorithm.version>0.18.0</imglib2-algorithm.version>
+		<imglib2-algorithm.version>0.18.1</imglib2-algorithm.version>
 		<net.imglib2.imglib2-algorithm.version>${imglib2-algorithm.version}</net.imglib2.imglib2-algorithm.version>
 
 		<!-- ImgLib2 Algorithms FFT - https://github.com/imglib/imglib2-algorithm-fft -->
