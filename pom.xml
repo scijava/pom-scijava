@@ -418,7 +418,7 @@
 		<org.scijava.scripting-beanshell.version>${scripting-beanshell.version}</org.scijava.scripting-beanshell.version>
 
 		<!-- Scripting: Clojure - https://github.com/scijava/scripting-clojure -->
-		<scripting-clojure.version>0.1.6</scripting-clojure.version>
+		<scripting-clojure.version>1.0.0</scripting-clojure.version>
 		<org.scijava.scripting-clojure.version>${scripting-clojure.version}</org.scijava.scripting-clojure.version>
 
 		<!-- Scripting: Groovy - https://github.com/scijava/scripting-groovy -->
@@ -1121,11 +1121,11 @@
 		<net.imglib2.imglib2-label-multisets.version>${imglib2-label-multisets.version}</net.imglib2.imglib2-label-multisets.version>
 
 		<!-- N5 - https://github.com/saalfeldlab/n5 -->
-		<n5.version>3.3.0</n5.version>
+		<n5.version>3.5.0</n5.version>
 		<org.janelia.saalfeldlab.n5.version>${n5.version}</org.janelia.saalfeldlab.n5.version>
 
 		<!-- N5 AWS S3 - https://github.com/saalfeldlab/n5-aws-s3 -->
-		<n5-aws-s3.version>4.2.1</n5-aws-s3.version>
+		<n5-aws-s3.version>4.3.0</n5-aws-s3.version>
 		<org.janelia.saalfeldlab.n5-aws-s3.version>${n5-aws-s3.version}</org.janelia.saalfeldlab.n5-aws-s3.version>
 
 		<!-- N5 Blosc - https://github.com/saalfeldlab/n5-blosc -->
@@ -1133,15 +1133,15 @@
 		<org.janelia.saalfeldlab.n5-blosc.version>${n5-blosc.version}</org.janelia.saalfeldlab.n5-blosc.version>
 
 		<!-- N5 Google Cloud - https://github.com/saalfeldlab/n5-google-cloud -->
-		<n5-google-cloud.version>4.1.1</n5-google-cloud.version>
+		<n5-google-cloud.version>5.1.0</n5-google-cloud.version>
 		<org.janelia.saalfeldlab.n5-google-cloud.version>${n5-google-cloud.version}</org.janelia.saalfeldlab.n5-google-cloud.version>
 
 		<!-- N5 HDF5 Bindings - https://github.com/saalfeldlab/n5-hdf5 -->
-		<n5-hdf5.version>2.2.0</n5-hdf5.version>
+		<n5-hdf5.version>2.2.1</n5-hdf5.version>
 		<org.janelia.saalfeldlab.n5-hdf5.version>${n5-hdf5.version}</org.janelia.saalfeldlab.n5-hdf5.version>
 
 		<!-- N5 ImageJ Bindings - https://github.com/saalfeldlab/n5-ij -->
-		<n5-ij.version>4.2.5</n5-ij.version>
+		<n5-ij.version>4.4.0</n5-ij.version>
 		<org.janelia.saalfeldlab.n5-ij.version>${n5-ij.version}</org.janelia.saalfeldlab.n5-ij.version>
 
 		<!-- N5 ImgLib2 Bindings - https://github.com/saalfeldlab/n5-imglib2 -->
@@ -1149,7 +1149,7 @@
 		<org.janelia.saalfeldlab.n5-imglib2.version>${n5-imglib2.version}</org.janelia.saalfeldlab.n5-imglib2.version>
 
 		<!-- N5 Universe - https://github.com/saalfeldlab/n5-universe -->
-		<n5-universe.version>1.6.0</n5-universe.version>
+		<n5-universe.version>2.3.0</n5-universe.version>
 		<org.janelia.saalfeldlab.n5-universe.version>${n5-universe.version}</org.janelia.saalfeldlab.n5-universe.version>
 
 		<!-- N5 Viewer for Fiji - https://github.com/saalfeldlab/n5-viewer_fiji -->
@@ -1157,7 +1157,7 @@
 		<org.janelia.saalfeldlab.n5-viewer_fiji.version>${n5-viewer_fiji.version}</org.janelia.saalfeldlab.n5-viewer_fiji.version>
 
 		<!-- N5 Zarr - https://github.com/saalfeldlab/n5-zarr -->
-		<n5-zarr.version>1.3.5</n5-zarr.version>
+		<n5-zarr.version>1.5.1</n5-zarr.version>
 		<org.janelia.saalfeldlab.n5-zarr.version>${n5-zarr.version}</org.janelia.saalfeldlab.n5-zarr.version>
 
 		<!-- N5 ZStandard - https://github.com/JaneliaSciComp/n5-zstandard -->
@@ -1190,8 +1190,8 @@
 		<net.haesleinhuepf.clijx-weka_.version>${clijx-weka_.version}</net.haesleinhuepf.clijx-weka_.version>
 
 		<!-- BigStitcher - https://imagej.net/plugins/bigstitcher -->
-		<BigStitcher.version>2.0.1</BigStitcher.version>
-		<multiview-reconstruction.version>4.1.1</multiview-reconstruction.version>
+		<BigStitcher.version>2.5.0</BigStitcher.version>
+		<multiview-reconstruction.version>5.4.1</multiview-reconstruction.version>
 		<multiview-simulation.version>0.2.0</multiview-simulation.version>
 		<net.preibisch.BigStitcher.version>${BigStitcher.version}</net.preibisch.BigStitcher.version>
 		<net.preibisch.multiview-reconstruction.version>${multiview-reconstruction.version}</net.preibisch.multiview-reconstruction.version>
