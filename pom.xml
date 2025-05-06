@@ -570,7 +570,7 @@
 		<net.imagej.imagej-ui-awt.version>${imagej-ui-awt.version}</net.imagej.imagej-ui-awt.version>
 
 		<!-- ImageJ UI: Swing - https://github.com/imagej/imagej-ui-swing -->
-		<imagej-ui-swing.version>1.1.1</imagej-ui-swing.version>
+		<imagej-ui-swing.version>1.1.2</imagej-ui-swing.version>
 		<net.imagej.imagej-ui-swing.version>${imagej-ui-swing.version}</net.imagej.imagej-ui-swing.version>
 
 		<!-- ImageJ Updater - https://github.com/imagej/imagej-updater -->
