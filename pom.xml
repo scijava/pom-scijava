@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>org.scijava</groupId>
 		<artifactId>pom-scijava-base</artifactId>
-		<version>20.0.0</version>
+		<version>20.1.0</version>
 		<relativePath />
 	</parent>
 
@@ -2046,6 +2046,23 @@
 		<jmh-generator-annprocess.version>${jmh.version}</jmh-generator-annprocess.version>
 		<org.openjdk.jmh.jmh-core.version>${jmh-core.version}</org.openjdk.jmh.jmh-core.version>
 		<org.openjdk.jmh.jmh-generator-annprocess.version>${jmh-generator-annprocess.version}</org.openjdk.jmh.jmh-generator-annprocess.version>
+
+		<!-- JavaFX - https://openjdk.org/projects/openjfx/ -->
+		<javafx.version>23.0.2</javafx.version>
+		<javafx-base.version>${javafx.version}</javafx-base.version>
+		<javafx-controls.version>${javafx.version}</javafx-controls.version>
+		<javafx-fxml.version>${javafx.version}</javafx-fxml.version>
+		<javafx-graphics.version>${javafx.version}</javafx-graphics.version>
+		<javafx-media.version>${javafx.version}</javafx-media.version>
+		<javafx-swing.version>${javafx.version}</javafx-swing.version>
+		<javafx-web.version>${javafx.version}</javafx-web.version>
+		<org.openjfx.javafx-base.version>${javafx-base.version}</org.openjfx.javafx-base.version>
+		<org.openjfx.javafx-controls.version>${javafx-controls.version}</org.openjfx.javafx-controls.version>
+		<org.openjfx.javafx-fxml.version>${javafx-fxml.version}</org.openjfx.javafx-fxml.version>
+		<org.openjfx.javafx-graphics.version>${javafx-graphics.version}</org.openjfx.javafx-graphics.version>
+		<org.openjfx.javafx-media.version>${javafx-media.version}</org.openjfx.javafx-media.version>
+		<org.openjfx.javafx-swing.version>${javafx-swing.version}</org.openjfx.javafx-swing.version>
+		<org.openjfx.javafx-web.version>${javafx-web.version}</org.openjfx.javafx-web.version>
 
 		<!-- JMockit - https://jmockit.github.io/ -->
 		<jmockit.version>1.49</jmockit.version>
@@ -6915,6 +6932,50 @@
 				<artifactId>jmh-generator-annprocess</artifactId>
 				<version>${org.openjdk.jmh.jmh-generator-annprocess.version}</version>
 				<scope>test</scope>
+			</dependency>
+
+			<!-- JavaFX - https://openjdk.org/projects/openjfx/ -->
+			<dependency>
+				<groupId>org.openjfx</groupId>
+				<artifactId>javafx-base</artifactId>
+				<version>${org.openjfx.javafx-base.version}</version>
+				<classifier>${scijava.natives.javafx.classifier}</classifier>
+			</dependency>
+			<dependency>
+				<groupId>org.openjfx</groupId>
+				<artifactId>javafx-controls</artifactId>
+				<version>${org.openjfx.javafx-controls.version}</version>
+				<classifier>${scijava.natives.javafx.classifier}</classifier>
+			</dependency>
+			<dependency>
+				<groupId>org.openjfx</groupId>
+				<artifactId>javafx-fxml</artifactId>
+				<version>${org.openjfx.javafx-fxml.version}</version>
+				<classifier>${scijava.natives.javafx.classifier}</classifier>
+			</dependency>
+			<dependency>
+				<groupId>org.openjfx</groupId>
+				<artifactId>javafx-graphics</artifactId>
+				<version>${org.openjfx.javafx-graphics.version}</version>
+				<classifier>${scijava.natives.javafx.classifier}</classifier>
+			</dependency>
+			<dependency>
+				<groupId>org.openjfx</groupId>
+				<artifactId>javafx-media</artifactId>
+				<version>${org.openjfx.javafx-media.version}</version>
+				<classifier>${scijava.natives.javafx.classifier}</classifier>
+			</dependency>
+			<dependency>
+				<groupId>org.openjfx</groupId>
+				<artifactId>javafx-swing</artifactId>
+				<version>${org.openjfx.javafx-swing.version}</version>
+				<classifier>${scijava.natives.javafx.classifier}</classifier>
+			</dependency>
+			<dependency>
+				<groupId>org.openjfx</groupId>
+				<artifactId>javafx-web</artifactId>
+				<version>${org.openjfx.javafx-web.version}</version>
+				<classifier>${scijava.natives.javafx.classifier}</classifier>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
