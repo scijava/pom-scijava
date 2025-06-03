@@ -6939,43 +6939,43 @@
 				<groupId>org.openjfx</groupId>
 				<artifactId>javafx-base</artifactId>
 				<version>${org.openjfx.javafx-base.version}</version>
-				<classifier>${scijava.natives.javafx.classifier}</classifier>
+				<classifier>${scijava.natives.classifier.javafx}</classifier>
 			</dependency>
 			<dependency>
 				<groupId>org.openjfx</groupId>
 				<artifactId>javafx-controls</artifactId>
 				<version>${org.openjfx.javafx-controls.version}</version>
-				<classifier>${scijava.natives.javafx.classifier}</classifier>
+				<classifier>${scijava.natives.classifier.javafx}</classifier>
 			</dependency>
 			<dependency>
 				<groupId>org.openjfx</groupId>
 				<artifactId>javafx-fxml</artifactId>
 				<version>${org.openjfx.javafx-fxml.version}</version>
-				<classifier>${scijava.natives.javafx.classifier}</classifier>
+				<classifier>${scijava.natives.classifier.javafx}</classifier>
 			</dependency>
 			<dependency>
 				<groupId>org.openjfx</groupId>
 				<artifactId>javafx-graphics</artifactId>
 				<version>${org.openjfx.javafx-graphics.version}</version>
-				<classifier>${scijava.natives.javafx.classifier}</classifier>
+				<classifier>${scijava.natives.classifier.javafx}</classifier>
 			</dependency>
 			<dependency>
 				<groupId>org.openjfx</groupId>
 				<artifactId>javafx-media</artifactId>
 				<version>${org.openjfx.javafx-media.version}</version>
-				<classifier>${scijava.natives.javafx.classifier}</classifier>
+				<classifier>${scijava.natives.classifier.javafx}</classifier>
 			</dependency>
 			<dependency>
 				<groupId>org.openjfx</groupId>
 				<artifactId>javafx-swing</artifactId>
 				<version>${org.openjfx.javafx-swing.version}</version>
-				<classifier>${scijava.natives.javafx.classifier}</classifier>
+				<classifier>${scijava.natives.classifier.javafx}</classifier>
 			</dependency>
 			<dependency>
 				<groupId>org.openjfx</groupId>
 				<artifactId>javafx-web</artifactId>
 				<version>${org.openjfx.javafx-web.version}</version>
-				<classifier>${scijava.natives.javafx.classifier}</classifier>
+				<classifier>${scijava.natives.classifier.javafx}</classifier>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
