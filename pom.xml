@@ -306,7 +306,7 @@
 		<!-- SciJava - https://github.com/scijava -->
 
 		<!-- App Launcher - https://github.com/scijava/app-launcher -->
-		<app-launcher.version>2.2.0</app-launcher.version>
+		<app-launcher.version>2.3.1</app-launcher.version>
 		<org.scijava.app-launcher.version>${app-launcher.version}</org.scijava.app-launcher.version>
 
 		<!-- Batch Processor - https://github.com/scijava/batch-processor -->
@@ -570,7 +570,7 @@
 		<net.imagej.imagej-ui-awt.version>${imagej-ui-awt.version}</net.imagej.imagej-ui-awt.version>
 
 		<!-- ImageJ UI: Swing - https://github.com/imagej/imagej-ui-swing -->
-		<imagej-ui-swing.version>1.2.1</imagej-ui-swing.version>
+		<imagej-ui-swing.version>1.2.2</imagej-ui-swing.version>
 		<net.imagej.imagej-ui-swing.version>${imagej-ui-swing.version}</net.imagej.imagej-ui-swing.version>
 
 		<!-- ImageJ Updater - https://github.com/imagej/imagej-updater -->
