@@ -1036,7 +1036,7 @@
 		<org.bigdataviewer.bigdataviewer-n5.version>${bigdataviewer-n5.version}</org.bigdataviewer.bigdataviewer-n5.version>
 
 		<!-- BigVolumeViewer - https://github.com/bigdataviewer/bigvolumeviewer-core -->
-		<bigvolumeviewer.version>0.3.4</bigvolumeviewer.version>
+		<bigvolumeviewer.version>0.4.1</bigvolumeviewer.version>
 		<sc.fiji.bigvolumeviewer.version>${bigvolumeviewer.version}</sc.fiji.bigvolumeviewer.version>
 
 		<!-- SPIM Data - https://github.com/bigdataviewer/spimdata -->
