@@ -105,6 +105,7 @@ chmod +x "$meltingPotScript" &&
   -i 'sc.fiji:*' \
   -e 'net.imagej:ij' \
   -e 'net.imglib2:imglib2-mesh' \
+  -e 'org.bonej:bonej-plus' \
   -e 'org.openjfx:*' \
   -e 'org.scijava:j3dcore' \
   -e 'org.scijava:j3dutils' \

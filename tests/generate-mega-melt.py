@@ -44,6 +44,8 @@ ignoredArtifacts = [
     'javafx-media',
     'javafx-swing',
     'javafx-web',
+    # NB: Skip closed-source artifacts.
+    'bonej-plus',
     # NB: The following artifacts have messy dependency trees.
     # Too many problems to test as part of the mega-melt.
     # See WARNING block in pom-scijava's pom.xml for details.
