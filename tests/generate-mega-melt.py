@@ -37,6 +37,13 @@ ignoredArtifacts = [
     'ij1-patcher', 'imagej-legacy',
     # NB: Skip artifacts requiring minimum Java version >8.
     'algart-tiff',
+    'javafx-base',
+    'javafx-controls',
+    'javafx-fxml',
+    'javafx-graphics',
+    'javafx-media',
+    'javafx-swing',
+    'javafx-web',
     # NB: The following artifacts have messy dependency trees.
     # Too many problems to test as part of the mega-melt.
     # See WARNING block in pom-scijava's pom.xml for details.
