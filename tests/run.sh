@@ -19,6 +19,17 @@ sectionEnd() {
   echo "Done! [$((endTime-startTime))s]"
 }
 
+# Check prerequisites.
+
+# HACK: Work around macOS Python naming inconsistency.
+if command -v python3 >/dev/null 2>&1; then
+  PYTHON=python3
+elif command -v python >/dev/null 2>&1; then
+  PYTHON=python
+else
+  die "This script requires Python."
+fi
+
 sectionStart 'Generating mega-melt project'
 
 dir=$(cd "$(dirname "$0")" && pwd)
@@ -57,7 +68,7 @@ cp "$pom" "$pomParent" &&
 mvn -B -f "$pomParent" versions:set -DnewVersion=999-mega-melt > "$versionSwapLog" &&
   mvn -B -f "$pomParent" install:install >> "$versionSwapLog" ||
   die "pom-scijava version update failed:\n$(cat "$versionSwapLog")"
-python "$generateMegaMeltScript" "$megaMeltDir" || die 'Generation failed!'
+$PYTHON "$generateMegaMeltScript" "$megaMeltDir" || die 'Generation failed!'
 sectionEnd # Generating mega-melt project
 
 # Ensure the mega-melt dependency structure validates.
@@ -68,7 +79,7 @@ sectionStart 'Validating mega-melt project'
 mvn -B -f "$megaMeltPOM" dependency:tree > "$dependencyTreeLog" ||
   die "Invalid dependency tree:\n$(cat "$dependencyTreeLog")"
 mvn -B -f "$megaMeltPOM" -U clean package > "$validationLog" || {
-  python "$filterBuildLogScript" "$validationLog" > "$validationErrorsLog"
+  $PYTHON "$filterBuildLogScript" "$validationLog" > "$validationErrorsLog"
   die "Validation build failed!\n\nDependency tree:\n$(cat "$dependencyTreeLog")\n\nBuild log:\n$(cat "$validationErrorsLog")"
 }
 sectionEnd # Validating mega-melt project
