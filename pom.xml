@@ -1307,8 +1307,8 @@
 
 		<!-- Other SciJava components -->
 
-		<!-- CoreMem - https://github.com/ClearControl/CoreMem -->
-		<coremem.version>0.4.8</coremem.version>
+		<!-- CoreMem - https://github.com/ClearVolume/coremem -->
+		<coremem.version>0.4.5</coremem.version>
 		<net.clearcontrol.coremem.version>${coremem.version}</net.clearcontrol.coremem.version>
 
 		<!-- ClearGL - https://github.com/ClearVolume/cleargl -->
@@ -4245,7 +4245,7 @@
 
 			<!-- Other SciJava components -->
 
-			<!-- CoreMem - https://github.com/ClearControl/CoreMem -->
+			<!-- CoreMem - https://github.com/ClearVolume/coremem -->
 			<dependency>
 				<groupId>net.clearcontrol</groupId>
 				<artifactId>coremem</artifactId>
