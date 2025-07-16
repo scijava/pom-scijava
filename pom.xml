@@ -482,7 +482,7 @@
 		<net.imagej.ij.version>${ij.version}</net.imagej.ij.version>
 
 		<!-- ImageJ patcher - https://github.com/imagej/ij1-patcher -->
-		<ij1-patcher.version>1.2.8</ij1-patcher.version>
+		<ij1-patcher.version>1.2.9</ij1-patcher.version>
 		<net.imagej.ij1-patcher.version>${ij1-patcher.version}</net.imagej.ij1-patcher.version>
 
 		<!-- ImageJ Common - https://github.com/imagej/imagej-common -->
@@ -494,7 +494,7 @@
 		<net.imagej.imagej-deprecated.version>${imagej-deprecated.version}</net.imagej.imagej-deprecated.version>
 
 		<!-- ImageJ Legacy - https://github.com/imagej/imagej-legacy -->
-		<imagej-legacy.version>2.0.1</imagej-legacy.version>
+		<imagej-legacy.version>2.0.2</imagej-legacy.version>
 		<net.imagej.imagej-legacy.version>${imagej-legacy.version}</net.imagej.imagej-legacy.version>
 
 		<!-- ImageJ MATLAB - https://github.com/imagej/imagej-matlab -->
