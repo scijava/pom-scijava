@@ -7016,6 +7016,7 @@
 									<executable>${gradle.wrapper}</executable>
 									<workingDirectory>${basedir}/gradle-scijava</workingDirectory>
 									<arguments>
+										<argument>--no-daemon</argument>
 										<argument>--project-cache-dir</argument>
 										<argument>../target/gradle/build</argument>
 										<argument>generateCatalogAndPlatform</argument>
