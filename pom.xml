@@ -11,7 +11,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>41.1.0-SNAPSHOT</version>
+	<version>42.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -482,7 +482,7 @@
 		<net.imagej.ij.version>${ij.version}</net.imagej.ij.version>
 
 		<!-- ImageJ patcher - https://github.com/imagej/ij1-patcher -->
-		<ij1-patcher.version>1.2.9</ij1-patcher.version>
+		<ij1-patcher.version>2.0.0</ij1-patcher.version>
 		<net.imagej.ij1-patcher.version>${ij1-patcher.version}</net.imagej.ij1-patcher.version>
 
 		<!-- ImageJ Common - https://github.com/imagej/imagej-common -->
@@ -991,7 +991,7 @@
 		<jitk.jitk-tps.version>${jitk-tps.version}</jitk.jitk-tps.version>
 
 		<!-- BigWarp - https://github.com/saalfeldlab/bigwarp -->
-		<bigwarp.version>9.3.1</bigwarp.version>
+		<bigwarp.version>9.3.2</bigwarp.version>
 		<bigwarp_fiji.version>${bigwarp.version}</bigwarp_fiji.version>
 		<sc.fiji.bigwarp_fiji.version>${bigwarp_fiji.version}</sc.fiji.bigwarp_fiji.version>
 
