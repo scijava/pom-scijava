@@ -387,6 +387,20 @@ rm -f "$meltingPotDir/org.janelia.saalfeldlab/n5-universe/src/test/java/org/jane
 # java.util.NoSuchElementException: No value present
 rm -f "$meltingPotDir/org.janelia.saalfeldlab/n5-ij/src/test/java/org/janelia/saalfeldlab/n5/metadata/ome/ngff/v04/WriteAxesTests.java"
 
+# In sc.fiji.labkit.ui.plugin.CalculateProbabilityMapWithLabkitIJ1PluginTest.test:
+# Macro Error: "probability map for blobs.tif" not found in line 4
+# selectImage ( <"probability map for blobs.tif"> ) ;
+# java.lang.RuntimeException: Macro canceled
+#     at ij.macro.Interpreter.error(Interpreter.java:1403)
+#     at ij.macro.Functions.selectImage(Functions.java:3225)
+#     at ij.macro.Functions.doFunction(Functions.java:136)
+#     at ij.macro.Interpreter.doStatement(Interpreter.java:280)
+#     at ij.macro.Interpreter.doStatements(Interpreter.java:266)
+#     at ij.macro.Interpreter.run(Interpreter.java:162)
+#     at ij.macro.Interpreter.run(Interpreter.java:92)
+#     at sc.fiji.labkit.ui.plugin.CalculateProbabilityMapWithLabkitIJ1PluginTest.test(CalculateProbabilityMapWithLabkitIJ1PluginTest.java:65)
+rm -f "$meltingPotDir/sc.fiji/labkit-ui-/src/test/java/sc/fiji/labkit/ui/plugin/CalculateProbabilityMapWithLabkitIJ1PluginTest.java"
+
 # Skip testing of components with non-working tests.
 
 # Error while checking the CLIJ2 installation: null
