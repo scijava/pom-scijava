@@ -388,6 +388,13 @@ rm -f "$meltingPotDir/org.janelia.saalfeldlab/n5-ij/src/test/java/org/janelia/sa
 # org.janelia.saalfeldlab.n5.universe.metadata.MetadataTests.testEmptyBase(MetadataTests.java:346)
 rm -f "$meltingPotDir/org.janelia.saalfeldlab/n5-universe/src/test/java/org/janelia/saalfeldlab/n5/universe/metadata/MetadataTests.java"
 
+# In org.janelia.saalfeldlab.n5.zarr.ZarrCachedFSTest.cacheBehaviorTest:
+# arrays first differed at element [0]; expected:<[a]> but was:<[c]>
+rm -f "$meltingPotDir/org.janelia.saalfeldlab/n5-zarr/src/test/java/org/janelia/saalfeldlab/n5/zarr/ZarrCachedFSTest.java"
+# Note: The above test is fixed with saalfeldlab/n5-zarr@e7edcec3,
+# but the fix is only available in n5-zarr 2.0.0-alpha-1, and we
+# do not want to update the SciJava BOM to the alpha version.
+
 # In sc.fiji.labkit.ui.plugin.CalculateProbabilityMapWithLabkitIJ1PluginTest.test:
 # Macro Error: "probability map for blobs.tif" not found in line 4
 # selectImage ( <"probability map for blobs.tif"> ) ;
