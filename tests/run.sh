@@ -379,13 +379,14 @@ sectionStart 'Adjusting the melting pot: unit test hacks'
 # CachedOpEnvironmentTest fails intermittently. Of course, it should be
 # somehow fixed in imagej-ops. But for now, let's not let it ruin the melt.
 rm -f "$meltingPotDir/net.imagej/imagej-ops/src/test/java/net/imagej/ops/cached/CachedOpEnvironmentTest.java"
-# Avoid notNull assertion error at
-# org.janelia.saalfeldlab.n5.universe.metadata.MetadataTests.testEmptyBase(MetadataTests.java:346)
-rm -f "$meltingPotDir/org.janelia.saalfeldlab/n5-universe/src/test/java/org/janelia/saalfeldlab/n5/universe/metadata/MetadataTests.java"
 
 # In org.janelia.saalfeldlab.n5.metadata.ome.ngff.v04.WriteAxesTests.testXYT:
 # java.util.NoSuchElementException: No value present
 rm -f "$meltingPotDir/org.janelia.saalfeldlab/n5-ij/src/test/java/org/janelia/saalfeldlab/n5/metadata/ome/ngff/v04/WriteAxesTests.java"
+
+# Avoid notNull assertion error at
+# org.janelia.saalfeldlab.n5.universe.metadata.MetadataTests.testEmptyBase(MetadataTests.java:346)
+rm -f "$meltingPotDir/org.janelia.saalfeldlab/n5-universe/src/test/java/org/janelia/saalfeldlab/n5/universe/metadata/MetadataTests.java"
 
 # In sc.fiji.labkit.ui.plugin.CalculateProbabilityMapWithLabkitIJ1PluginTest.test:
 # Macro Error: "probability map for blobs.tif" not found in line 4
