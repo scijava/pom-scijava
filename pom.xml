@@ -1591,7 +1591,7 @@
 
 		<!-- Commons Lang - https://commons.apache.org/proper/commons-lang/ -->
 		<commons-lang.version>2.6</commons-lang.version>
-		<commons-lang3.version>3.17.0</commons-lang3.version>
+		<commons-lang3.version>3.18.0</commons-lang3.version>
 		<commons-lang.commons-lang.version>${commons-lang.version}</commons-lang.commons-lang.version>
 		<org.apache.commons.commons-lang3.version>${commons-lang3.version}</org.apache.commons.commons-lang3.version>
 
