@@ -399,7 +399,7 @@ rm -f "$meltingPotDir/org.janelia.saalfeldlab/n5-ij/src/test/java/org/janelia/sa
 #     at ij.macro.Interpreter.run(Interpreter.java:162)
 #     at ij.macro.Interpreter.run(Interpreter.java:92)
 #     at sc.fiji.labkit.ui.plugin.CalculateProbabilityMapWithLabkitIJ1PluginTest.test(CalculateProbabilityMapWithLabkitIJ1PluginTest.java:65)
-rm -f "$meltingPotDir/sc.fiji/labkit-ui-/src/test/java/sc/fiji/labkit/ui/plugin/CalculateProbabilityMapWithLabkitIJ1PluginTest.java"
+rm -f "$meltingPotDir/sc.fiji/labkit-ui/src/test/java/sc/fiji/labkit/ui/plugin/CalculateProbabilityMapWithLabkitIJ1PluginTest.java"
 
 # Skip testing of components with non-working tests.
 
