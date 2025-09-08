@@ -133,12 +133,12 @@
         <ignoreVersion type="regex">.*-m[0-9]+-.*</ignoreVersion>
       </ignoreVersions>
     </rule>
-    <rule groupId="org.apache.maven" artifactId="maven-core" comparisonMethod="maven">
+    <rule groupId="org.apache.groovy" artifactId="*" comparisonMethod="maven">
       <ignoreVersions>
         <ignoreVersion type="regex">.*-(alpha|beta|rc)-?[0-9]+</ignoreVersion>
       </ignoreVersions>
     </rule>
-    <rule groupId="org.apache.groovy" artifactId="*" comparisonMethod="maven">
+    <rule groupId="org.apache.maven" artifactId="maven-core" comparisonMethod="maven">
       <ignoreVersions>
         <ignoreVersion type="regex">.*-(alpha|beta|rc)-?[0-9]+</ignoreVersion>
       </ignoreVersions>
