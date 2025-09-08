@@ -4,7 +4,21 @@
 			<id>scijava-mirror</id>
 			<name>SciJava public repositories</name>
 			<url>https://maven.scijava.org/content/groups/public</url>
-			<mirrorOf>*</mirrorOf>
+			<mirrorOf>*,!central</mirrorOf>
 		</mirror>
 	</mirrors>
+	<profiles>
+		<profile>
+			<id>scijava</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<repositories>
+				<repository>
+					<id>scijava.public</id>
+					<url>https://maven.scijava.org/content/groups/public</url>
+				</repository>
+			</repositories>
+		</profile>
+	</profiles>
 </settings>
