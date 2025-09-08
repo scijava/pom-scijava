@@ -1318,11 +1318,11 @@
 		<org.abego.treelayout.org.abego.treelayout.core.version>${org.abego.treelayout.core.version}</org.abego.treelayout.org.abego.treelayout.core.version>
 
 		<!-- Algart TIFF - https://algart.net/java/AlgART-TIFF/ -->
-		<algart-tiff.version>1.4.0</algart-tiff.version>
+		<algart-tiff.version>1.5.0</algart-tiff.version>
 		<net.algart.algart-tiff.version>${algart-tiff.version}</net.algart.algart-tiff.version>
 
 		<!-- Amazon S3 - https://aws.amazon.com/sdkforjava -->
-		<aws.version>1.12.772</aws.version>
+		<aws.version>1.12.791</aws.version>
 		<aws-java-sdk-core.version>${aws.version}</aws-java-sdk-core.version>
 		<aws-java-sdk-s3.version>${aws.version}</aws-java-sdk-s3.version>
 		<com.amazonaws.aws-java-sdk-core.version>${aws-java-sdk-core.version}</com.amazonaws.aws-java-sdk-core.version>
@@ -1350,7 +1350,7 @@
 		<org.apache.ant.ant-launcher.version>${ant-launcher.version}</org.apache.ant.ant-launcher.version>
 
 		<!-- Apache Groovy - https://groovy-lang.org/ -->
-		<groovy.version>4.0.23</groovy.version>
+		<groovy.version>4.0.28</groovy.version>
 		<groovy-ant.version>${groovy.version}</groovy-ant.version>
 		<groovy-astbuilder.version>${groovy.version}</groovy-astbuilder.version>
 		<groovy-cli-commons.version>${groovy.version}</groovy-cli-commons.version>
@@ -1416,7 +1416,7 @@
 		<org.apache.ivy.ivy.version>${ivy.version}</org.apache.ivy.ivy.version>
 
 		<!-- Apache Log4j - https://logging.apache.org/log4j/2.x/ -->
-		<log4j.version>2.20.0</log4j.version>
+		<log4j.version>2.25.1</log4j.version>
 		<log4j-api.version>${log4j.version}</log4j-api.version>
 		<log4j-core.version>${log4j.version}</log4j-core.version>
 		<org.apache.logging.log4j.log4j-api.version>${log4j-api.version}</org.apache.logging.log4j.log4j-api.version>
@@ -1425,7 +1425,7 @@
 		<!-- Apache Maven - https://maven.apache.org/ -->
 		<maven-artifact-transfer.version>0.13.1</maven-artifact-transfer.version>
 		<maven-common-artifact-filters.version>3.4.0</maven-common-artifact-filters.version>
-		<maven-core.version>3.9.9</maven-core.version>
+		<maven-core.version>3.9.11</maven-core.version>
 		<maven-plugin-tools-api.version>4.0.0-beta-1</maven-plugin-tools-api.version>
 		<plexus-component-annotations.version>2.2.0</plexus-component-annotations.version>
 		<plexus-utils.version>4.0.2</plexus-utils.version>
@@ -1441,7 +1441,7 @@
 		<org.sonatype.sisu.sisu-inject-plexus.version>${sisu-inject-plexus.version}</org.sonatype.sisu.sisu-inject-plexus.version>
 
 		<!-- Apache POI - https://poi.apache.org/ -->
-		<poi.version>5.3.0</poi.version>
+		<poi.version>5.4.1</poi.version>
 		<poi-examples.version>${poi.version}</poi-examples.version>
 		<poi-excelant.version>${poi.version}</poi-excelant.version>
 		<poi-ooxml.version>${poi.version}</poi-ooxml.version>
@@ -1473,7 +1473,7 @@
 		<args4j.args4j.version>${args4j.version}</args4j.args4j.version>
 
 		<!-- ASM - https://asm.ow2.io/ -->
-		<asm.version>9.7</asm.version>
+		<asm.version>9.8</asm.version>
 		<asm-analysis.version>${asm.version}</asm-analysis.version>
 		<asm-commons.version>${asm.version}</asm-commons.version>
 		<asm-tree.version>${asm.version}</asm-tree.version>
@@ -1485,7 +1485,7 @@
 		<org.ow2.asm.asm-util.version>${asm-util.version}</org.ow2.asm.asm-util.version>
 
 		<!-- Batik - https://xmlgraphics.apache.org/batik/ -->
-		<batik.version>1.17</batik.version>
+		<batik.version>1.19</batik.version>
 		<batik-anim.version>${batik.version}</batik-anim.version>
 		<batik-awt-util.version>${batik.version}</batik-awt-util.version>
 		<batik-bridge.version>${batik.version}</batik-bridge.version>
@@ -1502,7 +1502,6 @@
 		<batik-rasterizer.version>${batik.version}</batik-rasterizer.version>
 		<batik-rasterizer-ext.version>${batik.version}</batik-rasterizer-ext.version>
 		<batik-script.version>${batik.version}</batik-script.version>
-		<batik-slideshow.version>${batik.version}</batik-slideshow.version>
 		<batik-squiggle.version>${batik.version}</batik-squiggle.version>
 		<batik-squiggle-ext.version>${batik.version}</batik-squiggle-ext.version>
 		<batik-svg-dom.version>${batik.version}</batik-svg-dom.version>
@@ -1513,7 +1512,7 @@
 		<batik-ttf2svg.version>${batik.version}</batik-ttf2svg.version>
 		<batik-util.version>${batik.version}</batik-util.version>
 		<batik-xml.version>${batik.version}</batik-xml.version>
-		<xmlgraphics-commons.version>2.9</xmlgraphics-commons.version>
+		<xmlgraphics-commons.version>2.11</xmlgraphics-commons.version>
 		<org.apache.xmlgraphics.batik-anim.version>${batik-anim.version}</org.apache.xmlgraphics.batik-anim.version>
 		<org.apache.xmlgraphics.batik-awt-util.version>${batik-awt-util.version}</org.apache.xmlgraphics.batik-awt-util.version>
 		<org.apache.xmlgraphics.batik-bridge.version>${batik-bridge.version}</org.apache.xmlgraphics.batik-bridge.version>
@@ -1530,7 +1529,6 @@
 		<org.apache.xmlgraphics.batik-rasterizer.version>${batik-rasterizer.version}</org.apache.xmlgraphics.batik-rasterizer.version>
 		<org.apache.xmlgraphics.batik-rasterizer-ext.version>${batik-rasterizer-ext.version}</org.apache.xmlgraphics.batik-rasterizer-ext.version>
 		<org.apache.xmlgraphics.batik-script.version>${batik-script.version}</org.apache.xmlgraphics.batik-script.version>
-		<org.apache.xmlgraphics.batik-slideshow.version>${batik-slideshow.version}</org.apache.xmlgraphics.batik-slideshow.version>
 		<org.apache.xmlgraphics.batik-squiggle.version>${batik-squiggle.version}</org.apache.xmlgraphics.batik-squiggle.version>
 		<org.apache.xmlgraphics.batik-squiggle-ext.version>${batik-squiggle-ext.version}</org.apache.xmlgraphics.batik-squiggle-ext.version>
 		<org.apache.xmlgraphics.batik-svg-dom.version>${batik-svg-dom.version}</org.apache.xmlgraphics.batik-svg-dom.version>
@@ -1556,7 +1554,7 @@
 		<javax.enterprise.cdi-api.version>${cdi-api.version}</javax.enterprise.cdi-api.version>
 
 		<!-- Checker Framework - https://checkerframework.org/ -->
-		<checker-qual.version>3.48.0</checker-qual.version>
+		<checker-qual.version>3.50.0</checker-qual.version>
 		<org.checkerframework.checker-qual.version>${checker-qual.version}</org.checkerframework.checker-qual.version>
 
 		<!-- ClassGraph - https://github.com/classgraph/classgraph -->
@@ -1564,15 +1562,15 @@
 		<io.github.classgraph.classgraph.version>${classgraph.version}</io.github.classgraph.classgraph.version>
 
 		<!-- Commons BeanUtils - https://commons.apache.org/proper/commons-beanutils/ -->
-		<commons-beanutils.version>1.9.4</commons-beanutils.version>
+		<commons-beanutils.version>1.11.0</commons-beanutils.version>
 		<commons-beanutils.commons-beanutils.version>${commons-beanutils.version}</commons-beanutils.commons-beanutils.version>
 
 		<!-- Commons CLI - https://commons.apache.org/proper/commons-cli/ -->
-		<commons-cli.version>1.9.0</commons-cli.version>
+		<commons-cli.version>1.10.0</commons-cli.version>
 		<commons-cli.commons-cli.version>${commons-cli.version}</commons-cli.commons-cli.version>
 
 		<!-- Commons Codec - https://commons.apache.org/proper/commons-codec/ -->
-		<commons-codec.version>1.17.1</commons-codec.version>
+		<commons-codec.version>1.19.0</commons-codec.version>
 		<commons-codec.commons-codec.version>${commons-codec.version}</commons-codec.commons-codec.version>
 
 		<!-- Commons Collections - https://commons.apache.org/proper/commons-collections/ -->
@@ -1582,15 +1580,15 @@
 		<org.apache.commons.commons-collections4.version>${commons-collections4.version}</org.apache.commons.commons-collections4.version>
 
 		<!-- Commons Compress - https://commons.apache.org/proper/commons-compress/ -->
-		<commons-compress.version>1.27.1</commons-compress.version>
+		<commons-compress.version>1.28.0</commons-compress.version>
 		<org.apache.commons.commons-compress.version>${commons-compress.version}</org.apache.commons.commons-compress.version>
 
 		<!-- Commons CSV - https://commons.apache.org/proper/commons-csv/ -->
-		<commons-csv.version>1.12.0</commons-csv.version>
+		<commons-csv.version>1.14.1</commons-csv.version>
 		<org.apache.commons.commons-csv.version>${commons-csv.version}</org.apache.commons.commons-csv.version>
 
 		<!-- Commons IO - https://commons.apache.org/proper/commons-io/ -->
-		<commons-io.version>2.17.0</commons-io.version>
+		<commons-io.version>2.20.0</commons-io.version>
 		<commons-io.commons-io.version>${commons-io.version}</commons-io.commons-io.version>
 
 		<!-- Commons Lang - https://commons.apache.org/proper/commons-lang/ -->
@@ -1600,7 +1598,7 @@
 		<org.apache.commons.commons-lang3.version>${commons-lang3.version}</org.apache.commons.commons-lang3.version>
 
 		<!-- Commons Logging - https://commons.apache.org/proper/commons-logging/ -->
-		<commons-logging.version>1.3.4</commons-logging.version>
+		<commons-logging.version>1.3.5</commons-logging.version>
 		<commons-logging.commons-logging.version>${commons-logging.version}</commons-logging.commons-logging.version>
 
 		<!-- Commons Math - https://commons.apache.org/proper/commons-math/ -->
@@ -1608,11 +1606,11 @@
 		<org.apache.commons.commons-math3.version>${commons-math3.version}</org.apache.commons.commons-math3.version>
 
 		<!-- Commons Pool2 - https://commons.apache.org/proper/commons-pool/ -->
-		<commons-pool2.version>2.12.0</commons-pool2.version>
+		<commons-pool2.version>2.12.1</commons-pool2.version>
 		<org.apache.commons.commons-pool2.version>${commons-pool2.version}</org.apache.commons.commons-pool2.version>
 
 		<!-- Commons Text - https://commons.apache.org/proper/commons-text/ -->
-		<commons-text.version>1.12.0</commons-text.version>
+		<commons-text.version>1.14.0</commons-text.version>
 		<org.apache.commons.commons-text.version>${commons-text.version}</org.apache.commons.commons-text.version>
 
 		<!-- Byte Code Generation Library - https://github.com/cglib/cglib -->
@@ -1624,6 +1622,7 @@
 		<dev.dirs.directories.version>${directories.version}</dev.dirs.directories.version>
 
 		<!--  Eclipse Collections - https://www.eclipse.org/collections/ -->
+		<!-- NB: 11.1.0 is the last version compiled for Java 8! -->
 		<eclipse-collections.version>11.1.0</eclipse-collections.version>
 		<eclipse-collections-api.version>${eclipse-collections.version}</eclipse-collections-api.version>
 		<eclipse-collections-forkjoin.version>${eclipse-collections.version}</eclipse-collections-forkjoin.version>
@@ -1672,7 +1671,7 @@
 		<org.ejml.ejml-all.version>${ejml.version}</org.ejml.ejml-all.version>
 
 		<!-- Error Prone - https://errorprone.info/ -->
-		<error_prone.version>2.32.0</error_prone.version>
+		<error_prone.version>2.41.0</error_prone.version>
 		<!--
 		NB: Several artifacts in the error_prone suite have overlapping classes.
 		So we do not manage them all here, only the one in use in SciJava code.
@@ -1681,13 +1680,13 @@
 		<com.google.errorprone.error_prone_annotations.version>${error_prone_annotations.version}</com.google.errorprone.error_prone_annotations.version>
 
 		<!-- FlatLaf - https://www.formdev.com/flatlaf/ -->
-		<flatlaf.version>3.5.4</flatlaf.version>
+		<flatlaf.version>3.6.1</flatlaf.version>
 		<com.formdev.flatlaf.version>${flatlaf.version}</com.formdev.flatlaf.version>
 		<flatlaf-fonts-jetbrains-mono.version>2.304</flatlaf-fonts-jetbrains-mono.version>
 		<com.formdev.flatlaf-fonts-jetbrains-mono.version>${flatlaf-fonts-jetbrains-mono.version}</com.formdev.flatlaf-fonts-jetbrains-mono.version>
 
 		<!-- Google APIs Client - https://github.com/googleapis/google-api-java-client -->
-		<google-api-client.version>2.7.0</google-api-client.version>
+		<google-api-client.version>2.8.1</google-api-client.version>
 		<google-api-client-android.version>${google-api-client.version}</google-api-client-android.version>
 		<google-api-client-appengine.version>${google-api-client.version}</google-api-client-appengine.version>
 		<google-api-client-gson.version>${google-api-client.version}</google-api-client-gson.version>
@@ -1705,12 +1704,12 @@
 		<com.google.api-client.google-api-client-xml.version>${google-api-client-xml.version}</com.google.api-client.google-api-client-xml.version>
 
 		<!-- Google GAPIC - https://github.com/googleapis/gapic-generator-java -->
-		<api-common.version>2.37.1</api-common.version>
-		<gax.version>2.54.1</gax.version>
+		<api-common.version>2.53.1</api-common.version>
+		<gax.version>2.70.1</gax.version>
 		<gax-grpc.version>${gax.version}</gax-grpc.version>
 		<gax-httpjson.version>${gax.version}</gax-httpjson.version>
-		<proto-google-common-protos.version>2.45.1</proto-google-common-protos.version>
-		<proto-google-iam-v1.version>1.40.1</proto-google-iam-v1.version>
+		<proto-google-common-protos.version>2.61.1</proto-google-common-protos.version>
+		<proto-google-iam-v1.version>1.56.1</proto-google-iam-v1.version>
 		<com.google.api.api-common.version>${api-common.version}</com.google.api.api-common.version>
 		<com.google.api.gax.version>${gax.version}</com.google.api.gax.version>
 		<com.google.api.gax-grpc.version>${gax-grpc.version}</com.google.api.gax-grpc.version>
@@ -1721,7 +1720,7 @@
 		<com.google.api.grpc.proto-google-iam-v1.version>${proto-google-iam-v1.version}</com.google.api.grpc.proto-google-iam-v1.version>
 
 		<!-- Google Auth - https://github.com/googleapis/google-auth-library-java -->
-		<google-auth-library.version>1.27.0</google-auth-library.version>
+		<google-auth-library.version>1.39.0</google-auth-library.version>
 		<google-auth-library-appengine.version>${google-auth-library.version}</google-auth-library-appengine.version>
 		<google-auth-library-credentials.version>${google-auth-library.version}</google-auth-library-credentials.version>
 		<google-auth-library-oauth2-http.version>${google-auth-library.version}</google-auth-library-oauth2-http.version>
@@ -1748,7 +1747,7 @@
 		<com.google.cloud.google-cloud-storage.version>${google-cloud-storage.version}</com.google.cloud.google-cloud-storage.version>
 
 		<!-- Google HTTP Client - https://github.com/googleapis/google-http-java-client -->
-		<google-http-client.version>1.45.0</google-http-client.version>
+		<google-http-client.version>1.47.1</google-http-client.version>
 		<google-http-client-apache-v2.version>${google-http-client.version}</google-http-client-apache-v2.version>
 		<google-http-client-appengine.version>${google-http-client.version}</google-http-client-appengine.version>
 		<google-http-client-gson.version>${google-http-client.version}</google-http-client-gson.version>
@@ -1762,11 +1761,11 @@
 		<com.google.http-client.google-http-client-xml.version>${google-http-client-xml.version}</com.google.http-client.google-http-client-xml.version>
 
 		<!-- Google OAuth Client Library for Java - https://github.com/googleapis/google-oauth-java-client -->
-		<google-oauth-client.version>1.36.0</google-oauth-client.version>
+		<google-oauth-client.version>1.39.0</google-oauth-client.version>
 		<com.google.oauth-client.google-oauth-client.version>${google-oauth-client.version}</com.google.oauth-client.google-oauth-client.version>
 
 		<!-- gRPC - https://grpc.io/ -->
-		<grpc.version>1.68.0</grpc.version>
+		<grpc.version>1.75.0</grpc.version>
 		<grpc-alts.version>${grpc.version}</grpc-alts.version>
 		<grpc-api.version>${grpc.version}</grpc-api.version>
 		<grpc-auth.version>${grpc.version}</grpc-auth.version>
@@ -1799,8 +1798,8 @@
 		<com.google.code.gson.gson.version>${gson.version}</com.google.code.gson.gson.version>
 
 		<!-- Guava - https://github.com/google/guava -->
-		<guava.version>33.3.1-jre</guava.version>
-		<failureaccess.version>1.0.2</failureaccess.version>
+		<guava.version>33.4.8-jre</guava.version>
+		<failureaccess.version>1.0.3</failureaccess.version>
 		<com.google.guava.guava.version>${guava.version}</com.google.guava.guava.version>
 		<com.google.guava.failureaccess.version>${failureaccess.version}</com.google.guava.failureaccess.version>
 
@@ -1818,7 +1817,7 @@
 		<hsqldb.hsqldb.version>${hsqldb.version}</hsqldb.hsqldb.version>
 
 		<!-- ICU4J - https://unicode-org.github.io/icu/userguide/icu4j/ -->
-		<icu4j.version>75.1</icu4j.version>
+		<icu4j.version>77.1</icu4j.version>
 		<com.ibm.icu.icu4j.version>${icu4j.version}</com.ibm.icu.icu4j.version>
 
 		<!-- iText PDF - https://github.com/itext/itextpdf -->
@@ -1826,7 +1825,7 @@
 		<com.itextpdf.itextpdf.version>${itextpdf.version}</com.itextpdf.itextpdf.version>
 
 		<!-- J2ObjC - https://github.com/google/j2objc -->
-		<j2objc-annotations.version>3.0.0</j2objc-annotations.version>
+		<j2objc-annotations.version>3.1</j2objc-annotations.version>
 		<com.google.j2objc.j2objc-annotations.version>${j2objc-annotations.version}</com.google.j2objc.j2objc-annotations.version>
 
 		<!-- Jackrabbit WebDAV - https://jackrabbit.apache.org/jcr/components/jackrabbit-webdav-library.html -->
@@ -1835,7 +1834,7 @@
 		<org.apache.jackrabbit.jackrabbit-webdav.version>${jackrabbit-webdav.version}</org.apache.jackrabbit.jackrabbit-webdav.version>
 
 		<!-- Jackson - https://github.com/FasterXML/jackson -->
-		<jackson.version>2.18.0</jackson.version>
+		<jackson.version>2.19.2</jackson.version>
 		<jackson-annotations.version>${jackson.version}</jackson-annotations.version>
 		<jackson-core.version>${jackson.version}</jackson-core.version>
 		<jackson-databind.version>${jackson.version}</jackson-databind.version>
@@ -1892,7 +1891,7 @@
 		<org.javassist.javassist.version>${javassist.version}</org.javassist.javassist.version>
 
 		<!-- JCodings - https://github.com/jruby/jcodings -->
-		<jcodings.version>1.0.58</jcodings.version>
+		<jcodings.version>1.0.63</jcodings.version>
 		<org.jruby.jcodings.jcodings.version>${jcodings.version}</org.jruby.jcodings.jcodings.version>
 
 		<!-- JDOM - http://www.jdom.org/ -->
@@ -1904,7 +1903,7 @@
 		<org.scijava.jep.version>${jep.version}</org.scijava.jep.version>
 
 		<!-- Jetty - https://www.eclipse.org/jetty/ -->
-		<jetty.version>9.4.56.v20240826</jetty.version> <!-- NB: 9.x is last version with Java 8 support! -->
+		<jetty.version>9.4.58.v20250814</jetty.version> <!-- NB: 9.x is last version with Java 8 support! -->
 		<jetty-annotations.version>${jetty.version}</jetty-annotations.version>
 		<!--
 		NB: We do not manage jetty-ant. It depends on ant with old groupId (ant),
@@ -1974,11 +1973,11 @@
 		<org.eclipse.jetty.jetty-xml.version>${jetty-xml.version}</org.eclipse.jetty.jetty-xml.version>
 
 		<!-- JFreeChart - https://www.jfree.org/jfreechart/ -->
-		<jfreechart.version>1.5.5</jfreechart.version>
+		<jfreechart.version>1.5.6</jfreechart.version>
 		<org.jfree.jfreechart.version>${jfreechart.version}</org.jfree.jfreechart.version>
 
 		<!-- JFreeSVG - https://www.jfree.org/jfreesvg/ -->
-		<jfreesvg.version>3.4.3</jfreesvg.version>
+		<jfreesvg.version>3.4.4</jfreesvg.version>
 		<org.jfree.jfreesvg.version>${jfreesvg.version}</org.jfree.jfreesvg.version>
 
 		<!-- JGraphT - https://github.com/jgrapht/jgrapht -->
@@ -2014,7 +2013,7 @@
 		<jline.version>${jline2.version}</jline.version>
 		<jline.jline.version>${jline.version}</jline.jline.version>
 
-		<jline3.version>3.27.0</jline3.version>
+		<jline3.version>3.30.5</jline3.version>
 		<jline-builtins.version>${jline3.version}</jline-builtins.version>
 		<jline-console.version>${jline3.version}</jline-console.version>
 		<!-- NB: No jline-groovy, because it depends on Groovy v4, but we currently use Groovy v3. -->
@@ -2065,6 +2064,7 @@
 		<org.openjfx.javafx-web.version>${javafx-web.version}</org.openjfx.javafx-web.version>
 
 		<!-- JMockit - https://jmockit.github.io/ -->
+		<!-- NB: 1.49 is the last version with Java 8 support. -->
 		<jmockit.version>1.49</jmockit.version>
 		<org.jmockit.jmockit.version>${jmockit.version}</org.jmockit.jmockit.version>
 
@@ -2081,9 +2081,9 @@
 		<!-- JNR - https://github.com/jnr -->
 		<jffi.version>1.3.13</jffi.version>
 		<jnr-constants.version>0.10.4</jnr-constants.version>
-		<jnr-ffi.version>2.2.16</jnr-ffi.version>
+		<jnr-ffi.version>2.2.17</jnr-ffi.version>
 		<jnr-netdb.version>1.2.0</jnr-netdb.version>
-		<jnr-posix.version>3.1.19</jnr-posix.version>
+		<jnr-posix.version>3.1.20</jnr-posix.version>
 		<com.github.jnr.jffi.version>${jffi.version}</com.github.jnr.jffi.version>
 		<com.github.jnr.jnr-constants.version>${jnr-constants.version}</com.github.jnr.jnr-constants.version>
 		<com.github.jnr.jnr-ffi.version>${jnr-ffi.version}</com.github.jnr.jnr-ffi.version>
@@ -2091,7 +2091,7 @@
 		<com.github.jnr.jnr-posix.version>${jnr-posix.version}</com.github.jnr.jnr-posix.version>
 
 		<!-- Joda-Time - https://www.joda.org/joda-time/ -->
-		<joda-time.version>2.13.0</joda-time.version>
+		<joda-time.version>2.14.0</joda-time.version>
 		<joda-time.joda-time.version>${joda-time.version}</joda-time.joda-time.version>
 
 		<!-- JOCL - http://www.jocl.org -->
@@ -2100,7 +2100,7 @@
 
 		<!-- JogAmp - https://jogamp.org/ -->
 
-		<jogamp.version>2.5.0</jogamp.version>
+		<jogamp.version>2.6.0</jogamp.version>
 
 		<gluegen.version>${jogamp.version}</gluegen.version>
 		<gluegen-rt.version>${jogamp.version}</gluegen-rt.version>
@@ -2136,7 +2136,7 @@
 		<org.joml.joml.version>${joml.version}</org.joml.joml.version>
 
 		<!-- joni - https://github.com/jruby/joni -->
-		<joni.version>2.2.1</joni.version>
+		<joni.version>2.2.6</joni.version>
 		<org.jruby.joni.joni.version>${joni.version}</org.jruby.joni.joni.version>
 
 		<!-- JPedal - http://jpedal.org/ (defunct) -->
@@ -2153,7 +2153,7 @@
 		<com.jcraft.jsch.version>${jsch.version}</com.jcraft.jsch.version>
 
 		<!-- JSON - https://github.com/stleary/JSON-java -->
-		<json.version>20240303</json.version>
+		<json.version>20250517</json.version>
 		<org.json.json.version>${json.version}</org.json.json.version>
 
 		<!-- JUnit 4 - https://junit.org/junit4/ -->
@@ -2161,7 +2161,7 @@
 		<junit.junit.version>${junit.version}</junit.junit.version>
 
 		<!-- JUnit 5 - https://junit.org/junit5/ -->
-		<junit-jupiter.version>5.11.2</junit-jupiter.version>
+		<junit-jupiter.version>5.13.4</junit-jupiter.version>
 		<junit-jupiter-api.version>${junit-jupiter.version}</junit-jupiter-api.version>
 		<junit-jupiter-engine.version>${junit-jupiter.version}</junit-jupiter-engine.version>
 		<junit-jupiter-migrationsupport.version>${junit-jupiter.version}</junit-jupiter-migrationsupport.version>
@@ -2237,7 +2237,7 @@
 		<org.jetbrains.kotlinx.kotlinx-coroutines-core-jvm.version>${kotlinx-coroutines-core-jvm.version}</org.jetbrains.kotlinx.kotlinx-coroutines-core-jvm.version>
 
 		<!-- Kryo - https://github.com/EsotericSoftware/kryo -->
-		<kryo.version>5.6.0</kryo.version>
+		<kryo.version>5.6.2</kryo.version>
 		<minlog.version>1.3.1</minlog.version>
 		<reflectasm.version>1.11.9</reflectasm.version>
 		<com.esotericsoftware.kryo.version>${kryo.version}</com.esotericsoftware.kryo.version>
@@ -2292,13 +2292,13 @@
 		<com.squareup.okhttp3.okhttp.version>${okhttp.version}</com.squareup.okhttp3.okhttp.version>
 
 		<!-- Okio - https://square.github.io/okio/ -->
-		<okio.version>3.9.1</okio.version>
+		<okio.version>3.16.0</okio.version>
 		<okio-jvm.version>${okio.version}</okio-jvm.version>
 		<com.squareup.okio.okio.version>${okio.version}</com.squareup.okio.okio.version>
 		<com.squareup.okio.okio-jvm.version>${okio-jvm.version}</com.squareup.okio.okio-jvm.version>
 
 		<!-- OpenCSV - https://opencsv.sourceforge.net/ -->
-		<opencsv.version>5.9</opencsv.version>
+		<opencsv.version>5.12.0</opencsv.version>
 		<com.opencsv.opencsv.version>${opencsv.version}</com.opencsv.opencsv.version>
 
 		<!-- PerfMark - https://github.com/perfmark/perfmark -->
@@ -2307,15 +2307,15 @@
 		<io.perfmark.perfmark-api.version>${perfmark-api.version}</io.perfmark.perfmark-api.version>
 
 		<!-- picocli - https://picocli.info/ -->
-		<picocli.version>4.7.6</picocli.version>
+		<picocli.version>4.7.7</picocli.version>
 		<info.picocli.picocli.version>${picocli.version}</info.picocli.picocli.version>
 
 		<!-- PostgreSQL JDBC Driver - https://jdbc.postgresql.org/ -->
-		<postgresql.version>42.7.4</postgresql.version>
+		<postgresql.version>42.7.7</postgresql.version>
 		<org.postgresql.postgresql.version>${postgresql.version}</org.postgresql.postgresql.version>
 
 		<!-- Protocol Buffers - https://protobuf.dev/ -->
-		<protobuf.version>4.28.2</protobuf.version>
+		<protobuf.version>4.32.0</protobuf.version>
 		<!--
 		NB: javalite and kotlin-lite have conflicting classes with java
 		and kotlin respectively, so we do not manage those artifacts.
@@ -2328,16 +2328,17 @@
 		<com.google.protobuf.protobuf-kotlin.version>${protobuf-kotlin.version}</com.google.protobuf.protobuf-kotlin.version>
 
 		<!-- RE2/J - https://github.com/google/re2j -->
-		<re2j.version>1.7</re2j.version>
+		<re2j.version>1.8</re2j.version>
 		<com.google.re2j.re2j.version>${re2j.version}</com.google.re2j.re2j.version>
 
 		<!-- reload4j - https://reload4j.qos.ch/ -->
-		<reload4j.version>1.2.25</reload4j.version>
+		<reload4j.version>1.2.26</reload4j.version>
 		<ch.qos.reload4j.reload4j.version>${reload4j.version}</ch.qos.reload4j.reload4j.version>
 
 		<!-- RSyntaxTextArea - https://bobbylight.github.io/RSyntaxTextArea/ -->
 		<rsyntaxtextarea.version>3.6.0</rsyntaxtextarea.version>
 		<autocomplete.version>3.3.2</autocomplete.version>
+		<!-- NB: languagesupport 3.3.0 is the last version compiled for Java 8! -->
 		<languagesupport.version>3.3.0</languagesupport.version>
 		<com.fifesoft.rsyntaxtextarea.version>${rsyntaxtextarea.version}</com.fifesoft.rsyntaxtextarea.version>
 		<com.fifesoft.autocomplete.version>${autocomplete.version}</com.fifesoft.autocomplete.version>
@@ -2361,11 +2362,11 @@
 		<org.slf4j.jcl-over-slf4j.version>${jcl-over-slf4j.version}</org.slf4j.jcl-over-slf4j.version>
 
 		<!-- SnakeYAML - https://bitbucket.org/asomov/snakeyaml -->
-		<snakeyaml.version>2.3</snakeyaml.version>
+		<snakeyaml.version>2.5</snakeyaml.version>
 		<org.yaml.snakeyaml.version>${snakeyaml.version}</org.yaml.snakeyaml.version>
 
 		<!-- SnakeYAML Engine - https://bitbucket.org/asomov/snakeyaml-engine -->
-		<snakeyaml-engine.version>2.8</snakeyaml-engine.version>
+		<snakeyaml-engine.version>2.10</snakeyaml-engine.version>
 		<org.snakeyaml.snakeyaml-engine.version>${snakeyaml-engine.version}</org.snakeyaml.snakeyaml-engine.version>
 
 		<!-- Spring - https://spring.io/ -->
@@ -2396,7 +2397,7 @@
 		<org.tensorflow.proto.version>${proto.version}</org.tensorflow.proto.version>
 
 		<!-- ThreeTen - https://www.threeten.org/ -->
-		<threetenbp.version>1.7.0</threetenbp.version>
+		<threetenbp.version>1.7.2</threetenbp.version>
 		<org.threeten.threetenbp.version>${threetenbp.version}</org.threeten.threetenbp.version>
 
 		<!-- Trove - https://bitbucket.org/trove4j/trove -->
@@ -2413,7 +2414,7 @@
 		<org.tukaani.xz.version>${xz.version}</org.tukaani.xz.version>
 
 		<!-- Zstd-jni - https://github.com/luben/zstd-jni -->
-		<zstd-jni.version>1.5.6-6</zstd-jni.version>
+		<zstd-jni.version>1.5.7-4</zstd-jni.version>
 		<com.github.luben.zstd-jni.version>${zstd-jni.version}</com.github.luben.zstd-jni.version>
 	</properties>
 
@@ -4704,11 +4705,6 @@
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlgraphics</groupId>
-				<artifactId>batik-slideshow</artifactId>
-				<version>${org.apache.xmlgraphics.batik-slideshow.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.xmlgraphics</groupId>
 				<artifactId>batik-squiggle</artifactId>
 				<version>${org.apache.xmlgraphics.batik-squiggle.version}</version>
 			</dependency>
@@ -6852,6 +6848,20 @@
 				<artifactId>jmockit</artifactId>
 				<version>${org.jmockit.jmockit.version}</version>
 				<scope>test</scope>
+				<exclusions>
+					<exclusion>
+						<!--
+						Conflicts with net.sourceforge.findbugs:annotations,
+						which org.openmicroscopy:omero-server:5.6.12 depends on
+						via com.jamonapi:jamon:jar:2.81. It's not ideal that we
+						are excluding the newer spotbugs project here rather
+						than the discontinued findbugs, but for the moment it's
+						the simplest solution to avoiding class conflicts.
+						-->
+						<groupId>com.github.spotbugs</groupId>
+						<artifactId>spotbugs-annotations</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<!-- Mockito - https://site.mockito.org/ -->
