@@ -996,7 +996,7 @@
 		<sc.fiji.bigwarp_fiji.version>${bigwarp_fiji.version}</sc.fiji.bigwarp_fiji.version>
 
 		<!-- MPI-CBG - https://github.com/axtimwalde/mpicbg -->
-		<mpicbg.version>1.6.0</mpicbg.version>
+		<mpicbg.version>1.6.5</mpicbg.version>
 		<mpicbg_.version>${mpicbg.version}</mpicbg_.version>
 		<mpicbg.mpicbg.version>${mpicbg.version}</mpicbg.mpicbg.version>
 		<mpicbg.mpicbg_.version>${mpicbg_.version}</mpicbg.mpicbg_.version>
@@ -1187,7 +1187,7 @@
 
 		<!-- BigStitcher - https://imagej.net/plugins/bigstitcher -->
 		<BigStitcher.version>2.5.1</BigStitcher.version>
-		<multiview-reconstruction.version>6.1.0</multiview-reconstruction.version>
+		<multiview-reconstruction.version>7.0.6</multiview-reconstruction.version>
 		<multiview-simulation.version>0.2.0</multiview-simulation.version>
 		<net.preibisch.BigStitcher.version>${BigStitcher.version}</net.preibisch.BigStitcher.version>
 		<net.preibisch.multiview-reconstruction.version>${multiview-reconstruction.version}</net.preibisch.multiview-reconstruction.version>
