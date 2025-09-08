@@ -138,6 +138,11 @@
         <ignoreVersion type="regex">.*-(alpha|beta|rc)-?[0-9]+</ignoreVersion>
       </ignoreVersions>
     </rule>
+    <rule groupId="org.apache.logging.log4j" artifactId="*" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion type="regex">.*-(alpha|beta|rc)-?[0-9]+</ignoreVersion>
+      </ignoreVersions>
+    </rule>
     <rule groupId="org.apache.maven" artifactId="maven-core" comparisonMethod="maven">
       <ignoreVersions>
         <ignoreVersion type="regex">.*-(alpha|beta|rc)-?[0-9]+</ignoreVersion>
@@ -185,7 +190,7 @@
     </rule>
     <rule groupId="org.junit.jupiter" artifactId="*" comparisonMethod="maven">
       <ignoreVersions>
-        <ignoreVersion type="regex">.*-(alpha|beta|rc|M)-?[0-9]+</ignoreVersion>
+        <ignoreVersion type="regex">.*-(alpha|beta|rc|RC|M)-?[0-9]+</ignoreVersion>
       </ignoreVersions>
     </rule>
     <rule groupId="org.junit.vintage" artifactId="*" comparisonMethod="maven">
