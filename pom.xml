@@ -626,7 +626,7 @@
 		<!-- SCIFIO - https://github.com/scifio -->
 
 		<!-- SCIFIO - https://github.com/scifio/scifio -->
-		<scifio.version>0.46.0</scifio.version>
+		<scifio.version>0.47.0</scifio.version>
 		<io.scif.scifio.version>${scifio.version}</io.scif.scifio.version>
 
 		<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
@@ -646,7 +646,7 @@
 		<io.scif.scifio-jai-imageio.version>${scifio-jai-imageio.version}</io.scif.scifio-jai-imageio.version>
 
 		<!-- SCIFIO Labeling - https://github.com/scifio/scifio-labeling -->
-		<scifio-labeling.version>0.3.1</scifio-labeling.version>
+		<scifio-labeling.version>0.3.2</scifio-labeling.version>
 		<io.scif.scifio-labeling.version>${scifio-labeling.version}</io.scif.scifio-labeling.version>
 
 		<!-- SCIFIO-LifeSci - https://github.com/scifio/scifio-lifesci -->
@@ -757,7 +757,7 @@
 		<Fiji_Package_Maker.version>2.1.1</Fiji_Package_Maker.version>
 		<sc.fiji.Fiji_Package_Maker.version>${Fiji_Package_Maker.version}</sc.fiji.Fiji_Package_Maker.version>
 
-		<Fiji_Plugins.version>3.1.3</Fiji_Plugins.version>
+		<Fiji_Plugins.version>3.2.0</Fiji_Plugins.version>
 		<sc.fiji.Fiji_Plugins.version>${Fiji_Plugins.version}</sc.fiji.Fiji_Plugins.version>
 
 		<FilamentDetector.version>2.0.1</FilamentDetector.version>
@@ -1028,7 +1028,7 @@
 		<sc.fiji.bigdataviewer_fiji.version>${bigdataviewer_fiji.version}</sc.fiji.bigdataviewer_fiji.version>
 
 		<!-- BigDataViewer N5 - https://github.com/bigdataviewer/bigdataviewer_n5 -->
-		<bigdataviewer-n5.version>1.0.1</bigdataviewer-n5.version>
+		<bigdataviewer-n5.version>1.0.2</bigdataviewer-n5.version>
 		<org.bigdataviewer.bigdataviewer-n5.version>${bigdataviewer-n5.version}</org.bigdataviewer.bigdataviewer-n5.version>
 
 		<!-- BigVolumeViewer - https://github.com/bigdataviewer/bigvolumeviewer-core -->
@@ -1137,7 +1137,7 @@
 		<org.janelia.saalfeldlab.n5-hdf5.version>${n5-hdf5.version}</org.janelia.saalfeldlab.n5-hdf5.version>
 
 		<!-- N5 ImageJ Bindings - https://github.com/saalfeldlab/n5-ij -->
-		<n5-ij.version>4.4.0</n5-ij.version>
+		<n5-ij.version>4.4.1</n5-ij.version>
 		<org.janelia.saalfeldlab.n5-ij.version>${n5-ij.version}</org.janelia.saalfeldlab.n5-ij.version>
 
 		<!-- N5 ImgLib2 Bindings - https://github.com/saalfeldlab/n5-imglib2 -->
@@ -1163,7 +1163,7 @@
 		<!-- Fiji-adjacent projects (available from ImageJ update sites) -->
 
 		<!-- MorphoLibJ - https://imagej.net/plugins/morpholibj -->
-		<MorphoLibJ.version>1.6.3</MorphoLibJ.version>
+		<MorphoLibJ.version>1.6.4</MorphoLibJ.version>
 		<MorphoLibJ_.version>${MorphoLibJ.version}</MorphoLibJ_.version>
 		<fr.inra.ijpb.MorphoLibJ_.version>${MorphoLibJ_.version}</fr.inra.ijpb.MorphoLibJ_.version>
 
@@ -1186,7 +1186,7 @@
 		<net.haesleinhuepf.clijx-weka_.version>${clijx-weka_.version}</net.haesleinhuepf.clijx-weka_.version>
 
 		<!-- BigStitcher - https://imagej.net/plugins/bigstitcher -->
-		<BigStitcher.version>2.5.1</BigStitcher.version>
+		<BigStitcher.version>2.5.2</BigStitcher.version>
 		<multiview-reconstruction.version>7.0.6</multiview-reconstruction.version>
 		<multiview-simulation.version>0.2.0</multiview-simulation.version>
 		<net.preibisch.BigStitcher.version>${BigStitcher.version}</net.preibisch.BigStitcher.version>
@@ -3936,6 +3936,16 @@
 				<groupId>org.openmicroscopy</groupId>
 				<artifactId>ome-codecs</artifactId>
 				<version>${org.openmicroscopy.ome-codecs.version}</version>
+				<exclusions>
+					<exclusion>
+						<!--
+						Conflicts with com.github.jai-imageio:jai-imageio-jpeg2000,
+						which io.scif:scifio depends on as of version 0.47.0.
+						-->
+						<groupId>org.openmicroscopy</groupId>
+						<artifactId>ome-jai</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<!-- OME Common Java - https://github.com/ome/ome-common-java -->
