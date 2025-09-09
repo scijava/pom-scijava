@@ -1559,6 +1559,10 @@
 		<checker-qual.version>3.48.0</checker-qual.version>
 		<org.checkerframework.checker-qual.version>${checker-qual.version}</org.checkerframework.checker-qual.version>
 
+		<!-- ClassGraph - https://github.com/classgraph/classgraph -->
+		<classgraph.version>4.8.181</classgraph.version>
+		<io.github.classgraph.classgraph.version>${classgraph.version}</io.github.classgraph.classgraph.version>
+
 		<!-- Commons BeanUtils - https://commons.apache.org/proper/commons-beanutils/ -->
 		<commons-beanutils.version>1.9.4</commons-beanutils.version>
 		<commons-beanutils.commons-beanutils.version>${commons-beanutils.version}</commons-beanutils.commons-beanutils.version>
@@ -4798,6 +4802,13 @@
 				<groupId>org.checkerframework</groupId>
 				<artifactId>checker-qual</artifactId>
 				<version>${org.checkerframework.checker-qual.version}</version>
+			</dependency>
+
+			<!-- ClassGraph - https://github.com/classgraph/classgraph -->
+			<dependency>
+				<groupId>io.github.classgraph</groupId>
+				<artifactId>classgraph</artifactId>
+				<version>${io.github.classgraph.classgraph.version}</version>
 			</dependency>
 
 			<!-- Commons BeanUtils - https://commons.apache.org/proper/commons-beanutils/ -->
