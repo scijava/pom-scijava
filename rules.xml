@@ -9,11 +9,26 @@
         <ignoreVersion>3.0ea8</ignoreVersion>
       </ignoreVersions>
     </rule>
+    <rule groupId="args4j" artifactId="args4j" comparisonMethod="maven">
+      <ignoreVersions>
+        <!--
+        As of version 2.37, Args4j requires Java 11.
+        We cannot upgrade past 2.33 while we still support Java 8.
+        -->
+        <ignoreVersion type="regex">^(?!2\.33).*</ignoreVersion>
+      </ignoreVersions>
+    </rule>
     <rule groupId="ch.qos.logback" artifactId="*" comparisonMethod="maven">
       <ignoreVersions>
         <ignoreVersion type="regex">.*-(alpha|beta|rc)-?[0-9]+</ignoreVersion>
-        <!-- NB: logback-classic does not ship an SLF4J binding after 1.2.x. -->
-        <ignoreVersion type="regex">1\.[34].*</ignoreVersion>
+        <!--
+        As of version 1.4.0, Logback requires Java 11.
+        We cannot upgrade past 1.3.x while we still support Java 8.
+        Note: logback-classic 1.2.13 is the last version to use SLF4J v1;
+        logback-classic 1.3.0+ uses SLF4J v2, which works differently; see:
+        https://www.slf4j.org/faq.html#changesInVersion200
+        -->
+        <ignoreVersion type="regex">^(?!1\.3\.).*</ignoreVersion>
       </ignoreVersions>
     </rule>
     <rule groupId="com.fasterxml.jackson.core" artifactId="*" comparisonMethod="maven">
@@ -34,6 +49,15 @@
     <rule groupId="com.jcraft" artifactId="jzlib" comparisonMethod="maven">
       <ignoreVersions>
         <ignoreVersion type="regex">.*-kohsuke-?[0-9]+</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="com.fifesoft" artifactId="languagesupport" comparisonMethod="maven">
+      <ignoreVersions>
+        <!--
+        As of version 3.4.0, Fifesoft LanguageSupport requires Java 11.
+        We cannot upgrade past 3.3.x while we still support Java 8.
+        -->
+        <ignoreVersion type="regex">^(?!3\.3\.).*</ignoreVersion>
       </ignoreVersions>
     </rule>
     <rule groupId="com.miglayout" artifactId="*" comparisonMethod="maven">
@@ -136,6 +160,20 @@
     <rule groupId="org.apache.groovy" artifactId="*" comparisonMethod="maven">
       <ignoreVersions>
         <ignoreVersion type="regex">.*-(alpha|beta|rc)-?[0-9]+</ignoreVersion>
+        <!--
+        As of version 5, Groovy requires Java 11.
+        We cannot upgrade past 4.x while we still support Java 8.
+        -->
+        <ignoreVersion type="regex">^(?!4\.).*</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="org.apache.jackrabbit" artifactId="jackrabbit-webdav" comparisonMethod="maven">
+      <ignoreVersions>
+        <!--
+        As of version 2.21.23, Jackrabbit WebDAV requires Java 11.
+        We cannot upgrade past 2.21.22 while we still support Java 8.
+        -->
+        <ignoreVersion type="regex">^(?!2\.21\.22).*</ignoreVersion>
       </ignoreVersions>
     </rule>
     <rule groupId="org.apache.logging.log4j" artifactId="*" comparisonMethod="maven">
@@ -148,9 +186,14 @@
         <ignoreVersion type="regex">.*-(alpha|beta|rc)-?[0-9]+</ignoreVersion>
       </ignoreVersions>
     </rule>
-    <rule groupId="org.eclipse.collections" artifactId="eclipse-collections" comparisonMethod="maven">
+    <rule groupId="org.eclipse.collections" artifactId="*" comparisonMethod="maven">
       <ignoreVersions>
         <ignoreVersion type="regex">.*\.M[0-9]+</ignoreVersion>
+        <!--
+        As of version 12, Eclipse Collections requires Java 11.
+        We cannot upgrade past 11.x while we still support Java 8.
+        -->
+        <ignoreVersion type="regex">^(?!11\.).*</ignoreVersion>
       </ignoreVersions>
     </rule>
     <rule groupId="org.eclipse.jetty" artifactId="jetty-*" comparisonMethod="maven">
@@ -162,6 +205,15 @@
         <ignoreVersion type="regex">^(?!9\.).*</ignoreVersion>
         <ignoreVersion type="regex">.*[-\.](alpha|beta|rc)-?[0-9]+</ignoreVersion>
         <ignoreVersion type="regex">.*\.RC[0-9]+</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="org.ejml" artifactId="*" comparisonMethod="maven">
+      <ignoreVersions>
+        <!--
+        As of version 1.42, EJML requires Java 11.
+        We cannot upgrade past 1.41 while we still support Java 8.
+        -->
+        <ignoreVersion type="regex">^(?!1\.41).*</ignoreVersion>
       </ignoreVersions>
     </rule>
     <rule groupId="org.janelia" artifactId="*" comparisonMethod="maven">
@@ -188,6 +240,38 @@
         <ignoreVersion type="regex">^(?!1\.4\.).*</ignoreVersion>
       </ignoreVersions>
     </rule>
+    <rule groupId="org.jmockit" artifactId="jmockit" comparisonMethod="maven">
+      <ignoreVersions>
+        <!--
+        As of version 1.50, JMockit requires Java 17.
+        We cannot upgrade past 1.49 while we still support Java 8.
+        -->
+        <ignoreVersion type="regex">^(?!1\.49).*</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="org.morphonets" artifactId="SNT" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion type="regex">.*-pre.*</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="org.ojalgo" artifactId="ojalgo" comparisonMethod="maven">
+      <ignoreVersions>
+        <!--
+        As of version 52.0.0, ojAlgo requires Java 11.
+        We cannot upgrade past 51.x while we still support Java 8.
+        -->
+        <ignoreVersion type="regex">^(?!51\.).*</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="org.openmicroscopy" artifactId="omero-gateway" comparisonMethod="maven">
+      <ignoreVersions>
+        <!--
+        As of version 5.10.0, OMERO Gateway requires Java 11.
+        We cannot upgrade past 5.9.x while we still support Java 8.
+        -->
+        <ignoreVersion type="regex">^(?!5\.9\.).*</ignoreVersion>
+      </ignoreVersions>
+    </rule>
     <rule groupId="org.junit.jupiter" artifactId="*" comparisonMethod="maven">
       <ignoreVersions>
         <ignoreVersion type="regex">.*-(alpha|beta|rc|RC|M)-?[0-9]+</ignoreVersion>
@@ -195,7 +279,7 @@
     </rule>
     <rule groupId="org.junit.vintage" artifactId="*" comparisonMethod="maven">
       <ignoreVersions>
-        <ignoreVersion type="regex">.*-(alpha|beta|rc|M)-?[0-9]+</ignoreVersion>
+        <ignoreVersion type="regex">.*-(alpha|beta|rc|RC|M)-?[0-9]+</ignoreVersion>
       </ignoreVersions>
     </rule>
     <rule groupId="org.mockito" artifactId="mockito-core" comparisonMethod="maven">
@@ -205,6 +289,16 @@
         We cannot upgrade past 4.x while we still support Java 8.
         -->
         <ignoreVersion type="regex">^(?!4\.).*</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="org.openjfx" artifactId="javafx-*" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion type="regex">.*-ea.*</ignoreVersion>
+        <!--
+        As of version 24, OpenJFX requires Java 22.
+        We cannot upgrade past 23.x while we still support Java 21.
+        -->
+        <ignoreVersion type="regex">^(?!23\.).*</ignoreVersion>
       </ignoreVersions>
     </rule>
     <rule groupId="org.openmicroscopy" artifactId="*" comparisonMethod="maven">
