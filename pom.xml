@@ -333,13 +333,33 @@
 		<scijava-cache.version>0.1.2</scijava-cache.version>
 		<org.scijava.scijava-cache.version>${scijava-cache.version}</org.scijava.scijava-cache.version>
 
+		<!-- SciJava Collections - https://github.com/scijava/scijava-->
+		<scijava-collections.version>1.0.0</scijava-collections.version>
+		<org.scijava.scijava-collections.version>${scijava-collections.version}</org.scijava.scijava-collections.version>
+
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
 		<scijava-common.version>2.99.2</scijava-common.version>
 		<org.scijava.scijava-common.version>${scijava-common.version}</org.scijava.scijava-common.version>
 
+		<!-- SciJava Common3 - https://github.com/scijava/scijava -->
+		<scijava-common3.version>1.0.0</scijava-common3.version>
+		<org.scijava.scijava-common3.version>${scijava-common3.version}</org.scijava.scijava-common3.version>
+
+		<!-- SciJava Concurrent - https://github.com/scijava/scijava -->
+		<scijava-concurrent.version>1.0.0</scijava-concurrent.version>
+		<org.scijava.scijava-concurrent.version>${scijava-concurrent.version}</org.scijava.scijava-concurrent.version>
+
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
 		<scijava-config.version>2.0.3</scijava-config.version>
 		<org.scijava.scijava-config.version>${scijava-config.version}</org.scijava.scijava-config.version>
+
+		<!-- SciJava Discovery - https://github.com/scijava/scijava -->
+		<scijava-discovery.version>1.0.0</scijava-discovery.version>
+		<org.scijava.scijava-discovery.version>${scijava-discovery.version}</org.scijava.scijava-discovery.version>
+
+		<!-- SciJava Function - https://github.com/scijava/scijava -->
+		<scijava-function.version>1.0.0</scijava-function.version>
+		<org.scijava.scijava-function.version>${scijava-function.version}</org.scijava.scijava-function.version>
 
 		<!-- SciJava Grab - https://github.com/scijava/scijava-grab -->
 		<scijava-grab.version>0.1.2</scijava-grab.version>
@@ -353,6 +373,10 @@
 		<scijava-java3d.version>0.1.0</scijava-java3d.version>
 		<org.scijava.scijava-java3d.version>${scijava-java3d.version}</org.scijava.scijava-java3d.version>
 
+		<!-- SciJava Legacy - https://github.com/scijava/scijava -->
+		<scijava-legacy.version>1.0.0</scijava-legacy.version>
+		<org.scijava.scijava-legacy.version>${scijava-legacy.version}</org.scijava.scijava-legacy.version>
+
 		<!-- SciJava Listeners - https://github.com/scijava/scijava-listeners -->
 		<scijava-listeners.version>1.0.0-beta-3</scijava-listeners.version>
 		<org.scijava.scijava-listeners.version>${scijava-listeners.version}</org.scijava.scijava-listeners.version>
@@ -360,6 +384,38 @@
 		<!-- SciJava SLF4J Logging - https://github.com/scijava/scijava-log-slf4j -->
 		<scijava-log-slf4j.version>1.0.6</scijava-log-slf4j.version>
 		<org.scijava.scijava-log-slf4j.version>${scijava-log-slf4j.version}</org.scijava.scijava-log-slf4j.version>
+
+		<!-- SciJava Meta - https://github.com/scijava/scijava -->
+		<scijava-meta.version>1.0.0</scijava-meta.version>
+		<org.scijava.scijava-meta.version>${scijava-meta.version}</org.scijava.scijava-meta.version>
+
+		<!-- SciJava Ops API - https://github.com/scijava/scijava -->
+		<scijava-ops-api.version>1.0.0</scijava-ops-api.version>
+		<org.scijava.scijava-ops-api.version>${scijava-ops-api.version}</org.scijava.scijava-ops-api.version>
+
+		<!-- SciJava Ops Engine - https://github.com/scijava/scijava -->
+		<scijava-ops-engine.version>1.0.0</scijava-ops-engine.version>
+		<org.scijava.scijava-ops-engine.version>${scijava-ops-engine.version}</org.scijava.scijava-ops-engine.version>
+
+		<!-- SciJava Ops FLIM - https://github.com/scijava/scijava -->
+		<scijava-ops-flim.version>1.0.0</scijava-ops-flim.version>
+		<org.scijava.scijava-ops-flim.version>${scijava-ops-flim.version}</org.scijava.scijava-ops-flim.version>
+
+		<!-- SciJava Ops Image - https://github.com/scijava/scijava -->
+		<scijava-ops-image.version>1.0.0</scijava-ops-image.version>
+		<org.scijava.scijava-ops-image.version>${scijava-ops-image.version}</org.scijava.scijava-ops-image.version>
+
+		<!-- SciJava Ops Indexer - https://github.com/scijava/scijava -->
+		<scijava-ops-indexer.version>1.0.0</scijava-ops-indexer.version>
+		<org.scijava.scijava-ops-indexer.version>${scijava-ops-indexer.version}</org.scijava.scijava-ops-indexer.version>
+
+		<!-- SciJava Ops OpenCV - https://github.com/scijava/scijava -->
+		<scijava-ops-opencv.version>1.0.0</scijava-ops-opencv.version>
+		<org.scijava.scijava-ops-opencv.version>${scijava-ops-opencv.version}</org.scijava.scijava-ops-opencv.version>
+
+		<!-- SciJava Ops SPI - https://github.com/scijava/scijava -->
+		<scijava-ops-spi.version>1.0.0</scijava-ops-spi.version>
+		<org.scijava.scijava-ops-spi.version>${scijava-ops-spi.version}</org.scijava.scijava-ops-spi.version>
 
 		<!-- SciJava Optional - https://github.com/scijava/scijava-optional -->
 		<scijava-optional.version>1.0.1</scijava-optional.version>
@@ -385,13 +441,37 @@
 		<scijava-plugins-text-plain.version>0.1.4</scijava-plugins-text-plain.version>
 		<org.scijava.scijava-plugins-text-plain.version>${scijava-plugins-text-plain.version}</org.scijava.scijava-plugins-text-plain.version>
 
+		<!-- SciJava Priority - https://github.com/scijava/scijava -->
+		<scijava-priority.version>1.0.0</scijava-priority.version>
+		<org.scijava.scijava-priority.version>${scijava-priority.version}</org.scijava.scijava-priority.version>
+
+		<!-- SciJava Progress - https://github.com/scijava/scijava -->
+		<scijava-progress.version>1.0.0</scijava-progress.version>
+		<org.scijava.scijava-progress.version>${scijava-progress.version}</org.scijava.scijava-progress.version>
+
 		<!-- SciJava Search - https://github.com/scijava/scijava-search -->
 		<scijava-search.version>3.0.0</scijava-search.version>
 		<org.scijava.scijava-search.version>${scijava-search.version}</org.scijava.scijava-search.version>
 
+		<!-- SciJava Struct - https://github.com/scijava/scijava -->
+		<scijava-struct.version>1.0.0</scijava-struct.version>
+		<org.scijava.scijava-struct.version>${scijava-struct.version}</org.scijava.scijava-struct.version>
+
 		<!-- SciJava Table - https://github.com/scijava/scijava-table -->
 		<scijava-table.version>1.0.2</scijava-table.version>
 		<org.scijava.scijava-table.version>${scijava-table.version}</org.scijava.scijava-table.version>
+
+		<!-- SciJava Taglets - https://github.com/scijava/scijava -->
+		<scijava-taglets.version>1.0.0</scijava-taglets.version>
+		<org.scijava.scijava-taglets.version>${scijava-taglets.version}</org.scijava.scijava-taglets.version>
+
+		<!-- SciJava Test Util - https://github.com/scijava/scijava -->
+		<scijava-testutil.version>1.0.0</scijava-testutil.version>
+		<org.scijava.scijava-testutil.version>${scijava-testutil.version}</org.scijava.scijava-testutil.version>
+
+		<!-- SciJava Types - https://github.com/scijava/scijava -->
+		<scijava-types.version>1.0.0</scijava-types.version>
+		<org.scijava.scijava-types.version>${scijava-types.version}</org.scijava.scijava-types.version>
 
 		<!-- SciJava UI: AWT - https://github.com/scijava/scijava-ui-awt -->
 		<scijava-ui-awt.version>0.1.7</scijava-ui-awt.version>
@@ -2464,6 +2544,13 @@
 				<version>${org.scijava.scijava-cache.version}</version>
 			</dependency>
 
+			<!-- SciJava Collections - https://github.com/scijava/scijava -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-collections</artifactId>
+				<version>${org.scijava.scijava-collections.version}</version>
+			</dependency>
+
 			<!-- SciJava Common - https://github.com/scijava/scijava-common -->
 			<dependency>
 				<groupId>org.scijava</groupId>
@@ -2471,11 +2558,39 @@
 				<version>${org.scijava.scijava-common.version}</version>
 			</dependency>
 
+			<!-- SciJava Common3 - https://github.com/scijava/scijava -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-common3</artifactId>
+				<version>${org.scijava.scijava-common3.version}</version>
+			</dependency>
+
+			<!-- SciJava Concurrent - https://github.com/scijava/scijava -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-concurrent</artifactId>
+				<version>${org.scijava.scijava-concurrent.version}</version>
+			</dependency>
+
 			<!-- SciJava Config - https://github.com/scijava/scijava-config -->
 			<dependency>
 				<groupId>org.scijava</groupId>
 				<artifactId>scijava-config</artifactId>
 				<version>${org.scijava.scijava-config.version}</version>
+			</dependency>
+
+			<!-- SciJava Discovery - https://github.com/scijava/scijava -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-discovery</artifactId>
+				<version>${org.scijava.scijava-discovery.version}</version>
+			</dependency>
+
+			<!-- SciJava Function - https://github.com/scijava/scijava -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-function</artifactId>
+				<version>${org.scijava.scijava-function.version}</version>
 			</dependency>
 
 			<!-- SciJava Grab - https://github.com/scijava/scijava-grab -->
@@ -2499,6 +2614,13 @@
 				<version>${org.scijava.scijava-java3d.version}</version>
 			</dependency>
 
+			<!-- SciJava Legacy - https://github.com/scijava/scijava -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-legacy</artifactId>
+				<version>${org.scijava.scijava-legacy.version}</version>
+			</dependency>
+
 			<!-- SciJava Listeners - https://github.com/scijava/scijava-listeners -->
 			<dependency>
 				<groupId>org.scijava</groupId>
@@ -2511,6 +2633,62 @@
 				<groupId>org.scijava</groupId>
 				<artifactId>scijava-log-slf4j</artifactId>
 				<version>${org.scijava.scijava-log-slf4j.version}</version>
+			</dependency>
+
+			<!-- SciJava Meta - https://github.com/scijava/scijava -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-meta</artifactId>
+				<version>${org.scijava.scijava-meta.version}</version>
+			</dependency>
+
+			<!-- SciJava Ops API - https://github.com/scijava/scijava -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-ops-api</artifactId>
+				<version>${org.scijava.scijava-ops-api.version}</version>
+			</dependency>
+
+			<!-- SciJava Ops Engine - https://github.com/scijava/scijava -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-ops-engine</artifactId>
+				<version>${org.scijava.scijava-ops-engine.version}</version>
+			</dependency>
+
+			<!-- SciJava Ops FLIM - https://github.com/scijava/scijava -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-ops-flim</artifactId>
+				<version>${org.scijava.scijava-ops-flim.version}</version>
+			</dependency>
+
+			<!-- SciJava Ops Image - https://github.com/scijava/scijava -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-ops-image</artifactId>
+				<version>${org.scijava.scijava-ops-image.version}</version>
+			</dependency>
+
+			<!-- SciJava Ops Indexer - https://github.com/scijava/scijava -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-ops-indexer</artifactId>
+				<version>${org.scijava.scijava-ops-indexer.version}</version>
+			</dependency>
+
+			<!-- SciJava Ops OpenCV - https://github.com/scijava/scijava -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-ops-opencv</artifactId>
+				<version>${org.scijava.scijava-ops-opencv.version}</version>
+			</dependency>
+
+			<!-- SciJava Ops SPI - https://github.com/scijava/scijava -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-ops-spi</artifactId>
+				<version>${org.scijava.scijava-ops-spi.version}</version>
 			</dependency>
 
 			<!-- SciJava Optional - https://github.com/scijava/scijava-optional -->
@@ -2555,6 +2733,20 @@
 				<version>${org.scijava.scijava-plugins-text-plain.version}</version>
 			</dependency>
 
+			<!-- SciJava Priority - https://github.com/scijava/scijava -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-priority</artifactId>
+				<version>${org.scijava.scijava-priority.version}</version>
+			</dependency>
+
+			<!-- SciJava Progress - https://github.com/scijava/scijava -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-progress</artifactId>
+				<version>${org.scijava.scijava-progress.version}</version>
+			</dependency>
+
 			<!-- SciJava Search - https://github.com/scijava/scijava-search -->
 			<dependency>
 				<groupId>org.scijava</groupId>
@@ -2562,11 +2754,39 @@
 				<version>${org.scijava.scijava-search.version}</version>
 			</dependency>
 
+			<!-- SciJava Struct - https://github.com/scijava/scijava -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-struct</artifactId>
+				<version>${org.scijava.scijava-struct.version}</version>
+			</dependency>
+
 			<!-- SciJava Table - https://github.com/scijava/scijava-table -->
 			<dependency>
 				<groupId>org.scijava</groupId>
 				<artifactId>scijava-table</artifactId>
 				<version>${org.scijava.scijava-table.version}</version>
+			</dependency>
+
+			<!-- SciJava Taglets - https://github.com/scijava/scijava -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-taglets</artifactId>
+				<version>${org.scijava.scijava-taglets.version}</version>
+			</dependency>
+
+			<!-- SciJava Test Util - https://github.com/scijava/scijava -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-testutil</artifactId>
+				<version>${org.scijava.scijava-testutil.version}</version>
+			</dependency>
+
+			<!-- SciJava Types - https://github.com/scijava/scijava -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-types</artifactId>
+				<version>${org.scijava.scijava-types.version}</version>
 			</dependency>
 
 			<!-- SciJava UI: AWT - https://github.com/scijava/scijava-ui-awt -->
