@@ -27,10 +27,6 @@ ignoredArtifacts = [
     # because it has a module-info.java, so skip it until the
     # component collection is updated from Java 8 to Java 11.
     'ij',
-    # TEMP: The original ImageJ introduced changes in
-    # 1.54m/1.54n/1.54p that breaks some downstream tests.
-    # Disable them till we have time to address the issue.
-    'ij1-patcher', 'imagej-legacy',
     # TEMP: Skip components within multi-module reactors.
     # Neither melting-pot.sh nor release-version.sh understand
     # multi-module repositories; release-version.sh needs to learn
