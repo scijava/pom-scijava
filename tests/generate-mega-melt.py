@@ -21,10 +21,6 @@ depList = deps.getElementsByTagName('dependency')
 
 # Artifacts to exclude from the mega melt.
 ignoredArtifacts = [
-    # TEMP: The SNT project needs a new release without the
-    # obsolete scijava-plugins-io-table dependency.
-    'SNT',
-
     # TEMP: Exclude org.bytedeco:hdf5 until cisd:jhdf5 is gone.
     'hdf5',
     # TEMP: The original ImageJ requires Java 9+ to compile,
@@ -76,6 +72,7 @@ ignoredArtifacts = [
     'javafx-media',
     'javafx-swing',
     'javafx-web',
+    'SNT',
     # NB: Skip closed-source artifacts.
     'bonej-plus',
     # NB: The following artifacts have messy dependency trees.
