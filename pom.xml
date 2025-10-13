@@ -2561,16 +2561,6 @@
 			</dependency>
 			<dependency>
 				<groupId>org.scijava</groupId>
-				<artifactId>scijava-taglets</artifactId>
-				<version>${org.scijava.scijava-taglets.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.scijava</groupId>
-				<artifactId>scijava-testutil</artifactId>
-				<version>${org.scijava.scijava-testutil.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.scijava</groupId>
 				<artifactId>scijava-types</artifactId>
 				<version>${org.scijava.scijava-types.version}</version>
 			</dependency>
