@@ -35,6 +35,38 @@ ignoredArtifacts = [
     # 1.54m/1.54n/1.54p that breaks some downstream tests.
     # Disable them till we have time to address the issue.
     'ij1-patcher', 'imagej-legacy',
+    # TEMP: Skip components within multi-module reactors.
+    # Neither melting-pot.sh nor release-version.sh understand
+    # multi-module repositories; release-version.sh needs to learn
+    # how to tag and release individual components from multi-module
+    # repos, so that when melting-pot.sh shallow clones the repo at
+    # that tag and invokes a build, it will be building only the
+    # released component as it does with single-component repos.
+    'scijava-collections',
+    'scijava-common3',
+    'scijava-concurrent',
+    'scijava-discovery-test',
+    'scijava-discovery',
+    'scijava-function',
+    'scijava-legacy',
+    'scijava-meta',
+    'scijava-ops-api',
+    'scijava-ops-benchmarks',
+    'scijava-ops-engine',
+    'scijava-ops-ext-parser',
+    'scijava-ops-flim',
+    'scijava-ops-image',
+    'scijava-ops-indexer',
+    'scijava-ops-opencv',
+    'scijava-ops-spi',
+    'scijava-ops-tutorial',
+    'scijava-priority',
+    'scijava-progress',
+    'scijava-struct',
+    'scijava-taglets',
+    'scijava-testutil',
+    'scijava-types',
+    'mpicbg', 'mpicbg_',
     # NB: Skip artifacts requiring minimum Java version >8.
     'algart-tiff',
     'javafx-base',
