@@ -2125,8 +2125,7 @@
 		<jogamp-java3d.version>1.7.2</jogamp-java3d.version>
 		<java3d-core.version>${jogamp-java3d.version}</java3d-core.version>
 		<java3d-utils.version>${jogamp-java3d.version}</java3d-utils.version>
-		<!-- TEMP: Avoid short name clash with org.scijava:vecmath. -->
-		<!--<vecmath.version>${jogamp-java3d.version}</vecmath.version>-->
+		<vecmath.version>${jogamp-java3d.version}</vecmath.version>
 		<org.jogamp.java3d.java3d-core.version>${java3d-core.version}</org.jogamp.java3d.java3d-core.version>
 		<org.jogamp.java3d.java3d-utils.version>${java3d-utils.version}</org.jogamp.java3d.java3d-utils.version>
 		<org.jogamp.java3d.vecmath.version>${jogamp-java3d.version}</org.jogamp.java3d.vecmath.version>
