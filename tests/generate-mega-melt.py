@@ -21,20 +21,44 @@ depList = deps.getElementsByTagName('dependency')
 
 # Artifacts to exclude from the mega melt.
 ignoredArtifacts = [
-    # TEMP: The SNT project needs a new release without the
-    # obsolete scijava-plugins-io-table dependency.
-    'SNT',
-
     # TEMP: Exclude org.bytedeco:hdf5 until cisd:jhdf5 is gone.
     'hdf5',
     # TEMP: The original ImageJ requires Java 9+ to compile,
     # because it has a module-info.java, so skip it until the
     # component collection is updated from Java 8 to Java 11.
     'ij',
-    # TEMP: The original ImageJ introduced changes in
-    # 1.54m/1.54n/1.54p that breaks some downstream tests.
-    # Disable them till we have time to address the issue.
-    'ij1-patcher', 'imagej-legacy',
+    # TEMP: Skip components within multi-module reactors.
+    # Neither melting-pot.sh nor release-version.sh understand
+    # multi-module repositories; release-version.sh needs to learn
+    # how to tag and release individual components from multi-module
+    # repos, so that when melting-pot.sh shallow clones the repo at
+    # that tag and invokes a build, it will be building only the
+    # released component as it does with single-component repos.
+    'scijava-collections',
+    'scijava-common3',
+    'scijava-concurrent',
+    'scijava-discovery-test',
+    'scijava-discovery',
+    'scijava-function',
+    'scijava-legacy',
+    'scijava-meta',
+    'scijava-ops-api',
+    'scijava-ops-benchmarks',
+    'scijava-ops-engine',
+    'scijava-ops-ext-parser',
+    'scijava-ops-flim',
+    'scijava-ops-image',
+    'scijava-ops-indexer',
+    'scijava-ops-opencv',
+    'scijava-ops-spi',
+    'scijava-ops-tutorial',
+    'scijava-priority',
+    'scijava-progress',
+    'scijava-struct',
+    'scijava-taglets',
+    'scijava-testutil',
+    'scijava-types',
+    'mpicbg', 'mpicbg_',
     # NB: Skip artifacts requiring minimum Java version >8.
     'algart-tiff',
     'javafx-base',
@@ -44,6 +68,7 @@ ignoredArtifacts = [
     'javafx-media',
     'javafx-swing',
     'javafx-web',
+    'SNT',
     # NB: Skip closed-source artifacts.
     'bonej-plus',
     # NB: The following artifacts have messy dependency trees.
