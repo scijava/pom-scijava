@@ -492,7 +492,7 @@
 		<org.scijava.scripting-matlab.version>${scripting-matlab.version}</org.scijava.scripting-matlab.version>
 
 		<!-- Scripting: Python - https://github.com/scijava/scripting-python -->
-		<scripting-python.version>0.4.0</scripting-python.version>
+		<scripting-python.version>0.4.1</scripting-python.version>
 		<org.scijava.scripting-python.version>${scripting-python.version}</org.scijava.scripting-python.version>
 
 		<!-- Scripting: Renjin - https://github.com/scijava/scripting-renjin -->
