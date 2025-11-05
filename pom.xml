@@ -395,6 +395,10 @@
 		<scijava-java3d.version>0.1.0</scijava-java3d.version>
 		<org.scijava.scijava-java3d.version>${scijava-java3d.version}</org.scijava.scijava-java3d.version>
 
+		<!-- SciJava Links - https://github.com/scijava/scijava-links -->
+		<scijava-links.version>1.0.0</scijava-links.version>
+		<org.scijava.scijava-links.version>${scijava-links.version}</org.scijava.scijava-links.version>
+
 		<!-- SciJava Listeners - https://github.com/scijava/scijava-listeners -->
 		<scijava-listeners.version>1.0.0-beta-3</scijava-listeners.version>
 		<org.scijava.scijava-listeners.version>${scijava-listeners.version}</org.scijava.scijava-listeners.version>
@@ -2640,6 +2644,13 @@
 				<groupId>org.scijava</groupId>
 				<artifactId>scijava-java3d</artifactId>
 				<version>${org.scijava.scijava-java3d.version}</version>
+			</dependency>
+
+			<!-- SciJava Links - https://github.com/scijava/scijava-links -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-links</artifactId>
+				<version>${org.scijava.scijava-links.version}</version>
 			</dependency>
 
 			<!-- SciJava Listeners - https://github.com/scijava/scijava-listeners -->
