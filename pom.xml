@@ -444,7 +444,7 @@
 		<org.scijava.scijava-ui-swing.version>${scijava-ui-swing.version}</org.scijava.scijava-ui-swing.version>
 
 		<!-- Script Editor - https://github.com/scijava/script-editor -->
-		<script-editor.version>1.1.1</script-editor.version>
+		<script-editor.version>1.2.0</script-editor.version>
 		<org.scijava.script-editor.version>${script-editor.version}</org.scijava.script-editor.version>
 
 		<!-- Script Editor: Jython - https://github.com/scijava/script-editor-jython -->
