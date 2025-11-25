@@ -2315,7 +2315,7 @@
 		<edu.mines.mines-jtk.version>${mines-jtk.version}</edu.mines.mines-jtk.version>
 
 		<!-- Mockito - https://site.mockito.org/ -->
-		<mockito.version>4.11.0</mockito.version>
+		<mockito.version>5.20.0</mockito.version>
 		<mockito-core.version>${mockito.version}</mockito-core.version>
 		<org.mockito.mockito-core.version>${mockito-core.version}</org.mockito.mockito-core.version>
 
