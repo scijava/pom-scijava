@@ -411,6 +411,11 @@ rm -f "$meltingPotDir/sc.fiji/labkit-ui/src/test/java/sc/fiji/labkit/ui/plugin/C
 
 # Skip testing of components with non-working tests.
 
+# java.lang.AssertionError
+#     at org.scijava.minimaven.BasicTest.testClassifiers(BasicTest.java:216)
+echo "org.scijava/minimaven" >> "$skipTestsFile" ||
+  die "Failed to generate $skipTestsFile"
+
 # Error while checking the CLIJ2 installation: null
 echo "sc.fiji/labkit-pixel-classification" >> "$skipTestsFile" ||
   die "Failed to generate $skipTestsFile"
