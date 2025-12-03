@@ -1244,7 +1244,7 @@
 		<net.preibisch.multiview-simulation.version>${multiview-simulation.version}</net.preibisch.multiview-simulation.version>
 
 		<!-- BoneJ - https://imagej.net/plugins/bonej -->
-		<bonej.version>7.1.8</bonej.version>
+		<bonej.version>7.1.9</bonej.version>
 		<bonej-plugins.version>${bonej.version}</bonej-plugins.version>
 		<bonej-ops.version>${bonej.version}</bonej-ops.version>
 		<bonej-legacy-plugins_.version>${bonej.version}</bonej-legacy-plugins_.version>
@@ -2323,7 +2323,7 @@
 		<edu.mines.mines-jtk.version>${mines-jtk.version}</edu.mines.mines-jtk.version>
 
 		<!-- Mockito - https://site.mockito.org/ -->
-		<mockito.version>4.11.0</mockito.version>
+		<mockito.version>5.20.0</mockito.version>
 		<mockito-core.version>${mockito.version}</mockito-core.version>
 		<org.mockito.mockito-core.version>${mockito-core.version}</org.mockito.mockito-core.version>
 
