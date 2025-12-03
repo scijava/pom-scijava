@@ -649,6 +649,10 @@
 		<imglib2-ij.version>2.0.3</imglib2-ij.version>
 		<net.imglib2.imglib2-ij.version>${imglib2-ij.version}</net.imglib2.imglib2-ij.version>
 
+		<!-- ImgLib2 ImageJ - https://github.com/imglib/imglib2-imagej -->
+		<imglib2-imagej.version>0.1.0</imglib2-imagej.version>
+		<net.imglib2.imglib2-imagej.version>${imglib2-imagej.version}</net.imglib2.imglib2-imagej.version>
+
 		<!-- ImgLib2 ImgLyb - https://github.com/imglib/imglib2-imglyb -->
 		<imglib2-imglyb.version>2.0.1</imglib2-imglyb.version>
 		<net.imglib2.imglib2-imglyb.version>${imglib2-imglyb.version}</net.imglib2.imglib2-imglyb.version>
@@ -3107,6 +3111,13 @@
 				<groupId>net.imglib2</groupId>
 				<artifactId>imglib2-ij</artifactId>
 				<version>${net.imglib2.imglib2-ij.version}</version>
+			</dependency>
+
+			<!-- ImgLib2 ImageJ - https://github.com/imglib/imglib2-imagej -->
+			<dependency>
+				<groupId>net.imglib2</groupId>
+				<artifactId>imglib2-imagej</artifactId>
+				<version>${net.imglib2.imglib2-imagej.version}</version>
 			</dependency>
 
 			<!-- ImgLib2 ImgLyb - https://github.com/imglib/imglib2-imglyb -->
