@@ -3113,6 +3113,13 @@
 				<version>${net.imglib2.imglib2-ij.version}</version>
 			</dependency>
 
+			<!-- ImgLib2 ImageJ - https://github.com/imglib/imglib2-imagej -->
+			<dependency>
+				<groupId>net.imglib2</groupId>
+				<artifactId>imglib2-imagej</artifactId>
+				<version>${net.imglib2.imglib2-imagej.version}</version>
+			</dependency>
+
 			<!-- ImgLib2 ImgLyb - https://github.com/imglib/imglib2-imglyb -->
 			<dependency>
 				<groupId>net.imglib2</groupId>
