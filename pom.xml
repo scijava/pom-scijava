@@ -1279,23 +1279,23 @@
 		<com.zeroc.ice.version>${ice.version}</com.zeroc.ice.version>
 
 		<!-- OME Codecs - https://github.com/ome/ome-codecs -->
-		<ome-codecs.version>1.1.1</ome-codecs.version>
+		<ome-codecs.version>1.1.2</ome-codecs.version>
 		<org.openmicroscopy.ome-codecs.version>${ome-codecs.version}</org.openmicroscopy.ome-codecs.version>
 
 		<!-- OME Common Java - https://github.com/ome/ome-common-java -->
-		<ome-common.version>6.1.0</ome-common.version>
+		<ome-common.version>6.1.2</ome-common.version>
 		<org.openmicroscopy.ome-common.version>${ome-common.version}</org.openmicroscopy.ome-common.version>
 
 		<!-- Metakit - https://github.com/ome/ome-metakit -->
-		<metakit.version>5.3.9</metakit.version>
+		<metakit.version>5.3.10</metakit.version>
 		<org.openmicroscopy.metakit.version>${metakit.version}</org.openmicroscopy.metakit.version>
 
 		<!-- OME POI - https://github.com/ome/ome-poi -->
-		<ome-poi.version>5.3.10</ome-poi.version>
+		<ome-poi.version>5.3.11</ome-poi.version>
 		<org.openmicroscopy.ome-poi.version>${ome-poi.version}</org.openmicroscopy.ome-poi.version>
 
 		<!-- OME Model - https://github.com/ome/ome-model -->
-		<ome-model.version>6.5.0</ome-model.version>
+		<ome-model.version>6.5.1</ome-model.version>
 		<ome-xml.version>${ome-model.version}</ome-xml.version>
 		<specification.version>${ome-model.version}</specification.version>
 		<org.openmicroscopy.ome-xml.version>${ome-xml.version}</org.openmicroscopy.ome-xml.version>
@@ -1307,7 +1307,7 @@
 		<ome.jxrlib-all.version>${jxrlib-all.version}</ome.jxrlib-all.version>
 
 		<!-- Bio-Formats - https://github.com/ome/bioformats -->
-		<bio-formats.version>8.3.0</bio-formats.version>
+		<bio-formats.version>8.4.0</bio-formats.version>
 		<bio-formats-tools.version>${bio-formats.version}</bio-formats-tools.version>
 		<bio-formats_plugins.version>${bio-formats.version}</bio-formats_plugins.version>
 		<formats-api.version>${bio-formats.version}</formats-api.version>
