@@ -676,7 +676,7 @@
 		<!-- SCIFIO - https://github.com/scifio -->
 
 		<!-- SCIFIO - https://github.com/scifio/scifio -->
-		<scifio.version>0.47.0</scifio.version>
+		<scifio.version>0.48.0</scifio.version>
 		<io.scif.scifio.version>${scifio.version}</io.scif.scifio.version>
 
 		<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
@@ -721,7 +721,7 @@
 		<_3D_Objects_Counter.version>2.0.1</_3D_Objects_Counter.version>
 		<sc.fiji.3D_Objects_Counter.version>${_3D_Objects_Counter.version}</sc.fiji.3D_Objects_Counter.version>
 
-		<_3D_Viewer.version>5.0.0</_3D_Viewer.version>
+		<_3D_Viewer.version>5.0.1</_3D_Viewer.version>
 		<sc.fiji.3D_Viewer.version>${_3D_Viewer.version}</sc.fiji.3D_Viewer.version>
 
 		<AnalyzeSkeleton.version>3.4.2</AnalyzeSkeleton.version>
