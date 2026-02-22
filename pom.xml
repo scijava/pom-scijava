@@ -6286,11 +6286,41 @@
 				<groupId>org.jogamp.java3d</groupId>
 				<artifactId>java3d-core</artifactId>
 				<version>${org.jogamp.java3d.java3d-core.version}</version>
+				<exclusions>
+					<!--
+					NB: Unfortunately, java3d-core 1.7.2 depends on gluegen-rt-main and
+					jogl-all-main, bringing native classifier JARs for *all platforms*
+					into the dependency graph. Maven's exclusion mechanism cannot target
+					specific classifiers, only entire projects (G:A). So we exclude
+					gluegen-rt-main & jogl-all-main themselves to cut out the infection.
+					-->
+					<exclusion>
+						<groupId>org.jogamp.gluegen</groupId>
+						<artifactId>gluegen-rt-main</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jogamp.jogl</groupId>
+						<artifactId>jogl-all-main</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.jogamp.java3d</groupId>
 				<artifactId>java3d-utils</artifactId>
 				<version>${org.jogamp.java3d.java3d-utils.version}</version>
+				<exclusions>
+					<!--
+					NB: Unfortunately, java3d-utils 1.7.2 depends on joal-main,
+					bringing native classifier JARs for *all platforms* into the
+					dependency graph. Maven's exclusion mechanism cannot target
+					specific classifiers, only entire projects (G:A). So we
+					exclude joal-main itself to cut out the infection.
+					-->
+					<exclusion>
+						<groupId>org.jogamp.joal</groupId>
+						<artifactId>joal-main</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.jogamp.java3d</groupId>
