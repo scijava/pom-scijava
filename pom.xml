@@ -5277,6 +5277,15 @@
 				<groupId>com.google.api</groupId>
 				<artifactId>gax</artifactId>
 				<version>${com.google.api.gax.version}</version>
+				<exclusions>
+					<!--
+					Analytics libraries for collecting and transmitting app metrics.
+					-->
+					<exclusion>
+						<groupId>io.opencensus</groupId>
+						<artifactId>*</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>com.google.api</groupId>
@@ -5338,6 +5347,15 @@
 				<groupId>com.google.cloud</groupId>
 				<artifactId>google-cloud-core-http</artifactId>
 				<version>${com.google.cloud.google-cloud-core-http.version}</version>
+				<exclusions>
+					<!--
+					Analytics libraries for collecting and transmitting app metrics.
+					-->
+					<exclusion>
+						<groupId>io.opencensus</groupId>
+						<artifactId>*</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>com.google.cloud</groupId>
@@ -5348,11 +5366,29 @@
 				<groupId>com.google.cloud</groupId>
 				<artifactId>google-cloud-resourcemanager</artifactId>
 				<version>${com.google.cloud.google-cloud-resourcemanager.version}</version>
+				<exclusions>
+					<!--
+					Analytics libraries for collecting and transmitting app metrics.
+					-->
+					<exclusion>
+						<groupId>io.opencensus</groupId>
+						<artifactId>*</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>com.google.cloud</groupId>
 				<artifactId>google-cloud-storage</artifactId>
 				<version>${com.google.cloud.google-cloud-storage.version}</version>
+				<exclusions>
+					<!--
+					Analytics libraries for collecting and transmitting app metrics.
+					-->
+					<exclusion>
+						<groupId>io.opencensus</groupId>
+						<artifactId>*</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<!-- Google HTTP Client - https://github.com/googleapis/google-http-java-client -->
@@ -5360,6 +5396,15 @@
 				<groupId>com.google.http-client</groupId>
 				<artifactId>google-http-client</artifactId>
 				<version>${com.google.http-client.google-http-client.version}</version>
+				<exclusions>
+					<!--
+					Analytics libraries for collecting and transmitting app metrics.
+					-->
+					<exclusion>
+						<groupId>io.opencensus</groupId>
+						<artifactId>*</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>com.google.http-client</groupId>
