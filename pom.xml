@@ -2097,6 +2097,28 @@
 		<org.openjdk.jmh.jmh-generator-annprocess.version>${jmh-generator-annprocess.version}</org.openjdk.jmh.jmh-generator-annprocess.version>
 
 		<!-- JavaFX - https://openjdk.org/projects/openjfx/ -->
+		<!--
+		OpenJFX  | Minimum
+		version  | OpenJDK
+		=========|========
+		11.0.2   | 10
+		12.0.2   | 11
+		13.0.2   | 11
+		14.0.2.1 | 11
+		15.0.1   | 11
+		16       | 11
+		17.0.19  | 11
+		18.0.2   | 11
+		19.0.2.1 | 11
+		20.0.2   | 17
+		21.0.11  | 17
+		22.0.2   | 17
+		23.0.2   | 21
+		24.0.2   | 22
+		25.0.3   | 23
+		26       | 24
+		27       | 25
+		-->
 		<javafx.version>23.0.2</javafx.version>
 		<javafx-base.version>${javafx.version}</javafx-base.version>
 		<javafx-controls.version>${javafx.version}</javafx-controls.version>
