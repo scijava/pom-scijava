@@ -642,7 +642,7 @@
 		<net.imglib2.imglib2-algorithm-gpl.version>${imglib2-algorithm-gpl.version}</net.imglib2.imglib2-algorithm-gpl.version>
 
 		<!-- ImgLib2 Cache - https://github.com/imglib/imglib2-cache -->
-		<imglib2-cache.version>1.0.0-beta-19</imglib2-cache.version>
+		<imglib2-cache.version>1.0.0-beta-20</imglib2-cache.version>
 		<net.imglib2.imglib2-cache.version>${imglib2-cache.version}</net.imglib2.imglib2-cache.version>
 
 		<!-- ImgLib2 IJ - https://github.com/imglib/imglib2-ij -->
