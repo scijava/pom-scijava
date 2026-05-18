@@ -1,28 +1,19 @@
-[filter]
-includes = [
-    "ca.mcgill:*",
-    "io.scif:*",
-    "jitk:*",
-    "mpicbg:*",
-    "net.imagej:*",
-    "net.imglib2:*",
-    "net.preibisch:*",
-    "org.bonej:*",
-    "org.janelia.saalfeldlab:*",
-    "org.janelia:*",
-    "org.morphonets:*",
-    "org.scijava:*",
-    "sc.fiji:*",
-]
+[common]
+default-java-version = 8
+repositories = ["scijava.public=https://maven.scijava.org/content/groups/public"]
+
+[melt]
+java-version = 11
+template = "tests/mega-melt-template.xml"
 excludes = [
     # TEMP: Exclude org.bytedeco:hdf5 until cisd:jhdf5 is gone.
     'org.bytedeco:hdf5',
     # TEMP: Skip components within multi-module reactors.
-    # Neither melting-pot.sh nor release-version.sh understand
-    # multi-module repositories; release-version.sh needs to learn
-    # how to tag and release individual components from multi-module
-    # repos, so that when melting-pot.sh shallow clones the repo at
-    # that tag and invokes a build, it will be building only the
+    # Neither pombast nor release-version.sh understand multi-
+    # module repositories; release-version.sh needs to learn how
+    # to tag and release individual components from multi-module
+    # repos, so that when pombast shallow clones the repo at that
+    # tag and invokes a build, it will be building only the
     # released component as it does with single-component repos.
     'org.scijava:scijava-collections',
     'org.scijava:scijava-common3',
@@ -49,23 +40,23 @@ excludes = [
     'org.scijava:scijava-testutil',
     'org.scijava:scijava-types',
     'mpicbg:mpicbg', 'mpicbg:mpicbg_',
-    # NB: Skip artifacts requiring minimum Java version >8.
-    '*:algart-tiff',
-    '*:javafx-base',
-    '*:javafx-controls',
-    '*:javafx-fxml',
-    '*:javafx-graphics',
-    '*:javafx-media',
-    '*:javafx-swing',
-    '*:javafx-web',
-    '*:SNT',
+    # NB: Skip artifacts requiring minimum Java version >11.
+    'net.algart:algart-tiff',
+    'org.openjfx:javafx-base',
+    'org.openjfx:javafx-controls',
+    'org.openjfx:javafx-fxml',
+    'org.openjfx:javafx-graphics',
+    'org.openjfx:javafx-media',
+    'org.openjfx:javafx-swing',
+    'org.openjfx:javafx-web',
+    'org.morphonets:SNT',
     # NB: Skip closed-source artifacts.
-    '*:bonej-plus',
+    'org.bonej:bonej-plus',
     # NB: The following artifacts have messy dependency trees.
     # Too many problems to test as part of the mega-melt.
     # See WARNING block in pom-scijava's pom.xml for details.
     'net.imagej:imagej-server',
-    '*:spark-core_2.11',
+    'org.apache.spark:spark-core_2.11',
     # NB: Skip scijava forks of third-party projects.
     # These are very stable, with few/no dependencies, and
     # don't need to be retested as pom-scijava evolves.
@@ -75,25 +66,25 @@ excludes = [
     'org.scijava:junit-benchmarks',
     'org.scijava:vecmath',
     # NB: Skip alternate flavors of other managed components.
-    '*:gluegen',        # uberjar flavor of gluegen-rt
-    '*:jogl-all-noawt', # slimmed down flavor of jogl-all
+    'org.jogamp.gluegen:gluegen',     # uberjar flavor of gluegen-rt
+    'org.jogamp.jogl:jogl-all-noawt', # slimmed down flavor of jogl-all
     # NB: All the SWT platform JARs have the same classes.
     # The current platform will be brought in transitively.
-    '*:org.eclipse.swt.cocoa.macosx',
-    '*:org.eclipse.swt.cocoa.macosx.x86_64',
-    '*:org.eclipse.swt.gtk.aix.ppc',
-    '*:org.eclipse.swt.gtk.aix.ppc64',
-    '*:org.eclipse.swt.gtk.hpux.ia64',
-    '*:org.eclipse.swt.gtk.linux.ppc',
-    '*:org.eclipse.swt.gtk.linux.ppc64',
-    '*:org.eclipse.swt.gtk.linux.s390',
-    '*:org.eclipse.swt.gtk.linux.s390x',
-    '*:org.eclipse.swt.gtk.linux.x86',
-    '*:org.eclipse.swt.gtk.linux.x86_64',
-    '*:org.eclipse.swt.gtk.solaris.sparc',
-    '*:org.eclipse.swt.gtk.solaris.x86',
-    '*:org.eclipse.swt.win32.win32.x86',
-    '*:org.eclipse.swt.win32.win32.x86_64',
+    'org.eclipse.swt:org.eclipse.swt.cocoa.macosx',
+    'org.eclipse.swt:org.eclipse.swt.cocoa.macosx.x86_64',
+    'org.eclipse.swt:org.eclipse.swt.gtk.aix.ppc',
+    'org.eclipse.swt:org.eclipse.swt.gtk.aix.ppc64',
+    'org.eclipse.swt:org.eclipse.swt.gtk.hpux.ia64',
+    'org.eclipse.swt:org.eclipse.swt.gtk.linux.ppc',
+    'org.eclipse.swt:org.eclipse.swt.gtk.linux.ppc64',
+    'org.eclipse.swt:org.eclipse.swt.gtk.linux.s390',
+    'org.eclipse.swt:org.eclipse.swt.gtk.linux.s390x',
+    'org.eclipse.swt:org.eclipse.swt.gtk.linux.x86',
+    'org.eclipse.swt:org.eclipse.swt.gtk.linux.x86_64',
+    'org.eclipse.swt:org.eclipse.swt.gtk.solaris.sparc',
+    'org.eclipse.swt:org.eclipse.swt.gtk.solaris.x86',
+    'org.eclipse.swt:org.eclipse.swt.win32.win32.x86',
+    'org.eclipse.swt:org.eclipse.swt.win32.win32.x86_64',
     # NB: All SLF4J bindings have the same classes.
     # We'll rely on logback-classic being present here.
     'org.slf4j:slf4j-jcl',
@@ -105,11 +96,66 @@ excludes = [
     'org.slf4j:jcl-over-slf4j',
 ]
 
-[build]
-min-java-version = 8
-
-[skip-tests]
-components = [
+[smelt]
+includes = [
+    "ca.mcgill:*",
+    "io.scif:*",
+    "jitk:*",
+    "mpicbg:*",
+    "net.imagej:*",
+    "net.imglib2:*",
+    "net.preibisch:*",
+    "org.bonej:*",
+    "org.janelia.saalfeldlab:*",
+    "org.janelia:*",
+    "org.morphonets:*",
+    "org.scijava:*",
+    "sc.fiji:*",
+]
+excludes = [
+  # NB: Skip closed-source artifacts.
+  'org.bonej:bonej-plus',
+  # NB: Skip scijava forks of third-party projects.
+  # These are very stable, with few/no dependencies, and
+  # don't need to be retested as pom-scijava evolves.
+  'org.scijava:j3dcore',
+  'org.scijava:j3dutils',
+  'org.scijava:jep',
+  'org.scijava:junit-benchmarks',
+  'org.scijava:vecmath',
+  # TEMP: Skip components within multi-module reactors.
+  # Neither pombast nor release-version.sh understand multi-
+  # module repositories; release-version.sh needs to learn how
+  # to tag and release individual components from multi-module
+  # repos, so that when pombast shallow clones the repo at that
+  # tag and invokes a build, it will be building only the
+  # released component as it does with single-component repos.
+  'org.scijava:scijava-collections',
+  'org.scijava:scijava-common3',
+  'org.scijava:scijava-concurrent',
+  'org.scijava:scijava-discovery-test',
+  'org.scijava:scijava-discovery',
+  'org.scijava:scijava-function',
+  'org.scijava:scijava-legacy',
+  'org.scijava:scijava-meta',
+  'org.scijava:scijava-ops-api',
+  'org.scijava:scijava-ops-benchmarks',
+  'org.scijava:scijava-ops-engine',
+  'org.scijava:scijava-ops-ext-parser',
+  'org.scijava:scijava-ops-flim',
+  'org.scijava:scijava-ops-image',
+  'org.scijava:scijava-ops-indexer',
+  'org.scijava:scijava-ops-opencv',
+  'org.scijava:scijava-ops-spi',
+  'org.scijava:scijava-ops-tutorial',
+  'org.scijava:scijava-priority',
+  'org.scijava:scijava-progress',
+  'org.scijava:scijava-struct',
+  'org.scijava:scijava-taglets',
+  'org.scijava:scijava-testutil',
+  'org.scijava:scijava-types',
+]
+skip-tests = [
     # java.lang.AssertionError
     #     at org.scijava.minimaven.BasicTest.testClassifiers(BasicTest.java:216)
     "org.scijava:minimaven",
