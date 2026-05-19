@@ -209,7 +209,7 @@ skip-tests = [
 "sc.fiji:labkit-ui" = ["sc.fiji.labkit.ui.plugin.CalculateProbabilityMapWithLabkitIJ1PluginTest"]
 
 [components."net.imagej:ij"]
-"java-version" = 11
+java-version = 11
 
 [components."net.imglib2:imglib2-mesh"]
-"java-version" = 11
+java-version = 11
