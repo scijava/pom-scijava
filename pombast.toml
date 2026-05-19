@@ -2,6 +2,15 @@
 default-java-version = 8
 repositories = ["scijava.public=https://maven.scijava.org/content/groups/public"]
 
+[status]
+rules = "rules.xml"
+projects = "projects.txt"
+badges = "ci-badges.txt"
+timestamps = "timestamps.txt"
+html = "index.html"
+header = "header.html"
+footer = "footer.html"
+
 [melt]
 java-version = 11
 template = "tests/mega-melt-template.xml"
@@ -204,12 +213,3 @@ skip-tests = [
 
 [components."net.imglib2:imglib2-mesh"]
 "java-version" = 11
-
-[status]
-rules = "rules.xml"
-projects = "projects.txt"
-badges = "ci-badges.txt"
-timestamps = "timestamps.txt"
-html = "index.html"
-header = "header.html"
-footer = "footer.html"
