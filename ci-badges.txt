@@ -1,0 +1,45 @@
+bigdataviewer/bigvolumeviewer-core <td class="badge"><a href="https://github.com/bigdataviewer/bigvolumeviewer-core/actions"><img src="https://github.com/bigdataviewer/bigvolumeviewer-core/actions/workflows/build.yml/badge.svg"></a></td>
+fiji/Colocalisation_Analysis <td class="badge"><a href="https://github.com/fiji/Colocalisation_Analysis/actions"><img src="https://github.com/fiji/Colocalisation_Analysis/actions/workflows/build.yml/badge.svg"></a></td>
+imagej/imagej-common <td class="badge"><a href="https://github.com/imagej/imagej-common/actions"><img src="https://github.com/imagej/imagej-common/actions/workflows/build.yml/badge.svg"></a></td>
+imagej/imagej-legacy <td class="badge"><a href="https://github.com/imagej/imagej-legacy/actions"><img src="https://github.com/imagej/imagej-legacy/actions/workflows/build.yml/badge.svg"></a></td>
+imglib/imglib2-mesh <td class="badge"><a href="https://github.com/imglib/imglib2-mesh/actions"><img src="https://github.com/imglib/imglib2-mesh/actions/workflows/build.yml/badge.svg"></a></td>
+imagej/imagej-matlab <td class="badge"><a href="https://github.com/imagej/imagej-matlab/actions"><img src="https://github.com/imagej/imagej-matlab/workflows/build/badge.svg"></a></td>
+ome/bioformats <td class="badge"><a href="https://github.com/ome/bioformats/actions"><img src="https://github.com/ome/bioformats/workflows/Maven/badge.svg"></a></td>
+ome/ome-codecs <td class="badge"><a href="https://github.com/ome/ome-codecs/actions"><img src="https://github.com/ome/ome-codecs/workflows/Maven/badge.svg"></a></td>
+ome/ome-common-java <td class="badge"><a href="https://github.com/ome/ome-common-java/actions"><img src="https://github.com/ome/ome-common-java/workflows/Maven/badge.svg"></a></td>
+ome/ome-metakit <td class="badge"><a href="https://github.com/ome/ome-metakit/actions"><img src="https://github.com/ome/ome-metakit/workflows/Maven/badge.svg"></a></td>
+ome/ome-model <td class="badge"><a href="https://github.com/ome/ome-model/actions"><img src="https://github.com/ome/ome-model/workflows/Maven/badge.svg"></a></td>
+ome/ome-poi <td class="badge"><a href="https://github.com/ome/ome-poi/actions"><img src="https://github.com/ome/ome-poi/workflows/Maven/badge.svg"></a></td>
+ome/omero-blitz <td class="badge"><a href="https://github.com/ome/omero-blitz/actions"><img src="https://github.com/ome/omero-blitz/workflows/Gradle/badge.svg"></a></td>
+ome/omero-common <td class="badge"><a href="https://github.com/ome/omero-common/actions"><img src="https://github.com/ome/omero-common/workflows/Gradle/badge.svg"></a></td>
+ome/omero-dsl-plugin <td class="badge"><a href="https://github.com/ome/omero-dsl-plugin/actions"><img src="https://github.com/ome/omero-dsl-plugin/workflows/Gradle/badge.svg"></a></td>
+ome/omero-gateway-java <td class="badge"><a href="https://github.com/ome/omero-gateway-java/actions"><img src="https://github.com/ome/omero-gateway-java/workflows/Gradle/badge.svg"></a></td>
+ome/omero-model <td class="badge"><a href="https://github.com/ome/omero-model/actions"><img src="https://github.com/ome/omero-model/workflows/Gradle/badge.svg"></a></td>
+ome/omero-renderer <td class="badge"><a href="https://github.com/ome/omero-renderer/actions"><img src="https://github.com/ome/omero-renderer/workflows/Gradle/badge.svg"></a></td>
+ome/omero-romio <td class="badge"><a href="https://github.com/ome/omero-romio/actions"><img src="https://github.com/ome/omero-romio/workflows/Gradle/badge.svg"></a></td>
+ome/omero-server <td class="badge"><a href="https://github.com/ome/omero-server/actions"><img src="https://github.com/ome/omero-server/workflows/Gradle/badge.svg"></a></td>
+scijava/java3d-core <td>None</td>
+scijava/java3d-utils <td>None</td>
+scijava/jep <td>None</td>
+scijava/junit-benchmarks <td>None</td>
+scijava/minimaven <td class="badge"><a href="https://github.com/scijava/minimaven/actions"><img src="https://github.com/scijava/minimaven/actions/workflows/build.yml/badge.svg"></a></td>
+scijava/native-lib-loader <td class="badge"><a href="https://github.com/scijava/native-lib-loader/actions"><img src="https://github.com/scijava/native-lib-loader/actions/workflows/build.yml/badge.svg"></a></td>
+scijava/parsington <td class="badge"><a href="https://github.com/scijava/parsington/actions"><img src="https://github.com/scijava/parsington/actions/workflows/build.yml/badge.svg"></a></td>
+scijava/scijava-coding-style <td class="badge"><a href="https://github.com/scijava/scijava-coding-style/actions"><img src="https://github.com/scijava/scijava-coding-style/actions/workflows/build.yml/badge.svg"></a></td>
+scijava/scijava-common <td class="badge"><a href="https://github.com/scijava/scijava-common/actions"><img src="https://github.com/scijava/scijava-common/actions/workflows/build.yml/badge.svg"></a></td>
+scijava/scijava-config <td class="badge"><a href="https://github.com/scijava/scijava-config/actions"><img src="https://github.com/scijava/scijava-config/actions/workflows/build.yml/badge.svg"></a></td>
+scijava/scijava-log-slf4j <td class="badge"><a href="https://github.com/scijava/scijava-log-slf4j/actions"><img src="https://github.com/scijava/scijava-log-slf4j/actions/workflows/build.yml/badge.svg"></a></td>
+scijava/scijava-maven-plugin <td class="badge"><a href="https://github.com/scijava/scijava-maven-plugin/actions"><img src="https://github.com/scijava/scijava-maven-plugin/actions/workflows/build.yml/badge.svg"></a></td>
+scijava/script-editor-scala <td class="badge"><a href="https://github.com/scijava/script-editor-scala/actions"><img src="https://github.com/scijava/script-editor-scala/actions/workflows/build.yml/badge.svg"></a></td>
+scijava/swing-checkbox-tree <td class="badge"><a href="https://github.com/scijava/swing-checkbox-tree/actions"><img src="https://github.com/scijava/swing-checkbox-tree/actions/workflows/build.yml/badge.svg"></a></td>
+scijava/vecmath <td>None</td>
+trackmate-sc/TrackMate <td class="badge"><a href="https://github.com/trackmate-sc/TrackMate/actions"><img src="https://github.com/trackmate-sc/TrackMate/actions/workflows/build.yml/badge.svg"></a></td>
+trackmate-sc/TrackMate-CSVImporter <td class="badge"><a href="https://github.com/trackmate-sc/TrackMate-CSVImporter/actions"><img src="https://github.com/trackmate-sc/TrackMate-CSVImporter/actions/workflows/build.yml/badge.svg"></a></td>
+trackmate-sc/TrackMate-Cellpose <td class="badge"><a href="https://github.com/trackmate-sc/TrackMate-Cellpose/actions"><img src="https://github.com/trackmate-sc/TrackMate-Cellpose/actions/workflows/build.yml/badge.svg"></a></td>
+trackmate-sc/TrackMate-ExTrack <td class="badge"><a href="https://github.com/trackmate-sc/TrackMate-ExTrack/actions"><img src="https://github.com/trackmate-sc/TrackMate-ExTrack/actions/workflows/build.yml/badge.svg"></a></td>
+trackmate-sc/TrackMate-Ilastik <td class="badge"><a href="https://github.com/trackmate-sc/TrackMate-Ilastik/actions"><img src="https://github.com/trackmate-sc/TrackMate-Ilastik/actions/workflows/build.yml/badge.svg"></a></td>
+trackmate-sc/TrackMate-MorphoLibJ <td class="badge"><a href="https://github.com/trackmate-sc/TrackMate-MorphoLibJ/actions"><img src="https://github.com/trackmate-sc/TrackMate-MorphoLibJ/actions/workflows/build.yml/badge.svg"></a></td>
+trackmate-sc/TrackMate-Oneat <td class="badge"><a href="https://github.com/trackmate-sc/TrackMate-Oneat/actions"><img src="https://github.com/trackmate-sc/TrackMate-Oneat/actions/workflows/build.yml/badge.svg"></a></td>
+trackmate-sc/TrackMate-Skeleton <td class="badge"><a href="https://github.com/trackmate-sc/TrackMate-Skeleton/actions"><img src="https://github.com/trackmate-sc/TrackMate-Skeleton/actions/workflows/build.yml/badge.svg"></a></td>
+trackmate-sc/TrackMate-StarDist <td class="badge"><a href="https://github.com/trackmate-sc/TrackMate-StarDist/actions"><img src="https://github.com/trackmate-sc/TrackMate-StarDist/actions/workflows/build.yml/badge.svg"></a></td>
+trackmate-sc/TrackMate-Weka <td class="badge"><a href="https://github.com/trackmate-sc/TrackMate-Weka/actions"><img src="https://github.com/trackmate-sc/TrackMate-Weka/actions/workflows/build.yml/badge.svg"></a></td>
