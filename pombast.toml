@@ -213,3 +213,9 @@ java-version = 11
 
 [components."net.imglib2:imglib2-mesh"]
 java-version = 11
+
+[components."org.bonej:bonej-legacy-plugins_"]
+java-version = 11
+
+[components."org.bonej:bonej-ops"]
+java-version = 11
