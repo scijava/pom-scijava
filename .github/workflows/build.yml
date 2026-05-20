@@ -35,9 +35,11 @@ jobs:
 
       - name: Set up build environment
         run: .github/build-setup.sh
+        shell: bash
 
       - name: Maven CI build
         run: .github/build.sh
+        shell: bash
         env:
           GPG_KEY_NAME: ${{ secrets.GPG_KEY_NAME }}
           GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
@@ -49,7 +51,9 @@ jobs:
 
       - name: Smelt components
         run: .github/smelt.sh
+        shell: bash
 
       - name: Publish smelt results
         if: always() && github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: .github/publish.sh smelt.json "Update smelt results"
+        shell: bash

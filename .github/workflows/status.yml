@@ -24,3 +24,4 @@ jobs:
 
       - name: Generate and publish status page
         run: .github/status.sh
+        shell: bash
