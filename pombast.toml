@@ -10,6 +10,7 @@ timestamps = "timestamps.txt"
 html = "index.html"
 header = "header.html"
 footer = "footer.html"
+nexus-base = "https://maven.scijava.org"
 
 [melt]
 java-version = 11

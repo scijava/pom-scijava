@@ -8,16 +8,16 @@ on:
     branches:
       - master
   schedule:
-    - cron: "4 5 * * 0" # every Sunday at 0405, to keep cache alive
+    # Run weekly on Sunday to keep the Maven cache alive.
+    - cron: '4 5 * * 0'
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      actions: write
 
     steps:
       - uses: actions/checkout@v4
+
       - name: Set up Java
         uses: actions/setup-java@v4
         with:
@@ -26,18 +26,17 @@ jobs:
           distribution: 'zulu'
           cache: 'maven'
 
-      - name: Set up CI environment
-        run: .github/setup.sh
+      - uses: astral-sh/setup-uv@v6
 
-      - name: Restore the melting-pot cache
-        id: restore-cache
-        uses: actions/cache/restore@v3
+      - uses: webfactory/ssh-agent@v0.9.0
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         with:
-          path: ~/.cache/scijava/melting-pot
-          key: ${{ runner.os }}-cache
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      - name: Execute the build
-        id: execute-build
+      - name: Set up build environment
+        run: .github/build-setup.sh
+
+      - name: Maven CI build
         run: .github/build.sh
         env:
           GPG_KEY_NAME: ${{ secrets.GPG_KEY_NAME }}
@@ -48,22 +47,9 @@ jobs:
           CENTRAL_PASS: ${{ secrets.CENTRAL_PASS }}
           SIGNING_ASC: ${{ secrets.SIGNING_ASC }}
 
-      - name: Delete the melting-pot cache
-        if: env.cacheChanged == 'true'
-        id: delete-cache
-        run: |
-          gh api --method DELETE -H "Accept: application/vnd.github+json" /repos/scijava/pom-scijava/actions/caches?key=${{ runner.os }}-cache || true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Smelt components
+        run: .github/smelt.sh
 
-      - name: Save the melting-pot cache
-        if: env.cacheChanged == 'true'
-        id: save-cache
-        uses: actions/cache/save@v3
-        with:
-          path: ~/.cache/scijava/melting-pot
-          key: ${{ runner.os }}-cache
-
-      - name: Return the exit code
-        id: exit-build
-        run: .github/exit.sh
+      - name: Publish smelt results
+        if: always() && github.ref == 'refs/heads/master' && github.event_name == 'push'
+        run: .github/publish.sh smelt.json "Update smelt results"

@@ -1,0 +1,26 @@
+name: status
+
+on:
+  schedule:
+    # Run daily at 0500 UTC.
+    - cron: '0 5 * * *'
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  status:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+
+      - uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Generate and publish status page
+        run: .github/status.sh
