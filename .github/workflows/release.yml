@@ -20,7 +20,7 @@ jobs:
           cache: 'maven'
 
       - name: Set up release environment
-        run: .github/release-setup.sh
+        run: .github/setup-release.sh
         shell: bash
 
       - name: Execute the release

@@ -14,6 +14,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      actions: write  # needed to delete and re-save the pombast cache
 
     steps:
       - uses: actions/checkout@v4
@@ -34,7 +36,7 @@ jobs:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: Set up build environment
-        run: .github/build-setup.sh
+        run: .github/setup-build.sh
         shell: bash
 
       - name: Maven CI build
@@ -49,9 +51,31 @@ jobs:
           CENTRAL_PASS: ${{ secrets.CENTRAL_PASS }}
           SIGNING_ASC: ${{ secrets.SIGNING_ASC }}
 
+      - name: Restore pombast cache
+        uses: actions/cache/restore@v4
+        with:
+          path: ~/.cache/pombast
+          key: ${{ runner.os }}-pombast-cache
+
       - name: Smelt components
         run: .github/smelt.sh
         shell: bash
+
+      - name: Delete old pombast cache
+        if: always()
+        run: |
+          gh api --method DELETE \
+            -H "Accept: application/vnd.github+json" \
+            "/repos/scijava/pom-scijava/actions/caches?key=${{ runner.os }}-pombast-cache" || true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Save pombast cache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: ~/.cache/pombast
+          key: ${{ runner.os }}-pombast-cache
 
       - name: Publish smelt results
         if: always() && github.ref == 'refs/heads/master' && github.event_name == 'push'
