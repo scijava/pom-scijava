@@ -21,6 +21,19 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
+      - name: Restore pombast cache
+        uses: actions/cache/restore@v4
+        with:
+          path: ~/.cache/pombast/pom-timestamps
+          restore-keys: ${{ runner.os }}-pombast-status-
+
       - name: Generate and publish status page
         run: .github/status.sh
         shell: bash
+
+      - name: Save pombast cache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: ~/.cache/pombast/pom-timestamps
+          key: ${{ runner.os }}-pombast-status-${{ github.run_id }}
