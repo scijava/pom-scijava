@@ -79,5 +79,5 @@ jobs:
 
       - name: Publish smelt results
         if: always() && github.ref == 'refs/heads/master' && github.event_name == 'push'
-        run: .github/publish.sh smelt.json "Update smelt results"
+        run: .github/publish.sh "Update smelt results" smelt.json
         shell: bash

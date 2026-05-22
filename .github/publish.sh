@@ -1,25 +1,40 @@
 #!/bin/sh
 # Commit a file to the status.scijava.org gh-pages branch.
-# Usage: publish.sh <local-file> [commit-message]
 # Requires SSH agent to be running with write access to status.scijava.org.
 set -e
-file=$1
-message=${2:-"Update $(basename "$file")"}
-test -f "$file" || { echo "File not found: $file" >&2; exit 1; }
-dest=$(basename "$file")
+
+test $# -gt 1 || {
+  echo "Usage: publish.sh \"Commit message\" file1 [file2 ...]"
+  exit 2
+}
+
+datestamp="$(TZ=UTC date +'%Y-%m-%d %H:%M:%S UTC')"
+message="$1 ($datestamp)"
+shift
 
 git config --global user.name github-actions
 git config --global user.email github-actions@github.com
 
-git clone --depth=1 --branch=gh-pages git@github.com:scijava/status.scijava.org site-publish
-cp "$file" "site-publish/$dest"
-cd site-publish
-if git diff --quiet "$dest"
+dest_dir=site-publish
+
+git clone --depth=1 --branch=gh-pages git@github.com:scijava/status.scijava.org "$dest_dir"
+
+while [ $# -gt 0 ]
+do
+  file=$1
+  shift
+  test -f "$file" || { echo "File not found: $file" >&2; exit 1; }
+  dest=$(basename "$file")
+  cp "$file" "$dest_dir/$dest"
+  (cd "$dest_dir" && git add "$dest")
+done
+
+cd "$dest_dir"
+if git diff --quiet .
 then
-  echo "== No changes to $dest =="
+  echo "== No changes =="
 else
-  echo "== Committing $dest =="
-  git add "$dest"
+  echo "== Committing changes =="
   git commit -m "$message"
   git push
 fi

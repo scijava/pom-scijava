@@ -11,6 +11,8 @@ on:
 jobs:
   status:
     runs-on: ubuntu-latest
+    permissions:
+      actions: write  # needed to delete and re-save caches
 
     steps:
       - uses: actions/checkout@v4
@@ -24,16 +26,50 @@ jobs:
       - name: Restore pombast cache
         uses: actions/cache/restore@v4
         with:
-          path: ~/.cache/pombast/pom-timestamps
-          restore-keys: ${{ runner.os }}-pombast-status-
+          path: ~/.cache/pombast
+          key: ${{ runner.os }}-pombast-status
+          restore-keys: ${{ runner.os }}-pombast-cache
 
-      - name: Generate and publish status page
+      - name: Restore monoqueue cache
+        uses: actions/cache/restore@v4
+        with:
+          path: ~/.cache/monoqueue
+          key: ${{ runner.os }}-monoqueue-status
+
+      - name: Generate and publish status and team pages
         run: .github/status.sh
         shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Delete old pombast status cache
+        if: always()
+        run: |
+          gh api --method DELETE \
+            -H "Accept: application/vnd.github+json" \
+            "/repos/scijava/pom-scijava/actions/caches?key=${{ runner.os }}-pombast-status" || true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Save pombast cache
         if: always()
         uses: actions/cache/save@v4
         with:
-          path: ~/.cache/pombast/pom-timestamps
-          key: ${{ runner.os }}-pombast-status-${{ github.run_id }}
+          path: ~/.cache/pombast
+          key: ${{ runner.os }}-pombast-status
+
+      - name: Delete old monoqueue cache
+        if: always()
+        run: |
+          gh api --method DELETE \
+            -H "Accept: application/vnd.github+json" \
+            "/repos/scijava/pom-scijava/actions/caches?key=${{ runner.os }}-monoqueue-status" || true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Save monoqueue cache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: ~/.cache/monoqueue
+          key: ${{ runner.os }}-monoqueue-status
