@@ -28,8 +28,8 @@ jobs:
         with:
           path: ~/.cache/pombast
           key: ${{ runner.os }}-pombast-status
-          restore-keys: ${{ runner.os }}-pombast-cache
 
+      # The monoqueue library is used by pombast to read GitHub issues.
       - name: Restore monoqueue cache
         uses: actions/cache/restore@v4
         with:
@@ -44,10 +44,8 @@ jobs:
 
       - name: Delete old pombast status cache
         if: always()
-        run: |
-          gh api --method DELETE \
-            -H "Accept: application/vnd.github+json" \
-            "/repos/scijava/pom-scijava/actions/caches?key=${{ runner.os }}-pombast-status" || true
+        run: .github/delete-cache.sh "${{ runner.os }}-pombast-status"
+        shell: bash
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -60,10 +58,8 @@ jobs:
 
       - name: Delete old monoqueue cache
         if: always()
-        run: |
-          gh api --method DELETE \
-            -H "Accept: application/vnd.github+json" \
-            "/repos/scijava/pom-scijava/actions/caches?key=${{ runner.os }}-monoqueue-status" || true
+        run: .github/delete-cache.sh "${{ runner.os }}-monoqueue-status"
+        shell: bash
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

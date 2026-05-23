@@ -55,7 +55,7 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: ~/.cache/pombast
-          key: ${{ runner.os }}-pombast-cache
+          key: ${{ runner.os }}-pombast-build
 
       - name: Run pombast melt+smelt commands
         run: .github/melt.sh
@@ -63,10 +63,8 @@ jobs:
 
       - name: Delete old pombast cache
         if: always()
-        run: |
-          gh api --method DELETE \
-            -H "Accept: application/vnd.github+json" \
-            "/repos/scijava/pom-scijava/actions/caches?key=${{ runner.os }}-pombast-cache" || true
+        run: .github/delete-cache.sh "${{ runner.os }}-pombast-build"
+        shell: bash
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -75,7 +73,7 @@ jobs:
         uses: actions/cache/save@v4
         with:
           path: ~/.cache/pombast
-          key: ${{ runner.os }}-pombast-cache
+          key: ${{ runner.os }}-pombast-build
 
       - name: Publish smelt results
         if: always() && github.ref == 'refs/heads/master' && github.event_name == 'push'
