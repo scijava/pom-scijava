@@ -63,7 +63,7 @@ excludes = [
     # NB: Skip closed-source artifacts.
     'org.bonej:bonej-plus',
     # NB: The following artifacts have messy dependency trees.
-    # Too many problems to test as part of the mega-melt.
+    # Too many problems to test as part of the melt action.
     # See WARNING block in pom-scijava's pom.xml for details.
     'net.imagej:imagej-server',
     'org.apache.spark:spark-core_2.11',

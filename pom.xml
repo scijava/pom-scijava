@@ -376,7 +376,7 @@
 		<org.scijava.scijava-cache.version>${scijava-cache.version}</org.scijava.scijava-cache.version>
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.99.2</scijava-common.version>
+		<scijava-common.version>2.100.1</scijava-common.version>
 		<org.scijava.scijava-common.version>${scijava-common.version}</org.scijava.scijava-common.version>
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
@@ -408,7 +408,7 @@
 		<org.scijava.scijava-log-slf4j.version>${scijava-log-slf4j.version}</org.scijava.scijava-log-slf4j.version>
 
 		<!-- SciJava Optional - https://github.com/scijava/scijava-optional -->
-		<scijava-optional.version>1.0.1</scijava-optional.version>
+		<scijava-optional.version>1.0.2</scijava-optional.version>
 		<org.scijava.scijava-optional.version>${scijava-optional.version}</org.scijava.scijava-optional.version>
 
 		<!-- SciJava Plot - https://github.com/scijava/scijava-plot -->
@@ -436,7 +436,7 @@
 		<org.scijava.scijava-search.version>${scijava-search.version}</org.scijava.scijava-search.version>
 
 		<!-- SciJava Table - https://github.com/scijava/scijava-table -->
-		<scijava-table.version>1.0.2</scijava-table.version>
+		<scijava-table.version>1.0.3</scijava-table.version>
 		<org.scijava.scijava-table.version>${scijava-table.version}</org.scijava.scijava-table.version>
 
 		<!-- SciJava UI: AWT - https://github.com/scijava/scijava-ui-awt -->
