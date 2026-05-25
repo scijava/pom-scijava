@@ -13,7 +13,13 @@ footer = "footer.html"
 nexus-base = "https://maven.scijava.org"
 
 [melt]
-java-version = 11
+# Some managed components require Java 21+. So it makes sense to melt with that version of Java.
+# Unfortunately, the scijava.jvm.version is currently set to 11 by default.
+# So even though OpenJDK 21 is being used to run Maven, the enforcer plugin still
+# complains when encountering any Java libraries with bytecode newer than 11.
+# Setting scijava.jvm.version to 21 by default would avoid the issue, but...
+# is that really a good idea? Setting to 11 seems like a nice baseline compromise right now.
+java-version = 21  # Maximum Java version of all included component + deps.
 template = "tests/mega-melt-template.xml"
 excludes = [
     # TEMP: Exclude org.bytedeco:hdf5 until cisd:jhdf5 is gone.
