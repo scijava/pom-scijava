@@ -12,6 +12,9 @@ header = "header.html"
 footer = "footer.html"
 nexus-base = "https://maven.scijava.org"
 
+[team]
+excludes = ["ome:*", "org.openmicroscopy:*"]
+
 [melt]
 # Some managed components require Java 21+. So it makes sense to melt with that version of Java.
 # Unfortunately, the scijava.jvm.version is currently set to 11 by default.
