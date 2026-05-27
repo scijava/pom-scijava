@@ -258,7 +258,6 @@ last-vetted = "20230309000000"
 
 [components."io.scif:scifio-labeling"]
 ci-build = "build-main"
-last-vetted = "20230309000000"
 
 [components."io.scif:scifio-lifesci"]
 ci-build = "build-main"
@@ -275,11 +274,9 @@ java-version = 11
 
 [components."net.imagej:imagej-deprecated"]
 ci-build = "build-main"
-last-vetted = "20230309000000"
 
 [components."net.imagej:imagej-mesh"]
 ci-build = "build-main"
-last-vetted = "20230309000000"
 
 [components."net.imagej:imagej-mesh-io"]
 ci-build = "build-main"
@@ -307,7 +304,6 @@ last-vetted = "20230309000000"
 
 [components."net.imagej:imagej-plugins-commands"]
 ci-build = "build-main"
-last-vetted = "20230309000000"
 
 [components."net.imagej:imagej-plugins-tools"]
 ci-build = "build-main"
@@ -322,9 +318,6 @@ ci-build = "build-main"
 
 [components."net.imagej:imagej-scripting"]
 ci-build = "build-main"
-
-[components."net.imagej:imagej-server"]
-last-vetted = "20250101000000"
 
 [components."net.imagej:imagej-tensorflow"]
 ci-build = "build-main"
@@ -349,14 +342,8 @@ ci-build = "build-main"
 [components."net.imglib2:imglib2-algorithm-fft"]
 last-vetted = "20230309000000"
 
-[components."net.imglib2:imglib2-algorithm-gpl"]
-last-vetted = "20230309000000"
-
 [components."net.imglib2:imglib2-mesh"]
 java-version = 11
-
-[components."net.imglib2:imglib2-unsafe"]
-last-vetted = "20230309000000"
 
 [components."net.preibisch:multiview-simulation"]
 ci-build = "build-main"
@@ -550,9 +537,6 @@ ci-build = "gradle"
 project-url = "https://github.com/ome/ome-model"
 ci-build = "maven"
 
-[components."org.python:jython-slim"]
-last-vetted = "20230309000000"
-
 [components."org.scijava:batch-processor"]
 ci-build = "build-main"
 
@@ -579,20 +563,15 @@ last-vetted = "20180905120000"
 [components."org.scijava:minimaven"]
 last-vetted = "20230309000000"
 
-[components."org.scijava:native-lib-loader"]
-last-vetted = "20230309000000"
-
 [components."org.scijava:scijava-cache"]
 ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."org.scijava:scijava-grab"]
 ci-build = "build-main"
-last-vetted = "20230309000000"
 
 [components."org.scijava:scijava-io-http"]
 ci-build = "build-main"
-last-vetted = "20230309000000"
 
 [components."org.scijava:scijava-java3d"]
 ci-build = "build-main"
@@ -602,9 +581,6 @@ last-vetted = "20230309000000"
 last-vetted = "20211021000000"
 
 [components."org.scijava:scijava-maven-plugin"]
-last-vetted = "20230309000000"
-
-[components."org.scijava:scijava-optional"]
 last-vetted = "20230309000000"
 
 [components."org.scijava:scijava-plot"]
@@ -647,13 +623,9 @@ ci-build = "build-main"
 
 [components."org.scijava:scripting-clojure"]
 ci-build = "build-main"
-last-vetted = "20230309000000"
 
 [components."org.scijava:scripting-groovy"]
 ci-build = "build-main"
-
-[components."org.scijava:scripting-java"]
-last-vetted = "20230309000000"
 
 [components."org.scijava:scripting-javascript"]
 ci-build = "build-main"
@@ -677,7 +649,6 @@ ci-build = "build-main"
 
 [components."org.scijava:scripting-scala"]
 ci-build = "build-main"
-last-vetted = "20230309000000"
 
 [components."org.scijava:swing-checkbox-tree"]
 last-vetted = "20230309000000"
@@ -722,7 +693,6 @@ last-vetted = "20230313000000"
 
 [components."sc.fiji:3D_Viewer"]
 ci-build = "build-main"
-last-vetted = "20230313000000"
 
 [components."sc.fiji:AnalyzeSkeleton_"]
 ci-build = "build-main"
@@ -766,9 +736,6 @@ last-vetted = "20230309000000"
 ci-build = "build-main"
 last-vetted = "20230309000000"
 
-[components."sc.fiji:Colocalisation_Analysis"]
-last-vetted = "20230309000000"
-
 [components."sc.fiji:Color_Histogram"]
 ci-build = "build-main"
 last-vetted = "20230309000000"
@@ -786,7 +753,6 @@ ci-build = "build-main"
 
 [components."sc.fiji:Correct_3D_Drift"]
 ci-build = "build-main"
-last-vetted = "20230309000000"
 
 [components."sc.fiji:Descriptor_based_registration"]
 ci-build = "build-main"
@@ -884,7 +850,6 @@ last-vetted = "20230309000000"
 
 [components."sc.fiji:LocalThickness_"]
 ci-build = "build-main"
-last-vetted = "20230309000000"
 
 [components."sc.fiji:MTrack2_"]
 ci-build = "build-main"
@@ -1082,7 +1047,6 @@ last-vetted = "20230309000000"
 
 [components."sc.fiji:spim_data"]
 ci-build = "build-main"
-last-vetted = "20230309000000"
 
 [components."sc.fiji:trakem2-transform"]
 ci-build = "build-main"
