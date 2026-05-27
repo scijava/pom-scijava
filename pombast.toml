@@ -8,6 +8,21 @@ html = "index.html"
 header = "header.html"
 footer = "footer.html"
 nexus-base = "https://maven.scijava.org"
+cuttable = [
+  "de.nanoimaging:*",
+  "fr.inra.ijpb:*",
+  "io.scif:*",
+  "jitk:*",
+  "mpicbg:*",
+  "net.imagej:*",
+  "net.imglib2:*",
+  "net.preibisch:*",
+  "org.bonej:*",
+  "org.janelia*:*",
+  "org.morphonets:*",
+  "org.scijava:*",
+  "sc.fiji:*",
+]
 
 [team]
 excludes = ["ome:*", "org.openmicroscopy:*"]
@@ -134,6 +149,7 @@ excludes = [
 [smelt]
 includes = [
     "ca.mcgill:*",
+    "de.nanoimaging:*",
     "fr.inra.ijpb:*",
     "io.scif:*",
     "jitk:*",
