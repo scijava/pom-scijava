@@ -11,7 +11,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>44.0.1-SNAPSHOT</version>
+	<version>45.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -383,6 +383,10 @@
 		<scijava-config.version>2.0.3</scijava-config.version>
 		<org.scijava.scijava-config.version>${scijava-config.version}</org.scijava.scijava-config.version>
 
+		<!-- SciJava Desktop - https://github.com/scijava/scijava-desktop -->
+		<scijava-desktop.version>1.0.0</scijava-desktop.version>
+		<org.scijava.scijava-desktop.version>${scijava-desktop.version}</org.scijava.scijava-desktop.version>
+
 		<!-- SciJava Grab - https://github.com/scijava/scijava-grab -->
 		<scijava-grab.version>0.1.2</scijava-grab.version>
 		<org.scijava.scijava-grab.version>${scijava-grab.version}</org.scijava.scijava-grab.version>
@@ -394,10 +398,6 @@
 		<!-- SciJava Java 3D Tools - https://github.com/scijava/scijava-java3d -->
 		<scijava-java3d.version>0.1.0</scijava-java3d.version>
 		<org.scijava.scijava-java3d.version>${scijava-java3d.version}</org.scijava.scijava-java3d.version>
-
-		<!-- SciJava Links - https://github.com/scijava/scijava-links -->
-		<scijava-links.version>1.0.0</scijava-links.version>
-		<org.scijava.scijava-links.version>${scijava-links.version}</org.scijava.scijava-links.version>
 
 		<!-- SciJava Listeners - https://github.com/scijava/scijava-listeners -->
 		<scijava-listeners.version>1.0.0-beta-3</scijava-listeners.version>
@@ -418,10 +418,6 @@
 		<!-- SciJava Plugins: Commands - https://github.com/scijava/scijava-plugins-commands -->
 		<scijava-plugins-commands.version>0.2.5</scijava-plugins-commands.version>
 		<org.scijava.scijava-plugins-commands.version>${scijava-plugins-commands.version}</org.scijava.scijava-plugins-commands.version>
-
-		<!-- SciJava Plugins: Platforms - https://github.com/scijava/scijava-plugins-platforms -->
-		<scijava-plugins-platforms.version>0.3.1</scijava-plugins-platforms.version>
-		<org.scijava.scijava-plugins-platforms.version>${scijava-plugins-platforms.version}</org.scijava.scijava-plugins-platforms.version>
 
 		<!-- SciJava Plugins: Text: Markdown - https://github.com/scijava/scijava-plugins-text-markdown -->
 		<scijava-plugins-text-markdown.version>0.1.3</scijava-plugins-text-markdown.version>
@@ -2651,6 +2647,13 @@
 				<version>${org.scijava.scijava-config.version}</version>
 			</dependency>
 
+			<!-- SciJava Desktop - https://github.com/scijava/scijava-desktop -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-desktop</artifactId>
+				<version>${org.scijava.scijava-desktop.version}</version>
+			</dependency>
+
 			<!-- SciJava Grab - https://github.com/scijava/scijava-grab -->
 			<dependency>
 				<groupId>org.scijava</groupId>
@@ -2670,13 +2673,6 @@
 				<groupId>org.scijava</groupId>
 				<artifactId>scijava-java3d</artifactId>
 				<version>${org.scijava.scijava-java3d.version}</version>
-			</dependency>
-
-			<!-- SciJava Links - https://github.com/scijava/scijava-links -->
-			<dependency>
-				<groupId>org.scijava</groupId>
-				<artifactId>scijava-links</artifactId>
-				<version>${org.scijava.scijava-links.version}</version>
 			</dependency>
 
 			<!-- SciJava Listeners - https://github.com/scijava/scijava-listeners -->
@@ -2712,13 +2708,6 @@
 				<groupId>org.scijava</groupId>
 				<artifactId>scijava-plugins-commands</artifactId>
 				<version>${org.scijava.scijava-plugins-commands.version}</version>
-			</dependency>
-
-			<!-- SciJava Plugins: Platforms - https://github.com/scijava/scijava-plugins-platforms -->
-			<dependency>
-				<groupId>org.scijava</groupId>
-				<artifactId>scijava-plugins-platforms</artifactId>
-				<version>${org.scijava.scijava-plugins-platforms.version}</version>
 			</dependency>
 
 			<!-- SciJava Plugins: Text: Markdown - https://github.com/scijava/scijava-plugins-text-markdown -->
