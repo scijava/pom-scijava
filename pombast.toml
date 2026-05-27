@@ -14,9 +14,10 @@ excludes = ["ome:*", "org.openmicroscopy:*"]
 
 [badges]
 includes = [
-  "io.scif:*",
   "de.nanoimaging:*",
   "fr.inra.ijpb:*",
+  "io.scif:*",
+  "jitk:*",
   "mpicbg:*",
   "net.imagej:*",
   "net.imglib2:*",
@@ -233,7 +234,7 @@ skip-tests = [
 #     at sc.fiji.labkit.ui.plugin.CalculateProbabilityMapWithLabkitIJ1PluginTest.test(CalculateProbabilityMapWithLabkitIJ1PluginTest.java:65)
 "sc.fiji:labkit-ui" = ["sc.fiji.labkit.ui.plugin.CalculateProbabilityMapWithLabkitIJ1PluginTest"]
 
-[components."fr.inra.ijpb:MorphoLibJ"]
+[components."fr.inra.ijpb:MorphoLibJ_"]
 ci-build = "build-main"
 
 [components."hsqldb:hsqldb"]
@@ -263,6 +264,9 @@ ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."io.scif:scifio-ome-xml"]
+ci-build = "build-main"
+
+[components."jitk:jitk-tps"]
 ci-build = "build-main"
 
 [components."net.imagej:ij"]
@@ -353,32 +357,35 @@ java-version = 11
 [components."net.imglib2:imglib2-unsafe"]
 last-vetted = "20230309000000"
 
-[components."net.preibischlab:multiview-simulation"]
+[components."net.preibisch:multiview-simulation"]
 ci-build = "build-main"
 
-[components."ome:bioformats"]
+[components."ome:formats-api"]
 ci-build = "maven"
 
-[components."ome:ome-codecs"]
+[components."ome:formats-bsd"]
 ci-build = "maven"
 
-[components."ome:ome-common-java"]
-ci-build = "maven"
-
-[components."ome:ome-metakit"]
-ci-build = "maven"
-
-[components."ome:ome-model"]
-ci-build = "maven"
-
-[components."ome:ome-poi"]
+[components."ome:formats-gpl"]
 ci-build = "maven"
 
 [components."org.bonej:bonej-legacy-plugins_"]
 java-version = 11
 ci-build = "build-main"
 
+[components."org.bonej:bonej-legacy-util_"]
+java-version = 11
+ci-build = "build-main"
+
 [components."org.bonej:bonej-ops"]
+java-version = 11
+ci-build = "build-main"
+
+[components."org.bonej:bonej-plugins"]
+java-version = 11
+ci-build = "build-main"
+
+[components."org.bonej:bonej-utilities"]
 java-version = 11
 ci-build = "build-main"
 
@@ -463,7 +470,7 @@ last-vetted = "20250101000000"
 [components."org.codehaus.groovy:groovy-yaml"]
 last-vetted = "20250101000000"
 
-[components."org.janelia.saalfeldlab:jitk-tps"]
+[components."org.janelia:H5J_Loader_Plugin"]
 ci-build = "build-main"
 
 [components."org.janelia.saalfeldlab:n5-aws-s3"]
@@ -484,13 +491,7 @@ ci-build = "build-main"
 [components."org.janelia.saalfeldlab:n5-universe"]
 ci-build = "build-main"
 
-[components."org.janelia.saalfeldlab:n5-viewer"]
-ci-build = "build-main"
-
-[components."org.janelia.saalfeldlab:trakem2-tps"]
-ci-build = "build-main"
-
-[components."org.janelia.saalfeldlab:z-spacing"]
+[components."org.janelia.saalfeldlab:n5-viewer_fiji"]
 ci-build = "build-main"
 
 [components."org.mockito:mockito-core"]
@@ -502,6 +503,23 @@ java-version = 21
 [components."org.ojalgo:ojalgo"]
 last-vetted = "20250101000000"
 
+[components."org.openmicroscopy:metakit"]
+project-url = "https://github.com/ome/ome-metakit"
+ci-build = "maven"
+
+[components."org.openmicroscopy:ome-codecs"]
+ci-build = "maven"
+
+[components."org.openmicroscopy:ome-common"]
+ci-build = "maven"
+
+[components."org.openmicroscopy:ome-poi"]
+ci-build = "maven"
+
+[components."org.openmicroscopy:ome-xml"]
+project-url = "https://github.com/ome/ome-model"
+ci-build = "maven"
+
 [components."org.openmicroscopy:omero-blitz"]
 ci-build = "gradle"
 
@@ -511,7 +529,8 @@ ci-build = "gradle"
 [components."org.openmicroscopy:omero-dsl-plugin"]
 ci-build = "gradle"
 
-[components."org.openmicroscopy:omero-gateway-java"]
+[components."org.openmicroscopy:omero-gateway"]
+project-url = "https://github.com/ome/omero-gateway-java"
 ci-build = "gradle"
 
 [components."org.openmicroscopy:omero-model"]
@@ -525,6 +544,10 @@ ci-build = "gradle"
 
 [components."org.openmicroscopy:omero-server"]
 ci-build = "gradle"
+
+[components."org.openmicroscopy:specification"]
+project-url = "https://github.com/ome/ome-model"
+ci-build = "maven"
 
 [components."org.python:jython-slim"]
 last-vetted = "20230309000000"
@@ -700,10 +723,8 @@ last-vetted = "20230313000000"
 ci-build = "build-main"
 last-vetted = "20230313000000"
 
-[components."sc.fiji:AnalyzeSkeleton"]
-ci-build = "build-main"
-
 [components."sc.fiji:AnalyzeSkeleton_"]
+ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Anisotropic_Diffusion_2D"]
@@ -714,10 +735,8 @@ last-vetted = "20230309000000"
 ci-build = "build-main"
 last-vetted = "20230309000000"
 
-[components."sc.fiji:Arrow"]
-ci-build = "build-main"
-
 [components."sc.fiji:Arrow_"]
+ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Auto_Local_Threshold"]
@@ -727,10 +746,8 @@ last-vetted = "20230309000000"
 [components."sc.fiji:Auto_Threshold"]
 ci-build = "build-main"
 
-[components."sc.fiji:BalloonSegmentation"]
-ci-build = "build-main"
-
 [components."sc.fiji:BalloonSegmentation_"]
+ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Bug_Submitter"]
@@ -763,7 +780,7 @@ last-vetted = "20230309000000"
 ci-build = "build-main"
 last-vetted = "20230309000000"
 
-[components."sc.fiji:CorrectBleach"]
+[components."sc.fiji:CorrectBleach_"]
 ci-build = "build-main"
 
 [components."sc.fiji:Correct_3D_Drift"]
@@ -773,16 +790,12 @@ last-vetted = "20230309000000"
 [components."sc.fiji:Descriptor_based_registration"]
 ci-build = "build-main"
 
-[components."sc.fiji:Dichromacy"]
-ci-build = "build-main"
-
 [components."sc.fiji:Dichromacy_"]
+ci-build = "build-main"
 last-vetted = "20230309000000"
 
-[components."sc.fiji:Directionality"]
-ci-build = "build-main"
-
 [components."sc.fiji:Directionality_"]
+ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:FS_Align_TrakEM2"]
@@ -802,10 +815,8 @@ ci-build = "build-main"
 ci-build = "build-main"
 last-vetted = "20230309000000"
 
-[components."sc.fiji:FlowJ"]
-ci-build = "build-main"
-
 [components."sc.fiji:FlowJ_"]
+ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Graph_Cut"]
@@ -815,9 +826,6 @@ last-vetted = "20230309000000"
 [components."sc.fiji:Gray_Morphology"]
 ci-build = "build-main"
 last-vetted = "20230309000000"
-
-[components."sc.fiji:H5J_Loader_Plugin"]
-ci-build = "build-main"
 
 [components."sc.fiji:HDF5_Vibez"]
 ci-build = "build-main"
@@ -830,7 +838,7 @@ last-vetted = "20230309000000"
 ci-build = "build-main"
 last-vetted = "20230309000000"
 
-[components."sc.fiji:IO"]
+[components."sc.fiji:IO_"]
 ci-build = "build-main"
 
 [components."sc.fiji:Image_5D"]
@@ -873,16 +881,12 @@ last-vetted = "20230309000000"
 ci-build = "build-main"
 last-vetted = "20230309000000"
 
-[components."sc.fiji:LocalThickness"]
-ci-build = "build-main"
-
 [components."sc.fiji:LocalThickness_"]
+ci-build = "build-main"
 last-vetted = "20230309000000"
 
-[components."sc.fiji:MTrack2"]
-ci-build = "build-main"
-
 [components."sc.fiji:MTrack2_"]
+ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:M_I_P"]
@@ -907,16 +911,12 @@ last-vetted = "20230309000000"
 ci-build = "build-main"
 last-vetted = "20230309000000"
 
-[components."sc.fiji:QuickPALM"]
-ci-build = "build-main"
-
 [components."sc.fiji:QuickPALM_"]
+ci-build = "build-main"
 last-vetted = "20230309000000"
 
-[components."sc.fiji:RATS"]
-ci-build = "build-main"
-
 [components."sc.fiji:RATS_"]
+ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Reconstruct_Reader"]
@@ -929,10 +929,8 @@ last-vetted = "20230309000000"
 [components."sc.fiji:SPIM_Registration"]
 ci-build = "build-main"
 
-[components."sc.fiji:Samples"]
-ci-build = "build-main"
-
 [components."sc.fiji:Samples_"]
+ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Series_Labeler"]
@@ -943,16 +941,12 @@ last-vetted = "20230309000000"
 ci-build = "build-main"
 last-vetted = "20230309000000"
 
-[components."sc.fiji:Skeletonize3D"]
-ci-build = "build-main"
-
 [components."sc.fiji:Skeletonize3D_"]
+ci-build = "build-main"
 last-vetted = "20230309000000"
 
-[components."sc.fiji:SplineDeformationGenerator"]
-ci-build = "build-main"
-
 [components."sc.fiji:SplineDeformationGenerator_"]
+ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Stack_Manipulation"]
@@ -963,7 +957,7 @@ last-vetted = "20230309000000"
 ci-build = "build-main"
 last-vetted = "20230309000000"
 
-[components."sc.fiji:Stitching"]
+[components."sc.fiji:Stitching_"]
 ci-build = "build-main"
 
 [components."sc.fiji:Sync_Win"]
@@ -989,36 +983,85 @@ ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:ToAST_"]
+ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:TopoJ_"]
+ci-build = "build-main"
 last-vetted = "20230309000000"
+
+[components."sc.fiji:Trainable_Segmentation"]
+ci-build = "build-main"
+
+[components."sc.fiji:TrakEM2_"]
+ci-build = "build-main"
+
+[components."sc.fiji:TrakEM2_Archipelago"]
+ci-build = "build-main"
 
 [components."sc.fiji:VIB-lib"]
+ci-build = "build-main"
 last-vetted = "20230309000000"
 
+[components."sc.fiji:VIB_"]
+ci-build = "build-main"
+
 [components."sc.fiji:Vaa3d_Reader"]
+ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Vaa3d_Writer"]
+ci-build = "build-main"
 last-vetted = "20230309000000"
+
+[components."sc.fiji:VectorString"]
+ci-build = "build-main"
 
 [components."sc.fiji:Video_Editing"]
+ci-build = "build-main"
 last-vetted = "20230309000000"
+
+[components."sc.fiji:Volume_Calculator"]
+ci-build = "build-main"
+
+[components."sc.fiji:Volume_Viewer"]
+ci-build = "build-main"
 
 [components."sc.fiji:bUnwarpJ_"]
+ci-build = "build-main"
 last-vetted = "20230309000000"
+
+[components."sc.fiji:bigdataviewer-server"]
+ci-build = "build-main"
+
+[components."sc.fiji:bigdataviewer-vistools"]
+ci-build = "build-main"
+
+[components."sc.fiji:bigdataviewer_fiji"]
+ci-build = "build-main"
 
 [components."sc.fiji:bij"]
+ci-build = "build-main"
 last-vetted = "20230309000000"
 
+[components."sc.fiji:blockmatching_"]
+ci-build = "build-main"
+
 [components."sc.fiji:fiji-lib"]
+ci-build = "build-main"
 last-vetted = "20230309000000"
+
+[components."sc.fiji:labkit-pixel-classification"]
+ci-build = "build-main"
+
+[components."sc.fiji:labkit-ui"]
+ci-build = "build-main"
 
 [components."sc.fiji:legacy-imglib1"]
 ci-build = "build-main"
 
 [components."sc.fiji:level_sets"]
+ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:pal-optimization"]
@@ -1036,7 +1079,7 @@ ci-build = "build-main"
 ci-build = "build-main"
 last-vetted = "20230309000000"
 
-[components."sc.fiji:spimdata"]
+[components."sc.fiji:spim_data"]
 ci-build = "build-main"
 last-vetted = "20230309000000"
 
@@ -1044,6 +1087,12 @@ last-vetted = "20230309000000"
 ci-build = "build-main"
 last-vetted = "20230309000000"
 
+[components."sc.fiji:trakem2_tps"]
+ci-build = "build-main"
+
 [components."sc.fiji:weave_jy2java"]
 ci-build = "build-main"
 last-vetted = "20230309000000"
+
+[components."sc.fiji:z_spacing"]
+ci-build = "build-main"
