@@ -134,6 +134,7 @@ excludes = [
 [smelt]
 includes = [
     "ca.mcgill:*",
+    "fr.inra.ijpb:*",
     "io.scif:*",
     "jitk:*",
     "mpicbg:*",
