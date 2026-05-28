@@ -25,7 +25,21 @@ cuttable = [
 ]
 
 [team]
-excludes = ["ome:*", "org.openmicroscopy:*"]
+includes = [
+  "de.nanoimaging:*",
+  "fr.inra.ijpb:*",
+  "io.scif:*",
+  "jitk:*",
+  "mpicbg:*",
+  "net.imagej:*",
+  "net.imglib2:*",
+  "net.preibisch:*",
+  "org.bonej:*",
+  "org.janelia*:*",
+  "org.morphonets:*",
+  "org.scijava:*",
+  "sc.fiji:*",
+]
 
 [badges]
 includes = [
