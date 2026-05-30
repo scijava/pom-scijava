@@ -109,13 +109,6 @@ excludes = [
     'mpicbg:mpicbg', 'mpicbg:mpicbg_',
     # NB: Skip artifacts requiring minimum Java version >11.
     'net.algart:algart-tiff',
-    'org.openjfx:javafx-base',
-    'org.openjfx:javafx-controls',
-    'org.openjfx:javafx-fxml',
-    'org.openjfx:javafx-graphics',
-    'org.openjfx:javafx-media',
-    'org.openjfx:javafx-swing',
-    'org.openjfx:javafx-web',
     'org.morphonets:SNT',
     # NB: Skip closed-source artifacts.
     'org.bonej:bonej-plus',

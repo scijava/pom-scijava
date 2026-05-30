@@ -2115,7 +2115,7 @@
 		26       | 24
 		27       | 25
 		-->
-		<javafx.version>23.0.2</javafx.version>
+		<javafx.version>19.0.2.1</javafx.version>
 		<javafx-base.version>${javafx.version}</javafx-base.version>
 		<javafx-controls.version>${javafx.version}</javafx-controls.version>
 		<javafx-fxml.version>${javafx.version}</javafx-fxml.version>
