@@ -885,9 +885,6 @@ last-vetted = "20230309000000"
 ci-build = "build-main"
 last-vetted = "20230309000000"
 
-[components."sc.fiji:MaMuT"]
-ci-build = "build-main"
-
 [components."sc.fiji:Manual_Tracking"]
 ci-build = "build-main"
 last-vetted = "20230309000000"
