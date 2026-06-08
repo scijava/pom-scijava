@@ -64,67 +64,23 @@ includes = [
 ]
 
 [melt]
-# Some managed components require Java 21+. So it makes sense to melt with that version of Java.
-# Unfortunately, the scijava.jvm.version is currently set to 11 by default.
-# So even though OpenJDK 21 is being used to run Maven, the enforcer plugin still
-# complains when encountering any Java libraries with bytecode newer than 11.
-# Setting scijava.jvm.version to 21 by default would avoid the issue, but...
-# is that really a good idea? Setting to 11 seems like a nice baseline compromise right now.
-java-version = 21  # Maximum Java version of all included component + deps.
+# Some managed components require Java 21+, so we melt with that Java
+# version. But pom-scijava sets scijava.jvm.version to 11 by default.
+# So beyond just using OpenJDK 21 to run Maven, we also need to set the
+# scijava.jvm.version property to target the right bytecode version.
+# Otherwise, the enforcer complains about any Java libraries targeting >11.
+java-version = 21
+properties = { "scijava.jvm.version" = "21" }
+
 template = "pombast/mega-melt-template.xml"
 excludes = [
     # TEMP: Exclude org.bytedeco:hdf5 until cisd:jhdf5 is gone.
     'org.bytedeco:hdf5',
-    # TEMP: Skip components within multi-module reactors.
-    # Neither pombast nor release-version.sh understand multi-
-    # module repositories; release-version.sh needs to learn how
-    # to tag and release individual components from multi-module
-    # repos, so that when pombast shallow clones the repo at that
-    # tag and invokes a build, it will be building only the
-    # released component as it does with single-component repos.
-    'org.scijava:scijava-collections',
-    'org.scijava:scijava-common3',
-    'org.scijava:scijava-concurrent',
-    'org.scijava:scijava-discovery-test',
-    'org.scijava:scijava-discovery',
-    'org.scijava:scijava-function',
-    'org.scijava:scijava-legacy',
-    'org.scijava:scijava-meta',
-    'org.scijava:scijava-ops-api',
-    'org.scijava:scijava-ops-benchmarks',
-    'org.scijava:scijava-ops-engine',
-    'org.scijava:scijava-ops-ext-parser',
-    'org.scijava:scijava-ops-flim',
-    'org.scijava:scijava-ops-image',
-    'org.scijava:scijava-ops-indexer',
-    'org.scijava:scijava-ops-opencv',
-    'org.scijava:scijava-ops-spi',
-    'org.scijava:scijava-ops-tutorial',
-    'org.scijava:scijava-priority',
-    'org.scijava:scijava-progress',
-    'org.scijava:scijava-struct',
-    'org.scijava:scijava-taglets',
-    'org.scijava:scijava-testutil',
-    'org.scijava:scijava-types',
-    'mpicbg:mpicbg', 'mpicbg:mpicbg_',
-    # NB: Skip artifacts requiring minimum Java version >11.
-    'net.algart:algart-tiff',
-    'org.morphonets:SNT',
-    # NB: Skip closed-source artifacts.
-    'org.bonej:bonej-plus',
     # NB: The following artifacts have messy dependency trees.
     # Too many problems to test as part of the melt action.
     # See WARNING block in pom-scijava's pom.xml for details.
     'net.imagej:imagej-server',
     'org.apache.spark:spark-core_2.11',
-    # NB: Skip scijava forks of third-party projects.
-    # These are very stable, with few/no dependencies, and
-    # don't need to be retested as pom-scijava evolves.
-    'org.scijava:j3dcore',
-    'org.scijava:j3dutils',
-    'org.scijava:jep',
-    'org.scijava:junit-benchmarks',
-    'org.scijava:vecmath',
     # NB: Skip alternate flavors of other managed components.
     'org.jogamp.gluegen:gluegen',     # uberjar flavor of gluegen-rt
     'org.jogamp.jogl:jogl-all-noawt', # slimmed down flavor of jogl-all
