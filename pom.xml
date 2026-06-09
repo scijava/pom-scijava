@@ -1195,7 +1195,7 @@
 		<org.janelia.saalfeldlab.n5-imglib2.version>${n5-imglib2.version}</org.janelia.saalfeldlab.n5-imglib2.version>
 
 		<!-- N5 Universe - https://github.com/saalfeldlab/n5-universe -->
-		<n5-universe.version>3.0.0</n5-universe.version>
+		<n5-universe.version>3.0.1</n5-universe.version>
 		<org.janelia.saalfeldlab.n5-universe.version>${n5-universe.version}</org.janelia.saalfeldlab.n5-universe.version>
 
 		<!-- N5 Viewer for Fiji - https://github.com/saalfeldlab/n5-viewer_fiji -->
