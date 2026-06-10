@@ -1208,6 +1208,15 @@
 
 		<!-- Fiji-adjacent projects (available from ImageJ update sites) -->
 
+		<!-- FLIMLib - https://github.com/flimlib -->
+		<flimj-ops.version>2.1.2</flimj-ops.version>
+		<flimj-ui.version>2.0.0</flimj-ui.version>
+		<flimlib.version>2.2.5</flimlib.version>
+		<flimlib.flimj-ops.version>${flimj-ops.version}</flimlib.flimj-ops.version>
+		<flimlib.flimj-ui.version>${flimj-ui.version}</flimlib.flimj-ui.version>
+		<flimlib.flimlib.version>${flimlib.version}</flimlib.flimlib.version>
+		<scijava.natives.classifier.flimlib>${scijava.natives.classifier}</scijava.natives.classifier.flimlib>
+
 		<!-- MorphoLibJ - https://imagej.net/plugins/morpholibj -->
 		<MorphoLibJ.version>1.6.4</MorphoLibJ.version>
 		<MorphoLibJ_.version>${MorphoLibJ.version}</MorphoLibJ_.version>
@@ -3950,6 +3959,29 @@
 			</dependency>
 
 			<!-- Fiji-adjacent projects (available from ImageJ update sites) -->
+
+			<!-- FLIMLib - https://github.com/flimlib -->
+			<dependency>
+				<groupId>flimlib</groupId>
+				<artifactId>flimj-ops</artifactId>
+				<version>${flimlib.flimj-ops.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>flimlib</groupId>
+				<artifactId>flimj-ui</artifactId>
+				<version>${flimlib.flimj-ui.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>flimlib</groupId>
+				<artifactId>flimlib</artifactId>
+				<version>${flimlib.flimlib.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>flimlib</groupId>
+				<artifactId>flimlib</artifactId>
+				<version>${flimlib.flimlib.version}</version>
+				<classifier>${scijava.natives.classifier.flimlib}</classifier>
+			</dependency>
 
 			<!-- MorphoLibJ - https://imagej.net/plugins/morpholibj -->
 			<dependency>
