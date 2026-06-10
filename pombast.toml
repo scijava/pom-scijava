@@ -327,6 +327,9 @@ last-vetted = "20230309000000"
 [components."net.imglib2:imglib2-mesh"]
 java-version = 11
 
+[components."net.preibisch:multiview-reconstruction"]
+java-version = 11
+
 [components."net.preibisch:multiview-simulation"]
 ci-build = "build-main"
 
@@ -764,6 +767,9 @@ ci-build = "build-main"
 ci-build = "build-main"
 last-vetted = "20230309000000"
 
+[components."sc.fiji:FilamentDetector"]
+java-version = 11
+
 [components."sc.fiji:FlowJ_"]
 ci-build = "build-main"
 last-vetted = "20230309000000"
@@ -850,7 +856,7 @@ ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:OMEVisual"]
-last-vetted = "20230309000000"
+java-version = 11
 
 [components."sc.fiji:PIV_analyser"]
 ci-build = "build-main"
