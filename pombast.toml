@@ -991,6 +991,10 @@ ci-build = "build-main"
 [components."sc.fiji:bigdataviewer_fiji"]
 ci-build = "build-main"
 
+[components."sc.fiji:bigvolumeviewer"]
+# NOTE: Using the release flag disallows access to sun.misc.Unsafe.
+properties = { "maven.compiler.release" = "" }
+
 [components."sc.fiji:bij"]
 ci-build = "build-main"
 last-vetted = "20230309000000"
