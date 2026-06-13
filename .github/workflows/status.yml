@@ -4,13 +4,23 @@ on:
   schedule:
     # Run daily at 0500 UTC.
     - cron: '0 5 * * *'
-  push:
-    branches:
-      - master
+  # Run right after the build workflow publishes a fresh smelt.json, so the
+  # status page picks up new bytecode classification immediately rather than
+  # waiting for the next daily run. The job-level guard below restricts this to
+  # master pushes, the only builds that republish smelt.json.
+  workflow_run:
+    workflows: [build]
+    types: [completed]
 
 jobs:
   status:
     runs-on: ubuntu-latest
+    # Scheduled runs always proceed. workflow_run runs only when the triggering
+    # build was a push to master (i.e. one that republished smelt.json).
+    if: >-
+      github.event_name != 'workflow_run' ||
+      (github.event.workflow_run.event == 'push' &&
+       github.event.workflow_run.head_branch == 'master')
     permissions:
       actions: write  # needed to delete and re-save caches
 
@@ -26,7 +36,14 @@ jobs:
       - name: Restore pombast cache
         uses: actions/cache/restore@v4
         with:
-          path: ~/.cache/pombast
+          # pombast: status caches; jgo: per-artifact bytecode-scan results;
+          # ~/.m2: candidate JARs that bump classification downloads to scan.
+          # Persisting these keeps the daily classification from re-downloading
+          # and re-scanning every candidate on each run.
+          path: |
+            ~/.cache/pombast
+            ~/.cache/jgo
+            ~/.m2/repository
           key: ${{ runner.os }}-pombast-status
 
       # The monoqueue library is used by pombast to read GitHub issues.
@@ -53,7 +70,10 @@ jobs:
         if: always()
         uses: actions/cache/save@v4
         with:
-          path: ~/.cache/pombast
+          path: |
+            ~/.cache/pombast
+            ~/.cache/jgo
+            ~/.m2/repository
           key: ${{ runner.os }}-pombast-status
 
       - name: Delete old monoqueue cache

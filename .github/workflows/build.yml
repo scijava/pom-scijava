@@ -54,7 +54,13 @@ jobs:
       - name: Restore pombast cache
         uses: actions/cache/restore@v4
         with:
-          path: ~/.cache/pombast
+          # pombast: success/timestamp caches; cjdk: downloaded JDKs + Maven;
+          # jgo: per-artifact bytecode-scan results. (~/.m2 is cached above by
+          # setup-java's cache: 'maven'.)
+          path: |
+            ~/.cache/pombast
+            ~/.cache/cjdk
+            ~/.cache/jgo
           key: ${{ runner.os }}-pombast-build
 
       - name: Run pombast melt+smelt commands
@@ -72,7 +78,10 @@ jobs:
         if: always()
         uses: actions/cache/save@v4
         with:
-          path: ~/.cache/pombast
+          path: |
+            ~/.cache/pombast
+            ~/.cache/cjdk
+            ~/.cache/jgo
           key: ${{ runner.os }}-pombast-build
 
       - name: Publish smelt results
