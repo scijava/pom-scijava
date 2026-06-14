@@ -585,9 +585,6 @@ last-vetted = "20230309000000"
 [components."org.scijava:scijava-plugins-text-plain"]
 ci-build = "build-main"
 
-[components."org.scijava:scijava-search"]
-ci-build = "build-main"
-
 [components."org.scijava:scijava-table"]
 ci-build = "build-main"
 
@@ -609,9 +606,6 @@ ci-build = "build-main"
 [components."org.scijava:scripting-clojure"]
 ci-build = "build-main"
 
-[components."org.scijava:scripting-groovy"]
-ci-build = "build-main"
-
 [components."org.scijava:scripting-javascript"]
 ci-build = "build-main"
 
@@ -620,9 +614,6 @@ ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."org.scijava:scripting-jython"]
-ci-build = "build-main"
-
-[components."org.scijava:scripting-kotlin"]
 ci-build = "build-main"
 
 [components."org.scijava:scripting-matlab"]
