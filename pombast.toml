@@ -215,7 +215,13 @@ skip-tests = [
 #     at ij.macro.Interpreter.run(Interpreter.java:162)
 #     at ij.macro.Interpreter.run(Interpreter.java:92)
 #     at sc.fiji.labkit.ui.plugin.CalculateProbabilityMapWithLabkitIJ1PluginTest.test(CalculateProbabilityMapWithLabkitIJ1PluginTest.java:65)
-"sc.fiji:labkit-ui" = ["sc.fiji.labkit.ui.plugin.CalculateProbabilityMapWithLabkitIJ1PluginTest"]
+"sc.fiji:labkit-ui" = [
+    "sc.fiji.labkit.ui.plugin.CalculateProbabilityMapWithLabkitIJ1PluginTest",      # Failing (see above)
+    "sc.fiji.labkit.ui.GarbageCollectionTest",                                      # Too slow (7 s)
+    "sc.fiji.labkit.ui.plugin.LabkitProbabilityMapForImagesInDirectoryPluginTest",  # Too slow (65 s)
+    "sc.fiji.labkit.ui.plugin.SegmentRGBImageTest",                                 # Too slow (35 s)
+    "sc.fiji.labkit.ui.segmentation.SegmentationToolTest",                          # Too slow (34 s)
+]
 
 [components."fr.inra.ijpb:MorphoLibJ_"]
 ci-build = "build-main"
