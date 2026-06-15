@@ -360,7 +360,7 @@
 		<org.scijava.junit-benchmarks.version>${junit-benchmarks.version}</org.scijava.junit-benchmarks.version>
 
 		<!-- MiniMaven - https://github.com/scijava/minimaven -->
-		<minimaven.version>2.2.2</minimaven.version>
+		<minimaven.version>2.2.3</minimaven.version>
 		<org.scijava.minimaven.version>${minimaven.version}</org.scijava.minimaven.version>
 
 		<!-- Native Lib Loader - https://github.com/scijava/native-lib-loader -->
