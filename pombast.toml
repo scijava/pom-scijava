@@ -176,6 +176,17 @@ excludes = [
 skip-tests = [
     # Error while checking the CLIJ2 installation: null
     "sc.fiji:labkit-pixel-classification",
+
+    # TEMP: Until n5-aws-sw test failures are resolved; see also:
+    # https://github.com/scijava/pom-scijava/pull/304#issuecomment-4684120110
+    # Errors are of the form:
+    # Unable to execute HTTP request: Connect to localhost:9000
+    # [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+    "org.janelia.saalfeldlab:n5-aws-s3",
+
+    # TEMP: Until n5-universe test failures are resolved; see also:
+    # https://github.com/scijava/pom-scijava/pull/304#issuecomment-4684417746
+    "org.janelia.saalfeldlab:n5-universe",
 ]
 
 [remove-tests]
