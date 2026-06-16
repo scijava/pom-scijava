@@ -973,9 +973,6 @@ last-vetted = "20230309000000"
 [components."sc.fiji:bigdataviewer-server"]
 ci-build = "build-main"
 
-[components."sc.fiji:bigdataviewer-vistools"]
-ci-build = "build-main"
-
 [components."sc.fiji:bigdataviewer_fiji"]
 ci-build = "build-main"
 

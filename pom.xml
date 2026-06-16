@@ -1065,10 +1065,6 @@
 		<bigdataviewer-server.version>4.0.0</bigdataviewer-server.version>
 		<sc.fiji.bigdataviewer-server.version>${bigdataviewer-server.version}</sc.fiji.bigdataviewer-server.version>
 
-		<!-- BigDataViewer Visualization Tools - https://github.com/bigdataviewer/bigdataviewer-vistools -->
-		<bigdataviewer-vistools.version>1.0.0-beta-36</bigdataviewer-vistools.version>
-		<sc.fiji.bigdataviewer-vistools.version>${bigdataviewer-vistools.version}</sc.fiji.bigdataviewer-vistools.version>
-
 		<!-- BigDataViewer Fiji - https://github.com/bigdataviewer/bigdataviewer_fiji -->
 		<bigdataviewer_fiji.version>6.4.1</bigdataviewer_fiji.version>
 		<sc.fiji.bigdataviewer_fiji.version>${bigdataviewer_fiji.version}</sc.fiji.bigdataviewer_fiji.version>
@@ -3780,11 +3776,6 @@
 				<groupId>sc.fiji</groupId>
 				<artifactId>bigdataviewer-server</artifactId>
 				<version>${sc.fiji.bigdataviewer-server.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
-				<artifactId>bigdataviewer-vistools</artifactId>
-				<version>${sc.fiji.bigdataviewer-vistools.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
