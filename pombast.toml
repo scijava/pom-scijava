@@ -356,6 +356,8 @@ ci-build = "build-main"
 
 [components."org.bonej:bonej-plugins"]
 java-version = 11
+# TEMP: Until a BoneJ release exists incorporating bonej-org/BoneJ2#414.
+properties = { "skipTests" = "true" }
 ci-build = "build-main"
 
 [components."org.bonej:bonej-utilities"]
