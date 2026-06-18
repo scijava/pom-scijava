@@ -145,17 +145,6 @@ excludes = [
 skip-tests = [
     # Error while checking the CLIJ2 installation: null
     "sc.fiji:labkit-pixel-classification",
-
-    # TEMP: Until n5-aws-sw test failures are resolved; see also:
-    # https://github.com/scijava/pom-scijava/pull/304#issuecomment-4684120110
-    # Errors are of the form:
-    # Unable to execute HTTP request: Connect to localhost:9000
-    # [localhost/127.0.0.1] failed: Connection refused (Connection refused)
-    "org.janelia.saalfeldlab:n5-aws-s3",
-
-    # TEMP: Until n5-universe test failures are resolved; see also:
-    # https://github.com/scijava/pom-scijava/pull/304#issuecomment-4684417746
-    "org.janelia.saalfeldlab:n5-universe",
 ]
 
 [remove-tests]
@@ -166,18 +155,40 @@ skip-tests = [
 
 # In org.janelia.saalfeldlab.n5.metadata.ome.ngff.v04.WriteAxesTests.testXYT:
 # java.util.NoSuchElementException: No value present
-"org.janelia.saalfeldlab:n5-ij" = ["org.janelia.saalfeldlab.n5.metadata.ome.ngff.v04.WriteAxesTests"]
+#"org.janelia.saalfeldlab:n5-ij" = ["org.janelia.saalfeldlab.n5.metadata.ome.ngff.v04.WriteAxesTests"]
 
-# Avoid notNull assertion error at
-# org.janelia.saalfeldlab.n5.universe.metadata.MetadataTests.testEmptyBase(MetadataTests.java:346)
-"org.janelia.saalfeldlab:n5-universe" = ["org.janelia.saalfeldlab.n5.universe.metadata.MetadataTests"]
+# In org.janelia.saalfeldlab.n5.s3.AmazonS3UtilsTest.testUriParsing:
+# SdkClient Unable to load region from any of the providers in the chain
+# software.amazon.awssdk.regions.providers.DefaultAwsRegionProviderChain@427475a2:
+# [software.amazon.awssdk.regions.providers.SystemSettingsRegionProvider@768b79db:
+# Unable to load region from system settings. Region must be specified either
+# via environment variable (AWS_REGION) or  system property (aws.region).,
+# software.amazon.awssdk.regions.providers.AwsProfileRegionProvider@3b59d246:
+# No region provided in profile: default,
+# software.amazon.awssdk.regions.providers.InstanceProfileRegionProvider@11b0cf30:
+# Unable to contact EC2 metadata service.]
+"org.janelia.saalfeldlab:n5-aws-s3" = ["org.janelia.saalfeldlab.n5.s3.AmazonS3UtilsTest"]
 
-# In org.janelia.saalfeldlab.n5.zarr.ZarrCachedFSTest.cacheBehaviorTest:
-# arrays first differed at element [0]; expected:<[a]> but was:<[c]>
-"org.janelia.saalfeldlab:n5-zarr" = ["org.janelia.saalfeldlab.n5.zarr.ZarrCachedFSTest"]
-# Note: The above test is fixed with saalfeldlab/n5-zarr@e7edcec3,
-# but the fix is only available in n5-zarr 2.0.0-alpha-1, and we
-# do not want to update the SciJava BOM to the alpha version.
+# Skip n5-universe'slow tests.
+"org.janelia.saalfeldlab:n5-universe" = [
+  "org.janelia.saalfeldlab.n5.universe.storage.zarr.ZarrStorageTests",            # Time elapsed: 1753 s
+  "org.janelia.saalfeldlab.n5.universe.storage.zarr.zarr2.Zarr2HttpFactoryTest",  # Time elapsed: 947.2 s
+  "org.janelia.saalfeldlab.n5.universe.storage.n5.N5StorageTests",                # Time elapsed: 843.5 s
+  "org.janelia.saalfeldlab.n5.universe.storage.n5.N5HttpFactoryTest",             # Time elapsed: 832.3 s
+  "org.janelia.saalfeldlab.n5.universe.storage.zarr.zarr3.Zarr3HttpFactoryTest",  # Time elapsed: 785.5 s
+
+  # And these are all dependent on the above removed classes. :-(
+  "org.janelia.saalfeldlab.n5.universe.BackendStorageFormatTests",
+  "org.janelia.saalfeldlab.n5.universe.storage.n5.N5AmazonS3FactoryTest",
+  "org.janelia.saalfeldlab.n5.universe.storage.n5.N5FileSystemTest",
+  "org.janelia.saalfeldlab.n5.universe.storage.n5.N5GoogleCloudFactoryTest",
+  "org.janelia.saalfeldlab.n5.universe.storage.zarr.zarr2.Zarr2AmazonS3FactoryTest",
+  "org.janelia.saalfeldlab.n5.universe.storage.zarr.zarr2.Zarr2FileSystemTest",
+  "org.janelia.saalfeldlab.n5.universe.storage.zarr.zarr2.Zarr2GoogleCloudFactoryTest",
+  "org.janelia.saalfeldlab.n5.universe.storage.zarr.zarr3.Zarr3AmazonS3FactoryTest",
+  "org.janelia.saalfeldlab.n5.universe.storage.zarr.zarr3.Zarr3FileSystemTest",
+  "org.janelia.saalfeldlab.n5.universe.storage.zarr.zarr3.Zarr3GoogleCloudFactoryTest",
+]
 
 "sc.fiji:labkit-ui" = [
     "sc.fiji.labkit.ui.GarbageCollectionTest",                                      # Too slow (7 s)
