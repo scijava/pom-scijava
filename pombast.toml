@@ -141,37 +141,6 @@ excludes = [
   'org.scijava:jep',
   'org.scijava:junit-benchmarks',
   'org.scijava:vecmath',
-  # TEMP: Skip components within multi-module reactors.
-  # Neither pombast nor release-version.sh understand multi-
-  # module repositories; release-version.sh needs to learn how
-  # to tag and release individual components from multi-module
-  # repos, so that when pombast shallow clones the repo at that
-  # tag and invokes a build, it will be building only the
-  # released component as it does with single-component repos.
-  'org.scijava:scijava-collections',
-  'org.scijava:scijava-common3',
-  'org.scijava:scijava-concurrent',
-  'org.scijava:scijava-discovery-test',
-  'org.scijava:scijava-discovery',
-  'org.scijava:scijava-function',
-  'org.scijava:scijava-legacy',
-  'org.scijava:scijava-meta',
-  'org.scijava:scijava-ops-api',
-  'org.scijava:scijava-ops-benchmarks',
-  'org.scijava:scijava-ops-engine',
-  'org.scijava:scijava-ops-ext-parser',
-  'org.scijava:scijava-ops-flim',
-  'org.scijava:scijava-ops-image',
-  'org.scijava:scijava-ops-indexer',
-  'org.scijava:scijava-ops-opencv',
-  'org.scijava:scijava-ops-spi',
-  'org.scijava:scijava-ops-tutorial',
-  'org.scijava:scijava-priority',
-  'org.scijava:scijava-progress',
-  'org.scijava:scijava-struct',
-  'org.scijava:scijava-taglets',
-  'org.scijava:scijava-testutil',
-  'org.scijava:scijava-types',
 ]
 skip-tests = [
     # Error while checking the CLIJ2 installation: null
