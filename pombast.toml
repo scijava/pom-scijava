@@ -150,7 +150,7 @@ skip-tests = [
 [remove-tests]
 
 # CachedOpEnvironmentTest fails intermittently. Of course, it should be
-# somehow fixed in imagej-ops. But for now, let's not let it ruin the melt.
+# somehow fixed in imagej-ops. But for now, let's not let it ruin the smelt.
 "net.imagej:imagej-ops" = ["net.imagej.ops.cached.CachedOpEnvironmentTest"]
 
 # In org.janelia.saalfeldlab.n5.metadata.ome.ngff.v04.WriteAxesTests.testXYT:
