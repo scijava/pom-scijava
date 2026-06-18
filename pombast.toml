@@ -324,25 +324,20 @@ ci-build = "maven"
 
 [components."org.bonej:bonej-legacy-plugins_"]
 java-version = 11
-ci-build = "build-main"
 
 [components."org.bonej:bonej-legacy-util_"]
 java-version = 11
-ci-build = "build-main"
 
 [components."org.bonej:bonej-ops"]
 java-version = 11
-ci-build = "build-main"
 
 [components."org.bonej:bonej-plugins"]
 java-version = 11
 # TEMP: Until a BoneJ release exists incorporating bonej-org/BoneJ2#414.
 properties = { "skipTests" = "true" }
-ci-build = "build-main"
 
 [components."org.bonej:bonej-utilities"]
 java-version = 11
-ci-build = "build-main"
 
 [components."org.codehaus.groovy:groovy"]
 last-vetted = "20250101000000"
