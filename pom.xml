@@ -1238,7 +1238,7 @@
 
 		<!-- BigStitcher - https://imagej.net/plugins/bigstitcher -->
 		<BigStitcher.version>2.6.1</BigStitcher.version>
-		<multiview-reconstruction.version>9.0.0</multiview-reconstruction.version>
+		<multiview-reconstruction.version>9.0.1</multiview-reconstruction.version>
 		<multiview-simulation.version>0.3.1</multiview-simulation.version>
 		<net.preibisch.BigStitcher.version>${BigStitcher.version}</net.preibisch.BigStitcher.version>
 		<net.preibisch.multiview-reconstruction.version>${multiview-reconstruction.version}</net.preibisch.multiview-reconstruction.version>

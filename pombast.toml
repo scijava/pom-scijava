@@ -310,9 +310,6 @@ last-vetted = "20230309000000"
 [components."net.imglib2:imglib2-mesh"]
 java-version = 11
 
-[components."net.preibisch:multiview-reconstruction"]
-java-version = 11
-
 [components."net.preibisch:multiview-simulation"]
 ci-build = "build-main"
 
