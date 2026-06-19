@@ -3,8 +3,9 @@ default-java-version = 8
 repositories = ["scijava.public=https://maven.scijava.org/content/groups/public"]
 
 [status]
+output = "../status.scijava.org/index.html"
+smelt = "../status.scijava.org/smelt.json"
 rules = "rules.xml"
-html = "../status.scijava.org/index.html"
 header = "pombast/header-status.html"
 footer = "pombast/footer-status.html"
 nexus-base = "https://maven.scijava.org"
@@ -25,7 +26,7 @@ cuttable = [
 ]
 
 [team]
-html = "../status.scijava.org/team.html"
+output = "../status.scijava.org/team.html"
 header = "pombast/header-team.html"
 footer = "pombast/footer-team.html"
 includes = [
@@ -45,6 +46,7 @@ includes = [
 ]
 
 [badges]
+output = "../status.scijava.org/badges.json"
 includes = [
   "de.nanoimaging:*",
   "fr.inra.ijpb:*",
@@ -113,6 +115,7 @@ excludes = [
 ]
 
 [smelt]
+output = "../status.scijava.org/smelt.json"
 includes = [
     "ca.mcgill:*",
     "de.nanoimaging:*",
