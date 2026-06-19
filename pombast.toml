@@ -150,8 +150,8 @@ excludes = [
   "org.scijava:vecmath",
 ]
 skip-tests = [
-    # Error while checking the CLIJ2 installation: null
-    "sc.fiji:labkit-pixel-classification",
+  # Error while checking the CLIJ2 installation: null
+  "sc.fiji:labkit-pixel-classification",
 ]
 
 [remove-tests]
@@ -205,10 +205,10 @@ skip-tests = [
 ]
 
 "sc.fiji:labkit-ui" = [
-    "sc.fiji.labkit.ui.GarbageCollectionTest",                                      # Too slow (7 s)
-    "sc.fiji.labkit.ui.plugin.LabkitProbabilityMapForImagesInDirectoryPluginTest",  # Too slow (65 s)
-    "sc.fiji.labkit.ui.plugin.SegmentRGBImageTest",                                 # Too slow (35 s)
-    "sc.fiji.labkit.ui.segmentation.SegmentationToolTest",                          # Too slow (34 s)
+  "sc.fiji.labkit.ui.GarbageCollectionTest",                                      # Too slow (7 s)
+  "sc.fiji.labkit.ui.plugin.LabkitProbabilityMapForImagesInDirectoryPluginTest",  # Too slow (65 s)
+  "sc.fiji.labkit.ui.plugin.SegmentRGBImageTest",                                 # Too slow (35 s)
+  "sc.fiji.labkit.ui.segmentation.SegmentationToolTest",                          # Too slow (34 s)
 ]
 
 [components."fr.inra.ijpb:MorphoLibJ_"]
