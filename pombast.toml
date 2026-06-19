@@ -79,63 +79,61 @@ properties = { "scijava.jvm.version" = "21" }
 
 template = "pombast/melt-template.xml"
 excludes = [
-    # TEMP: Exclude org.bytedeco:hdf5 until cisd:jhdf5 is gone.
-    'org.bytedeco:hdf5',
-    # NB: The following artifacts have messy dependency trees.
-    # Too many problems to test as part of the melt action.
-    # See WARNING block in pom-scijava's pom.xml for details.
-    'net.imagej:imagej-server',
-    'org.apache.spark:spark-core_2.11',
-    # NB: Skip alternate flavors of other managed components.
-    'org.jogamp.gluegen:gluegen',     # uberjar flavor of gluegen-rt
-    'org.jogamp.jogl:jogl-all-noawt', # slimmed down flavor of jogl-all
-    # NB: All the SWT platform JARs have the same classes.
-    # The current platform will be brought in transitively.
-    'org.eclipse.swt:org.eclipse.swt.cocoa.macosx',
-    'org.eclipse.swt:org.eclipse.swt.cocoa.macosx.x86_64',
-    'org.eclipse.swt:org.eclipse.swt.gtk.aix.ppc',
-    'org.eclipse.swt:org.eclipse.swt.gtk.aix.ppc64',
-    'org.eclipse.swt:org.eclipse.swt.gtk.hpux.ia64',
-    'org.eclipse.swt:org.eclipse.swt.gtk.linux.ppc',
-    'org.eclipse.swt:org.eclipse.swt.gtk.linux.ppc64',
-    'org.eclipse.swt:org.eclipse.swt.gtk.linux.s390',
-    'org.eclipse.swt:org.eclipse.swt.gtk.linux.s390x',
-    'org.eclipse.swt:org.eclipse.swt.gtk.linux.x86',
-    'org.eclipse.swt:org.eclipse.swt.gtk.linux.x86_64',
-    'org.eclipse.swt:org.eclipse.swt.gtk.solaris.sparc',
-    'org.eclipse.swt:org.eclipse.swt.gtk.solaris.x86',
-    'org.eclipse.swt:org.eclipse.swt.win32.win32.x86',
-    'org.eclipse.swt:org.eclipse.swt.win32.win32.x86_64',
-    # NB: All SLF4J bindings have the same classes.
-    # We'll rely on logback-classic being present here.
-    'org.slf4j:slf4j-jcl',
-    'org.slf4j:slf4j-jdk14',
-    'org.slf4j:slf4j-nop',
-    'org.slf4j:slf4j-simple',
-    # NB: Cannot include both commons-logging and jcl-over-slf4j;
-    # see: http://www.slf4j.org/codes.html#jclDelegationLoop
-    'org.slf4j:jcl-over-slf4j',
+  # TEMP: Exclude org.bytedeco:hdf5 until cisd:jhdf5 is gone.
+  'org.bytedeco:hdf5',
+  # NB: The following artifacts have messy dependency trees.
+  # Too many problems to test as part of the melt action.
+  # See WARNING block in pom-scijava's pom.xml for details.
+  'net.imagej:imagej-server',
+  'org.apache.spark:spark-core_2.11',
+  # NB: Skip alternate flavors of other managed components.
+  'org.jogamp.gluegen:gluegen',     # uberjar flavor of gluegen-rt
+  'org.jogamp.jogl:jogl-all-noawt', # slimmed down flavor of jogl-all
+  # NB: All the SWT platform JARs have the same classes.
+  # The current platform will be brought in transitively.
+  'org.eclipse.swt:org.eclipse.swt.cocoa.macosx',
+  'org.eclipse.swt:org.eclipse.swt.cocoa.macosx.x86_64',
+  'org.eclipse.swt:org.eclipse.swt.gtk.aix.ppc',
+  'org.eclipse.swt:org.eclipse.swt.gtk.aix.ppc64',
+  'org.eclipse.swt:org.eclipse.swt.gtk.hpux.ia64',
+  'org.eclipse.swt:org.eclipse.swt.gtk.linux.ppc',
+  'org.eclipse.swt:org.eclipse.swt.gtk.linux.ppc64',
+  'org.eclipse.swt:org.eclipse.swt.gtk.linux.s390',
+  'org.eclipse.swt:org.eclipse.swt.gtk.linux.s390x',
+  'org.eclipse.swt:org.eclipse.swt.gtk.linux.x86',
+  'org.eclipse.swt:org.eclipse.swt.gtk.linux.x86_64',
+  'org.eclipse.swt:org.eclipse.swt.gtk.solaris.sparc',
+  'org.eclipse.swt:org.eclipse.swt.gtk.solaris.x86',
+  'org.eclipse.swt:org.eclipse.swt.win32.win32.x86',
+  'org.eclipse.swt:org.eclipse.swt.win32.win32.x86_64',
+  # NB: All SLF4J bindings have the same classes.
+  # We'll rely on logback-classic being present here.
+  'org.slf4j:slf4j-jcl',
+  'org.slf4j:slf4j-jdk14',
+  'org.slf4j:slf4j-nop',
+  'org.slf4j:slf4j-simple',
+  # NB: Cannot include both commons-logging and jcl-over-slf4j;
+  # see: http://www.slf4j.org/codes.html#jclDelegationLoop
+  'org.slf4j:jcl-over-slf4j',
 ]
 
 [smelt]
 output = "../status.scijava.org/smelt.json"
 includes = [
-    "ca.mcgill:*",
-    "de.nanoimaging:*",
-    "flimlib:*",
-    "fr.inra.ijpb:*",
-    "io.scif:*",
-    "jitk:*",
-    "mpicbg:*",
-    "net.imagej:*",
-    "net.imglib2:*",
-    "net.preibisch:*",
-    "org.bonej:*",
-    "org.janelia.saalfeldlab:*",
-    "org.janelia:*",
-    "org.morphonets:*",
-    "org.scijava:*",
-    "sc.fiji:*",
+  "de.nanoimaging:*",
+  "flimlib:*",
+  "fr.inra.ijpb:*",
+  "io.scif:*",
+  "jitk:*",
+  "mpicbg:*",
+  "net.imagej:*",
+  "net.imglib2:*",
+  "net.preibisch:*",
+  "org.bonej:*",
+  "org.janelia*:*",
+  "org.morphonets:*",
+  "org.scijava:*",
+  "sc.fiji:*",
 ]
 excludes = [
   # NB: Skip closed-source artifacts.
