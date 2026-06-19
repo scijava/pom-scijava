@@ -11,6 +11,7 @@ footer = "pombast/footer-status.html"
 nexus-base = "https://maven.scijava.org"
 cuttable = [
   "de.nanoimaging:*",
+  "flimlib:*",
   "fr.inra.ijpb:*",
   "io.scif:*",
   "jitk:*",
@@ -31,6 +32,7 @@ header = "pombast/header-team.html"
 footer = "pombast/footer-team.html"
 includes = [
   "de.nanoimaging:*",
+  "flimlib:*",
   "fr.inra.ijpb:*",
   "io.scif:*",
   "jitk:*",
@@ -49,6 +51,7 @@ includes = [
 output = "../status.scijava.org/badges.json"
 includes = [
   "de.nanoimaging:*",
+  "flimlib:*",
   "fr.inra.ijpb:*",
   "io.scif:*",
   "jitk:*",
@@ -119,6 +122,7 @@ output = "../status.scijava.org/smelt.json"
 includes = [
     "ca.mcgill:*",
     "de.nanoimaging:*",
+    "flimlib:*",
     "fr.inra.ijpb:*",
     "io.scif:*",
     "jitk:*",
