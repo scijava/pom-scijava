@@ -136,6 +136,8 @@ includes = [
   "sc.fiji:*",
 ]
 excludes = [
+  # TEMP: Until scijava-ops-image 2.0.0 is released.
+  "org.scijava:scijava-ops-image",
   # NB: Skip closed-source artifacts.
   "org.bonej:bonej-plus",
   # NB: Skip scijava forks of third-party projects.
@@ -193,6 +195,13 @@ skip-tests = [
   "org.janelia.saalfeldlab.n5.universe.storage.zarr.zarr3.Zarr3AmazonS3FactoryTest",
   "org.janelia.saalfeldlab.n5.universe.storage.zarr.zarr3.Zarr3FileSystemTest",
   "org.janelia.saalfeldlab.n5.universe.storage.zarr.zarr3.Zarr3GoogleCloudFactoryTest",
+]
+
+# TEMP: Until scijava-ops-flim 1.0.1 is released.
+# FitTest.testGlobalFitImg:214->assertSampleEquals:254 array contents differ at index [0], expected: <2.5887516> but was: <1.2488503>
+# FitTest.testGlobalFitImgMultiExp:228->assertSampleEquals:254 array contents differ at index [0], expected: <301.6971> but was: <193.0>
+"org.scijava:scijava-ops-flim" = [
+  "org.scijava.ops.flim.FitTest",
 ]
 
 "sc.fiji:labkit-ui" = [
