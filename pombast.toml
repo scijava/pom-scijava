@@ -319,6 +319,10 @@ ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."net.imglib2:imglib2-mesh"]
+# NOTE: Workaround for: error: Could not load processor class file due to
+# 'org/scijava/ops/indexer/OpImplNoteParser has been compiled by a more recent
+# version of the Java Runtime (class file version 55.0), this version of the
+# Java Runtime only recognizes class file versions up to 52.0'.
 java-version = 11
 
 [components."net.preibisch:multiview-simulation"]
@@ -333,22 +337,9 @@ ci-build = "maven"
 [components."ome:formats-gpl"]
 ci-build = "maven"
 
-[components."org.bonej:bonej-legacy-plugins_"]
-java-version = 11
-
-[components."org.bonej:bonej-legacy-util_"]
-java-version = 11
-
-[components."org.bonej:bonej-ops"]
-java-version = 11
-
 [components."org.bonej:bonej-plugins"]
-java-version = 11
 # TEMP: Until a BoneJ release exists incorporating bonej-org/BoneJ2#414.
 properties = { "skipTests" = "true" }
-
-[components."org.bonej:bonej-utilities"]
-java-version = 11
 
 [components."org.codehaus.groovy:groovy"]
 last-vetted = "20250101000000"
@@ -457,9 +448,6 @@ ci-build = "build-main"
 
 [components."org.mockito:mockito-core"]
 last-vetted = "20250101000000"
-
-[components."org.morphonets:SNT"]
-java-version = 21
 
 [components."org.ojalgo:ojalgo"]
 last-vetted = "20250101000000"
@@ -743,9 +731,6 @@ ci-build = "build-main"
 ci-build = "build-main"
 last-vetted = "20230309000000"
 
-[components."sc.fiji:FilamentDetector"]
-java-version = 11
-
 [components."sc.fiji:FlowJ_"]
 ci-build = "build-main"
 last-vetted = "20230309000000"
@@ -830,9 +815,6 @@ last-vetted = "20230309000000"
 [components."sc.fiji:Multi_Kymograph"]
 ci-build = "build-main"
 last-vetted = "20230309000000"
-
-[components."sc.fiji:OMEVisual"]
-java-version = 11
 
 [components."sc.fiji:PIV_analyser"]
 ci-build = "build-main"
