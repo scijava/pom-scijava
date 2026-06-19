@@ -74,7 +74,7 @@ includes = [
 java-version = 21
 properties = { "scijava.jvm.version" = "21" }
 
-template = "pombast/mega-melt-template.xml"
+template = "pombast/melt-template.xml"
 excludes = [
     # TEMP: Exclude org.bytedeco:hdf5 until cisd:jhdf5 is gone.
     'org.bytedeco:hdf5',
