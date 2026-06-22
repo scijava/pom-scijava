@@ -1207,7 +1207,7 @@
 		<!-- FLIMLib - https://github.com/flimlib -->
 		<flimj-ops.version>2.1.2</flimj-ops.version>
 		<flimj-ui.version>2.0.0</flimj-ui.version>
-		<flimlib.version>2.2.5</flimlib.version>
+		<flimlib.version>2.1.1</flimlib.version>
 		<flimlib.flimj-ops.version>${flimj-ops.version}</flimlib.flimj-ops.version>
 		<flimlib.flimj-ui.version>${flimj-ui.version}</flimlib.flimj-ui.version>
 		<flimlib.flimlib.version>${flimlib.version}</flimlib.flimlib.version>
