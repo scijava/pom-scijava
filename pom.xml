@@ -1372,12 +1372,16 @@
 		<algart-tiff.version>1.5.0</algart-tiff.version>
 		<net.algart.algart-tiff.version>${algart-tiff.version}</net.algart.algart-tiff.version>
 
-		<!-- Amazon S3 - https://aws.amazon.com/sdkforjava -->
+		<!-- Amazon AWS SDK v1 - https://github.com/aws/aws-sdk-java -->
 		<aws.version>1.12.791</aws.version>
 		<aws-java-sdk-core.version>${aws.version}</aws-java-sdk-core.version>
 		<aws-java-sdk-s3.version>${aws.version}</aws-java-sdk-s3.version>
 		<com.amazonaws.aws-java-sdk-core.version>${aws-java-sdk-core.version}</com.amazonaws.aws-java-sdk-core.version>
 		<com.amazonaws.aws-java-sdk-s3.version>${aws-java-sdk-s3.version}</com.amazonaws.aws-java-sdk-s3.version>
+
+		<!-- Amazon AWS SDK v2 - https://github.com/aws/aws-sdk-java-v2/ -->
+		<!-- NOTE: No shorthand bom.version - too ambiguous and confusing. -->
+		<software.amazon.awssdk.bom.version>2.46.15</software.amazon.awssdk.bom.version>
 
 		<!-- Antlr - https://www.antlr.org/ -->
 		<ST4.version>4.3.4</ST4.version>
@@ -4427,7 +4431,7 @@
 				<version>${net.algart.algart-tiff.version}</version>
 			</dependency>
 
-			<!-- Amazon S3 - https://aws.amazon.com/sdkforjava -->
+			<!-- Amazon AWS SDK v1 - https://github.com/aws/aws-sdk-java -->
 			<dependency>
 				<groupId>com.amazonaws</groupId>
 				<artifactId>aws-java-sdk-core</artifactId>
@@ -4437,6 +4441,15 @@
 				<groupId>com.amazonaws</groupId>
 				<artifactId>aws-java-sdk-s3</artifactId>
 				<version>${com.amazonaws.aws-java-sdk-s3.version}</version>
+			</dependency>
+
+			<!-- Amazon AWS SDK v2 - https://github.com/aws/aws-sdk-java-v2/ -->
+			<dependency>
+				<groupId>software.amazon.awssdk</groupId>
+				<artifactId>bom</artifactId>
+				<version>${software.amazon.awssdk.bom.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
 			</dependency>
 
 			<!-- Antlr - https://www.antlr.org/ -->
