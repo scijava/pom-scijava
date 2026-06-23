@@ -19,12 +19,13 @@ jobs:
           distribution: 'zulu'
           cache: 'maven'
 
-      - name: Set up CI environment
-        run: .github/setup.sh
+      - name: Set up release environment
+        run: .github/setup-release.sh
+        shell: bash
 
-      - name: Execute the build
-        id: execute-build
+      - name: Execute the release
         run: .github/build.sh
+        shell: bash
         env:
           GPG_KEY_NAME: ${{ secrets.GPG_KEY_NAME }}
           GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}

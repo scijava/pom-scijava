@@ -1,0 +1,995 @@
+[common]
+default-java-version = 8
+repositories = ["scijava.public=https://maven.scijava.org/content/groups/public"]
+
+[status]
+output = "target/pombast/index.html"
+rules = "rules.xml"
+header = "pombast/header-status.html"
+footer = "pombast/footer-status.html"
+nexus-base = "https://maven.scijava.org"
+cuttable = [
+  "de.nanoimaging:*",
+  "fr.inra.ijpb:*",
+  "io.scif:*",
+  "jitk:*",
+  "mpicbg:*",
+  "net.imagej:*",
+  "net.imglib2:*",
+  "net.preibisch:*",
+  "org.bonej:*",
+  "org.janelia*:*",
+  "org.morphonets:*",
+  "org.scijava:*",
+  "sc.fiji:*",
+]
+
+[team]
+output = "target/pombast/team.html"
+header = "pombast/header-team.html"
+footer = "pombast/footer-team.html"
+includes = [
+  "de.nanoimaging:*",
+  "fr.inra.ijpb:*",
+  "io.scif:*",
+  "jitk:*",
+  "mpicbg:*",
+  "net.imagej:*",
+  "net.imglib2:*",
+  "net.preibisch:*",
+  "org.bonej:*",
+  "org.janelia*:*",
+  "org.morphonets:*",
+  "org.scijava:*",
+  "sc.fiji:*",
+]
+
+[badges]
+output = "target/pombast/badges.json"
+includes = [
+  "de.nanoimaging:*",
+  "fr.inra.ijpb:*",
+  "io.scif:*",
+  "jitk:*",
+  "mpicbg:*",
+  "net.imagej:*",
+  "net.imglib2:*",
+  "net.preibisch:*",
+  "ome:*",
+  "org.bonej:*",
+  "org.janelia*:*",
+  "org.morphonets:*",
+  "org.openmicroscopy:*",
+  "org.scijava:*",
+  "sc.fiji:*",
+]
+
+[melt]
+# Some managed components require Java 21+, so we melt with that Java
+# version. But pom-scijava sets scijava.jvm.version to 11 by default.
+# So beyond just using OpenJDK 21 to run Maven, we also need to set the
+# scijava.jvm.version property to target the right bytecode version.
+# Otherwise, the enforcer complains about any Java libraries targeting >11.
+java-version = 21
+properties = { "scijava.jvm.version" = "21" }
+
+template = "pombast/melt-template.xml"
+excludes = [
+  # TEMP: Exclude org.bytedeco:hdf5 until cisd:jhdf5 is gone.
+  "org.bytedeco:hdf5",
+  # NB: The following artifacts have messy dependency trees.
+  # Too many problems to test as part of the melt action.
+  # See WARNING block in pom-scijava's pom.xml for details.
+  "net.imagej:imagej-server",
+  "org.apache.spark:spark-core_2.11",
+  # NB: Skip alternate flavors of other managed components.
+  "org.jogamp.gluegen:gluegen",     # uberjar flavor of gluegen-rt
+  "org.jogamp.jogl:jogl-all-noawt", # slimmed down flavor of jogl-all
+  # NB: All the SWT platform JARs have the same classes.
+  # The current platform will be brought in transitively.
+  "org.eclipse.swt:org.eclipse.swt.cocoa.macosx",
+  "org.eclipse.swt:org.eclipse.swt.cocoa.macosx.x86_64",
+  "org.eclipse.swt:org.eclipse.swt.gtk.aix.ppc",
+  "org.eclipse.swt:org.eclipse.swt.gtk.aix.ppc64",
+  "org.eclipse.swt:org.eclipse.swt.gtk.hpux.ia64",
+  "org.eclipse.swt:org.eclipse.swt.gtk.linux.ppc",
+  "org.eclipse.swt:org.eclipse.swt.gtk.linux.ppc64",
+  "org.eclipse.swt:org.eclipse.swt.gtk.linux.s390",
+  "org.eclipse.swt:org.eclipse.swt.gtk.linux.s390x",
+  "org.eclipse.swt:org.eclipse.swt.gtk.linux.x86",
+  "org.eclipse.swt:org.eclipse.swt.gtk.linux.x86_64",
+  "org.eclipse.swt:org.eclipse.swt.gtk.solaris.sparc",
+  "org.eclipse.swt:org.eclipse.swt.gtk.solaris.x86",
+  "org.eclipse.swt:org.eclipse.swt.win32.win32.x86",
+  "org.eclipse.swt:org.eclipse.swt.win32.win32.x86_64",
+  # NB: All SLF4J bindings have the same classes.
+  # We'll rely on logback-classic being present here.
+  "org.slf4j:slf4j-jcl",
+  "org.slf4j:slf4j-jdk14",
+  "org.slf4j:slf4j-nop",
+  "org.slf4j:slf4j-simple",
+  # NB: Cannot include both commons-logging and jcl-over-slf4j;
+  # see: http://www.slf4j.org/codes.html#jclDelegationLoop
+  "org.slf4j:jcl-over-slf4j",
+]
+
+[smelt]
+output = "target/pombast/smelt.json"
+includes = [
+  "de.nanoimaging:*",
+  "fr.inra.ijpb:*",
+  "io.scif:*",
+  "jitk:*",
+  "mpicbg:*",
+  "net.imagej:*",
+  "net.imglib2:*",
+  "net.preibisch:*",
+  "org.bonej:*",
+  "org.janelia*:*",
+  "org.morphonets:*",
+  "org.scijava:*",
+  "sc.fiji:*",
+]
+excludes = [
+  # TEMP: Until scijava-ops-image 2.0.0 is released.
+  "org.scijava:scijava-ops-image",
+  # NB: Skip closed-source artifacts.
+  "org.bonej:bonej-plus",
+  # NB: Skip scijava forks of third-party projects.
+  # These are very stable, with few/no dependencies, and
+  # don't need to be retested as pom-scijava evolves.
+  "org.scijava:j3dcore",
+  "org.scijava:j3dutils",
+  "org.scijava:jep",
+  "org.scijava:junit-benchmarks",
+  "org.scijava:vecmath",
+]
+skip-tests = [
+  # Error while checking the CLIJ2 installation: null
+  "sc.fiji:labkit-pixel-classification",
+]
+
+[remove-tests]
+
+# CachedOpEnvironmentTest fails intermittently. Of course, it should be
+# somehow fixed in imagej-ops. But for now, let's not let it ruin the smelt.
+"net.imagej:imagej-ops" = ["net.imagej.ops.cached.CachedOpEnvironmentTest"]
+
+# In org.janelia.saalfeldlab.n5.metadata.ome.ngff.v04.WriteAxesTests.testXYT:
+# java.util.NoSuchElementException: No value present
+#"org.janelia.saalfeldlab:n5-ij" = ["org.janelia.saalfeldlab.n5.metadata.ome.ngff.v04.WriteAxesTests"]
+
+# In org.janelia.saalfeldlab.n5.s3.AmazonS3UtilsTest.testUriParsing:
+# SdkClient Unable to load region from any of the providers in the chain
+# software.amazon.awssdk.regions.providers.DefaultAwsRegionProviderChain@427475a2:
+# [software.amazon.awssdk.regions.providers.SystemSettingsRegionProvider@768b79db:
+# Unable to load region from system settings. Region must be specified either
+# via environment variable (AWS_REGION) or  system property (aws.region).,
+# software.amazon.awssdk.regions.providers.AwsProfileRegionProvider@3b59d246:
+# No region provided in profile: default,
+# software.amazon.awssdk.regions.providers.InstanceProfileRegionProvider@11b0cf30:
+# Unable to contact EC2 metadata service.]
+"org.janelia.saalfeldlab:n5-aws-s3" = ["org.janelia.saalfeldlab.n5.s3.AmazonS3UtilsTest"]
+
+# Skip n5-universe slow tests.
+"org.janelia.saalfeldlab:n5-universe" = [
+  "org.janelia.saalfeldlab.n5.universe.storage.zarr.ZarrStorageTests",            # Time elapsed: 1753 s
+  "org.janelia.saalfeldlab.n5.universe.storage.zarr.zarr2.Zarr2HttpFactoryTest",  # Time elapsed: 947.2 s
+  "org.janelia.saalfeldlab.n5.universe.storage.n5.N5StorageTests",                # Time elapsed: 843.5 s
+  "org.janelia.saalfeldlab.n5.universe.storage.n5.N5HttpFactoryTest",             # Time elapsed: 832.3 s
+  "org.janelia.saalfeldlab.n5.universe.storage.zarr.zarr3.Zarr3HttpFactoryTest",  # Time elapsed: 785.5 s
+
+  # And these are all dependent on the above removed classes. :-(
+  "org.janelia.saalfeldlab.n5.universe.BackendStorageFormatTests",
+  "org.janelia.saalfeldlab.n5.universe.storage.n5.N5AmazonS3FactoryTest",
+  "org.janelia.saalfeldlab.n5.universe.storage.n5.N5FileSystemTest",
+  "org.janelia.saalfeldlab.n5.universe.storage.n5.N5GoogleCloudFactoryTest",
+  "org.janelia.saalfeldlab.n5.universe.storage.zarr.zarr2.Zarr2AmazonS3FactoryTest",
+  "org.janelia.saalfeldlab.n5.universe.storage.zarr.zarr2.Zarr2FileSystemTest",
+  "org.janelia.saalfeldlab.n5.universe.storage.zarr.zarr2.Zarr2GoogleCloudFactoryTest",
+  "org.janelia.saalfeldlab.n5.universe.storage.zarr.zarr3.Zarr3AmazonS3FactoryTest",
+  "org.janelia.saalfeldlab.n5.universe.storage.zarr.zarr3.Zarr3FileSystemTest",
+  "org.janelia.saalfeldlab.n5.universe.storage.zarr.zarr3.Zarr3GoogleCloudFactoryTest",
+]
+
+"sc.fiji:labkit-ui" = [
+  "sc.fiji.labkit.ui.GarbageCollectionTest",                                      # Too slow (7 s)
+  "sc.fiji.labkit.ui.plugin.LabkitProbabilityMapForImagesInDirectoryPluginTest",  # Too slow (65 s)
+  "sc.fiji.labkit.ui.plugin.SegmentRGBImageTest",                                 # Too slow (35 s)
+  "sc.fiji.labkit.ui.segmentation.SegmentationToolTest",                          # Too slow (34 s)
+]
+
+[components."fr.inra.ijpb:MorphoLibJ_"]
+ci-build = "build-main"
+
+[components."hsqldb:hsqldb"]
+last-vetted = "20190101000000"
+
+[components."io.scif:scifio-bf-compat"]
+ci-build = "build-main"
+
+[components."io.scif:scifio-cli"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."io.scif:scifio-hdf5"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."io.scif:scifio-jai-imageio"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."io.scif:scifio-labeling"]
+ci-build = "build-main"
+
+[components."io.scif:scifio-lifesci"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."io.scif:scifio-ome-xml"]
+ci-build = "build-main"
+
+[components."jitk:jitk-tps"]
+ci-build = "build-main"
+
+[components."net.imagej:ij"]
+java-version = 11
+
+[components."net.imagej:imagej-deprecated"]
+ci-build = "build-main"
+
+[components."net.imagej:imagej-mesh"]
+ci-build = "build-main"
+
+[components."net.imagej:imagej-mesh-io"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."net.imagej:imagej-notebook"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."net.imagej:imagej-omero"]
+ci-build = "build-main"
+
+[components."net.imagej:imagej-omero-legacy"]
+ci-build = "build-main"
+
+[components."net.imagej:imagej-opencv"]
+ci-build = "build-main"
+
+[components."net.imagej:imagej-ops"]
+ci-build = "build-main"
+
+[components."net.imagej:imagej-plugins-batch"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."net.imagej:imagej-plugins-commands"]
+ci-build = "build-main"
+
+[components."net.imagej:imagej-plugins-tools"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."net.imagej:imagej-plugins-uploader-ssh"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."net.imagej:imagej-plugins-uploader-webdav"]
+ci-build = "build-main"
+
+[components."net.imagej:imagej-scripting"]
+ci-build = "build-main"
+
+[components."net.imagej:imagej-tensorflow"]
+ci-build = "build-main"
+
+[components."net.imagej:imagej-ui-awt"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."net.imagej:imagej-ui-swing"]
+ci-build = "build-main"
+
+[components."net.imagej:imagej-updater"]
+ci-build = "build-main"
+
+[components."net.imagej:op-finder"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."net.imglib2:imglib2-algorithm"]
+ci-build = "build-main"
+
+[components."net.imglib2:imglib2-algorithm-fft"]
+last-vetted = "20230309000000"
+
+[components."net.imglib2:imglib2-mesh"]
+# NOTE: Workaround for: error: Could not load processor class file due to
+# 'org/scijava/ops/indexer/OpImplNoteParser has been compiled by a more recent
+# version of the Java Runtime (class file version 55.0), this version of the
+# Java Runtime only recognizes class file versions up to 52.0'.
+java-version = 11
+
+[components."net.preibisch:multiview-simulation"]
+ci-build = "build-main"
+
+[components."ome:formats-api"]
+ci-build = "maven"
+
+[components."ome:formats-bsd"]
+ci-build = "maven"
+
+[components."ome:formats-gpl"]
+ci-build = "maven"
+
+[components."org.bonej:bonej-plugins"]
+# TEMP: Until a BoneJ release exists incorporating bonej-org/BoneJ2#414.
+properties = { "skipTests" = "true" }
+
+[components."org.codehaus.groovy:groovy"]
+last-vetted = "20250101000000"
+
+[components."org.codehaus.groovy:groovy-ant"]
+last-vetted = "20250101000000"
+
+[components."org.codehaus.groovy:groovy-astbuilder"]
+last-vetted = "20250101000000"
+
+[components."org.codehaus.groovy:groovy-bsf"]
+last-vetted = "20250101000000"
+
+[components."org.codehaus.groovy:groovy-cli-commons"]
+last-vetted = "20250101000000"
+
+[components."org.codehaus.groovy:groovy-cli-picocli"]
+last-vetted = "20250101000000"
+
+[components."org.codehaus.groovy:groovy-console"]
+last-vetted = "20250101000000"
+
+[components."org.codehaus.groovy:groovy-datetime"]
+last-vetted = "20250101000000"
+
+[components."org.codehaus.groovy:groovy-dateutil"]
+last-vetted = "20250101000000"
+
+[components."org.codehaus.groovy:groovy-docgenerator"]
+last-vetted = "20250101000000"
+
+[components."org.codehaus.groovy:groovy-groovydoc"]
+last-vetted = "20250101000000"
+
+[components."org.codehaus.groovy:groovy-groovysh"]
+last-vetted = "20250101000000"
+
+[components."org.codehaus.groovy:groovy-jaxb"]
+last-vetted = "20250101000000"
+
+[components."org.codehaus.groovy:groovy-jmx"]
+last-vetted = "20250101000000"
+
+[components."org.codehaus.groovy:groovy-json"]
+last-vetted = "20250101000000"
+
+[components."org.codehaus.groovy:groovy-jsr223"]
+last-vetted = "20250101000000"
+
+[components."org.codehaus.groovy:groovy-macro"]
+last-vetted = "20250101000000"
+
+[components."org.codehaus.groovy:groovy-nio"]
+last-vetted = "20250101000000"
+
+[components."org.codehaus.groovy:groovy-servlet"]
+last-vetted = "20250101000000"
+
+[components."org.codehaus.groovy:groovy-sql"]
+last-vetted = "20250101000000"
+
+[components."org.codehaus.groovy:groovy-swing"]
+last-vetted = "20250101000000"
+
+[components."org.codehaus.groovy:groovy-templates"]
+last-vetted = "20250101000000"
+
+[components."org.codehaus.groovy:groovy-test"]
+last-vetted = "20250101000000"
+
+[components."org.codehaus.groovy:groovy-test-junit5"]
+last-vetted = "20250101000000"
+
+[components."org.codehaus.groovy:groovy-testng"]
+last-vetted = "20250101000000"
+
+[components."org.codehaus.groovy:groovy-xml"]
+last-vetted = "20250101000000"
+
+[components."org.codehaus.groovy:groovy-yaml"]
+last-vetted = "20250101000000"
+
+[components."org.janelia:H5J_Loader_Plugin"]
+ci-build = "build-main"
+
+[components."org.janelia.saalfeldlab:n5-aws-s3"]
+ci-build = "build-main"
+
+[components."org.janelia.saalfeldlab:n5-google-cloud"]
+ci-build = "build-main"
+
+[components."org.janelia.saalfeldlab:n5-hdf5"]
+ci-build = "build-main"
+
+[components."org.janelia.saalfeldlab:n5-ij"]
+ci-build = "build-main"
+
+[components."org.janelia.saalfeldlab:n5-imglib2"]
+ci-build = "build-main"
+
+[components."org.janelia.saalfeldlab:n5-universe"]
+ci-build = "build-main"
+
+[components."org.janelia.saalfeldlab:n5-viewer_fiji"]
+ci-build = "build-main"
+
+[components."org.mockito:mockito-core"]
+last-vetted = "20250101000000"
+
+[components."org.ojalgo:ojalgo"]
+last-vetted = "20250101000000"
+
+[components."org.openmicroscopy:metakit"]
+project-url = "https://github.com/ome/ome-metakit"
+ci-build = "maven"
+
+[components."org.openmicroscopy:ome-codecs"]
+ci-build = "maven"
+
+[components."org.openmicroscopy:ome-common"]
+ci-build = "maven"
+
+[components."org.openmicroscopy:ome-poi"]
+ci-build = "maven"
+
+[components."org.openmicroscopy:ome-xml"]
+project-url = "https://github.com/ome/ome-model"
+ci-build = "maven"
+
+[components."org.openmicroscopy:omero-blitz"]
+ci-build = "gradle"
+
+[components."org.openmicroscopy:omero-common"]
+ci-build = "gradle"
+
+[components."org.openmicroscopy:omero-dsl-plugin"]
+ci-build = "gradle"
+
+[components."org.openmicroscopy:omero-gateway"]
+project-url = "https://github.com/ome/omero-gateway-java"
+ci-build = "gradle"
+
+[components."org.openmicroscopy:omero-model"]
+ci-build = "gradle"
+
+[components."org.openmicroscopy:omero-renderer"]
+ci-build = "gradle"
+
+[components."org.openmicroscopy:omero-romio"]
+ci-build = "gradle"
+
+[components."org.openmicroscopy:omero-server"]
+ci-build = "gradle"
+
+[components."org.openmicroscopy:specification"]
+project-url = "https://github.com/ome/ome-model"
+ci-build = "maven"
+
+[components."org.scijava:batch-processor"]
+ci-build = "build-main"
+
+[components."org.scijava:j3dcore"]
+last-vetted = "20180905120000"
+
+[components."org.scijava:j3dutils"]
+last-vetted = "20180905120000"
+
+[components."org.scijava:java3d-core"]
+ci-build = false
+
+[components."org.scijava:java3d-utils"]
+ci-build = false
+
+[components."org.scijava:jep"]
+ci-build = false
+last-vetted = "20171225120000"
+
+[components."org.scijava:junit-benchmarks"]
+ci-build = false
+last-vetted = "20180905120000"
+
+[components."org.scijava:scijava-cache"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."org.scijava:scijava-grab"]
+ci-build = "build-main"
+
+[components."org.scijava:scijava-io-http"]
+ci-build = "build-main"
+
+[components."org.scijava:scijava-java3d"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."org.scijava:scijava-listeners"]
+last-vetted = "20211021000000"
+
+[components."org.scijava:scijava-maven-plugin"]
+last-vetted = "20230309000000"
+
+[components."org.scijava:scijava-plot"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."org.scijava:scijava-plugins-commands"]
+ci-build = "build-main"
+
+[components."org.scijava:scijava-plugins-platforms"]
+last-vetted = "20230309000000"
+
+[components."org.scijava:scijava-plugins-text-markdown"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."org.scijava:scijava-plugins-text-plain"]
+ci-build = "build-main"
+
+[components."org.scijava:scijava-table"]
+ci-build = "build-main"
+
+[components."org.scijava:scijava-ui-awt"]
+last-vetted = "20230309000000"
+
+[components."org.scijava:scijava-ui-swing"]
+ci-build = "build-main"
+
+[components."org.scijava:script-editor"]
+ci-build = "build-main"
+
+[components."org.scijava:script-editor-jython"]
+ci-build = "build-main"
+
+[components."org.scijava:scripting-beanshell"]
+ci-build = "build-main"
+
+[components."org.scijava:scripting-clojure"]
+ci-build = "build-main"
+
+[components."org.scijava:scripting-javascript"]
+ci-build = "build-main"
+
+[components."org.scijava:scripting-jruby"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."org.scijava:scripting-jython"]
+ci-build = "build-main"
+
+[components."org.scijava:scripting-matlab"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."org.scijava:scripting-renjin"]
+ci-build = "build-main"
+
+[components."org.scijava:scripting-scala"]
+ci-build = "build-main"
+
+[components."org.scijava:swing-checkbox-tree"]
+last-vetted = "20230309000000"
+
+[components."org.scijava:ui-behaviour"]
+ci-build = "build-main"
+
+[components."org.scijava:vecmath"]
+ci-build = false
+last-vetted = "20180905120000"
+
+[components."org.springframework:spring-aop"]
+last-vetted = "20250101000000"
+
+[components."org.springframework:spring-beans"]
+last-vetted = "20250101000000"
+
+[components."org.springframework:spring-core"]
+last-vetted = "20250101000000"
+
+[components."org.tensorflow:libtensorflow"]
+last-vetted = "20200701000000"
+
+[components."org.tensorflow:libtensorflow_jni"]
+last-vetted = "20200701000000"
+
+[components."org.tensorflow:libtensorflow_jni_gpu"]
+last-vetted = "20200701000000"
+
+[components."org.tensorflow:proto"]
+last-vetted = "20200701000000"
+
+[components."org.tensorflow:tensorflow"]
+last-vetted = "20200701000000"
+
+[components."sc.fiji:3D_Blob_Segmentation"]
+ci-build = "build-main"
+
+[components."sc.fiji:3D_Objects_Counter"]
+ci-build = "build-main"
+last-vetted = "20230313000000"
+
+[components."sc.fiji:3D_Viewer"]
+ci-build = "build-main"
+
+[components."sc.fiji:AnalyzeSkeleton_"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Anisotropic_Diffusion_2D"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Archipelago_Plugins"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Arrow_"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Auto_Local_Threshold"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Auto_Threshold"]
+ci-build = "build-main"
+
+[components."sc.fiji:BalloonSegmentation_"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Bug_Submitter"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:CPU_Meter"]
+ci-build = "build-main"
+
+[components."sc.fiji:Calculator_Plus"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Cell_Counter"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Color_Histogram"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Color_Inspector_3D"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Colour_Deconvolution"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:CorrectBleach_"]
+ci-build = "build-main"
+
+[components."sc.fiji:Correct_3D_Drift"]
+ci-build = "build-main"
+
+[components."sc.fiji:Descriptor_based_registration"]
+ci-build = "build-main"
+
+[components."sc.fiji:Dichromacy_"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Directionality_"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:FS_Align_TrakEM2"]
+ci-build = "build-main"
+
+[components."sc.fiji:Feature_Detection"]
+ci-build = "build-main"
+
+[components."sc.fiji:Fiji_Archipelago"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Fiji_Developer"]
+ci-build = "build-main"
+
+[components."sc.fiji:Fiji_Package_Maker"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:FlowJ_"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Graph_Cut"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Gray_Morphology"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:HDF5_Vibez"]
+ci-build = "build-main"
+
+[components."sc.fiji:Helmholtz_Analysis"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:IJ_Robot"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:IO_"]
+ci-build = "build-main"
+
+[components."sc.fiji:Image_5D"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Image_Expression_Parser"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Interactive_3D_Surface_Plot"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:IsoData_Classifier"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Kappa"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Kuwahara_Filter"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:LSM_Reader"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:LSM_Toolbox"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Lasso_and_Blow_Tool"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Linear_Kuwahara"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:LocalThickness_"]
+ci-build = "build-main"
+
+[components."sc.fiji:MTrack2_"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:M_I_P"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Manual_Tracking"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Multi_Kymograph"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:PIV_analyser"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:QuickPALM_"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:RATS_"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Reconstruct_Reader"]
+ci-build = "build-main"
+
+[components."sc.fiji:SPIM_Opener"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:SPIM_Registration"]
+ci-build = "build-main"
+
+[components."sc.fiji:Samples_"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Series_Labeler"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Siox_Segmentation"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Skeletonize3D_"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:SplineDeformationGenerator_"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Stack_Manipulation"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Statistical_Region_Merging"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Stitching_"]
+ci-build = "build-main"
+
+[components."sc.fiji:Sync_Win"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:T2-NIT"]
+ci-build = "build-main"
+
+[components."sc.fiji:T2-TreelineGraph"]
+ci-build = "build-main"
+
+[components."sc.fiji:Thread_Killer"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Time_Lapse"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Time_Stamper"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:ToAST_"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:TopoJ_"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Trainable_Segmentation"]
+ci-build = "build-main"
+
+[components."sc.fiji:TrakEM2_"]
+ci-build = "build-main"
+
+[components."sc.fiji:TrakEM2_Archipelago"]
+ci-build = "build-main"
+
+[components."sc.fiji:VIB-lib"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:VIB_"]
+ci-build = "build-main"
+
+[components."sc.fiji:Vaa3d_Reader"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Vaa3d_Writer"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:VectorString"]
+ci-build = "build-main"
+
+[components."sc.fiji:Video_Editing"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:Volume_Calculator"]
+ci-build = "build-main"
+
+[components."sc.fiji:Volume_Viewer"]
+ci-build = "build-main"
+
+[components."sc.fiji:bUnwarpJ_"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:bigdataviewer-server"]
+ci-build = "build-main"
+
+[components."sc.fiji:bigdataviewer_fiji"]
+ci-build = "build-main"
+
+[components."sc.fiji:bigvolumeviewer"]
+# NOTE: Using the release flag disallows access to sun.misc.Unsafe.
+properties = { "maven.compiler.release" = "" }
+
+[components."sc.fiji:bij"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:blockmatching_"]
+ci-build = "build-main"
+
+[components."sc.fiji:fiji-lib"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:labkit-pixel-classification"]
+ci-build = "build-main"
+
+[components."sc.fiji:labkit-ui"]
+ci-build = "build-main"
+
+[components."sc.fiji:legacy-imglib1"]
+ci-build = "build-main"
+
+[components."sc.fiji:level_sets"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:pal-optimization"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:panorama_"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:register_virtual_stack_slices"]
+ci-build = "build-main"
+
+[components."sc.fiji:registration_3d"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:spim_data"]
+ci-build = "build-main"
+
+[components."sc.fiji:trakem2-transform"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:trakem2_tps"]
+ci-build = "build-main"
+
+[components."sc.fiji:weave_jy2java"]
+ci-build = "build-main"
+last-vetted = "20230309000000"
+
+[components."sc.fiji:z_spacing"]
+ci-build = "build-main"

@@ -8,14 +8,23 @@ on:
     branches:
       - master
   schedule:
-    - cron: "4 5 * * 0" # every Sunday at 0405, to keep cache alive
+    # Run weekly on Sunday to keep the Maven cache alive.
+    - cron: '4 5 * * 0'
+
+# Queue runs of the same ref; cancel superseded PR builds (they never publish).
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      actions: write  # needed to delete and re-save the pombast cache
 
     steps:
       - uses: actions/checkout@v4
+
       - name: Set up Java
         uses: actions/setup-java@v4
         with:
@@ -24,19 +33,20 @@ jobs:
           distribution: 'zulu'
           cache: 'maven'
 
-      - name: Set up CI environment
-        run: .github/setup.sh
+      - uses: astral-sh/setup-uv@v6
 
-      - name: Restore the melting-pot cache
-        id: restore-cache
-        uses: actions/cache/restore@v3
+      - uses: webfactory/ssh-agent@v0.9.0
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         with:
-          path: ~/.cache/scijava/melting-pot
-          key: ${{ runner.os }}-cache
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      - name: Execute the build
-        id: execute-build
+      - name: Set up build environment
+        run: .github/setup-build.sh
+        shell: bash
+
+      - name: Maven CI build
         run: .github/build.sh
+        shell: bash
         env:
           GPG_KEY_NAME: ${{ secrets.GPG_KEY_NAME }}
           GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
@@ -46,22 +56,40 @@ jobs:
           CENTRAL_PASS: ${{ secrets.CENTRAL_PASS }}
           SIGNING_ASC: ${{ secrets.SIGNING_ASC }}
 
-      - name: Delete the melting-pot cache
-        if: env.cacheChanged == 'true'
-        id: delete-cache
-        run: |
-          gh api --method DELETE -H "Accept: application/vnd.github+json" /repos/scijava/pom-scijava/actions/caches?key=${{ runner.os }}-cache || true
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-
-      - name: Save the melting-pot cache
-        if: env.cacheChanged == 'true'
-        id: save-cache
-        uses: actions/cache/save@v3
+      - name: Restore pombast cache
+        uses: actions/cache/restore@v4
         with:
-          path: ~/.cache/scijava/melting-pot
-          key: ${{ runner.os }}-cache
+          # pombast: success/timestamp caches; cjdk: downloaded JDKs + Maven;
+          # jgo: per-artifact bytecode-scan results. (~/.m2 is cached above by
+          # setup-java's cache: 'maven'.)
+          path: |
+            ~/.cache/pombast
+            ~/.cache/cjdk
+            ~/.cache/jgo
+          key: ${{ runner.os }}-pombast-build
 
-      - name: Return the exit code
-        id: exit-build
-        run: .github/exit.sh
+      - name: Run pombast checks (melt + smelt)
+        run: bin/check.sh
+        shell: bash
+
+      - name: Delete old pombast cache
+        if: always()
+        run: .github/delete-cache.sh "${{ runner.os }}-pombast-build"
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Save pombast cache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            ~/.cache/pombast
+            ~/.cache/cjdk
+            ~/.cache/jgo
+          key: ${{ runner.os }}-pombast-build
+
+      - name: Publish smelt results
+        if: always() && github.ref == 'refs/heads/master' && github.event_name == 'push'
+        run: .github/publish.sh "Update smelt results" target/pombast/smelt.json
+        shell: bash

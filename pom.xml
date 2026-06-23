@@ -11,7 +11,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>44.0.1-SNAPSHOT</version>
+	<version>45.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -360,7 +360,7 @@
 		<org.scijava.junit-benchmarks.version>${junit-benchmarks.version}</org.scijava.junit-benchmarks.version>
 
 		<!-- MiniMaven - https://github.com/scijava/minimaven -->
-		<minimaven.version>2.2.2</minimaven.version>
+		<minimaven.version>2.2.3</minimaven.version>
 		<org.scijava.minimaven.version>${minimaven.version}</org.scijava.minimaven.version>
 
 		<!-- Native Lib Loader - https://github.com/scijava/native-lib-loader -->
@@ -376,12 +376,16 @@
 		<org.scijava.scijava-cache.version>${scijava-cache.version}</org.scijava.scijava-cache.version>
 
 		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
-		<scijava-common.version>2.99.2</scijava-common.version>
+		<scijava-common.version>2.100.1</scijava-common.version>
 		<org.scijava.scijava-common.version>${scijava-common.version}</org.scijava.scijava-common.version>
 
 		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
 		<scijava-config.version>2.0.3</scijava-config.version>
 		<org.scijava.scijava-config.version>${scijava-config.version}</org.scijava.scijava-config.version>
+
+		<!-- SciJava Desktop - https://github.com/scijava/scijava-desktop -->
+		<scijava-desktop.version>1.0.0</scijava-desktop.version>
+		<org.scijava.scijava-desktop.version>${scijava-desktop.version}</org.scijava.scijava-desktop.version>
 
 		<!-- SciJava Grab - https://github.com/scijava/scijava-grab -->
 		<scijava-grab.version>0.1.2</scijava-grab.version>
@@ -395,10 +399,6 @@
 		<scijava-java3d.version>0.1.0</scijava-java3d.version>
 		<org.scijava.scijava-java3d.version>${scijava-java3d.version}</org.scijava.scijava-java3d.version>
 
-		<!-- SciJava Links - https://github.com/scijava/scijava-links -->
-		<scijava-links.version>1.0.0</scijava-links.version>
-		<org.scijava.scijava-links.version>${scijava-links.version}</org.scijava.scijava-links.version>
-
 		<!-- SciJava Listeners - https://github.com/scijava/scijava-listeners -->
 		<scijava-listeners.version>1.0.0-beta-3</scijava-listeners.version>
 		<org.scijava.scijava-listeners.version>${scijava-listeners.version}</org.scijava.scijava-listeners.version>
@@ -408,7 +408,7 @@
 		<org.scijava.scijava-log-slf4j.version>${scijava-log-slf4j.version}</org.scijava.scijava-log-slf4j.version>
 
 		<!-- SciJava Optional - https://github.com/scijava/scijava-optional -->
-		<scijava-optional.version>1.0.1</scijava-optional.version>
+		<scijava-optional.version>1.0.2</scijava-optional.version>
 		<org.scijava.scijava-optional.version>${scijava-optional.version}</org.scijava.scijava-optional.version>
 
 		<!-- SciJava Plot - https://github.com/scijava/scijava-plot -->
@@ -419,10 +419,6 @@
 		<scijava-plugins-commands.version>0.2.5</scijava-plugins-commands.version>
 		<org.scijava.scijava-plugins-commands.version>${scijava-plugins-commands.version}</org.scijava.scijava-plugins-commands.version>
 
-		<!-- SciJava Plugins: Platforms - https://github.com/scijava/scijava-plugins-platforms -->
-		<scijava-plugins-platforms.version>0.3.1</scijava-plugins-platforms.version>
-		<org.scijava.scijava-plugins-platforms.version>${scijava-plugins-platforms.version}</org.scijava.scijava-plugins-platforms.version>
-
 		<!-- SciJava Plugins: Text: Markdown - https://github.com/scijava/scijava-plugins-text-markdown -->
 		<scijava-plugins-text-markdown.version>0.1.3</scijava-plugins-text-markdown.version>
 		<org.scijava.scijava-plugins-text-markdown.version>${scijava-plugins-text-markdown.version}</org.scijava.scijava-plugins-text-markdown.version>
@@ -432,11 +428,11 @@
 		<org.scijava.scijava-plugins-text-plain.version>${scijava-plugins-text-plain.version}</org.scijava.scijava-plugins-text-plain.version>
 
 		<!-- SciJava Search - https://github.com/scijava/scijava-search -->
-		<scijava-search.version>3.0.0</scijava-search.version>
+		<scijava-search.version>3.0.1</scijava-search.version>
 		<org.scijava.scijava-search.version>${scijava-search.version}</org.scijava.scijava-search.version>
 
 		<!-- SciJava Table - https://github.com/scijava/scijava-table -->
-		<scijava-table.version>1.0.2</scijava-table.version>
+		<scijava-table.version>1.0.3</scijava-table.version>
 		<org.scijava.scijava-table.version>${scijava-table.version}</org.scijava.scijava-table.version>
 
 		<!-- SciJava UI: AWT - https://github.com/scijava/scijava-ui-awt -->
@@ -472,7 +468,7 @@
 		<org.scijava.scripting-groovy.version>${scripting-groovy.version}</org.scijava.scripting-groovy.version>
 
 		<!-- Scripting: Java - https://github.com/scijava/scripting-java -->
-		<scripting-java.version>1.0.0</scripting-java.version>
+		<scripting-java.version>1.0.1</scripting-java.version>
 		<org.scijava.scripting-java.version>${scripting-java.version}</org.scijava.scripting-java.version>
 
 		<!-- Scripting: JavaScript - https://github.com/scijava/scripting-javascript -->
@@ -488,7 +484,7 @@
 		<org.scijava.scripting-jython.version>${scripting-jython.version}</org.scijava.scripting-jython.version>
 
 		<!-- Scripting: Kotlin - https://github.com/scijava/scripting-kotlin -->
-		<scripting-kotlin.version>0.2.1</scripting-kotlin.version>
+		<scripting-kotlin.version>1.0.0</scripting-kotlin.version>
 		<org.scijava.scripting-kotlin.version>${scripting-kotlin.version}</org.scijava.scripting-kotlin.version>
 
 		<!-- Scripting: MATLAB - https://github.com/scijava/scripting-matlab -->
@@ -517,11 +513,6 @@
 
 		<!-- ImageJ - https://github.com/imagej -->
 
-		<!-- ImageJ2 - https://github.com/imagej/imagej2 -->
-		<imagej2.version>2.17.0</imagej2.version>
-		<imagej.version>${imagej2.version}</imagej.version>
-		<net.imagej.imagej.version>${imagej.version}</net.imagej.imagej.version>
-
 		<!-- ImageJ - https://github.com/imagej/ImageJ -->
 		<imagej1.version>1.54p</imagej1.version>
 		<ij.version>${imagej1.version}</ij.version>
@@ -530,6 +521,11 @@
 		<!-- ImageJ patcher - https://github.com/imagej/ij1-patcher -->
 		<ij1-patcher.version>2.0.0</ij1-patcher.version>
 		<net.imagej.ij1-patcher.version>${ij1-patcher.version}</net.imagej.ij1-patcher.version>
+
+		<!-- ImageJ2 - https://github.com/imagej/imagej2 -->
+		<imagej2.version>2.17.0</imagej2.version>
+		<imagej.version>${imagej2.version}</imagej.version>
+		<net.imagej.imagej.version>${imagej.version}</net.imagej.imagej.version>
 
 		<!-- ImageJ Common - https://github.com/imagej/imagej-common -->
 		<imagej-common.version>2.1.1</imagej-common.version>
@@ -604,7 +600,7 @@
 		<net.imagej.imagej-server.version>${imagej-server.version}</net.imagej.imagej-server.version>
 
 		<!-- ImageJ TensorFlow - https://github.com/imagej/imagej-tensorflow -->
-		<imagej-tensorflow.version>1.1.8</imagej-tensorflow.version>
+		<imagej-tensorflow.version>1.1.9</imagej-tensorflow.version>
 		<net.imagej.imagej-tensorflow.version>${imagej-tensorflow.version}</net.imagej.imagej-tensorflow.version>
 
 		<!-- ImageJ UI: AWT - https://github.com/imagej/imagej-ui-awt -->
@@ -630,7 +626,7 @@
 		<net.imglib2.imglib2.version>${imglib2.version}</net.imglib2.imglib2.version>
 
 		<!-- ImgLib2 Algorithms - https://github.com/imglib/imglib2-algorithm -->
-		<imglib2-algorithm.version>0.18.1</imglib2-algorithm.version>
+		<imglib2-algorithm.version>0.18.3</imglib2-algorithm.version>
 		<net.imglib2.imglib2-algorithm.version>${imglib2-algorithm.version}</net.imglib2.imglib2-algorithm.version>
 
 		<!-- ImgLib2 Algorithms FFT - https://github.com/imglib/imglib2-algorithm-fft -->
@@ -662,7 +658,7 @@
 		<net.imglib2.imglib2-mesh.version>${imglib2-mesh.version}</net.imglib2.imglib2-mesh.version>
 
 		<!-- ImgLib2 RealTransform - https://github.com/imglib/imglib2-realtransform -->
-		<imglib2-realtransform.version>4.0.4</imglib2-realtransform.version>
+		<imglib2-realtransform.version>4.0.5</imglib2-realtransform.version>
 		<net.imglib2.imglib2-realtransform.version>${imglib2-realtransform.version}</net.imglib2.imglib2-realtransform.version>
 
 		<!-- ImgLib2 ROI - https://github.com/imglib/imglib2-roi -->
@@ -676,7 +672,7 @@
 		<!-- SCIFIO - https://github.com/scifio -->
 
 		<!-- SCIFIO - https://github.com/scifio/scifio -->
-		<scifio.version>0.48.0</scifio.version>
+		<scifio.version>0.49.0</scifio.version>
 		<io.scif.scifio.version>${scifio.version}</io.scif.scifio.version>
 
 		<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
@@ -810,7 +806,7 @@
 		<Fiji_Plugins.version>3.2.0</Fiji_Plugins.version>
 		<sc.fiji.Fiji_Plugins.version>${Fiji_Plugins.version}</sc.fiji.Fiji_Plugins.version>
 
-		<FilamentDetector.version>2.0.1</FilamentDetector.version>
+		<FilamentDetector.version>3.0.0</FilamentDetector.version>
 		<sc.fiji.FilamentDetector.version>${FilamentDetector.version}</sc.fiji.FilamentDetector.version>
 
 		<FlowJ.version>2.0.1</FlowJ.version>
@@ -891,7 +887,7 @@
 		<Multi_Kymograph.version>3.0.1</Multi_Kymograph.version>
 		<sc.fiji.Multi_Kymograph.version>${Multi_Kymograph.version}</sc.fiji.Multi_Kymograph.version>
 
-		<OMEVisual.version>2.0.0</OMEVisual.version>
+		<OMEVisual.version>3.0.0</OMEVisual.version>
 		<sc.fiji.OMEVisual.version>${OMEVisual.version}</sc.fiji.OMEVisual.version>
 
 		<PIV_analyser.version>2.0.0</PIV_analyser.version>
@@ -1032,7 +1028,7 @@
 		<!-- External Fiji projects (part of the Fiji distribution) -->
 
 		<!-- View5D - https://github.com/bionanoimaging/View5D -->
-		<View5D.version>2.5.4</View5D.version>
+		<View5D.version>2.5.6</View5D.version>
 		<View5D_.version>${View5D.version}</View5D_.version>
 		<de.nanoimaging.View5D_.version>${View5D_.version}</de.nanoimaging.View5D_.version>
 
@@ -1046,7 +1042,7 @@
 		<sc.fiji.bigwarp_fiji.version>${bigwarp_fiji.version}</sc.fiji.bigwarp_fiji.version>
 
 		<!-- MPI-CBG - https://github.com/axtimwalde/mpicbg -->
-		<mpicbg.version>1.6.5</mpicbg.version>
+		<mpicbg.version>1.6.6</mpicbg.version>
 		<mpicbg_.version>${mpicbg.version}</mpicbg_.version>
 		<mpicbg.mpicbg.version>${mpicbg.version}</mpicbg.mpicbg.version>
 		<mpicbg.mpicbg_.version>${mpicbg_.version}</mpicbg.mpicbg_.version>
@@ -1062,16 +1058,12 @@
 		<!-- BigDataViewer - https://github.com/bigdataviewer -->
 
 		<!-- BigDataViewer Core - https://github.com/bigdataviewer/bigdataviewer-core -->
-		<bigdataviewer-core.version>10.6.7</bigdataviewer-core.version>
+		<bigdataviewer-core.version>10.6.11</bigdataviewer-core.version>
 		<sc.fiji.bigdataviewer-core.version>${bigdataviewer-core.version}</sc.fiji.bigdataviewer-core.version>
 
 		<!-- BigDataServer - https://github.com/bigdataviewer/bigdataviewer-server -->
-		<bigdataviewer-server.version>3.1.2</bigdataviewer-server.version>
+		<bigdataviewer-server.version>4.0.0</bigdataviewer-server.version>
 		<sc.fiji.bigdataviewer-server.version>${bigdataviewer-server.version}</sc.fiji.bigdataviewer-server.version>
-
-		<!-- BigDataViewer Visualization Tools - https://github.com/bigdataviewer/bigdataviewer-vistools -->
-		<bigdataviewer-vistools.version>1.0.0-beta-36</bigdataviewer-vistools.version>
-		<sc.fiji.bigdataviewer-vistools.version>${bigdataviewer-vistools.version}</sc.fiji.bigdataviewer-vistools.version>
 
 		<!-- BigDataViewer Fiji - https://github.com/bigdataviewer/bigdataviewer_fiji -->
 		<bigdataviewer_fiji.version>6.4.1</bigdataviewer_fiji.version>
@@ -1082,7 +1074,7 @@
 		<org.bigdataviewer.bigdataviewer-n5.version>${bigdataviewer-n5.version}</org.bigdataviewer.bigdataviewer-n5.version>
 
 		<!-- BigVolumeViewer - https://github.com/bigdataviewer/bigvolumeviewer-core -->
-		<bigvolumeviewer.version>0.4.1</bigvolumeviewer.version>
+		<bigvolumeviewer.version>0.5.0</bigvolumeviewer.version>
 		<sc.fiji.bigvolumeviewer.version>${bigvolumeviewer.version}</sc.fiji.bigvolumeviewer.version>
 
 		<!-- SPIM Data - https://github.com/bigdataviewer/spimdata -->
@@ -1092,15 +1084,15 @@
 		<!-- TrackMate - https://github.com/trackmate-sc -->
 
 		<!-- TrackMate - https://github.com/trackmate-sc/TrackMate -->
-		<TrackMate.version>7.14.0</TrackMate.version>
+		<TrackMate.version>8.0.0</TrackMate.version>
 		<sc.fiji.TrackMate.version>${TrackMate.version}</sc.fiji.TrackMate.version>
 
 		<!-- TrackMate-Cellpose - https://github.com/trackmate-sc/TrackMate-Cellpose -->
-		<TrackMate-Cellpose.version>0.1.2</TrackMate-Cellpose.version>
+		<TrackMate-Cellpose.version>1.0.1</TrackMate-Cellpose.version>
 		<sc.fiji.TrackMate-Cellpose.version>${TrackMate-Cellpose.version}</sc.fiji.TrackMate-Cellpose.version>
 
 		<!-- TrackMate-Cellpose - https://github.com/trackmate-sc/TrackMate-Cellpose -->
-		<TrackMate-CSVImporter.version>3.1.4</TrackMate-CSVImporter.version>
+		<TrackMate-CSVImporter.version>4.0.0</TrackMate-CSVImporter.version>
 		<sc.fiji.TrackMate-CSVImporter.version>${TrackMate-CSVImporter.version}</sc.fiji.TrackMate-CSVImporter.version>
 
 		<!-- TrackMate-CTCRunner - https://github.com/trackmate-sc/TrackMate-CTCRunner -->
@@ -1114,11 +1106,11 @@
 		<sc.fiji.TrackMate-ExTrack.version>${TrackMate-ExTrack.version}</sc.fiji.TrackMate-ExTrack.version>
 
 		<!-- TrackMate-Ilastik - https://github.com/trackmate-sc/TrackMate-Ilastik -->
-		<TrackMate-Ilastik.version>1.4.0</TrackMate-Ilastik.version>
+		<TrackMate-Ilastik.version>2.0.0</TrackMate-Ilastik.version>
 		<sc.fiji.TrackMate-Ilastik.version>${TrackMate-Ilastik.version}</sc.fiji.TrackMate-Ilastik.version>
 
 		<!-- TrackMate-MorphoLibJ - https://github.com/trackmate-sc/TrackMate-MorphoLibJ -->
-		<TrackMate-MorphoLibJ.version>1.2.1</TrackMate-MorphoLibJ.version>
+		<TrackMate-MorphoLibJ.version>2.0.0</TrackMate-MorphoLibJ.version>
 		<sc.fiji.TrackMate-MorphoLibJ.version>${TrackMate-MorphoLibJ.version}</sc.fiji.TrackMate-MorphoLibJ.version>
 
 		<!-- TrackMate-Oneat - https://github.com/trackmate-sc/TrackMate-Oneat -->
@@ -1126,15 +1118,15 @@
 		<sc.fiji.TrackMate-Oneat.version>${TrackMate-Oneat.version}</sc.fiji.TrackMate-Oneat.version>
 
 		<!-- TrackMate-Skeleton - https://github.com/trackmate-sc/TrackMate-Skeleton -->
-		<TrackMate-Skeleton.version>2.0.3</TrackMate-Skeleton.version>
+		<TrackMate-Skeleton.version>3.0.0</TrackMate-Skeleton.version>
 		<sc.fiji.TrackMate-Skeleton.version>${TrackMate-Skeleton.version}</sc.fiji.TrackMate-Skeleton.version>
 
 		<!-- TrackMate-StarDist - https://github.com/trackmate-sc/TrackMate-StarDist -->
-		<TrackMate-StarDist.version>1.2.1</TrackMate-StarDist.version>
+		<TrackMate-StarDist.version>2.0.0</TrackMate-StarDist.version>
 		<sc.fiji.TrackMate-StarDist.version>${TrackMate-StarDist.version}</sc.fiji.TrackMate-StarDist.version>
 
 		<!-- TrackMate-Weka - https://github.com/trackmate-sc/TrackMate-Weka -->
-		<TrackMate-Weka.version>1.3.1</TrackMate-Weka.version>
+		<TrackMate-Weka.version>2.0.0</TrackMate-Weka.version>
 		<sc.fiji.TrackMate-Weka.version>${TrackMate-Weka.version}</sc.fiji.TrackMate-Weka.version>
 
 		<!-- TrakEM2 - https://github.com/trakem2 -->
@@ -1163,7 +1155,7 @@
 		<!-- N5 - https://github.com/saalfeldlab/n5 -->
 
 		<!-- ImgLib2 Label Multisets - https://github.com/saalfeldlab/imglib2-label-multisets -->
-		<imglib2-label-multisets.version>0.15.1</imglib2-label-multisets.version>
+		<imglib2-label-multisets.version>0.15.2</imglib2-label-multisets.version>
 		<net.imglib2.imglib2-label-multisets.version>${imglib2-label-multisets.version}</net.imglib2.imglib2-label-multisets.version>
 
 		<!-- N5 - https://github.com/saalfeldlab/n5 -->
@@ -1171,7 +1163,7 @@
 		<org.janelia.saalfeldlab.n5.version>${n5.version}</org.janelia.saalfeldlab.n5.version>
 
 		<!-- N5 AWS S3 - https://github.com/saalfeldlab/n5-aws-s3 -->
-		<n5-aws-s3.version>5.0.0</n5-aws-s3.version>
+		<n5-aws-s3.version>5.0.1</n5-aws-s3.version>
 		<org.janelia.saalfeldlab.n5-aws-s3.version>${n5-aws-s3.version}</org.janelia.saalfeldlab.n5-aws-s3.version>
 
 		<!-- N5 Blosc - https://github.com/saalfeldlab/n5-blosc -->
@@ -1195,7 +1187,7 @@
 		<org.janelia.saalfeldlab.n5-imglib2.version>${n5-imglib2.version}</org.janelia.saalfeldlab.n5-imglib2.version>
 
 		<!-- N5 Universe - https://github.com/saalfeldlab/n5-universe -->
-		<n5-universe.version>3.0.1</n5-universe.version>
+		<n5-universe.version>3.0.2</n5-universe.version>
 		<org.janelia.saalfeldlab.n5-universe.version>${n5-universe.version}</org.janelia.saalfeldlab.n5-universe.version>
 
 		<!-- N5 Viewer for Fiji - https://github.com/saalfeldlab/n5-viewer_fiji -->
@@ -1211,6 +1203,15 @@
 		<org.janelia.n5-zstandard.version>${n5-zstandard.version}</org.janelia.n5-zstandard.version>
 
 		<!-- Fiji-adjacent projects (available from ImageJ update sites) -->
+
+		<!-- FLIMLib - https://github.com/flimlib -->
+		<flimj-ops.version>2.1.2</flimj-ops.version>
+		<flimj-ui.version>2.0.0</flimj-ui.version>
+		<flimlib.version>2.1.1</flimlib.version>
+		<flimlib.flimj-ops.version>${flimj-ops.version}</flimlib.flimj-ops.version>
+		<flimlib.flimj-ui.version>${flimj-ui.version}</flimlib.flimj-ui.version>
+		<flimlib.flimlib.version>${flimlib.version}</flimlib.flimlib.version>
+		<scijava.natives.classifier.flimlib>${scijava.natives.classifier}</scijava.natives.classifier.flimlib>
 
 		<!-- MorphoLibJ - https://imagej.net/plugins/morpholibj -->
 		<MorphoLibJ.version>1.6.4</MorphoLibJ.version>
@@ -1236,9 +1237,9 @@
 		<net.haesleinhuepf.clijx-weka_.version>${clijx-weka_.version}</net.haesleinhuepf.clijx-weka_.version>
 
 		<!-- BigStitcher - https://imagej.net/plugins/bigstitcher -->
-		<BigStitcher.version>2.5.2</BigStitcher.version>
-		<multiview-reconstruction.version>7.0.6</multiview-reconstruction.version>
-		<multiview-simulation.version>0.2.0</multiview-simulation.version>
+		<BigStitcher.version>3.0.1</BigStitcher.version>
+		<multiview-reconstruction.version>9.0.2</multiview-reconstruction.version>
+		<multiview-simulation.version>0.3.1</multiview-simulation.version>
 		<net.preibisch.BigStitcher.version>${BigStitcher.version}</net.preibisch.BigStitcher.version>
 		<net.preibisch.multiview-reconstruction.version>${multiview-reconstruction.version}</net.preibisch.multiview-reconstruction.version>
 		<net.preibisch.multiview-simulation.version>${multiview-simulation.version}</net.preibisch.multiview-simulation.version>
@@ -1257,11 +1258,11 @@
 		<org.bonej.bonej-utilities.version>${bonej-utilities.version}</org.bonej.bonej-utilities.version>
 
 		<!-- SNT - https://imagej.net/plugins/snt -->
-		<SNT.version>4.2.1</SNT.version>
+		<SNT.version>5.0.9</SNT.version>
 		<org.morphonets.SNT.version>${SNT.version}</org.morphonets.SNT.version>
 
 		<!-- MaMuT - https://github.com/fiji/MaMuT -->
-		<MaMuT.version>7.1.1</MaMuT.version>
+		<MaMuT.version>8.0.1</MaMuT.version>
 		<sc.fiji.MaMuT.version>${MaMuT.version}</sc.fiji.MaMuT.version>
 
 		<!-- Labkit - https://imagej.net/plugins/labkit -->
@@ -1371,12 +1372,18 @@
 		<algart-tiff.version>1.5.0</algart-tiff.version>
 		<net.algart.algart-tiff.version>${algart-tiff.version}</net.algart.algart-tiff.version>
 
-		<!-- Amazon S3 - https://aws.amazon.com/sdkforjava -->
+		<!-- Amazon AWS SDK v1 - https://github.com/aws/aws-sdk-java -->
 		<aws.version>1.12.791</aws.version>
 		<aws-java-sdk-core.version>${aws.version}</aws-java-sdk-core.version>
 		<aws-java-sdk-s3.version>${aws.version}</aws-java-sdk-s3.version>
 		<com.amazonaws.aws-java-sdk-core.version>${aws-java-sdk-core.version}</com.amazonaws.aws-java-sdk-core.version>
 		<com.amazonaws.aws-java-sdk-s3.version>${aws-java-sdk-s3.version}</com.amazonaws.aws-java-sdk-s3.version>
+
+		<!-- Amazon AWS SDK v2 - https://github.com/aws/aws-sdk-java-v2/ -->
+		<awssdk.version>2.46.15</awssdk.version>
+		<s3.version>${awssdk.version}</s3.version>
+		<software.amazon.awssdk.s3.version>${s3.version}</software.amazon.awssdk.s3.version>
+
 
 		<!-- Antlr - https://www.antlr.org/ -->
 		<ST4.version>4.3.4</ST4.version>
@@ -2031,7 +2038,7 @@
 		<org.jfree.jfreesvg.version>${jfreesvg.version}</org.jfree.jfreesvg.version>
 
 		<!-- JGraphT - https://github.com/jgrapht/jgrapht -->
-		<jgrapht.version>1.4.0</jgrapht.version>
+		<jgrapht.version>1.5.2</jgrapht.version>
 		<jgrapht-core.version>${jgrapht.version}</jgrapht-core.version>
 		<jgrapht-demo.version>${jgrapht.version}</jgrapht-demo.version>
 		<jgrapht-ext.version>${jgrapht.version}</jgrapht-ext.version>
@@ -2119,7 +2126,7 @@
 		26       | 24
 		27       | 25
 		-->
-		<javafx.version>23.0.2</javafx.version>
+		<javafx.version>19.0.2.1</javafx.version>
 		<javafx-base.version>${javafx.version}</javafx-base.version>
 		<javafx-controls.version>${javafx.version}</javafx-controls.version>
 		<javafx-fxml.version>${javafx.version}</javafx-fxml.version>
@@ -2651,6 +2658,13 @@
 				<version>${org.scijava.scijava-config.version}</version>
 			</dependency>
 
+			<!-- SciJava Desktop - https://github.com/scijava/scijava-desktop -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-desktop</artifactId>
+				<version>${org.scijava.scijava-desktop.version}</version>
+			</dependency>
+
 			<!-- SciJava Grab - https://github.com/scijava/scijava-grab -->
 			<dependency>
 				<groupId>org.scijava</groupId>
@@ -2670,13 +2684,6 @@
 				<groupId>org.scijava</groupId>
 				<artifactId>scijava-java3d</artifactId>
 				<version>${org.scijava.scijava-java3d.version}</version>
-			</dependency>
-
-			<!-- SciJava Links - https://github.com/scijava/scijava-links -->
-			<dependency>
-				<groupId>org.scijava</groupId>
-				<artifactId>scijava-links</artifactId>
-				<version>${org.scijava.scijava-links.version}</version>
 			</dependency>
 
 			<!-- SciJava Listeners - https://github.com/scijava/scijava-listeners -->
@@ -2712,13 +2719,6 @@
 				<groupId>org.scijava</groupId>
 				<artifactId>scijava-plugins-commands</artifactId>
 				<version>${org.scijava.scijava-plugins-commands.version}</version>
-			</dependency>
-
-			<!-- SciJava Plugins: Platforms - https://github.com/scijava/scijava-plugins-platforms -->
-			<dependency>
-				<groupId>org.scijava</groupId>
-				<artifactId>scijava-plugins-platforms</artifactId>
-				<version>${org.scijava.scijava-plugins-platforms.version}</version>
 			</dependency>
 
 			<!-- SciJava Plugins: Text: Markdown - https://github.com/scijava/scijava-plugins-text-markdown -->
@@ -2903,13 +2903,6 @@
 
 			<!-- ImageJ - https://github.com/imagej -->
 
-			<!-- ImageJ2 - https://github.com/imagej/imagej2 -->
-			<dependency>
-				<groupId>net.imagej</groupId>
-				<artifactId>imagej</artifactId>
-				<version>${net.imagej.imagej.version}</version>
-			</dependency>
-
 			<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
 			<dependency>
 				<groupId>net.imagej</groupId>
@@ -2928,6 +2921,13 @@
 				<groupId>net.imagej</groupId>
 				<artifactId>ij1-patcher</artifactId>
 				<version>${net.imagej.ij1-patcher.version}</version>
+			</dependency>
+
+			<!-- ImageJ2 - https://github.com/imagej/imagej2 -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej</artifactId>
+				<version>${net.imagej.imagej.version}</version>
 			</dependency>
 
 			<!-- ImageJ Common - https://github.com/imagej/imagej-common -->
@@ -3147,6 +3147,13 @@
 				<groupId>net.imglib2</groupId>
 				<artifactId>imglib2-imglyb</artifactId>
 				<version>${net.imglib2.imglib2-imglyb.version}</version>
+				<exclusions>
+					<!-- NOTE: bigdataviewer-vistools merged into bigdataviewer-core. -->
+					<exclusion>
+						<groupId>sc.fiji</groupId>
+						<artifactId>bigdataviewer-vistools</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<!-- ImgLib2 Mesh - https://github.com/imglib/imglib2-mesh -->
@@ -3242,6 +3249,13 @@
 				<groupId>sc.fiji</groupId>
 				<artifactId>fiji</artifactId>
 				<version>${sc.fiji.fiji.version}</version>
+				<exclusions>
+					<!-- NOTE: bigdataviewer-vistools merged into bigdataviewer-core. -->
+					<exclusion>
+						<groupId>sc.fiji</groupId>
+						<artifactId>bigdataviewer-vistools</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<!-- Standard Fiji projects -->
@@ -3785,11 +3799,6 @@
 			</dependency>
 			<dependency>
 				<groupId>sc.fiji</groupId>
-				<artifactId>bigdataviewer-vistools</artifactId>
-				<version>${sc.fiji.bigdataviewer-vistools.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
 				<artifactId>bigdataviewer_fiji</artifactId>
 				<version>${sc.fiji.bigdataviewer_fiji.version}</version>
 			</dependency>
@@ -3948,6 +3957,13 @@
 				<groupId>org.janelia.saalfeldlab</groupId>
 				<artifactId>n5-viewer_fiji</artifactId>
 				<version>${org.janelia.saalfeldlab.n5-viewer_fiji.version}</version>
+				<exclusions>
+					<!-- NOTE: bigdataviewer-vistools merged into bigdataviewer-core. -->
+					<exclusion>
+						<groupId>sc.fiji</groupId>
+						<artifactId>bigdataviewer-vistools</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.janelia.saalfeldlab</groupId>
@@ -3961,6 +3977,29 @@
 			</dependency>
 
 			<!-- Fiji-adjacent projects (available from ImageJ update sites) -->
+
+			<!-- FLIMLib - https://github.com/flimlib -->
+			<dependency>
+				<groupId>flimlib</groupId>
+				<artifactId>flimj-ops</artifactId>
+				<version>${flimlib.flimj-ops.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>flimlib</groupId>
+				<artifactId>flimj-ui</artifactId>
+				<version>${flimlib.flimj-ui.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>flimlib</groupId>
+				<artifactId>flimlib</artifactId>
+				<version>${flimlib.flimlib.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>flimlib</groupId>
+				<artifactId>flimlib</artifactId>
+				<version>${flimlib.flimlib.version}</version>
+				<classifier>${scijava.natives.classifier.flimlib}</classifier>
+			</dependency>
 
 			<!-- MorphoLibJ - https://imagej.net/plugins/morpholibj -->
 			<dependency>
@@ -4016,11 +4055,25 @@
 				<groupId>net.preibisch</groupId>
 				<artifactId>BigStitcher</artifactId>
 				<version>${net.preibisch.BigStitcher.version}</version>
+				<exclusions>
+					<!-- NOTE: bigdataviewer-vistools merged into bigdataviewer-core. -->
+					<exclusion>
+						<groupId>sc.fiji</groupId>
+						<artifactId>bigdataviewer-vistools</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>net.preibisch</groupId>
 				<artifactId>multiview-reconstruction</artifactId>
 				<version>${net.preibisch.multiview-reconstruction.version}</version>
+				<exclusions>
+					<!-- NOTE: bigdataviewer-vistools merged into bigdataviewer-core. -->
+					<exclusion>
+						<groupId>sc.fiji</groupId>
+						<artifactId>bigdataviewer-vistools</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>net.preibisch</groupId>
@@ -4083,6 +4136,13 @@
 				<groupId>sc.fiji</groupId>
 				<artifactId>MaMuT</artifactId>
 				<version>${sc.fiji.MaMuT.version}</version>
+				<exclusions>
+					<!-- NOTE: bigdataviewer-vistools merged into bigdataviewer-core. -->
+					<exclusion>
+						<groupId>sc.fiji</groupId>
+						<artifactId>bigdataviewer-vistools</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<!-- Labkit - https://imagej.net/plugins/labkit -->
@@ -4415,7 +4475,7 @@
 				<version>${net.algart.algart-tiff.version}</version>
 			</dependency>
 
-			<!-- Amazon S3 - https://aws.amazon.com/sdkforjava -->
+			<!-- Amazon AWS SDK v1 - https://github.com/aws/aws-sdk-java -->
 			<dependency>
 				<groupId>com.amazonaws</groupId>
 				<artifactId>aws-java-sdk-core</artifactId>
@@ -4425,6 +4485,13 @@
 				<groupId>com.amazonaws</groupId>
 				<artifactId>aws-java-sdk-s3</artifactId>
 				<version>${com.amazonaws.aws-java-sdk-s3.version}</version>
+			</dependency>
+
+			<!-- Amazon AWS SDK v2 - https://github.com/aws/aws-sdk-java-v2/ -->
+			<dependency>
+				<groupId>software.amazon.awssdk</groupId>
+				<artifactId>s3</artifactId>
+				<version>${software.amazon.awssdk.s3.version}</version>
 			</dependency>
 
 			<!-- Antlr - https://www.antlr.org/ -->

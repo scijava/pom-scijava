@@ -1,0 +1,97 @@
+name: status
+
+on:
+  schedule:
+    # Run daily at 0500 UTC.
+    - cron: '0 5 * * *'
+  # Run right after the build workflow publishes a fresh smelt.json, so the
+  # status page picks up new bytecode classification immediately rather than
+  # waiting for the next daily run. The job-level guard below restricts this to
+  # master pushes, the only builds that republish smelt.json.
+  workflow_run:
+    workflows: [build]
+    types: [completed]
+
+# Serialize status runs (daily cron + each build completion) so two never push
+# to the status.scijava.org gh-pages branch at the same time.
+concurrency:
+  group: status-publish
+  cancel-in-progress: false
+
+jobs:
+  status:
+    runs-on: ubuntu-latest
+    # Scheduled runs always proceed. workflow_run runs only when the triggering
+    # build was a push to master (i.e. one that republished smelt.json).
+    if: >-
+      github.event_name != 'workflow_run' ||
+      (github.event.workflow_run.event == 'push' &&
+       github.event.workflow_run.head_branch == 'master')
+    permissions:
+      actions: write  # needed to delete and re-save caches
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+
+      - uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Restore pombast cache
+        uses: actions/cache/restore@v4
+        with:
+          # pombast: status caches; jgo: per-artifact bytecode-scan results;
+          # ~/.m2: candidate JARs that bump classification downloads to scan.
+          # Persisting these keeps the daily classification from re-downloading
+          # and re-scanning every candidate on each run.
+          path: |
+            ~/.cache/pombast
+            ~/.cache/jgo
+            ~/.m2/repository
+          key: ${{ runner.os }}-pombast-status
+
+      # The monoqueue library is used by pombast to read GitHub issues.
+      - name: Restore monoqueue cache
+        uses: actions/cache/restore@v4
+        with:
+          path: ~/.cache/monoqueue
+          key: ${{ runner.os }}-monoqueue-status
+
+      - name: Generate and publish status and team pages
+        run: .github/status.sh
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Delete old pombast status cache
+        if: always()
+        run: .github/delete-cache.sh "${{ runner.os }}-pombast-status"
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Save pombast cache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            ~/.cache/pombast
+            ~/.cache/jgo
+            ~/.m2/repository
+          key: ${{ runner.os }}-pombast-status
+
+      - name: Delete old monoqueue cache
+        if: always()
+        run: .github/delete-cache.sh "${{ runner.os }}-monoqueue-status"
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Save monoqueue cache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: ~/.cache/monoqueue
+          key: ${{ runner.os }}-monoqueue-status
