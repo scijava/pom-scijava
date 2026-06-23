@@ -1,5 +1,9 @@
 #!/bin/sh
-uv tool install "git+https://github.com/scijava/pombast.git"
+# CI orchestrator for the status dashboard: fetch the most recently published
+# smelt.json, regenerate the status/badges/team reports from it, and publish
+# them to status.scijava.org. The report generation itself lives in
+# bin/report.sh so it can be run outside CI too.
+set -e
 
 # Pull the most recently published smelt results so that `pombast status` can
 # classify each available version bump by its bytecode-floor blast radius
@@ -7,17 +11,17 @@ uv tool install "git+https://github.com/scijava/pombast.git"
 # rather than https://status.scijava.org/, so we pick up a freshly committed
 # smelt.json immediately instead of waiting on the asynchronous Pages deploy.
 #
-# Best-effort: if smelt.json is not published yet (or the fetch fails), status
-# still runs -- just without the bytecode classification overlay.
-smelt_arg=""
+# Best-effort: if smelt.json is not published yet (or the fetch fails),
+# bin/report.sh still generates the reports -- just without the classification.
 smelt_url=https://raw.githubusercontent.com/scijava/status.scijava.org/gh-pages/smelt.json
-if curl -fsSLO "$smelt_url"; then
-  smelt_arg="--smelt smelt.json"
-else
+mkdir -p target/pombast
+curl -fsSL -o target/pombast/smelt.json "$smelt_url" ||
   echo "== smelt.json unavailable; running status without classification =="
-fi
 
-pombast status $smelt_arg .
-pombast badges -o badges.json .
-pombast team .
-.github/publish.sh "Update status reports" index.html badges.json team.html
+bin/report.sh
+
+.github/publish.sh "Update status reports" \
+  target/pombast/index.html \
+  target/pombast/badges.json \
+  target/pombast/team.html \
+  target/pombast/team.json

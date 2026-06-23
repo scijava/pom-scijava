@@ -12,8 +12,8 @@ datestamp="$(TZ=UTC date +'%Y-%m-%d %H:%M:%S UTC')"
 message="$1 ($datestamp)"
 shift
 
-git config --global user.name github-actions
-git config --global user.email github-actions@github.com
+git config --global user.name "SciJava CI"
+git config --global user.email ci@scijava.org
 
 dest_dir=site-publish
 
@@ -36,5 +36,13 @@ then
 else
   echo "== Committing changes =="
   git commit -m "$message"
-  git push
+  # Retry against concurrent publishers (the build and status workflows both
+  # push here), rebasing onto whatever landed in between.
+  n=0
+  until git push
+  do
+    n=$((n + 1))
+    test "$n" -lt 5 || { echo "push failed after $n attempts" >&2; exit 1; }
+    git pull --rebase
+  done
 fi

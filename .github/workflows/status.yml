@@ -12,6 +12,12 @@ on:
     workflows: [build]
     types: [completed]
 
+# Serialize status runs (daily cron + each build completion) so two never push
+# to the status.scijava.org gh-pages branch at the same time.
+concurrency:
+  group: status-publish
+  cancel-in-progress: false
+
 jobs:
   status:
     runs-on: ubuntu-latest

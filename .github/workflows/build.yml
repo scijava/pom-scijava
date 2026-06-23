@@ -11,6 +11,11 @@ on:
     # Run weekly on Sunday to keep the Maven cache alive.
     - cron: '4 5 * * 0'
 
+# Queue runs of the same ref; cancel superseded PR builds (they never publish).
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -63,8 +68,8 @@ jobs:
             ~/.cache/jgo
           key: ${{ runner.os }}-pombast-build
 
-      - name: Run pombast melt+smelt commands
-        run: .github/melt.sh
+      - name: Run pombast checks (melt + smelt)
+        run: bin/check.sh
         shell: bash
 
       - name: Delete old pombast cache
@@ -86,5 +91,5 @@ jobs:
 
       - name: Publish smelt results
         if: always() && github.ref == 'refs/heads/master' && github.event_name == 'push'
-        run: .github/publish.sh "Update smelt results" smelt.json
+        run: .github/publish.sh "Update smelt results" target/pombast/smelt.json
         shell: bash
