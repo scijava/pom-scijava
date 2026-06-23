@@ -1380,8 +1380,10 @@
 		<com.amazonaws.aws-java-sdk-s3.version>${aws-java-sdk-s3.version}</com.amazonaws.aws-java-sdk-s3.version>
 
 		<!-- Amazon AWS SDK v2 - https://github.com/aws/aws-sdk-java-v2/ -->
-		<!-- NOTE: No shorthand bom.version - too ambiguous and confusing. -->
-		<software.amazon.awssdk.bom.version>2.46.15</software.amazon.awssdk.bom.version>
+		<awssdk.version>2.46.15</awssdk.version>
+		<s3.version>${awssdk.version}</s3.version>
+		<software.amazon.awssdk.s3.version>${s3.version}</software.amazon.awssdk.s3.version>
+
 
 		<!-- Antlr - https://www.antlr.org/ -->
 		<ST4.version>4.3.4</ST4.version>
@@ -4446,10 +4448,8 @@
 			<!-- Amazon AWS SDK v2 - https://github.com/aws/aws-sdk-java-v2/ -->
 			<dependency>
 				<groupId>software.amazon.awssdk</groupId>
-				<artifactId>bom</artifactId>
-				<version>${software.amazon.awssdk.bom.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
+				<artifactId>s3</artifactId>
+				<version>${software.amazon.awssdk.s3.version}</version>
 			</dependency>
 
 			<!-- Antlr - https://www.antlr.org/ -->
