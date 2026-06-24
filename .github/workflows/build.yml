@@ -71,6 +71,22 @@ jobs:
       - name: Run pombast checks (melt + smelt)
         run: bin/check.sh
         shell: bash
+        env:
+          COLUMNS: '200'  # widen Rich tables so log output is legible
+
+      - name: Upload pombast logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pombast-logs
+          # mega-melt validation.log + dependency-tree.log + per-component build
+          # logs, plus the smelt report. Lets us diagnose melt/smelt failures
+          # without waiting on a status.scijava.org deploy.
+          path: |
+            target/pombast/**/*.log
+            target/pombast/smelt.json
+          if-no-files-found: warn
+          retention-days: 14
 
       - name: Delete old pombast cache
         if: always()

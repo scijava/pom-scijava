@@ -64,6 +64,20 @@ jobs:
         shell: bash
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COLUMNS: '200'  # widen Rich tables so log output is legible
+
+      - name: Upload status reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: status-reports
+          path: |
+            target/pombast/index.html
+            target/pombast/badges.json
+            target/pombast/team.html
+            target/pombast/team.json
+          if-no-files-found: warn
+          retention-days: 14
 
       - name: Delete old pombast status cache
         if: always()

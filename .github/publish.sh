@@ -30,7 +30,9 @@ do
 done
 
 cd "$dest_dir"
-if git diff --quiet .
+# Check staged changes (--cached): the files above were already `git add`ed, so
+# a plain `git diff` would see an always-clean working tree and never commit.
+if git diff --cached --quiet
 then
   echo "== No changes =="
 else
