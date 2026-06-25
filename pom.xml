@@ -777,7 +777,7 @@
 		<Correct_3D_Drift.version>1.0.7</Correct_3D_Drift.version>
 		<sc.fiji.Correct_3D_Drift.version>${Correct_3D_Drift.version}</sc.fiji.Correct_3D_Drift.version>
 
-		<Descriptor_based_registration.version>2.1.8</Descriptor_based_registration.version>
+		<Descriptor_based_registration.version>3.0.1</Descriptor_based_registration.version>
 		<sc.fiji.Descriptor_based_registration.version>${Descriptor_based_registration.version}</sc.fiji.Descriptor_based_registration.version>
 
 		<Dichromacy.version>2.1.2</Dichromacy.version>
@@ -937,7 +937,7 @@
 		<Statistical_Region_Merging.version>2.0.1</Statistical_Region_Merging.version>
 		<sc.fiji.Statistical_Region_Merging.version>${Statistical_Region_Merging.version}</sc.fiji.Statistical_Region_Merging.version>
 
-		<Stitching.version>3.1.9</Stitching.version>
+		<Stitching.version>3.1.10</Stitching.version>
 		<Stitching_.version>${Stitching.version}</Stitching_.version>
 		<sc.fiji.Stitching_.version>${Stitching_.version}</sc.fiji.Stitching_.version>
 
@@ -1195,7 +1195,7 @@
 		<org.janelia.saalfeldlab.n5-viewer_fiji.version>${n5-viewer_fiji.version}</org.janelia.saalfeldlab.n5-viewer_fiji.version>
 
 		<!-- N5 Zarr - https://github.com/saalfeldlab/n5-zarr -->
-		<n5-zarr.version>2.0.0</n5-zarr.version>
+		<n5-zarr.version>2.0.1</n5-zarr.version>
 		<org.janelia.saalfeldlab.n5-zarr.version>${n5-zarr.version}</org.janelia.saalfeldlab.n5-zarr.version>
 
 		<!-- N5 ZStandard - https://github.com/JaneliaSciComp/n5-zstandard -->
@@ -1237,8 +1237,8 @@
 		<net.haesleinhuepf.clijx-weka_.version>${clijx-weka_.version}</net.haesleinhuepf.clijx-weka_.version>
 
 		<!-- BigStitcher - https://imagej.net/plugins/bigstitcher -->
-		<BigStitcher.version>3.0.1</BigStitcher.version>
-		<multiview-reconstruction.version>9.0.2</multiview-reconstruction.version>
+		<BigStitcher.version>3.0.6</BigStitcher.version>
+		<multiview-reconstruction.version>9.0.8</multiview-reconstruction.version>
 		<multiview-simulation.version>0.3.1</multiview-simulation.version>
 		<net.preibisch.BigStitcher.version>${BigStitcher.version}</net.preibisch.BigStitcher.version>
 		<net.preibisch.multiview-reconstruction.version>${multiview-reconstruction.version}</net.preibisch.multiview-reconstruction.version>
