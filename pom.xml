@@ -11,7 +11,7 @@
 	</parent>
 
 	<artifactId>pom-scijava</artifactId>
-	<version>45.0.1-SNAPSHOT</version>
+	<version>45.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SciJava Parent POM</name>
@@ -523,7 +523,7 @@
 		<net.imagej.ij1-patcher.version>${ij1-patcher.version}</net.imagej.ij1-patcher.version>
 
 		<!-- ImageJ2 - https://github.com/imagej/imagej2 -->
-		<imagej2.version>2.17.0</imagej2.version>
+		<imagej2.version>2.18.0</imagej2.version>
 		<imagej.version>${imagej2.version}</imagej.version>
 		<net.imagej.imagej.version>${imagej.version}</net.imagej.imagej.version>
 
