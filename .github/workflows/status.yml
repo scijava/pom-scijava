@@ -21,12 +21,16 @@ concurrency:
 jobs:
   status:
     runs-on: ubuntu-latest
-    # Scheduled runs always proceed. workflow_run runs only when the triggering
-    # build was a push to master (i.e. one that republished smelt.json).
+    # Restrict to the canonical repo, since scheduled (cron) triggers fire on
+    # every fork's default branch too, regardless of push activity there.
+    # Beyond that: scheduled runs always proceed, while workflow_run runs only
+    # when the triggering build was a push to master (i.e. one that
+    # republished smelt.json).
     if: >-
-      github.event_name != 'workflow_run' ||
-      (github.event.workflow_run.event == 'push' &&
-       github.event.workflow_run.head_branch == 'master')
+      github.repository == 'scijava/pom-scijava' &&
+      (github.event_name != 'workflow_run' ||
+       (github.event.workflow_run.event == 'push' &&
+        github.event.workflow_run.head_branch == 'master'))
     permissions:
       actions: write  # needed to delete and re-save caches
 
