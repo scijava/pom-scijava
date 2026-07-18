@@ -7273,6 +7273,7 @@
 									<executable>${gradle.wrapper}</executable>
 									<workingDirectory>${basedir}/gradle-scijava</workingDirectory>
 									<arguments>
+										<argument>-q</argument>
 										<argument>--no-daemon</argument>
 										<argument>--project-cache-dir</argument>
 										<argument>../target/gradle/build</argument>
