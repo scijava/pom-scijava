@@ -1,6 +1,7 @@
 [common]
 default-java-version = 8
 repositories = ["scijava.public=https://maven.scijava.org/content/groups/public"]
+settings = "pombast/settings.xml"
 
 [status]
 output = "target/pombast/index.html"

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<settings>
+  <profiles>
+    <profile>
+      <id>update-interval</id>
+      <repositories>
+        <repository>
+          <id>scijava.public</id>
+          <url>https://maven.scijava.org/content/groups/public</url>
+          <releases><updatePolicy>interval:120</updatePolicy></releases>
+          <snapshots><updatePolicy>interval:120</updatePolicy></snapshots>
+        </repository>
+        <repository>
+          <id>central</id>
+          <url>https://repo.maven.apache.org/maven2</url>
+          <releases><updatePolicy>interval:120</updatePolicy></releases>
+        </repository>
+      </repositories>
+    </profile>
+  </profiles>
+  <activeProfiles><activeProfile>update-interval</activeProfile></activeProfiles>
+</settings>
