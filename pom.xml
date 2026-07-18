@@ -692,7 +692,7 @@
 		<io.scif.scifio-jai-imageio.version>${scifio-jai-imageio.version}</io.scif.scifio-jai-imageio.version>
 
 		<!-- SCIFIO Labeling - https://github.com/scifio/scifio-labeling -->
-		<scifio-labeling.version>0.3.2</scifio-labeling.version>
+		<scifio-labeling.version>0.4.0</scifio-labeling.version>
 		<io.scif.scifio-labeling.version>${scifio-labeling.version}</io.scif.scifio-labeling.version>
 
 		<!-- SCIFIO-LifeSci - https://github.com/scifio/scifio-lifesci -->
@@ -1171,7 +1171,7 @@
 		<org.janelia.saalfeldlab.n5-blosc.version>${n5-blosc.version}</org.janelia.saalfeldlab.n5-blosc.version>
 
 		<!-- N5 Google Cloud - https://github.com/saalfeldlab/n5-google-cloud -->
-		<n5-google-cloud.version>6.0.0</n5-google-cloud.version>
+		<n5-google-cloud.version>6.0.1</n5-google-cloud.version>
 		<org.janelia.saalfeldlab.n5-google-cloud.version>${n5-google-cloud.version}</org.janelia.saalfeldlab.n5-google-cloud.version>
 
 		<!-- N5 HDF5 Bindings - https://github.com/saalfeldlab/n5-hdf5 -->
