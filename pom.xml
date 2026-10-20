@@ -1258,7 +1258,7 @@
 		<org.bonej.bonej-utilities.version>${bonej-utilities.version}</org.bonej.bonej-utilities.version>
 
 		<!-- SNT - https://imagej.net/plugins/snt -->
-		<SNT.version>5.0.9</SNT.version>
+		<SNT.version>5.0.23</SNT.version>
 		<org.morphonets.SNT.version>${SNT.version}</org.morphonets.SNT.version>
 
 		<!-- MaMuT - https://github.com/fiji/MaMuT -->
@@ -1737,7 +1737,7 @@
 		<com.google.errorprone.error_prone_annotations.version>${error_prone_annotations.version}</com.google.errorprone.error_prone_annotations.version>
 
 		<!-- FlatLaf - https://www.formdev.com/flatlaf/ -->
-		<flatlaf.version>3.6.1</flatlaf.version>
+		<flatlaf.version>3.7.2</flatlaf.version>
 		<com.formdev.flatlaf.version>${flatlaf.version}</com.formdev.flatlaf.version>
 		<flatlaf-fonts-jetbrains-mono.version>2.304</flatlaf-fonts-jetbrains-mono.version>
 		<com.formdev.flatlaf-fonts-jetbrains-mono.version>${flatlaf-fonts-jetbrains-mono.version}</com.formdev.flatlaf-fonts-jetbrains-mono.version>
@@ -2414,10 +2414,9 @@
 		<ch.qos.reload4j.reload4j.version>${reload4j.version}</ch.qos.reload4j.reload4j.version>
 
 		<!-- RSyntaxTextArea - https://bobbylight.github.io/RSyntaxTextArea/ -->
-		<rsyntaxtextarea.version>3.6.0</rsyntaxtextarea.version>
-		<autocomplete.version>3.3.2</autocomplete.version>
-		<!-- NB: languagesupport 3.3.0 is the last version compiled for Java 8! -->
-		<languagesupport.version>3.3.0</languagesupport.version>
+		<rsyntaxtextarea.version>3.6.3</rsyntaxtextarea.version>
+		<autocomplete.version>3.3.3</autocomplete.version>
+		<languagesupport.version>3.4.1</languagesupport.version>
 		<com.fifesoft.rsyntaxtextarea.version>${rsyntaxtextarea.version}</com.fifesoft.rsyntaxtextarea.version>
 		<com.fifesoft.autocomplete.version>${autocomplete.version}</com.fifesoft.autocomplete.version>
 		<com.fifesoft.languagesupport.version>${languagesupport.version}</com.fifesoft.languagesupport.version>
