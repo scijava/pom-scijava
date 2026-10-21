@@ -20,7 +20,7 @@
     </rule>
     <rule groupId="ch.qos.logback" artifactId="*" comparisonMethod="maven">
       <ignoreVersions>
-        <ignoreVersion type="regex">.*-(alpha|beta|rc)-?[0-9]+</ignoreVersion>
+        <ignoreVersion type="regex">.*-(alpha|beta|rc|RC)-?[0-9]+</ignoreVersion>
         <!--
         As of version 1.4.0, Logback requires Java 11.
         We cannot upgrade past 1.3.x while we still support Java 8.
@@ -33,7 +33,7 @@
     </rule>
     <rule groupId="com.fasterxml.jackson.core" artifactId="*" comparisonMethod="maven">
       <ignoreVersions>
-        <ignoreVersion type="regex">.*-(alpha|beta|rc)-?[0-9]+</ignoreVersion>
+        <ignoreVersion type="regex">.*-(alpha|beta|rc|RC)-?[0-9]+</ignoreVersion>
       </ignoreVersions>
     </rule>
     <rule groupId="com.google.guava" artifactId="guava" comparisonMethod="maven">
@@ -43,7 +43,7 @@
     </rule>
     <rule groupId="com.google.protobuf" artifactId="*" comparisonMethod="maven">
       <ignoreVersions>
-        <ignoreVersion type="regex">.*-(alpha|beta|rc)-?[0-9]+</ignoreVersion>
+        <ignoreVersion type="regex">.*-(alpha|beta|rc|RC)-?[0-9]+</ignoreVersion>
       </ignoreVersions>
     </rule>
     <rule groupId="com.jcraft" artifactId="jzlib" comparisonMethod="maven">
@@ -71,7 +71,7 @@
     </rule>
     <rule groupId="com.squareup.okhttp3" artifactId="okhttp" comparisonMethod="maven">
       <ignoreVersions>
-        <ignoreVersion type="regex">.*-(alpha|beta|rc)[-\.]?[0-9]+</ignoreVersion>
+        <ignoreVersion type="regex">.*-(alpha|beta|rc|RC)[-\.]?[0-9]+</ignoreVersion>
       </ignoreVersions>
     </rule>
     <rule groupId="com.zeroc" artifactId="*" comparisonMethod="maven">
@@ -139,7 +139,7 @@
     </rule>
     <rule groupId="junit" artifactId="*" comparisonMethod="maven">
       <ignoreVersions>
-        <ignoreVersion type="regex">.*-(alpha|beta|rc)-?[0-9]+</ignoreVersion>
+        <ignoreVersion type="regex">.*-(alpha|beta|rc|RC)-?[0-9]+</ignoreVersion>
       </ignoreVersions>
     </rule>
     <rule groupId="mpicbg" artifactId="*" comparisonMethod="maven">
@@ -159,7 +159,7 @@
     </rule>
     <rule groupId="org.apache.groovy" artifactId="*" comparisonMethod="maven">
       <ignoreVersions>
-        <ignoreVersion type="regex">.*-(alpha|beta|rc)-?[0-9]+</ignoreVersion>
+        <ignoreVersion type="regex">.*-(alpha|beta|rc|RC)-?[0-9]+</ignoreVersion>
         <!--
         As of version 5, Groovy requires Java 11.
         We cannot upgrade past 4.x while we still support Java 8.
@@ -178,12 +178,12 @@
     </rule>
     <rule groupId="org.apache.logging.log4j" artifactId="*" comparisonMethod="maven">
       <ignoreVersions>
-        <ignoreVersion type="regex">.*-(alpha|beta|rc)-?[0-9]+</ignoreVersion>
+        <ignoreVersion type="regex">.*-(alpha|beta|rc|RC)-?[0-9]+</ignoreVersion>
       </ignoreVersions>
     </rule>
     <rule groupId="org.apache.maven" artifactId="maven-core" comparisonMethod="maven">
       <ignoreVersions>
-        <ignoreVersion type="regex">.*-(alpha|beta|rc)-?[0-9]+</ignoreVersion>
+        <ignoreVersion type="regex">.*-(alpha|beta|rc|RC)-?[0-9]+</ignoreVersion>
       </ignoreVersions>
     </rule>
     <rule groupId="org.eclipse.collections" artifactId="*" comparisonMethod="maven">
@@ -203,7 +203,7 @@
         We cannot upgrade past 9.x while we still support Java 8.
         -->
         <ignoreVersion type="regex">^(?!9\.).*</ignoreVersion>
-        <ignoreVersion type="regex">.*[-\.](alpha|beta|rc)-?[0-9]+</ignoreVersion>
+        <ignoreVersion type="regex">.*[-\.](alpha|beta|rc|RC)-?[0-9]+</ignoreVersion>
         <ignoreVersion type="regex">.*\.RC[0-9]+</ignoreVersion>
       </ignoreVersions>
     </rule>
@@ -218,12 +218,12 @@
     </rule>
     <rule groupId="org.janelia" artifactId="*" comparisonMethod="maven">
       <ignoreVersions>
-        <ignoreVersion type="regex">.*-(alpha|beta|rc)-?[0-9]+</ignoreVersion>
+        <ignoreVersion type="regex">.*-(alpha|beta|rc|RC)-?[0-9]+</ignoreVersion>
       </ignoreVersions>
     </rule>
     <rule groupId="org.janelia.saalfeldlab" artifactId="*" comparisonMethod="maven">
       <ignoreVersions>
-        <ignoreVersion type="regex">.*-(alpha|beta|rc)-?[0-9]+</ignoreVersion>
+        <ignoreVersion type="regex">.*-(alpha|beta|rc|RC)-?[0-9]+</ignoreVersion>
       </ignoreVersions>
     </rule>
     <rule groupId="org.jetbrains.kotlin" artifactId="*" comparisonMethod="maven">
@@ -308,7 +308,7 @@
     </rule>
     <rule groupId="org.slf4j" artifactId="*" comparisonMethod="maven">
       <ignoreVersions>
-        <ignoreVersion type="regex">.*-(alpha|beta|rc)-?[0-9]+</ignoreVersion>
+        <ignoreVersion type="regex">.*-(alpha|beta|rc|RC)-?[0-9]+</ignoreVersion>
       </ignoreVersions>
     </rule>
     <rule groupId="org.springframework" artifactId="*" comparisonMethod="maven">
@@ -324,7 +324,7 @@
     </rule>
     <rule groupId="org.tensorflow" artifactId="*" comparisonMethod="maven">
       <ignoreVersions>
-        <ignoreVersion type="regex">.*-(alpha|beta|rc)-?[0-9]+</ignoreVersion>
+        <ignoreVersion type="regex">.*-(alpha|beta|rc|RC)-?[0-9]+</ignoreVersion>
       </ignoreVersions>
     </rule>
     <rule groupId="sc.fiji" artifactId="3D_Objects_Counter" comparisonMethod="maven">
