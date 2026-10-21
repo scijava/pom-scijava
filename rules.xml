@@ -118,7 +118,7 @@
     </rule>
     <rule groupId="ome" artifactId="*" comparisonMethod="maven">
       <ignoreVersions>
-        <ignoreVersion type="regex">.*-m[0-9]+</ignoreVersion>
+        <ignoreVersion type="regex">.*-(m|rc)[0-9]+</ignoreVersion>
       </ignoreVersions>
     </rule>
     <rule groupId="omero" artifactId="*" comparisonMethod="maven">
@@ -134,6 +134,11 @@
         As of version 6, Groovy requires Java 17.
         -->
         <ignoreVersion type="regex">^(?!5\.).*</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="org.apache.jackrabbit" artifactId="*" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion type="regex">.*-(alpha|beta|rc|RC)-?([0-9]+)?</ignoreVersion>
       </ignoreVersions>
     </rule>
     <rule groupId="org.apache.logging.log4j" artifactId="*" comparisonMethod="maven">
