@@ -4182,16 +4182,6 @@
 				<groupId>org.openmicroscopy</groupId>
 				<artifactId>ome-codecs</artifactId>
 				<version>${org.openmicroscopy.ome-codecs.version}</version>
-				<exclusions>
-					<exclusion>
-						<!--
-						Conflicts with com.github.jai-imageio:jai-imageio-jpeg2000,
-						which io.scif:scifio depends on as of version 0.47.0.
-						-->
-						<groupId>org.openmicroscopy</groupId>
-						<artifactId>ome-jai</artifactId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 
 			<!-- OME Common Java - https://github.com/ome/ome-common-java -->
