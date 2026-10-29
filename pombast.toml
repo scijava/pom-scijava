@@ -65,6 +65,22 @@ includes = [
   "sc.fiji:*",
 ]
 
+[javadoc]
+output = "target/pombast/javadoc"
+redirect-format = "rewritemap"
+
+# Named unions over parts of the BOM, served at
+# /org.scijava/pom-scijava/{version}/{name}/: a -link target and landing page
+# per project, and the scope that project's legacy deep links resolve in.
+[javadoc.unions]
+"bio-formats" = ["ome:*", "org.openmicroscopy:*"]
+"io.scif" = ["io.scif:*"]
+"net.imagej" = ["net.imagej:*"]
+"net.imglib2" = ["net.imglib2:*"]
+"org.bonej" = ["org.bonej:*"]
+"org.scijava" = ["org.scijava:*"]
+"sc.fiji" = ["sc.fiji:*"]
+
 [melt]
 # Some managed components require Java 21+, so we melt with that Java
 # version. But pom-scijava sets scijava.jvm.version to 11 by default.
