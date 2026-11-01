@@ -273,6 +273,25 @@
 		<license.licenseName>N/A</license.licenseName>
 		<license.copyrightOwners>N/A</license.copyrightOwners>
 
+		<!--
+		Javadoc of every component managed by this BOM, unioned into a single
+		link target for the maven-javadoc-plugin: classes of any managed
+		dependency are linked from the generated javadoc, at the versions this
+		BOM release manages, with one fast lookup instead of one per dependency.
+		See https://github.com/scijava/javadoc.scijava.org.
+
+		NB: This is interpolated in your project, where ${project.parent.version}
+		is your parent's version: this BOM's, if your project extends it directly.
+		If it does not (e.g. a module of a multi-module build), override this
+		property with the pom-scijava version you build against. A version the
+		site does not have (e.g. a locally installed 999-test, or a release not
+		yet published there) falls back to the newest one.
+
+		To build javadoc without contacting javadoc.scijava.org (e.g. offline),
+		drop the links: -Dscijava.javadoc.url.bom= -Dscijava.javadoc.url.java=
+		-->
+		<scijava.javadoc.url.bom>https://javadoc.scijava.org/org.scijava/pom-scijava/${project.parent.version}/</scijava.javadoc.url.bom>
+
 		<!-- Managed dependency versions - SciJava component collection -->
 
 		<!--
@@ -7214,6 +7233,22 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<artifactId>maven-javadoc-plugin</artifactId>
+					<configuration>
+						<!-- Link to this BOM's javadoc union; see scijava.javadoc.url.bom. -->
+						<links combine.children="append">
+							<link>${scijava.javadoc.url.bom}</link>
+						</links>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
 
 	<profiles>
 		<profile>
