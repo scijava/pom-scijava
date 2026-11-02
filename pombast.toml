@@ -78,6 +78,7 @@ redirect-format = "rewritemap"
 "net.imagej" = ["net.imagej:*"]
 "net.imglib2" = ["net.imglib2:*"]
 "org.bonej" = ["org.bonej:*"]
+"org.openjfx" = ["org.openjfx:*"]
 "org.scijava" = ["org.scijava:*"]
 "sc.fiji" = ["sc.fiji:*"]
 
