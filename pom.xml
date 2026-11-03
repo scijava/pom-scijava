@@ -1290,6 +1290,12 @@
 		<sc.fiji.labkit-pixel-classification.version>${labkit-pixel-classification.version}</sc.fiji.labkit-pixel-classification.version>
 		<sc.fiji.labkit-ui.version>${labkit-ui.version}</sc.fiji.labkit-ui.version>
 
+		<!-- MoBIE - https://github.com/mobie -->
+		<mobie-io.version>4.0.8</mobie-io.version>
+		<mobie-viewer-fiji.version>6.7.7</mobie-viewer-fiji.version>
+		<org.embl.mobie.mobie-io.version>${mobie-io.version}</org.embl.mobie.mobie-io.version>
+		<org.embl.mobie.mobie-viewer-fiji.version>${mobie-viewer-fiji.version}</org.embl.mobie.mobie-viewer-fiji.version>
+
 		<!-- Open Microscopy Environment - https://github.com/ome -->
 
 		<!-- Zeroc software - https://zeroc.com/ -->
@@ -4173,6 +4179,18 @@
 				<groupId>sc.fiji</groupId>
 				<artifactId>labkit-ui</artifactId>
 				<version>${sc.fiji.labkit-ui.version}</version>
+			</dependency>
+
+			<!-- MoBIE - https://github.com/mobie -->
+			<dependency>
+				<groupId>org.embl.mobie</groupId>
+				<artifactId>mobie-io</artifactId>
+				<version>${org.embl.mobie.mobie-io.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.embl.mobie</groupId>
+				<artifactId>mobie-viewer-fiji</artifactId>
+				<version>${org.embl.mobie.mobie-viewer-fiji.version}</version>
 			</dependency>
 
 			<!-- Open Microscopy Environment - https://github.com/ome -->

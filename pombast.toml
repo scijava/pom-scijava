@@ -19,6 +19,7 @@ cuttable = [
   "net.imglib2:*",
   "net.preibisch:*",
   "org.bonej:*",
+  "org.embl.mobie:*",
   "org.janelia*:*",
   "org.morphonets:*",
   "org.scijava:*",
@@ -39,6 +40,7 @@ includes = [
   "net.imglib2:*",
   "net.preibisch:*",
   "org.bonej:*",
+  "org.embl.mobie:*",
   "org.janelia*:*",
   "org.morphonets:*",
   "org.scijava:*",
@@ -58,6 +60,7 @@ includes = [
   "net.preibisch:*",
   "ome:*",
   "org.bonej:*",
+  "org.embl.mobie:*",
   "org.janelia*:*",
   "org.morphonets:*",
   "org.openmicroscopy:*",
@@ -78,6 +81,7 @@ redirect-format = "rewritemap"
 "net.imagej" = ["net.imagej:*"]
 "net.imglib2" = ["net.imglib2:*"]
 "org.bonej" = ["org.bonej:*"]
+"org.embl.mobie" = ["org.embl.mobie:*"]
 "org.openjfx" = ["org.openjfx:*"]
 "org.scijava" = ["org.scijava:*"]
 "sc.fiji" = ["sc.fiji:*"]
@@ -143,6 +147,7 @@ includes = [
   "net.imglib2:*",
   "net.preibisch:*",
   "org.bonej:*",
+  "org.embl.mobie:*",
   "org.janelia*:*",
   "org.morphonets:*",
   "org.scijava:*",
