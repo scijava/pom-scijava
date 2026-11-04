@@ -72,6 +72,19 @@ includes = [
 output = "target/pombast/javadoc"
 redirect-format = "rewritemap"
 
+# JavaFX javadoc that javadoc.scijava.org serves at /JavaFX{major}/, for each
+# JavaFX LTS plus the versions SciJava ships (19 here, 23 in Fiji), whether or
+# not this BOM manages them. Each javafx-* javadoc JAR holds all of JavaFX, so
+# javafx-base suffices.
+extras = [
+  "org.openjfx:javafx-base:11.0.2",
+  "org.openjfx:javafx-base:17.0.21",
+  "org.openjfx:javafx-base:19.0.2.1",
+  "org.openjfx:javafx-base:21.0.13",
+  "org.openjfx:javafx-base:23.0.2",
+  "org.openjfx:javafx-base:25.0.5",
+]
+
 # Named unions over parts of the BOM, served at
 # /org.scijava/pom-scijava/{version}/{name}/: a -link target and landing page
 # per project, and the scope that project's legacy deep links resolve in.
