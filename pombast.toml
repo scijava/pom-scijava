@@ -241,30 +241,17 @@ ci-build = "build-main"
 [components."hsqldb:hsqldb"]
 last-vetted = "20190101000000"
 
-[components."io.scif:scifio-bf-compat"]
-ci-build = "build-main"
-
 [components."io.scif:scifio-cli"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."io.scif:scifio-hdf5"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."io.scif:scifio-jai-imageio"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
-
-[components."io.scif:scifio-labeling"]
-ci-build = "build-main"
 
 [components."io.scif:scifio-lifesci"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
-
-[components."io.scif:scifio-ome-xml"]
-ci-build = "build-main"
 
 [components."jitk:jitk-tps"]
 ci-build = "build-main"
@@ -272,68 +259,25 @@ ci-build = "build-main"
 [components."net.imagej:ij"]
 java-version = 11
 
-[components."net.imagej:imagej-deprecated"]
-ci-build = "build-main"
-
-[components."net.imagej:imagej-mesh"]
-ci-build = "build-main"
-
 [components."net.imagej:imagej-mesh-io"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."net.imagej:imagej-notebook"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
-
-[components."net.imagej:imagej-omero"]
-ci-build = "build-main"
-
-[components."net.imagej:imagej-omero-legacy"]
-ci-build = "build-main"
-
-[components."net.imagej:imagej-opencv"]
-ci-build = "build-main"
-
-[components."net.imagej:imagej-ops"]
-ci-build = "build-main"
 
 [components."net.imagej:imagej-plugins-batch"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
-[components."net.imagej:imagej-plugins-commands"]
-ci-build = "build-main"
-
 [components."net.imagej:imagej-plugins-tools"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."net.imagej:imagej-plugins-uploader-ssh"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
-
-[components."net.imagej:imagej-plugins-uploader-webdav"]
-ci-build = "build-main"
-
-[components."net.imagej:imagej-scripting"]
-ci-build = "build-main"
-
-[components."net.imagej:imagej-tensorflow"]
-ci-build = "build-main"
 
 [components."net.imagej:imagej-ui-awt"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
-[components."net.imagej:imagej-ui-swing"]
-ci-build = "build-main"
-
-[components."net.imagej:imagej-updater"]
-ci-build = "build-main"
-
 [components."net.imagej:op-finder"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."net.imglib2:imglib2-algorithm"]
@@ -522,9 +466,6 @@ ci-build = "gradle"
 project-url = "https://github.com/ome/ome-model"
 ci-build = "maven"
 
-[components."org.scijava:batch-processor"]
-ci-build = "build-main"
-
 [components."org.scijava:j3dcore"]
 last-vetted = "20180905120000"
 
@@ -546,17 +487,9 @@ ci-build = false
 last-vetted = "20180905120000"
 
 [components."org.scijava:scijava-cache"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
-[components."org.scijava:scijava-grab"]
-ci-build = "build-main"
-
-[components."org.scijava:scijava-io-http"]
-ci-build = "build-main"
-
 [components."org.scijava:scijava-java3d"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."org.scijava:scijava-listeners"]
@@ -566,68 +499,25 @@ last-vetted = "20211021000000"
 last-vetted = "20230309000000"
 
 [components."org.scijava:scijava-plot"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
-
-[components."org.scijava:scijava-plugins-commands"]
-ci-build = "build-main"
 
 [components."org.scijava:scijava-plugins-platforms"]
 last-vetted = "20230309000000"
 
 [components."org.scijava:scijava-plugins-text-markdown"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
-
-[components."org.scijava:scijava-plugins-text-plain"]
-ci-build = "build-main"
-
-[components."org.scijava:scijava-table"]
-ci-build = "build-main"
 
 [components."org.scijava:scijava-ui-awt"]
 last-vetted = "20230309000000"
 
-[components."org.scijava:scijava-ui-swing"]
-ci-build = "build-main"
-
-[components."org.scijava:script-editor"]
-ci-build = "build-main"
-
-[components."org.scijava:script-editor-jython"]
-ci-build = "build-main"
-
-[components."org.scijava:scripting-beanshell"]
-ci-build = "build-main"
-
-[components."org.scijava:scripting-clojure"]
-ci-build = "build-main"
-
-[components."org.scijava:scripting-javascript"]
-ci-build = "build-main"
-
 [components."org.scijava:scripting-jruby"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
-
-[components."org.scijava:scripting-jython"]
-ci-build = "build-main"
 
 [components."org.scijava:scripting-matlab"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
-
-[components."org.scijava:scripting-renjin"]
-ci-build = "build-main"
-
-[components."org.scijava:scripting-scala"]
-ci-build = "build-main"
 
 [components."org.scijava:swing-checkbox-tree"]
 last-vetted = "20230309000000"
-
-[components."org.scijava:ui-behaviour"]
-ci-build = "build-main"
 
 [components."org.scijava:vecmath"]
 ci-build = false
@@ -657,375 +547,204 @@ last-vetted = "20200701000000"
 [components."org.tensorflow:tensorflow"]
 last-vetted = "20200701000000"
 
-[components."sc.fiji:3D_Blob_Segmentation"]
-ci-build = "build-main"
-
 [components."sc.fiji:3D_Objects_Counter"]
-ci-build = "build-main"
 last-vetted = "20230313000000"
 
-[components."sc.fiji:3D_Viewer"]
-ci-build = "build-main"
-
 [components."sc.fiji:AnalyzeSkeleton_"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Anisotropic_Diffusion_2D"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Archipelago_Plugins"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Arrow_"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Auto_Local_Threshold"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
-[components."sc.fiji:Auto_Threshold"]
-ci-build = "build-main"
-
 [components."sc.fiji:BalloonSegmentation_"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Bug_Submitter"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
-[components."sc.fiji:CPU_Meter"]
-ci-build = "build-main"
-
 [components."sc.fiji:Calculator_Plus"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Cell_Counter"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Color_Histogram"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Color_Inspector_3D"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Colour_Deconvolution"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
-[components."sc.fiji:CorrectBleach_"]
-ci-build = "build-main"
-
-[components."sc.fiji:Correct_3D_Drift"]
-ci-build = "build-main"
-
-[components."sc.fiji:Descriptor_based_registration"]
-ci-build = "build-main"
-
 [components."sc.fiji:Dichromacy_"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Directionality_"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
-
-[components."sc.fiji:FS_Align_TrakEM2"]
-ci-build = "build-main"
-
-[components."sc.fiji:Feature_Detection"]
-ci-build = "build-main"
 
 [components."sc.fiji:Fiji_Archipelago"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
-[components."sc.fiji:Fiji_Developer"]
-ci-build = "build-main"
-
 [components."sc.fiji:Fiji_Package_Maker"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:FlowJ_"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Graph_Cut"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Gray_Morphology"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
-[components."sc.fiji:HDF5_Vibez"]
-ci-build = "build-main"
-
 [components."sc.fiji:Helmholtz_Analysis"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:IJ_Robot"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
-[components."sc.fiji:IO_"]
-ci-build = "build-main"
-
 [components."sc.fiji:Image_5D"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Image_Expression_Parser"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Interactive_3D_Surface_Plot"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:IsoData_Classifier"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Kappa"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Kuwahara_Filter"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:LSM_Reader"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:LSM_Toolbox"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Lasso_and_Blow_Tool"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Linear_Kuwahara"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
-[components."sc.fiji:LocalThickness_"]
-ci-build = "build-main"
-
 [components."sc.fiji:MTrack2_"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:M_I_P"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Manual_Tracking"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Multi_Kymograph"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:PIV_analyser"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:QuickPALM_"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:RATS_"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
-
-[components."sc.fiji:Reconstruct_Reader"]
-ci-build = "build-main"
 
 [components."sc.fiji:SPIM_Opener"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
-[components."sc.fiji:SPIM_Registration"]
-ci-build = "build-main"
-
 [components."sc.fiji:Samples_"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Series_Labeler"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Siox_Segmentation"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Skeletonize3D_"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:SplineDeformationGenerator_"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Stack_Manipulation"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Statistical_Region_Merging"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
-
-[components."sc.fiji:Stitching_"]
-ci-build = "build-main"
 
 [components."sc.fiji:Sync_Win"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
-[components."sc.fiji:T2-NIT"]
-ci-build = "build-main"
-
-[components."sc.fiji:T2-TreelineGraph"]
-ci-build = "build-main"
-
 [components."sc.fiji:Thread_Killer"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Time_Lapse"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Time_Stamper"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:ToAST_"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:TopoJ_"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
-
-[components."sc.fiji:Trainable_Segmentation"]
-ci-build = "build-main"
-
-[components."sc.fiji:TrakEM2_"]
-ci-build = "build-main"
-
-[components."sc.fiji:TrakEM2_Archipelago"]
-ci-build = "build-main"
 
 [components."sc.fiji:VIB-lib"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
-[components."sc.fiji:VIB_"]
-ci-build = "build-main"
-
 [components."sc.fiji:Vaa3d_Reader"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:Vaa3d_Writer"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
-
-[components."sc.fiji:VectorString"]
-ci-build = "build-main"
 
 [components."sc.fiji:Video_Editing"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
-
-[components."sc.fiji:Volume_Calculator"]
-ci-build = "build-main"
-
-[components."sc.fiji:Volume_Viewer"]
-ci-build = "build-main"
 
 [components."sc.fiji:bUnwarpJ_"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
-
-[components."sc.fiji:bigdataviewer-server"]
-ci-build = "build-main"
-
-[components."sc.fiji:bigdataviewer_fiji"]
-ci-build = "build-main"
 
 [components."sc.fiji:bigvolumeviewer"]
 # NOTE: Using the release flag disallows access to sun.misc.Unsafe.
 properties = { "maven.compiler.release" = "" }
 
 [components."sc.fiji:bij"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
-
-[components."sc.fiji:blockmatching_"]
-ci-build = "build-main"
 
 [components."sc.fiji:fiji-lib"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
-[components."sc.fiji:labkit-pixel-classification"]
-ci-build = "build-main"
-
-[components."sc.fiji:labkit-ui"]
-ci-build = "build-main"
-
-[components."sc.fiji:legacy-imglib1"]
-ci-build = "build-main"
-
 [components."sc.fiji:level_sets"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:pal-optimization"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
 
 [components."sc.fiji:panorama_"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
-
-[components."sc.fiji:register_virtual_stack_slices"]
-ci-build = "build-main"
 
 [components."sc.fiji:registration_3d"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
-
-[components."sc.fiji:spim_data"]
-ci-build = "build-main"
 
 [components."sc.fiji:trakem2-transform"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
-
-[components."sc.fiji:trakem2_tps"]
-ci-build = "build-main"
 
 [components."sc.fiji:weave_jy2java"]
-ci-build = "build-main"
 last-vetted = "20230309000000"
-
-[components."sc.fiji:z_spacing"]
-ci-build = "build-main"
